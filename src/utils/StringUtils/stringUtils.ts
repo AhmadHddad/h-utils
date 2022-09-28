@@ -1,6 +1,11 @@
 import { Key } from '../../types';
-import { regexIsUpperCase, regexIsUrl, regxIsHttpUrl } from '../../regex';
-import { isString } from '../generalUtils/generalUtil';
+import { regexIsUpperCase } from '../../regex';
+import {
+  isNull,
+  isNumber,
+  isString,
+  isUndefined,
+} from '../generalUtils/generalUtil';
 
 /**
  *@description Will return the initials of the passed name at provided length;
@@ -289,20 +294,40 @@ export function navigateObjWithString(
     .reduce((a, key) => (a !== undefined ? a[key] : undefined), object);
 }
 
-
-
 /**
- * If the url doesn't contain http, add it to the url, otherwise return the url.
- * @param {string} url - string - the url to check
- * @returns A function that takes a string and returns a string.
+ * It takes a string and returns a number, boolean, null, undefined, or a string that has "undefined" as string
+ * and returns the actual type.
+ * if "123" will return the number 123 and so on.
+ * @param {string | null | undefined | number} str - string | null | undefined | number
+ * @param config - {
  */
-export const addHttpToURL = (url: string) => {
-  return url.search(regxIsHttpUrl) === -1 ? `http://${url.trim()}` : url.trim(); //check if url contains http
-};
+export function parseString(
+  str: string | null | undefined | number,
+  config = { includeWholeStr: false, parseStrStartsWithZero: true }
+) {
+  const { includeWholeStr, parseStrStartsWithZero } = config;
+  if (!isString(str)) {
+    if (isUndefined(str)) return undefined;
+    if (isNull(str)) return null;
+  }
 
-/**
- * It takes a string and returns an array of strings
- * @param {string} text - string
- */
-export const splitUrl = (text: string): Array<string> =>
-  text?.split(regexIsUrl);
+  if (isNumber(str)) return str;
+
+  str = str?.toLowerCase();
+  if (includeWholeStr && str?.includes('null')) return null;
+  if (includeWholeStr && str?.includes('undefined')) return undefined;
+  if (!parseStrStartsWithZero && str?.startsWith('0')) return str;
+  if (str?.length && !isNaN(Number(str))) return Number(str);
+  if (str?.length && str === 'true') return true;
+  if (str?.length && str === 'false') return false;
+
+  return str;
+}
+
+export function parseNumber(number: string) {
+  return number.replace(/\D/g, '');
+}
+
+export function parseDate(date: string) {
+  return new Date(date);
+}
