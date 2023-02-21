@@ -4,3 +4,4 @@ export const httpURLRegex = /^((http|https|ftp):\/\/)/;
 export const upperCaseRegex = /[A-Z]?[a-z]+|[0-9]+|[A-Z]+(?![a-z])/g;
 export const emailRegexForLongStr = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
 export const emailRegexForShortStr = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+export const whitespaceRegex = /^\s$/;

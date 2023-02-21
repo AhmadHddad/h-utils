@@ -127,3 +127,13 @@ export const isSmallerThan = (a: Key, b: Key) => a < b;
 export function isLength(input?: {} | [] | string) {
   return count(input) > 0;
 }
+
+/**
+ * @description will check if the parameter is a white space;
+ * @param {string} [str]
+ * @returns {boolean}
+ */
+export function isWhiteSpace(char: string): boolean {
+  let white = new RegExp(/^\s$/);
+  return white.test(char.charAt(0));
+}
