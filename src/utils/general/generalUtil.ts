@@ -26,8 +26,7 @@ export function isArrayOfStrings(value: unknown): value is string[] {
 
 /**
  * @description Will generate a s4 Guid
- * @example generateGuid() =>
- * @example paramsToObject() => "741baba3-1efc-b52e-5d9c-75b1fc80395a"
+ * @example generateGuid() => "741baba3-1efc-b52e-5d9c-75b1fc80395a"
  */
 export function generateGuid(): string {
   let s4 = () => {
@@ -50,4 +49,16 @@ export function paramsToObject(entries: URLSearchParams) {
     result[key] = value;
   }
   return result;
+}
+
+/**
+ * @description will return a new object that combines all of the passed objects.
+ * @example joinObjects(({ a: 1 }, { b: 2 })) => { a: 1, b: 2 }
+ * @example joinObjects(({ a: 1 }, null || undefined || !object)) => { a: 1 }
+ */
+export function joinObjects(...args): {} {
+  return args.reduce((prev, curr) => {
+    const currObj = isObject(curr) ? curr : {};
+    return { ...prev, ...currObj };
+  }, {});
 }
