@@ -62,3 +62,10 @@ export function joinObjects(...args): {} {
     return { ...prev, ...currObj };
   }, {});
 }
+
+/**
+ * @example conditionalReturn([].length > 0, "has items") => if true will return "has items" if not will return val2 (null if not provided)
+ */
+export function conditionalReturn(condition: boolean, val1: any, val2 = null) {
+  condition ? val1 : val2;
+}
