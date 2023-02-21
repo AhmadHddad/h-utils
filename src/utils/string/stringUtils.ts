@@ -1,16 +1,16 @@
+import { regex } from '../../regex';
 import { Key } from '../../types';
-import { regexIsUpperCase } from '../../regex';
 import {
   isNull,
   isNumber,
   isString,
   isUndefined,
-} from '../generalUtils/generalUtil';
+} from '../validation/validationUtils';
 
 /**
  *@description Will return the initials of the passed name at provided length;
- * eg: visual studio => vs;
- * eg:CepresInnotech => CI
+ * @example visual studio => vs;
+ * @example JavaScript => JS
  * @param {string} name
  * @param {number} [length=1]
  * @returns {string}
@@ -26,7 +26,7 @@ export const getNameInitials = (name: string, length = 1): string =>
 
 /**
  *@description Will return the first n number of letters.
- * eg: getFirstNLetters('cepres', 3) => cep
+ * @example getFirstNLetters('javascript', 3) => jav
  * @param {string} str
  * @param {number} [n=1]
  * @returns {string}
@@ -46,12 +46,12 @@ const getFirstNLetters = (str: string, n = 1) => {
 /**
  * It splits a string into an array of strings, where each string is a word, number, or capitalized
  * word
- * eg: splitUpperCase("CepersInnotech") => ["Cepers", "Innotech"]
+ * @example splitUpperCase("JavaScript") => ["Java", "Script"]
  * @param {string} str - string - The string to split
  * @returns An array of strings.
  */
 export const splitUpperCase = (str: string): string[] => {
-  return str.match(regexIsUpperCase) || [];
+  return str.match(regex.upperCaseRegex) || [];
 };
 
 /**
@@ -66,9 +66,9 @@ export const isWhiteSpace = (str: string): boolean => {
 /**
  * Takes the number out of the string and returns number
  * if no number exists will return infinity
- * eg: toNumber("3.35px") => 3.35;
- * eg: toNumber("3.35") => 3.35;
- * eg: toNumber("string") => infinity;
+ * @example toNumber("3.35px") => 3.35;
+ * @example toNumber("3.35") => 3.35;
+ * @example toNumber("string") => infinity;
  * @param {string | number} strOrNum - string | number
  * @returns {number}
  */
@@ -107,7 +107,7 @@ export function parseJwt(token: string) {
 
 /**
  * It takes a string and get the extension file type.
- * eg: getFileExtensionFromString("fileName.txt") => txt
+ * @example getFileExtensionFromString("fileName.txt") => txt
  * @param {string} str - string - The string to get the file extension from.
  * @returns The file extension of the string.
  */
@@ -240,9 +240,9 @@ export const stringToHslColor = (string, saturation = 100, lightness = 75) => {
 
 /**
  * It takes an array of strings and returns a string with "And", "Or", "," in the sentance depending on their position.
- * eg: ["Car", "Laptop", "Home"]=> Car, Laptop and Home.
- * eg: ["Car", "Laptop", "-Home"]=> Car, Laptop or Home.
- * eg: ["Car", "-Laptop", "Home"]=> Car or Laptop and Home.
+ * @example ["Car", "Laptop", "Home"]=> Car, Laptop and Home.
+ * @example ["Car", "Laptop", "-Home"]=> Car, Laptop or Home.
+ * @example ["Car", "-Laptop", "Home"]=> Car or Laptop and Home.
  * @param {string[]} stringArray - string[]
  * @returns A string
  */
@@ -330,4 +330,32 @@ export function parseNumber(number: string) {
 
 export function parseDate(date: string) {
   return new Date(date);
+}
+
+/**
+ * It takes a string and a separator and returns an array of two strings, the first being the string up
+ * to the separator and the second being the string after the separator.
+ * @example splitOnFirst('key:value:value2', ':') => ['key', 'value:value2']
+ * @param {string} string - string
+ * @param {string} separator - The separator to split on.
+ */
+export function splitOnFirst(string: string, separator: string): string[] {
+  if (!(typeof string === 'string' && typeof separator === 'string')) {
+    throw new TypeError('Expected the arguments to be of type `string`');
+  }
+
+  if (string === '' || separator === '') {
+    return [];
+  }
+
+  const separatorIndex = string.indexOf(separator);
+
+  if (separatorIndex === -1) {
+    return [];
+  }
+
+  return [
+    string.slice(0, separatorIndex),
+    string.slice(separatorIndex + separator.length),
+  ];
 }

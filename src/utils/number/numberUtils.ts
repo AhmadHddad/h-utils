@@ -28,6 +28,6 @@ export function getSum(...args: number[]) {
  * @param {number[]} args - number[]
  * @returns The sum of the arguments divided by the number of arguments.
  */
-export function getAvarage(...args: number[]) {
+export function getAverage(...args: number[]) {
   return getSum(...args) / args.length;
 }

@@ -1,7 +1,7 @@
-import { classNames } from "./styleTypes";
+import { classNames } from './styleTypes';
 
 /**
- * It takes any number of arguments, and returns a string of all the arguments that are truthy,
+ * @description It takes any number of arguments, and returns a string of all the arguments that are truthy,
  * separated by spaces.
  */
 export function classNames(...args: classNames.ArgumentArray): string {

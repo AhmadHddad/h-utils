@@ -1,19 +1,23 @@
 export type IsEmptyObjectProps = (obj: object) => boolean;
-/*
-Return true if obj is empty object,
-if undefined, null, not empty return false.
+
+/**
+ * It returns true if the object is empty, and false if it's not
+ * @param {object} obj - object
+ * @example IsEmptyObject({}) => true
+ * @example IsEmptyObject({a:1}) => false
+ * @returns {boolean}
  */
-export const IsEmptyObject: IsEmptyObjectProps = obj => {
+export const isEmptyObject: IsEmptyObjectProps = obj => {
   return obj && Object.keys(obj).length === 0 && obj.constructor === Object;
 };
-
 
 /**
  * It compares two objects and returns true if they are equal, false if they are not
  * @param {object[]} objects - object[]
+ * @example deepCompareObjects([{a:1}, {a:1}]) => true
  * @returns A function that takes an array of objects and returns a boolean.
  */
-export const deebCompareObjects = (...objects: object[]): boolean => {
+export const deepCompareObjects = (...objects: object[]): boolean => {
   let i, l, leftChain, rightChain;
 
   const compare2Objects = (x, y) => {
@@ -137,11 +141,15 @@ export const deebCompareObjects = (...objects: object[]): boolean => {
  * @param nextObj - {
  * @param {string[]} keysArr - string[] = [] - an array of keys that you want to compare.
  */
-export function compare2ObjectsBaesOnKeysArr(prevObj = {}, nextObj = {}, keysArr: string[] = []) {
+export function compare2ObjectsBaseOnKeysArr(
+  prevObj = {},
+  nextObj = {},
+  keysArr: string[] = []
+) {
   let areEqual = false;
 
   for (const key of keysArr) {
-    if (!deebCompareObjects(prevObj[key], nextObj[key])) {
+    if (!deepCompareObjects(prevObj[key], nextObj[key])) {
       areEqual = true;
       break;
     }
@@ -149,4 +157,76 @@ export function compare2ObjectsBaesOnKeysArr(prevObj = {}, nextObj = {}, keysArr
   return areEqual;
 }
 
+/**
+ * "It returns a new object that contains only the enumerable properties of the original object that
+ * match the predicate."
+ * 
+ * The predicate can be either an array of keys or a function that takes the key, value, and object as
+ * arguments
+ * @param object - The object to copy enumerable properties from.
+ * @param predicate - A function that returns true if the key should be included in the result.
+ * @example includeKeys({
+	foo: true,
+	bar: false
+}, (key, value) => value === true) => {foo: true}
+ * @returns A new object with the same enumerable properties as the original object, but with the
+ * values filtered by the predicate.
+ */
+export function includeKeys(
+  object: {},
+  predicate: (key: string, value: any, object: {}) => boolean
+) {
+  const result = {};
 
+  if (Array.isArray(predicate)) {
+    for (const key of predicate) {
+      const descriptor = Object.getOwnPropertyDescriptor(object, key);
+      if (descriptor?.enumerable) {
+        Object.defineProperty(result, key, descriptor);
+      }
+    }
+  } else {
+    // `Reflect.ownKeys()` is required to retrieve symbol properties
+    for (const key of Reflect.ownKeys(object)) {
+      const descriptor = Object.getOwnPropertyDescriptor(object, key);
+      if (descriptor?.enumerable) {
+        const value = object[key];
+        if (predicate(key as string, value, object)) {
+          Object.defineProperty(result, key, descriptor);
+        }
+      }
+    }
+  }
+
+  return result;
+}
+
+/**
+ * "It returns a new object with the same keys as the original object, except for the keys that match
+ * the predicate."
+ *
+ * The predicate is a function that takes three arguments: the key, the value, and the object. It
+ * returns true if the key should be included in the new object, and false if it should be excluded
+ * @example excludeKeys({
+	foo: true,
+	bar: false
+}, (key, value) => value === true) => {bar: false}
+ * @param object - The object to filter.
+ * @param predicate - A function that returns true if the key should be included.
+ */
+export function excludeKeys(
+  object: {},
+  predicate: (key: string, value: any, object: {}) => boolean
+) {
+  if (Array.isArray(predicate)) {
+    const set = new Set(predicate);
+    return includeKeys(object, key => !set.has(key));
+  }
+
+  return includeKeys(
+    object,
+    (key, value, object) => !predicate(key, value, object)
+  );
+}
+
+export const filterObj = { excludeKeys, includeKeys };
