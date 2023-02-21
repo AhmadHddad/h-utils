@@ -5,6 +5,7 @@ import {
   isNumber,
   isString,
   isUndefined,
+  isWhiteSpace,
 } from '../validation/validationUtils';
 
 /**
@@ -44,7 +45,7 @@ const getFirstNLetters = (str: string, n = 1) => {
 };
 
 /**
- * It splits a string into an array of strings, where each string is a word, number, or capitalized
+ * @description It splits a string into an array of strings, where each string is a word, number, or capitalized
  * word
  * @example splitUpperCase("JavaScript") => ["Java", "Script"]
  * @param {string} str - string - The string to split
@@ -55,16 +56,7 @@ export const splitUpperCase = (str: string): string[] => {
 };
 
 /**
- * @description will check if the parameter is a white space;
- * @param {string} [str]
- * @returns {boolean}
- */
-export const isWhiteSpace = (str: string): boolean => {
-  return !str || str.trim().length === 0;
-};
-
-/**
- * Takes the number out of the string and returns number
+ * @description Takes the number out of the string and returns number
  * if no number exists will return infinity
  * @example toNumber("3.35px") => 3.35;
  * @example toNumber("3.35") => 3.35;
@@ -86,7 +78,7 @@ export const toNumber = (strOrNum: Key): number => {
 };
 
 /**
- * The function takes a JWT token and returns the decoded payload as a JSON object.
+ * @description The function takes a JWT token and returns the decoded payload as a JSON object.
  * @param {string} token - The JWT token that you want to parse.
  * @returns The JSON payload of the JWT.
  */
@@ -106,7 +98,7 @@ export function parseJwt(token: string) {
 }
 
 /**
- * It takes a string and get the extension file type.
+ * @description It takes a string and get the extension file type.
  * @example getFileExtensionFromString("fileName.txt") => txt
  * @param {string} str - string - The string to get the file extension from.
  * @returns The file extension of the string.
@@ -117,12 +109,13 @@ export function getFileExtensionFromString(str: string): string {
   return str.split('.').at(-1) || '';
 }
 
-const testWhiteSpace = (char: string) => {
-  let white = new RegExp(/^\s$/);
-  return white.test(char.charAt(0));
-};
-
-export const breakWord = (str: string, maxWidth: number) => {
+/**
+ * @description It will break the passed string into multiline string after a cretin length
+ * @example breakStrAfterNChar("Javascript") => `Java
+ * scri
+ * pt`
+ */
+export function breakStrAfterNChar(str: string, maxWidth: number): string {
   const newLineStr = '\n';
   let wrappedText = '';
   let prefix = '';
@@ -131,7 +124,7 @@ export const breakWord = (str: string, maxWidth: number) => {
     let found = false;
     // Insert a new line at the first whitespace of the line
     for (let i = maxWidth - 1; i >= 0; i--) {
-      if (testWhiteSpace(str.charAt(i))) {
+      if (isWhiteSpace(str.charAt(i))) {
         wrappedText = wrappedText + [str.slice(0, i), newLineStr].join('');
         str = str.slice(i + 1);
         found = true;
@@ -145,10 +138,10 @@ export const breakWord = (str: string, maxWidth: number) => {
     }
   }
   return prefix + wrappedText + str;
-};
+}
 
 /**
- * It takes a string and returns the ASCII code for the first character in the string
+ * @description It takes a string and returns the ASCII code for the first character in the string
  * @param {string} char - The character to get the ASCII code for.
  * @returns The ASCII code for the character.
  */
@@ -157,7 +150,7 @@ export function getAsciiCodeForChar(char: string): number {
 }
 
 /**
- * It takes a string, splits it into an array of characters, then reduces the array to a single number
+ * @description It takes a string, splits it into an array of characters, then reduces the array to a single number
  * by adding the ASCII code of each character to the previous value
  * @param {string} str - string
  * @returns The sum of the ASCII codes for each character in the string.
@@ -169,7 +162,7 @@ export function getAsciiSumFromString(str: string) {
 }
 
 /**
- * It takes a string, converts it to an array of ASCII codes, sums them up, and returns the sum
+ * @description It takes a string, converts it to an array of ASCII codes, sums them up, and returns the sum
  * @param {string} str - The string to hash
  * @returns The sum of the ASCII values of the characters in the string.
  */
@@ -178,7 +171,7 @@ function hashString(str: string) {
 }
 
 /**
- * It takes a string and an array of colors and returns a color from the array based on the string
+ * @description It takes a string and an array of colors and returns a color from the array based on the string
  * @param {string} str - The string you want to map to a color
  * @param {string[]} colorsArr - an array of colors
  * @returns A string
@@ -191,7 +184,7 @@ export function mapStringToColorFromArr(
 }
 
 /**
- * It takes a string, converts it to a number, then converts that number to a color
+ * @description It takes a string, converts it to a number, then converts that number to a color
  * @param {string} str - The string to convert to a color.
  * @returns A string of the form #RRGGBB.
  */
@@ -209,7 +202,7 @@ export function stringToHexColor(str: string) {
 }
 
 /**
- * It takes a string, converts it to a number, and then uses that number to generate a color.
+ * @description It takes a string, converts it to a number, and then uses that number to generate a color.
  *
  * The function is based on the [HSL color model](https://en.wikipedia.org/wiki/HSL_and_HSV).
  *
@@ -239,7 +232,7 @@ export const stringToHslColor = (string, saturation = 100, lightness = 75) => {
 };
 
 /**
- * It takes an array of strings and returns a string with "And", "Or", "," in the sentance depending on their position.
+ * @description It takes an array of strings and returns a string with "And", "Or", "," in the sentance depending on their position.
  * @example ["Car", "Laptop", "Home"]=> Car, Laptop and Home.
  * @example ["Car", "Laptop", "-Home"]=> Car, Laptop or Home.
  * @example ["Car", "-Laptop", "Home"]=> Car or Laptop and Home.
@@ -277,7 +270,7 @@ export function addAndOrConjunctionsToStrArray(stringArray: string[]) {
 }
 
 /**
- * It takes a string, an object, and a navigation character, and returns the value of the object at the
+ * @description It takes a string, an object, and a navigation character, and returns the value of the object at the
  * string's path.
  * @param {string} string - the string you want to navigate with
  * @param object - {},
@@ -295,7 +288,7 @@ export function navigateObjWithString(
 }
 
 /**
- * It takes a string and returns a number, boolean, null, undefined, or a string that has "undefined" as string
+ * @description It takes a string and returns a number, boolean, null, undefined, or a string that has "undefined" as string
  * and returns the actual type.
  * if "123" will return the number 123 and so on.
  * @param {string | null | undefined | number} str - string | null | undefined | number
@@ -304,7 +297,7 @@ export function navigateObjWithString(
 export function parseString(
   str: string | null | undefined | number,
   config = { includeWholeStr: false, parseStrStartsWithZero: true }
-) {
+): number | undefined | null | string | boolean {
   const { includeWholeStr, parseStrStartsWithZero } = config;
   if (!isString(str)) {
     if (isUndefined(str)) return undefined;
@@ -333,7 +326,7 @@ export function parseDate(date: string) {
 }
 
 /**
- * It takes a string and a separator and returns an array of two strings, the first being the string up
+ * @description It takes a string and a separator and returns an array of two strings, the first being the string up
  * to the separator and the second being the string after the separator.
  * @example splitOnFirst('key:value:value2', ':') => ['key', 'value:value2']
  * @param {string} string - string
