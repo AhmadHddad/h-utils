@@ -1,21 +1,14 @@
+import { regex } from '../../regex';
 import { Key } from '../../types';
-import { count } from '../generalUtils/generalUtil';
+import { count } from '../general/generalUtil';
 
-export const validateWebsite = (value, errorMsg = 'Invalid website') =>
-  value &&
-  !value.match(
-    /(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})/gi
-  )
-    ? errorMsg
-    : undefined;
+export function isURL(input: string): boolean {
+  return !!input.match(regex.urlRegexForShortStr);
+}
 
-export const validateEmail = (value, errorMsg = 'Invalid email address') =>
-  value &&
-  !value.match(
-    /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
-  )
-    ? errorMsg
-    : undefined;
+export function isEmail(input: string): boolean {
+  return !!input.match(regex.emailRegexForShortStr);
+}
 
 /**
  * @description checks if the passed value is null or undefined
