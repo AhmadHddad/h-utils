@@ -1,8 +1,12 @@
 import { Key } from '../../types';
-import { isBiggerThan, isObject, isSmallerThan } from '../validation/validationUtils';
+import {
+  isBiggerThan,
+  isObject,
+  isSmallerThan,
+} from '../validation/validationUtils';
 
 /**
- * It takes two arguments, a and b, and returns an array of numbers or letters from a to b
+ * @description It takes two arguments, a and b, and returns an array of numbers or letters from a to b
  * @param {Key} a - The starting point of the array.
  * @param {Key} b - The ending value of the range.
  * @param {number} step - The step value.
@@ -30,7 +34,7 @@ export function arrayRange(a: Key, b: Key, step: number) {
 }
 
 /**
- * It takes two items of the same type, swaps them, and returns them as an array
+ * @description It takes two items of the same type, swaps them, and returns them as an array
  * @param {T} item1 - The first item to swap.
  * @param {T} item2 - T
  * @returns Nothing.
@@ -43,7 +47,7 @@ export function swap<T>(item1: T, item2: T): Array<T> {
 }
 
 /**
- * It sorts an array of objects or strings or numbers, and if the array is an array of objects, it can
+ * @description It sorts an array of objects or strings or numbers, and if the array is an array of objects, it can
  * sort by a property of the objects.
  * @param {T[]} arr - The array to be sorted
  * @param {string} [property] - The property of the object to sort by.
@@ -70,12 +74,15 @@ export function sortArr<T = string | {} | number>(
 }
 
 /**
- * It takes an array of objects and sorts them by array of multiple properties.
+ * @description It takes an array of objects and sorts them by array of multiple properties.
  * if the property starts with "-" then it will be descending order otherwize ascending order
  * @param {T[]} arr - the array to be sorted
  * @param {string[]} proprieties - an array of strings, each string is a property name
  */
-export function sortByMultiProperties<T = {}>(arr: T[], proprieties: string[]): T[] {
+export function sortByMultiProperties<T = {}>(
+  arr: T[],
+  proprieties: string[]
+): T[] {
   if (!proprieties?.length) return arr;
 
   function _sortByAttr(attr) {
@@ -101,5 +108,3 @@ export function sortByMultiProperties<T = {}>(arr: T[], proprieties: string[]): 
   }
   return arr.sort(_getSortFunc(proprieties));
 }
-
-

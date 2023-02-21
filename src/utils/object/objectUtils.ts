@@ -1,7 +1,7 @@
 export type IsEmptyObjectProps = (obj: object) => boolean;
 
 /**
- * It returns true if the object is empty, and false if it's not
+ * @description It returns true if the object is empty, and false if it's not
  * @param {object} obj - object
  * @example IsEmptyObject({}) => true
  * @example IsEmptyObject({a:1}) => false
@@ -12,7 +12,7 @@ export const isEmptyObject: IsEmptyObjectProps = obj => {
 };
 
 /**
- * It compares two objects and returns true if they are equal, false if they are not
+ * @description It compares two objects and returns true if they are equal, false if they are not
  * @param {object[]} objects - object[]
  * @example deepCompareObjects([{a:1}, {a:1}]) => true
  * @returns A function that takes an array of objects and returns a boolean.
@@ -136,7 +136,7 @@ export const deepCompareObjects = (...objects: object[]): boolean => {
 };
 
 /**
- * It compares two objects based on the keys array passed to it.
+ * @description It compares two objects based on the keys array passed to it.
  * @param prevObj - the previous object
  * @param nextObj - {
  * @param {string[]} keysArr - string[] = [] - an array of keys that you want to compare.
@@ -158,7 +158,7 @@ export function compare2ObjectsBaseOnKeysArr(
 }
 
 /**
- * "It returns a new object that contains only the enumerable properties of the original object that
+ * @description "It returns a new object that contains only the enumerable properties of the original object that
  * match the predicate."
  * 
  * The predicate can be either an array of keys or a function that takes the key, value, and object as
@@ -230,3 +230,33 @@ export function excludeKeys(
 }
 
 export const filterObj = { excludeKeys, includeKeys };
+
+/**
+ * @description will return the smallest array in record or object
+ * @example getSmallestArrInObj({a:[1,2,3], b:[1,2,3,4,5]}) => {a:[1,2,3]}
+ */
+export function getSmallestArrInObj(obj: Record<string, any[]> | {}): {} {
+  let smallest = {};
+  let smallestLength = 0;
+  let i = 0;
+
+  for (const key in obj) {
+    const val = obj[key];
+    if (i === 0) {
+      smallest = {
+        [key]: val,
+      };
+      smallestLength = val.length;
+    } else {
+      if (val.length < smallestLength) {
+        smallestLength = val.length;
+        smallest = {
+          [key]: val,
+        };
+      }
+    }
+    i++;
+  }
+
+  return smallest;
+}
