@@ -30,12 +30,17 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "h-utils",
+  "name": "hd-utils",
   "author": "AhmadHddad",
   "keywords": [
     "utils",
+    "@h/utils",
+    "hddad-utils",
+    "@h",
+    "hd-utils",
     "hUtils",
     "h-utils",
+    "hd-utils",
     "js",
     "stringUtils",
     "arrayUtils",
@@ -48,7 +53,7 @@
   ],
   "repository": "https://github.com/AhmadHddad/h-utils",
   "bugs": "https://github.com/AhmadHddad/h-utils/issues",
-  "module": "dist/h-utils.esm.js",
+  "module": "./dist/h-utils.esm.js",
   "size-limit": [
     {
       "path": "dist/h-utils.cjs.production.min.js",
