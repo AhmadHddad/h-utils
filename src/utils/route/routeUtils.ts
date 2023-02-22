@@ -90,7 +90,7 @@ export function excludeQueryParamFromUrl(
  * @example parseUrl('https://foo.bar?foo=bar') =>{url: 'https://foo.bar', query: {foo: 'bar'}}
  * @returns
  */
-function parseUrl(urlParam: string): { url: string; query: {} } {
+export function parseUrl(urlParam: string): { url: string; query: {} } {
   // will get only url www.youtube.com/watch?v=123 => www.youtube.com/watch
   const url = removeHashFromUrl(urlParam).split('?')[0] || '';
   const queryFromUrl = extractQueryFromUrl(
@@ -104,7 +104,7 @@ function parseUrl(urlParam: string): { url: string; query: {} } {
  * @description Stringify an object into a URL with a query string and sorting the keys. The inverse of .parseUrl();
  * @example stringifyUrl({url: 'https://foo.bar', query: {foo: 'bar'}}) => 'https://foo.bar?foo=bar';
  */
-function stringifyUrl({
+export function stringifyUrl({
   url = '',
   queryParams,
 }: {

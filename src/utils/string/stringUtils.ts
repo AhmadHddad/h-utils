@@ -32,7 +32,7 @@ export const getNameInitials = (name: string, length = 1): string =>
  * @param {number} [n=1]
  * @returns {string}
  */
-const getFirstNLetters = (str: string, n = 1) => {
+export const getFirstNLetters = (str: string, n = 1) => {
   let val = '';
 
   for (let i = 0; i < str.length; i++) {
@@ -166,7 +166,7 @@ export function getAsciiSumFromString(str: string) {
  * @param {string} str - The string to hash
  * @returns The sum of the ASCII values of the characters in the string.
  */
-function hashString(str: string) {
+export function hashString(str: string) {
   return getAsciiSumFromString(str);
 }
 
