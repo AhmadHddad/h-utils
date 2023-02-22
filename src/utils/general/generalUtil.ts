@@ -23,14 +23,6 @@ export function count(input?: {} | [] | string): number {
 }
 
 /**
- * @description It returns true if the value is an array of strings, otherwise it returns false
- * @returns A function that takes a value and returns a boolean.
- */
-export function isArrayOfStrings(value: unknown): value is string[] {
-  return Array.isArray(value) && value.every(item => typeof item === 'string');
-}
-
-/**
  * @description Will generate a s4 Guid
  * @example generateGuid() => "741baba3-1efc-b52e-5d9c-75b1fc80395a"
  */
