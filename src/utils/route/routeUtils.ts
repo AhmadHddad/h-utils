@@ -1,6 +1,7 @@
 import { httpURLRegex, urlRegexForLongStr } from '../../regex/regex';
 import { paramsToObject } from '../general/generalUtil';
 import { includeKeys } from '../object/objectUtils';
+import { isNullOrUndefined } from '../validation/validationUtils';
 
 /**
  * @description If the url doesn't contain http, add it to the url, otherwise return the url.
@@ -115,7 +116,7 @@ export function stringifyUrl({
   const urlOnly = removeHashFromUrl(url).split('?')[0] || '';
 
   const stringifiedParams = new URLSearchParams(
-    includeKeys(query || {}, (_, val) => !!val)
+    includeKeys(query || {}, (_, val) => !isNullOrUndefined(val))
   ).toString();
 
   const hashIndex = url.indexOf('#');

@@ -71,7 +71,7 @@ export const isTruthy = (value: unknown): value is true => !!value;
  * @param {string | null} [value] - The value to check.
  */
 export const isNullOrEmptyString = (value?: string | null) =>
-  isNullOrUndefined(value) || value?.trim().length === 0;
+  isNullOrUndefined(value) || (isString(value) && value.length === 0);
 
 /**
  * @description If the value is not a number, then it is not a number.
