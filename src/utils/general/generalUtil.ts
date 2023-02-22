@@ -50,21 +50,27 @@ export function paramsToObject(entries: URLSearchParams) {
 }
 
 /**
- * @description will return a new object that combines all of the passed objects.
- * @example joinObjects(({ a: 1 }, { b: 2 })) => { a: 1, b: 2 }
- * @example joinObjects(({ a: 1 }, null || undefined || !object)) => { a: 1 }
- */
-export function joinObjects(...args): {} {
-  return args.reduce((prev, curr) => {
-    const currObj =
-      !!curr && !Array.isArray(curr) && typeof curr === 'object' ? curr : {};
-    return { ...prev, ...currObj };
-  }, {});
-}
-
-/**
  * @example conditionalReturn([].length > 0, "has items") => if true will return "has items" if not will return val2 (null if not provided)
  */
 export function conditionalReturn(condition: boolean, val1: any, val2 = null) {
   condition ? val1 : val2;
 }
+
+/**
+ * @description If the source is null or undefined, return an empty array, otherwise return the source as an array.
+ * @param {unknown} source - unknown
+ * @returns An array.
+ */
+export function toArray(source: unknown) {
+  if (!source) return [];
+  return Array.isArray(source) ? source : [source];
+}
+
+/**
+ * @description will return a new object that combines all of the passed objects as new copy (not reference as Object.assign).
+ * @example joinObjects({a:1},{b:2}) => {a:1, b:2}
+ * @example joinObjects(({ a: 1 }, { b: 2 })) => { a: 1, b: 2 }
+ * @example joinObjects(({ a: 1 }, null || undefined || !object)) => { a: 1 }
+ */
+export const joinObjects = <T>(...args: (T | undefined | {})[]) =>
+  args.reduce((prev, curr) => ({ ...(prev || {}), ...(curr || {}) }), {});

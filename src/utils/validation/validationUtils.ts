@@ -33,26 +33,6 @@ export const isUndefined = (val: unknown): val is undefined => val == undefined;
 export const isNull = (val: unknown): val is null => val == null;
 
 /**
- * @description will convert passed params into object and return a new copy (not reference as Object.assign) of them merged to gother
- * toObject({a:1},{b:2}) => {a:1, b:2}
- * @param args objects
- * @returns object
- */
-
-export const toObject = <T>(...args: (T | undefined | {})[]) =>
-  args.reduce((prev, curr) => ({ ...(prev || {}), ...(curr || {}) }), {});
-
-/**
- * @description If the source is null or undefined, return an empty array, otherwise return the source as an array.
- * @param {unknown} source - unknown
- * @returns An array.
- */
-export function toArray(source: unknown) {
-  if (isNullOrUndefined(source)) return [];
-  return Array.isArray(source) ? source : [source];
-}
-
-/**
  * @description The function isArray takes a value and returns true if the value is an array, otherwise it returns
  * false.
  * @param {any} value - unknown
@@ -123,8 +103,11 @@ export const isSmallerThan = (a: Key, b: Key) => a < b;
 /**
  * @description It returns true if the object or array is not empty, false otherwise
  * @returns A function that takes an unknown type and returns a boolean.
+ * @example isLength([1,2]) => true
+ * @example isLength([]) => false
+ * @example isLength(null) => false
  */
-export function isLength(input?: {} | [] | string) {
+export function isLength(input?: any): boolean {
   return count(input) > 0;
 }
 
