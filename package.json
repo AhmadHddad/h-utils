@@ -4,15 +4,14 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "engines": {
     "node": ">=10"
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build",
+    "build": "tsdx build --transpileOnly",
     "test": "tsdx test",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
@@ -31,16 +30,32 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "hutils",
+  "name": "h-utils",
   "author": "AhmadHddad",
-  "module": "dist/hutils.esm.js",
+  "keywords": [
+    "utils",
+    "hUtils",
+    "h-utils",
+    "js",
+    "stringUtils",
+    "arrayUtils",
+    "Mui",
+    "AhmadHddad",
+    "Hddad",
+    "H",
+    "map",
+    "lodash"
+  ],
+  "repository": "https://github.com/AhmadHddad/h-utils",
+  "bugs": "https://github.com/AhmadHddad/h-utils/issues",
+  "module": "dist/h-utils.esm.js",
   "size-limit": [
     {
-      "path": "dist/hutils.cjs.production.min.js",
+      "path": "dist/h-utils.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/hutils.esm.js",
+      "path": "dist/h-utils.esm.js",
       "limit": "10 KB"
     }
   ],
