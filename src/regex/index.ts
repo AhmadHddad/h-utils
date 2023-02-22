@@ -1,1 +1,1 @@
-export * as regex from './regex'
+export * from './regex';

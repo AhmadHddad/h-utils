@@ -1,3 +1,4 @@
+export * from "./extensions";
 export * as regex from "./regex";
-export * as utils from './utils/index';
-export * as extensions from './extensions'
+export *  from './utils';
+

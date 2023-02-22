@@ -1,1 +1,2 @@
-export * from './HMap';
+import HMap from './HMap';
+export { HMap };
