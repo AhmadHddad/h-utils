@@ -1,15 +1,21 @@
-import { isArray, isObject, isString } from '../validation/validationUtils';
+/**
+ * @description Will return the length of the passed param wether if it was obj, array or a string.
+ * @example count([1,2,3]) => 3
+ * @example count("js") => 2
+ * @example count({a:1,b:2}) => 2
+ */
+export function count(input?: {} | [] | string): number {
+  if (!input) return 0;
 
-export function count(input?: {} | [] | string) {
-  if (isArray(input)) {
+  if (Array.isArray(input)) {
     return input.length;
   }
 
-  if (isObject(input)) {
+  if (typeof input === 'object') {
     return Object.keys(input).length;
   }
 
-  if (isString(input)) {
+  if (typeof input === 'string') {
     return (input as string).length;
   }
 
@@ -58,7 +64,8 @@ export function paramsToObject(entries: URLSearchParams) {
  */
 export function joinObjects(...args): {} {
   return args.reduce((prev, curr) => {
-    const currObj = isObject(curr) ? curr : {};
+    const currObj =
+      !!curr && !Array.isArray(curr) && typeof curr === 'object' ? curr : {};
     return { ...prev, ...currObj };
   }, {});
 }

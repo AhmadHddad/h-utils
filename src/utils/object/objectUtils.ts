@@ -174,7 +174,9 @@ export function compare2ObjectsBaseOnKeysArr(
  */
 export function includeKeys(
   object: {},
-  predicate: (key: string, value: any, object: {}) => boolean
+  predicate:
+    | string[]
+    | ((key: string | symbol, value: string, object: {}) => boolean)
 ) {
   const result = {};
 
@@ -216,7 +218,7 @@ export function includeKeys(
  */
 export function excludeKeys(
   object: {},
-  predicate: (key: string, value: any, object: {}) => boolean
+  predicate: (key: string | symbol, value: any, object: {}) => boolean
 ) {
   if (Array.isArray(predicate)) {
     const set = new Set(predicate);
