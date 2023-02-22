@@ -65,7 +65,7 @@ export function pickQueryParamFromUrl(
 
   return stringifyUrl({
     url,
-    queryParams: includeKeys(query, filter),
+    query: includeKeys(query, filter),
   });
 }
 
@@ -106,15 +106,17 @@ export function parseUrl(urlParam: string): { url: string; query: {} } {
  */
 export function stringifyUrl({
   url = '',
-  queryParams,
+  query,
 }: {
   url?: string;
-  queryParams?: {};
+  query?: {};
 }): string {
   const queryFromUrl = extractQueryFromUrl(url);
   const urlOnly = removeHashFromUrl(url).split('?')[0] || '';
 
-  const stringifiedParams = new URLSearchParams(queryParams).toString();
+  const stringifiedParams = new URLSearchParams(
+    includeKeys(query || {}, (_, val) => !!val)
+  ).toString();
 
   const hashIndex = url.indexOf('#');
   const hash = hashIndex === -1 ? '' : url.slice(hashIndex);
