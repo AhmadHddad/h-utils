@@ -1,4 +1,4 @@
-import { regex } from '../../regex';
+import { regex } from '../..';
 import { Key } from '../../types';
 import { count } from '../general/generalUtil';
 
