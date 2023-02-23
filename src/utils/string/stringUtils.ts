@@ -1,4 +1,5 @@
 import { regex } from '../..';
+import { urlRegexForLongStr } from '../../regex';
 import { Key } from '../../types';
 import {
   isNull,
@@ -351,4 +352,26 @@ export function splitOnFirst(string: string, separator: string): string[] {
     string.slice(0, separatorIndex),
     string.slice(separatorIndex + separator.length),
   ];
+}
+
+/**
+ * @description will return the hash (fragment) part of a url
+ * @example "www.example.com#link" => "#link"
+ */
+export function getHashFromString(url: string): string {
+  let hash = '';
+  const hashStart = url.indexOf('#');
+  if (hashStart !== -1) {
+    hash = url.slice(hashStart);
+  }
+
+  return hash;
+}
+
+/**
+ * @description will extract all urls from a long string and return a list of the urls.
+ * @example "Hello, visit me at www.example.com!" => ["www.example.com"]
+ */
+export function extractUrlsFromString(str: string): string[] {
+  return str.match(urlRegexForLongStr);
 }
