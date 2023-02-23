@@ -1,7 +1,104 @@
-import { httpURLRegex, urlRegexForLongStr } from '../../regex/regex';
-import { paramsToObject } from '../general/generalUtil';
+import { httpURLRegex } from '../../regex/regex';
 import { includeKeys } from '../object/objectUtils';
-import { isNullOrUndefined } from '../validation/validationUtils';
+import { getHashFromString, splitOnFirst } from '../string/stringUtils';
+import {
+  decode,
+  keysSorter,
+  parserForArrayFormat,
+  parseValue,
+  stringify,
+  validateArrayFormatSeparator,
+} from './routeHelpers';
+import { ParsedUrl, ParseOptions, StringifyOptions, UrlObject } from './types';
+
+export function parse(query, options) {
+  options = {
+    decode: true,
+    sort: true,
+    arrayFormat: 'none',
+    arrayFormatSeparator: ',',
+    parseNumbers: false,
+    parseBooleans: false,
+    ...options,
+  };
+
+  validateArrayFormatSeparator(options.arrayFormatSeparator);
+
+  const formatter = parserForArrayFormat(options);
+
+  // Create an object with no prototype
+  const returnValue = Object.create(null);
+
+  if (typeof query !== 'string') {
+    return returnValue;
+  }
+
+  query = query.trim().replace(/^[?#&]/, '');
+
+  if (!query) {
+    return returnValue;
+  }
+
+  for (const parameter of query.split('&')) {
+    if (parameter === '') {
+      continue;
+    }
+
+    const parameter_ = options.decode
+      ? parameter.replace(/\+/g, ' ')
+      : parameter;
+
+    let [key, value] = splitOnFirst(parameter_, '=');
+
+    if (key === undefined) {
+      key = parameter_;
+    }
+
+    // Missing `=` should be `null`:
+    // http://w3.org/TR/2012/WD-url-20120524/#collect-url-parameters
+    value =
+      value === undefined
+        ? null
+        : ['comma', 'separator', 'bracket-separator'].includes(
+            options.arrayFormat
+          )
+        ? value
+        : decode(value, options);
+    formatter(decode(key, options), value, returnValue);
+  }
+
+  for (const [key, value] of Object.entries(returnValue)) {
+    if (typeof value === 'object' && value !== null) {
+      for (const [key2, value2] of Object.entries(value)) {
+        value[key2] = parseValue(value2, options);
+      }
+    } else {
+      returnValue[key] = parseValue(value, options);
+    }
+  }
+
+  if (options.sort === false) {
+    return returnValue;
+  }
+
+  // eslint-disable-next-line unicorn/no-array-reduce
+  return (options.sort === true
+    ? Object.keys(returnValue).sort()
+    : Object.keys(returnValue).sort(options.sort)
+  ).reduce((result, key) => {
+    const value = returnValue[key];
+    if (Boolean(value) && typeof value === 'object' && !Array.isArray(value)) {
+      // Sort object keys, not values
+      result[key] = keysSorter(value);
+    } else {
+      result[key] = value;
+    }
+
+    return result;
+  }, Object.create(null));
+}
+
+const encodeFragmentIdentifier = Symbol('encodeFragmentIdentifier');
 
 /**
  * @description If the url doesn't contain http, add it to the url, otherwise return the url.
@@ -47,10 +144,6 @@ export function extractQueryFromUrl(input: string) {
   return input.slice(queryStart + 1);
 }
 
-export function extractUrlsFromString(str: string): string[] {
-  return str.match(urlRegexForLongStr);
-}
-
 /**
  * @description Pick query parameters from a URL.
  * @example pickQueryParamFromUrl('https://foo.bar?foo=1&bar=2#hello', ['foo']); => 'https://foo.bar?foo=1#hello';
@@ -62,12 +155,15 @@ export function pickQueryParamFromUrl(
     | string[]
     | ((key: string | symbol, value: string, object: {}) => boolean)
 ): string {
-  const { url, query } = parseUrl(urlOrQuery);
+  const { url, query } = parseUrl(urlOrQuery, {});
 
-  return stringifyUrl({
-    url,
-    query: includeKeys(query, filter),
-  });
+  return stringifyUrl(
+    {
+      url,
+      query: includeKeys(query, filter),
+    },
+    {}
+  );
 }
 
 /**
@@ -88,39 +184,91 @@ export function excludeQueryParamFromUrl(
 
 /**
  * @description Extract the URL and the query string as an object.
- * @example parseUrl('https://foo.bar?foo=bar') =>{url: 'https://foo.bar', query: {foo: 'bar'}}
- * @returns
- */
-export function parseUrl(urlParam: string): { url: string; query: {} } {
-  // will get only url www.youtube.com/watch?v=123 => www.youtube.com/watch
-  const url = removeHashFromUrl(urlParam).split('?')[0] || '';
-  const queryFromUrl = extractQueryFromUrl(
-    urlParam.indexOf('?') > -1 ? urlParam : `?${urlParam}`
-  );
+ * If the `parseFragmentIdentifier` option is `true`, the object will also contain a `fragmentIdentifier` property.
+ * @example
+```
+import queryString from 'query-string';
 
-  return { url, query: paramsToObject(new URLSearchParams(queryFromUrl)) };
+queryString.parseUrl('https://foo.bar?foo=bar');
+//=> {url: 'https://foo.bar', query: {foo: 'bar'}}
+
+queryString.parseUrl('https://foo.bar?foo=bar#xyz', {parseFragmentIdentifier: true});
+//=> {url: 'https://foo.bar', query: {foo: 'bar'}, fragmentIdentifier: 'xyz'}
+```
+*/
+export function parseUrl(url: string, options?: ParseOptions): ParsedUrl {
+  options = {
+    decode: true,
+    ...options,
+  };
+
+  let [url_, hash] = splitOnFirst(url, '#');
+
+  if (url_ === undefined) {
+    url_ = url;
+  }
+
+  return {
+    url: url_?.split('?')?.[0] ?? '',
+    query: parse(extractQueryFromUrl(url), options),
+    ...(options && options.parseFragmentIdentifier && hash
+      ? { fragmentIdentifier: decode(hash, options) }
+      : {}),
+  };
 }
 
 /**
  * @description Stringify an object into a URL with a query string and sorting the keys. The inverse of .parseUrl();
- * @example stringifyUrl({url: 'https://foo.bar', query: {foo: 'bar'}}) => 'https://foo.bar?foo=bar';
- */
-export function stringifyUrl({
-  url = '',
-  query,
-}: {
-  url?: string;
-  query?: {};
-}): string {
-  const queryFromUrl = extractQueryFromUrl(url);
-  const urlOnly = removeHashFromUrl(url).split('?')[0] || '';
+* @example
+```
+queryString.stringifyUrl({url: 'https://foo.bar', query: {foo: 'bar'}});
+//=> 'https://foo.bar?foo=bar'
 
-  const stringifiedParams = new URLSearchParams(
-    includeKeys(query || {}, (_, val) => !isNullOrUndefined(val))
-  ).toString();
+queryString.stringifyUrl({url: 'https://foo.bar?foo=baz', query: {foo: 'bar'}});
+//=> 'https://foo.bar?foo=bar'
 
-  const hashIndex = url.indexOf('#');
-  const hash = hashIndex === -1 ? '' : url.slice(hashIndex);
-  const andSign = queryFromUrl?.length > 0 ? '&' : '';
-  return `${urlOnly}?${stringifiedParams}${andSign}${queryFromUrl}${hash}`;
+queryString.stringifyUrl({
+	url: 'https://foo.bar',
+	query: {
+		top: 'foo'
+	},
+	fragmentIdentifier: 'bar'
+});
+//=> 'https://foo.bar?top=foo#bar'
+``` */
+export function stringifyUrl(
+  object: UrlObject,
+  options?: StringifyOptions
+): string {
+  options = {
+    encode: true,
+    strict: true,
+    //@ts-ignore
+    [encodeFragmentIdentifier]: true,
+    ...options,
+  };
+
+  const url = removeHashFromUrl(object.url).split('?')[0] || '';
+  const queryFromUrl = extractQueryFromUrl(object.url);
+
+  const query = {
+    ...parse(queryFromUrl, { sort: false }),
+    ...object.query,
+  };
+
+  let queryString = stringify(query, options);
+  if (queryString) {
+    queryString = `?${queryString}`;
+  }
+
+  let hash = getHashFromString(object.url);
+  if (object.fragmentIdentifier) {
+    const urlObjectForFragmentEncode = new URL(url);
+    urlObjectForFragmentEncode.hash = object.fragmentIdentifier;
+    hash = options[encodeFragmentIdentifier]
+      ? urlObjectForFragmentEncode.hash
+      : `#${object.fragmentIdentifier}`;
+  }
+
+  return `${url}${queryString}${hash}`;
 }
