@@ -128,3 +128,18 @@ export function isWhiteSpace(char: string): boolean {
 export function isArrayOfStrings(value: unknown): value is string[] {
   return Array.isArray(value) && value.every(item => typeof item === 'string');
 }
+
+/**
+ * @description It checks if the input is empty.
+ * @example isEmpty({}) => true;
+ * @example isEmpty([]) => true;
+ * @example isEmpty(0) => true;
+ * @example isEmpty(false) => true;
+ * @example isEmpty(true) => false;
+ * @example isEmpty("") => true;
+ * @example isEmpty("") => true;
+ * @returns A function that takes a value and returns a boolean.
+ */
+export function isEmpty(input?: [] | {} | string | number | boolean) {
+  return !isLength(input);
+}
