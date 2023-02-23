@@ -14,7 +14,7 @@ export const isEmptyObject: IsEmptyObjectProps = obj => {
 /**
  * @description It compares two objects and returns true if they are equal, false if they are not
  * @param {object[]} objects - object[]
- * @example deepCompareObjects([{a:1}, {a:1}]) => true
+ * @example deepCompareObjects({a:1}, {a:1}) => true
  * @returns A function that takes an array of objects and returns a boolean.
  */
 export const deepCompareObjects = (...objects: object[]): boolean => {
