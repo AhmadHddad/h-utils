@@ -1,5 +1,5 @@
-import { splitOnFirst } from "../string/stringUtils";
-import { isNullOrUndefined } from "../validation/validationUtils";
+import splitOnFirst from "../string/splitOnFirst";
+import isNullOrUndefined from "../validation/isNullOrUndefined";
 
 export function parseValue(value, options) {
   if (
@@ -455,3 +455,6 @@ export function parse(query, options) {
 		return result;
 	}, Object.create(null));
 }
+
+
+export const encodeFragmentIdentifier = Symbol('encodeFragmentIdentifier');

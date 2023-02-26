@@ -1,10 +1,10 @@
-import { classNames } from './styleTypes';
+import { classNames as classNamesType } from './styleTypes';
 
 /**
  * @description It takes any number of arguments, and returns a string of all the arguments that are truthy,
  * separated by spaces.
  */
-export function classNames(...args: classNames.ArgumentArray): string {
+export default function classNames(...args: classNamesType.ArgumentArray): string {
   const classes = [];
   const hasOwn = {}.hasOwnProperty;
 

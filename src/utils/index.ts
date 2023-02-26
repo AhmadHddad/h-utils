@@ -1,17 +1,80 @@
-export * as arrayUtils from './array/arrayUtils';
-export * as stringUtils from './string/stringUtils';
-export * as generalUtil from './general/generalUtil';
-export * as routeUtils from './route/routeUtils';
-export * as numberUtils from './number/numberUtils';
-export * as objectUtils from './object/objectUtils';
-export * as validationUtils from './validation/validationUtils';
+export { default as arrayRange } from './array/arrayRange';
+export { default as sortArr } from './array/sortArr';
+export { default as sortByMultiProperties } from './array/sortByMultiProperties';
 
+export { default as conditionalReturn } from './general/conditionalReturn';
+export { default as count } from './general/count';
+export { default as debounce } from './general/debounce';
+export { default as debouncePromise } from './general/debouncePromise';
+export { default as throttle } from './general/throttle';
+export { default as toArray } from './general/toArray';
+export { default as generateGuid } from './general/generateGuid';
+export { default as paramsToObject } from './general/paramsToObject';
 
-export *  from './array/arrayUtils';
-export *  from './string/stringUtils';
-export *  from './general/generalUtil';
-export *  from './route/routeUtils';
-export *  from './number/numberUtils';
-export *  from './object/objectUtils';
-export *  from './validation/validationUtils';
+export { default as getBase64FromFile } from './file/getBase64FromFile';
 
+export { default as getAverage } from './number/getAverage';
+export { default as getSum } from './number/getSum';
+export { default as multiplyAll } from './number/multiplyAll';
+
+export { default as addAndOrConjunctionsToStrArray } from './string/addAndOrConjunctionsToStrArray';
+export { default as breakStrAfterNChar } from './string/breakStrAfterNChar';
+export { default as extractUrlsFromString } from './string/extractUrlsFromString';
+export { default as getAsciiCodeForChar } from './string/getAsciiCodeForChar';
+export { default as getAsciiSumFromString } from './string/getAsciiSumFromString';
+export { default as getFileExtensionFromString } from './string/getFileExtensionFromString';
+export { default as getFirstNLetters } from './string/getFirstNLetters';
+export { default as getHashFromString } from './string/getHashFromString';
+export { default as getNameInitials } from './string/getNameInitials';
+export { default as getNumberFromString } from './string/getNumberFromString';
+export { default as hashString } from './string/hashString';
+export { default as mapStringToColorFromArr } from './string/mapStringToColorFromArr';
+export { default as nFormatter } from './string/nFormatter';
+export { default as navigateObjWithString } from './string/navigateObjWithString';
+export { default as parseDate } from './string/parseDate';
+export { default as parseJwt } from './string/parseJwt';
+export { default as parseNumber } from './string/parseNumber';
+export { default as parseString } from './string/parseString';
+export { default as splitOnFirst } from './string/splitOnFirst';
+export { default as splitUpperCase } from './string/splitUpperCase';
+export { default as stringToHexColor } from './string/stringToHexColor';
+export { default as stringToHslColor } from './string/stringToHslColor';
+
+export { default as compare2ObjectsBaseOnKeysArr } from './object/compare2ObjectsBaseOnKeysArr';
+export { default as deepCompareObjects } from './object/deepCompareObjects';
+export { default as excludeKeys } from './object/excludeKeys';
+export { default as filterObj } from './object/filterObj';
+export { default as includeKeys } from './object/includeKeys';
+export { default as joinObjects } from './object/joinObjects';
+
+export { default as addHttpToURL } from './route/addHttpToURL';
+export { default as excludeQueryParamFromUrl } from './route/excludeQueryParamFromUrl';
+export { default as extractQueryFromUrl } from './route/extractQueryFromUrl';
+export { default as parse } from './route/parse';
+export { default as parseUrl } from './route/parseUrl';
+export { default as pickQueryParamFromUrl } from './route/pickQueryParamFromUrl';
+export { default as removeHashFromUrl } from './route/removeHashFromUrl';
+export { default as stringifyUrl } from './route/stringifyUrl';
+
+export { default as classNames } from './style/classNames';
+
+export { default as isArray } from './validation/isArray';
+export { default as isArrayOfStrings } from './validation/isArrayOfStrings';
+export { default as isBiggerThan } from './validation/isBiggerThan';
+export { default as isDateType } from './validation/isDateType';
+export { default as isEmail } from './validation/isEmail';
+export { default as isEmpty } from './validation/isEmpty';
+export { default as isFunction } from './validation/isFunction';
+export { default as isLength } from './validation/isLength';
+export { default as isNull } from './validation/isNull';
+export { default as isNullOrEmptyString } from './validation/isNullOrEmptyString';
+export { default as isNullOrUndefined } from './validation/isNullOrUndefined';
+export { default as isBoolean } from './validation/isBoolean';
+export { default as isNumber } from './validation/isNumber';
+export { default as isObject } from './validation/isObject';
+export { default as isSmallerThan } from './validation/isSmallerThan';
+export { default as isString } from './validation/isString';
+export { default as isTruthy } from './validation/isTruthy';
+export { default as isURL } from './validation/isURL';
+export { default as isUndefined } from './validation/isUndefined';
+export { default as isWhiteSpace } from './validation/isWhiteSpace';

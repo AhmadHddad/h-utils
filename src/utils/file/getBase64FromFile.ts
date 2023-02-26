@@ -3,7 +3,7 @@
  * @example getBase64FromFile(new File([""], "filename")) => "data:application/octet-stream;base64,"
  * @param {File} file
  */
-export function getBase64FromFile(file: File): Promise<ArrayBuffer | string> {
+export default function getBase64FromFile(file: File): Promise<ArrayBuffer | string> {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
     reader.onload = () => resolve(reader.result);
