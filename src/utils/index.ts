@@ -1,22 +1,31 @@
+// Array utils
 export { default as arrayRange } from './array/arrayRange';
 export { default as sortArr } from './array/sortArr';
 export { default as sortByMultiProperties } from './array/sortByMultiProperties';
 
+// Function utils
+export { default as debounce } from './functions/debounce';
+export { default as debouncePromise } from './functions/debouncePromise';
+export { default as throttle } from './functions/throttle';
+export { default as delay } from './functions/delay';
+export { default as memoize } from './functions/memoize';
+
+// General utils
 export { default as conditionalReturn } from './general/conditionalReturn';
 export { default as count } from './general/count';
-export { default as debounce } from './general/debounce';
-export { default as debouncePromise } from './general/debouncePromise';
-export { default as throttle } from './general/throttle';
 export { default as toArray } from './general/toArray';
 export { default as generateGuid } from './general/generateGuid';
 export { default as paramsToObject } from './general/paramsToObject';
 
+// File utils
 export { default as getBase64FromFile } from './file/getBase64FromFile';
 
+// Number utils
 export { default as getAverage } from './number/getAverage';
 export { default as getSum } from './number/getSum';
 export { default as multiplyAll } from './number/multiplyAll';
 
+// String utils
 export { default as addAndOrConjunctionsToStrArray } from './string/addAndOrConjunctionsToStrArray';
 export { default as breakStrAfterNChar } from './string/breakStrAfterNChar';
 export { default as extractUrlsFromString } from './string/extractUrlsFromString';
@@ -40,13 +49,16 @@ export { default as splitUpperCase } from './string/splitUpperCase';
 export { default as stringToHexColor } from './string/stringToHexColor';
 export { default as stringToHslColor } from './string/stringToHslColor';
 
+// Object utils
 export { default as compare2ObjectsBaseOnKeysArr } from './object/compare2ObjectsBaseOnKeysArr';
 export { default as deepCompareObjects } from './object/deepCompareObjects';
 export { default as excludeKeys } from './object/excludeKeys';
 export { default as filterObj } from './object/filterObj';
 export { default as includeKeys } from './object/includeKeys';
+export { default as has } from './object/has';
 export { default as joinObjects } from './object/joinObjects';
 
+// Route utils
 export { default as addHttpToURL } from './route/addHttpToURL';
 export { default as excludeQueryParamFromUrl } from './route/excludeQueryParamFromUrl';
 export { default as extractQueryFromUrl } from './route/extractQueryFromUrl';
@@ -56,8 +68,10 @@ export { default as pickQueryParamFromUrl } from './route/pickQueryParamFromUrl'
 export { default as removeHashFromUrl } from './route/removeHashFromUrl';
 export { default as stringifyUrl } from './route/stringifyUrl';
 
+// Style utils
 export { default as classNames } from './style/classNames';
 
+// Validation utils
 export { default as isArray } from './validation/isArray';
 export { default as isArrayOfStrings } from './validation/isArrayOfStrings';
 export { default as isBiggerThan } from './validation/isBiggerThan';
