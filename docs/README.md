@@ -9,3 +9,6 @@ A handy utils for modern developers, it includes:
 4. Route utils.
 5. Number utils.
 6. Styling utils.
+
+## Check the docs
+[Docs](https://github.com/AhmadHddad/h-utils/tree/main/docs)

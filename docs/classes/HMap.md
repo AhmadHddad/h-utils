@@ -1,8 +1,6 @@
-[hd-utils](../README.md) / [Exports](../modules.md) / [index](../modules/index.md) / HMap
+[hd-utils](../README.md) / [Exports](../modules.md) / HMap
 
 # Class: HMap<K, V\>
-
-[index](../modules/index.md).HMap
 
 ## Type parameters
 
@@ -21,34 +19,34 @@
 
 ### Constructors
 
-- [constructor](index.HMap.md#constructor)
+- [constructor](HMap.md#constructor)
 
 ### Properties
 
-- [[toStringTag]](index.HMap.md#[tostringtag])
-- [size](index.HMap.md#size)
-- [[species]](index.HMap.md#[species])
+- [[toStringTag]](HMap.md#[tostringtag])
+- [size](HMap.md#size)
+- [[species]](HMap.md#[species])
 
 ### Methods
 
-- [[iterator]](index.HMap.md#[iterator])
-- [all](index.HMap.md#all)
-- [any](index.HMap.md#any)
-- [clear](index.HMap.md#clear)
-- [delete](index.HMap.md#delete)
-- [entries](index.HMap.md#entries)
-- [filter](index.HMap.md#filter)
-- [findValue](index.HMap.md#findvalue)
-- [forEach](index.HMap.md#foreach)
-- [get](index.HMap.md#get)
-- [getValuesArray](index.HMap.md#getvaluesarray)
-- [has](index.HMap.md#has)
-- [keys](index.HMap.md#keys)
-- [map](index.HMap.md#map)
-- [mapArray](index.HMap.md#maparray)
-- [set](index.HMap.md#set)
-- [values](index.HMap.md#values)
-- [from](index.HMap.md#from)
+- [[iterator]](HMap.md#[iterator])
+- [all](HMap.md#all)
+- [any](HMap.md#any)
+- [clear](HMap.md#clear)
+- [delete](HMap.md#delete)
+- [entries](HMap.md#entries)
+- [filter](HMap.md#filter)
+- [findValue](HMap.md#findvalue)
+- [forEach](HMap.md#foreach)
+- [get](HMap.md#get)
+- [getValuesArray](HMap.md#getvaluesarray)
+- [has](HMap.md#has)
+- [keys](HMap.md#keys)
+- [map](HMap.md#map)
+- [mapArray](HMap.md#maparray)
+- [set](HMap.md#set)
+- [values](HMap.md#values)
+- [from](HMap.md#from)
 
 ## Constructors
 
@@ -180,7 +178,7 @@ ___
 
 #### Defined in
 
-[src/extensions/HMap/index.ts:46](https://github.com/AhmadHddad/h-utils/blob/2264529/src/extensions/HMap/index.ts#L46)
+[src/extensions/HMap/index.ts:46](https://github.com/AhmadHddad/h-utils/blob/f34ae6c/src/extensions/HMap/index.ts#L46)
 
 ___
 
@@ -200,7 +198,7 @@ ___
 
 #### Defined in
 
-[src/extensions/HMap/index.ts:54](https://github.com/AhmadHddad/h-utils/blob/2264529/src/extensions/HMap/index.ts#L54)
+[src/extensions/HMap/index.ts:54](https://github.com/AhmadHddad/h-utils/blob/f34ae6c/src/extensions/HMap/index.ts#L54)
 
 ___
 
@@ -270,7 +268,7 @@ ___
 
 ### filter
 
-▸ **filter**(`callback`): [`HMap`](index.HMap.md)<`unknown`, `unknown`\>
+▸ **filter**(`callback`): [`HMap`](HMap.md)<`unknown`, `unknown`\>
 
 #### Parameters
 
@@ -280,11 +278,11 @@ ___
 
 #### Returns
 
-[`HMap`](index.HMap.md)<`unknown`, `unknown`\>
+[`HMap`](HMap.md)<`unknown`, `unknown`\>
 
 #### Defined in
 
-[src/extensions/HMap/index.ts:6](https://github.com/AhmadHddad/h-utils/blob/2264529/src/extensions/HMap/index.ts#L6)
+[src/extensions/HMap/index.ts:6](https://github.com/AhmadHddad/h-utils/blob/f34ae6c/src/extensions/HMap/index.ts#L6)
 
 ___
 
@@ -304,7 +302,7 @@ ___
 
 #### Defined in
 
-[src/extensions/HMap/index.ts:36](https://github.com/AhmadHddad/h-utils/blob/2264529/src/extensions/HMap/index.ts#L36)
+[src/extensions/HMap/index.ts:36](https://github.com/AhmadHddad/h-utils/blob/f34ae6c/src/extensions/HMap/index.ts#L36)
 
 ___
 
@@ -373,7 +371,7 @@ ___
 
 #### Defined in
 
-[src/extensions/HMap/index.ts:16](https://github.com/AhmadHddad/h-utils/blob/2264529/src/extensions/HMap/index.ts#L16)
+[src/extensions/HMap/index.ts:16](https://github.com/AhmadHddad/h-utils/blob/f34ae6c/src/extensions/HMap/index.ts#L16)
 
 ___
 
@@ -425,7 +423,7 @@ ___
 
 ### map
 
-▸ **map**(`callback`): [`HMap`](index.HMap.md)<`unknown`, `unknown`\>
+▸ **map**(`callback`): [`HMap`](HMap.md)<`unknown`, `unknown`\>
 
 #### Parameters
 
@@ -435,11 +433,11 @@ ___
 
 #### Returns
 
-[`HMap`](index.HMap.md)<`unknown`, `unknown`\>
+[`HMap`](HMap.md)<`unknown`, `unknown`\>
 
 #### Defined in
 
-[src/extensions/HMap/index.ts:20](https://github.com/AhmadHddad/h-utils/blob/2264529/src/extensions/HMap/index.ts#L20)
+[src/extensions/HMap/index.ts:20](https://github.com/AhmadHddad/h-utils/blob/f34ae6c/src/extensions/HMap/index.ts#L20)
 
 ___
 
@@ -459,13 +457,13 @@ ___
 
 #### Defined in
 
-[src/extensions/HMap/index.ts:28](https://github.com/AhmadHddad/h-utils/blob/2264529/src/extensions/HMap/index.ts#L28)
+[src/extensions/HMap/index.ts:28](https://github.com/AhmadHddad/h-utils/blob/f34ae6c/src/extensions/HMap/index.ts#L28)
 
 ___
 
 ### set
 
-▸ **set**(`key`, `value`): [`HMap`](index.HMap.md)<`K`, `V`\>
+▸ **set**(`key`, `value`): [`HMap`](HMap.md)<`K`, `V`\>
 
 Adds a new element with a specified key and value to the Map. If an element with the same key already exists, the element will be updated.
 
@@ -478,7 +476,7 @@ Adds a new element with a specified key and value to the Map. If an element with
 
 #### Returns
 
-[`HMap`](index.HMap.md)<`K`, `V`\>
+[`HMap`](HMap.md)<`K`, `V`\>
 
 #### Inherited from
 
@@ -512,7 +510,7 @@ ___
 
 ### from
 
-▸ `Static` **from**(`obj`): [`HMap`](index.HMap.md)<`string`, `unknown`\>
+▸ `Static` **from**(`obj`): [`HMap`](HMap.md)<`string`, `unknown`\>
 
 #### Parameters
 
@@ -522,8 +520,8 @@ ___
 
 #### Returns
 
-[`HMap`](index.HMap.md)<`string`, `unknown`\>
+[`HMap`](HMap.md)<`string`, `unknown`\>
 
 #### Defined in
 
-[src/extensions/HMap/index.ts:2](https://github.com/AhmadHddad/h-utils/blob/2264529/src/extensions/HMap/index.ts#L2)
+[src/extensions/HMap/index.ts:2](https://github.com/AhmadHddad/h-utils/blob/f34ae6c/src/extensions/HMap/index.ts#L2)
