@@ -91,3 +91,4 @@ export { default as isTruthy } from './validation/isTruthy';
 export { default as isURL } from './validation/isURL';
 export { default as isUndefined } from './validation/isUndefined';
 export { default as isWhiteSpace } from './validation/isWhiteSpace';
+export { default as isBrowser } from './validation/isBrowser';
