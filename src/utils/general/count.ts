@@ -24,7 +24,7 @@ export default function count(
     }
   
     if (typeof input === 'string') {
-      if (options.trimString) input = input.trim();
+      if (options?.trimString) input = input.trim();
       return (input as string).length;
     }
   
