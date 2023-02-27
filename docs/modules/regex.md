@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[src/regex/regex.ts:5](https://github.com/AhmadHddad/h-utils/blob/f34ae6c/src/regex/regex.ts#L5)
+[src/regex/regex.ts:5](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/regex/regex.ts#L5)
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[src/regex/regex.ts:6](https://github.com/AhmadHddad/h-utils/blob/f34ae6c/src/regex/regex.ts#L6)
+[src/regex/regex.ts:6](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/regex/regex.ts#L6)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[src/regex/regex.ts:3](https://github.com/AhmadHddad/h-utils/blob/f34ae6c/src/regex/regex.ts#L3)
+[src/regex/regex.ts:3](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/regex/regex.ts#L3)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[src/regex/regex.ts:4](https://github.com/AhmadHddad/h-utils/blob/f34ae6c/src/regex/regex.ts#L4)
+[src/regex/regex.ts:4](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/regex/regex.ts#L4)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[src/regex/regex.ts:1](https://github.com/AhmadHddad/h-utils/blob/f34ae6c/src/regex/regex.ts#L1)
+[src/regex/regex.ts:1](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/regex/regex.ts#L1)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[src/regex/regex.ts:2](https://github.com/AhmadHddad/h-utils/blob/f34ae6c/src/regex/regex.ts#L2)
+[src/regex/regex.ts:2](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/regex/regex.ts#L2)
 
 ___
 
@@ -82,4 +82,4 @@ ___
 
 #### Defined in
 
-[src/regex/regex.ts:7](https://github.com/AhmadHddad/h-utils/blob/f34ae6c/src/regex/regex.ts#L7)
+[src/regex/regex.ts:7](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/regex/regex.ts#L7)

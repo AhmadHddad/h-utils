@@ -11,4 +11,4 @@ A handy utils for modern developers, it includes:
 6. Styling utils.
 
 ## Check the docs
-[Docs](https://github.com/AhmadHddad/h-utils/tree/main/docs)
+[Docs](https://github.com/AhmadHddad/h-utils/blob/main/docs/modules.md)

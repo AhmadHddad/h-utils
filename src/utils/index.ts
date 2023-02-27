@@ -53,7 +53,6 @@ export { default as stringToHslColor } from './string/stringToHslColor';
 export { default as compare2ObjectsBaseOnKeysArr } from './object/compare2ObjectsBaseOnKeysArr';
 export { default as deepCompareObjects } from './object/deepCompareObjects';
 export { default as excludeKeys } from './object/excludeKeys';
-export { default as filterObj } from './object/filterObj';
 export { default as includeKeys } from './object/includeKeys';
 export { default as has } from './object/has';
 export { default as joinObjects } from './object/joinObjects';
