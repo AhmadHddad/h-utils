@@ -12,17 +12,28 @@
 
 - [HMap](classes/HMap.md)
 
-### Functions
+### Function Functions
+
+- [debounce](modules.md#debounce)
+- [throttle](modules.md#throttle)
+
+### Lang Functions
+
+- [isObjectLike](modules.md#isobjectlike)
+
+### Other Functions
 
 - [addAndOrConjunctionsToStrArray](modules.md#addandorconjunctionstostrarray)
 - [addHttpToURL](modules.md#addhttptourl)
 - [arrayRange](modules.md#arrayrange)
+- [attempt](modules.md#attempt)
+- [attemptAsync](modules.md#attemptasync)
 - [breakStrAfterNChar](modules.md#breakstrafternchar)
+- [capitalize](modules.md#capitalize)
 - [classNames](modules.md#classnames)
 - [compare2ObjectsBaseOnKeysArr](modules.md#compare2objectsbaseonkeysarr)
 - [conditionalReturn](modules.md#conditionalreturn)
 - [count](modules.md#count)
-- [debounce](modules.md#debounce)
 - [debouncePromise](modules.md#debouncepromise)
 - [deepCompareObjects](modules.md#deepcompareobjects)
 - [delay](modules.md#delay)
@@ -37,9 +48,11 @@
 - [getBase64FromFile](modules.md#getbase64fromfile)
 - [getFileExtensionFromString](modules.md#getfileextensionfromstring)
 - [getFirstNLetters](modules.md#getfirstnletters)
+- [getGlobalThis](modules.md#getglobalthis)
 - [getHashFromString](modules.md#gethashfromstring)
 - [getNameInitials](modules.md#getnameinitials)
 - [getNumberFromString](modules.md#getnumberfromstring)
+- [getSmallestArrInObj](modules.md#getsmallestarrinobj)
 - [getSum](modules.md#getsum)
 - [has](modules.md#has)
 - [hashString](modules.md#hashstring)
@@ -48,6 +61,7 @@
 - [isArrayOfStrings](modules.md#isarrayofstrings)
 - [isBiggerThan](modules.md#isbiggerthan)
 - [isBoolean](modules.md#isboolean)
+- [isBrowser](modules.md#isbrowser)
 - [isDateType](modules.md#isdatetype)
 - [isEmail](modules.md#isemail)
 - [isEmpty](modules.md#isempty)
@@ -86,10 +100,241 @@
 - [stringToHexColor](modules.md#stringtohexcolor)
 - [stringToHslColor](modules.md#stringtohslcolor)
 - [stringifyUrl](modules.md#stringifyurl)
-- [throttle](modules.md#throttle)
+- [throttlePromise](modules.md#throttlepromise)
 - [toArray](modules.md#toarray)
 
-## Functions
+## Function Functions
+
+### debounce
+
+▸ **debounce**<`T`\>(`func`, `wait?`, `options?`): (...`args`: `any`[]) => `any`
+
+Creates a debounced function that delays invoking `func` until after `wait`
+milliseconds have elapsed since the last time the debounced function was
+invoked, or until the next browser frame is drawn. The debounced function
+comes with a `cancel` method to cancel delayed `func` invocations and a
+`flush` method to immediately invoke them. Provide `options` to indicate
+whether `func` should be invoked on the leading and/or trailing edge of the
+`wait` timeout. The `func` is invoked with the last arguments provided to the
+debounced function. Subsequent calls to the debounced function return the
+result of the last `func` invocation.
+
+**Note:** If `leading` and `trailing` options are `true`, `func` is
+invoked on the trailing edge of the timeout only if the debounced function
+is invoked more than once during the `wait` timeout.
+
+If `wait` is `0` and `leading` is `false`, `func` invocation is deferred
+until the next tick, similar to `setTimeout` with a timeout of `0`.
+
+If `wait` is omitted in an environment with `requestAnimationFrame`, `func`
+invocation will be deferred until the next frame is drawn (typically about
+16ms).
+
+See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
+for details over the differences between `debounce` and `throttle`.
+
+**`Since`**
+
+0.1.0
+
+**`Example`**
+
+// Avoid costly calculations while the window size is in flux.
+jQuery(window).on('resize', debounce(calculateLayout, 150))
+
+// Invoke `sendMail` when clicked, debouncing subsequent calls.
+jQuery(element).on('click', debounce(sendMail, 300, {
+  'leading': true,
+  'trailing': false
+}))
+
+// Ensure `batchLog` is invoked once after 1 second of debounced calls.
+const debounced = debounce(batchLog, 250, { 'maxWait': 1000 })
+const source = new EventSource('/stream')
+jQuery(source).on('message', debounced)
+
+// Cancel the trailing debounced invocation.
+jQuery(window).on('popstate', debounced.cancel)
+
+// Check for pending invocations.
+const status = debounced.pending() ? "Pending..." : "Ready"
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `any` |
+
+#### Parameters
+
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `func` | (...`args`: `any`[]) => `T` | `undefined` | The function to debounce. |
+| `wait?` | `number` | `200` | The number of milliseconds to delay; if omitted, `requestAnimationFrame` is used (if available). |
+| `options?` | `Object` | `undefined` | The options object. |
+| `options.leading` | `boolean` | `undefined` | Specify invoking on the leading edge of the timeout. |
+| `options.maxWait` | `number` | `undefined` | The maximum time `func` is allowed to be delayed before it's invoked. |
+| `options.trailing` | `boolean` | `undefined` | Specify invoking on the trailing edge of the timeout. |
+
+#### Returns
+
+`fn`
+
+Returns the new debounced function.
+
+▸ (`...args`): `any`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `...args` | `any`[] |
+
+##### Returns
+
+`any`
+
+| Name | Type |
+| :------ | :------ |
+| `cancel` | () => `void` |
+| `flush` | () => `any` |
+| `pending` | () => `boolean` |
+
+#### Defined in
+
+[src/utils/functions/debounce.ts:65](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/functions/debounce.ts#L65)
+
+___
+
+### throttle
+
+▸ **throttle**(`func`, `wait?`, `options?`): (...`args`: `any`[]) => `any`
+
+Creates a throttled function that only invokes `func` at most once per
+every `wait` milliseconds (or once per browser frame). The throttled function
+comes with a `cancel` method to cancel delayed `func` invocations and a
+`flush` method to immediately invoke them. Provide `options` to indicate
+whether `func` should be invoked on the leading and/or trailing edge of the
+`wait` timeout. The `func` is invoked with the last arguments provided to the
+throttled function. Subsequent calls to the throttled function return the
+result of the last `func` invocation.
+
+**Note:** If `leading` and `trailing` options are `true`, `func` is
+invoked on the trailing edge of the timeout only if the throttled function
+is invoked more than once during the `wait` timeout.
+
+If `wait` is `0` and `leading` is `false`, `func` invocation is deferred
+until the next tick, similar to `setTimeout` with a timeout of `0`.
+
+If `wait` is omitted in an environment with `requestAnimationFrame`, `func`
+invocation will be deferred until the next frame is drawn (typically about
+16ms).
+
+See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
+for details over the differences between `throttle` and `debounce`.
+
+**`Since`**
+
+0.1.0
+
+**`Example`**
+
+// Avoid excessively updating the position while scrolling.
+jQuery(window).on('scroll', throttle(updatePosition, 100))
+
+ Invoke `renewToken` when the click event is fired, but not more than once every 5 minutes.
+const throttled = throttle(renewToken, 300000, { 'trailing': false })
+jQuery(element).on('click', throttled)
+
+// Cancel the trailing throttled invocation.
+jQuery(window).on('popstate', throttled.cancel)
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `func` | `any` | The function to throttle. |
+| `wait?` | `any` | The number of milliseconds to throttle invocations to; if omitted, `requestAnimationFrame` is used (if available). |
+| `options?` | `any` | The options object. |
+
+#### Returns
+
+`fn`
+
+Returns the new throttled function.
+
+▸ (`...args`): `any`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `...args` | `any`[] |
+
+##### Returns
+
+`any`
+
+| Name | Type |
+| :------ | :------ |
+| `cancel` | () => `void` |
+| `flush` | () => `any` |
+| `pending` | () => `boolean` |
+
+#### Defined in
+
+[src/utils/functions/throttle.ts:52](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/functions/throttle.ts#L52)
+
+___
+
+## Lang Functions
+
+### isObjectLike
+
+▸ **isObjectLike**(`value`): `boolean`
+
+Checks if `value` is object-like. A value is object-like if it's not `null`
+and has a `typeof` result of "object".
+
+**`Since`**
+
+4.0.0
+
+**`Example`**
+
+```ts
+isObjectLike({})
+ => true
+
+isObjectLike([1, 2, 3])
+ => true
+
+isObjectLike(Function)
+ => false
+
+isObjectLike(null)
+ => false
+```
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `any` | The value to check. |
+
+#### Returns
+
+`boolean`
+
+Returns `true` if `value` is object-like, else `false`.
+
+#### Defined in
+
+[src/utils/validation/isObjectLike.ts:23](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/validation/isObjectLike.ts#L23)
+
+___
+
+## Other Functions
 
 ### addAndOrConjunctionsToStrArray
 
@@ -131,7 +376,7 @@ A string
 
 #### Defined in
 
-[src/utils/string/addAndOrConjunctionsToStrArray.ts:10](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/string/addAndOrConjunctionsToStrArray.ts#L10)
+[src/utils/string/addAndOrConjunctionsToStrArray.ts:10](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/string/addAndOrConjunctionsToStrArray.ts#L10)
 
 ___
 
@@ -168,7 +413,7 @@ addHttpToURL("www.google.com", true) => "https://www.google.com"
 
 #### Defined in
 
-[src/utils/route/addHttpToURL.ts:11](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/route/addHttpToURL.ts#L11)
+[src/utils/route/addHttpToURL.ts:11](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/route/addHttpToURL.ts#L11)
 
 ___
 
@@ -208,7 +453,87 @@ An array of strings.
 
 #### Defined in
 
-[src/utils/array/arrayRange.ts:12](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/array/arrayRange.ts#L12)
+[src/utils/array/arrayRange.ts:12](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/array/arrayRange.ts#L12)
+
+___
+
+### attempt
+
+▸ **attempt**<`T`\>(`func`, `options?`, `...args`): `any`
+
+**`Description`**
+
+Attempts to invoke `func`, returning either the result or will adjust to the options,
+if nothing was passed to the options, it will return nothing
+
+**`Example`**
+
+```ts
+attempt(selector =>
+  document.querySelectorAll(selector),{errorHander:(e)=> console.error(e)}, '>_>')
+```
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `any` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `func` | (...`args`: `any`[]) => `T` |
+| `options?` | `AttemptOptions` |
+| `...args` | `any`[] |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+[src/utils/functions/attempt.ts:14](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/functions/attempt.ts#L14)
+
+___
+
+### attemptAsync
+
+▸ **attemptAsync**<`T`\>(`func`, `options?`, `...args`): `Promise`<`any`\>
+
+**`Description`**
+
+Attempts to invoke `func` async, returning either the result or will adjust to the options,
+if nothing was passed to the options, it will return nothing
+
+**`Example`**
+
+```ts
+await attemptAsync(selector =>
+  document.querySelectorAll(selector),{errorHander:(e)=> console.error(e)}, '>_>')
+```
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `any` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `func` | (...`args`: `any`[]) => `T` |
+| `options?` | `AttemptOptions` |
+| `...args` | `any`[] |
+
+#### Returns
+
+`Promise`<`any`\>
+
+#### Defined in
+
+[src/utils/functions/attemptAsync.ts:10](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/functions/attemptAsync.ts#L10)
 
 ___
 
@@ -239,7 +564,37 @@ pt`
 
 #### Defined in
 
-[src/utils/string/breakStrAfterNChar.ts:9](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/string/breakStrAfterNChar.ts#L9)
+[src/utils/string/breakStrAfterNChar.ts:9](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/string/breakStrAfterNChar.ts#L9)
+
+___
+
+### capitalize
+
+▸ **capitalize**(`str`): `string`
+
+**`Description`**
+
+will return the passed string with the first character capitalized.
+
+**`Example`**
+
+```ts
+capitalize("javascript") => "Javascript"
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `str` | `string` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+[src/utils/string/capitalize.ts:8](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/string/capitalize.ts#L8)
 
 ___
 
@@ -264,7 +619,7 @@ separated by spaces.
 
 #### Defined in
 
-[src/utils/style/classNames.ts:7](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/style/classNames.ts#L7)
+[src/utils/style/classNames.ts:7](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/style/classNames.ts#L7)
 
 ___
 
@@ -290,7 +645,7 @@ It compares two objects based on the keys array passed to it.
 
 #### Defined in
 
-[src/utils/object/compare2ObjectsBaseOnKeysArr.ts:9](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/object/compare2ObjectsBaseOnKeysArr.ts#L9)
+[src/utils/object/compare2ObjectsBaseOnKeysArr.ts:9](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/object/compare2ObjectsBaseOnKeysArr.ts#L9)
 
 ___
 
@@ -320,7 +675,7 @@ conditionalReturn([].length > 0, "has items") => if true will return "has items"
 
 #### Defined in
 
-[src/utils/general/conditionalReturn.ts:8](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/general/conditionalReturn.ts#L8)
+[src/utils/general/conditionalReturn.ts:8](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/general/conditionalReturn.ts#L8)
 
 ___
 
@@ -394,46 +749,7 @@ count({a:1,b:2}) => 2
 
 #### Defined in
 
-[src/utils/general/count.ts:12](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/general/count.ts#L12)
-
-___
-
-### debounce
-
-▸ **debounce**<`T`\>(`cb`, `wait?`): `T`
-
-**`Description`**
-
-It takes a function and returns a new function that will call the original function after a delay.
-
-**`Example`**
-
-```ts
-let f = debounce((a: string, b: number, c?: number) => console.log(a.length + b + c || 0));
-```
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | extends `Function` |
-
-#### Parameters
-
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `cb` | `T` | `undefined` | The callback function to be debounced. |
-| `wait?` | `number` | `20` | The amount of time to wait before calling the callback. |
-
-#### Returns
-
-`T`
-
-A function that is a copy of the function passed in, but with a debounce wrapper.
-
-#### Defined in
-
-[src/utils/functions/debounce.ts:8](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/functions/debounce.ts#L8)
+[src/utils/general/count.ts:12](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/general/count.ts#L12)
 
 ___
 
@@ -473,7 +789,7 @@ ___
 
 #### Defined in
 
-[src/utils/functions/debouncePromise.ts:3](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/functions/debouncePromise.ts#L3)
+[src/utils/functions/debouncePromise.ts:3](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/functions/debouncePromise.ts#L3)
 
 ___
 
@@ -505,7 +821,7 @@ A function that takes an array of objects and returns a boolean.
 
 #### Defined in
 
-[src/utils/object/deepCompareObjects.ts:7](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/object/deepCompareObjects.ts#L7)
+[src/utils/object/deepCompareObjects.ts:7](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/object/deepCompareObjects.ts#L7)
 
 ___
 
@@ -537,7 +853,7 @@ Delays a function for the given number of milliseconds, and then calls it with t
 
 #### Defined in
 
-[src/utils/functions/delay.ts:4](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/functions/delay.ts#L4)
+[src/utils/functions/delay.ts:4](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/functions/delay.ts#L4)
 
 ___
 
@@ -573,7 +889,7 @@ excludeKeys({
 
 #### Defined in
 
-[src/utils/object/excludeKeys.ts:16](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/object/excludeKeys.ts#L16)
+[src/utils/object/excludeKeys.ts:16](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/object/excludeKeys.ts#L16)
 
 ___
 
@@ -610,7 +926,7 @@ excludeQueryParamFromUrl('https://foo.bar?foo=1&bar=2#hello', (name, value) => v
 
 #### Defined in
 
-[src/utils/route/excludeQueryParamFromUrl.ts:8](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/route/excludeQueryParamFromUrl.ts#L8)
+[src/utils/route/excludeQueryParamFromUrl.ts:8](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/route/excludeQueryParamFromUrl.ts#L8)
 
 ___
 
@@ -642,7 +958,7 @@ The query string from the URL.
 
 #### Defined in
 
-[src/utils/route/extractQueryFromUrl.ts:9](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/route/extractQueryFromUrl.ts#L9)
+[src/utils/route/extractQueryFromUrl.ts:9](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/route/extractQueryFromUrl.ts#L9)
 
 ___
 
@@ -672,7 +988,7 @@ will extract all urls from a long string and return a list of the urls.
 
 #### Defined in
 
-[src/utils/string/extractUrlsFromString.ts:7](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/string/extractUrlsFromString.ts#L7)
+[src/utils/string/extractUrlsFromString.ts:7](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/string/extractUrlsFromString.ts#L7)
 
 ___
 
@@ -696,7 +1012,7 @@ generateGuid() => "741baba3-1efc-b52e-5d9c-75b1fc80395a"
 
 #### Defined in
 
-[src/utils/general/generateGuid.ts:6](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/general/generateGuid.ts#L6)
+[src/utils/general/generateGuid.ts:6](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/general/generateGuid.ts#L6)
 
 ___
 
@@ -722,7 +1038,7 @@ The ASCII code for the character.
 
 #### Defined in
 
-[src/utils/string/getAsciiCodeForChar.ts:6](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/string/getAsciiCodeForChar.ts#L6)
+[src/utils/string/getAsciiCodeForChar.ts:6](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/string/getAsciiCodeForChar.ts#L6)
 
 ___
 
@@ -749,7 +1065,7 @@ The sum of the ASCII codes for each character in the string.
 
 #### Defined in
 
-[src/utils/string/getAsciiSumFromString.ts:9](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/string/getAsciiSumFromString.ts#L9)
+[src/utils/string/getAsciiSumFromString.ts:9](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/string/getAsciiSumFromString.ts#L9)
 
 ___
 
@@ -775,7 +1091,7 @@ The sum of the arguments divided by the number of arguments.
 
 #### Defined in
 
-[src/utils/number/getAverage.ts:8](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/number/getAverage.ts#L8)
+[src/utils/number/getAverage.ts:8](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/number/getAverage.ts#L8)
 
 ___
 
@@ -801,7 +1117,7 @@ getBase64FromFile(new File([""], "filename")) => "data:application/octet-stream;
 
 #### Defined in
 
-[src/utils/file/getBase64FromFile.ts:6](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/file/getBase64FromFile.ts#L6)
+[src/utils/file/getBase64FromFile.ts:6](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/file/getBase64FromFile.ts#L6)
 
 ___
 
@@ -833,7 +1149,7 @@ The file extension of the string.
 
 #### Defined in
 
-[src/utils/string/getFileExtensionFromString.ts:7](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/string/getFileExtensionFromString.ts#L7)
+[src/utils/string/getFileExtensionFromString.ts:7](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/string/getFileExtensionFromString.ts#L7)
 
 ___
 
@@ -864,7 +1180,25 @@ getFirstNLetters('javascript', 3) => jav
 
 #### Defined in
 
-[src/utils/string/getFirstNLetters.ts:8](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/string/getFirstNLetters.ts#L8)
+[src/utils/string/getFirstNLetters.ts:8](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/string/getFirstNLetters.ts#L8)
+
+___
+
+### getGlobalThis
+
+▸ **getGlobalThis**(): typeof `globalThis`
+
+**`Description`**
+
+will return the globalThis according to the runtime environment
+
+#### Returns
+
+typeof `globalThis`
+
+#### Defined in
+
+[src/utils/general/getGlobalThis.ts:5](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/general/getGlobalThis.ts#L5)
 
 ___
 
@@ -894,7 +1228,7 @@ will return the hash (fragment) part of a url
 
 #### Defined in
 
-[src/utils/string/getHashFromString.ts:5](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/string/getHashFromString.ts#L5)
+[src/utils/string/getHashFromString.ts:5](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/string/getHashFromString.ts#L5)
 
 ___
 
@@ -931,7 +1265,7 @@ JavaScript => JS
 
 #### Defined in
 
-[src/utils/string/getNameInitials.ts:12](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/string/getNameInitials.ts#L12)
+[src/utils/string/getNameInitials.ts:12](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/string/getNameInitials.ts#L12)
 
 ___
 
@@ -974,7 +1308,37 @@ getNumberFromString("string") => infinity;
 
 #### Defined in
 
-[src/utils/string/getNumberFromString.ts:12](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/string/getNumberFromString.ts#L12)
+[src/utils/string/getNumberFromString.ts:12](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/string/getNumberFromString.ts#L12)
+
+___
+
+### getSmallestArrInObj
+
+▸ **getSmallestArrInObj**(`obj`): `Object`
+
+**`Description`**
+
+will return the smallest array in record or object
+
+**`Example`**
+
+```ts
+getSmallestArrInObj({a:[1,2,3], b:[1,2,3,4,5]}) => {a:[1,2,3]}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `obj` | {} \| `Record`<`string`, `any`[]\> |
+
+#### Returns
+
+`Object`
+
+#### Defined in
+
+[src/utils/object/getSmallestArrInObj.ts:6](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/object/getSmallestArrInObj.ts#L6)
 
 ___
 
@@ -998,7 +1362,7 @@ The sum function takes a variable number of arguments, and returns the sum of al
 
 #### Defined in
 
-[src/utils/number/getSum.ts:5](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/number/getSum.ts#L5)
+[src/utils/number/getSum.ts:5](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/number/getSum.ts#L5)
 
 ___
 
@@ -1029,7 +1393,7 @@ has({a:1, b:2}, ["a"]) => true
 
 #### Defined in
 
-[src/utils/object/has.ts:6](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/object/has.ts#L6)
+[src/utils/object/has.ts:6](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/object/has.ts#L6)
 
 ___
 
@@ -1055,7 +1419,7 @@ The sum of the ASCII values of the characters in the string.
 
 #### Defined in
 
-[src/utils/string/hashString.ts:8](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/string/hashString.ts#L8)
+[src/utils/string/hashString.ts:8](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/string/hashString.ts#L8)
 
 ___
 
@@ -1096,7 +1460,7 @@ values filtered by the predicate.
 
 #### Defined in
 
-[src/utils/object/includeKeys.ts:17](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/object/includeKeys.ts#L17)
+[src/utils/object/includeKeys.ts:17](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/object/includeKeys.ts#L17)
 
 ___
 
@@ -1121,7 +1485,7 @@ value is []
 
 #### Defined in
 
-[src/utils/validation/isArray.ts:6](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/validation/isArray.ts#L6)
+[src/utils/validation/isArray.ts:6](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/validation/isArray.ts#L6)
 
 ___
 
@@ -1147,7 +1511,7 @@ A function that takes a value and returns a boolean.
 
 #### Defined in
 
-[src/utils/validation/isArrayOfStrings.ts:6](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/validation/isArrayOfStrings.ts#L6)
+[src/utils/validation/isArrayOfStrings.ts:6](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/validation/isArrayOfStrings.ts#L6)
 
 ___
 
@@ -1179,7 +1543,7 @@ otherwise it returns false.
 
 #### Defined in
 
-[src/utils/validation/isBiggerThan.ts:8](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/validation/isBiggerThan.ts#L8)
+[src/utils/validation/isBiggerThan.ts:8](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/validation/isBiggerThan.ts#L8)
 
 ___
 
@@ -1199,7 +1563,25 @@ ___
 
 #### Defined in
 
-[src/utils/validation/isBoolean.ts:1](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/validation/isBoolean.ts#L1)
+[src/utils/validation/isBoolean.ts:1](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/validation/isBoolean.ts#L1)
+
+___
+
+### isBrowser
+
+▸ **isBrowser**(): `boolean`
+
+**`Description`**
+
+Return true if the current environment is running on browser.
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+[src/utils/validation/isBrowser.ts:4](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/validation/isBrowser.ts#L4)
 
 ___
 
@@ -1223,7 +1605,7 @@ value is Date
 
 #### Defined in
 
-[src/utils/validation/isDateType.ts:5](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/validation/isDateType.ts#L5)
+[src/utils/validation/isDateType.ts:5](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/validation/isDateType.ts#L5)
 
 ___
 
@@ -1243,7 +1625,7 @@ ___
 
 #### Defined in
 
-[src/utils/validation/isEmail.ts:4](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/validation/isEmail.ts#L4)
+[src/utils/validation/isEmail.ts:4](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/validation/isEmail.ts#L4)
 
 ___
 
@@ -1311,7 +1693,7 @@ A function that takes a value and returns a boolean.
 
 #### Defined in
 
-[src/utils/validation/isEmpty.ts:14](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/validation/isEmpty.ts#L14)
+[src/utils/validation/isEmpty.ts:14](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/validation/isEmpty.ts#L14)
 
 ___
 
@@ -1335,7 +1717,7 @@ value is Function
 
 #### Defined in
 
-[src/utils/validation/isFunction.ts:5](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/validation/isFunction.ts#L5)
+[src/utils/validation/isFunction.ts:5](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/validation/isFunction.ts#L5)
 
 ___
 
@@ -1379,7 +1761,7 @@ A function that takes an unknown type and returns a boolean.
 
 #### Defined in
 
-[src/utils/validation/isLength.ts:10](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/validation/isLength.ts#L10)
+[src/utils/validation/isLength.ts:10](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/validation/isLength.ts#L10)
 
 ___
 
@@ -1401,7 +1783,7 @@ val is null
 
 #### Defined in
 
-[src/utils/validation/isNull.ts:5](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/validation/isNull.ts#L5)
+[src/utils/validation/isNull.ts:5](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/validation/isNull.ts#L5)
 
 ___
 
@@ -1425,7 +1807,7 @@ It returns true if the value is null, undefined, or an empty string
 
 #### Defined in
 
-[src/utils/validation/isNullOrEmptyString.ts:8](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/validation/isNullOrEmptyString.ts#L8)
+[src/utils/validation/isNullOrEmptyString.ts:8](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/validation/isNullOrEmptyString.ts#L8)
 
 ___
 
@@ -1463,7 +1845,7 @@ boolean
 
 #### Defined in
 
-[src/utils/validation/isNullOrUndefined.ts:8](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/validation/isNullOrUndefined.ts#L8)
+[src/utils/validation/isNullOrUndefined.ts:8](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/validation/isNullOrUndefined.ts#L8)
 
 ___
 
@@ -1487,7 +1869,7 @@ value is number
 
 #### Defined in
 
-[src/utils/validation/isNumber.ts:5](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/validation/isNumber.ts#L5)
+[src/utils/validation/isNumber.ts:5](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/validation/isNumber.ts#L5)
 
 ___
 
@@ -1511,7 +1893,7 @@ val is Object
 
 #### Defined in
 
-[src/utils/validation/isObject.ts:5](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/validation/isObject.ts#L5)
+[src/utils/validation/isObject.ts:5](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/validation/isObject.ts#L5)
 
 ___
 
@@ -1532,7 +1914,7 @@ ___
 
 #### Defined in
 
-[src/utils/validation/isSmallerThan.ts:3](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/validation/isSmallerThan.ts#L3)
+[src/utils/validation/isSmallerThan.ts:3](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/validation/isSmallerThan.ts#L3)
 
 ___
 
@@ -1556,7 +1938,7 @@ value is string
 
 #### Defined in
 
-[src/utils/validation/isString.ts:5](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/validation/isString.ts#L5)
+[src/utils/validation/isString.ts:5](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/validation/isString.ts#L5)
 
 ___
 
@@ -1580,7 +1962,7 @@ value is true
 
 #### Defined in
 
-[src/utils/validation/isTruthy.ts:5](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/validation/isTruthy.ts#L5)
+[src/utils/validation/isTruthy.ts:5](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/validation/isTruthy.ts#L5)
 
 ___
 
@@ -1600,7 +1982,7 @@ ___
 
 #### Defined in
 
-[src/utils/validation/isURL.ts:4](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/validation/isURL.ts#L4)
+[src/utils/validation/isURL.ts:4](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/validation/isURL.ts#L4)
 
 ___
 
@@ -1624,7 +2006,7 @@ val is undefined
 
 #### Defined in
 
-[src/utils/validation/isUndefined.ts:5](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/validation/isUndefined.ts#L5)
+[src/utils/validation/isUndefined.ts:5](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/validation/isUndefined.ts#L5)
 
 ___
 
@@ -1648,7 +2030,7 @@ will check if the parameter is a white space;
 
 #### Defined in
 
-[src/utils/validation/isWhiteSpace.ts:7](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/validation/isWhiteSpace.ts#L7)
+[src/utils/validation/isWhiteSpace.ts:7](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/validation/isWhiteSpace.ts#L7)
 
 ___
 
@@ -1696,7 +2078,7 @@ joinObjects(({ a: 1 }, null || undefined || !object)) => { a: 1 }
 
 #### Defined in
 
-[src/utils/object/joinObjects.ts:7](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/object/joinObjects.ts#L7)
+[src/utils/object/joinObjects.ts:7](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/object/joinObjects.ts#L7)
 
 ___
 
@@ -1723,7 +2105,7 @@ A string
 
 #### Defined in
 
-[src/utils/string/mapStringToColorFromArr.ts:9](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/string/mapStringToColorFromArr.ts#L9)
+[src/utils/string/mapStringToColorFromArr.ts:9](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/string/mapStringToColorFromArr.ts#L9)
 
 ___
 
@@ -1770,7 +2152,7 @@ Memoize an expensive function by storing its results.
 
 #### Defined in
 
-[src/utils/functions/memoize.ts:4](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/functions/memoize.ts#L4)
+[src/utils/functions/memoize.ts:4](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/functions/memoize.ts#L4)
 
 ___
 
@@ -1797,7 +2179,7 @@ An array of numbers or undefined.
 
 #### Defined in
 
-[src/utils/number/multiplyAll.ts:7](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/number/multiplyAll.ts#L7)
+[src/utils/number/multiplyAll.ts:7](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/number/multiplyAll.ts#L7)
 
 ___
 
@@ -1827,7 +2209,7 @@ nFormatter(1000) => "1K"
 
 #### Defined in
 
-[src/utils/string/nFormatter.ts:5](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/string/nFormatter.ts#L5)
+[src/utils/string/nFormatter.ts:5](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/string/nFormatter.ts#L5)
 
 ___
 
@@ -1856,7 +2238,7 @@ The value of the key in the object.
 
 #### Defined in
 
-[src/utils/string/navigateObjWithString.ts:10](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/string/navigateObjWithString.ts#L10)
+[src/utils/string/navigateObjWithString.ts:10](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/string/navigateObjWithString.ts#L10)
 
 ___
 
@@ -1886,7 +2268,7 @@ paramsToObject(new URLSearchParams()) => {}
 
 #### Defined in
 
-[src/utils/general/paramsToObject.ts:6](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/general/paramsToObject.ts#L6)
+[src/utils/general/paramsToObject.ts:6](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/general/paramsToObject.ts#L6)
 
 ___
 
@@ -1907,7 +2289,7 @@ ___
 
 #### Defined in
 
-[src/utils/route/parse.ts:10](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/route/parse.ts#L10)
+[src/utils/route/parse.ts:10](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/route/parse.ts#L10)
 
 ___
 
@@ -1927,7 +2309,7 @@ ___
 
 #### Defined in
 
-[src/utils/string/parseDate.ts:2](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/string/parseDate.ts#L2)
+[src/utils/string/parseDate.ts:2](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/string/parseDate.ts#L2)
 
 ___
 
@@ -1953,7 +2335,7 @@ The JSON payload of the JWT.
 
 #### Defined in
 
-[src/utils/string/parseJwt.ts:6](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/string/parseJwt.ts#L6)
+[src/utils/string/parseJwt.ts:6](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/string/parseJwt.ts#L6)
 
 ___
 
@@ -1983,7 +2365,7 @@ A function that takes a string and returns a string with all non-digit character
 
 #### Defined in
 
-[src/utils/string/parseNumber.ts:8](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/string/parseNumber.ts#L8)
+[src/utils/string/parseNumber.ts:8](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/string/parseNumber.ts#L8)
 
 ___
 
@@ -2012,7 +2394,7 @@ if "123" will return the number 123 and so on.
 
 #### Defined in
 
-[src/utils/string/parseString.ts:8](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/string/parseString.ts#L8)
+[src/utils/string/parseString.ts:8](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/string/parseString.ts#L8)
 
 ___
 
@@ -2050,7 +2432,7 @@ queryString.parseUrl('https://foo.bar?foo=bar#xyz', {parseFragmentIdentifier: tr
 
 #### Defined in
 
-[src/utils/route/parseUrl.ts:21](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/route/parseUrl.ts#L21)
+[src/utils/route/parseUrl.ts:21](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/route/parseUrl.ts#L21)
 
 ___
 
@@ -2087,7 +2469,7 @@ pickQueryParamFromUrl('https://foo.bar?foo=1&bar=2#hello', (name, value) => valu
 
 #### Defined in
 
-[src/utils/route/pickQueryParamFromUrl.ts:10](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/route/pickQueryParamFromUrl.ts#L10)
+[src/utils/route/pickQueryParamFromUrl.ts:10](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/route/pickQueryParamFromUrl.ts#L10)
 
 ___
 
@@ -2118,7 +2500,7 @@ removeHashFromUrl("www.example.com/a#link") => "www.example.com/a"
 
 #### Defined in
 
-[src/utils/route/removeHashFromUrl.ts:6](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/route/removeHashFromUrl.ts#L6)
+[src/utils/route/removeHashFromUrl.ts:6](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/route/removeHashFromUrl.ts#L6)
 
 ___
 
@@ -2153,7 +2535,7 @@ An array of objects sorted by the property passed in.
 
 #### Defined in
 
-[src/utils/array/sortArr.ts:13](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/array/sortArr.ts#L13)
+[src/utils/array/sortArr.ts:13](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/array/sortArr.ts#L13)
 
 ___
 
@@ -2185,7 +2567,7 @@ if the property starts with "-" then it will be descending order otherwize ascen
 
 #### Defined in
 
-[src/utils/array/sortByMultiProperties.ts:7](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/array/sortByMultiProperties.ts#L7)
+[src/utils/array/sortByMultiProperties.ts:7](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/array/sortByMultiProperties.ts#L7)
 
 ___
 
@@ -2217,7 +2599,7 @@ splitOnFirst('key:value:value2', ':') => ['key', 'value:value2']
 
 #### Defined in
 
-[src/utils/string/splitOnFirst.ts:8](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/string/splitOnFirst.ts#L8)
+[src/utils/string/splitOnFirst.ts:8](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/string/splitOnFirst.ts#L8)
 
 ___
 
@@ -2250,7 +2632,7 @@ An array of strings.
 
 #### Defined in
 
-[src/utils/string/splitUpperCase.ts:10](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/string/splitUpperCase.ts#L10)
+[src/utils/string/splitUpperCase.ts:10](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/string/splitUpperCase.ts#L10)
 
 ___
 
@@ -2276,7 +2658,7 @@ A string of the form #RRGGBB.
 
 #### Defined in
 
-[src/utils/string/stringToHexColor.ts:6](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/string/stringToHexColor.ts#L6)
+[src/utils/string/stringToHexColor.ts:6](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/string/stringToHexColor.ts#L6)
 
 ___
 
@@ -2318,7 +2700,7 @@ A string of the form `hsl(0, 100%, 75%)`
 
 #### Defined in
 
-[src/utils/string/stringToHslColor.ts:22](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/string/stringToHslColor.ts#L22)
+[src/utils/string/stringToHslColor.ts:22](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/string/stringToHslColor.ts#L22)
 
 ___
 
@@ -2362,23 +2744,23 @@ queryString.stringifyUrl({
 
 #### Defined in
 
-[src/utils/route/stringifyUrl.ts:27](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/route/stringifyUrl.ts#L27)
+[src/utils/route/stringifyUrl.ts:27](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/route/stringifyUrl.ts#L27)
 
 ___
 
-### throttle
+### throttlePromise
 
-▸ **throttle**<`F`\>(`func`, `waitFor?`): (...`args`: `Parameters`<`F`\>) => `Promise`<`ReturnType`<`F`\>\>
+▸ **throttlePromise**<`F`\>(`func`, `waitFor?`): (...`args`: `Parameters`<`F`\>) => `Promise`<`ReturnType`<`F`\>\>
 
 **`Description`**
 
-it will throttle the call of the function param to wait for n seconds.
+it will throttlePromise the call of the function param to wait for n seconds.
 
 **`Example`**
 
 ```ts
 const func = (hello: string) => { console.log(new Date().getTime(), '>>>', hello) }
-const thrFunc = throttle(func, 1000)
+const thrFunc = throttlePromise(func, 1000)
 thrFunc('hello 1')
 ```
 
@@ -2413,7 +2795,7 @@ thrFunc('hello 1')
 
 #### Defined in
 
-[src/utils/functions/throttle.ts:8](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/functions/throttle.ts#L8)
+[src/utils/functions/throttlePromise.ts:9](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/functions/throttlePromise.ts#L9)
 
 ___
 
@@ -2457,4 +2839,4 @@ An array.
 
 #### Defined in
 
-[src/utils/general/toArray.ts:10](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/utils/general/toArray.ts#L10)
+[src/utils/general/toArray.ts:10](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/utils/general/toArray.ts#L10)

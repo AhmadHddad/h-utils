@@ -178,7 +178,7 @@ ___
 
 #### Defined in
 
-[src/extensions/HMap/index.ts:46](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/extensions/HMap/index.ts#L46)
+[src/extensions/HMap/index.ts:46](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/extensions/HMap/index.ts#L46)
 
 ___
 
@@ -198,7 +198,7 @@ ___
 
 #### Defined in
 
-[src/extensions/HMap/index.ts:54](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/extensions/HMap/index.ts#L54)
+[src/extensions/HMap/index.ts:54](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/extensions/HMap/index.ts#L54)
 
 ___
 
@@ -282,7 +282,7 @@ ___
 
 #### Defined in
 
-[src/extensions/HMap/index.ts:6](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/extensions/HMap/index.ts#L6)
+[src/extensions/HMap/index.ts:6](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/extensions/HMap/index.ts#L6)
 
 ___
 
@@ -302,7 +302,7 @@ ___
 
 #### Defined in
 
-[src/extensions/HMap/index.ts:36](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/extensions/HMap/index.ts#L36)
+[src/extensions/HMap/index.ts:36](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/extensions/HMap/index.ts#L36)
 
 ___
 
@@ -371,7 +371,7 @@ ___
 
 #### Defined in
 
-[src/extensions/HMap/index.ts:16](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/extensions/HMap/index.ts#L16)
+[src/extensions/HMap/index.ts:16](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/extensions/HMap/index.ts#L16)
 
 ___
 
@@ -437,7 +437,7 @@ ___
 
 #### Defined in
 
-[src/extensions/HMap/index.ts:20](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/extensions/HMap/index.ts#L20)
+[src/extensions/HMap/index.ts:20](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/extensions/HMap/index.ts#L20)
 
 ___
 
@@ -457,7 +457,7 @@ ___
 
 #### Defined in
 
-[src/extensions/HMap/index.ts:28](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/extensions/HMap/index.ts#L28)
+[src/extensions/HMap/index.ts:28](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/extensions/HMap/index.ts#L28)
 
 ___
 
@@ -524,4 +524,4 @@ ___
 
 #### Defined in
 
-[src/extensions/HMap/index.ts:2](https://github.com/AhmadHddad/h-utils/blob/55b363e/src/extensions/HMap/index.ts#L2)
+[src/extensions/HMap/index.ts:2](https://github.com/AhmadHddad/h-utils/blob/be19ab2/src/extensions/HMap/index.ts#L2)
