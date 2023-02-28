@@ -3,18 +3,22 @@ export { default as arrayRange } from './array/arrayRange';
 export { default as sortArr } from './array/sortArr';
 export { default as sortByMultiProperties } from './array/sortByMultiProperties';
 
-// Function utils
+// Function util
 export { default as debounce } from './functions/debounce';
 export { default as debouncePromise } from './functions/debouncePromise';
 export { default as throttle } from './functions/throttle';
+export { default as throttlePromise } from './functions/throttlePromise';
 export { default as delay } from './functions/delay';
 export { default as memoize } from './functions/memoize';
+export { default as attempt } from './functions/attempt';
+export { default as attemptAsync } from './functions/attemptAsync';
 
 // General utils
 export { default as conditionalReturn } from './general/conditionalReturn';
 export { default as count } from './general/count';
 export { default as toArray } from './general/toArray';
 export { default as generateGuid } from './general/generateGuid';
+export { default as getGlobalThis } from './general/getGlobalThis';
 export { default as paramsToObject } from './general/paramsToObject';
 
 // File utils
@@ -48,6 +52,7 @@ export { default as splitOnFirst } from './string/splitOnFirst';
 export { default as splitUpperCase } from './string/splitUpperCase';
 export { default as stringToHexColor } from './string/stringToHexColor';
 export { default as stringToHslColor } from './string/stringToHslColor';
+export { default as capitalize } from './string/capitalize';
 
 // Object utils
 export { default as compare2ObjectsBaseOnKeysArr } from './object/compare2ObjectsBaseOnKeysArr';
@@ -56,6 +61,7 @@ export { default as excludeKeys } from './object/excludeKeys';
 export { default as includeKeys } from './object/includeKeys';
 export { default as has } from './object/has';
 export { default as joinObjects } from './object/joinObjects';
+export { default as getSmallestArrInObj } from './object/getSmallestArrInObj';
 
 // Route utils
 export { default as addHttpToURL } from './route/addHttpToURL';
@@ -92,3 +98,4 @@ export { default as isURL } from './validation/isURL';
 export { default as isUndefined } from './validation/isUndefined';
 export { default as isWhiteSpace } from './validation/isWhiteSpace';
 export { default as isBrowser } from './validation/isBrowser';
+export { default as isObjectLike } from './validation/isObjectLike';
