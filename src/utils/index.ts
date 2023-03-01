@@ -100,3 +100,9 @@ export { default as isUndefined } from './validation/isUndefined';
 export { default as isWhiteSpace } from './validation/isWhiteSpace';
 export { default as isBrowser } from './validation/isBrowser';
 export { default as isObjectLike } from './validation/isObjectLike';
+
+
+// Browser utils
+export { default as addEventListener } from "./browser/addEventListener"
+export { default as removeEventListener } from "./browser/removeEventListener"
+export { default as getWindowObj } from "./browser/getWindowObj"
