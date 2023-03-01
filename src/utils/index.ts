@@ -61,6 +61,7 @@ export { default as excludeKeys } from './object/excludeKeys';
 export { default as includeKeys } from './object/includeKeys';
 export { default as has } from './object/has';
 export { default as joinObjects } from './object/joinObjects';
+export { default as fastDeepEqual } from './object/fastDeepEqual';
 export { default as getSmallestArrInObj } from './object/getSmallestArrInObj';
 
 // Route utils
