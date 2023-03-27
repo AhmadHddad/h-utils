@@ -1,4 +1,4 @@
-export declare class HMap<K = string, V = string> extends Map<K, V> {
+export default class HMap<K = string, V = string> extends Map<K, V> {
   clear(): void;
   delete(key: K): boolean;
   forEach(
