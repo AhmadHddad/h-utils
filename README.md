@@ -1,7 +1,7 @@
 
 # HD-Utils
 
-A handy utils for modern developers, it includes:
+A handy utils for modern JS developers, it includes:
 1. String utils.
 2. Object utils.
 3. Array utils.
