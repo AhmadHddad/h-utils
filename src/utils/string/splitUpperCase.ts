@@ -1,4 +1,4 @@
-import { regex } from '../..';
+import { regex } from '../../index';
 
 /**
  * @description It splits a string into an array of strings, where each string is a word, number, or capitalized

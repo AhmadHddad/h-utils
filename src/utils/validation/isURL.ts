@@ -1,4 +1,4 @@
-import { regex } from '../..';
+import { regex } from '../../index';
 
 
 export default function isURL(input: string): boolean {
