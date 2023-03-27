@@ -1,22 +1,25 @@
 {
   "version": "0.1.3",
   "license": "MIT",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "lib/index.js",
+  "description": "A handy utils for modern JS developers",
+  "module": "lib/index.js",
+  "sideEffects": false,
   "files": [
-    "dist"
+    "lib/"
   ],
+  "types": "lib/index.d.ts",
+  "typings": "lib/index.d.ts",
   "engines": {
     "node": ">=10"
   },
   "scripts": {
-    "start": "tsdx watch",
-    "build": "tsdx build --transpileOnly",
-    "test": "tsdx test",
-    "lint": "tsdx lint",
-    "prepare": "tsdx build",
+    "build:cjs": "tsc",
+    "build:es": "tsc -m esNext --outDir lib",
+    "build": "yarn build:cjs && yarn build:es",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "docs": "npx typedoc src/index.ts"
   },
   "husky": {
     "hooks": {
@@ -55,7 +58,6 @@
   ],
   "repository": "https://github.com/AhmadHddad/h-utils",
   "bugs": "https://github.com/AhmadHddad/h-utils/issues",
-  "module": "./dist/h-utils.esm.js",
   "size-limit": [
     {
       "path": "dist/h-utils.cjs.production.min.js",
@@ -68,6 +70,7 @@
   ],
   "devDependencies": {
     "@size-limit/preset-small-lib": "^8.1.0",
+    "agadoo": "^3.0.0",
     "husky": "^8.0.1",
     "size-limit": "^8.1.0",
     "tsdx": "^0.14.1",
