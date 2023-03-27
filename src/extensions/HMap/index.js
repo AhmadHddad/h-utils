@@ -1,5 +1,5 @@
-export default class HMap<K, V> extends Map<K, V> {
-  static from(obj: {}) {
+export default class HMap extends Map {
+  static from(obj) {
     return new HMap(Object.entries(obj));
   }
 
