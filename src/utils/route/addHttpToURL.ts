@@ -1,4 +1,4 @@
-import { httpURLRegex } from "../../regex";
+import { httpURLRegex } from "../../regex/regex";
 
 /**
  * @description If the url doesn't contain http, add it to the url, otherwise return the url.

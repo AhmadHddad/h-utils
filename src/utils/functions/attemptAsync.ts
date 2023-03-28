@@ -17,7 +17,7 @@ async function attemptAsync<T = any>(
     return await func(...args);
   } catch (e) {
     if (returnError) return errorHander ? errorHander(e) : e;
-    if (throwError) throw new Error(e);
+    if (throwError) throw new Error(JSON.stringify(e));
     if (errorHander) errorHander(e);
   }
 }

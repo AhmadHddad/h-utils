@@ -1,3 +1,4 @@
+//@ts-nocheck
 import getGlobalThis from '../general/getGlobalThis';
 import isObject from '../validation/isObject';
 

@@ -1,5 +1,5 @@
+//@ts-nocheck
 import { classNames as classNamesType } from './styleTypes';
-
 /**
  * @description It takes any number of arguments, and returns a string of all the arguments that are truthy,
  * separated by spaces.

@@ -33,7 +33,7 @@ export default function stringifyUrl(
     strict: true,
     //@ts-ignore
     [encodeFragmentIdentifier]: true,
-    ...options
+    ...options,
   };
 
   const url = removeHashFromUrl(object.url).split('?')[0] || '';
@@ -41,7 +41,7 @@ export default function stringifyUrl(
 
   const query = {
     ...parse(queryFromUrl, { sort: false }),
-    ...object.query
+    ...object.query,
   };
 
   let queryString = stringify(query, options);
@@ -53,6 +53,7 @@ export default function stringifyUrl(
   if (object.fragmentIdentifier) {
     const urlObjectForFragmentEncode = new URL(url);
     urlObjectForFragmentEncode.hash = object.fragmentIdentifier;
+    options ??= {};
     hash = options[encodeFragmentIdentifier]
       ? urlObjectForFragmentEncode.hash
       : `#${object.fragmentIdentifier}`;
