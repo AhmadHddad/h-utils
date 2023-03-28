@@ -15,7 +15,6 @@ export default function removeDuplicatesFromArr<T = any>(
   if (key?.length && !deepCompare) {
     return arr.filter((item, index, selfArr) => {
       if (typeof item === 'object' && item !== null) {
-        console.log(item);
         return selfArr.findIndex(fItem => fItem[key] === item[key]) === index;
       }
 
