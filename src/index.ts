@@ -3,6 +3,8 @@ export { default as HMap } from './extensions/HMap/HMap';
 
 // Array utils
 export { default as arrayRange } from './utils/array/arrayRange';
+export { default as removeDuplicatesFromArr } from './utils/array/removeDuplicatesFromArr';
+export { default as uniqueArray } from './utils/array/removeDuplicatesFromArr';
 export { default as sortArr } from './utils/array/sortArr';
 export { default as sortByMultiProperties } from './utils/array/sortByMultiProperties';
 
@@ -59,7 +61,7 @@ export { default as capitalize } from './utils/string/capitalize';
 
 // Object utils
 export { default as compare2ObjectsBaseOnKeysArr } from './utils/object/compare2ObjectsBaseOnKeysArr';
-export { default as deepCompareObjects } from './utils/object/deepCompareObjects';
+export { default as deepCompare } from './utils/object/deepCompare';
 export { default as excludeKeys } from './utils/object/excludeKeys';
 export { default as includeKeys } from './utils/object/includeKeys';
 export { default as has } from './utils/object/has';

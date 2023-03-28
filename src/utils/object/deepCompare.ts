@@ -1,10 +1,11 @@
 /**
- * @description It compares two objects and returns true if they are equal, false if they are not
- * @param {object[]} objects - object[]
+ * @description It compares two arguments and returns true if they are equal, false if they are not
  * @example deepCompareObjects({a:1}, {a:1}) => true
- * @returns A function that takes an array of objects and returns a boolean.
+ * @example deepCompareObjects([1,2,3], [1,2,3]) => true
+ * @example deepCompareObjects([1,2,3], [1,2,5]) => false
+ * @example deepCompareObjects(true ,false) => false
  */
-const deepCompareObjects = (...objects: object[]): boolean => {
+export default function deepCompare<T = any>(...args: T[]): boolean {
   let i, l, leftChain, rightChain;
 
   const compare2Objects = (x, y) => {
@@ -12,10 +13,12 @@ const deepCompareObjects = (...objects: object[]): boolean => {
 
     // remember that NaN === NaN returns false
     // and isNaN(undefined) returns true
-    if (isNaN(x) &&
+    if (
+      isNaN(x) &&
       isNaN(y) &&
       typeof x === 'number' &&
-      typeof y === 'number') {
+      typeof y === 'number'
+    ) {
       return true;
     }
 
@@ -29,11 +32,13 @@ const deepCompareObjects = (...objects: object[]): boolean => {
     // Works in case when functions are created in constructor.
     // Comparing dates is a common scenario. Another built-ins?
     // We can even handle functions passed across iframes
-    if ((typeof x === 'function' && typeof y === 'function') ||
+    if (
+      (typeof x === 'function' && typeof y === 'function') ||
       (x instanceof Date && y instanceof Date) ||
       (x instanceof RegExp && y instanceof RegExp) ||
       (x instanceof String && y instanceof String) ||
-      (x instanceof Number && y instanceof Number)) {
+      (x instanceof Number && y instanceof Number)
+    ) {
       return x.toString() === y.toString();
     }
 
@@ -101,21 +106,20 @@ const deepCompareObjects = (...objects: object[]): boolean => {
     return true;
   };
 
-  if (objects.length < 1) {
+  if (args.length < 1) {
     return true; //Die silently? Don't know how to handle such case, please help...
 
     // throw "Need two or more arguments to compare";
   }
 
-  for (i = 1, l = objects.length; i < l; i++) {
+  for (i = 1, l = args.length; i < l; i++) {
     leftChain = []; //Todo: this can be cached
     rightChain = [];
 
-    if (!compare2Objects(objects[0], objects[i])) {
+    if (!compare2Objects(args[0], args[i])) {
       return false;
     }
   }
 
   return true;
-};
-export default deepCompareObjects;
+}

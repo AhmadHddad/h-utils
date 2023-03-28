@@ -56,7 +56,7 @@ export { default as capitalize } from './string/capitalize';
 
 // Object utils
 export { default as compare2ObjectsBaseOnKeysArr } from './object/compare2ObjectsBaseOnKeysArr';
-export { default as deepCompareObjects } from './object/deepCompareObjects';
+export { default as deepCompare } from './object/deepCompare';
 export { default as excludeKeys } from './object/excludeKeys';
 export { default as includeKeys } from './object/includeKeys';
 export { default as has } from './object/has';

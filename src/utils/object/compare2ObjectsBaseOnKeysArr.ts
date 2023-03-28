@@ -1,4 +1,4 @@
-import deepCompareObjects from './deepCompareObjects';
+import deepCompare from './deepCompare';
 
 /**
  * @description It compares two objects based on the keys array passed to it.
@@ -14,7 +14,7 @@ export default function compare2ObjectsBaseOnKeysArr(
   let areEqual = false;
 
   for (const key of keysArr) {
-    if (!deepCompareObjects(prevObj[key], nextObj[key])) {
+    if (!deepCompare(prevObj[key], nextObj[key])) {
       areEqual = true;
       break;
     }
