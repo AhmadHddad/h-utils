@@ -1,3 +1,5 @@
+import isBrowser from '../validation/isBrowser';
+
 /**
  * @description a reliable way to call a callback after a certain ms time.
  * @example `// Usage
@@ -14,24 +16,27 @@ controller.abort();`
 export default function animationInterval(
   ms: number,
   signal: AbortSignal,
-  callback: () => void
+  callback: (time: number) => void
 ) {
-  if (!isBroswer()) {
-    console.error("This util is for browsers only!");
+  if (!isBrowser()) {
+    console.error('This util is for browsers only!');
     return;
   }
 
   // Prefer currentTime, as it'll better sync animtions queued in the
   // same frame, but if it isn't supported, performance.now() is fine.
-  const start = document?.timeline ? document?.timeline?.currentTime : performance.now();
+  const start =
+    (document?.timeline
+      ? document?.timeline?.currentTime
+      : performance.now()) || 0;
 
-  function frame(time) {
+  function frame(time: number) {
     if (signal.aborted) return;
     callback(time);
     scheduleFrame(time);
   }
 
-  function scheduleFrame(time) {
+  function scheduleFrame(time: number) {
     const elapsed = time - start;
     const roundedElapsed = Math.round(elapsed / ms) * ms;
     const targetNext = start + roundedElapsed + ms;
