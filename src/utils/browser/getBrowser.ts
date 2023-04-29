@@ -1,0 +1,38 @@
+import isBrowser from '../validation/isBrowser';
+
+/**
+ *  @description will return the user browser type
+ */
+export default function getBrowser():
+  | 'Opera'
+  | 'Edge'
+  | 'Chrome'
+  | 'Safari'
+  | 'Firefox'
+  | 'IE'
+  | 'unknown' {
+  if (!isBrowser()) return 'unknown';
+  if (
+    (navigator.userAgent.indexOf('Opera') ||
+      navigator.userAgent.indexOf('OPR')) != -1
+  ) {
+    return 'Opera';
+  } else if (navigator.userAgent.indexOf('Edg') != -1) {
+    return 'Edge';
+  } else if (navigator.userAgent.indexOf('Chrome') != -1) {
+    return 'Chrome';
+  } else if (navigator.userAgent.indexOf('Safari') != -1) {
+    return 'Safari';
+  } else if (navigator.userAgent.indexOf('Firefox') != -1) {
+    return 'Firefox';
+  } else if (
+    navigator.userAgent.indexOf('MSIE') != -1 ||
+    //@ts-ignore
+    !!document.documentMode == true
+  ) {
+    //IF IE > 10
+    return 'IE';
+  } else {
+    return 'unknown';
+  }
+}
