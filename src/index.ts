@@ -112,4 +112,5 @@ export { default as addEventListener } from "./utils/browser/addEventListener"
 export { default as removeEventListener } from "./utils/browser/removeEventListener"
 export { default as getWindowObj } from "./utils/browser/getWindowObj"
 export { default as getElementCoords } from "./utils/browser/getElementCoords"
+export { default as animationInterval } from "./utils/browser/animationInterval"
 
