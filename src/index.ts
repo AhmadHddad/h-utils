@@ -111,6 +111,10 @@ export { default as isObjectLike } from './utils/validation/isObjectLike';
 export { default as addEventListener } from "./utils/browser/addEventListener"
 export { default as removeEventListener } from "./utils/browser/removeEventListener"
 export { default as getWindowObj } from "./utils/browser/getWindowObj"
-export { default as getElementCoords } from "./utils/browser/getElementCoords"
 export { default as animationInterval } from "./utils/browser/animationInterval"
+export { default as onSetInterval } from "./utils/browser/animationInterval"
+export { default as onUrlChange } from "./utils/browser/onUrlChange"
+export { default as getHtmlElementCoords } from "./utils/browser/getHtmlElementCoords"
+export { default as getBrowser } from "./utils/browser/getBrowser"
+
 
