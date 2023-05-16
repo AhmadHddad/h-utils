@@ -4,10 +4,10 @@
 
 ## Type parameters
 
-| Name |
-| :------ |
-| `K` |
-| `V` |
+| Name | Type |
+| :------ | :------ |
+| `K` | `string` |
+| `V` | `V` |
 
 ## Hierarchy
 
@@ -56,16 +56,16 @@
 
 #### Type parameters
 
-| Name |
-| :------ |
-| `K` |
-| `V` |
+| Name | Type |
+| :------ | :------ |
+| `K` | `string` |
+| `V` | `V` |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `entries?` | readonly readonly [`K`, `V`][] |
+| `entries?` | ``null`` \| readonly readonly [`K`, `V`][] |
 
 #### Inherited from
 
@@ -79,16 +79,16 @@ node_modules/typescript/lib/lib.es2015.collection.d.ts:53
 
 #### Type parameters
 
-| Name |
-| :------ |
-| `K` |
-| `V` |
+| Name | Type |
+| :------ | :------ |
+| `K` | `string` |
+| `V` | `V` |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `iterable?` | `Iterable`<readonly [`K`, `V`]\> |
+| `iterable?` | ``null`` \| `Iterable`<readonly [`K`, `V`]\> |
 
 #### Inherited from
 
@@ -106,7 +106,7 @@ node_modules/typescript/lib/lib.es2015.iterable.d.ts:161
 
 #### Inherited from
 
-Map.\_\_@toStringTag@20
+Map.\_\_@toStringTag@25
 
 #### Defined in
 
@@ -134,7 +134,7 @@ ___
 
 #### Inherited from
 
-Map.\_\_@species@10
+Map.\_\_@species@605
 
 #### Defined in
 
@@ -154,7 +154,7 @@ Returns an iterable of entries in the map.
 
 #### Inherited from
 
-Map.\_\_@iterator@18
+Map.\_\_@iterator@85
 
 #### Defined in
 
@@ -170,7 +170,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `callback` | `any` |
+| `callback` | (`value`: `V`, `key`: `K`, `map`: [`HMap`](HMap.md)<`K`, `V`\>) => `boolean` |
 
 #### Returns
 
@@ -178,7 +178,7 @@ ___
 
 #### Defined in
 
-[src/extensions/HMap/index.ts:46](https://github.com/AhmadHddad/h-utils/blob/a85d058/src/extensions/HMap/index.ts#L46)
+[src/extensions/HMap/HMap.ts:54](https://github.com/AhmadHddad/h-utils/blob/f355f18/src/extensions/HMap/HMap.ts#L54)
 
 ___
 
@@ -190,7 +190,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `callback` | `any` |
+| `callback` | (`value`: `V`, `key`: `K`, `map`: [`HMap`](HMap.md)<`K`, `V`\>) => `boolean` |
 
 #### Returns
 
@@ -198,7 +198,7 @@ ___
 
 #### Defined in
 
-[src/extensions/HMap/index.ts:54](https://github.com/AhmadHddad/h-utils/blob/a85d058/src/extensions/HMap/index.ts#L54)
+[src/extensions/HMap/HMap.ts:62](https://github.com/AhmadHddad/h-utils/blob/f355f18/src/extensions/HMap/HMap.ts#L62)
 
 ___
 
@@ -268,41 +268,41 @@ ___
 
 ### filter
 
-▸ **filter**(`callback`): [`HMap`](HMap.md)<`unknown`, `unknown`\>
+▸ **filter**(`callbackfn`): `this`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `callback` | `any` |
+| `callbackfn` | (`value`: `V`, `key`: `K`, `map`: [`HMap`](HMap.md)<`K`, `V`\>) => `boolean` |
 
 #### Returns
 
-[`HMap`](HMap.md)<`unknown`, `unknown`\>
+`this`
 
 #### Defined in
 
-[src/extensions/HMap/index.ts:6](https://github.com/AhmadHddad/h-utils/blob/a85d058/src/extensions/HMap/index.ts#L6)
+[src/extensions/HMap/HMap.ts:8](https://github.com/AhmadHddad/h-utils/blob/f355f18/src/extensions/HMap/HMap.ts#L8)
 
 ___
 
 ### findValue
 
-▸ **findValue**(`callback`): `any`
+▸ **findValue**(`callbackfn`): `V`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `callback` | `any` |
+| `callbackfn` | (`value`: `V`, `key`: `K`, `map`: [`HMap`](HMap.md)<`K`, `V`\>) => `boolean` |
 
 #### Returns
 
-`any`
+`V`
 
 #### Defined in
 
-[src/extensions/HMap/index.ts:36](https://github.com/AhmadHddad/h-utils/blob/a85d058/src/extensions/HMap/index.ts#L36)
+[src/extensions/HMap/HMap.ts:42](https://github.com/AhmadHddad/h-utils/blob/f355f18/src/extensions/HMap/HMap.ts#L42)
 
 ___
 
@@ -335,7 +335,7 @@ ___
 
 ### get
 
-▸ **get**(`key`): `V`
+▸ **get**(`key`): `undefined` \| `V`
 
 Returns a specified element from the Map object. If the value that is associated to the provided key is an object, then you will get a reference to that object and any change made to that object will effectively modify it inside the Map.
 
@@ -347,7 +347,7 @@ Returns a specified element from the Map object. If the value that is associated
 
 #### Returns
 
-`V`
+`undefined` \| `V`
 
 Returns the element associated with the specified key. If no element is associated with the specified key, undefined is returned.
 
@@ -363,15 +363,15 @@ ___
 
 ### getValuesArray
 
-▸ **getValuesArray**(): `V`[]
+▸ **getValuesArray**(): [`V`]
 
 #### Returns
 
-`V`[]
+[`V`]
 
 #### Defined in
 
-[src/extensions/HMap/index.ts:16](https://github.com/AhmadHddad/h-utils/blob/a85d058/src/extensions/HMap/index.ts#L16)
+[src/extensions/HMap/HMap.ts:20](https://github.com/AhmadHddad/h-utils/blob/f355f18/src/extensions/HMap/HMap.ts#L20)
 
 ___
 
@@ -423,21 +423,21 @@ ___
 
 ### map
 
-▸ **map**(`callback`): [`HMap`](HMap.md)<`unknown`, `unknown`\>
+▸ **map**(`callback`): `this`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `callback` | `any` |
+| `callback` | (`value`: `V`, `key`: `K`, `map`: [`HMap`](HMap.md)<`K`, `V`\>) => `any` |
 
 #### Returns
 
-[`HMap`](HMap.md)<`unknown`, `unknown`\>
+`this`
 
 #### Defined in
 
-[src/extensions/HMap/index.ts:20](https://github.com/AhmadHddad/h-utils/blob/a85d058/src/extensions/HMap/index.ts#L20)
+[src/extensions/HMap/HMap.ts:24](https://github.com/AhmadHddad/h-utils/blob/f355f18/src/extensions/HMap/HMap.ts#L24)
 
 ___
 
@@ -449,7 +449,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `callback` | `any` |
+| `callback` | (`value`: `V`, `key`: `K`, `map`: [`HMap`](HMap.md)<`K`, `V`\>) => `boolean` |
 
 #### Returns
 
@@ -457,7 +457,7 @@ ___
 
 #### Defined in
 
-[src/extensions/HMap/index.ts:28](https://github.com/AhmadHddad/h-utils/blob/a85d058/src/extensions/HMap/index.ts#L28)
+[src/extensions/HMap/HMap.ts:32](https://github.com/AhmadHddad/h-utils/blob/f355f18/src/extensions/HMap/HMap.ts#L32)
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 ### from
 
-▸ `Static` **from**(`obj`): [`HMap`](HMap.md)<`string`, `unknown`\>
+▸ `Static` **from**(`obj`): `any`
 
 #### Parameters
 
@@ -520,8 +520,8 @@ ___
 
 #### Returns
 
-[`HMap`](HMap.md)<`string`, `unknown`\>
+`any`
 
 #### Defined in
 
-[src/extensions/HMap/index.ts:2](https://github.com/AhmadHddad/h-utils/blob/a85d058/src/extensions/HMap/index.ts#L2)
+[src/extensions/HMap/HMap.ts:4](https://github.com/AhmadHddad/h-utils/blob/f355f18/src/extensions/HMap/HMap.ts#L4)
