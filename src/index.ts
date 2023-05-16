@@ -105,6 +105,7 @@ export { default as isUndefined } from './utils/validation/isUndefined';
 export { default as isWhiteSpace } from './utils/validation/isWhiteSpace';
 export { default as isBrowser } from './utils/validation/isBrowser';
 export { default as isObjectLike } from './utils/validation/isObjectLike';
+export { default as isObjHasValues } from './utils/validation/isObjHasValues';
 
 
 // Browser utils
