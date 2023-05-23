@@ -13,6 +13,7 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noImplicitAny": false,
+    "isolatedModules": true,
     "noFallthroughCasesInSwitch": true,
     "outDir": "lib",
     "lib": [
