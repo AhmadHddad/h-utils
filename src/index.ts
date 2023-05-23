@@ -1,5 +1,5 @@
-export * as regex from "./regex/regex";
-export { default as HMap } from './extensions/HMap/HMap';
+export * from "./regex/index";
+export { default as HMap } from './extensions/HMap';
 
 // Array utils
 export { default as arrayRange } from './utils/array/arrayRange';

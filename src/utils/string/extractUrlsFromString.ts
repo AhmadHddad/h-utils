@@ -1,4 +1,4 @@
-import { urlRegexForLongStr } from '../../regex/regex';
+import { urlRegexForLongStr } from "../../regex/index";
 
 /**
  * @description will extract all urls from a long string and return a list of the urls.

@@ -1,6 +1,6 @@
-import { regex } from '../../index';
+import { emailRegexForShortStr } from "../../regex/index";
 
 
 export default function isEmail(input: string): boolean {
-  return !!input.match(regex.emailRegexForShortStr);
+  return !!input.match(emailRegexForShortStr);
 }

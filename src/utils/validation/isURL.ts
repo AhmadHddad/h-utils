@@ -1,6 +1,6 @@
-import { regex } from '../../index';
+import { urlRegexForShortStr } from "../../regex/index";
 
 
 export default function isURL(input: string): boolean {
-  return !!input.match(regex.urlRegexForShortStr);
+  return !!input.match(urlRegexForShortStr);
 }

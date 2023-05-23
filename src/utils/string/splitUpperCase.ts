@@ -1,4 +1,4 @@
-import { regex } from '../../index';
+import { upperCaseRegex } from '../../regex/index';
 
 /**
  * @description It splits a string into an array of strings, where each string is a word, number, or capitalized
@@ -8,7 +8,7 @@ import { regex } from '../../index';
  * @returns An array of strings.
  */
 const splitUpperCase = (str: string): string[] => {
-  return str.match(regex.upperCaseRegex) || [];
+  return str.match(upperCaseRegex) || [];
 };
 
 export default splitUpperCase;
