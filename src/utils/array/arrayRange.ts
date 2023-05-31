@@ -1,4 +1,4 @@
-import { Key } from '../../types';
+import { Key } from '../types';
 
 /**
  * @description It takes two arguments, a and b, and returns an array of numbers or letters from a to b

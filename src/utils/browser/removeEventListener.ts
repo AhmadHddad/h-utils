@@ -1,4 +1,4 @@
-import { Fn } from '../../types';
+import { Fn } from '../types';
 
 /**
  * @description will check if the passed object accepts removeEventListener and add it.

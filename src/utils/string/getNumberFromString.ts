@@ -1,4 +1,4 @@
-import { Key } from '../../types';
+import { Key } from '../types';
 
 /**
  * @description Takes the number out of the string and returns number

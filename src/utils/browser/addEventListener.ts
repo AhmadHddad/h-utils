@@ -1,4 +1,4 @@
-import { Fn } from '../../types';
+import { Fn } from '../types';
 /**
  * @description will check if the passed object accepts addEventListener and add it.
  * @example  addEventListener(event.target, "touchend", preventDefault, { passive: false });

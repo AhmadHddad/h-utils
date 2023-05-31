@@ -119,3 +119,6 @@ export { default as getHtmlElementCoords } from "./utils/browser/getHtmlElementC
 export { default as getBrowser } from "./utils/browser/getBrowser"
 
 
+
+// Types
+export * from "./utils/types";
