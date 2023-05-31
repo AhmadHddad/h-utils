@@ -1,4 +1,4 @@
-import includeKeys from "./includeKeys";
+import includeKeys from './includeKeys';
 
 /**
  * "It returns a new object with the same keys as the original object, except for the keys that match
@@ -15,8 +15,11 @@ import includeKeys from "./includeKeys";
  */
 export default function excludeKeys(
   object: {},
-  predicate: (key: string | symbol, value: any, object: {}) => boolean
+  predicate:
+    | (string | symbol)[]
+    | ((key: string | symbol, value: any, object: {}) => boolean)
 ) {
+  
   if (Array.isArray(predicate)) {
     const set = new Set(predicate);
     return includeKeys(object, key => !set.has(key));
