@@ -5,3 +5,5 @@ dist
 hUtils.code-workspace
 /esm
 /lib
+
+._*
