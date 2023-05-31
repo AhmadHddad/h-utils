@@ -14,11 +14,12 @@
  * values filtered by the predicate.
  */
 
-export default function includeKeys(
-  object: {},
-  predicate:
-    | (string | symbol)[]
-    | ((key: string | symbol, value: string, object: {}) => boolean)
+import { PredicateFunc } from "../types";
+
+
+export default function includeKeys<T extends object>(
+  object: T,
+  predicate: (string | symbol)[] | PredicateFunc<T>
 ) {
   const result = {};
 

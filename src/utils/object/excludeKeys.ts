@@ -1,3 +1,4 @@
+import { PredicateFunc } from '../types';
 import includeKeys from './includeKeys';
 
 /**
@@ -13,13 +14,10 @@ import includeKeys from './includeKeys';
  * @param object - The object to filter.
  * @param predicate - A function that returns true if the key should be included.
  */
-export default function excludeKeys(
-  object: {},
-  predicate:
-    | (string | symbol)[]
-    | ((key: string | symbol, value: any, object: {}) => boolean)
+export default function excludeKeys<T extends object>(
+  object: T,
+  predicate: (string | symbol)[] | PredicateFunc<T>
 ) {
-  
   if (Array.isArray(predicate)) {
     const set = new Set(predicate);
     return includeKeys(object, key => !set.has(key));
