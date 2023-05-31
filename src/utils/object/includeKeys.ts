@@ -10,16 +10,19 @@
     foo: true,
     bar: false
 }, (key, value) => value === true) => {foo: true}
+ * @example includeKeys({
+    foo: true,
+    bar: false
+}, ["foo"]) => {foo:true}
  * @returns A new object with the same enumerable properties as the original object, but with the
  * values filtered by the predicate.
  */
 
-import { PredicateFunc } from "../types";
-
+import { KeysArr, PredicateFunc } from '../types';
 
 export default function includeKeys<T extends object>(
   object: T,
-  predicate: (string | symbol)[] | PredicateFunc<T>
+  predicate: KeysArr | PredicateFunc<T>
 ) {
   const result = {};
 

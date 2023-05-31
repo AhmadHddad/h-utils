@@ -1,4 +1,4 @@
-import { PredicateFunc } from '../types';
+import { KeysArr, PredicateFunc } from '../types';
 import includeKeys from './includeKeys';
 
 /**
@@ -11,12 +11,16 @@ import includeKeys from './includeKeys';
     foo: true,
     bar: false
 }, (key, value) => value === true) => {bar: false}
+ * @example excludeKeys({
+    foo: true,
+    bar: false
+}, ["foo"]) => {bar:true}
  * @param object - The object to filter.
  * @param predicate - A function that returns true if the key should be included.
  */
 export default function excludeKeys<T extends object>(
   object: T,
-  predicate: (string | symbol)[] | PredicateFunc<T>
+  predicate: KeysArr | PredicateFunc<T>
 ) {
   if (Array.isArray(predicate)) {
     const set = new Set(predicate);

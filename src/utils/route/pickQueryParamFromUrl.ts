@@ -1,4 +1,5 @@
 import includeKeys from '../object/includeKeys';
+import { KeysArr, PredicateFunc } from '../types';
 import parseUrl from './parseUrl';
 import stringifyUrl from './stringifyUrl';
 
@@ -9,15 +10,14 @@ import stringifyUrl from './stringifyUrl';
  */
 export default function pickQueryParamFromUrl(
   urlOrQuery: string,
-  filter: string[] |
-    ((key: string | symbol, value: string, object: {}) => boolean)
+  filter: KeysArr | PredicateFunc<any>
 ): string {
   const { url, query } = parseUrl(urlOrQuery, {});
 
   return stringifyUrl(
     {
       url,
-      query: includeKeys(query, filter)
+      query: includeKeys(query, filter),
     },
     {}
   );

@@ -11,6 +11,8 @@ export type ExcludeFromArray<T extends any[], ToExclude> = Exclude<
 
 export type PredicateFunc<T> = (
   key: string | symbol,
-  value: Values<T>,
+  value: string | Values<T>,
   object: {} | object
 ) => boolean;
+
+export type KeysArr = (string | symbol)[];
