@@ -48,7 +48,6 @@ export { default as getNumberFromString } from './utils/string/getNumberFromStri
 export { default as hashString } from './utils/string/hashString';
 export { default as mapStringToColorFromArr } from './utils/string/mapStringToColorFromArr';
 export { default as nFormatter } from './utils/string/nFormatter';
-export { default as navigateObjWithString } from './utils/string/navigateObjWithString';
 export { default as parseDate } from './utils/string/parseDate';
 export { default as parseJwt } from './utils/string/parseJwt';
 export { default as parseNumber } from './utils/string/parseNumber';
@@ -63,6 +62,7 @@ export { default as capitalize } from './utils/string/capitalize';
 export { default as compare2ObjectsBaseOnKeysArr } from './utils/object/compare2ObjectsBaseOnKeysArr';
 export { default as deepCompare } from './utils/object/deepCompare';
 export { default as excludeKeys } from './utils/object/excludeKeys';
+export { default as navigateObjWithString } from './utils/object/navigateObjWithString';
 export { default as includeKeys } from './utils/object/includeKeys';
 export { default as has } from './utils/object/has';
 export { default as joinObjects } from './utils/object/joinObjects';
