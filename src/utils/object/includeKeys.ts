@@ -16,8 +16,9 @@
 
 export default function includeKeys(
   object: {},
-  predicate: string[] |
-    ((key: string | symbol, value: string, object: {}) => boolean)
+  predicate:
+    | (string | symbol)[]
+    | ((key: string | symbol, value: string, object: {}) => boolean)
 ) {
   const result = {};
 
@@ -34,7 +35,7 @@ export default function includeKeys(
       const descriptor = Object.getOwnPropertyDescriptor(object, key);
       if (descriptor?.enumerable) {
         const value = object[key];
-        if (predicate(key as string, value, object)) {
+        if (predicate(key, value, object)) {
           Object.defineProperty(result, key, descriptor);
         }
       }
