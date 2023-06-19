@@ -7,6 +7,7 @@ import isNumber from '../validation/isNumber';
  * @returns A function that takes a string and returns a string with all non-digit characters removed.
  */
 export default function parseNumber(number: string): number {
+  if (!number) return 0;
   const parsedN = number.replace(/\D/g, '');
   return isNumber(parsedN) ? parsedN : 0;
 }
