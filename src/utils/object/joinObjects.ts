@@ -4,6 +4,13 @@
  * @example joinObjects(({ a: 1 }, { b: 2 })) => { a: 1, b: 2 }
  * @example joinObjects(({ a: 1 }, null || undefined || !object)) => { a: 1 }
  */
-const joinObjects = <T>(...args: (T | undefined | {})[]) =>
-  args.reduce((prev, curr) => ({ ...(prev || {}), ...(curr || {}) }), {});
+function joinObjects<T extends object | null | undefined | {}>(
+  ...args: T[]
+): T {
+  return args.reduce(
+    (prev, curr) => ({ ...(prev || {}), ...(curr || {}) }),
+    {}
+  ) as T;
+}
+
 export default joinObjects;
