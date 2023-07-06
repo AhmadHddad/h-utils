@@ -26,6 +26,7 @@ export { default as noop } from './utils/general/noop';
 export { default as generateGuid } from './utils/general/generateGuid';
 export { default as getGlobalThis } from './utils/general/getGlobalThis';
 export { default as paramsToObject } from './utils/general/paramsToObject';
+export { default as deepClone } from './utils/general/deepClone';
 
 // File utils
 export { default as getBase64FromFile } from './utils/file/getBase64FromFile';
