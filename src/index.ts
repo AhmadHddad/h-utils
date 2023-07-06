@@ -59,6 +59,8 @@ export { default as splitUpperCase } from './utils/string/splitUpperCase';
 export { default as stringToHexColor } from './utils/string/stringToHexColor';
 export { default as stringToHslColor } from './utils/string/stringToHslColor';
 export { default as capitalize } from './utils/string/capitalize';
+export { default as parsePath } from './utils/string/parsePath';
+
 
 // Object utils
 export { default as compare2ObjectsBaseOnKeysArr } from './utils/object/compare2ObjectsBaseOnKeysArr';
@@ -108,6 +110,7 @@ export { default as isWhiteSpace } from './utils/validation/isWhiteSpace';
 export { default as isBrowser } from './utils/validation/isBrowser';
 export { default as isObjectLike } from './utils/validation/isObjectLike';
 export { default as isObjHasValues } from './utils/validation/isObjHasValues';
+export { default as isIndex } from './utils/validation/isIndex';
 
 
 // Browser utils
