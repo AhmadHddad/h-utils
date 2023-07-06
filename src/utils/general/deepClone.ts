@@ -243,8 +243,8 @@ const serialize = (value, { json, lossy } = {}) => {
  * @example deepClone({a:1}) => {a:1} //as new copy
  */
 export default function deepClone<T = any>(
-  any: T,
+  value: T,
   options?: { lossy?: boolean; json?: boolean }
 ): T {
-  return deserialize(serialize(any, options || ({} as any)));
+  return deserialize(serialize(value, options || ({} as any)));
 }
