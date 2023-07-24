@@ -39,6 +39,7 @@ export { default as multiplyAll } from './utils/number/multiplyAll';
 // String utils
 export { default as addAndOrConjunctionsToStrArray } from './utils/string/addAndOrConjunctionsToStrArray';
 export { default as breakStrAfterNChar } from './utils/string/breakStrAfterNChar';
+export { default as stringHas } from './utils/string/stringHas';
 export { default as extractUrlsFromString } from './utils/string/extractUrlsFromString';
 export { default as getAsciiCodeForChar } from './utils/string/getAsciiCodeForChar';
 export { default as getAsciiSumFromString } from './utils/string/getAsciiSumFromString';
@@ -59,7 +60,7 @@ export { default as splitUpperCase } from './utils/string/splitUpperCase';
 export { default as stringToHexColor } from './utils/string/stringToHexColor';
 export { default as stringToHslColor } from './utils/string/stringToHslColor';
 export { default as capitalize } from './utils/string/capitalize';
-export { default as parsePath } from './utils/string/parsePath';
+export { default as stringToPath } from './utils/string/stringToPath';
 
 
 // Object utils
