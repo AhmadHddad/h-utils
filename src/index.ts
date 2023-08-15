@@ -20,6 +20,7 @@ export { default as attemptAsync } from './utils/functions/attemptAsync';
 
 // General utils
 export { default as conditionalReturn } from './utils/general/conditionalReturn';
+export { default as onTimeout } from './utils/general/onTimeout';
 export { default as count } from './utils/general/count';
 export { default as toArray } from './utils/general/toArray';
 export { default as sleep } from './utils/general/sleep';
@@ -27,7 +28,7 @@ export { default as wait } from './utils/general/sleep';
 export { default as noop } from './utils/general/noop';
 export { default as generateGuid } from './utils/general/generateGuid';
 export { default as getGlobalThis } from './utils/general/getGlobalThis';
-export { default as paramsToObject } from './utils/general/paramsToObject';
+export { default as urlSearchParamsToObject } from './utils/general/urlSearchParamsToObject';
 export { default as deepClone } from './utils/general/deepClone';
 
 // File utils
