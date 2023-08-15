@@ -114,7 +114,7 @@
 - [navigateObjWithString](modules.md#navigateobjwithstring)
 - [noop](modules.md#noop)
 - [onUrlChange](modules.md#onurlchange)
-- [paramsToObject](modules.md#paramstoobject)
+- [urlSearchParamsToObject](modules.md#urlSearchParamsToObject)
 - [parse](modules.md#parse)
 - [parseDate](modules.md#parsedate)
 - [parseJwt](modules.md#parsejwt)
@@ -2828,9 +2828,9 @@ ___
 
 ___
 
-### paramsToObject
+### urlSearchParamsToObject
 
-▸ **paramsToObject**(`entries`): `Object`
+▸ **urlSearchParamsToObject**(`entries`): `Object`
 
 **`Description`**
 
@@ -2839,7 +2839,7 @@ It takes a URLSearchParams object and returns a normal js object
 **`Example`**
 
 ```ts
-paramsToObject(new URLSearchParams()) => {}
+urlSearchParamsToObject(new URLSearchParams()) => {}
 ```
 
 #### Parameters
@@ -2854,7 +2854,7 @@ paramsToObject(new URLSearchParams()) => {}
 
 #### Defined in
 
-[src/utils/general/paramsToObject.ts:6](https://github.com/AhmadHddad/h-utils/blob/1740922/src/utils/general/paramsToObject.ts#L6)
+[src/utils/general/urlSearchParamsToObject.ts:6](https://github.com/AhmadHddad/h-utils/blob/1740922/src/utils/general/urlSearchParamsToObject.ts#L6)
 
 ___
 
