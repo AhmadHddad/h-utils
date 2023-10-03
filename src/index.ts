@@ -64,7 +64,7 @@ export { default as stringToHexColor } from './utils/string/stringToHexColor';
 export { default as stringToHslColor } from './utils/string/stringToHslColor';
 export { default as capitalize } from './utils/string/capitalize';
 export { default as stringToPath } from './utils/string/stringToPath';
-
+export { default as occurrences } from './utils/string/occurrences';
 
 // Object utils
 export { default as compare2ObjectsBaseOnKeysArr } from './utils/object/compare2ObjectsBaseOnKeysArr';
