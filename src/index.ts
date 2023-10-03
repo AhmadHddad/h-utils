@@ -1,4 +1,4 @@
-export * from "./regex/index";
+export * from './regex/index';
 export { default as HMap } from './extensions/HMap';
 
 // Array utils
@@ -20,12 +20,16 @@ export { default as attemptAsync } from './utils/functions/attemptAsync';
 
 // General utils
 export { default as conditionalReturn } from './utils/general/conditionalReturn';
+export { default as onTimeout } from './utils/general/onTimeout';
 export { default as count } from './utils/general/count';
 export { default as toArray } from './utils/general/toArray';
+export { default as sleep } from './utils/general/sleep';
+export { default as wait } from './utils/general/sleep';
 export { default as noop } from './utils/general/noop';
 export { default as generateGuid } from './utils/general/generateGuid';
 export { default as getGlobalThis } from './utils/general/getGlobalThis';
-export { default as paramsToObject } from './utils/general/paramsToObject';
+export { default as urlSearchParamsToObject } from './utils/general/urlSearchParamsToObject';
+export { default as deepClone } from './utils/general/deepClone';
 
 // File utils
 export { default as getBase64FromFile } from './utils/file/getBase64FromFile';
@@ -37,7 +41,11 @@ export { default as multiplyAll } from './utils/number/multiplyAll';
 
 // String utils
 export { default as addAndOrConjunctionsToStrArray } from './utils/string/addAndOrConjunctionsToStrArray';
+export { default as arabicToEnglishNumbers } from './utils/string/arabicToEnglishNumbers';
+export { default as arabicToPersianNumbers } from './utils/string/arabicToPersianNumbers';
 export { default as breakStrAfterNChar } from './utils/string/breakStrAfterNChar';
+export { default as capitalize } from './utils/string/capitalize';
+export { default as englishToArabicNumbers } from './utils/string/englishToArabicNumbers';
 export { default as extractUrlsFromString } from './utils/string/extractUrlsFromString';
 export { default as getAsciiCodeForChar } from './utils/string/getAsciiCodeForChar';
 export { default as getAsciiSumFromString } from './utils/string/getAsciiSumFromString';
@@ -49,16 +57,17 @@ export { default as getNumberFromString } from './utils/string/getNumberFromStri
 export { default as hashString } from './utils/string/hashString';
 export { default as mapStringToColorFromArr } from './utils/string/mapStringToColorFromArr';
 export { default as nFormatter } from './utils/string/nFormatter';
+export { default as occurrences } from './utils/string/occurrences';
 export { default as parseDate } from './utils/string/parseDate';
 export { default as parseJwt } from './utils/string/parseJwt';
 export { default as parseNumber } from './utils/string/parseNumber';
 export { default as parseString } from './utils/string/parseString';
 export { default as splitOnFirst } from './utils/string/splitOnFirst';
 export { default as splitUpperCase } from './utils/string/splitUpperCase';
+export { default as stringHas } from './utils/string/stringHas';
 export { default as stringToHexColor } from './utils/string/stringToHexColor';
 export { default as stringToHslColor } from './utils/string/stringToHslColor';
-export { default as capitalize } from './utils/string/capitalize';
-export { default as occurrences } from './utils/string/occurrences';
+export { default as stringToPath } from './utils/string/stringToPath';
 
 // Object utils
 export { default as compare2ObjectsBaseOnKeysArr } from './utils/object/compare2ObjectsBaseOnKeysArr';
@@ -108,19 +117,17 @@ export { default as isWhiteSpace } from './utils/validation/isWhiteSpace';
 export { default as isBrowser } from './utils/validation/isBrowser';
 export { default as isObjectLike } from './utils/validation/isObjectLike';
 export { default as isObjHasValues } from './utils/validation/isObjHasValues';
-
+export { default as isIndex } from './utils/validation/isIndex';
 
 // Browser utils
-export { default as addEventListener } from "./utils/browser/addEventListener"
-export { default as removeEventListener } from "./utils/browser/removeEventListener"
-export { default as getWindowObj } from "./utils/browser/getWindowObj"
-export { default as animationInterval } from "./utils/browser/animationInterval"
-export { default as onSetInterval } from "./utils/browser/animationInterval"
-export { default as onUrlChange } from "./utils/browser/onUrlChange"
-export { default as getHtmlElementCoords } from "./utils/browser/getHtmlElementCoords"
-export { default as getBrowser } from "./utils/browser/getBrowser"
-
-
+export { default as addEventListener } from './utils/browser/addEventListener';
+export { default as removeEventListener } from './utils/browser/removeEventListener';
+export { default as getWindowObj } from './utils/browser/getWindowObj';
+export { default as animationInterval } from './utils/browser/animationInterval';
+export { default as onSetInterval } from './utils/browser/animationInterval';
+export { default as onUrlChange } from './utils/browser/onUrlChange';
+export { default as getHtmlElementCoords } from './utils/browser/getHtmlElementCoords';
+export { default as getBrowser } from './utils/browser/getBrowser';
 
 // Types
-export * from "./utils/types";
+export * from './utils/types';
