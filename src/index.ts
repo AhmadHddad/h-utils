@@ -57,7 +57,8 @@ export { default as getNumberFromString } from './utils/string/getNumberFromStri
 export { default as hashString } from './utils/string/hashString';
 export { default as mapStringToColorFromArr } from './utils/string/mapStringToColorFromArr';
 export { default as nFormatter } from './utils/string/nFormatter';
-export { default as occurrences } from './utils/string/occurrences';
+export { default as occurrencesCount } from './utils/string/occurrencesCount';
+export { default as occurrencesIndex } from './utils/string/occurrencesIndex';
 export { default as parseDate } from './utils/string/parseDate';
 export { default as parseJwt } from './utils/string/parseJwt';
 export { default as parseNumber } from './utils/string/parseNumber';
