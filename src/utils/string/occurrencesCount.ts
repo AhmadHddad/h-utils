@@ -1,17 +1,17 @@
-/** Function that count occurrences of a substring in a string;
+/** Function that count occurrences count of a substring in a string;
  * @param {String} string               The string
  * @param {String} subString            The sub string to search for
  * @param {Boolean} [allowOverlapping]  Optional. (Default:false)
  *
  * @example `
- * occurrences("foofoofoo", "bar"); //0
+ * occurrencesCount("foofoofoo", "bar"); //0
 
-   occurrences("foofoofoo", "foo"); //3
+   occurrencesCount("foofoofoo", "foo"); //3
 
-   occurrences("foofoofoo", "foofoo"); //1
+   occurrencesCount("foofoofoo", "foofoo"); //1
 
    //allowOverlapping:true
-   occurrences("foofoofoo", "foofoo", true); //2
+   occurrencesCount("foofoofoo", "foofoo", true); //2
     foofoofoo
   1`----´
     2  `----´
@@ -22,18 +22,18 @@
  * @see Unit Test https://jsfiddle.net/Victornpb/5axuh96u/
  * @see https://stackoverflow.com/a/7924240/938822
  */
-export default function occurrences(
+export default function occurrencesCount(
   string: string,
   subString: string,
   allowOverlapping?: boolean
 ): number {
-  string += "";
-  subString += "";
+  string += '';
+  subString += '';
   if (subString.length <= 0) return string.length + 1;
 
-  var n = 0,
-    pos = 0,
-    step = allowOverlapping ? 1 : subString.length;
+  let n = 0;
+  let pos = 0;
+  let step = allowOverlapping ? 1 : subString.length;
 
   while (true) {
     pos = string.indexOf(subString, pos);
