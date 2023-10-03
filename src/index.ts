@@ -1,4 +1,4 @@
-export * from "./regex/index";
+export * from './regex/index';
 export { default as HMap } from './extensions/HMap';
 
 // Array utils
@@ -41,8 +41,11 @@ export { default as multiplyAll } from './utils/number/multiplyAll';
 
 // String utils
 export { default as addAndOrConjunctionsToStrArray } from './utils/string/addAndOrConjunctionsToStrArray';
+export { default as arabicToEnglishNumbers } from './utils/string/arabicToEnglishNumbers';
+export { default as arabicToPersianNumbers } from './utils/string/arabicToPersianNumbers';
 export { default as breakStrAfterNChar } from './utils/string/breakStrAfterNChar';
-export { default as stringHas } from './utils/string/stringHas';
+export { default as capitalize } from './utils/string/capitalize';
+export { default as englishToArabicNumbers } from './utils/string/englishToArabicNumbers';
 export { default as extractUrlsFromString } from './utils/string/extractUrlsFromString';
 export { default as getAsciiCodeForChar } from './utils/string/getAsciiCodeForChar';
 export { default as getAsciiSumFromString } from './utils/string/getAsciiSumFromString';
@@ -54,17 +57,17 @@ export { default as getNumberFromString } from './utils/string/getNumberFromStri
 export { default as hashString } from './utils/string/hashString';
 export { default as mapStringToColorFromArr } from './utils/string/mapStringToColorFromArr';
 export { default as nFormatter } from './utils/string/nFormatter';
+export { default as occurrences } from './utils/string/occurrences';
 export { default as parseDate } from './utils/string/parseDate';
 export { default as parseJwt } from './utils/string/parseJwt';
 export { default as parseNumber } from './utils/string/parseNumber';
 export { default as parseString } from './utils/string/parseString';
 export { default as splitOnFirst } from './utils/string/splitOnFirst';
 export { default as splitUpperCase } from './utils/string/splitUpperCase';
+export { default as stringHas } from './utils/string/stringHas';
 export { default as stringToHexColor } from './utils/string/stringToHexColor';
 export { default as stringToHslColor } from './utils/string/stringToHslColor';
-export { default as capitalize } from './utils/string/capitalize';
 export { default as stringToPath } from './utils/string/stringToPath';
-export { default as occurrences } from './utils/string/occurrences';
 
 // Object utils
 export { default as compare2ObjectsBaseOnKeysArr } from './utils/object/compare2ObjectsBaseOnKeysArr';
@@ -116,18 +119,15 @@ export { default as isObjectLike } from './utils/validation/isObjectLike';
 export { default as isObjHasValues } from './utils/validation/isObjHasValues';
 export { default as isIndex } from './utils/validation/isIndex';
 
-
 // Browser utils
-export { default as addEventListener } from "./utils/browser/addEventListener"
-export { default as removeEventListener } from "./utils/browser/removeEventListener"
-export { default as getWindowObj } from "./utils/browser/getWindowObj"
-export { default as animationInterval } from "./utils/browser/animationInterval"
-export { default as onSetInterval } from "./utils/browser/animationInterval"
-export { default as onUrlChange } from "./utils/browser/onUrlChange"
-export { default as getHtmlElementCoords } from "./utils/browser/getHtmlElementCoords"
-export { default as getBrowser } from "./utils/browser/getBrowser"
-
-
+export { default as addEventListener } from './utils/browser/addEventListener';
+export { default as removeEventListener } from './utils/browser/removeEventListener';
+export { default as getWindowObj } from './utils/browser/getWindowObj';
+export { default as animationInterval } from './utils/browser/animationInterval';
+export { default as onSetInterval } from './utils/browser/animationInterval';
+export { default as onUrlChange } from './utils/browser/onUrlChange';
+export { default as getHtmlElementCoords } from './utils/browser/getHtmlElementCoords';
+export { default as getBrowser } from './utils/browser/getBrowser';
 
 // Types
-export * from "./utils/types";
+export * from './utils/types';
