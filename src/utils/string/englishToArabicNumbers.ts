@@ -1,6 +1,6 @@
 /**
  * @description will convert numbers to arabic string numbers
- * @example englishToArabicNumbers(123) => '١٢٣'
+ * @example englishToArabicNumbers(123) // '١٢٣'
  */
 export default function englishToArabicNumbers(num: number | string): string {
   const arabicNumbers =
