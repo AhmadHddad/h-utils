@@ -8,13 +8,13 @@ const MAX_SAFE_INTEGER = 9007199254740991;
 const reIsUint = /^(?:0|[1-9]\d*)$/;
 
 /**
- * Checks if `value` is a valid array-like index.
+ * @description Checks if `value` is a valid array-like index.
  *
  * @param {*} value The value to check.
  * @param {number} [length=MAX_SAFE_INTEGER] The upper bounds of a valid index.
  * @returns {boolean} Returns `true` if `value` is a valid index, else `false`.
  */
-export default function isIndex(value: Key, length: number) {
+export default function isIndex(value: Key, length?: number): boolean {
   value = Number(value);
   if (!isNumber(value)) return false;
 
@@ -30,4 +30,3 @@ export default function isIndex(value: Key, length: number) {
     value < length
   );
 }
-
