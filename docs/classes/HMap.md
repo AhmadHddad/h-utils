@@ -178,7 +178,7 @@ ___
 
 #### Defined in
 
-[src/extensions/HMap.ts:54](https://github.com/AhmadHddad/h-utils/blob/d0fd24e/src/extensions/HMap.ts#L54)
+[src/extensions/HMap.ts:54](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/extensions/HMap.ts#L54)
 
 ___
 
@@ -198,7 +198,7 @@ ___
 
 #### Defined in
 
-[src/extensions/HMap.ts:62](https://github.com/AhmadHddad/h-utils/blob/d0fd24e/src/extensions/HMap.ts#L62)
+[src/extensions/HMap.ts:62](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/extensions/HMap.ts#L62)
 
 ___
 
@@ -282,7 +282,7 @@ ___
 
 #### Defined in
 
-[src/extensions/HMap.ts:8](https://github.com/AhmadHddad/h-utils/blob/d0fd24e/src/extensions/HMap.ts#L8)
+[src/extensions/HMap.ts:8](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/extensions/HMap.ts#L8)
 
 ___
 
@@ -302,7 +302,7 @@ ___
 
 #### Defined in
 
-[src/extensions/HMap.ts:42](https://github.com/AhmadHddad/h-utils/blob/d0fd24e/src/extensions/HMap.ts#L42)
+[src/extensions/HMap.ts:42](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/extensions/HMap.ts#L42)
 
 ___
 
@@ -371,7 +371,7 @@ ___
 
 #### Defined in
 
-[src/extensions/HMap.ts:20](https://github.com/AhmadHddad/h-utils/blob/d0fd24e/src/extensions/HMap.ts#L20)
+[src/extensions/HMap.ts:20](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/extensions/HMap.ts#L20)
 
 ___
 
@@ -437,7 +437,7 @@ ___
 
 #### Defined in
 
-[src/extensions/HMap.ts:24](https://github.com/AhmadHddad/h-utils/blob/d0fd24e/src/extensions/HMap.ts#L24)
+[src/extensions/HMap.ts:24](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/extensions/HMap.ts#L24)
 
 ___
 
@@ -457,7 +457,7 @@ ___
 
 #### Defined in
 
-[src/extensions/HMap.ts:32](https://github.com/AhmadHddad/h-utils/blob/d0fd24e/src/extensions/HMap.ts#L32)
+[src/extensions/HMap.ts:32](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/extensions/HMap.ts#L32)
 
 ___
 
@@ -524,4 +524,4 @@ ___
 
 #### Defined in
 
-[src/extensions/HMap.ts:4](https://github.com/AhmadHddad/h-utils/blob/d0fd24e/src/extensions/HMap.ts#L4)
+[src/extensions/HMap.ts:4](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/extensions/HMap.ts#L4)

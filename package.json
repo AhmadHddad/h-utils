@@ -1,5 +1,5 @@
 {
-  "version": "0.2.4",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "lib/index.js",
   "description": "A handy utils for modern JS developers",
@@ -19,8 +19,6 @@
     "build:es": "tsc -m esNext --outDir lib",
     "build": "yarn build:cjs && yarn build:es && yarn run fix",
     "fix": "fix-esm-import-path lib/index.js",
-    "size": "size-limit",
-    "analyze": "size-limit --why",
     "docs": "npx typedoc src/index.ts"
   },
   "husky": {
@@ -60,26 +58,15 @@
   ],
   "repository": "https://github.com/AhmadHddad/h-utils",
   "bugs": "https://github.com/AhmadHddad/h-utils/issues",
-  "size-limit": [
-    {
-      "path": "dist/h-utils.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/h-utils.esm.js",
-      "limit": "10 KB"
-    }
-  ],
   "devDependencies": {
-    "@size-limit/preset-small-lib": "^8.1.0",
     "agadoo": "^3.0.0",
-    "husky": "^8.0.1",
     "fix-esm-import-path": "^1.4.0",
-    "size-limit": "^8.1.0",
-    "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
     "typedoc": "^0.23.25",
     "typedoc-plugin-markdown": "^3.14.0",
     "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "hd-intersection-observer": "^1.0.0"
   }
 }
