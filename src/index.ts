@@ -129,6 +129,7 @@ export { default as isWhiteSpace } from './utils/validation/isWhiteSpace';
 
 // Browser utils
 export { default as addEventListener } from './utils/browser/addEventListener';
+export { default as observe } from 'hd-intersection-observer';
 export { default as animationInterval } from './utils/browser/animationInterval';
 export { default as getBrowser } from './utils/browser/getBrowser';
 export { default as getHtmlElementCoords } from './utils/browser/getHtmlElementCoords';
