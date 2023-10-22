@@ -8,6 +8,8 @@ export type ExcludeFromArray<T extends any[], ToExclude> = Exclude<
   ToExclude
 >[];
 
+export type NoopFn = (..._: any[]) => void;
+
 export type PredicateFunc<T> = (
   key: string | symbol,
   value: string | Values<T>,
