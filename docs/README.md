@@ -2,6 +2,10 @@ hd-utils / [Exports](modules.md)
 
 # HD-Utils
 
+## Installation
+
+`npm install --save hd-utils`
+
 A handy utils for modern JS developers, it includes:
 
 1. String utils.
