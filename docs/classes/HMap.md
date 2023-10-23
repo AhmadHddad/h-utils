@@ -285,27 +285,7 @@ ___
 
 #### Defined in
 
-[src/classes/HMap.ts:50](https://github.com/AhmadHddad/h-utils/blob/dd39810/src/classes/HMap.ts#L50)
-
-___
-
-### filter
-
-▸ **filter**(`callback`): [`HMap`](HMap.md)<`K`, `V`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `callback` | (`value`: `V`, `key`: `K`, `map`: [`HMap`](HMap.md)<`K`, `V`\>) => `boolean` |
-
-#### Returns
-
-[`HMap`](HMap.md)<`K`, `V`\>
-
-#### Defined in
-
-[src/classes/HMap.ts:6](https://github.com/AhmadHddad/h-utils/blob/dd39810/src/classes/HMap.ts#L6)
+[src/extensions/HMap.ts:8](https://github.com/AhmadHddad/h-utils/blob/d859922/src/extensions/HMap.ts#L8)
 
 ___
 
@@ -325,7 +305,7 @@ ___
 
 #### Defined in
 
-[src/classes/HMap.ts:38](https://github.com/AhmadHddad/h-utils/blob/dd39810/src/classes/HMap.ts#L38)
+[src/extensions/HMap.ts:42](https://github.com/AhmadHddad/h-utils/blob/d859922/src/extensions/HMap.ts#L42)
 
 ___
 
@@ -394,35 +374,7 @@ ___
 
 #### Defined in
 
-[src/classes/HMap.ts:56](https://github.com/AhmadHddad/h-utils/blob/dd39810/src/classes/HMap.ts#L56)
-
-___
-
-### getAllValues
-
-▸ **getAllValues**(): `V`[]
-
-#### Returns
-
-`V`[]
-
-#### Defined in
-
-[src/classes/HMap.ts:66](https://github.com/AhmadHddad/h-utils/blob/dd39810/src/classes/HMap.ts#L66)
-
-___
-
-### getValuesArray
-
-▸ **getValuesArray**(): `V`[]
-
-#### Returns
-
-`V`[]
-
-#### Defined in
-
-[src/classes/HMap.ts:18](https://github.com/AhmadHddad/h-utils/blob/dd39810/src/classes/HMap.ts#L18)
+[src/extensions/HMap.ts:20](https://github.com/AhmadHddad/h-utils/blob/d859922/src/extensions/HMap.ts#L20)
 
 ___
 
@@ -494,7 +446,7 @@ ___
 
 #### Defined in
 
-[src/classes/HMap.ts:22](https://github.com/AhmadHddad/h-utils/blob/dd39810/src/classes/HMap.ts#L22)
+[src/extensions/HMap.ts:24](https://github.com/AhmadHddad/h-utils/blob/d859922/src/extensions/HMap.ts#L24)
 
 ___
 
@@ -520,7 +472,7 @@ ___
 
 #### Defined in
 
-[src/classes/HMap.ts:30](https://github.com/AhmadHddad/h-utils/blob/dd39810/src/classes/HMap.ts#L30)
+[src/extensions/HMap.ts:32](https://github.com/AhmadHddad/h-utils/blob/d859922/src/extensions/HMap.ts#L32)
 
 ___
 
@@ -628,4 +580,4 @@ ___
 
 #### Defined in
 
-[src/classes/HMap.ts:2](https://github.com/AhmadHddad/h-utils/blob/dd39810/src/classes/HMap.ts#L2)
+[src/extensions/HMap.ts:4](https://github.com/AhmadHddad/h-utils/blob/d859922/src/extensions/HMap.ts#L4)
