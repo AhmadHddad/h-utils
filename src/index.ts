@@ -143,3 +143,4 @@ export { default as removeEventListener } from './utils/browser/removeEventListe
 
 // Types
 export * from './utils/utilityTypes';
+export * from './utils/types';
