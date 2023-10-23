@@ -61,7 +61,10 @@ export type ReadonlyKeys<T extends object> = {
   >;
 }[keyof T];
 
-type IfEquals<X, Y, A = X, B = never> = (<T>() => T extends X ? 1 : 2) extends <
+/**
+ * @description will check if X, Y are equal
+ */
+export type IfEquals<X, Y, A = X, B = never> = (<T>() => T extends X ? 1 : 2) extends <
   T
 >() => T extends Y ? 1 : 2
   ? A
@@ -135,6 +138,7 @@ export type NonFunctionKeys<T extends object> = {
  * MutableKeys
  * @desc Get union type of keys that are mutable in object type `T`
  * Credit: Matt McCutchen
+ * IfEquals it will check if x equals y
  * https://stackoverflow.com/questions/52443276/how-to-exclude-getter-only-properties-from-type-in-typescript
  * @example
  *   type Props = { readonly foo: string; bar: number };

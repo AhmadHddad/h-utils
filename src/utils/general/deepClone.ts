@@ -17,7 +17,7 @@ const deserializer = ($, _) => {
     return out;
   };
 
-  const unpair = index => {
+  const unpair = (index) => {
     if ($.has(index)) return $.get(index);
 
     const [type, value] = _[index];
@@ -67,15 +67,9 @@ const deserializer = ($, _) => {
 };
 
 /**
- * @typedef {Array<string,any>} Record a type representation
- */
-
-/**
  * Returns a deserialized value from a serialized array of Records.
- * @param {Record[]} serialized a previously serialized value.
- * @returns {any}
  */
-const deserialize = serialized => deserializer(new Map(), serialized)(0);
+const deserialize = (serialized: any) => deserializer(new Map(), serialized)(0);
 
 // -------------------------- //
 
@@ -206,19 +200,12 @@ const serializer = (strict, json, $, _) => {
 };
 
 /**
- * @typedef {Array<string,any>} Record a type representation
- */
-
-/**
  * Returns an array of serialized Records.
- * @param {any} value a serializable value.
- * @param {{json?: boolean, lossy?: boolean}?} options an object with a `lossy` or `json` property that,
  *  if `true`, will not throw errors on incompatible types, and behave more
  *  like JSON stringify would behave. Symbol and Function will be discarded.
- * @returns {Record[]}
  */
 //@ts-ignore
-const serialize = (value, { json, lossy } = {}) => {
+const serialize = (value: any, { json, lossy } = {}) => {
   const _ = [];
   return serializer(!(json || lossy), !!json, new Map(), _)(value), _;
 };
