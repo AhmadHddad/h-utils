@@ -10,6 +10,9 @@ export type ExcludeFromArray<T extends any[], ToExclude> = Exclude<
 
 export type NoopFn = (..._: any[]) => void;
 
+export declare type FunctionReturningPromise = (...args: any[]) => Promise<any>;
+
+
 export type PredicateFunc<T> = (
   key: string | symbol,
   value: string | Values<T>,
