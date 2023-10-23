@@ -1,5 +1,6 @@
 export * from './regex/index';
-export { default as HMap } from './extensions/HMap';
+export { default as HMap } from './classes/HMap';
+export { default as Timer } from './classes/Timer';
 
 // Array utils
 export { default as arrayRange } from './utils/array/arrayRange';
