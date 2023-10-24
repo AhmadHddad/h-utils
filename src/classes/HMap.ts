@@ -66,4 +66,8 @@ export default class HMap<K extends string | symbol, V> extends Map<K, V> {
   getAllValues = (): V[] => {
     return Array.from(this.values());
   };
+
+  toObject = (): Record<K, V> => {
+    return Object.fromEntries(this) as Record<K, V>;
+  };
 }
