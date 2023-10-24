@@ -1,69 +1,69 @@
-//@ts-nocheck
-
-export default class HMap<K = string, V> extends Map<K, V> {
-  static from(obj: {}): HMap {
-    return new HMap(Object.entries(obj));
+export default class HMap<K extends string | symbol, V> extends Map<K, V> {
+  static from<K extends string | symbol, V>(obj: Record<K, V>): HMap<K, V> {
+    return new HMap<K, V>(Object.entries(obj) as [K, V][]);
   }
 
   filter = (
-    callbackfn: (value: V, key: K, map: HMap<K, V>) => boolean
-  ): this => {
-    const filtered = new HMap();
-    this.forEach((value, key, map) => {
-      if (callback(value, key, map)) {
+    callback: (value: V, key: K, map: HMap<K, V>) => boolean
+  ): HMap<K, V> => {
+    const filtered = new HMap<K, V>();
+    this.forEach((value, key) => {
+      if (callback(value, key, this)) {
         filtered.set(key, value);
       }
     });
     return filtered;
   };
 
-  getValuesArray = (): [V] => {
+  getValuesArray = (): V[] => {
     return Array.from(this.values());
   };
 
-  map = (callback: (value: V, key: K, map: HMap<K, V>) => any): this => {
-    const mapped = new HMap();
-    this.forEach((value, key, map) => {
-      mapped.set(key, callback(value, key, map));
+  map = <U>(callback: (value: V, key: K, map: HMap<K, V>) => U): HMap<K, U> => {
+    const mapped = new HMap<K, U>();
+    this.forEach((value, key) => {
+      mapped.set(key, callback(value, key, this));
     });
     return mapped;
   };
 
-  mapArray = (
-    callback: (value: V, key: K, map: HMap<K, V>) => boolean
-  ): any[] => {
-    const arr = [];
+  mapArray = <U>(callback: (value: V, key: K, map: HMap<K, V>) => U): U[] => {
+    const arr: U[] = [];
     this.forEach((v, k) => {
-      arr.push(callback(v, k));
+      arr.push(callback(v, k, this));
     });
     return arr;
   };
 
   findValue = (
-    callbackfn: (value: V, key: K, map: HMap<K, V>) => boolean
-  ): V => {
-    let found;
-    this.forEach((value, key, map) => {
-      if (callback(value, key, map)) {
+    callback: (value: V, key: K, map: HMap<K, V>) => boolean
+  ): V | undefined => {
+    let found: V | undefined;
+    this.forEach((value, key) => {
+      if (callback(value, key, this)) {
         found = value;
       }
     });
     return found;
   };
 
-  all = (callback: (value: V, key: K, map: HMap<K, V>) => boolean): boolean => {
-    return (
-      this.map(callback)
-        .getValuesArray()
-        .indexOf(false) === -1
-    );
+  every = (
+    callback: (value: V, key: K, map: HMap<K, V>) => boolean
+  ): boolean => {
+    return this.map(callback).getValuesArray().every(Boolean);
   };
 
-  any = (callback: (value: V, key: K, map: HMap<K, V>) => boolean): boolean => {
-    return (
-      this.map(callback)
-        .getValuesArray()
-        .indexOf(true) !== -1
-    );
+  getAllKeys = (): K[] => {
+    return Array.from(this.keys());
+  };
+
+  some = (
+    callback: (value: V, key: K, map: HMap<K, V>) => boolean
+  ): boolean => {
+    return this.map(callback).getValuesArray().some(Boolean);
+  };
+
+  getAllValues = (): V[] => {
+    return Array.from(this.values());
   };
 }
