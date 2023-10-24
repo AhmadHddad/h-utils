@@ -85,8 +85,8 @@ export { default as navigateObjWithString } from './utils/object/navigateObjWith
 
 // Route utils
 export { default as addHttpToURL } from './utils/route/addHttpToURL';
-export { default as getUrlObj } from './utils/route/getUrlObj';
 export { default as excludeQueryParamFromUrl } from './utils/route/excludeQueryParamFromUrl';
+export { default as getUrlObj } from './utils/route/getUrlObj';
 export { default as extractQueryFromUrl } from './utils/route/extractQueryFromUrl';
 export { default as parse } from './utils/route/parse';
 export { default as parseUrl } from './utils/route/parseUrl';
