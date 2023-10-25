@@ -1,6 +1,12 @@
+import { Utf8EncodeTypes } from "../types";
 import SHA256 from "./SHA256";
 
-export default function generateCacheKey(payload: any): string {
+
+/**
+ * Will generate a unique cache key for the passed payload
+ * @date 10/25/2023 - 11:14:03 AM
+ */
+export default function generateCacheKey(payload: Utf8EncodeTypes): string {
     // Convert the payload to a JSON string
     const payloadString = JSON.stringify(payload);
   
