@@ -141,6 +141,13 @@ export { default as getWindowObj } from './utils/browser/getWindowObj';
 export { default as onSetInterval } from './utils/browser/animationInterval';
 export { default as onUrlChange } from './utils/browser/onUrlChange';
 export { default as removeEventListener } from './utils/browser/removeEventListener';
+    
+
+// Crypto
+export { default as utf8Encode } from './utils/crypto/utf8Encode';
+export { default as generateCacheKey } from './utils/crypto/generateCacheKey';
+export { default as SHA256 } from './utils/crypto/SHA256';
+
 
 // Types
 export * from './utils/utilityTypes';

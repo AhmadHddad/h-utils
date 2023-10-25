@@ -1,11 +1,18 @@
 export type Fn = (this: any, ...args: any[]) => any;
-export type { Falsy, KeysArr, PredicateFunc, Key, Primitive } from './utilityTypes';
+export type {
+  Falsy,
+  KeysArr,
+  PredicateFunc,
+  Key,
+  Primitive,
+} from './utilityTypes';
 export type DebounceOptions = {
   leading?: boolean;
   trailing?: boolean;
   maxWait?: number;
 };
 
+export type Utf8EncodeTypes = string | number | {} | [] | boolean;
 
 export type StringifyOptions = {
   /**
@@ -112,13 +119,13 @@ export type StringifyOptions = {
     ```
   */
   readonly arrayFormat?:
-  | 'bracket'
-  | 'index'
-  | 'comma'
-  | 'separator'
-  | 'bracket-separator'
-  | 'colon-list-separator'
-  | 'none';
+    | 'bracket'
+    | 'index'
+    | 'comma'
+    | 'separator'
+    | 'bracket-separator'
+    | 'colon-list-separator'
+    | 'none';
 
   /**
   The character used to separate array elements when using `{arrayFormat: 'separator'}`.
@@ -210,7 +217,6 @@ export type StringifyOptions = {
 
 export type Stringifiable = string | boolean | number | null | undefined; // eslint-disable-line @typescript-eslint/ban-types
 
-
 export type UrlObject = {
   readonly url: string;
 
@@ -230,8 +236,10 @@ export type StringifiableRecord = Record<
   Stringifiable | readonly Stringifiable[]
 >;
 
-export type ParsedQuery<T = string> = Record<string, T | null | Array<T | null>>;
-
+export type ParsedQuery<T = string> = Record<
+  string,
+  T | null | Array<T | null>
+>;
 
 export type ParsedUrl = {
   readonly url: string;
@@ -244,7 +252,6 @@ export type ParsedUrl = {
   */
   readonly fragmentIdentifier?: string;
 };
-
 
 export type ParseOptions = {
   /**
@@ -335,7 +342,14 @@ export type ParseOptions = {
     //=> {foo: ['1', '2', '3']}
     ```
   */
-  readonly arrayFormat?: 'bracket' | 'index' | 'comma' | 'separator' | 'bracket-separator' | 'colon-list-separator' | 'none';
+  readonly arrayFormat?:
+    | 'bracket'
+    | 'index'
+    | 'comma'
+    | 'separator'
+    | 'bracket-separator'
+    | 'colon-list-separator'
+    | 'none';
 
   /**
   The character used to separate array elements when using `{arrayFormat: 'separator'}`.
@@ -419,19 +433,17 @@ export type ParseOptions = {
   readonly parseFragmentIdentifier?: boolean;
 };
 
-
-
 export type GetHtmlElementCoordsOptions = {
   position:
-  | 'top left'
-  | 'top center'
-  | 'top right'
-  | 'center left'
-  | 'center'
-  | 'center right'
-  | 'bottom left'
-  | 'bottom center'
-  | 'bottom right';
+    | 'top left'
+    | 'top center'
+    | 'top right'
+    | 'center left'
+    | 'center'
+    | 'center right'
+    | 'bottom left'
+    | 'bottom center'
+    | 'bottom right';
   precise: boolean;
 };
 
@@ -441,7 +453,6 @@ export declare namespace ClassNames {
   interface ArgumentArray extends Array<Argument> {}
   type Argument = Value | Mapping | ArgumentArray;
 }
-
 
 export type AttemptOptions = {
   errorHander?: (e: any) => any;
