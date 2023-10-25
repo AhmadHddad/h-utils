@@ -2,7 +2,7 @@ import splitOnFirst from '../string/splitOnFirst';
 import extractQueryFromUrl from './extractQueryFromUrl';
 import parse from './parse';
 import { decode } from './routeHelpers';
-import { ParsedUrl, ParseOptions } from './types';
+import { ParsedUrl, ParseOptions } from '../types';
 
 /**
  * @description Extract the URL and the query string as an object.

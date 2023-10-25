@@ -3,7 +3,7 @@ import extractQueryFromUrl from './extractQueryFromUrl';
 import parse from './parse';
 import removeHashFromUrl from './removeHashFromUrl';
 import { encodeFragmentIdentifier, stringify } from './routeHelpers';
-import { StringifyOptions, UrlObject } from './types';
+import { StringifyOptions, UrlObject } from '../types';
 
 /**
  * @description Stringify an object into a URL with a query string and sorting the keys. The inverse of .parseUrl();

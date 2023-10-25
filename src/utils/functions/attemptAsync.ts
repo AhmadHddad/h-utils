@@ -1,4 +1,4 @@
-import { AttemptOptions } from './attempt';
+import { AttemptOptions } from "../types";
 
 /**
  * @description Attempts to invoke `func` async, returning either the result or will adjust to the options,

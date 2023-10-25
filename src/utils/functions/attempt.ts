@@ -1,8 +1,4 @@
-export type AttemptOptions = {
-  errorHander?: (e: any) => any;
-  returnError?: boolean;
-  throwError?: boolean;
-};
+import { AttemptOptions } from "../types";
 
 /**
  * @description Attempts to invoke `func`, returning either the result or will adjust to the options,

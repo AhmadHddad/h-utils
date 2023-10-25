@@ -1,5 +1,6 @@
 export * from './regex/index';
-export { default as HMap } from './extensions/HMap';
+export { default as HMap } from './classes/HMap';
+export { default as Timer } from './classes/Timer';
 
 // Array utils
 export { default as arrayRange } from './utils/array/arrayRange';
@@ -85,6 +86,7 @@ export { default as navigateObjWithString } from './utils/object/navigateObjWith
 // Route utils
 export { default as addHttpToURL } from './utils/route/addHttpToURL';
 export { default as excludeQueryParamFromUrl } from './utils/route/excludeQueryParamFromUrl';
+export { default as getUrlObj } from './utils/route/getUrlObj';
 export { default as extractQueryFromUrl } from './utils/route/extractQueryFromUrl';
 export { default as parse } from './utils/route/parse';
 export { default as parseUrl } from './utils/route/parseUrl';
@@ -98,6 +100,8 @@ export { default as classNames } from './utils/style/classNames';
 // Validation utils
 export { default as isArray } from './utils/validation/isArray';
 export { default as isDev } from './utils/validation/isDev';
+export { default as isFalsy } from './utils/validation/isFalsy';
+export { default as isPrimitive } from './utils/validation/isPrimitive';
 export { default as isArrayOfStrings } from './utils/validation/isArrayOfStrings';
 export { default as isAsyncFunction } from './utils/validation/isAsyncFunction';
 export { default as isBiggerThan } from './utils/validation/isBiggerThan';
@@ -129,7 +133,7 @@ export { default as isWhiteSpace } from './utils/validation/isWhiteSpace';
 
 // Browser utils
 export { default as addEventListener } from './utils/browser/addEventListener';
-export { default as observe } from 'hd-intersection-observer';
+export { default as intersectionObserver } from 'hd-intersection-observer';
 export { default as animationInterval } from './utils/browser/animationInterval';
 export { default as getBrowser } from './utils/browser/getBrowser';
 export { default as getHtmlElementCoords } from './utils/browser/getHtmlElementCoords';
@@ -137,6 +141,14 @@ export { default as getWindowObj } from './utils/browser/getWindowObj';
 export { default as onSetInterval } from './utils/browser/animationInterval';
 export { default as onUrlChange } from './utils/browser/onUrlChange';
 export { default as removeEventListener } from './utils/browser/removeEventListener';
+    
+
+// Crypto
+export { default as utf8Encode } from './utils/crypto/utf8Encode';
+export { default as generateCacheKey } from './utils/crypto/generateCacheKey';
+export { default as SHA256 } from './utils/crypto/SHA256';
+
 
 // Types
+export * from './utils/utilityTypes';
 export * from './utils/types';

@@ -1,6 +1,8 @@
 //@ts-nocheck
 import getGlobalThis from '../general/getGlobalThis';
+import { DebounceOptions } from '../types';
 import isObject from '../validation/isObject';
+
 
 /**
  * Creates a debounced function that delays invoking `func` until after `wait`
@@ -66,7 +68,7 @@ import isObject from '../validation/isObject';
 function debounce<T = any>(
   func: (...args: any[]) => T,
   wait = 200,
-  options?: { leading: boolean; trailing: boolean; maxWait: number }
+  options?: DebounceOptions
 ) {
   let lastArgs, lastThis, maxWait, result, timerId, lastCallTime;
   const root = getGlobalThis();

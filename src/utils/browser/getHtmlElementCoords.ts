@@ -1,18 +1,6 @@
+import { GetHtmlElementCoordsOptions } from '../types';
 import isBrowser from '../validation/isBrowser';
 
-type Options = {
-  position:
-    | 'top left'
-    | 'top center'
-    | 'top right'
-    | 'center left'
-    | 'center'
-    | 'center right'
-    | 'bottom left'
-    | 'bottom center'
-    | 'bottom right';
-  precise: boolean;
-};
 
 /**
  * @description Finding element's position (x, y coordinates) relative to the document.
@@ -24,7 +12,7 @@ type Options = {
  */
 export default function getHtmlElementCoords(
   element: HTMLElement,
-  options: Options = { position: 'top left', precise: false }
+  options: GetHtmlElementCoordsOptions = { position: 'top left', precise: false }
 ): { x: number; y: number } {
   if (!isBrowser()) return { x: 0, y: 0 };
 

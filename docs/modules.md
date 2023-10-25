@@ -12,21 +12,75 @@
 
 ### Namespaces
 
+- [ClassNames](modules/ClassNames.md)
 - [memoize](modules/memoize.md)
 
 ### Classes
 
 - [HMap](classes/HMap.md)
+- [Timer](classes/Timer.md)
+
+### Interfaces
+
+- [\_DeepNonNullableArray](interfaces/DeepNonNullableArray.md)
+- [\_DeepPartialArray](interfaces/DeepPartialArray.md)
+- [\_DeepReadonlyArray](interfaces/DeepReadonlyArray.md)
+- [\_DeepRequiredArray](interfaces/DeepRequiredArray.md)
 
 ### Type Aliases
 
+- [Assign](modules.md#assign)
+- [AttemptOptions](modules.md#attemptoptions)
+- [DebounceOptions](modules.md#debounceoptions)
+- [DeepNonNullable](modules.md#deepnonnullable)
+- [DeepPartial](modules.md#deeppartial)
+- [DeepReadonly](modules.md#deepreadonly)
+- [DeepRequired](modules.md#deeprequired)
+- [Diff](modules.md#diff)
+- [Exact](modules.md#exact)
 - [ExcludeFromArray](modules.md#excludefromarray)
+- [Falsy](modules.md#falsy)
 - [Fn](modules.md#fn)
+- [FunctionKeys](modules.md#functionkeys)
+- [FunctionReturningPromise](modules.md#functionreturningpromise)
+- [GetHtmlElementCoordsOptions](modules.md#gethtmlelementcoordsoptions)
+- [IfEquals](modules.md#ifequals)
+- [Intersection](modules.md#intersection)
 - [Key](modules.md#key)
 - [Keys](modules.md#keys)
 - [KeysArr](modules.md#keysarr)
+- [MutableKeys](modules.md#mutablekeys)
+- [NonFunctionKeys](modules.md#nonfunctionkeys)
+- [NonUndefined](modules.md#nonundefined)
+- [NoopFn](modules.md#noopfn)
+- [Nullable](modules.md#nullable)
+- [NullableOrUndefined](modules.md#nullableorundefined)
+- [OptionalKeys](modules.md#optionalkeys)
+- [Overwrite](modules.md#overwrite)
+- [PAwaited](modules.md#pawaited)
+- [ParseOptions](modules.md#parseoptions)
+- [ParsedQuery](modules.md#parsedquery)
+- [ParsedUrl](modules.md#parsedurl)
 - [PredicateFunc](modules.md#predicatefunc)
+- [Primitive](modules.md#primitive)
+- [PromiseType](modules.md#promisetype)
+- [ReadonlyKeys](modules.md#readonlykeys)
+- [RequiredKeys](modules.md#requiredkeys)
+- [SetComplement](modules.md#setcomplement)
+- [SetDifference](modules.md#setdifference)
+- [Stringifiable](modules.md#stringifiable)
+- [StringifiableRecord](modules.md#stringifiablerecord)
+- [StringifyOptions](modules.md#stringifyoptions)
+- [Subtract](modules.md#subtract)
+- [Unionize](modules.md#unionize)
+- [UrlObject](modules.md#urlobject)
+- [Utf8EncodeTypes](modules.md#utf8encodetypes)
 - [Values](modules.md#values)
+- [WritableKeys](modules.md#writablekeys)
+- [\_DeepNonNullableObject](modules.md#_deepnonnullableobject)
+- [\_DeepPartial](modules.md#_deeppartial)
+- [\_DeepReadonlyObject](modules.md#_deepreadonlyobject)
+- [\_DeepRequiredObject](modules.md#_deeprequiredobject)
 
 ### Variables
 
@@ -52,6 +106,7 @@
 
 ### Other Functions
 
+- [SHA256](modules.md#sha256)
 - [addAndOrConjunctionsToStrArray](modules.md#addandorconjunctionstostrarray)
 - [addEventListener](modules.md#addeventlistener)
 - [addHttpToURL](modules.md#addhttptourl)
@@ -77,6 +132,7 @@
 - [extractQueryFromUrl](modules.md#extractqueryfromurl)
 - [extractUrlsFromString](modules.md#extracturlsfromstring)
 - [fastDeepEqual](modules.md#fastdeepequal)
+- [generateCacheKey](modules.md#generatecachekey)
 - [generateGuid](modules.md#generateguid)
 - [getAsciiCodeForChar](modules.md#getasciicodeforchar)
 - [getAsciiSumFromString](modules.md#getasciisumfromstring)
@@ -93,10 +149,12 @@
 - [getSmallestArrInObj](modules.md#getsmallestarrinobj)
 - [getSum](modules.md#getsum)
 - [getTag](modules.md#gettag)
+- [getUrlObj](modules.md#geturlobj)
 - [getWindowObj](modules.md#getwindowobj)
 - [has](modules.md#has)
 - [hashString](modules.md#hashstring)
 - [includeKeys](modules.md#includekeys)
+- [intersectionObserver](modules.md#intersectionobserver)
 - [isArray](modules.md#isarray)
 - [isArrayOfStrings](modules.md#isarrayofstrings)
 - [isAsyncFunction](modules.md#isasyncfunction)
@@ -107,6 +165,7 @@
 - [isDev](modules.md#isdev)
 - [isEmail](modules.md#isemail)
 - [isEmpty](modules.md#isempty)
+- [isFalsy](modules.md#isfalsy)
 - [isFunction](modules.md#isfunction)
 - [isIndex](modules.md#isindex)
 - [isKeyInObject](modules.md#iskeyinobject)
@@ -117,6 +176,7 @@
 - [isNumber](modules.md#isnumber)
 - [isObjHasValues](modules.md#isobjhasvalues)
 - [isObject](modules.md#isobject)
+- [isPrimitive](modules.md#isprimitive)
 - [isPromise](modules.md#ispromise)
 - [isSmallerThan](modules.md#issmallerthan)
 - [isString](modules.md#isstring)
@@ -157,6 +217,7 @@
 - [throttlePromise](modules.md#throttlepromise)
 - [toArray](modules.md#toarray)
 - [urlSearchParamsToObject](modules.md#urlsearchparamstoobject)
+- [utf8Encode](modules.md#utf8encode)
 
 ## References
 
@@ -178,6 +239,300 @@ Renames and re-exports [sleep](modules.md#sleep)
 
 ## Type Aliases
 
+### Assign
+
+Ƭ **Assign**<`T`, `U`, `I`\>: `Pick`<`I`, keyof `I`\>
+
+Assign
+
+**`Desc`**
+
+From `U` assign properties to `T` (just like object assign)
+
+**`Example`**
+
+```ts
+type Props = { name: string; age: number; visible: boolean };
+  type NewProps = { age: string; other: string };
+
+  // Expect: { name: string; age: number; visible: boolean; other: string; }
+  type ExtendedProps = Assign<Props, NewProps>;
+```
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `object` |
+| `U` | extends `object` |
+| `I` | [`Diff`](modules.md#diff)<`T`, `U`\> & [`Intersection`](modules.md#intersection)<`U`, `T`\> & [`Diff`](modules.md#diff)<`U`, `T`\> |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:278](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L278)
+
+___
+
+### AttemptOptions
+
+Ƭ **AttemptOptions**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `errorHander?` | (`e`: `any`) => `any` |
+| `returnError?` | `boolean` |
+| `throwError?` | `boolean` |
+
+#### Defined in
+
+[src/utils/types.ts:457](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/types.ts#L457)
+
+___
+
+### DebounceOptions
+
+Ƭ **DebounceOptions**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `leading?` | `boolean` |
+| `maxWait?` | `number` |
+| `trailing?` | `boolean` |
+
+#### Defined in
+
+[src/utils/types.ts:9](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/types.ts#L9)
+
+___
+
+### DeepNonNullable
+
+Ƭ **DeepNonNullable**<`T`\>: `T` extends (...`args`: `any`[]) => `any` ? `T` : `T` extends `any`[] ? [`_DeepNonNullableArray`](interfaces/DeepNonNullableArray.md)<`T`[`number`]\> : `T` extends `object` ? [`_DeepNonNullableObject`](modules.md#_deepnonnullableobject)<`T`\> : `T`
+
+DeepNonNullable
+
+**`Desc`**
+
+NonNullable that works for deeply nested structure
+
+**`Example`**
+
+```ts
+// Expect: {
+  //   first: {
+  //     second: {
+  //       name: string;
+  //     };
+  //   };
+  // }
+  type NestedProps = {
+    first?: null | {
+      second?: null | {
+        name?: string | null |
+        undefined;
+      };
+    };
+  };
+  type RequiredNestedProps = DeepNonNullable<NestedProps>;
+```
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:407](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L407)
+
+___
+
+### DeepPartial
+
+Ƭ **DeepPartial**<`T`\>: { [P in keyof T]?: \_DeepPartial<T[P]\> }
+
+DeepPartial
+
+**`Desc`**
+
+Partial that works for deeply nested structure
+
+**`Example`**
+
+```ts
+// Expect: {
+  //   first?: {
+  //     second?: {
+  //       name?: string;
+  //     };
+  //   };
+  // }
+  type NestedProps = {
+    first: {
+      second: {
+        name: string;
+      };
+    };
+  };
+  type PartialNestedProps = DeepPartial<NestedProps>;
+```
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:443](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L443)
+
+___
+
+### DeepReadonly
+
+Ƭ **DeepReadonly**<`T`\>: `T` extends (...`args`: `any`[]) => `any` \| [`Primitive`](modules.md#primitive) ? `T` : `T` extends [`_DeepReadonlyArray`](interfaces/DeepReadonlyArray.md)<infer U\> ? [`_DeepReadonlyArray`](interfaces/DeepReadonlyArray.md)<`U`\> : `T` extends [`_DeepReadonlyObject`](modules.md#_deepreadonlyobject)<infer V\> ? [`_DeepReadonlyObject`](modules.md#_deepreadonlyobject)<`V`\> : `T`
+
+DeepReadonly
+
+**`Desc`**
+
+Readonly that works for deeply nested structure
+
+**`Example`**
+
+```ts
+// Expect: {
+  //   readonly first: {
+  //     readonly second: {
+  //       readonly name: string;
+  //     };
+  //   };
+  // }
+  type NestedProps = {
+    first: {
+      second: {
+        name: string;
+      };
+    };
+  };
+  type ReadonlyNestedProps = DeepReadonly<NestedProps>;
+```
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:335](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L335)
+
+___
+
+### DeepRequired
+
+Ƭ **DeepRequired**<`T`\>: `T` extends (...`args`: `any`[]) => `any` ? `T` : `T` extends `any`[] ? [`_DeepRequiredArray`](interfaces/DeepRequiredArray.md)<`T`[`number`]\> : `T` extends `object` ? [`_DeepRequiredObject`](modules.md#_deeprequiredobject)<`T`\> : `T`
+
+DeepRequired
+
+**`Desc`**
+
+Required that works for deeply nested structure
+
+**`Example`**
+
+```ts
+// Expect: {
+  //   first: {
+  //     second: {
+  //       name: string;
+  //     };
+  //   };
+  // }
+  type NestedProps = {
+    first?: {
+      second?: {
+        name?: string;
+      };
+    };
+  };
+  type RequiredNestedProps = DeepRequired<NestedProps>;
+```
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:370](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L370)
+
+___
+
+### Diff
+
+Ƭ **Diff**<`T`, `U`\>: `Pick`<`T`, [`SetDifference`](modules.md#setdifference)<keyof `T`, keyof `U`\>\>
+
+Diff
+
+**`Desc`**
+
+From `T` remove properties that exist in `U`
+
+**`Example`**
+
+```ts
+type Props = { name: string; age: number; visible: boolean };
+  type DefaultProps = { age: number };
+
+  // Expect: { name: string; visible: boolean; }
+  type DiffProps = Diff<Props, DefaultProps>;
+```
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `object` |
+| `U` | extends `object` |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:180](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L180)
+
+___
+
+### Exact
+
+Ƭ **Exact**<`A`\>: `A` & { `__brand`: keyof `A`  }
+
+Exact
+
+**`Desc`**
+
+Create branded object type for exact type matching
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `A` | extends `object` |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:288](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L288)
+
+___
+
 ### ExcludeFromArray
 
 Ƭ **ExcludeFromArray**<`T`, `ToExclude`\>: `Exclude`<`T`[`number`], `ToExclude`\>[]
@@ -191,7 +546,32 @@ Renames and re-exports [sleep](modules.md#sleep)
 
 #### Defined in
 
-[src/utils/types.ts:7](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/types.ts#L7)
+[src/utils/utilityTypes.ts:6](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L6)
+
+___
+
+### Falsy
+
+Ƭ **Falsy**: ``false`` \| ``""`` \| ``0`` \| ``null`` \| `undefined`
+
+Falsy
+
+**`Desc`**
+
+Type representing falsy values in TypeScript: `false | "" | 0 | null | undefined`
+
+**`Example`**
+
+```ts
+type Various = 'a' | 'b' | undefined | false;
+
+  // Expect: "a" | "b"
+  Exclude<Various, Falsy>;
+```
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:82](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L82)
 
 ___
 
@@ -216,7 +596,135 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:2](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/types.ts#L2)
+[src/utils/types.ts:1](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/types.ts#L1)
+
+___
+
+### FunctionKeys
+
+Ƭ **FunctionKeys**<`T`\>: { [K in keyof T]-?: NonUndefined<T[K]\> extends Function ? K : never }[keyof `T`]
+
+FunctionKeys
+
+**`Desc`**
+
+Get union type of keys that are functions in object type `T`
+
+**`Example`**
+
+```ts
+type MixedProps = {name: string; setName: (name: string) => void; someKeys?: string; someFn?: (...args: any) => any;};
+
+  // Expect: "setName | someFn"
+  type Keys = FunctionKeys<MixedProps>;
+```
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `object` |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:120](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L120)
+
+___
+
+### FunctionReturningPromise
+
+Ƭ **FunctionReturningPromise**: (...`args`: `any`[]) => `Promise`<`any`\>
+
+#### Type declaration
+
+▸ (`...args`): `Promise`<`any`\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `...args` | `any`[] |
+
+##### Returns
+
+`Promise`<`any`\>
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:13](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L13)
+
+___
+
+### GetHtmlElementCoordsOptions
+
+Ƭ **GetHtmlElementCoordsOptions**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `position` | ``"top left"`` \| ``"top center"`` \| ``"top right"`` \| ``"center left"`` \| ``"center"`` \| ``"center right"`` \| ``"bottom left"`` \| ``"bottom center"`` \| ``"bottom right"`` |
+| `precise` | `boolean` |
+
+#### Defined in
+
+[src/utils/types.ts:436](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/types.ts#L436)
+
+___
+
+### IfEquals
+
+Ƭ **IfEquals**<`X`, `Y`, `A`, `B`\>: <T\>() => `T` extends `X` ? ``1`` : ``2`` extends <T\>() => `T` extends `Y` ? ``1`` : ``2`` ? `A` : `B`
+
+**`Description`**
+
+will check if X, Y are equal
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `X` | `X` |
+| `Y` | `Y` |
+| `A` | `X` |
+| `B` | `never` |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:67](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L67)
+
+___
+
+### Intersection
+
+Ƭ **Intersection**<`T`, `U`\>: `Pick`<`T`, `Extract`<keyof `T`, keyof `U`\> & `Extract`<keyof `U`, keyof `T`\>\>
+
+Intersection
+
+**`Desc`**
+
+From `T` pick properties that exist in `U`
+
+**`Example`**
+
+```ts
+type Props = { name: string; age: number; visible: boolean };
+  type DefaultProps = { age: number };
+
+  // Expect: { age: number; }
+  type DuplicateProps = Intersection<Props, DefaultProps>;
+```
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `object` |
+| `U` | extends `object` |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:247](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L247)
 
 ___
 
@@ -226,7 +734,7 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:1](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/types.ts#L1)
+[src/utils/utilityTypes.ts:1](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L1)
 
 ___
 
@@ -242,7 +750,7 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:4](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/types.ts#L4)
+[src/utils/utilityTypes.ts:3](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L3)
 
 ___
 
@@ -252,7 +760,296 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:18](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/types.ts#L18)
+[src/utils/utilityTypes.ts:21](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L21)
+
+___
+
+### MutableKeys
+
+Ƭ **MutableKeys**<`T`\>: { [P in keyof T]-?: IfEquals<{ [Q in P]: T[P] }, { -readonly [Q in P]: T[P] }, P\> }[keyof `T`]
+
+MutableKeys
+
+**`Desc`**
+
+Get union type of keys that are mutable in object type `T`
+Credit: Matt McCutchen
+IfEquals it will check if x equals y
+https://stackoverflow.com/questions/52443276/how-to-exclude-getter-only-properties-from-type-in-typescript
+
+**`Example`**
+
+```ts
+type Props = { readonly foo: string; bar: number };
+
+  // Expect: "bar"
+  type Keys = MutableKeys<Props>;
+```
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `object` |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:149](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L149)
+
+___
+
+### NonFunctionKeys
+
+Ƭ **NonFunctionKeys**<`T`\>: { [K in keyof T]-?: NonUndefined<T[K]\> extends Function ? never : K }[keyof `T`]
+
+NonFunctionKeys
+
+**`Desc`**
+
+Get union type of keys that are non-functions in object type `T`
+
+**`Example`**
+
+```ts
+type MixedProps = {name: string; setName: (name: string) => void; someKeys?: string; someFn?: (...args: any) => any;};
+
+  // Expect: "name | someKey"
+  type Keys = NonFunctionKeys<MixedProps>;
+```
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `object` |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:133](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L133)
+
+___
+
+### NonUndefined
+
+Ƭ **NonUndefined**<`A`\>: `A` extends `undefined` ? `never` : `A`
+
+NonUndefined
+
+**`Desc`**
+
+Exclude undefined from set `A`
+
+**`Example`**
+
+```ts
+// Expect: "string | null"
+  SymmetricDifference<string | null | undefined>;
+```
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `A` |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:109](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L109)
+
+___
+
+### NoopFn
+
+Ƭ **NoopFn**: (...`_`: `any`[]) => `void`
+
+#### Type declaration
+
+▸ (`..._`): `void`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `..._` | `any`[] |
+
+##### Returns
+
+`void`
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:11](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L11)
+
+___
+
+### Nullable
+
+Ƭ **Nullable**<`T`\>: `T` \| ``null``
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:36](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L36)
+
+___
+
+### NullableOrUndefined
+
+Ƭ **NullableOrUndefined**: ``null`` \| `undefined`
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:38](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L38)
+
+___
+
+### OptionalKeys
+
+Ƭ **OptionalKeys**<`T`\>: { [K in keyof T]-?: Object extends Pick<T, K\> ? K : never }[keyof `T`]
+
+OptionalKeys
+
+**`Desc`**
+
+Get union type of keys that are optional in object type `T`
+
+**`See`**
+
+https://stackoverflow.com/questions/52984808/is-there-a-way-to-get-all-required-properties-of-a-typescript-object
+
+**`Example`**
+
+```ts
+type Props = { req: number; reqUndef: number | undefined; opt?: string; optUndef?: number | undefined; };
+
+  // Expect: "opt" | "optUndef"
+  type Keys = OptionalKeys<Props>;
+```
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:209](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L209)
+
+___
+
+### Overwrite
+
+Ƭ **Overwrite**<`T`, `U`, `I`\>: `Pick`<`I`, keyof `I`\>
+
+Overwrite
+
+**`Desc`**
+
+From `U` overwrite properties to `T`
+
+**`Example`**
+
+```ts
+type Props = { name: string; age: number; visible: boolean };
+  type NewProps = { age: string; other: string };
+
+  // Expect: { name: string; age: string; visible: boolean; }
+  type ReplacedProps = Overwrite<Props, NewProps>;
+```
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `object` |
+| `U` | extends `object` |
+| `I` | [`Diff`](modules.md#diff)<`T`, `U`\> & [`Intersection`](modules.md#intersection)<`U`, `T`\> |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:262](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L262)
+
+___
+
+### PAwaited
+
+Ƭ **PAwaited**<`T`\>: `T` extends ``null`` \| `undefined` ? `T` : `T` extends `object` & { `then`: (`onfulfilled`: `F`, ...`args`: `_`) => `any`  } ? `F` extends (`value`: infer V, ...`args`: infer \_) => `any` ? `Awaited`<`V`\> : `never` : `T`
+
+Recursively unwraps the "awaited type" of a type. 
+  Non-promise "thenables" should resolve to `never`. 
+  This emulates the behavior of `await`.
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:28](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L28)
+
+___
+
+### ParseOptions
+
+Ƭ **ParseOptions**: `Object`
+
+#### Type declaration
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `arrayFormat?` | ``"bracket"`` \| ``"index"`` \| ``"comma"`` \| ``"separator"`` \| ``"bracket-separator"`` \| ``"colon-list-separator"`` \| ``"none"`` | **`Default`** 'none' - `bracket`: Parse arrays with bracket representation: ``` import queryString from 'query-string'; queryString.parse('foo[]=1&foo[]=2&foo[]=3', {arrayFormat: 'bracket'}); //=> {foo: ['1', '2', '3']} ``` - `index`: Parse arrays with index representation: ``` import queryString from 'query-string'; queryString.parse('foo[0]=1&foo[1]=2&foo[3]=3', {arrayFormat: 'index'}); //=> {foo: ['1', '2', '3']} ``` - `comma`: Parse arrays with elements separated by comma: ``` import queryString from 'query-string'; queryString.parse('foo=1,2,3', {arrayFormat: 'comma'}); //=> {foo: ['1', '2', '3']} ``` - `separator`: Parse arrays with elements separated by a custom character: ``` import queryString from 'query-string'; queryString.parse('foo=1\|2\|3', {arrayFormat: 'separator', arrayFormatSeparator: '\|'}); //=> {foo: ['1', '2', '3']} ``` - `bracket-separator`: Parse arrays (that are explicitly marked with brackets) with elements separated by a custom character: ``` import queryString from 'query-string'; queryString.parse('foo[]', {arrayFormat: 'bracket-separator', arrayFormatSeparator: '\|'}); //=> {foo: []} queryString.parse('foo[]=', {arrayFormat: 'bracket-separator', arrayFormatSeparator: '\|'}); //=> {foo: ['']} queryString.parse('foo[]=1', {arrayFormat: 'bracket-separator', arrayFormatSeparator: '\|'}); //=> {foo: ['1']} queryString.parse('foo[]=1\|2\|3', {arrayFormat: 'bracket-separator', arrayFormatSeparator: '\|'}); //=> {foo: ['1', '2', '3']} queryString.parse('foo[]=1\|\|3\|\|\|6', {arrayFormat: 'bracket-separator', arrayFormatSeparator: '\|'}); //=> {foo: ['1', '', 3, '', '', '6']} queryString.parse('foo[]=1\|2\|3&bar=fluffy&baz[]=4', {arrayFormat: 'bracket-separator', arrayFormatSeparator: '\|'}); //=> {foo: ['1', '2', '3'], bar: 'fluffy', baz:['4']} ``` - `colon-list-separator`: Parse arrays with parameter names that are explicitly marked with `:list`: ``` import queryString from 'query-string'; queryString.parse('foo:list=one&foo:list=two', {arrayFormat: 'colon-list-separator'}); //=> {foo: ['one', 'two']} ``` - `none`: Parse arrays with elements using duplicate keys: ``` import queryString from 'query-string'; queryString.parse('foo=1&foo=2&foo=3'); //=> {foo: ['1', '2', '3']} ``` |
+| `arrayFormatSeparator?` | `string` | The character used to separate array elements when using `{arrayFormat: 'separator'}`. **`Default`** , |
+| `decode?` | `boolean` | Decode the keys and values. URI components are decoded with [`decode-uri-component`](https://github.com/SamVerschueren/decode-uri-component). **`Default`** true |
+| `parseBooleans?` | `boolean` | Parse the value as a boolean type instead of string type if it's a boolean. **`Default`** false **`Example`** ``` import queryString from 'query-string'; queryString.parse('foo=true', {parseBooleans: true}); //=> {foo: true} ``` |
+| `parseFragmentIdentifier?` | `boolean` | Parse the fragment identifier from the URL and add it to result object. **`Default`** false **`Example`** ``` import queryString from 'query-string'; queryString.parseUrl('https://foo.bar?foo=bar#xyz', {parseFragmentIdentifier: true}); //=> {url: 'https://foo.bar', query: {foo: 'bar'}, fragmentIdentifier: 'xyz'} ``` |
+| `parseNumbers?` | `boolean` | Parse the value as a number type instead of string type if it's a number. **`Default`** false **`Example`** ``` import queryString from 'query-string'; queryString.parse('foo=1', {parseNumbers: true}); //=> {foo: 1} ``` |
+| `sort?` | (`itemLeft`: `string`, `itemRight`: `string`) => `number` \| ``false`` | Supports both `Function` as a custom sorting function or `false` to disable sorting. If omitted, keys are sorted using `Array#sort`, which means, converting them to strings and comparing strings in Unicode code point order. **`Default`** true **`Example`** ``` import queryString from 'query-string'; const order = ['c', 'a', 'b']; queryString.parse('?a=one&b=two&c=three', { sort: (itemLeft, itemRight) => order.indexOf(itemLeft) - order.indexOf(itemRight) }); //=> {c: 'three', a: 'one', b: 'two'} ``` **`Example`** ``` import queryString from 'query-string'; queryString.parse('?a=one&c=three&b=two', {sort: false}); //=> {a: 'one', c: 'three', b: 'two'} ``` |
+
+#### Defined in
+
+[src/utils/types.ts:256](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/types.ts#L256)
+
+___
+
+### ParsedQuery
+
+Ƭ **ParsedQuery**<`T`\>: `Record`<`string`, `T` \| ``null`` \| (`T` \| ``null``)[]\>
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `string` |
+
+#### Defined in
+
+[src/utils/types.ts:239](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/types.ts#L239)
+
+___
+
+### ParsedUrl
+
+Ƭ **ParsedUrl**: `Object`
+
+#### Type declaration
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `fragmentIdentifier?` | `string` | The fragment identifier of the URL. Present when the `parseFragmentIdentifier` option is `true`. |
+| `query` | [`ParsedQuery`](modules.md#parsedquery) | - |
+| `url` | `string` | - |
+
+#### Defined in
+
+[src/utils/types.ts:244](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/types.ts#L244)
 
 ___
 
@@ -284,7 +1081,326 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:12](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/types.ts#L12)
+[src/utils/utilityTypes.ts:15](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L15)
+
+___
+
+### Primitive
+
+Ƭ **Primitive**: `string` \| `number` \| `bigint` \| `boolean` \| `symbol` \| ``null`` \| `undefined`
+
+Primitive
+
+**`Desc`**
+
+Type representing [`Primitive`](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) types in TypeScript: `string | number | bigint | boolean |  symbol | null | undefined`
+
+**`Example`**
+
+```ts
+type Various = number | string | object;
+
+   // Expect: object
+  type Cleaned = Exclude<Various, Primitive>
+```
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:93](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L93)
+
+___
+
+### PromiseType
+
+Ƭ **PromiseType**<`T`\>: `T` extends `Promise`<infer U\> ? `U` : `never`
+
+PromiseType
+
+**`Desc`**
+
+Obtain Promise resolve type
+
+**`Example`**
+
+```ts
+// Expect: string;
+  type Response = PromiseType<Promise<string>>;
+```
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `Promise`<`any`\> |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:310](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L310)
+
+___
+
+### ReadonlyKeys
+
+Ƭ **ReadonlyKeys**<`T`\>: { [P in keyof T]-?: IfEquals<{ [Q in P]: T[P] }, { -readonly [Q in P]: T[P] }, never, P\> }[keyof `T`]
+
+ReadonlyKeys
+
+**`Desc`**
+
+Get union type of keys that are readonly in object type `T`
+Credit: Matt McCutchen
+https://stackoverflow.com/questions/52443276/how-to-exclude-getter-only-properties-from-type-in-typescript
+
+**`Example`**
+
+```ts
+type Props = { readonly foo: string; bar: number };
+
+  // Expect: "foo"
+  type Keys = ReadonlyKeys<Props>;
+```
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `object` |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:55](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L55)
+
+___
+
+### RequiredKeys
+
+Ƭ **RequiredKeys**<`T`\>: { [K in keyof T]-?: Object extends Pick<T, K\> ? never : K }[keyof `T`]
+
+RequiredKeys
+
+**`Desc`**
+
+Get union type of keys that are required in object type `T`
+
+**`See`**
+
+https://stackoverflow.com/questions/52984808/is-there-a-way-to-get-all-required-properties-of-a-typescript-object
+
+**`Example`**
+
+```ts
+type Props = { req: number; reqUndef: number | undefined; opt?: string; optUndef?: number | undefined; };
+
+  // Expect: "req" | "reqUndef"
+  type Keys = RequiredKeys<Props>;
+```
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:195](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L195)
+
+___
+
+### SetComplement
+
+Ƭ **SetComplement**<`A`, `A1`\>: [`SetDifference`](modules.md#setdifference)<`A`, `A1`\>
+
+SetComplement
+
+**`Desc`**
+
+Set complement of given union types `A` and (it's subset) `A1`
+
+**`Example`**
+
+```ts
+// Expect: "1"
+  SetComplement<'1' | '2' | '3', '2' | '3'>;
+```
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `A` | `A` |
+| `A1` | extends `A` |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:220](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L220)
+
+___
+
+### SetDifference
+
+Ƭ **SetDifference**<`A`, `B`\>: `A` extends `B` ? `never` : `A`
+
+SetDifference (same as Exclude)
+
+**`Desc`**
+
+Set difference of given union types `A` and `B`
+
+**`Example`**
+
+```ts
+// Expect: "1"
+  SetDifference<'1' | '2' | '3', '2' | '3' | '4'>;
+
+  // Expect: string | number
+  SetDifference<string | number | (() => void), Function>;
+```
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `A` |
+| `B` |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:168](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L168)
+
+___
+
+### Stringifiable
+
+Ƭ **Stringifiable**: `string` \| `boolean` \| `number` \| ``null`` \| `undefined`
+
+#### Defined in
+
+[src/utils/types.ts:218](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/types.ts#L218)
+
+___
+
+### StringifiableRecord
+
+Ƭ **StringifiableRecord**: `Record`<`string`, [`Stringifiable`](modules.md#stringifiable) \| readonly [`Stringifiable`](modules.md#stringifiable)[]\>
+
+#### Defined in
+
+[src/utils/types.ts:234](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/types.ts#L234)
+
+___
+
+### StringifyOptions
+
+Ƭ **StringifyOptions**: `Object`
+
+#### Type declaration
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `arrayFormat?` | ``"bracket"`` \| ``"index"`` \| ``"comma"`` \| ``"separator"`` \| ``"bracket-separator"`` \| ``"colon-list-separator"`` \| ``"none"`` | **`Default`** 'none' - `bracket`: Serialize arrays using bracket representation: ``` import queryString from 'query-string'; queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'bracket'}); //=> 'foo[]=1&foo[]=2&foo[]=3' ``` - `index`: Serialize arrays using index representation: ``` import queryString from 'query-string'; queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'index'}); //=> 'foo[0]=1&foo[1]=2&foo[2]=3' ``` - `comma`: Serialize arrays by separating elements with comma: ``` import queryString from 'query-string'; queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'comma'}); //=> 'foo=1,2,3' queryString.stringify({foo: [1, null, '']}, {arrayFormat: 'comma'}); //=> 'foo=1,,' // Note that typing information for null values is lost // and `.parse('foo=1,,')` would return `{foo: [1, '', '']}`. ``` - `separator`: Serialize arrays by separating elements with character: ``` import queryString from 'query-string'; queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'separator', arrayFormatSeparator: '\|'}); //=> 'foo=1\|2\|3' ``` - `bracket-separator`: Serialize arrays by explicitly post-fixing array names with brackets and separating elements with a custom character: ``` import queryString from 'query-string'; queryString.stringify({foo: []}, {arrayFormat: 'bracket-separator', arrayFormatSeparator: '\|'}); //=> 'foo[]' queryString.stringify({foo: ['']}, {arrayFormat: 'bracket-separator', arrayFormatSeparator: '\|'}); //=> 'foo[]=' queryString.stringify({foo: [1]}, {arrayFormat: 'bracket-separator', arrayFormatSeparator: '\|'}); //=> 'foo[]=1' queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'bracket-separator', arrayFormatSeparator: '\|'}); //=> 'foo[]=1\|2\|3' queryString.stringify({foo: [1, '', 3, null, null, 6]}, {arrayFormat: 'bracket-separator', arrayFormatSeparator: '\|'}); //=> 'foo[]=1\|\|3\|\|\|6' queryString.stringify({foo: [1, '', 3, null, null, 6]}, {arrayFormat: 'bracket-separator', arrayFormatSeparator: '\|', skipNull: true}); //=> 'foo[]=1\|\|3\|6' queryString.stringify({foo: [1, 2, 3], bar: 'fluffy', baz: [4]}, {arrayFormat: 'bracket-separator', arrayFormatSeparator: '\|'}); //=> 'foo[]=1\|2\|3&bar=fluffy&baz[]=4' ``` - `colon-list-separator`: Serialize arrays with parameter names that are explicitly marked with `:list`: ```js import queryString from 'query-string'; queryString.stringify({foo: ['one', 'two']}, {arrayFormat: 'colon-list-separator'}); //=> 'foo:list=one&foo:list=two' ``` - `none`: Serialize arrays by using duplicate keys: ``` import queryString from 'query-string'; queryString.stringify({foo: [1, 2, 3]}); //=> 'foo=1&foo=2&foo=3' ``` |
+| `arrayFormatSeparator?` | `string` | The character used to separate array elements when using `{arrayFormat: 'separator'}`. **`Default`** , |
+| `encode?` | `boolean` | [URL encode](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) the keys and values. **`Default`** true |
+| `skipEmptyString?` | `boolean` | Skip keys with an empty string as the value. **`Default`** false **`Example`** ``` import queryString from 'query-string'; queryString.stringify({a: 1, b: '', c: '', d: 4}, { skipEmptyString: true }); //=> 'a=1&d=4' ``` **`Example`** ``` import queryString from 'query-string'; queryString.stringify({a: '', b: ''}, { skipEmptyString: true }); //=> '' ``` |
+| `skipNull?` | `boolean` | Skip keys with `null` as the value. Note that keys with `undefined` as the value are always skipped. **`Default`** false **`Example`** ``` import queryString from 'query-string'; queryString.stringify({a: 1, b: undefined, c: null, d: 4}, { skipNull: true }); //=> 'a=1&d=4' queryString.stringify({a: undefined, b: null}, { skipNull: true }); //=> '' ``` |
+| `sort?` | (`itemLeft`: `string`, `itemRight`: `string`) => `number` \| ``false`` | Supports both `Function` as a custom sorting function or `false` to disable sorting. If omitted, keys are sorted using `Array#sort`, which means, converting them to strings and comparing strings in Unicode code point order. **`Default`** true **`Example`** ``` import queryString from 'query-string'; const order = ['c', 'a', 'b']; queryString.stringify({a: 1, b: 2, c: 3}, { sort: (itemLeft, itemRight) => order.indexOf(itemLeft) - order.indexOf(itemRight) }); //=> 'c=3&a=1&b=2' ``` **`Example`** ``` import queryString from 'query-string'; queryString.stringify({b: 1, c: 2, a: 3}, {sort: false}); //=> 'b=1&c=2&a=3' ``` |
+| `strict?` | `boolean` | Strictly encode URI components with [`strict-uri-encode`](https://github.com/kevva/strict-uri-encode). It uses [`encodeURIComponent`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) if set to `false`. You probably [don't care](https://github.com/sindresorhus/query-string/issues/42) about this option. **`Default`** true |
+
+#### Defined in
+
+[src/utils/types.ts:17](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/types.ts#L17)
+
+___
+
+### Subtract
+
+Ƭ **Subtract**<`T`, `T1`\>: `Pick`<`T`, [`SetComplement`](modules.md#setcomplement)<keyof `T`, keyof `T1`\>\>
+
+Subtract
+
+**`Desc`**
+
+From `T` remove properties that exist in `T1` (`T1` has a subset of the properties of `T`)
+
+**`Example`**
+
+```ts
+type Props = { name: string; age: number; visible: boolean };
+  type DefaultProps = { age: number };
+
+  // Expect: { name: string; visible: boolean; }
+  type RestProps = Subtract<Props, DefaultProps>;
+```
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `T1` |
+| `T1` | extends `object` |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:232](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L232)
+
+___
+
+### Unionize
+
+Ƭ **Unionize**<`T`\>: { [P in keyof T]: { [Q in P]: T[P] } }[keyof `T`]
+
+Unionize
+
+**`Desc`**
+
+Disjoin object to form union of objects, each with single property
+
+**`Example`**
+
+```ts
+type Props = { name: string; age: number; visible: boolean };
+
+  // Expect: { name: string; } | { age: number; } | { visible: boolean; }
+  type UnionizedType = Unionize<Props>;
+```
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `object` |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:299](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L299)
+
+___
+
+### UrlObject
+
+Ƭ **UrlObject**: `Object`
+
+#### Type declaration
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `fragmentIdentifier?` | `string` | Overrides the fragment identifier in the `url` property. |
+| `query?` | [`StringifiableRecord`](modules.md#stringifiablerecord) | Overrides queries in the `url` property. |
+| `url` | `string` | - |
+
+#### Defined in
+
+[src/utils/types.ts:220](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/types.ts#L220)
+
+___
+
+### Utf8EncodeTypes
+
+Ƭ **Utf8EncodeTypes**: `string` \| `number` \| {} \| [] \| `boolean`
+
+#### Defined in
+
+[src/utils/types.ts:15](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/types.ts#L15)
 
 ___
 
@@ -300,7 +1416,87 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:5](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/types.ts#L5)
+[src/utils/utilityTypes.ts:4](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L4)
+
+___
+
+### WritableKeys
+
+Ƭ **WritableKeys**<`T`\>: [`MutableKeys`](modules.md#mutablekeys)<`T`\>
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `object` |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:156](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L156)
+
+___
+
+### \_DeepNonNullableObject
+
+Ƭ `Private` **\_DeepNonNullableObject**<`T`\>: { [P in keyof T]-?: DeepNonNullable<NonNullable<T[P]\>\> }
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:419](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L419)
+
+___
+
+### \_DeepPartial
+
+Ƭ `Private` **\_DeepPartial**<`T`\>: `T` extends `Function` ? `T` : `T` extends infer U[] ? [`_DeepPartialArray`](interfaces/DeepPartialArray.md)<`U`\> : `T` extends `object` ? [`DeepPartial`](modules.md#deeppartial)<`T`\> : `T` \| `undefined`
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:446](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L446)
+
+___
+
+### \_DeepReadonlyObject
+
+Ƭ `Private` **\_DeepReadonlyObject**<`T`\>: { readonly [P in keyof T]: DeepReadonly<T[P]\> }
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:346](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L346)
+
+___
+
+### \_DeepRequiredObject
+
+Ƭ `Private` **\_DeepRequiredObject**<`T`\>: { [P in keyof T]-?: DeepRequired<NonUndefined<T[P]\>\> }
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Defined in
+
+[src/utils/utilityTypes.ts:382](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/utilityTypes.ts#L382)
 
 ## Variables
 
@@ -310,7 +1506,7 @@ ___
 
 #### Defined in
 
-[src/regex/index.ts:5](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/regex/index.ts#L5)
+[src/regex/index.ts:5](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/regex/index.ts#L5)
 
 ___
 
@@ -320,7 +1516,7 @@ ___
 
 #### Defined in
 
-[src/regex/index.ts:6](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/regex/index.ts#L6)
+[src/regex/index.ts:6](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/regex/index.ts#L6)
 
 ___
 
@@ -330,7 +1526,7 @@ ___
 
 #### Defined in
 
-[src/regex/index.ts:3](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/regex/index.ts#L3)
+[src/regex/index.ts:3](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/regex/index.ts#L3)
 
 ___
 
@@ -340,7 +1536,7 @@ ___
 
 #### Defined in
 
-[src/regex/index.ts:4](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/regex/index.ts#L4)
+[src/regex/index.ts:4](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/regex/index.ts#L4)
 
 ___
 
@@ -350,7 +1546,7 @@ ___
 
 #### Defined in
 
-[src/regex/index.ts:1](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/regex/index.ts#L1)
+[src/regex/index.ts:1](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/regex/index.ts#L1)
 
 ___
 
@@ -360,7 +1556,7 @@ ___
 
 #### Defined in
 
-[src/regex/index.ts:2](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/regex/index.ts#L2)
+[src/regex/index.ts:2](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/regex/index.ts#L2)
 
 ___
 
@@ -370,7 +1566,7 @@ ___
 
 #### Defined in
 
-[src/regex/index.ts:7](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/regex/index.ts#L7)
+[src/regex/index.ts:7](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/regex/index.ts#L7)
 
 ## Function Functions
 
@@ -440,10 +1636,7 @@ const status = debounced.pending() ? "Pending..." : "Ready"
 | :------ | :------ | :------ | :------ |
 | `func` | (...`args`: `any`[]) => `T` | `undefined` | The function to debounce. |
 | `wait?` | `number` | `200` | The number of milliseconds to delay; if omitted, `requestAnimationFrame` is used (if available). |
-| `options?` | `Object` | `undefined` | The options object. |
-| `options.leading` | `boolean` | `undefined` | Specify invoking on the leading edge of the timeout. |
-| `options.maxWait` | `number` | `undefined` | The maximum time `func` is allowed to be delayed before it's invoked. |
-| `options.trailing` | `boolean` | `undefined` | Specify invoking on the trailing edge of the timeout. |
+| `options?` | [`DebounceOptions`](modules.md#debounceoptions) | `undefined` | The options object. |
 
 #### Returns
 
@@ -471,7 +1664,7 @@ Returns the new debounced function.
 
 #### Defined in
 
-[src/utils/functions/debounce.ts:66](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/functions/debounce.ts#L66)
+[src/utils/functions/debounce.ts:68](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/functions/debounce.ts#L68)
 
 ___
 
@@ -540,7 +1733,7 @@ Returns the new memoized function.
 
 #### Defined in
 
-[src/utils/functions/memoize.ts:44](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/functions/memoize.ts#L44)
+[src/utils/functions/memoize.ts:44](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/functions/memoize.ts#L44)
 
 ___
 
@@ -611,7 +1804,7 @@ Returns the new throttled function.
 
 #### Defined in
 
-[src/utils/functions/throttle.ts:52](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/functions/throttle.ts#L52)
+[src/utils/functions/throttle.ts:52](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/functions/throttle.ts#L52)
 
 ___
 
@@ -665,7 +1858,7 @@ Returns `true` if the values are equivalent, else `false`.
 
 #### Defined in
 
-[src/utils/validation/isEqual.ts:31](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isEqual.ts#L31)
+[src/utils/validation/isEqual.ts:31](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isEqual.ts#L31)
 
 ___
 
@@ -710,7 +1903,7 @@ Returns `true` if `value` is object-like, else `false`.
 
 #### Defined in
 
-[src/utils/validation/isObjectLike.ts:23](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isObjectLike.ts#L23)
+[src/utils/validation/isObjectLike.ts:23](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isObjectLike.ts#L23)
 
 ___
 
@@ -744,11 +1937,31 @@ Returns `true` if `value` is a symbol, else `false`.
 
 #### Defined in
 
-[src/utils/validation/isSymbol.ts:17](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isSymbol.ts#L17)
+[src/utils/validation/isSymbol.ts:17](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isSymbol.ts#L17)
 
 ___
 
 ## Other Functions
+
+### SHA256
+
+▸ **SHA256**(`data`): `string`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `data` | [`Utf8EncodeTypes`](modules.md#utf8encodetypes) |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+[src/utils/crypto/SHA256.ts:4](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/crypto/SHA256.ts#L4)
+
+___
 
 ### addAndOrConjunctionsToStrArray
 
@@ -790,7 +2003,7 @@ A string
 
 #### Defined in
 
-[src/utils/string/addAndOrConjunctionsToStrArray.ts:10](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/addAndOrConjunctionsToStrArray.ts#L10)
+[src/utils/string/addAndOrConjunctionsToStrArray.ts:10](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/addAndOrConjunctionsToStrArray.ts#L10)
 
 ___
 
@@ -827,7 +2040,7 @@ addEventListener(event.target, "touchend", preventDefault, { passive: false });
 
 #### Defined in
 
-[src/utils/browser/addEventListener.ts:6](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/browser/addEventListener.ts#L6)
+[src/utils/browser/addEventListener.ts:6](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/browser/addEventListener.ts#L6)
 
 ___
 
@@ -864,7 +2077,7 @@ addHttpToURL("www.google.com", true) => "https://www.google.com"
 
 #### Defined in
 
-[src/utils/route/addHttpToURL.ts:11](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/route/addHttpToURL.ts#L11)
+[src/utils/route/addHttpToURL.ts:11](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/route/addHttpToURL.ts#L11)
 
 ___
 
@@ -903,7 +2116,7 @@ controller.abort();`
 
 #### Defined in
 
-[src/utils/browser/animationInterval.ts:16](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/browser/animationInterval.ts#L16)
+[src/utils/browser/animationInterval.ts:16](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/browser/animationInterval.ts#L16)
 
 ___
 
@@ -937,7 +2150,7 @@ arabicToEnglishNumbers('١٢٣') //'123'
 
 #### Defined in
 
-[src/utils/string/arabicToEnglishNumbers.ts:11](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/arabicToEnglishNumbers.ts#L11)
+[src/utils/string/arabicToEnglishNumbers.ts:11](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/arabicToEnglishNumbers.ts#L11)
 
 ___
 
@@ -971,7 +2184,7 @@ arabicToPersianNumbers('It is ٣٠/٠٨/٢٠١٩ at ٨:٢٤ AM') //It is ۳۰/۰
 
 #### Defined in
 
-[src/utils/string/arabicToPersianNumbers.ts:11](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/arabicToPersianNumbers.ts#L11)
+[src/utils/string/arabicToPersianNumbers.ts:11](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/arabicToPersianNumbers.ts#L11)
 
 ___
 
@@ -1011,7 +2224,7 @@ An array of strings.
 
 #### Defined in
 
-[src/utils/array/arrayRange.ts:12](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/array/arrayRange.ts#L12)
+[src/utils/array/arrayRange.ts:12](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/array/arrayRange.ts#L12)
 
 ___
 
@@ -1042,7 +2255,7 @@ attempt(selector =>
 | Name | Type |
 | :------ | :------ |
 | `func` | (...`args`: `any`[]) => `T` |
-| `options?` | `AttemptOptions` |
+| `options?` | [`AttemptOptions`](modules.md#attemptoptions) |
 | `...args` | `any`[] |
 
 #### Returns
@@ -1051,7 +2264,7 @@ attempt(selector =>
 
 #### Defined in
 
-[src/utils/functions/attempt.ts:14](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/functions/attempt.ts#L14)
+[src/utils/functions/attempt.ts:10](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/functions/attempt.ts#L10)
 
 ___
 
@@ -1082,7 +2295,7 @@ await attemptAsync(selector =>
 | Name | Type |
 | :------ | :------ |
 | `func` | (...`args`: `any`[]) => `T` |
-| `options?` | `AttemptOptions` |
+| `options?` | [`AttemptOptions`](modules.md#attemptoptions) |
 | `...args` | `any`[] |
 
 #### Returns
@@ -1091,7 +2304,7 @@ await attemptAsync(selector =>
 
 #### Defined in
 
-[src/utils/functions/attemptAsync.ts:10](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/functions/attemptAsync.ts#L10)
+[src/utils/functions/attemptAsync.ts:10](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/functions/attemptAsync.ts#L10)
 
 ___
 
@@ -1122,7 +2335,7 @@ pt`
 
 #### Defined in
 
-[src/utils/string/breakStrAfterNChar.ts:9](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/breakStrAfterNChar.ts#L9)
+[src/utils/string/breakStrAfterNChar.ts:9](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/breakStrAfterNChar.ts#L9)
 
 ___
 
@@ -1152,7 +2365,7 @@ capitalize("javascript") => "Javascript"
 
 #### Defined in
 
-[src/utils/string/capitalize.ts:8](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/capitalize.ts#L8)
+[src/utils/string/capitalize.ts:8](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/capitalize.ts#L8)
 
 ___
 
@@ -1169,7 +2382,7 @@ separated by spaces.
 
 | Name | Type |
 | :------ | :------ |
-| `...args` | `ArgumentArray` |
+| `...args` | [`ArgumentArray`](interfaces/ClassNames.ArgumentArray.md) |
 
 #### Returns
 
@@ -1177,7 +2390,7 @@ separated by spaces.
 
 #### Defined in
 
-[src/utils/style/classNames.ts:7](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/style/classNames.ts#L7)
+[src/utils/style/classNames.ts:7](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/style/classNames.ts#L7)
 
 ___
 
@@ -1191,11 +2404,11 @@ It compares two objects based on the keys array passed to it.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `prevObj` | `Object` | `{}` | the previous object |
-| `nextObj` | `Object` | `{}` | { |
-| `keysArr` | `string`[] | `[]` | string[] = [] - an array of keys that you want to compare. |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `prevObj` | `Object` | `{}` |
+| `nextObj` | `Object` | `{}` |
+| `keysArr` | `string`[] | `[]` |
 
 #### Returns
 
@@ -1203,7 +2416,7 @@ It compares two objects based on the keys array passed to it.
 
 #### Defined in
 
-[src/utils/object/compare2ObjectsBaseOnKeysArr.ts:9](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/object/compare2ObjectsBaseOnKeysArr.ts#L9)
+[src/utils/object/compare2ObjectsBaseOnKeysArr.ts:6](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/object/compare2ObjectsBaseOnKeysArr.ts#L6)
 
 ___
 
@@ -1240,7 +2453,7 @@ conditionalReturn([].length > 0, "has items") => if true will return "has items"
 
 #### Defined in
 
-[src/utils/general/conditionalReturn.ts:8](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/general/conditionalReturn.ts#L8)
+[src/utils/general/conditionalReturn.ts:8](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/general/conditionalReturn.ts#L8)
 
 ___
 
@@ -1314,7 +2527,7 @@ count({a:1,b:2}) => 2
 
 #### Defined in
 
-[src/utils/general/count.ts:12](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/general/count.ts#L12)
+[src/utils/general/count.ts:12](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/general/count.ts#L12)
 
 ___
 
@@ -1354,7 +2567,7 @@ ___
 
 #### Defined in
 
-[src/utils/functions/debouncePromise.ts:3](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/functions/debouncePromise.ts#L3)
+[src/utils/functions/debouncePromise.ts:3](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/functions/debouncePromise.ts#L3)
 
 ___
 
@@ -1414,7 +2627,7 @@ deepClone({a:1}) => {a:1} //as new copy
 
 #### Defined in
 
-[src/utils/general/deepClone.ts:245](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/general/deepClone.ts#L245)
+[src/utils/general/deepClone.ts:232](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/general/deepClone.ts#L232)
 
 ___
 
@@ -1468,7 +2681,7 @@ deepCompareObjects(true ,false) => false
 
 #### Defined in
 
-[src/utils/object/deepCompare.ts:8](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/object/deepCompare.ts#L8)
+[src/utils/object/deepCompare.ts:8](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/object/deepCompare.ts#L8)
 
 ___
 
@@ -1500,7 +2713,7 @@ Delays a function for the given number of milliseconds, and then calls it with t
 
 #### Defined in
 
-[src/utils/functions/delay.ts:4](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/functions/delay.ts#L4)
+[src/utils/functions/delay.ts:4](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/functions/delay.ts#L4)
 
 ___
 
@@ -1530,7 +2743,7 @@ englishToArabicNumbers(123) // '١٢٣'
 
 #### Defined in
 
-[src/utils/string/englishToArabicNumbers.ts:5](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/englishToArabicNumbers.ts#L5)
+[src/utils/string/englishToArabicNumbers.ts:5](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/englishToArabicNumbers.ts#L5)
 
 ___
 
@@ -1581,7 +2794,7 @@ excludeKeys({
 
 #### Defined in
 
-[src/utils/object/excludeKeys.ts:21](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/object/excludeKeys.ts#L21)
+[src/utils/object/excludeKeys.ts:21](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/object/excludeKeys.ts#L21)
 
 ___
 
@@ -1618,7 +2831,7 @@ excludeQueryParamFromUrl('https://foo.bar?foo=1&bar=2#hello', (name, value) => v
 
 #### Defined in
 
-[src/utils/route/excludeQueryParamFromUrl.ts:8](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/route/excludeQueryParamFromUrl.ts#L8)
+[src/utils/route/excludeQueryParamFromUrl.ts:8](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/route/excludeQueryParamFromUrl.ts#L8)
 
 ___
 
@@ -1650,7 +2863,7 @@ The query string from the URL.
 
 #### Defined in
 
-[src/utils/route/extractQueryFromUrl.ts:9](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/route/extractQueryFromUrl.ts#L9)
+[src/utils/route/extractQueryFromUrl.ts:9](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/route/extractQueryFromUrl.ts#L9)
 
 ___
 
@@ -1680,7 +2893,7 @@ will extract all urls from a long string and return a list of the urls.
 
 #### Defined in
 
-[src/utils/string/extractUrlsFromString.ts:7](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/extractUrlsFromString.ts#L7)
+[src/utils/string/extractUrlsFromString.ts:7](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/extractUrlsFromString.ts#L7)
 
 ___
 
@@ -1718,7 +2931,33 @@ a is T
 
 #### Defined in
 
-[src/utils/object/fastDeepEqual.ts:11](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/object/fastDeepEqual.ts#L11)
+[src/utils/object/fastDeepEqual.ts:11](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/object/fastDeepEqual.ts#L11)
+
+___
+
+### generateCacheKey
+
+▸ **generateCacheKey**(`payload`): `string`
+
+Will generate a unique cache key for the passed payload
+
+**`Date`**
+
+10/25/2023 - 11:14:03 AM
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `payload` | [`Utf8EncodeTypes`](modules.md#utf8encodetypes) |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+[src/utils/crypto/generateCacheKey.ts:9](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/crypto/generateCacheKey.ts#L9)
 
 ___
 
@@ -1742,7 +2981,7 @@ generateGuid() => "741baba3-1efc-b52e-5d9c-75b1fc80395a"
 
 #### Defined in
 
-[src/utils/general/generateGuid.ts:6](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/general/generateGuid.ts#L6)
+[src/utils/general/generateGuid.ts:6](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/general/generateGuid.ts#L6)
 
 ___
 
@@ -1768,7 +3007,7 @@ The ASCII code for the character.
 
 #### Defined in
 
-[src/utils/string/getAsciiCodeForChar.ts:6](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/getAsciiCodeForChar.ts#L6)
+[src/utils/string/getAsciiCodeForChar.ts:6](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/getAsciiCodeForChar.ts#L6)
 
 ___
 
@@ -1795,7 +3034,7 @@ The sum of the ASCII codes for each character in the string.
 
 #### Defined in
 
-[src/utils/string/getAsciiSumFromString.ts:9](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/getAsciiSumFromString.ts#L9)
+[src/utils/string/getAsciiSumFromString.ts:9](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/getAsciiSumFromString.ts#L9)
 
 ___
 
@@ -1821,7 +3060,7 @@ The sum of the arguments divided by the number of arguments.
 
 #### Defined in
 
-[src/utils/number/getAverage.ts:8](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/number/getAverage.ts#L8)
+[src/utils/number/getAverage.ts:8](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/number/getAverage.ts#L8)
 
 ___
 
@@ -1847,7 +3086,7 @@ getBase64FromFile(new File([""], "filename")) => "data:application/octet-stream;
 
 #### Defined in
 
-[src/utils/file/getBase64FromFile.ts:6](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/file/getBase64FromFile.ts#L6)
+[src/utils/file/getBase64FromFile.ts:6](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/file/getBase64FromFile.ts#L6)
 
 ___
 
@@ -1865,7 +3104,7 @@ will return the user browser type
 
 #### Defined in
 
-[src/utils/browser/getBrowser.ts:6](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/browser/getBrowser.ts#L6)
+[src/utils/browser/getBrowser.ts:6](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/browser/getBrowser.ts#L6)
 
 ___
 
@@ -1897,7 +3136,7 @@ The file extension of the string.
 
 #### Defined in
 
-[src/utils/string/getFileExtensionFromString.ts:7](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/getFileExtensionFromString.ts#L7)
+[src/utils/string/getFileExtensionFromString.ts:7](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/getFileExtensionFromString.ts#L7)
 
 ___
 
@@ -1928,7 +3167,7 @@ getFirstNLetters('javascript', 3) => jav
 
 #### Defined in
 
-[src/utils/string/getFirstNLetters.ts:8](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/getFirstNLetters.ts#L8)
+[src/utils/string/getFirstNLetters.ts:8](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/getFirstNLetters.ts#L8)
 
 ___
 
@@ -1946,7 +3185,7 @@ typeof `globalThis`
 
 #### Defined in
 
-[src/utils/general/getGlobalThis.ts:5](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/general/getGlobalThis.ts#L5)
+[src/utils/general/getGlobalThis.ts:5](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/general/getGlobalThis.ts#L5)
 
 ___
 
@@ -1976,7 +3215,7 @@ will return the hash (fragment) part of a url
 
 #### Defined in
 
-[src/utils/string/getHashFromString.ts:5](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/getHashFromString.ts#L5)
+[src/utils/string/getHashFromString.ts:5](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/getHashFromString.ts#L5)
 
 ___
 
@@ -2023,7 +3262,7 @@ getElementCoords(document.getElementById("id"), {precise:true}) // {x:2.123, y:1
 | Name | Type |
 | :------ | :------ |
 | `element` | `HTMLElement` |
-| `options` | `Options` |
+| `options` | [`GetHtmlElementCoordsOptions`](modules.md#gethtmlelementcoordsoptions) |
 
 #### Returns
 
@@ -2036,7 +3275,7 @@ getElementCoords(document.getElementById("id"), {precise:true}) // {x:2.123, y:1
 
 #### Defined in
 
-[src/utils/browser/getHtmlElementCoords.ts:25](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/browser/getHtmlElementCoords.ts#L25)
+[src/utils/browser/getHtmlElementCoords.ts:13](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/browser/getHtmlElementCoords.ts#L13)
 
 ___
 
@@ -2073,7 +3312,7 @@ JavaScript => JS
 
 #### Defined in
 
-[src/utils/string/getNameInitials.ts:9](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/getNameInitials.ts#L9)
+[src/utils/string/getNameInitials.ts:9](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/getNameInitials.ts#L9)
 
 ___
 
@@ -2116,7 +3355,7 @@ getNumberFromString("string") => infinity;
 
 #### Defined in
 
-[src/utils/string/getNumberFromString.ts:12](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/getNumberFromString.ts#L12)
+[src/utils/string/getNumberFromString.ts:12](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/getNumberFromString.ts#L12)
 
 ___
 
@@ -2146,7 +3385,7 @@ getSmallestArrInObj({a:[1,2,3], b:[1,2,3,4,5]}) => {a:[1,2,3]}
 
 #### Defined in
 
-[src/utils/object/getSmallestArrInObj.ts:6](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/object/getSmallestArrInObj.ts#L6)
+[src/utils/object/getSmallestArrInObj.ts:6](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/object/getSmallestArrInObj.ts#L6)
 
 ___
 
@@ -2170,7 +3409,7 @@ The sum function takes a variable number of arguments, and returns the sum of al
 
 #### Defined in
 
-[src/utils/number/getSum.ts:5](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/number/getSum.ts#L5)
+[src/utils/number/getSum.ts:5](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/number/getSum.ts#L5)
 
 ___
 
@@ -2212,21 +3451,46 @@ getTag([1, 2]); // "[object Array]"
 
 #### Defined in
 
-[src/utils/general/getTag.ts:10](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/general/getTag.ts#L10)
+[src/utils/general/getTag.ts:10](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/general/getTag.ts#L10)
+
+___
+
+### getUrlObj
+
+▸ **getUrlObj**(`url`): `URL`
+
+**`Description`**
+
+will make a new URL object for the passed url string.
+its like parseURL, more lightweight but with less functionalities.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `url` | `string` |
+
+#### Returns
+
+`URL`
+
+#### Defined in
+
+[src/utils/route/getUrlObj.ts:7](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/route/getUrlObj.ts#L7)
 
 ___
 
 ### getWindowObj
 
-▸ **getWindowObj**(): `Window` & typeof `globalThis` \| {}
+▸ **getWindowObj**(): `Window` \| typeof `globalThis`
 
 #### Returns
 
-`Window` & typeof `globalThis` \| {}
+`Window` \| typeof `globalThis`
 
 #### Defined in
 
-[src/utils/browser/getWindowObj.ts:3](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/browser/getWindowObj.ts#L3)
+[src/utils/browser/getWindowObj.ts:4](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/browser/getWindowObj.ts#L4)
 
 ___
 
@@ -2257,7 +3521,7 @@ has({a:1, b:2}, ["a"]) => true
 
 #### Defined in
 
-[src/utils/object/has.ts:6](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/object/has.ts#L6)
+[src/utils/object/has.ts:6](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/object/has.ts#L6)
 
 ___
 
@@ -2283,7 +3547,7 @@ The sum of the ASCII values of the characters in the string.
 
 #### Defined in
 
-[src/utils/string/hashString.ts:8](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/hashString.ts#L8)
+[src/utils/string/hashString.ts:8](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/hashString.ts#L8)
 
 ___
 
@@ -2310,7 +3574,56 @@ ___
 
 #### Defined in
 
-[src/utils/object/includeKeys.ts:23](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/object/includeKeys.ts#L23)
+[src/utils/object/includeKeys.ts:23](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/object/includeKeys.ts#L23)
+
+___
+
+### intersectionObserver
+
+▸ **intersectionObserver**(`element`, `callback`, `options?`, `fallbackInView?`): () => `void`
+
+**`Example`**
+
+will start observing the element if its on the view port
+`
+
+const observer = observeFunc(
+document.body,
+(isInView, entry) => {
+// do something
+},
+// document or any HTML element of choice
+{ root: document }
+);
+
+// When called it will unobserve the element (for cleanup).
+observer();
+`
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `element` | `Element` | DOM Element to observe |
+| `callback` | `ObserverInstanceCallback` | Callback function to trigger when intersection status changes |
+| `options?` | `IntersectionObserverInit` | Intersection Observer options |
+| `fallbackInView?` | `boolean` | Fallback inView value. |
+
+#### Returns
+
+`fn`
+
+Function - Cleanup function that should be triggered to unregister the observer
+
+▸ (): `void`
+
+##### Returns
+
+`void`
+
+#### Defined in
+
+node_modules/hd-intersection-observer/dist/index.d.ts:43
 
 ___
 
@@ -2335,7 +3648,7 @@ value is []
 
 #### Defined in
 
-[src/utils/validation/isArray.ts:6](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isArray.ts#L6)
+[src/utils/validation/isArray.ts:6](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isArray.ts#L6)
 
 ___
 
@@ -2361,7 +3674,7 @@ A function that takes a value and returns a boolean.
 
 #### Defined in
 
-[src/utils/validation/isArrayOfStrings.ts:6](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isArrayOfStrings.ts#L6)
+[src/utils/validation/isArrayOfStrings.ts:6](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isArrayOfStrings.ts#L6)
 
 ___
 
@@ -2397,7 +3710,7 @@ will check if the passed function is async function.
 
 #### Defined in
 
-[src/utils/validation/isAsyncFunction.ts:10](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isAsyncFunction.ts#L10)
+[src/utils/validation/isAsyncFunction.ts:10](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isAsyncFunction.ts#L10)
 
 ___
 
@@ -2429,7 +3742,7 @@ otherwise it returns false.
 
 #### Defined in
 
-[src/utils/validation/isBiggerThan.ts:8](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isBiggerThan.ts#L8)
+[src/utils/validation/isBiggerThan.ts:8](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isBiggerThan.ts#L8)
 
 ___
 
@@ -2449,7 +3762,7 @@ ___
 
 #### Defined in
 
-[src/utils/validation/isBoolean.ts:1](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isBoolean.ts#L1)
+[src/utils/validation/isBoolean.ts:1](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isBoolean.ts#L1)
 
 ___
 
@@ -2467,7 +3780,7 @@ Return true if the current environment is running on browser.
 
 #### Defined in
 
-[src/utils/validation/isBrowser.ts:4](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isBrowser.ts#L4)
+[src/utils/validation/isBrowser.ts:4](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isBrowser.ts#L4)
 
 ___
 
@@ -2481,9 +3794,9 @@ If the value is truthy and is a Date type, then return true, otherwise return fa
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `any` | any |
+| Name | Type |
+| :------ | :------ |
+| `value` | `unknown` |
 
 #### Returns
 
@@ -2491,7 +3804,7 @@ value is Date
 
 #### Defined in
 
-[src/utils/validation/isDateType.ts:5](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isDateType.ts#L5)
+[src/utils/validation/isDateType.ts:4](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isDateType.ts#L4)
 
 ___
 
@@ -2509,7 +3822,7 @@ will check if the current env is development
 
 #### Defined in
 
-[src/utils/validation/isDev.ts:4](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isDev.ts#L4)
+[src/utils/validation/isDev.ts:4](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isDev.ts#L4)
 
 ___
 
@@ -2529,7 +3842,7 @@ ___
 
 #### Defined in
 
-[src/utils/validation/isEmail.ts:4](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isEmail.ts#L4)
+[src/utils/validation/isEmail.ts:4](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isEmail.ts#L4)
 
 ___
 
@@ -2597,7 +3910,44 @@ A function that takes a value and returns a boolean.
 
 #### Defined in
 
-[src/utils/validation/isEmpty.ts:14](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isEmpty.ts#L14)
+[src/utils/validation/isEmpty.ts:14](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isEmpty.ts#L14)
+
+___
+
+### isFalsy
+
+▸ **isFalsy**(`val`): val is Falsy
+
+Tests for Falsy by simply applying negation `!` to the tested `val`.
+
+The value is mostly in added type-information and explicity,
+but in case of this simple type much the same can often be archived by just using negation `!`:
+
+**`Example`**
+
+```ts
+const consumer = (value: boolean | Falsy) => {
+    if (!value) {
+        return ;
+    }
+    type newType = typeof value; // === true
+    // do stuff
+  };
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `val` | `unknown` |
+
+#### Returns
+
+val is Falsy
+
+#### Defined in
+
+[src/utils/validation/isFalsy.ts:17](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isFalsy.ts#L17)
 
 ___
 
@@ -2621,7 +3971,7 @@ value is Fn
 
 #### Defined in
 
-[src/utils/validation/isFunction.ts:7](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isFunction.ts#L7)
+[src/utils/validation/isFunction.ts:7](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isFunction.ts#L7)
 
 ___
 
@@ -2648,7 +3998,7 @@ Returns `true` if `value` is a valid index, else `false`.
 
 #### Defined in
 
-[src/utils/validation/isIndex.ts:17](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isIndex.ts#L17)
+[src/utils/validation/isIndex.ts:17](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isIndex.ts#L17)
 
 ___
 
@@ -2673,7 +4023,7 @@ Returns `true` if `value` is a property name, else `false`.
 
 #### Defined in
 
-[src/utils/validation/isKeyInObject.ts:14](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isKeyInObject.ts#L14)
+[src/utils/validation/isKeyInObject.ts:14](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isKeyInObject.ts#L14)
 
 ___
 
@@ -2717,7 +4067,7 @@ A function that takes an unknown type and returns a boolean.
 
 #### Defined in
 
-[src/utils/validation/isLength.ts:10](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isLength.ts#L10)
+[src/utils/validation/isLength.ts:10](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isLength.ts#L10)
 
 ___
 
@@ -2739,7 +4089,7 @@ val is null
 
 #### Defined in
 
-[src/utils/validation/isNull.ts:5](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isNull.ts#L5)
+[src/utils/validation/isNull.ts:5](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isNull.ts#L5)
 
 ___
 
@@ -2763,7 +4113,7 @@ It returns true if the value is null, undefined, or an empty string
 
 #### Defined in
 
-[src/utils/validation/isNullOrEmptyString.ts:8](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isNullOrEmptyString.ts#L8)
+[src/utils/validation/isNullOrEmptyString.ts:8](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isNullOrEmptyString.ts#L8)
 
 ___
 
@@ -2801,7 +4151,7 @@ boolean
 
 #### Defined in
 
-[src/utils/validation/isNullOrUndefined.ts:8](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isNullOrUndefined.ts#L8)
+[src/utils/validation/isNullOrUndefined.ts:8](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isNullOrUndefined.ts#L8)
 
 ___
 
@@ -2844,7 +4194,7 @@ value is number
 
 #### Defined in
 
-[src/utils/validation/isNumber.ts:7](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isNumber.ts#L7)
+[src/utils/validation/isNumber.ts:7](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isNumber.ts#L7)
 
 ___
 
@@ -2903,7 +4253,7 @@ isObjHasValues({a:"1"}, {predict:val => typeof val === "number"}) => false
 
 #### Defined in
 
-[src/utils/validation/isObjHasValues.ts:15](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isObjHasValues.ts#L15)
+[src/utils/validation/isObjHasValues.ts:15](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isObjHasValues.ts#L15)
 
 ___
 
@@ -2913,7 +4263,7 @@ ___
 
 **`Description`**
 
-If the type of the value is a object ({}), return true, otherwise return false.
+If the type of the value is a object, return true, otherwise return false.
 
 #### Parameters
 
@@ -2927,7 +4277,45 @@ val is Object
 
 #### Defined in
 
-[src/utils/validation/isObject.ts:5](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isObject.ts#L5)
+[src/utils/validation/isObject.ts:4](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isObject.ts#L4)
+
+___
+
+### isPrimitive
+
+▸ **isPrimitive**(`val`): val is Primitive
+
+Tests for one of the [`Primitive`](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) types using the JavaScript [`typeof`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof) operator
+
+Clarification: TypeScript overloads this operator to produce TypeScript types if used in context of types.
+
+**`Example`**
+
+```ts
+const consumer = (value: Primitive | Primitive[]) => {
+      if (isPrimitive(value)) {
+          return console.log('Primitive value: ', value);
+      }
+      // type of value now inferred as Primitive[]
+      value.map((primitive) => consumer(primitive));
+  };
+```
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `val` | `unknown` | The value to be tested |
+
+#### Returns
+
+val is Primitive
+
+If `val` is primitive. If used in the flow of the program typescript will infer type-information from this.
+
+#### Defined in
+
+[src/utils/validation/isPrimitive.ts:20](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isPrimitive.ts#L20)
 
 ___
 
@@ -2963,7 +4351,7 @@ p is Promise<any\>
 
 #### Defined in
 
-[src/utils/validation/isPromise.ts:7](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isPromise.ts#L7)
+[src/utils/validation/isPromise.ts:7](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isPromise.ts#L7)
 
 ___
 
@@ -2984,7 +4372,7 @@ ___
 
 #### Defined in
 
-[src/utils/validation/isSmallerThan.ts:3](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isSmallerThan.ts#L3)
+[src/utils/validation/isSmallerThan.ts:3](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isSmallerThan.ts#L3)
 
 ___
 
@@ -3008,7 +4396,7 @@ value is string
 
 #### Defined in
 
-[src/utils/validation/isString.ts:5](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isString.ts#L5)
+[src/utils/validation/isString.ts:5](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isString.ts#L5)
 
 ___
 
@@ -3032,7 +4420,7 @@ value is true
 
 #### Defined in
 
-[src/utils/validation/isTruthy.ts:5](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isTruthy.ts#L5)
+[src/utils/validation/isTruthy.ts:5](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isTruthy.ts#L5)
 
 ___
 
@@ -3052,7 +4440,7 @@ ___
 
 #### Defined in
 
-[src/utils/validation/isURL.ts:4](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isURL.ts#L4)
+[src/utils/validation/isURL.ts:4](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isURL.ts#L4)
 
 ___
 
@@ -3076,7 +4464,7 @@ val is undefined
 
 #### Defined in
 
-[src/utils/validation/isUndefined.ts:5](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isUndefined.ts#L5)
+[src/utils/validation/isUndefined.ts:5](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isUndefined.ts#L5)
 
 ___
 
@@ -3100,7 +4488,7 @@ will check if the parameter is a white space;
 
 #### Defined in
 
-[src/utils/validation/isWhiteSpace.ts:7](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/validation/isWhiteSpace.ts#L7)
+[src/utils/validation/isWhiteSpace.ts:4](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/validation/isWhiteSpace.ts#L4)
 
 ___
 
@@ -3148,7 +4536,7 @@ joinObjects(({ a: 1 }, null || undefined || !object)) => { a: 1 }
 
 #### Defined in
 
-[src/utils/object/joinObjects.ts:7](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/object/joinObjects.ts#L7)
+[src/utils/object/joinObjects.ts:7](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/object/joinObjects.ts#L7)
 
 ___
 
@@ -3175,7 +4563,7 @@ A string
 
 #### Defined in
 
-[src/utils/string/mapStringToColorFromArr.ts:9](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/mapStringToColorFromArr.ts#L9)
+[src/utils/string/mapStringToColorFromArr.ts:9](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/mapStringToColorFromArr.ts#L9)
 
 ___
 
@@ -3202,7 +4590,7 @@ An array of numbers or undefined.
 
 #### Defined in
 
-[src/utils/number/multiplyAll.ts:7](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/number/multiplyAll.ts#L7)
+[src/utils/number/multiplyAll.ts:7](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/number/multiplyAll.ts#L7)
 
 ___
 
@@ -3232,7 +4620,7 @@ nFormatter(1000) => "1K"
 
 #### Defined in
 
-[src/utils/string/nFormatter.ts:5](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/nFormatter.ts#L5)
+[src/utils/string/nFormatter.ts:5](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/nFormatter.ts#L5)
 
 ___
 
@@ -3267,7 +4655,7 @@ The value of the key in the object.
 
 #### Defined in
 
-[src/utils/object/navigateObjWithString.ts:7](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/object/navigateObjWithString.ts#L7)
+[src/utils/object/navigateObjWithString.ts:7](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/object/navigateObjWithString.ts#L7)
 
 ___
 
@@ -3297,7 +4685,7 @@ noop() =>  undefined;
 
 #### Defined in
 
-[src/utils/general/noop.ts:5](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/general/noop.ts#L5)
+[src/utils/general/noop.ts:5](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/general/noop.ts#L5)
 
 ___
 
@@ -3347,7 +4735,7 @@ Vitim.us https://gist.github.com/victornpb/7736865
 
 #### Defined in
 
-[src/utils/string/occurrencesCount.ts:25](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/occurrencesCount.ts#L25)
+[src/utils/string/occurrencesCount.ts:25](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/occurrencesCount.ts#L25)
 
 ___
 
@@ -3397,7 +4785,7 @@ Vitim.us https://gist.github.com/victornpb/7736865
 
 #### Defined in
 
-[src/utils/string/occurrencesIndex.ts:25](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/occurrencesIndex.ts#L25)
+[src/utils/string/occurrencesIndex.ts:25](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/occurrencesIndex.ts#L25)
 
 ___
 
@@ -3438,7 +4826,7 @@ cancelTimeout();
 
 #### Defined in
 
-[src/utils/general/onTimeout.ts:13](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/general/onTimeout.ts#L13)
+[src/utils/general/onTimeout.ts:13](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/general/onTimeout.ts#L13)
 
 ___
 
@@ -3463,7 +4851,7 @@ ___
 
 #### Defined in
 
-[src/utils/browser/onUrlChange.ts:7](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/browser/onUrlChange.ts#L7)
+[src/utils/browser/onUrlChange.ts:7](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/browser/onUrlChange.ts#L7)
 
 ___
 
@@ -3484,7 +4872,7 @@ ___
 
 #### Defined in
 
-[src/utils/route/parse.ts:10](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/route/parse.ts#L10)
+[src/utils/route/parse.ts:10](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/route/parse.ts#L10)
 
 ___
 
@@ -3504,7 +4892,7 @@ ___
 
 #### Defined in
 
-[src/utils/string/parseDate.ts:2](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/parseDate.ts#L2)
+[src/utils/string/parseDate.ts:2](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/parseDate.ts#L2)
 
 ___
 
@@ -3530,7 +4918,7 @@ The JSON payload of the JWT.
 
 #### Defined in
 
-[src/utils/string/parseJwt.ts:6](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/parseJwt.ts#L6)
+[src/utils/string/parseJwt.ts:6](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/parseJwt.ts#L6)
 
 ___
 
@@ -3560,7 +4948,7 @@ A function that takes a string and returns a string with all non-digit character
 
 #### Defined in
 
-[src/utils/string/parseNumber.ts:9](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/parseNumber.ts#L9)
+[src/utils/string/parseNumber.ts:9](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/parseNumber.ts#L9)
 
 ___
 
@@ -3589,13 +4977,13 @@ if "123" will return the number 123 and so on.
 
 #### Defined in
 
-[src/utils/string/parseString.ts:8](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/parseString.ts#L8)
+[src/utils/string/parseString.ts:8](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/parseString.ts#L8)
 
 ___
 
 ### parseUrl
 
-▸ **parseUrl**(`url`, `options?`): `ParsedUrl`
+▸ **parseUrl**(`url`, `options?`): [`ParsedUrl`](modules.md#parsedurl)
 
 **`Description`**
 
@@ -3619,15 +5007,15 @@ queryString.parseUrl('https://foo.bar?foo=bar#xyz', {parseFragmentIdentifier: tr
 | Name | Type |
 | :------ | :------ |
 | `url` | `string` |
-| `options?` | `ParseOptions` |
+| `options?` | [`ParseOptions`](modules.md#parseoptions) |
 
 #### Returns
 
-`ParsedUrl`
+[`ParsedUrl`](modules.md#parsedurl)
 
 #### Defined in
 
-[src/utils/route/parseUrl.ts:21](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/route/parseUrl.ts#L21)
+[src/utils/route/parseUrl.ts:21](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/route/parseUrl.ts#L21)
 
 ___
 
@@ -3664,7 +5052,7 @@ pickQueryParamFromUrl('https://foo.bar?foo=1&bar=2#hello', (name, value) => valu
 
 #### Defined in
 
-[src/utils/route/pickQueryParamFromUrl.ts:11](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/route/pickQueryParamFromUrl.ts#L11)
+[src/utils/route/pickQueryParamFromUrl.ts:11](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/route/pickQueryParamFromUrl.ts#L11)
 
 ___
 
@@ -3710,7 +5098,7 @@ removeDuplicatesFromArr([{a:1}, {a:1}, {a:2}], key:"", deepCompare:true) => [{a:
 
 #### Defined in
 
-[src/utils/array/removeDuplicatesFromArr.ts:8](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/array/removeDuplicatesFromArr.ts#L8)
+[src/utils/array/removeDuplicatesFromArr.ts:8](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/array/removeDuplicatesFromArr.ts#L8)
 
 ___
 
@@ -3747,7 +5135,7 @@ removeEventListener(target.current, "touchend", preventDefault);
 
 #### Defined in
 
-[src/utils/browser/removeEventListener.ts:7](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/browser/removeEventListener.ts#L7)
+[src/utils/browser/removeEventListener.ts:7](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/browser/removeEventListener.ts#L7)
 
 ___
 
@@ -3778,7 +5166,7 @@ removeHashFromUrl("www.example.com/a#link") => "www.example.com/a"
 
 #### Defined in
 
-[src/utils/route/removeHashFromUrl.ts:6](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/route/removeHashFromUrl.ts#L6)
+[src/utils/route/removeHashFromUrl.ts:6](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/route/removeHashFromUrl.ts#L6)
 
 ___
 
@@ -3808,7 +5196,7 @@ sleep(1000);
 
 #### Defined in
 
-[src/utils/general/sleep.ts:5](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/general/sleep.ts#L5)
+[src/utils/general/sleep.ts:5](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/general/sleep.ts#L5)
 
 ___
 
@@ -3843,7 +5231,7 @@ An array of objects sorted by the property passed in.
 
 #### Defined in
 
-[src/utils/array/sortArr.ts:13](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/array/sortArr.ts#L13)
+[src/utils/array/sortArr.ts:13](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/array/sortArr.ts#L13)
 
 ___
 
@@ -3875,7 +5263,7 @@ if the property starts with "-" then it will be descending order otherwize ascen
 
 #### Defined in
 
-[src/utils/array/sortByMultiProperties.ts:7](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/array/sortByMultiProperties.ts#L7)
+[src/utils/array/sortByMultiProperties.ts:7](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/array/sortByMultiProperties.ts#L7)
 
 ___
 
@@ -3907,7 +5295,7 @@ splitOnFirst('key:value:value2', ':') => ['key', 'value:value2']
 
 #### Defined in
 
-[src/utils/string/splitOnFirst.ts:8](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/splitOnFirst.ts#L8)
+[src/utils/string/splitOnFirst.ts:8](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/splitOnFirst.ts#L8)
 
 ___
 
@@ -3940,7 +5328,7 @@ An array of strings.
 
 #### Defined in
 
-[src/utils/string/splitUpperCase.ts:10](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/splitUpperCase.ts#L10)
+[src/utils/string/splitUpperCase.ts:10](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/splitUpperCase.ts#L10)
 
 ___
 
@@ -3989,7 +5377,7 @@ stringHas("www.google.com", ["no", "com"]) => true
 
 #### Defined in
 
-[src/utils/string/stringHas.ts:12](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/stringHas.ts#L12)
+[src/utils/string/stringHas.ts:12](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/stringHas.ts#L12)
 
 ___
 
@@ -4015,7 +5403,7 @@ A string of the form #RRGGBB.
 
 #### Defined in
 
-[src/utils/string/stringToHexColor.ts:6](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/stringToHexColor.ts#L6)
+[src/utils/string/stringToHexColor.ts:6](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/stringToHexColor.ts#L6)
 
 ___
 
@@ -4057,7 +5445,7 @@ A string of the form `hsl(0, 100%, 75%)`
 
 #### Defined in
 
-[src/utils/string/stringToHslColor.ts:22](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/stringToHslColor.ts#L22)
+[src/utils/string/stringToHslColor.ts:22](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/stringToHslColor.ts#L22)
 
 ___
 
@@ -4087,7 +5475,7 @@ stringToPath("a.b.c[0]") => ["a", "b", "c", "0"]
 
 #### Defined in
 
-[src/utils/string/stringToPath.ts:5](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/string/stringToPath.ts#L5)
+[src/utils/string/stringToPath.ts:5](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/string/stringToPath.ts#L5)
 
 ___
 
@@ -4122,8 +5510,8 @@ queryString.stringifyUrl({
 
 | Name | Type |
 | :------ | :------ |
-| `object` | `UrlObject` |
-| `options?` | `StringifyOptions` |
+| `object` | [`UrlObject`](modules.md#urlobject) |
+| `options?` | [`StringifyOptions`](modules.md#stringifyoptions) |
 
 #### Returns
 
@@ -4131,7 +5519,7 @@ queryString.stringifyUrl({
 
 #### Defined in
 
-[src/utils/route/stringifyUrl.ts:27](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/route/stringifyUrl.ts#L27)
+[src/utils/route/stringifyUrl.ts:27](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/route/stringifyUrl.ts#L27)
 
 ___
 
@@ -4182,7 +5570,7 @@ thrFunc('hello 1')
 
 #### Defined in
 
-[src/utils/functions/throttlePromise.ts:9](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/functions/throttlePromise.ts#L9)
+[src/utils/functions/throttlePromise.ts:9](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/functions/throttlePromise.ts#L9)
 
 ___
 
@@ -4226,7 +5614,7 @@ An array.
 
 #### Defined in
 
-[src/utils/general/toArray.ts:10](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/general/toArray.ts#L10)
+[src/utils/general/toArray.ts:10](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/general/toArray.ts#L10)
 
 ___
 
@@ -4256,4 +5644,24 @@ urlSearchParamsToObject(new URLSearchParams()) => {}
 
 #### Defined in
 
-[src/utils/general/urlSearchParamsToObject.ts:6](https://github.com/AhmadHddad/h-utils/blob/9aad79f/src/utils/general/urlSearchParamsToObject.ts#L6)
+[src/utils/general/urlSearchParamsToObject.ts:6](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/general/urlSearchParamsToObject.ts#L6)
+
+___
+
+### utf8Encode
+
+▸ **utf8Encode**(`input`): `Uint8Array`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `input` | [`Utf8EncodeTypes`](modules.md#utf8encodetypes) |
+
+#### Returns
+
+`Uint8Array`
+
+#### Defined in
+
+[src/utils/crypto/utf8Encode.ts:3](https://github.com/AhmadHddad/h-utils/blob/ad96be4/src/utils/crypto/utf8Encode.ts#L3)
