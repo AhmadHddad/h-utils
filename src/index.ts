@@ -4,6 +4,7 @@ export { default as Timer } from './classes/Timer';
 
 // Array utils
 export { default as arrayRange } from './utils/array/arrayRange';
+export { default as quickSort } from './utils/array/quickSort';
 export { default as removeDuplicatesFromArr } from './utils/array/removeDuplicatesFromArr';
 export { default as sortArr } from './utils/array/sortArr';
 export { default as sortByMultiProperties } from './utils/array/sortByMultiProperties';
