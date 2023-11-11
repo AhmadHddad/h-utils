@@ -1,11 +1,13 @@
+import { StringOrNumber } from "../types";
+
 /**
- * @description an implmentaion for quickSort algorightm, it will sort an array of numbers.
+ * @description an implmentaion for quickSort algorightm, it will sort an array of numbers or strings.
  */
-export default function quickSort(arr: (number | string)[] = []): (number | string)[] {
+export default function quickSort(arr: StringOrNumber[] = []): StringOrNumber[] {
   if (arr.length <= 1) return arr;
   let pivot = arr[0];
-  let leftArr: (number | string)[] = [];
-  let rightArr: (number | string)[] = [];
+  let leftArr: StringOrNumber[] = [];
+  let rightArr: StringOrNumber[] = [];
 
   for (let i = 1; i < arr.length; i++) {
     const item = arr[i];
