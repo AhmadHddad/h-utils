@@ -1,7 +1,7 @@
 import { StringOrNumber } from "../types";
 
 /**
- * @description an implmentaion for quickSort algorightm, it will sort an array of numbers or strings.
+ * @description an implementation for quickSort algorithm, it will sort an array of numbers or strings.
  */
 export default function quickSort(arr: StringOrNumber[] = []): StringOrNumber[] {
   if (arr.length <= 1) return arr;
