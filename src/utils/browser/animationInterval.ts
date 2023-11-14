@@ -25,10 +25,9 @@ export default function animationInterval(
 
   // Prefer currentTime, as it'll better sync animtions queued in the
   // same frame, but if it isn't supported, performance.now() is fine.
-  const start =
-    (document?.timeline
-      ? document?.timeline?.currentTime
-      : performance.now()) || 0;
+  const start = ((document?.timeline
+    ? document?.timeline?.currentTime
+    : performance.now()) || 0) as number;
 
   function frame(time: number) {
     if (signal.aborted) return;
@@ -37,7 +36,7 @@ export default function animationInterval(
   }
 
   function scheduleFrame(time: number) {
-    const elapsed = time - start;
+    const elapsed = time - (start as number);
     const roundedElapsed = Math.round(elapsed / ms) * ms;
     const targetNext = start + roundedElapsed + ms;
     const delay = targetNext - performance.now();
