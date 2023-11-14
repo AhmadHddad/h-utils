@@ -1,13 +1,15 @@
-import { StringOrNumber } from "../types";
+import { StringOrNumber } from '../types';
 
 /**
  * @description an implementation for quickSort algorithm, it will sort an array of numbers or strings.
  */
-export default function quickSort(arr: StringOrNumber[] = []): StringOrNumber[] {
+export default function quickSort<T extends StringOrNumber>(
+  arr: T[] = []
+): T[] {
   if (arr.length <= 1) return arr;
   let pivot = arr[0];
-  let leftArr: StringOrNumber[] = [];
-  let rightArr: StringOrNumber[] = [];
+  let leftArr: T[] = [];
+  let rightArr: T[] = [];
 
   for (let i = 1; i < arr.length; i++) {
     const item = arr[i];
@@ -18,5 +20,5 @@ export default function quickSort(arr: StringOrNumber[] = []): StringOrNumber[] 
     }
   }
 
-  return [...quickSort(leftArr), pivot, ...quickSort(rightArr)];
+  return [...quickSort(leftArr), pivot, ...quickSort(rightArr)] as T[];
 }

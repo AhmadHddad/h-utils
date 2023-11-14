@@ -1,4 +1,4 @@
-import { Key } from '../types';
+import { Key, StringOrNumber } from '../types';
 
 /**
  * @description It takes two arguments, a and b, and returns an array of numbers or letters from a to b
@@ -9,7 +9,11 @@ import { Key } from '../types';
  * @param {number} step - The step value.
  * @returns An array of strings.
  */
-export default function arrayRange(a: Key, b: Key, step: number) {
+export default function arrayRange(
+  a: Key,
+  b: Key,
+  step: number
+): StringOrNumber[] {
   let A: Key[] = [];
 
   if (typeof a == 'number' && typeof b == 'number') {
