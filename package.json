@@ -59,6 +59,7 @@
   "repository": "https://github.com/AhmadHddad/h-utils",
   "bugs": "https://github.com/AhmadHddad/h-utils/issues",
   "devDependencies": {
+    "@types/node": "^20.8.7",
     "agadoo": "^3.0.0",
     "fix-esm-import-path": "^1.4.0",
     "tslib": "^2.4.0",
