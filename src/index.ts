@@ -4,6 +4,10 @@ export { default as Timer } from './classes/Timer';
 
 // Array utils
 export { default as arrayRange } from './utils/array/arrayRange';
+export { default as bubbleSort } from './utils/array/bubbleSort';
+export { default as heapSort } from './utils/array/heapSort';
+export { default as mergeSort } from './utils/array/mergeSort';
+export { default as quickSort } from './utils/array/quickSort';
 export { default as removeDuplicatesFromArr } from './utils/array/removeDuplicatesFromArr';
 export { default as sortArr } from './utils/array/sortArr';
 export { default as sortByMultiProperties } from './utils/array/sortByMultiProperties';
@@ -23,7 +27,7 @@ export { default as throttlePromise } from './utils/functions/throttlePromise';
 export { default as conditionalReturn } from './utils/general/conditionalReturn';
 export { default as count } from './utils/general/count';
 export { default as deepClone } from './utils/general/deepClone';
-export { default as generateGuid } from './utils/general/generateGuid';
+export { default as generateGuid } from './utils/general/generateUUID';
 export { default as getGlobalThis } from './utils/general/getGlobalThis';
 export { default as getTag } from './utils/general/getTag';
 export { default as noop } from './utils/general/noop';
@@ -31,6 +35,7 @@ export { default as onTimeout } from './utils/general/onTimeout';
 export { default as sleep } from './utils/general/sleep';
 export { default as toArray } from './utils/general/toArray';
 export { default as urlSearchParamsToObject } from './utils/general/urlSearchParamsToObject';
+export { default as uuidv4 } from './utils/general/generateUUID';
 export { default as wait } from './utils/general/sleep';
 
 // File utils
@@ -45,6 +50,7 @@ export { default as multiplyAll } from './utils/number/multiplyAll';
 export { default as addAndOrConjunctionsToStrArray } from './utils/string/addAndOrConjunctionsToStrArray';
 export { default as arabicToEnglishNumbers } from './utils/string/arabicToEnglishNumbers';
 export { default as arabicToPersianNumbers } from './utils/string/arabicToPersianNumbers';
+export { default as arrayContainsSubstring } from './utils/string/arrayContainsSubstring';
 export { default as breakStrAfterNChar } from './utils/string/breakStrAfterNChar';
 export { default as capitalize } from './utils/string/capitalize';
 export { default as englishToArabicNumbers } from './utils/string/englishToArabicNumbers';
@@ -86,8 +92,8 @@ export { default as navigateObjWithString } from './utils/object/navigateObjWith
 // Route utils
 export { default as addHttpToURL } from './utils/route/addHttpToURL';
 export { default as excludeQueryParamFromUrl } from './utils/route/excludeQueryParamFromUrl';
-export { default as getUrlObj } from './utils/route/getUrlObj';
 export { default as extractQueryFromUrl } from './utils/route/extractQueryFromUrl';
+export { default as getUrlObj } from './utils/route/getUrlObj';
 export { default as parse } from './utils/route/parse';
 export { default as parseUrl } from './utils/route/parseUrl';
 export { default as pickQueryParamFromUrl } from './utils/route/pickQueryParamFromUrl';
@@ -99,18 +105,17 @@ export { default as classNames } from './utils/style/classNames';
 
 // Validation utils
 export { default as isArray } from './utils/validation/isArray';
-export { default as isDev } from './utils/validation/isDev';
-export { default as isFalsy } from './utils/validation/isFalsy';
-export { default as isPrimitive } from './utils/validation/isPrimitive';
 export { default as isArrayOfStrings } from './utils/validation/isArrayOfStrings';
 export { default as isAsyncFunction } from './utils/validation/isAsyncFunction';
 export { default as isBiggerThan } from './utils/validation/isBiggerThan';
 export { default as isBoolean } from './utils/validation/isBoolean';
 export { default as isBrowser } from './utils/validation/isBrowser';
 export { default as isDateType } from './utils/validation/isDateType';
+export { default as isDev } from './utils/validation/isDev';
 export { default as isEmail } from './utils/validation/isEmail';
 export { default as isEmpty } from './utils/validation/isEmpty';
 export { default as isEqual } from './utils/validation/isEqual';
+export { default as isFalsy } from './utils/validation/isFalsy';
 export { default as isFunction } from './utils/validation/isFunction';
 export { default as isIndex } from './utils/validation/isIndex';
 export { default as isKeyInObject } from './utils/validation/isKeyInObject';
@@ -122,6 +127,7 @@ export { default as isNumber } from './utils/validation/isNumber';
 export { default as isObject } from './utils/validation/isObject';
 export { default as isObjectLike } from './utils/validation/isObjectLike';
 export { default as isObjHasValues } from './utils/validation/isObjHasValues';
+export { default as isPrimitive } from './utils/validation/isPrimitive';
 export { default as isPromise } from './utils/validation/isPromise';
 export { default as isSmallerThan } from './utils/validation/isSmallerThan';
 export { default as isString } from './utils/validation/isString';
@@ -133,20 +139,20 @@ export { default as isWhiteSpace } from './utils/validation/isWhiteSpace';
 
 // Browser utils
 export { default as addEventListener } from './utils/browser/addEventListener';
-export { default as intersectionObserver } from 'hd-intersection-observer';
 export { default as animationInterval } from './utils/browser/animationInterval';
 export { default as getBrowser } from './utils/browser/getBrowser';
 export { default as getHtmlElementCoords } from './utils/browser/getHtmlElementCoords';
 export { default as getWindowObj } from './utils/browser/getWindowObj';
+export { default as intersectionObserver } from 'hd-intersection-observer';
 export { default as onSetInterval } from './utils/browser/animationInterval';
 export { default as onUrlChange } from './utils/browser/onUrlChange';
 export { default as removeEventListener } from './utils/browser/removeEventListener';
     
 
 // Crypto
-export { default as utf8Encode } from './utils/crypto/utf8Encode';
 export { default as generateCacheKey } from './utils/crypto/generateCacheKey';
 export { default as SHA256 } from './utils/crypto/SHA256';
+export { default as utf8Encode } from './utils/crypto/utf8Encode';
 
 
 // Types
