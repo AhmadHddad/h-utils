@@ -48,6 +48,7 @@ export { default as multiplyAll } from './utils/number/multiplyAll';
 
 // String utils
 export { default as addAndOrConjunctionsToStrArray } from './utils/string/addAndOrConjunctionsToStrArray';
+export { default as leftPad } from './utils/string/leftPad';
 export { default as arabicToEnglishNumbers } from './utils/string/arabicToEnglishNumbers';
 export { default as arabicToPersianNumbers } from './utils/string/arabicToPersianNumbers';
 export { default as arrayContainsSubstring } from './utils/string/arrayContainsSubstring';
