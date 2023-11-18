@@ -48,6 +48,7 @@ export { default as multiplyAll } from './utils/number/multiplyAll';
 
 // String utils
 export { default as addAndOrConjunctionsToStrArray } from './utils/string/addAndOrConjunctionsToStrArray';
+export { default as leftPad } from './utils/string/leftPad';
 export { default as arabicToEnglishNumbers } from './utils/string/arabicToEnglishNumbers';
 export { default as arabicToPersianNumbers } from './utils/string/arabicToPersianNumbers';
 export { default as arrayContainsSubstring } from './utils/string/arrayContainsSubstring';
@@ -91,6 +92,7 @@ export { default as navigateObjWithString } from './utils/object/navigateObjWith
 
 // Route utils
 export { default as addHttpToURL } from './utils/route/addHttpToURL';
+export { default as getUrlSearchParams } from './utils/route/getUrlSearchParams';
 export { default as excludeQueryParamFromUrl } from './utils/route/excludeQueryParamFromUrl';
 export { default as extractQueryFromUrl } from './utils/route/extractQueryFromUrl';
 export { default as getUrlObj } from './utils/route/getUrlObj';
@@ -120,6 +122,7 @@ export { default as isFunction } from './utils/validation/isFunction';
 export { default as isIndex } from './utils/validation/isIndex';
 export { default as isKeyInObject } from './utils/validation/isKeyInObject';
 export { default as isLength } from './utils/validation/isLength';
+export { default as isNegativeNumber } from './utils/validation/isNegativeNumber';
 export { default as isNull } from './utils/validation/isNull';
 export { default as isNullOrEmptyString } from './utils/validation/isNullOrEmptyString';
 export { default as isNullOrUndefined } from './utils/validation/isNullOrUndefined';
@@ -127,6 +130,7 @@ export { default as isNumber } from './utils/validation/isNumber';
 export { default as isObject } from './utils/validation/isObject';
 export { default as isObjectLike } from './utils/validation/isObjectLike';
 export { default as isObjHasValues } from './utils/validation/isObjHasValues';
+export { default as isPositiveNumber } from './utils/validation/isPositiveNumber';
 export { default as isPrimitive } from './utils/validation/isPrimitive';
 export { default as isPromise } from './utils/validation/isPromise';
 export { default as isSmallerThan } from './utils/validation/isSmallerThan';
@@ -147,13 +151,11 @@ export { default as intersectionObserver } from 'hd-intersection-observer';
 export { default as onSetInterval } from './utils/browser/animationInterval';
 export { default as onUrlChange } from './utils/browser/onUrlChange';
 export { default as removeEventListener } from './utils/browser/removeEventListener';
-    
 
 // Crypto
 export { default as generateCacheKey } from './utils/crypto/generateCacheKey';
 export { default as SHA256 } from './utils/crypto/SHA256';
 export { default as utf8Encode } from './utils/crypto/utf8Encode';
-
 
 // Types
 export * from './utils/utilityTypes';

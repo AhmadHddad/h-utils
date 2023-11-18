@@ -56,7 +56,7 @@ console.log(timer.getTime()) // 1000
 
 #### Defined in
 
-[src/classes/Timer.ts:20](https://github.com/AhmadHddad/h-utils/blob/1593ac4/src/classes/Timer.ts#L20)
+[src/classes/Timer.ts:20](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/classes/Timer.ts#L20)
 
 ## Properties
 
@@ -66,7 +66,7 @@ console.log(timer.getTime()) // 1000
 
 #### Defined in
 
-[src/classes/Timer.ts:16](https://github.com/AhmadHddad/h-utils/blob/1593ac4/src/classes/Timer.ts#L16)
+[src/classes/Timer.ts:16](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/classes/Timer.ts#L16)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[src/classes/Timer.ts:18](https://github.com/AhmadHddad/h-utils/blob/1593ac4/src/classes/Timer.ts#L18)
+[src/classes/Timer.ts:18](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/classes/Timer.ts#L18)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[src/classes/Timer.ts:17](https://github.com/AhmadHddad/h-utils/blob/1593ac4/src/classes/Timer.ts#L17)
+[src/classes/Timer.ts:17](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/classes/Timer.ts#L17)
 
 ## Methods
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-[src/classes/Timer.ts:24](https://github.com/AhmadHddad/h-utils/blob/1593ac4/src/classes/Timer.ts#L24)
+[src/classes/Timer.ts:24](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/classes/Timer.ts#L24)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[src/classes/Timer.ts:63](https://github.com/AhmadHddad/h-utils/blob/1593ac4/src/classes/Timer.ts#L63)
+[src/classes/Timer.ts:63](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/classes/Timer.ts#L63)
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 #### Defined in
 
-[src/classes/Timer.ts:52](https://github.com/AhmadHddad/h-utils/blob/1593ac4/src/classes/Timer.ts#L52)
+[src/classes/Timer.ts:52](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/classes/Timer.ts#L52)
 
 ___
 
@@ -142,7 +142,7 @@ ___
 
 #### Defined in
 
-[src/classes/Timer.ts:32](https://github.com/AhmadHddad/h-utils/blob/1593ac4/src/classes/Timer.ts#L32)
+[src/classes/Timer.ts:32](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/classes/Timer.ts#L32)
 
 ___
 
@@ -156,4 +156,4 @@ ___
 
 #### Defined in
 
-[src/classes/Timer.ts:42](https://github.com/AhmadHddad/h-utils/blob/1593ac4/src/classes/Timer.ts#L42)
+[src/classes/Timer.ts:42](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/classes/Timer.ts#L42)
