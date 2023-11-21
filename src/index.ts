@@ -142,6 +142,8 @@ export { default as isURL } from './utils/validation/isURL';
 export { default as isWhiteSpace } from './utils/validation/isWhiteSpace';
 
 // Browser utils
+export { default as addColorSchemeChangeListener } from './utils/browser/addColorSchemeChangeListener';
+export { default as getUserColorSchemePreference } from './utils/browser/getUserColorSchemePreference';
 export { default as addEventListener } from './utils/browser/addEventListener';
 export { default as animationInterval } from './utils/browser/animationInterval';
 export { default as getBrowser } from './utils/browser/getBrowser';
