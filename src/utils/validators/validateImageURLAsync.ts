@@ -1,6 +1,6 @@
 import isBrowser from '../validation/isBrowser';
 
-export default function validateImageURLAsync(url: string) {
+export default function validateImageURLAsync(url: string): Promise<boolean> {
   if (isBrowser()) {
     const img = new Image();
     img.src = url;
