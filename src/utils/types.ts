@@ -12,6 +12,15 @@ export type DebounceOptions = {
   maxWait?: number;
 };
 
+export interface PointObject {
+  x: number;
+  y: number;
+  z?: number;
+}
+
+export type Point2D = [number, number];
+export type Point3D = [number, number, number];
+
 export type ColorScheme = 'light' | 'dark';
 
 export type StringOrNumber = number | string;

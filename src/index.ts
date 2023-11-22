@@ -26,6 +26,7 @@ export { default as throttlePromise } from './utils/functions/throttlePromise';
 // General utils
 export { default as conditionalReturn } from './utils/general/conditionalReturn';
 export { default as count } from './utils/general/count';
+export { default as calculateDistance } from './utils/general/calculateDistance';
 export { default as deepClone } from './utils/general/deepClone';
 export { default as generateGuid } from './utils/general/generateUUID';
 export { default as getGlobalThis } from './utils/general/getGlobalThis';
