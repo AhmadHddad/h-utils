@@ -39,6 +39,9 @@ export { default as urlSearchParamsToObject } from './utils/general/urlSearchPar
 export { default as uuidv4 } from './utils/general/generateUUID';
 export { default as wait } from './utils/general/sleep';
 
+// Validators
+export { default as validateImageURLAsync } from './utils/validators/validateImageURLAsync';
+
 // File utils
 export { default as getBase64FromFile } from './utils/file/getBase64FromFile';
 
