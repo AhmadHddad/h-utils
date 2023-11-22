@@ -1,10 +1,27 @@
 export type Fn = (this: any, ...args: any[]) => any;
-export type { Falsy, KeysArr, PredicateFunc, Key, Primitive } from "./utilityTypes";
+export type {
+  Falsy,
+  KeysArr,
+  PredicateFunc,
+  Key,
+  Primitive,
+} from './utilityTypes';
 export type DebounceOptions = {
   leading?: boolean;
   trailing?: boolean;
   maxWait?: number;
 };
+
+export interface PointObject {
+  x: number;
+  y: number;
+  z?: number;
+}
+
+export type Point2D = [number, number];
+export type Point3D = [number, number, number];
+
+export type ColorScheme = 'light' | 'dark';
 
 export type StringOrNumber = number | string;
 
@@ -115,13 +132,13 @@ export type StringifyOptions = {
     ```
   */
   readonly arrayFormat?:
-    | "bracket"
-    | "index"
-    | "comma"
-    | "separator"
-    | "bracket-separator"
-    | "colon-list-separator"
-    | "none";
+    | 'bracket'
+    | 'index'
+    | 'comma'
+    | 'separator'
+    | 'bracket-separator'
+    | 'colon-list-separator'
+    | 'none';
 
   /**
   The character used to separate array elements when using `{arrayFormat: 'separator'}`.
@@ -232,7 +249,10 @@ export type StringifiableRecord = Record<
   Stringifiable | readonly Stringifiable[]
 >;
 
-export type ParsedQuery<T = string> = Record<string, T | null | Array<T | null>>;
+export type ParsedQuery<T = string> = Record<
+  string,
+  T | null | Array<T | null>
+>;
 
 export type ParsedUrl = {
   readonly url: string;
@@ -336,13 +356,13 @@ export type ParseOptions = {
     ```
   */
   readonly arrayFormat?:
-    | "bracket"
-    | "index"
-    | "comma"
-    | "separator"
-    | "bracket-separator"
-    | "colon-list-separator"
-    | "none";
+    | 'bracket'
+    | 'index'
+    | 'comma'
+    | 'separator'
+    | 'bracket-separator'
+    | 'colon-list-separator'
+    | 'none';
 
   /**
   The character used to separate array elements when using `{arrayFormat: 'separator'}`.
@@ -428,15 +448,15 @@ export type ParseOptions = {
 
 export type GetHtmlElementCoordsOptions = {
   position:
-    | "top left"
-    | "top center"
-    | "top right"
-    | "center left"
-    | "center"
-    | "center right"
-    | "bottom left"
-    | "bottom center"
-    | "bottom right";
+    | 'top left'
+    | 'top center'
+    | 'top right'
+    | 'center left'
+    | 'center'
+    | 'center right'
+    | 'bottom left'
+    | 'bottom center'
+    | 'bottom right';
   precise: boolean;
 };
 

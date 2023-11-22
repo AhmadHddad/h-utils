@@ -26,6 +26,7 @@ export { default as throttlePromise } from './utils/functions/throttlePromise';
 // General utils
 export { default as conditionalReturn } from './utils/general/conditionalReturn';
 export { default as count } from './utils/general/count';
+export { default as calculateDistance } from './utils/general/calculateDistance';
 export { default as deepClone } from './utils/general/deepClone';
 export { default as generateGuid } from './utils/general/generateUUID';
 export { default as getGlobalThis } from './utils/general/getGlobalThis';
@@ -37,6 +38,9 @@ export { default as toArray } from './utils/general/toArray';
 export { default as urlSearchParamsToObject } from './utils/general/urlSearchParamsToObject';
 export { default as uuidv4 } from './utils/general/generateUUID';
 export { default as wait } from './utils/general/sleep';
+
+// Validators
+export { default as validateImageURLAsync } from './utils/validators/validateImageURLAsync';
 
 // File utils
 export { default as getBase64FromFile } from './utils/file/getBase64FromFile';
@@ -142,6 +146,8 @@ export { default as isURL } from './utils/validation/isURL';
 export { default as isWhiteSpace } from './utils/validation/isWhiteSpace';
 
 // Browser utils
+export { default as addColorSchemeChangeListener } from './utils/browser/addColorSchemeChangeListener';
+export { default as getUserColorSchemePreference } from './utils/browser/getUserColorSchemePreference';
 export { default as addEventListener } from './utils/browser/addEventListener';
 export { default as animationInterval } from './utils/browser/animationInterval';
 export { default as getBrowser } from './utils/browser/getBrowser';

@@ -23,6 +23,7 @@
 
 ### Interfaces
 
+- [PointObject](interfaces/PointObject.md)
 - [\_DeepNonNullableArray](interfaces/DeepNonNullableArray.md)
 - [\_DeepPartialArray](interfaces/DeepPartialArray.md)
 - [\_DeepReadonlyArray](interfaces/DeepReadonlyArray.md)
@@ -32,6 +33,7 @@
 
 - [Assign](modules.md#assign)
 - [AttemptOptions](modules.md#attemptoptions)
+- [ColorScheme](modules.md#colorscheme)
 - [DebounceOptions](modules.md#debounceoptions)
 - [DeepNonNullable](modules.md#deepnonnullable)
 - [DeepPartial](modules.md#deeppartial)
@@ -62,6 +64,8 @@
 - [ParseOptions](modules.md#parseoptions)
 - [ParsedQuery](modules.md#parsedquery)
 - [ParsedUrl](modules.md#parsedurl)
+- [Point2D](modules.md#point2d)
+- [Point3D](modules.md#point3d)
 - [PredicateFunc](modules.md#predicatefunc)
 - [Primitive](modules.md#primitive)
 - [PromiseType](modules.md#promisetype)
@@ -110,6 +114,7 @@
 
 - [SHA256](modules.md#sha256)
 - [addAndOrConjunctionsToStrArray](modules.md#addandorconjunctionstostrarray)
+- [addColorSchemeChangeListener](modules.md#addcolorschemechangelistener)
 - [addEventListener](modules.md#addeventlistener)
 - [addHttpToURL](modules.md#addhttptourl)
 - [animationInterval](modules.md#animationinterval)
@@ -121,6 +126,7 @@
 - [attemptAsync](modules.md#attemptasync)
 - [breakStrAfterNChar](modules.md#breakstrafternchar)
 - [bubbleSort](modules.md#bubblesort)
+- [calculateDistance](modules.md#calculatedistance)
 - [capitalize](modules.md#capitalize)
 - [classNames](modules.md#classnames)
 - [compare2ObjectsBaseOnKeysArr](modules.md#compare2objectsbaseonkeysarr)
@@ -155,6 +161,7 @@
 - [getTag](modules.md#gettag)
 - [getUrlObj](modules.md#geturlobj)
 - [getUrlSearchParams](modules.md#geturlsearchparams)
+- [getUserColorSchemePreference](modules.md#getusercolorschemepreference)
 - [getWindowObj](modules.md#getwindowobj)
 - [has](modules.md#has)
 - [hashString](modules.md#hashstring)
@@ -229,6 +236,7 @@
 - [toArray](modules.md#toarray)
 - [urlSearchParamsToObject](modules.md#urlsearchparamstoobject)
 - [utf8Encode](modules.md#utf8encode)
+- [validateImageURLAsync](modules.md#validateimageurlasync)
 
 ## References
 
@@ -286,7 +294,7 @@ type Props = { name: string; age: number; visible: boolean };
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:278](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L278)
+[src/utils/utilityTypes.ts:278](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L278)
 
 ___
 
@@ -304,7 +312,17 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:450](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/types.ts#L450)
+[src/utils/types.ts:470](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/types.ts#L470)
+
+___
+
+### ColorScheme
+
+Ƭ **ColorScheme**: ``"light"`` \| ``"dark"``
+
+#### Defined in
+
+[src/utils/types.ts:24](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/types.ts#L24)
 
 ___
 
@@ -322,7 +340,7 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:3](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/types.ts#L3)
+[src/utils/types.ts:9](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/types.ts#L9)
 
 ___
 
@@ -365,7 +383,7 @@ NonNullable that works for deeply nested structure
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:407](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L407)
+[src/utils/utilityTypes.ts:407](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L407)
 
 ___
 
@@ -407,7 +425,7 @@ Partial that works for deeply nested structure
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:443](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L443)
+[src/utils/utilityTypes.ts:443](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L443)
 
 ___
 
@@ -449,7 +467,7 @@ Readonly that works for deeply nested structure
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:335](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L335)
+[src/utils/utilityTypes.ts:335](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L335)
 
 ___
 
@@ -491,7 +509,7 @@ Required that works for deeply nested structure
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:370](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L370)
+[src/utils/utilityTypes.ts:370](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L370)
 
 ___
 
@@ -524,7 +542,7 @@ type Props = { name: string; age: number; visible: boolean };
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:180](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L180)
+[src/utils/utilityTypes.ts:180](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L180)
 
 ___
 
@@ -546,7 +564,7 @@ Create branded object type for exact type matching
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:288](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L288)
+[src/utils/utilityTypes.ts:288](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L288)
 
 ___
 
@@ -563,7 +581,7 @@ ___
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:6](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L6)
+[src/utils/utilityTypes.ts:6](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L6)
 
 ___
 
@@ -588,7 +606,7 @@ type Various = 'a' | 'b' | undefined | false;
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:82](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L82)
+[src/utils/utilityTypes.ts:82](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L82)
 
 ___
 
@@ -613,7 +631,7 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:1](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/types.ts#L1)
+[src/utils/types.ts:1](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/types.ts#L1)
 
 ___
 
@@ -644,7 +662,7 @@ type MixedProps = {name: string; setName: (name: string) => void; someKeys?: str
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:120](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L120)
+[src/utils/utilityTypes.ts:120](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L120)
 
 ___
 
@@ -668,7 +686,7 @@ ___
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:13](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L13)
+[src/utils/utilityTypes.ts:13](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L13)
 
 ___
 
@@ -685,7 +703,7 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:429](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/types.ts#L429)
+[src/utils/types.ts:449](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/types.ts#L449)
 
 ___
 
@@ -708,7 +726,7 @@ will check if X, Y are equal
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:67](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L67)
+[src/utils/utilityTypes.ts:67](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L67)
 
 ___
 
@@ -741,7 +759,7 @@ type Props = { name: string; age: number; visible: boolean };
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:247](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L247)
+[src/utils/utilityTypes.ts:247](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L247)
 
 ___
 
@@ -751,7 +769,7 @@ ___
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:1](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L1)
+[src/utils/utilityTypes.ts:1](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L1)
 
 ___
 
@@ -767,7 +785,7 @@ ___
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:3](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L3)
+[src/utils/utilityTypes.ts:3](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L3)
 
 ___
 
@@ -777,7 +795,7 @@ ___
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:21](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L21)
+[src/utils/utilityTypes.ts:21](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L21)
 
 ___
 
@@ -811,7 +829,7 @@ type Props = { readonly foo: string; bar: number };
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:149](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L149)
+[src/utils/utilityTypes.ts:149](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L149)
 
 ___
 
@@ -842,7 +860,7 @@ type MixedProps = {name: string; setName: (name: string) => void; someKeys?: str
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:133](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L133)
+[src/utils/utilityTypes.ts:133](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L133)
 
 ___
 
@@ -871,7 +889,7 @@ Exclude undefined from set `A`
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:109](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L109)
+[src/utils/utilityTypes.ts:109](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L109)
 
 ___
 
@@ -895,7 +913,7 @@ ___
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:11](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L11)
+[src/utils/utilityTypes.ts:11](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L11)
 
 ___
 
@@ -911,7 +929,7 @@ ___
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:36](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L36)
+[src/utils/utilityTypes.ts:36](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L36)
 
 ___
 
@@ -921,7 +939,7 @@ ___
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:38](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L38)
+[src/utils/utilityTypes.ts:38](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L38)
 
 ___
 
@@ -956,7 +974,7 @@ type Props = { req: number; reqUndef: number | undefined; opt?: string; optUndef
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:209](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L209)
+[src/utils/utilityTypes.ts:209](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L209)
 
 ___
 
@@ -990,7 +1008,7 @@ type Props = { name: string; age: number; visible: boolean };
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:262](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L262)
+[src/utils/utilityTypes.ts:262](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L262)
 
 ___
 
@@ -1010,7 +1028,7 @@ Recursively unwraps the "awaited type" of a type.
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:28](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L28)
+[src/utils/utilityTypes.ts:28](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L28)
 
 ___
 
@@ -1032,7 +1050,7 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:249](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/types.ts#L249)
+[src/utils/types.ts:269](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/types.ts#L269)
 
 ___
 
@@ -1048,7 +1066,7 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:235](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/types.ts#L235)
+[src/utils/types.ts:252](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/types.ts#L252)
 
 ___
 
@@ -1066,7 +1084,27 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:237](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/types.ts#L237)
+[src/utils/types.ts:257](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/types.ts#L257)
+
+___
+
+### Point2D
+
+Ƭ **Point2D**: [`number`, `number`]
+
+#### Defined in
+
+[src/utils/types.ts:21](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/types.ts#L21)
+
+___
+
+### Point3D
+
+Ƭ **Point3D**: [`number`, `number`, `number`]
+
+#### Defined in
+
+[src/utils/types.ts:22](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/types.ts#L22)
 
 ___
 
@@ -1098,7 +1136,7 @@ ___
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:15](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L15)
+[src/utils/utilityTypes.ts:15](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L15)
 
 ___
 
@@ -1123,7 +1161,7 @@ type Various = number | string | object;
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:93](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L93)
+[src/utils/utilityTypes.ts:93](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L93)
 
 ___
 
@@ -1152,7 +1190,7 @@ Obtain Promise resolve type
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:310](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L310)
+[src/utils/utilityTypes.ts:310](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L310)
 
 ___
 
@@ -1185,7 +1223,7 @@ type Props = { readonly foo: string; bar: number };
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:55](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L55)
+[src/utils/utilityTypes.ts:55](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L55)
 
 ___
 
@@ -1220,7 +1258,7 @@ type Props = { req: number; reqUndef: number | undefined; opt?: string; optUndef
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:195](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L195)
+[src/utils/utilityTypes.ts:195](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L195)
 
 ___
 
@@ -1250,7 +1288,7 @@ Set complement of given union types `A` and (it's subset) `A1`
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:220](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L220)
+[src/utils/utilityTypes.ts:220](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L220)
 
 ___
 
@@ -1283,7 +1321,7 @@ Set difference of given union types `A` and `B`
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:168](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L168)
+[src/utils/utilityTypes.ts:168](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L168)
 
 ___
 
@@ -1293,7 +1331,7 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:9](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/types.ts#L9)
+[src/utils/types.ts:26](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/types.ts#L26)
 
 ___
 
@@ -1303,7 +1341,7 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:214](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/types.ts#L214)
+[src/utils/types.ts:231](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/types.ts#L231)
 
 ___
 
@@ -1313,7 +1351,7 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:230](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/types.ts#L230)
+[src/utils/types.ts:247](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/types.ts#L247)
 
 ___
 
@@ -1335,7 +1373,7 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:13](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/types.ts#L13)
+[src/utils/types.ts:30](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/types.ts#L30)
 
 ___
 
@@ -1368,7 +1406,7 @@ type Props = { name: string; age: number; visible: boolean };
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:232](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L232)
+[src/utils/utilityTypes.ts:232](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L232)
 
 ___
 
@@ -1399,7 +1437,7 @@ type Props = { name: string; age: number; visible: boolean };
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:299](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L299)
+[src/utils/utilityTypes.ts:299](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L299)
 
 ___
 
@@ -1417,7 +1455,7 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:216](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/types.ts#L216)
+[src/utils/types.ts:233](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/types.ts#L233)
 
 ___
 
@@ -1427,7 +1465,7 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:11](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/types.ts#L11)
+[src/utils/types.ts:28](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/types.ts#L28)
 
 ___
 
@@ -1443,7 +1481,7 @@ ___
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:4](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L4)
+[src/utils/utilityTypes.ts:4](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L4)
 
 ___
 
@@ -1459,7 +1497,7 @@ ___
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:156](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L156)
+[src/utils/utilityTypes.ts:156](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L156)
 
 ___
 
@@ -1475,7 +1513,7 @@ ___
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:419](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L419)
+[src/utils/utilityTypes.ts:419](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L419)
 
 ___
 
@@ -1491,7 +1529,7 @@ ___
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:446](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L446)
+[src/utils/utilityTypes.ts:446](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L446)
 
 ___
 
@@ -1507,7 +1545,7 @@ ___
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:346](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L346)
+[src/utils/utilityTypes.ts:346](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L346)
 
 ___
 
@@ -1523,7 +1561,7 @@ ___
 
 #### Defined in
 
-[src/utils/utilityTypes.ts:382](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/utilityTypes.ts#L382)
+[src/utils/utilityTypes.ts:382](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/utilityTypes.ts#L382)
 
 ## Variables
 
@@ -1533,7 +1571,7 @@ ___
 
 #### Defined in
 
-[src/regex/index.ts:5](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/regex/index.ts#L5)
+[src/regex/index.ts:5](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/regex/index.ts#L5)
 
 ___
 
@@ -1543,7 +1581,7 @@ ___
 
 #### Defined in
 
-[src/regex/index.ts:6](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/regex/index.ts#L6)
+[src/regex/index.ts:6](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/regex/index.ts#L6)
 
 ___
 
@@ -1553,7 +1591,7 @@ ___
 
 #### Defined in
 
-[src/regex/index.ts:3](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/regex/index.ts#L3)
+[src/regex/index.ts:3](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/regex/index.ts#L3)
 
 ___
 
@@ -1563,7 +1601,7 @@ ___
 
 #### Defined in
 
-[src/regex/index.ts:4](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/regex/index.ts#L4)
+[src/regex/index.ts:4](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/regex/index.ts#L4)
 
 ___
 
@@ -1573,7 +1611,7 @@ ___
 
 #### Defined in
 
-[src/regex/index.ts:1](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/regex/index.ts#L1)
+[src/regex/index.ts:1](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/regex/index.ts#L1)
 
 ___
 
@@ -1583,7 +1621,7 @@ ___
 
 #### Defined in
 
-[src/regex/index.ts:2](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/regex/index.ts#L2)
+[src/regex/index.ts:2](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/regex/index.ts#L2)
 
 ___
 
@@ -1593,7 +1631,7 @@ ___
 
 #### Defined in
 
-[src/regex/index.ts:7](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/regex/index.ts#L7)
+[src/regex/index.ts:7](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/regex/index.ts#L7)
 
 ## Function Functions
 
@@ -1691,7 +1729,7 @@ Returns the new debounced function.
 
 #### Defined in
 
-[src/utils/functions/debounce.ts:68](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/functions/debounce.ts#L68)
+[src/utils/functions/debounce.ts:68](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/functions/debounce.ts#L68)
 
 ___
 
@@ -1760,7 +1798,7 @@ Returns the new memoized function.
 
 #### Defined in
 
-[src/utils/functions/memoize.ts:44](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/functions/memoize.ts#L44)
+[src/utils/functions/memoize.ts:44](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/functions/memoize.ts#L44)
 
 ___
 
@@ -1831,7 +1869,7 @@ Returns the new throttled function.
 
 #### Defined in
 
-[src/utils/functions/throttle.ts:52](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/functions/throttle.ts#L52)
+[src/utils/functions/throttle.ts:52](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/functions/throttle.ts#L52)
 
 ___
 
@@ -1885,7 +1923,7 @@ Returns `true` if the values are equivalent, else `false`.
 
 #### Defined in
 
-[src/utils/validation/isEqual.ts:31](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isEqual.ts#L31)
+[src/utils/validation/isEqual.ts:31](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isEqual.ts#L31)
 
 ___
 
@@ -1930,7 +1968,7 @@ Returns `true` if `value` is object-like, else `false`.
 
 #### Defined in
 
-[src/utils/validation/isObjectLike.ts:23](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isObjectLike.ts#L23)
+[src/utils/validation/isObjectLike.ts:23](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isObjectLike.ts#L23)
 
 ___
 
@@ -1964,7 +2002,7 @@ Returns `true` if `value` is a symbol, else `false`.
 
 #### Defined in
 
-[src/utils/validation/isSymbol.ts:17](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isSymbol.ts#L17)
+[src/utils/validation/isSymbol.ts:17](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isSymbol.ts#L17)
 
 ___
 
@@ -1986,7 +2024,7 @@ ___
 
 #### Defined in
 
-[src/utils/crypto/SHA256.ts:4](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/crypto/SHA256.ts#L4)
+[src/utils/crypto/SHA256.ts:4](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/crypto/SHA256.ts#L4)
 
 ___
 
@@ -2030,7 +2068,46 @@ A string
 
 #### Defined in
 
-[src/utils/string/addAndOrConjunctionsToStrArray.ts:10](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/addAndOrConjunctionsToStrArray.ts#L10)
+[src/utils/string/addAndOrConjunctionsToStrArray.ts:10](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/addAndOrConjunctionsToStrArray.ts#L10)
+
+___
+
+### addColorSchemeChangeListener
+
+▸ **addColorSchemeChangeListener**(`callback`): () => `void`
+
+**`Description`**
+
+tracks changes in the user's color scheme preference and invokes a callback with the updated scheme ('dark' or 'light'). Use the returned function to remove the listener when necessary. Ideal for adapting visual elements to user preferences.
+
+**`Example`**
+
+const removeListener = addColorSchemeChangeListener((newColorScheme, event) => {
+ console.log(`Color scheme changed to: ${newColorScheme}`);
+});
+
+// Later, when you want to stop listening for color scheme changes
+removeListener();
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `callback` | (`colorScheme`: [`ColorScheme`](modules.md#colorscheme), `event`: `MediaQueryListEvent`) => `void` |
+
+#### Returns
+
+`fn`
+
+▸ (): `void`
+
+##### Returns
+
+`void`
+
+#### Defined in
+
+[src/utils/browser/addColorSchemeChangeListener.ts:14](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/browser/addColorSchemeChangeListener.ts#L14)
 
 ___
 
@@ -2067,7 +2144,7 @@ addEventListener(event.target, "touchend", preventDefault, { passive: false });
 
 #### Defined in
 
-[src/utils/browser/addEventListener.ts:6](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/browser/addEventListener.ts#L6)
+[src/utils/browser/addEventListener.ts:6](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/browser/addEventListener.ts#L6)
 
 ___
 
@@ -2104,7 +2181,7 @@ addHttpToURL("www.google.com", true) => "https://www.google.com"
 
 #### Defined in
 
-[src/utils/route/addHttpToURL.ts:11](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/route/addHttpToURL.ts#L11)
+[src/utils/route/addHttpToURL.ts:11](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/route/addHttpToURL.ts#L11)
 
 ___
 
@@ -2143,7 +2220,7 @@ controller.abort();`
 
 #### Defined in
 
-[src/utils/browser/animationInterval.ts:16](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/browser/animationInterval.ts#L16)
+[src/utils/browser/animationInterval.ts:16](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/browser/animationInterval.ts#L16)
 
 ___
 
@@ -2177,7 +2254,7 @@ arabicToEnglishNumbers('١٢٣') //'123'
 
 #### Defined in
 
-[src/utils/string/arabicToEnglishNumbers.ts:11](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/arabicToEnglishNumbers.ts#L11)
+[src/utils/string/arabicToEnglishNumbers.ts:11](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/arabicToEnglishNumbers.ts#L11)
 
 ___
 
@@ -2211,7 +2288,7 @@ arabicToPersianNumbers('It is ٣٠/٠٨/٢٠١٩ at ٨:٢٤ AM') //It is ۳۰/۰
 
 #### Defined in
 
-[src/utils/string/arabicToPersianNumbers.ts:11](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/arabicToPersianNumbers.ts#L11)
+[src/utils/string/arabicToPersianNumbers.ts:11](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/arabicToPersianNumbers.ts#L11)
 
 ___
 
@@ -2249,7 +2326,7 @@ arrayContainsSubstring(y, ['app', 'grape']); // true;
 
 #### Defined in
 
-[src/utils/string/arrayContainsSubstring.ts:18](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/arrayContainsSubstring.ts#L18)
+[src/utils/string/arrayContainsSubstring.ts:18](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/arrayContainsSubstring.ts#L18)
 
 ___
 
@@ -2289,7 +2366,7 @@ An array of strings.
 
 #### Defined in
 
-[src/utils/array/arrayRange.ts:12](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/array/arrayRange.ts#L12)
+[src/utils/array/arrayRange.ts:12](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/array/arrayRange.ts#L12)
 
 ___
 
@@ -2329,7 +2406,7 @@ attempt(selector =>
 
 #### Defined in
 
-[src/utils/functions/attempt.ts:10](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/functions/attempt.ts#L10)
+[src/utils/functions/attempt.ts:10](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/functions/attempt.ts#L10)
 
 ___
 
@@ -2369,7 +2446,7 @@ await attemptAsync(selector =>
 
 #### Defined in
 
-[src/utils/functions/attemptAsync.ts:10](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/functions/attemptAsync.ts#L10)
+[src/utils/functions/attemptAsync.ts:10](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/functions/attemptAsync.ts#L10)
 
 ___
 
@@ -2400,7 +2477,7 @@ pt`
 
 #### Defined in
 
-[src/utils/string/breakStrAfterNChar.ts:9](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/breakStrAfterNChar.ts#L9)
+[src/utils/string/breakStrAfterNChar.ts:9](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/breakStrAfterNChar.ts#L9)
 
 ___
 
@@ -2430,7 +2507,44 @@ an implementation for bubbleSort algorithm, it will sort an array of numbers or 
 
 #### Defined in
 
-[src/utils/array/bubbleSort.ts:6](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/array/bubbleSort.ts#L6)
+[src/utils/array/bubbleSort.ts:6](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/array/bubbleSort.ts#L6)
+
+___
+
+### calculateDistance
+
+▸ **calculateDistance**(`pointA`, `pointB`): `number`
+
+**`Description`**
+
+Finds the Euclidean distance between two 2D or 3D points, accepting input in object or array format. It includes runtime type-checking and throws an error for invalid inputs. The result is the Euclidean distance.
+
+**`Example`**
+
+```ts
+const pointObjA = { x: 1, y: 2};
+const pointObjB = { x: 4, y: 5 };
+calculateDistance(pointObjA, pointObjB) //4.242640687119285
+
+const pointArrA = [1, 2, 3];
+const pointArrB = [4, 5, 6];
+calculateDistance(pointArrA, pointArrB) //5.196152422706632
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `pointA` | [`PointObject`](interfaces/PointObject.md) \| [`Point2D`](modules.md#point2d) \| [`Point3D`](modules.md#point3d) |
+| `pointB` | [`PointObject`](interfaces/PointObject.md) \| [`Point2D`](modules.md#point2d) \| [`Point3D`](modules.md#point3d) |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+[src/utils/general/calculateDistance.ts:29](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/general/calculateDistance.ts#L29)
 
 ___
 
@@ -2460,7 +2574,7 @@ capitalize("javascript") => "Javascript"
 
 #### Defined in
 
-[src/utils/string/capitalize.ts:8](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/capitalize.ts#L8)
+[src/utils/string/capitalize.ts:8](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/capitalize.ts#L8)
 
 ___
 
@@ -2485,7 +2599,7 @@ separated by spaces.
 
 #### Defined in
 
-[src/utils/style/classNames.ts:7](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/style/classNames.ts#L7)
+[src/utils/style/classNames.ts:7](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/style/classNames.ts#L7)
 
 ___
 
@@ -2511,7 +2625,7 @@ It compares two objects based on the keys array passed to it.
 
 #### Defined in
 
-[src/utils/object/compare2ObjectsBaseOnKeysArr.ts:6](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/object/compare2ObjectsBaseOnKeysArr.ts#L6)
+[src/utils/object/compare2ObjectsBaseOnKeysArr.ts:6](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/object/compare2ObjectsBaseOnKeysArr.ts#L6)
 
 ___
 
@@ -2548,7 +2662,7 @@ conditionalReturn([].length > 0, "has items") => if true will return "has items"
 
 #### Defined in
 
-[src/utils/general/conditionalReturn.ts:8](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/general/conditionalReturn.ts#L8)
+[src/utils/general/conditionalReturn.ts:8](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/general/conditionalReturn.ts#L8)
 
 ___
 
@@ -2622,7 +2736,7 @@ count({a:1,b:2}) => 2
 
 #### Defined in
 
-[src/utils/general/count.ts:12](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/general/count.ts#L12)
+[src/utils/general/count.ts:12](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/general/count.ts#L12)
 
 ___
 
@@ -2662,7 +2776,7 @@ ___
 
 #### Defined in
 
-[src/utils/functions/debouncePromise.ts:3](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/functions/debouncePromise.ts#L3)
+[src/utils/functions/debouncePromise.ts:3](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/functions/debouncePromise.ts#L3)
 
 ___
 
@@ -2722,7 +2836,7 @@ deepClone({a:1}) => {a:1} //as new copy
 
 #### Defined in
 
-[src/utils/general/deepClone.ts:232](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/general/deepClone.ts#L232)
+[src/utils/general/deepClone.ts:232](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/general/deepClone.ts#L232)
 
 ___
 
@@ -2776,7 +2890,7 @@ deepCompareObjects(true ,false) => false
 
 #### Defined in
 
-[src/utils/object/deepCompare.ts:8](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/object/deepCompare.ts#L8)
+[src/utils/object/deepCompare.ts:8](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/object/deepCompare.ts#L8)
 
 ___
 
@@ -2808,7 +2922,7 @@ Delays a function for the given number of milliseconds, and then calls it with t
 
 #### Defined in
 
-[src/utils/functions/delay.ts:4](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/functions/delay.ts#L4)
+[src/utils/functions/delay.ts:4](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/functions/delay.ts#L4)
 
 ___
 
@@ -2838,7 +2952,7 @@ englishToArabicNumbers(123) // '١٢٣'
 
 #### Defined in
 
-[src/utils/string/englishToArabicNumbers.ts:5](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/englishToArabicNumbers.ts#L5)
+[src/utils/string/englishToArabicNumbers.ts:5](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/englishToArabicNumbers.ts#L5)
 
 ___
 
@@ -2889,7 +3003,7 @@ excludeKeys({
 
 #### Defined in
 
-[src/utils/object/excludeKeys.ts:21](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/object/excludeKeys.ts#L21)
+[src/utils/object/excludeKeys.ts:21](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/object/excludeKeys.ts#L21)
 
 ___
 
@@ -2926,7 +3040,7 @@ excludeQueryParamFromUrl('https://foo.bar?foo=1&bar=2#hello', (name, value) => v
 
 #### Defined in
 
-[src/utils/route/excludeQueryParamFromUrl.ts:8](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/route/excludeQueryParamFromUrl.ts#L8)
+[src/utils/route/excludeQueryParamFromUrl.ts:8](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/route/excludeQueryParamFromUrl.ts#L8)
 
 ___
 
@@ -2958,7 +3072,7 @@ The query string from the URL.
 
 #### Defined in
 
-[src/utils/route/extractQueryFromUrl.ts:9](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/route/extractQueryFromUrl.ts#L9)
+[src/utils/route/extractQueryFromUrl.ts:9](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/route/extractQueryFromUrl.ts#L9)
 
 ___
 
@@ -2988,7 +3102,7 @@ will extract all urls from a long string and return a list of the urls.
 
 #### Defined in
 
-[src/utils/string/extractUrlsFromString.ts:7](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/extractUrlsFromString.ts#L7)
+[src/utils/string/extractUrlsFromString.ts:7](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/extractUrlsFromString.ts#L7)
 
 ___
 
@@ -3026,7 +3140,7 @@ a is T
 
 #### Defined in
 
-[src/utils/object/fastDeepEqual.ts:11](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/object/fastDeepEqual.ts#L11)
+[src/utils/object/fastDeepEqual.ts:11](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/object/fastDeepEqual.ts#L11)
 
 ___
 
@@ -3052,7 +3166,7 @@ Will generate a unique cache key for the passed payload
 
 #### Defined in
 
-[src/utils/crypto/generateCacheKey.ts:9](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/crypto/generateCacheKey.ts#L9)
+[src/utils/crypto/generateCacheKey.ts:9](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/crypto/generateCacheKey.ts#L9)
 
 ___
 
@@ -3077,7 +3191,7 @@ generateUUID() => "741baba3-1efc-b52e-5d9c-75b1fc80395a"
 
 #### Defined in
 
-[src/utils/general/generateUUID.ts:6](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/general/generateUUID.ts#L6)
+[src/utils/general/generateUUID.ts:6](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/general/generateUUID.ts#L6)
 
 ___
 
@@ -3103,7 +3217,7 @@ The ASCII code for the character.
 
 #### Defined in
 
-[src/utils/string/getAsciiCodeForChar.ts:6](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/getAsciiCodeForChar.ts#L6)
+[src/utils/string/getAsciiCodeForChar.ts:6](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/getAsciiCodeForChar.ts#L6)
 
 ___
 
@@ -3130,7 +3244,7 @@ The sum of the ASCII codes for each character in the string.
 
 #### Defined in
 
-[src/utils/string/getAsciiSumFromString.ts:9](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/getAsciiSumFromString.ts#L9)
+[src/utils/string/getAsciiSumFromString.ts:9](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/getAsciiSumFromString.ts#L9)
 
 ___
 
@@ -3156,7 +3270,7 @@ The sum of the arguments divided by the number of arguments.
 
 #### Defined in
 
-[src/utils/number/getAverage.ts:8](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/number/getAverage.ts#L8)
+[src/utils/number/getAverage.ts:8](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/number/getAverage.ts#L8)
 
 ___
 
@@ -3182,7 +3296,7 @@ getBase64FromFile(new File([""], "filename")) => "data:application/octet-stream;
 
 #### Defined in
 
-[src/utils/file/getBase64FromFile.ts:6](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/file/getBase64FromFile.ts#L6)
+[src/utils/file/getBase64FromFile.ts:6](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/file/getBase64FromFile.ts#L6)
 
 ___
 
@@ -3200,7 +3314,7 @@ will return the user browser type
 
 #### Defined in
 
-[src/utils/browser/getBrowser.ts:6](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/browser/getBrowser.ts#L6)
+[src/utils/browser/getBrowser.ts:6](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/browser/getBrowser.ts#L6)
 
 ___
 
@@ -3232,7 +3346,7 @@ The file extension of the string.
 
 #### Defined in
 
-[src/utils/string/getFileExtensionFromString.ts:7](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/getFileExtensionFromString.ts#L7)
+[src/utils/string/getFileExtensionFromString.ts:7](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/getFileExtensionFromString.ts#L7)
 
 ___
 
@@ -3263,7 +3377,7 @@ getFirstNLetters('javascript', 3) => jav
 
 #### Defined in
 
-[src/utils/string/getFirstNLetters.ts:8](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/getFirstNLetters.ts#L8)
+[src/utils/string/getFirstNLetters.ts:8](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/getFirstNLetters.ts#L8)
 
 ___
 
@@ -3281,7 +3395,7 @@ typeof `globalThis`
 
 #### Defined in
 
-[src/utils/general/getGlobalThis.ts:5](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/general/getGlobalThis.ts#L5)
+[src/utils/general/getGlobalThis.ts:5](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/general/getGlobalThis.ts#L5)
 
 ___
 
@@ -3311,7 +3425,7 @@ will return the hash (fragment) part of a url
 
 #### Defined in
 
-[src/utils/string/getHashFromString.ts:5](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/getHashFromString.ts#L5)
+[src/utils/string/getHashFromString.ts:5](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/getHashFromString.ts#L5)
 
 ___
 
@@ -3371,7 +3485,7 @@ getElementCoords(document.getElementById("id"), {precise:true}) // {x:2.123, y:1
 
 #### Defined in
 
-[src/utils/browser/getHtmlElementCoords.ts:13](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/browser/getHtmlElementCoords.ts#L13)
+[src/utils/browser/getHtmlElementCoords.ts:13](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/browser/getHtmlElementCoords.ts#L13)
 
 ___
 
@@ -3408,7 +3522,7 @@ JavaScript => JS
 
 #### Defined in
 
-[src/utils/string/getNameInitials.ts:9](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/getNameInitials.ts#L9)
+[src/utils/string/getNameInitials.ts:9](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/getNameInitials.ts#L9)
 
 ___
 
@@ -3451,7 +3565,7 @@ getNumberFromString("string") => infinity;
 
 #### Defined in
 
-[src/utils/string/getNumberFromString.ts:12](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/getNumberFromString.ts#L12)
+[src/utils/string/getNumberFromString.ts:12](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/getNumberFromString.ts#L12)
 
 ___
 
@@ -3481,7 +3595,7 @@ getSmallestArrInObj({a:[1,2,3], b:[1,2,3,4,5]}) => {a:[1,2,3]}
 
 #### Defined in
 
-[src/utils/object/getSmallestArrInObj.ts:6](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/object/getSmallestArrInObj.ts#L6)
+[src/utils/object/getSmallestArrInObj.ts:6](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/object/getSmallestArrInObj.ts#L6)
 
 ___
 
@@ -3505,7 +3619,7 @@ The sum function takes a variable number of arguments, and returns the sum of al
 
 #### Defined in
 
-[src/utils/number/getSum.ts:5](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/number/getSum.ts#L5)
+[src/utils/number/getSum.ts:5](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/number/getSum.ts#L5)
 
 ___
 
@@ -3547,7 +3661,7 @@ getTag([1, 2]); // "[object Array]"
 
 #### Defined in
 
-[src/utils/general/getTag.ts:10](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/general/getTag.ts#L10)
+[src/utils/general/getTag.ts:10](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/general/getTag.ts#L10)
 
 ___
 
@@ -3572,7 +3686,7 @@ its like parseURL, more lightweight but with less functionalities.
 
 #### Defined in
 
-[src/utils/route/getUrlObj.ts:7](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/route/getUrlObj.ts#L7)
+[src/utils/route/getUrlObj.ts:7](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/route/getUrlObj.ts#L7)
 
 ___
 
@@ -3596,7 +3710,33 @@ will get url search params for the passed url
 
 #### Defined in
 
-[src/utils/route/getUrlSearchParams.ts:7](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/route/getUrlSearchParams.ts#L7)
+[src/utils/route/getUrlSearchParams.ts:7](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/route/getUrlSearchParams.ts#L7)
+
+___
+
+### getUserColorSchemePreference
+
+▸ **getUserColorSchemePreference**(): [`ColorScheme`](modules.md#colorscheme)
+
+**`Description`**
+
+Retrieves the user's preferred color scheme ('light' or 'dark') based on their system settings.
+
+**`Example`**
+
+```ts
+const userColorScheme = getUserColorSchemePreference();
+
+container.style.backgroundColor = userColorScheme === 'dark' ? '#121212' : '#ffffff';
+```
+
+#### Returns
+
+[`ColorScheme`](modules.md#colorscheme)
+
+#### Defined in
+
+[src/utils/browser/getUserColorSchemePreference.ts:13](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/browser/getUserColorSchemePreference.ts#L13)
 
 ___
 
@@ -3610,7 +3750,7 @@ ___
 
 #### Defined in
 
-[src/utils/browser/getWindowObj.ts:4](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/browser/getWindowObj.ts#L4)
+[src/utils/browser/getWindowObj.ts:4](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/browser/getWindowObj.ts#L4)
 
 ___
 
@@ -3641,7 +3781,7 @@ has({a:1, b:2}, ["a"]) => true
 
 #### Defined in
 
-[src/utils/object/has.ts:6](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/object/has.ts#L6)
+[src/utils/object/has.ts:6](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/object/has.ts#L6)
 
 ___
 
@@ -3667,7 +3807,7 @@ The sum of the ASCII values of the characters in the string.
 
 #### Defined in
 
-[src/utils/string/hashString.ts:8](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/hashString.ts#L8)
+[src/utils/string/hashString.ts:8](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/hashString.ts#L8)
 
 ___
 
@@ -3693,7 +3833,7 @@ ___
 
 #### Defined in
 
-[src/utils/array/heapSort.ts:3](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/array/heapSort.ts#L3)
+[src/utils/array/heapSort.ts:3](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/array/heapSort.ts#L3)
 
 ___
 
@@ -3720,7 +3860,7 @@ ___
 
 #### Defined in
 
-[src/utils/object/includeKeys.ts:23](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/object/includeKeys.ts#L23)
+[src/utils/object/includeKeys.ts:23](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/object/includeKeys.ts#L23)
 
 ___
 
@@ -3794,7 +3934,7 @@ value is []
 
 #### Defined in
 
-[src/utils/validation/isArray.ts:6](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isArray.ts#L6)
+[src/utils/validation/isArray.ts:6](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isArray.ts#L6)
 
 ___
 
@@ -3820,7 +3960,7 @@ A function that takes a value and returns a boolean.
 
 #### Defined in
 
-[src/utils/validation/isArrayOfStrings.ts:6](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isArrayOfStrings.ts#L6)
+[src/utils/validation/isArrayOfStrings.ts:6](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isArrayOfStrings.ts#L6)
 
 ___
 
@@ -3856,7 +3996,7 @@ will check if the passed function is async function.
 
 #### Defined in
 
-[src/utils/validation/isAsyncFunction.ts:10](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isAsyncFunction.ts#L10)
+[src/utils/validation/isAsyncFunction.ts:10](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isAsyncFunction.ts#L10)
 
 ___
 
@@ -3888,7 +4028,7 @@ otherwise it returns false.
 
 #### Defined in
 
-[src/utils/validation/isBiggerThan.ts:8](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isBiggerThan.ts#L8)
+[src/utils/validation/isBiggerThan.ts:8](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isBiggerThan.ts#L8)
 
 ___
 
@@ -3908,7 +4048,7 @@ ___
 
 #### Defined in
 
-[src/utils/validation/isBoolean.ts:1](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isBoolean.ts#L1)
+[src/utils/validation/isBoolean.ts:1](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isBoolean.ts#L1)
 
 ___
 
@@ -3926,7 +4066,7 @@ Return true if the current environment is running on browser.
 
 #### Defined in
 
-[src/utils/validation/isBrowser.ts:4](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isBrowser.ts#L4)
+[src/utils/validation/isBrowser.ts:4](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isBrowser.ts#L4)
 
 ___
 
@@ -3950,7 +4090,7 @@ value is Date
 
 #### Defined in
 
-[src/utils/validation/isDateType.ts:4](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isDateType.ts#L4)
+[src/utils/validation/isDateType.ts:4](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isDateType.ts#L4)
 
 ___
 
@@ -3968,7 +4108,7 @@ will check if the current env is development
 
 #### Defined in
 
-[src/utils/validation/isDev.ts:6](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isDev.ts#L6)
+[src/utils/validation/isDev.ts:6](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isDev.ts#L6)
 
 ___
 
@@ -3988,7 +4128,7 @@ ___
 
 #### Defined in
 
-[src/utils/validation/isEmail.ts:4](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isEmail.ts#L4)
+[src/utils/validation/isEmail.ts:4](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isEmail.ts#L4)
 
 ___
 
@@ -4056,7 +4196,7 @@ A function that takes a value and returns a boolean.
 
 #### Defined in
 
-[src/utils/validation/isEmpty.ts:14](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isEmpty.ts#L14)
+[src/utils/validation/isEmpty.ts:14](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isEmpty.ts#L14)
 
 ___
 
@@ -4093,7 +4233,7 @@ val is Falsy
 
 #### Defined in
 
-[src/utils/validation/isFalsy.ts:17](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isFalsy.ts#L17)
+[src/utils/validation/isFalsy.ts:17](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isFalsy.ts#L17)
 
 ___
 
@@ -4117,7 +4257,7 @@ value is Fn
 
 #### Defined in
 
-[src/utils/validation/isFunction.ts:7](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isFunction.ts#L7)
+[src/utils/validation/isFunction.ts:7](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isFunction.ts#L7)
 
 ___
 
@@ -4144,7 +4284,7 @@ Returns `true` if `value` is a valid index, else `false`.
 
 #### Defined in
 
-[src/utils/validation/isIndex.ts:17](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isIndex.ts#L17)
+[src/utils/validation/isIndex.ts:17](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isIndex.ts#L17)
 
 ___
 
@@ -4169,7 +4309,7 @@ Returns `true` if `value` is a property name, else `false`.
 
 #### Defined in
 
-[src/utils/validation/isKeyInObject.ts:14](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isKeyInObject.ts#L14)
+[src/utils/validation/isKeyInObject.ts:14](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isKeyInObject.ts#L14)
 
 ___
 
@@ -4213,7 +4353,7 @@ A function that takes an unknown type and returns a boolean.
 
 #### Defined in
 
-[src/utils/validation/isLength.ts:10](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isLength.ts#L10)
+[src/utils/validation/isLength.ts:10](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isLength.ts#L10)
 
 ___
 
@@ -4249,7 +4389,7 @@ isNegativeNumber(-1) // true
 
 #### Defined in
 
-[src/utils/validation/isNegativeNumber.ts:8](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isNegativeNumber.ts#L8)
+[src/utils/validation/isNegativeNumber.ts:8](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isNegativeNumber.ts#L8)
 
 ___
 
@@ -4271,7 +4411,7 @@ val is null
 
 #### Defined in
 
-[src/utils/validation/isNull.ts:5](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isNull.ts#L5)
+[src/utils/validation/isNull.ts:5](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isNull.ts#L5)
 
 ___
 
@@ -4295,7 +4435,7 @@ It returns true if the value is null, undefined, or an empty string
 
 #### Defined in
 
-[src/utils/validation/isNullOrEmptyString.ts:8](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isNullOrEmptyString.ts#L8)
+[src/utils/validation/isNullOrEmptyString.ts:8](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isNullOrEmptyString.ts#L8)
 
 ___
 
@@ -4333,7 +4473,7 @@ boolean
 
 #### Defined in
 
-[src/utils/validation/isNullOrUndefined.ts:8](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isNullOrUndefined.ts#L8)
+[src/utils/validation/isNullOrUndefined.ts:8](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isNullOrUndefined.ts#L8)
 
 ___
 
@@ -4376,7 +4516,7 @@ value is number
 
 #### Defined in
 
-[src/utils/validation/isNumber.ts:7](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isNumber.ts#L7)
+[src/utils/validation/isNumber.ts:7](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isNumber.ts#L7)
 
 ___
 
@@ -4435,7 +4575,7 @@ isObjHasValues({a:"1"}, {predict:val => typeof val === "number"}) => false
 
 #### Defined in
 
-[src/utils/validation/isObjHasValues.ts:15](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isObjHasValues.ts#L15)
+[src/utils/validation/isObjHasValues.ts:15](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isObjHasValues.ts#L15)
 
 ___
 
@@ -4459,7 +4599,7 @@ val is Object
 
 #### Defined in
 
-[src/utils/validation/isObject.ts:4](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isObject.ts#L4)
+[src/utils/validation/isObject.ts:4](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isObject.ts#L4)
 
 ___
 
@@ -4495,7 +4635,7 @@ isPositiveNumber(-1) // false
 
 #### Defined in
 
-[src/utils/validation/isPositiveNumber.ts:8](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isPositiveNumber.ts#L8)
+[src/utils/validation/isPositiveNumber.ts:8](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isPositiveNumber.ts#L8)
 
 ___
 
@@ -4533,7 +4673,7 @@ If `val` is primitive. If used in the flow of the program typescript will infer 
 
 #### Defined in
 
-[src/utils/validation/isPrimitive.ts:20](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isPrimitive.ts#L20)
+[src/utils/validation/isPrimitive.ts:20](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isPrimitive.ts#L20)
 
 ___
 
@@ -4569,7 +4709,7 @@ p is Promise<any\>
 
 #### Defined in
 
-[src/utils/validation/isPromise.ts:7](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isPromise.ts#L7)
+[src/utils/validation/isPromise.ts:7](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isPromise.ts#L7)
 
 ___
 
@@ -4590,7 +4730,7 @@ ___
 
 #### Defined in
 
-[src/utils/validation/isSmallerThan.ts:3](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isSmallerThan.ts#L3)
+[src/utils/validation/isSmallerThan.ts:3](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isSmallerThan.ts#L3)
 
 ___
 
@@ -4614,7 +4754,7 @@ value is string
 
 #### Defined in
 
-[src/utils/validation/isString.ts:5](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isString.ts#L5)
+[src/utils/validation/isString.ts:5](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isString.ts#L5)
 
 ___
 
@@ -4638,7 +4778,7 @@ value is true
 
 #### Defined in
 
-[src/utils/validation/isTruthy.ts:5](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isTruthy.ts#L5)
+[src/utils/validation/isTruthy.ts:5](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isTruthy.ts#L5)
 
 ___
 
@@ -4658,7 +4798,7 @@ ___
 
 #### Defined in
 
-[src/utils/validation/isURL.ts:4](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isURL.ts#L4)
+[src/utils/validation/isURL.ts:4](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isURL.ts#L4)
 
 ___
 
@@ -4682,7 +4822,7 @@ val is undefined
 
 #### Defined in
 
-[src/utils/validation/isUndefined.ts:5](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isUndefined.ts#L5)
+[src/utils/validation/isUndefined.ts:5](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isUndefined.ts#L5)
 
 ___
 
@@ -4706,7 +4846,7 @@ will check if the parameter is a white space;
 
 #### Defined in
 
-[src/utils/validation/isWhiteSpace.ts:4](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/validation/isWhiteSpace.ts#L4)
+[src/utils/validation/isWhiteSpace.ts:4](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validation/isWhiteSpace.ts#L4)
 
 ___
 
@@ -4754,7 +4894,7 @@ joinObjects(({ a: 1 }, null || undefined || !object)) => { a: 1 }
 
 #### Defined in
 
-[src/utils/object/joinObjects.ts:7](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/object/joinObjects.ts#L7)
+[src/utils/object/joinObjects.ts:7](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/object/joinObjects.ts#L7)
 
 ___
 
@@ -4798,7 +4938,7 @@ leftPad(17, 5, 0)
 
 #### Defined in
 
-[src/utils/string/leftPad.ts:19](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/leftPad.ts#L19)
+[src/utils/string/leftPad.ts:19](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/leftPad.ts#L19)
 
 ___
 
@@ -4825,7 +4965,7 @@ A string
 
 #### Defined in
 
-[src/utils/string/mapStringToColorFromArr.ts:9](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/mapStringToColorFromArr.ts#L9)
+[src/utils/string/mapStringToColorFromArr.ts:9](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/mapStringToColorFromArr.ts#L9)
 
 ___
 
@@ -4862,7 +5002,7 @@ const arrayToSort = [3, 1,-1, 0,  4, 1, 5, 9, 2, 6, 5, 3, 5];
 
 #### Defined in
 
-[src/utils/array/mergeSort.ts:12](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/array/mergeSort.ts#L12)
+[src/utils/array/mergeSort.ts:12](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/array/mergeSort.ts#L12)
 
 ___
 
@@ -4889,7 +5029,7 @@ An array of numbers or undefined.
 
 #### Defined in
 
-[src/utils/number/multiplyAll.ts:7](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/number/multiplyAll.ts#L7)
+[src/utils/number/multiplyAll.ts:7](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/number/multiplyAll.ts#L7)
 
 ___
 
@@ -4919,7 +5059,7 @@ nFormatter(1000) => "1K"
 
 #### Defined in
 
-[src/utils/string/nFormatter.ts:5](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/nFormatter.ts#L5)
+[src/utils/string/nFormatter.ts:5](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/nFormatter.ts#L5)
 
 ___
 
@@ -4954,7 +5094,7 @@ The value of the key in the object.
 
 #### Defined in
 
-[src/utils/object/navigateObjWithString.ts:7](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/object/navigateObjWithString.ts#L7)
+[src/utils/object/navigateObjWithString.ts:7](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/object/navigateObjWithString.ts#L7)
 
 ___
 
@@ -4984,7 +5124,7 @@ noop() =>  undefined;
 
 #### Defined in
 
-[src/utils/general/noop.ts:5](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/general/noop.ts#L5)
+[src/utils/general/noop.ts:5](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/general/noop.ts#L5)
 
 ___
 
@@ -5034,7 +5174,7 @@ Vitim.us https://gist.github.com/victornpb/7736865
 
 #### Defined in
 
-[src/utils/string/occurrencesCount.ts:25](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/occurrencesCount.ts#L25)
+[src/utils/string/occurrencesCount.ts:25](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/occurrencesCount.ts#L25)
 
 ___
 
@@ -5084,7 +5224,7 @@ Vitim.us https://gist.github.com/victornpb/7736865
 
 #### Defined in
 
-[src/utils/string/occurrencesIndex.ts:25](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/occurrencesIndex.ts#L25)
+[src/utils/string/occurrencesIndex.ts:25](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/occurrencesIndex.ts#L25)
 
 ___
 
@@ -5125,7 +5265,7 @@ cancelTimeout();
 
 #### Defined in
 
-[src/utils/general/onTimeout.ts:13](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/general/onTimeout.ts#L13)
+[src/utils/general/onTimeout.ts:13](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/general/onTimeout.ts#L13)
 
 ___
 
@@ -5155,7 +5295,7 @@ onUrlChange
 
 #### Defined in
 
-[src/utils/browser/onUrlChange.ts:10](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/browser/onUrlChange.ts#L10)
+[src/utils/browser/onUrlChange.ts:10](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/browser/onUrlChange.ts#L10)
 
 ___
 
@@ -5176,7 +5316,7 @@ ___
 
 #### Defined in
 
-[src/utils/route/parse.ts:10](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/route/parse.ts#L10)
+[src/utils/route/parse.ts:10](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/route/parse.ts#L10)
 
 ___
 
@@ -5196,7 +5336,7 @@ ___
 
 #### Defined in
 
-[src/utils/string/parseDate.ts:2](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/parseDate.ts#L2)
+[src/utils/string/parseDate.ts:2](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/parseDate.ts#L2)
 
 ___
 
@@ -5222,7 +5362,7 @@ The JSON payload of the JWT.
 
 #### Defined in
 
-[src/utils/string/parseJwt.ts:6](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/parseJwt.ts#L6)
+[src/utils/string/parseJwt.ts:6](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/parseJwt.ts#L6)
 
 ___
 
@@ -5252,7 +5392,7 @@ A function that takes a string and returns a string with all non-digit character
 
 #### Defined in
 
-[src/utils/string/parseNumber.ts:9](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/parseNumber.ts#L9)
+[src/utils/string/parseNumber.ts:9](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/parseNumber.ts#L9)
 
 ___
 
@@ -5281,7 +5421,7 @@ if "123" will return the number 123 and so on.
 
 #### Defined in
 
-[src/utils/string/parseString.ts:8](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/parseString.ts#L8)
+[src/utils/string/parseString.ts:8](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/parseString.ts#L8)
 
 ___
 
@@ -5319,7 +5459,7 @@ queryString.parseUrl('https://foo.bar?foo=bar#xyz', {parseFragmentIdentifier: tr
 
 #### Defined in
 
-[src/utils/route/parseUrl.ts:21](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/route/parseUrl.ts#L21)
+[src/utils/route/parseUrl.ts:21](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/route/parseUrl.ts#L21)
 
 ___
 
@@ -5356,7 +5496,7 @@ pickQueryParamFromUrl('https://foo.bar?foo=1&bar=2#hello', (name, value) => valu
 
 #### Defined in
 
-[src/utils/route/pickQueryParamFromUrl.ts:11](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/route/pickQueryParamFromUrl.ts#L11)
+[src/utils/route/pickQueryParamFromUrl.ts:11](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/route/pickQueryParamFromUrl.ts#L11)
 
 ___
 
@@ -5386,7 +5526,7 @@ an implementation for quickSort algorithm, it will sort an array of numbers or s
 
 #### Defined in
 
-[src/utils/array/quickSort.ts:6](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/array/quickSort.ts#L6)
+[src/utils/array/quickSort.ts:6](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/array/quickSort.ts#L6)
 
 ___
 
@@ -5432,7 +5572,7 @@ removeDuplicatesFromArr([{a:1}, {a:1}, {a:2}], key:"", deepCompare:true) => [{a:
 
 #### Defined in
 
-[src/utils/array/removeDuplicatesFromArr.ts:8](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/array/removeDuplicatesFromArr.ts#L8)
+[src/utils/array/removeDuplicatesFromArr.ts:8](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/array/removeDuplicatesFromArr.ts#L8)
 
 ___
 
@@ -5469,7 +5609,7 @@ removeEventListener(target.current, "touchend", preventDefault);
 
 #### Defined in
 
-[src/utils/browser/removeEventListener.ts:7](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/browser/removeEventListener.ts#L7)
+[src/utils/browser/removeEventListener.ts:7](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/browser/removeEventListener.ts#L7)
 
 ___
 
@@ -5500,7 +5640,7 @@ removeHashFromUrl("www.example.com/a#link") => "www.example.com/a"
 
 #### Defined in
 
-[src/utils/route/removeHashFromUrl.ts:6](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/route/removeHashFromUrl.ts#L6)
+[src/utils/route/removeHashFromUrl.ts:6](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/route/removeHashFromUrl.ts#L6)
 
 ___
 
@@ -5530,7 +5670,7 @@ sleep(1000);
 
 #### Defined in
 
-[src/utils/general/sleep.ts:5](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/general/sleep.ts#L5)
+[src/utils/general/sleep.ts:5](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/general/sleep.ts#L5)
 
 ___
 
@@ -5565,7 +5705,7 @@ An array of objects sorted by the property passed in.
 
 #### Defined in
 
-[src/utils/array/sortArr.ts:13](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/array/sortArr.ts#L13)
+[src/utils/array/sortArr.ts:13](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/array/sortArr.ts#L13)
 
 ___
 
@@ -5597,7 +5737,7 @@ if the property starts with "-" then it will be descending order otherwize ascen
 
 #### Defined in
 
-[src/utils/array/sortByMultiProperties.ts:7](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/array/sortByMultiProperties.ts#L7)
+[src/utils/array/sortByMultiProperties.ts:7](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/array/sortByMultiProperties.ts#L7)
 
 ___
 
@@ -5629,7 +5769,7 @@ splitOnFirst('key:value:value2', ':') => ['key', 'value:value2']
 
 #### Defined in
 
-[src/utils/string/splitOnFirst.ts:8](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/splitOnFirst.ts#L8)
+[src/utils/string/splitOnFirst.ts:8](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/splitOnFirst.ts#L8)
 
 ___
 
@@ -5662,7 +5802,7 @@ An array of strings.
 
 #### Defined in
 
-[src/utils/string/splitUpperCase.ts:10](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/splitUpperCase.ts#L10)
+[src/utils/string/splitUpperCase.ts:10](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/splitUpperCase.ts#L10)
 
 ___
 
@@ -5711,7 +5851,7 @@ stringHas("www.google.com", ["no", "com"]) => true
 
 #### Defined in
 
-[src/utils/string/stringHas.ts:12](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/stringHas.ts#L12)
+[src/utils/string/stringHas.ts:12](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/stringHas.ts#L12)
 
 ___
 
@@ -5737,7 +5877,7 @@ A string of the form #RRGGBB.
 
 #### Defined in
 
-[src/utils/string/stringToHexColor.ts:6](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/stringToHexColor.ts#L6)
+[src/utils/string/stringToHexColor.ts:6](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/stringToHexColor.ts#L6)
 
 ___
 
@@ -5779,7 +5919,7 @@ A string of the form `hsl(0, 100%, 75%)`
 
 #### Defined in
 
-[src/utils/string/stringToHslColor.ts:22](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/stringToHslColor.ts#L22)
+[src/utils/string/stringToHslColor.ts:22](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/stringToHslColor.ts#L22)
 
 ___
 
@@ -5809,7 +5949,7 @@ stringToPath("a.b.c[0]") => ["a", "b", "c", "0"]
 
 #### Defined in
 
-[src/utils/string/stringToPath.ts:5](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/string/stringToPath.ts#L5)
+[src/utils/string/stringToPath.ts:5](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/string/stringToPath.ts#L5)
 
 ___
 
@@ -5853,7 +5993,7 @@ queryString.stringifyUrl({
 
 #### Defined in
 
-[src/utils/route/stringifyUrl.ts:27](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/route/stringifyUrl.ts#L27)
+[src/utils/route/stringifyUrl.ts:27](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/route/stringifyUrl.ts#L27)
 
 ___
 
@@ -5904,7 +6044,7 @@ thrFunc('hello 1')
 
 #### Defined in
 
-[src/utils/functions/throttlePromise.ts:9](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/functions/throttlePromise.ts#L9)
+[src/utils/functions/throttlePromise.ts:9](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/functions/throttlePromise.ts#L9)
 
 ___
 
@@ -5948,7 +6088,7 @@ An array.
 
 #### Defined in
 
-[src/utils/general/toArray.ts:10](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/general/toArray.ts#L10)
+[src/utils/general/toArray.ts:10](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/general/toArray.ts#L10)
 
 ___
 
@@ -5978,7 +6118,7 @@ urlSearchParamsToObject(new URLSearchParams()) => {}
 
 #### Defined in
 
-[src/utils/general/urlSearchParamsToObject.ts:6](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/general/urlSearchParamsToObject.ts#L6)
+[src/utils/general/urlSearchParamsToObject.ts:6](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/general/urlSearchParamsToObject.ts#L6)
 
 ___
 
@@ -5998,4 +6138,24 @@ ___
 
 #### Defined in
 
-[src/utils/crypto/utf8Encode.ts:3](https://github.com/AhmadHddad/h-utils/blob/4e81184/src/utils/crypto/utf8Encode.ts#L3)
+[src/utils/crypto/utf8Encode.ts:3](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/crypto/utf8Encode.ts#L3)
+
+___
+
+### validateImageURLAsync
+
+▸ **validateImageURLAsync**(`url`): `Promise`<`boolean`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `url` | `string` |
+
+#### Returns
+
+`Promise`<`boolean`\>
+
+#### Defined in
+
+[src/utils/validators/validateImageURLAsync.ts:3](https://github.com/AhmadHddad/h-utils/blob/5bfbb1a/src/utils/validators/validateImageURLAsync.ts#L3)
