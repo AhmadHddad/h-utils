@@ -10,6 +10,7 @@ export { default as mergeSort } from './utils/array/mergeSort';
 export { default as quickSort } from './utils/array/quickSort';
 export { default as removeDuplicatesFromArr } from './utils/array/removeDuplicatesFromArr';
 export { default as replaceAtIndex } from './utils/array/replaceAtIndex';
+export { default as replaceObjectInArray } from './utils/array/replaceObjectInArray';
 export { default as sortArr } from './utils/array/sortArr';
 export { default as sortByMultiProperties } from './utils/array/sortByMultiProperties';
 export { default as uniqueArray } from './utils/array/removeDuplicatesFromArr';
@@ -86,6 +87,7 @@ export { default as stringToPath } from './utils/string/stringToPath';
 
 // Object utils
 export { default as compare2ObjectsBaseOnKeysArr } from './utils/object/compare2ObjectsBaseOnKeysArr';
+export { default as buildMapObj } from './utils/object/buildMapObj';
 export { default as deepCompare } from './utils/object/deepCompare';
 export { default as excludeKeys } from './utils/object/excludeKeys';
 export { default as fastDeepEqual } from './utils/object/fastDeepEqual';
