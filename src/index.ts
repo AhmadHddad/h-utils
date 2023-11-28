@@ -87,7 +87,6 @@ export { default as stringToPath } from './utils/string/stringToPath';
 
 // Object utils
 export { default as compare2ObjectsBaseOnKeysArr } from './utils/object/compare2ObjectsBaseOnKeysArr';
-export { default as buildMapObj } from './utils/object/buildMapObj';
 export { default as deepCompare } from './utils/object/deepCompare';
 export { default as excludeKeys } from './utils/object/excludeKeys';
 export { default as fastDeepEqual } from './utils/object/fastDeepEqual';
