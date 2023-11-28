@@ -9,6 +9,7 @@ export { default as heapSort } from './utils/array/heapSort';
 export { default as mergeSort } from './utils/array/mergeSort';
 export { default as quickSort } from './utils/array/quickSort';
 export { default as removeDuplicatesFromArr } from './utils/array/removeDuplicatesFromArr';
+export { default as replaceAtIndex } from './utils/array/replaceAtIndex';
 export { default as sortArr } from './utils/array/sortArr';
 export { default as sortByMultiProperties } from './utils/array/sortByMultiProperties';
 export { default as uniqueArray } from './utils/array/removeDuplicatesFromArr';
