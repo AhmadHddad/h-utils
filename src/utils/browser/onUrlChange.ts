@@ -15,7 +15,7 @@ export default function onUrlChange(
 
   if (onPush) {
     (function (history) {
-      var pushState = history.pushState;
+      const pushState = history.pushState;
       history.pushState = function () {
         //@ts-ignore
         onPush(...arguments);
@@ -25,9 +25,9 @@ export default function onUrlChange(
     })(window.history);
   }
   if (onPop) {
-    window.removeEventListener(
+    window.addEventListener(
       'popstate',
-      onPush as (popstate: PopStateEvent) => void
+      onPop as (popstate: PopStateEvent) => void
     );
   }
 
@@ -35,7 +35,7 @@ export default function onUrlChange(
     if (onPop) {
       window.removeEventListener(
         'popstate',
-        onPush as (popstate: PopStateEvent) => void
+        onPop as (popstate: PopStateEvent) => void
       );
     }
   };
