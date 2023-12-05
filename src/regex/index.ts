@@ -5,3 +5,6 @@ export const upperCaseRegex = /[A-Z]?[a-z]+|[0-9]+|[A-Z]+(?![a-z])/g;
 export const emailRegexForLongStr = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
 export const emailRegexForShortStr = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 export const whitespaceRegex = /^\s$/;
+export const hexColorRegex = /^#([0-9A-Fa-f]{3}){1,2}$/;
+export const rgbColorRegex = /^rgba?\((\d{1,3}), (\d{1,3}), (\d{1,3})(, ([01](\.\d*)?))?\)$/;
+  

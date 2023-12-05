@@ -1,4 +1,4 @@
-import { Key } from '../types';
+import { Key } from '../utilityTypes';
 
 /**
  * @example isBiggerThan(1,2) => false
