@@ -119,8 +119,6 @@ export { default as classNames } from './utils/style/classNames';
 
 // Validation utils
 export { default as isArray } from './utils/validation/isArray';
-export { default as isHexColor } from './utils/validation/isHexColor';
-export { default as isRgbColor } from './utils/validation/isRgbColor';
 export { default as isArrayOfStrings } from './utils/validation/isArrayOfStrings';
 export { default as isAsyncFunction } from './utils/validation/isAsyncFunction';
 export { default as isBiggerThan } from './utils/validation/isBiggerThan';
@@ -133,6 +131,7 @@ export { default as isEmpty } from './utils/validation/isEmpty';
 export { default as isEqual } from './utils/validation/isEqual';
 export { default as isFalsy } from './utils/validation/isFalsy';
 export { default as isFunction } from './utils/validation/isFunction';
+export { default as isHexColor } from './utils/validation/isHexColor';
 export { default as isIndex } from './utils/validation/isIndex';
 export { default as isKeyInObject } from './utils/validation/isKeyInObject';
 export { default as isLength } from './utils/validation/isLength';
@@ -147,6 +146,7 @@ export { default as isObjHasValues } from './utils/validation/isObjHasValues';
 export { default as isPositiveNumber } from './utils/validation/isPositiveNumber';
 export { default as isPrimitive } from './utils/validation/isPrimitive';
 export { default as isPromise } from './utils/validation/isPromise';
+export { default as isRgbColor } from './utils/validation/isRgbColor';
 export { default as isSmallerThan } from './utils/validation/isSmallerThan';
 export { default as isString } from './utils/validation/isString';
 export { default as isSymbol } from './utils/validation/isSymbol';
