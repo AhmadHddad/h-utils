@@ -5,5 +5,6 @@
  * @param val unknown
  * @returns boolean
  */
-export const isNullOrUndefined = (val: unknown): val is null | undefined => val == null || val == undefined;
+const isNullOrUndefined = (val: unknown): val is null | undefined =>
+  val == null || val == undefined;
 export default isNullOrUndefined;
