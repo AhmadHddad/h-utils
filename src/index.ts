@@ -1,14 +1,20 @@
 export * from './regex/index';
 export { default as HMap } from './classes/HMap';
 export { default as Timer } from './classes/Timer';
+export { default as EventBus } from './classes/EventBus';
+export { default as DOMEventBus } from './classes/DOMEventBus';
 
 // Array utils
 export { default as arrayRange } from './utils/array/arrayRange';
 export { default as bubbleSort } from './utils/array/bubbleSort';
+export { default as joinArrays } from './utils/array/joinArrays';
+export { default as groupBy } from './utils/array/groupBy';
 export { default as heapSort } from './utils/array/heapSort';
 export { default as mergeSort } from './utils/array/mergeSort';
 export { default as quickSort } from './utils/array/quickSort';
 export { default as removeDuplicatesFromArr } from './utils/array/removeDuplicatesFromArr';
+export { default as replaceAtIndex } from './utils/array/replaceAtIndex';
+export { default as replaceObjectInArray } from './utils/array/replaceObjectInArray';
 export { default as sortArr } from './utils/array/sortArr';
 export { default as sortByMultiProperties } from './utils/array/sortByMultiProperties';
 export { default as uniqueArray } from './utils/array/removeDuplicatesFromArr';

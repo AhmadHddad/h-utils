@@ -3,5 +3,5 @@
  * false.
  * @param {any} value - unknown
  */
-const isArray = (value: unknown): value is [] => Array.isArray(value);
+const isArray = <T>(value: unknown): value is Array<T> => Array.isArray(value);
 export default isArray;

@@ -1,21 +1,21 @@
 import isBrowser from '../validation/isBrowser';
+import getWindowObj from './getWindowObj';
 
 /**
  * @function onUrlChange
  * @description -- For Browsers --
  *  a function that takes callback that will be called whenever the url is changed (ideal for SPA)
- * @param {History['pushState']} onPush
- * @param {(popstate: PopStateEvent) => void} onPop
  */
 export default function onUrlChange(
   onPush?: History['pushState'],
   onPop?: (popstate: PopStateEvent) => void
-) {
-  if (!isBrowser()) return;
+): () => void {
+  if (!isBrowser()) return () => {};
+  const window = getWindowObj();
 
   if (onPush) {
     (function (history) {
-      var pushState = history.pushState;
+      const pushState = history.pushState;
       history.pushState = function () {
         //@ts-ignore
         onPush(...arguments);
@@ -27,7 +27,16 @@ export default function onUrlChange(
   if (onPop) {
     window.addEventListener(
       'popstate',
-      onPush as (popstate: PopStateEvent) => void
+      onPop as (popstate: PopStateEvent) => void
     );
   }
+
+  return () => {
+    if (onPop) {
+      window.removeEventListener(
+        'popstate',
+        onPop as (popstate: PopStateEvent) => void
+      );
+    }
+  };
 }
