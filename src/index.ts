@@ -1,6 +1,8 @@
 export * from './regex/index';
 export { default as HMap } from './classes/HMap';
 export { default as Timer } from './classes/Timer';
+export { default as EventBus } from './classes/EventBus';
+export { default as DOMEventBus } from './classes/DOMEventBus';
 
 // Array utils
 export { default as arrayRange } from './utils/array/arrayRange';

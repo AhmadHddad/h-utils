@@ -13,6 +13,7 @@ export type DebounceOptions = {
 };
 
 export type GroupedObject<T> = { [key: string]: T[] };
+export type EventCallback = (data?: any) => void;
 
 export interface PointObject {
   x: number;
