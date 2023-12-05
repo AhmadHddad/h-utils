@@ -73,7 +73,7 @@ export { default as getHashFromString } from './utils/string/getHashFromString';
 export { default as getNameInitials } from './utils/string/getNameInitials';
 export { default as getNumberFromString } from './utils/string/getNumberFromString';
 export { default as hashString } from './utils/string/hashString';
-export { default as hexToRgbA } from './utils/string/arabicToPersianNumbers';
+export { default as hexToRgbA } from './utils/string/hexToRgbA';
 export { default as leftPad } from './utils/string/leftPad';
 export { default as mapStringToColorFromArr } from './utils/string/mapStringToColorFromArr';
 export { default as nFormatter } from './utils/string/nFormatter';
