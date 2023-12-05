@@ -5,6 +5,7 @@ export { default as Timer } from './classes/Timer';
 // Array utils
 export { default as arrayRange } from './utils/array/arrayRange';
 export { default as bubbleSort } from './utils/array/bubbleSort';
+export { default as groupBy } from './utils/array/groupBy';
 export { default as heapSort } from './utils/array/heapSort';
 export { default as mergeSort } from './utils/array/mergeSort';
 export { default as quickSort } from './utils/array/quickSort';

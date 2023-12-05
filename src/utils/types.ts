@@ -12,6 +12,8 @@ export type DebounceOptions = {
   maxWait?: number;
 };
 
+export type GroupedObject<T> = { [key: string]: T[] };
+
 export interface PointObject {
   x: number;
   y: number;
