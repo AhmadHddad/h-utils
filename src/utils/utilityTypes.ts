@@ -35,7 +35,7 @@ export type PAwaited<T> = T extends null | undefined
 
 export type Nullable<T> = T | null;
 
-export type NullableOrUndefined = null | undefined;
+export type NullableOrUndefined<T> = T | null | undefined;
 
 // this section ↓ is copied from https://github.com/piotrwitek/utility-types
 
@@ -64,9 +64,9 @@ export type ReadonlyKeys<T extends object> = {
 /**
  * @description will check if X, Y are equal
  */
-export type IfEquals<X, Y, A = X, B = never> = (<T>() => T extends X ? 1 : 2) extends <
-  T
->() => T extends Y ? 1 : 2
+export type IfEquals<X, Y, A = X, B = never> = (<T>() => T extends X
+  ? 1
+  : 2) extends <T>() => T extends Y ? 1 : 2
   ? A
   : B;
 
