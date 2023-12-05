@@ -1,4 +1,4 @@
-import { isNullOrUndefined } from './isNullOrUndefined';
+import isNullOrUndefined from './isNullOrUndefined';
 import { isString } from './isString';
 
 /**
