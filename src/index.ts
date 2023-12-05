@@ -58,7 +58,6 @@ export { default as multiplyAll } from './utils/number/multiplyAll';
 
 // String utils
 export { default as addAndOrConjunctionsToStrArray } from './utils/string/addAndOrConjunctionsToStrArray';
-export { default as leftPad } from './utils/string/leftPad';
 export { default as arabicToEnglishNumbers } from './utils/string/arabicToEnglishNumbers';
 export { default as arabicToPersianNumbers } from './utils/string/arabicToPersianNumbers';
 export { default as arrayContainsSubstring } from './utils/string/arrayContainsSubstring';
@@ -74,6 +73,8 @@ export { default as getHashFromString } from './utils/string/getHashFromString';
 export { default as getNameInitials } from './utils/string/getNameInitials';
 export { default as getNumberFromString } from './utils/string/getNumberFromString';
 export { default as hashString } from './utils/string/hashString';
+export { default as hexToRgbA } from './utils/string/arabicToPersianNumbers';
+export { default as leftPad } from './utils/string/leftPad';
 export { default as mapStringToColorFromArr } from './utils/string/mapStringToColorFromArr';
 export { default as nFormatter } from './utils/string/nFormatter';
 export { default as occurrencesCount } from './utils/string/occurrencesCount';
@@ -82,6 +83,7 @@ export { default as parseDate } from './utils/string/parseDate';
 export { default as parseJwt } from './utils/string/parseJwt';
 export { default as parseNumber } from './utils/string/parseNumber';
 export { default as parseString } from './utils/string/parseString';
+export { default as rgbaToHex } from './utils/string/rgbaToHex';
 export { default as splitOnFirst } from './utils/string/splitOnFirst';
 export { default as splitUpperCase } from './utils/string/splitUpperCase';
 export { default as stringHas } from './utils/string/stringHas';
