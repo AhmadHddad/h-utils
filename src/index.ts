@@ -119,6 +119,8 @@ export { default as classNames } from './utils/style/classNames';
 
 // Validation utils
 export { default as isArray } from './utils/validation/isArray';
+export { default as isHexColor } from './utils/validation/isHexColor';
+export { default as isRgbColor } from './utils/validation/isRgbColor';
 export { default as isArrayOfStrings } from './utils/validation/isArrayOfStrings';
 export { default as isAsyncFunction } from './utils/validation/isAsyncFunction';
 export { default as isBiggerThan } from './utils/validation/isBiggerThan';
