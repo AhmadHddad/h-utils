@@ -1,9 +1,12 @@
+import isRgbColor from "../validation/isRgbColor";
 
 /**
  * @description converts rgba colors to hex color.
  * @example RGBAToHexA("rgba(255, 255, 255, 0)"), "#ffffff00"
  */
 export default function RGBAToHex(rgba: string, forceRemoveAlpha = false) {
+  if(!isRgbColor(rgba)) throw new Error("No a valid color")
+  
   return (
     '#' +
     rgba
