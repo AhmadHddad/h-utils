@@ -174,6 +174,9 @@ export { default as generateCacheKey } from './utils/crypto/generateCacheKey';
 export { default as SHA256 } from './utils/crypto/SHA256';
 export { default as utf8Encode } from './utils/crypto/utf8Encode';
 
+// Date
+export { default as monthDifference } from './utils/date/monthDifference';
+
 // Types
 export * from './utils/utilityTypes';
 export * from './utils/types';
