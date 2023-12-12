@@ -119,6 +119,7 @@ export { default as classNames } from './utils/style/classNames';
 
 // Validation utils
 export { default as isArray } from './utils/validation/isArray';
+export { default as isValidDate } from './utils/validation/isValidDate';
 export { default as isArrayOfStrings } from './utils/validation/isArrayOfStrings';
 export { default as isAsyncFunction } from './utils/validation/isAsyncFunction';
 export { default as isBiggerThan } from './utils/validation/isBiggerThan';
