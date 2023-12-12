@@ -12,7 +12,8 @@ export default function monthDifference(
   last: string | Date
 ): number {
   if (!isValidDate(first) || !isValidDate(last))
-    throw new Error('Not a valid Date');
+    throw new Error('invalid Date');
+
   const firstDate = new Date(first);
   const lastDate = new Date(last);
 
