@@ -179,6 +179,7 @@ export { default as utf8Encode } from './utils/crypto/utf8Encode';
 
 // Date
 export { default as monthDifference } from './utils/date/monthDifference';
+export { default as compareDates } from './utils/date/compareDates';
 
 // Types
 export * from './utils/utilityTypes';

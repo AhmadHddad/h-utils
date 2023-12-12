@@ -6,11 +6,22 @@ export type {
   Key,
   Primitive,
 } from './utilityTypes';
+
 export type DebounceOptions = {
   leading?: boolean;
   trailing?: boolean;
   maxWait?: number;
 };
+
+export type DateComparisonLevel =
+  | "full"
+  | "year"
+  | "month"
+  | "day"
+  | "year-month"
+  | "hour"
+  | "year-month-day"
+  | "year-month-day-hour";
 
 export type GroupedObject<T> = { [key: string]: T[] };
 export type EventCallback = (data?: any) => void;
