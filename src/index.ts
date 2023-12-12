@@ -70,11 +70,14 @@ export { default as getAsciiSumFromString } from './utils/string/getAsciiSumFrom
 export { default as getFileExtensionFromString } from './utils/string/getFileExtensionFromString';
 export { default as getFirstNLetters } from './utils/string/getFirstNLetters';
 export { default as getHashFromString } from './utils/string/getHashFromString';
+export { default as lowerFirst } from './utils/string/lowerFirst';
 export { default as getNameInitials } from './utils/string/getNameInitials';
 export { default as getNumberFromString } from './utils/string/getNumberFromString';
 export { default as hashString } from './utils/string/hashString';
 export { default as hexToRgbA } from './utils/string/hexToRgbA';
-export { default as leftPad } from './utils/string/leftPad';
+export { default as leftPad } from './utils/string/padStart';
+export { default as padStart } from './utils/string/padStart';
+export { default as padEnd } from './utils/string/padEnd';
 export { default as mapStringToColorFromArr } from './utils/string/mapStringToColorFromArr';
 export { default as nFormatter } from './utils/string/nFormatter';
 export { default as occurrencesCount } from './utils/string/occurrencesCount';
