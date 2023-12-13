@@ -17,7 +17,8 @@ export default function parseString(
 
   try {
     if (parseStrStartsWithZero && typeof str === 'string') {
-      return JSON.parse(str);
+      const validJsonString = str.replace(/(['"])?([a-zA-Z0-9_]+)(['"])?:/g, '"$2":');
+      return JSON.parse(validJsonString);
     }
   } catch (error) {}
 
@@ -37,3 +38,5 @@ export default function parseString(
 
   return str;
 }
+
+
