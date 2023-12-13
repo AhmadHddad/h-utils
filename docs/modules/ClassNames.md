@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[src/utils/types.ts:487](https://github.com/AhmadHddad/h-utils/blob/add160d/src/utils/types.ts#L487)
+[src/utils/types.ts:492](https://github.com/AhmadHddad/h-utils/blob/ee02c65/src/utils/types.ts#L492)
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:485](https://github.com/AhmadHddad/h-utils/blob/add160d/src/utils/types.ts#L485)
+[src/utils/types.ts:490](https://github.com/AhmadHddad/h-utils/blob/ee02c65/src/utils/types.ts#L490)
 
 ___
 
@@ -42,4 +42,4 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:484](https://github.com/AhmadHddad/h-utils/blob/add160d/src/utils/types.ts#L484)
+[src/utils/types.ts:489](https://github.com/AhmadHddad/h-utils/blob/ee02c65/src/utils/types.ts#L489)

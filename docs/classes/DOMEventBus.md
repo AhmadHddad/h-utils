@@ -73,7 +73,7 @@ defaultEventBus.unsubscribe('DefaultEvent', handleDefaultEvent);
 
 #### Defined in
 
-[src/classes/DOMEventBus.ts:44](https://github.com/AhmadHddad/h-utils/blob/add160d/src/classes/DOMEventBus.ts#L44)
+[src/classes/DOMEventBus.ts:44](https://github.com/AhmadHddad/h-utils/blob/ee02c65/src/classes/DOMEventBus.ts#L44)
 
 ## Properties
 
@@ -83,7 +83,7 @@ defaultEventBus.unsubscribe('DefaultEvent', handleDefaultEvent);
 
 #### Defined in
 
-[src/classes/DOMEventBus.ts:42](https://github.com/AhmadHddad/h-utils/blob/add160d/src/classes/DOMEventBus.ts#L42)
+[src/classes/DOMEventBus.ts:42](https://github.com/AhmadHddad/h-utils/blob/ee02c65/src/classes/DOMEventBus.ts#L42)
 
 ## Methods
 
@@ -104,7 +104,7 @@ defaultEventBus.unsubscribe('DefaultEvent', handleDefaultEvent);
 
 #### Defined in
 
-[src/classes/DOMEventBus.ts:61](https://github.com/AhmadHddad/h-utils/blob/add160d/src/classes/DOMEventBus.ts#L61)
+[src/classes/DOMEventBus.ts:61](https://github.com/AhmadHddad/h-utils/blob/ee02c65/src/classes/DOMEventBus.ts#L61)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[src/classes/DOMEventBus.ts:51](https://github.com/AhmadHddad/h-utils/blob/add160d/src/classes/DOMEventBus.ts#L51)
+[src/classes/DOMEventBus.ts:51](https://github.com/AhmadHddad/h-utils/blob/ee02c65/src/classes/DOMEventBus.ts#L51)
 
 ___
 
@@ -146,4 +146,4 @@ ___
 
 #### Defined in
 
-[src/classes/DOMEventBus.ts:56](https://github.com/AhmadHddad/h-utils/blob/add160d/src/classes/DOMEventBus.ts#L56)
+[src/classes/DOMEventBus.ts:56](https://github.com/AhmadHddad/h-utils/blob/ee02c65/src/classes/DOMEventBus.ts#L56)
