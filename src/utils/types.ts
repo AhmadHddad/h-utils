@@ -13,6 +13,11 @@ export type DebounceOptions = {
   maxWait?: number;
 };
 
+export type ParseStringOptions = {
+  parseStrStartsWithZero?: boolean;
+  decode?: boolean;
+};
+
 export type DateComparisonLevel =
   | 'full'
   | 'year'
