@@ -3,9 +3,9 @@ import {
   decode,
   keysSorter,
   parserForArrayFormat,
-  parseValue, validateArrayFormatSeparator
+  parseValue,
+  validateArrayFormatSeparator,
 } from './routeHelpers';
-
 
 export default function parse(query, options) {
   options = {
@@ -13,9 +13,10 @@ export default function parse(query, options) {
     sort: true,
     arrayFormat: 'none',
     arrayFormatSeparator: ',',
+    lowerCaseQuery: false,
     parseNumbers: false,
     parseBooleans: false,
-    ...options
+    ...options,
   };
 
   validateArrayFormatSeparator(options.arrayFormatSeparator);
@@ -56,10 +57,10 @@ export default function parse(query, options) {
       value === undefined
         ? null
         : ['comma', 'separator', 'bracket-separator'].includes(
-          options.arrayFormat
-        )
-          ? value
-          : decode(value, options);
+            options.arrayFormat
+          )
+        ? value
+        : decode(value, options);
     formatter(decode(key, options), value, returnValue);
   }
 
@@ -78,16 +79,18 @@ export default function parse(query, options) {
   }
 
   // eslint-disable-next-line unicorn/no-array-reduce
-  return (options.sort === true
-    ? Object.keys(returnValue).sort()
-    : Object.keys(returnValue).sort(options.sort)
+  return (
+    options.sort === true
+      ? Object.keys(returnValue).sort()
+      : Object.keys(returnValue).sort(options.sort)
   ).reduce((result, key) => {
     const value = returnValue[key];
+    const k = options.lowerCaseQuery ? key.toLowerCase() : key;
     if (Boolean(value) && typeof value === 'object' && !Array.isArray(value)) {
       // Sort object keys, not values
-      result[key] = keysSorter(value);
+      result[k] = keysSorter(value);
     } else {
-      result[key] = value;
+      result[k] = value;
     }
 
     return result;
