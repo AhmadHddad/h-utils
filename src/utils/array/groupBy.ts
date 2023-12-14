@@ -29,7 +29,7 @@ groupBy(
 export default function groupBy<T>(
   array: T[],
   keyOrCondition: string | ((item: T) => string),
-  transform?: (item: T) => T
+  transform?: (item: T, key: string) => T
 ): GroupedObject<T> {
   const isFunction = typeof keyOrCondition === 'function';
   return array.reduce((result: GroupedObject<T>, item: T) => {
@@ -41,7 +41,7 @@ export default function groupBy<T>(
       result[key] = [];
     }
 
-    const transformedItem = transform ? transform(item) : item;
+    const transformedItem = transform ? transform(item, key) : item;
     result[key].push(transformedItem);
 
     return result;

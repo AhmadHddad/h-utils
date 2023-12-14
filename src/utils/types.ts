@@ -6,11 +6,27 @@ export type {
   Key,
   Primitive,
 } from './utilityTypes';
+
 export type DebounceOptions = {
   leading?: boolean;
   trailing?: boolean;
   maxWait?: number;
 };
+
+export type ParseStringOptions = {
+  parseStrStartsWithZero?: boolean;
+  decode?: boolean;
+};
+
+export type DateComparisonLevel =
+  | 'full'
+  | 'year'
+  | 'month'
+  | 'day'
+  | 'year-month'
+  | 'hour'
+  | 'year-month-day'
+  | 'year-month-day-hour';
 
 export type GroupedObject<T> = { [key: string]: T[] };
 export type EventCallback = (data?: any) => void;
@@ -447,6 +463,12 @@ export type ParseOptions = {
   ```
   */
   readonly parseFragmentIdentifier?: boolean;
+
+  /**
+   * @default false;
+   * @example queryString.parseUrl("https://foo.bar?Foo=bar&baz=Foo", {lowerCaseQuery:true}) // {query:{foo:"bar", baz:"Foo"}}
+   */
+  readonly lowerCaseQuery?: boolean;
 };
 
 export type GetHtmlElementCoordsOptions = {

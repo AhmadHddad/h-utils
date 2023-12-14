@@ -70,11 +70,13 @@ export { default as getAsciiSumFromString } from './utils/string/getAsciiSumFrom
 export { default as getFileExtensionFromString } from './utils/string/getFileExtensionFromString';
 export { default as getFirstNLetters } from './utils/string/getFirstNLetters';
 export { default as getHashFromString } from './utils/string/getHashFromString';
+export { default as lowerFirst } from './utils/string/lowerFirst';
 export { default as getNameInitials } from './utils/string/getNameInitials';
 export { default as getNumberFromString } from './utils/string/getNumberFromString';
 export { default as hashString } from './utils/string/hashString';
 export { default as hexToRgbA } from './utils/string/hexToRgbA';
-export { default as leftPad } from './utils/string/leftPad';
+export { default as padStart } from './utils/string/padStart';
+export { default as padEnd } from './utils/string/padEnd';
 export { default as mapStringToColorFromArr } from './utils/string/mapStringToColorFromArr';
 export { default as nFormatter } from './utils/string/nFormatter';
 export { default as occurrencesCount } from './utils/string/occurrencesCount';
@@ -119,6 +121,7 @@ export { default as classNames } from './utils/style/classNames';
 
 // Validation utils
 export { default as isArray } from './utils/validation/isArray';
+export { default as isValidDate } from './utils/validation/isValidDate';
 export { default as isArrayOfStrings } from './utils/validation/isArrayOfStrings';
 export { default as isAsyncFunction } from './utils/validation/isAsyncFunction';
 export { default as isBiggerThan } from './utils/validation/isBiggerThan';
@@ -172,6 +175,10 @@ export { default as removeEventListener } from './utils/browser/removeEventListe
 export { default as generateCacheKey } from './utils/crypto/generateCacheKey';
 export { default as SHA256 } from './utils/crypto/SHA256';
 export { default as utf8Encode } from './utils/crypto/utf8Encode';
+
+// Date
+export { default as monthDifference } from './utils/date/monthDifference';
+export { default as compareDates } from './utils/date/compareDates';
 
 // Types
 export * from './utils/utilityTypes';
