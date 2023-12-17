@@ -3,6 +3,12 @@ import isSmallerThan from '../validation/isSmallerThan';
 import isObject from '../validation/isObject';
 import { Key } from '../utilityTypes';
 
+type SortArrOptions<T> = {
+  key?: Key;
+  desc?: boolean;
+  getValue?: (v: T) => Key;
+};
+
 /**
  * @description It sorts an array of objects or strings or numbers, and if the array is an array of objects, it can
  * sort by a key of the objects.
@@ -10,14 +16,7 @@ import { Key } from '../utilityTypes';
  * @example sortArr([{a:2}, {a:1}], {key:"a"}) // [{a:1}, {a:2}]
  * @example sortArr([{a:2}, {a:1}], {getValue:(v) => v.a}) // [{a:1}, {a:2}]
  */
-export default function sortArr<T>(
-  arr: T[],
-  options?: {
-    key?: Key;
-    desc?: boolean;
-    getValue?: (v: T) => Key;
-  }
-): T[] {
+export default function sortArr<T>(arr: T[], options?: SortArrOptions<T>): T[] {
   const { desc, key, getValue } = options || {};
 
   const sortedArr = [...arr];
