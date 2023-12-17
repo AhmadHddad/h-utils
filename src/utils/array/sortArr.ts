@@ -8,12 +8,17 @@ import { Key } from '../utilityTypes';
  * sort by a key of the objects.
  * @example sortArr([4,2,1]) // [1,2,4]
  * @example sortArr([{a:2}, {a:1}], {key:"a"}) // [{a:1}, {a:2}]
+ * @example sortArr([{a:2}, {a:1}], {getValue:(v) => v.a}) // [{a:1}, {a:2}]
  */
 export default function sortArr<T>(
   arr: T[],
-  options?: { key?: string; desc?: boolean }
+  options?: {
+    key?: string;
+    desc?: boolean;
+    getValue?: (v: T) => Key;
+  }
 ): T[] {
-  const { desc, key } = options || {};
+  const { desc, key, getValue } = options || {};
 
   const sortedArr = [...arr];
   const isObjectArray = isObject(arr[0]);
@@ -25,12 +30,17 @@ export default function sortArr<T>(
     let valueA: Key;
     let valueB: Key;
 
-    if (isObjectArray) {
-      valueA = a[prop];
-      valueB = b[prop];
+    if (getValue) {
+      valueA = getValue(a);
+      valueB = getValue(b);
     } else {
-      valueA = a;
-      valueB = b;
+      if (isObjectArray) {
+        valueA = a[prop];
+        valueB = b[prop];
+      } else {
+        valueA = a;
+        valueB = b;
+      }
     }
 
     return condA(valueA, valueB) ? -1 : condB(valueA, valueB) ? 1 : 0;
