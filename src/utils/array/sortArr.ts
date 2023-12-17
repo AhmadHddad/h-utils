@@ -13,7 +13,7 @@ import { Key } from '../utilityTypes';
 export default function sortArr<T>(
   arr: T[],
   options?: {
-    key?: string;
+    key?: Key;
     desc?: boolean;
     getValue?: (v: T) => Key;
   }
