@@ -67,7 +67,7 @@ export type StringifyOptions = {
   - `bracket`: Serialize arrays using bracket representation:
  
     ```
-    import queryString from 'query-string';
+    
  
     queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'bracket'});
     //=> 'foo[]=1&foo[]=2&foo[]=3'
@@ -76,7 +76,7 @@ export type StringifyOptions = {
   - `index`: Serialize arrays using index representation:
  
     ```
-    import queryString from 'query-string';
+    
  
     queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'index'});
     //=> 'foo[0]=1&foo[1]=2&foo[2]=3'
@@ -85,7 +85,7 @@ export type StringifyOptions = {
   - `comma`: Serialize arrays by separating elements with comma:
  
     ```
-    import queryString from 'query-string';
+    
  
     queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'comma'});
     //=> 'foo=1,2,3'
@@ -99,7 +99,7 @@ export type StringifyOptions = {
   - `separator`: Serialize arrays by separating elements with character:
  
     ```
-    import queryString from 'query-string';
+    
  
     queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'separator', arrayFormatSeparator: '|'});
     //=> 'foo=1|2|3'
@@ -108,7 +108,7 @@ export type StringifyOptions = {
   - `bracket-separator`: Serialize arrays by explicitly post-fixing array names with brackets and separating elements with a custom character:
  
     ```
-    import queryString from 'query-string';
+    
  
     queryString.stringify({foo: []}, {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
     //=> 'foo[]'
@@ -135,7 +135,7 @@ export type StringifyOptions = {
   - `colon-list-separator`: Serialize arrays with parameter names that are explicitly marked with `:list`:
  
     ```js
-    import queryString from 'query-string';
+    
  
     queryString.stringify({foo: ['one', 'two']}, {arrayFormat: 'colon-list-separator'});
     //=> 'foo:list=one&foo:list=two'
@@ -144,7 +144,7 @@ export type StringifyOptions = {
   - `none`: Serialize arrays by using duplicate keys:
  
     ```
-    import queryString from 'query-string';
+    
  
     queryString.stringify({foo: [1, 2, 3]});
     //=> 'foo=1&foo=2&foo=3'
@@ -175,7 +175,7 @@ export type StringifyOptions = {
  
   @example
   ```
-  import queryString from 'query-string';
+  
  
   const order = ['c', 'a', 'b'];
  
@@ -187,7 +187,7 @@ export type StringifyOptions = {
  
   @example
   ```
-  import queryString from 'query-string';
+  
  
   queryString.stringify({b: 1, c: 2, a: 3}, {sort: false});
   //=> 'b=1&c=2&a=3'
@@ -204,7 +204,7 @@ export type StringifyOptions = {
  
   @example
   ```
-  import queryString from 'query-string';
+  
  
   queryString.stringify({a: 1, b: undefined, c: null, d: 4}, {
     skipNull: true
@@ -226,7 +226,7 @@ export type StringifyOptions = {
  
   @example
   ```
-  import queryString from 'query-string';
+  
  
   queryString.stringify({a: 1, b: '', c: '', d: 4}, {
     skipEmptyString: true
@@ -236,7 +236,6 @@ export type StringifyOptions = {
  
   @example
   ```
-  import queryString from 'query-string';
  
   queryString.stringify({a: '', b: ''}, {
     skipEmptyString: true
@@ -245,6 +244,8 @@ export type StringifyOptions = {
   ```
   */
   readonly skipEmptyString?: boolean;
+
+  readonly params?: StringOrNumber[];
 };
 
 export type Stringifiable = string | boolean | number | null | undefined; // eslint-disable-line @typescript-eslint/ban-types
@@ -299,7 +300,7 @@ export type ParseOptions = {
   - `bracket`: Parse arrays with bracket representation:
  
     ```
-    import queryString from 'query-string';
+    
  
     queryString.parse('foo[]=1&foo[]=2&foo[]=3', {arrayFormat: 'bracket'});
     //=> {foo: ['1', '2', '3']}
@@ -308,7 +309,7 @@ export type ParseOptions = {
   - `index`: Parse arrays with index representation:
  
     ```
-    import queryString from 'query-string';
+    
  
     queryString.parse('foo[0]=1&foo[1]=2&foo[3]=3', {arrayFormat: 'index'});
     //=> {foo: ['1', '2', '3']}
@@ -317,7 +318,7 @@ export type ParseOptions = {
   - `comma`: Parse arrays with elements separated by comma:
  
     ```
-    import queryString from 'query-string';
+    
  
     queryString.parse('foo=1,2,3', {arrayFormat: 'comma'});
     //=> {foo: ['1', '2', '3']}
@@ -326,7 +327,7 @@ export type ParseOptions = {
   - `separator`: Parse arrays with elements separated by a custom character:
  
     ```
-    import queryString from 'query-string';
+    
  
     queryString.parse('foo=1|2|3', {arrayFormat: 'separator', arrayFormatSeparator: '|'});
     //=> {foo: ['1', '2', '3']}
@@ -335,7 +336,7 @@ export type ParseOptions = {
   - `bracket-separator`: Parse arrays (that are explicitly marked with brackets) with elements separated by a custom character:
  
     ```
-    import queryString from 'query-string';
+    
  
     queryString.parse('foo[]', {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
     //=> {foo: []}
@@ -359,7 +360,7 @@ export type ParseOptions = {
   - `colon-list-separator`: Parse arrays with parameter names that are explicitly marked with `:list`:
  
     ```
-    import queryString from 'query-string';
+    
  
     queryString.parse('foo:list=one&foo:list=two', {arrayFormat: 'colon-list-separator'});
     //=> {foo: ['one', 'two']}
@@ -368,7 +369,7 @@ export type ParseOptions = {
   - `none`: Parse arrays with elements using duplicate keys:
  
     ```
-    import queryString from 'query-string';
+    
  
     queryString.parse('foo=1&foo=2&foo=3');
     //=> {foo: ['1', '2', '3']}
@@ -399,7 +400,7 @@ export type ParseOptions = {
  
   @example
   ```
-  import queryString from 'query-string';
+  
  
   const order = ['c', 'a', 'b'];
  
@@ -411,7 +412,7 @@ export type ParseOptions = {
  
   @example
   ```
-  import queryString from 'query-string';
+  
  
   queryString.parse('?a=one&c=three&b=two', {sort: false});
   //=> {a: 'one', c: 'three', b: 'two'}
@@ -426,7 +427,7 @@ export type ParseOptions = {
  
   @example
   ```
-  import queryString from 'query-string';
+  
  
   queryString.parse('foo=1', {parseNumbers: true});
   //=> {foo: 1}
@@ -441,7 +442,7 @@ export type ParseOptions = {
  
   @example
   ```
-  import queryString from 'query-string';
+  
  
   queryString.parse('foo=true', {parseBooleans: true});
   //=> {foo: true}
@@ -456,7 +457,7 @@ export type ParseOptions = {
  
   @example
   ```
-  import queryString from 'query-string';
+  
  
   queryString.parseUrl('https://foo.bar?foo=bar#xyz', {parseFragmentIdentifier: true});
   //=> {url: 'https://foo.bar', query: {foo: 'bar'}, fragmentIdentifier: 'xyz'}
