@@ -23,6 +23,11 @@ queryString.stringifyUrl({
     fragmentIdentifier: 'bar'
 });
 //=> 'https://foo.bar?top=foo#bar'
+
+queryString.stringifyUrl({
+    url: 'https://foo.bar',
+    params: [1,"foo"]
+}); //=> 'https://foo.bar/1/foo
 ``` */
 export default function stringifyUrl(
   object: UrlObject,
@@ -35,8 +40,13 @@ export default function stringifyUrl(
     [encodeFragmentIdentifier]: true,
     ...options,
   };
+  let url = removeHashFromUrl(object.url).split('?')[0] || '';
 
-  const url = removeHashFromUrl(object.url).split('?')[0] || '';
+  if (options?.params?.length) {
+    const joinedParams = options.params.join('/');
+    url = url.endsWith('/') ? url + joinedParams : `${url}/${joinedParams}`;
+  }
+
   const queryFromUrl = extractQueryFromUrl(object.url);
 
   const query = {
