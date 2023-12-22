@@ -7,7 +7,7 @@ import { urlRegexForShortStr } from '../../regex/index';
  * @example isURL("www.google.com", true) // false
  */
 export default function isURL(input: string, tryUrlObj?: boolean): boolean {
-  let res = !!input.match(urlRegexForShortStr);
+  let res = false;
 
   if (tryUrlObj) {
     try {
@@ -15,6 +15,8 @@ export default function isURL(input: string, tryUrlObj?: boolean): boolean {
     } catch (error) {
       res = false;
     }
+  } else {
+    res = !!input.match(urlRegexForShortStr);
   }
 
   return res;
