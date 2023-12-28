@@ -1,52 +1,102 @@
 import getWindowObj from './getWindowObj';
 
 type SetNetworkIdleCallbackOptions = {
-  timeout?: number;
-  requestMargin: number;
+  /**
+   * @description if set it will cancel the observation after ms time.
+   */
+  cancelTimeoutMs?: number;
+  /**
+   * @description check cycle time in ms
+   * @default 1000
+   */
+  intervalMs?: number;
+  /**
+   * @description trigger the check when the window is loaded.
+   * @default true
+   */
+  triggerOnWindowLoad?: boolean;
 };
 
+/**
+ *
+ * @description callback to be executed when the network becomes idle, which means no active network requests (like XHR or Fetch API) are ongoing.
+ * @example 
+ * `// Usage
+const cancel = setNetworkIdleCallback(() => {
+    console.log('Network is now idle.');
+});
+
+// to cancel
+cancel();`
+ */
 export default function setNetworkIdleCallback(
   callback: () => void,
   options: SetNetworkIdleCallbackOptions
-): void {
+): () => void {
+  if (!callback)
+    throw new Error('setNetworkIdleCallback Callback is undefined');
+
   const window = getWindowObj() as any;
-  const { timeout = 1000, requestMargin = 0 } = options || {};
-  let loadEnd = 0;
-  let loadstart = 0;
+  const {
+    intervalMs = 1000,
+    triggerOnWindowLoad = true,
+    cancelTimeoutMs,
+  } = options || {};
+
+  let activeRequests = 0;
+  let intervalId: NodeJS.Timeout;
+  let isMonitoring = true;
 
   // Override XMLHttpRequest
   const oldXHR = window.XMLHttpRequest;
   function newXHR() {
     const realXHR = new oldXHR();
     realXHR.addEventListener('loadend', function () {
-      loadEnd += 1;
+      activeRequests -= 1;
     });
     realXHR.addEventListener('loadstart', function () {
-      loadstart += 1;
+      activeRequests += 1;
     });
-    realXHR.addEventListener('readystatechange', function () {});
+
     return realXHR;
   }
   window.XMLHttpRequest = newXHR;
 
   const oldFetch = window.fetch;
-  
+
   window.fetch = function () {
-    loadstart += 1;
+    activeRequests += 1;
     return oldFetch.apply(this, arguments).finally(() => {
-      loadEnd += 1;
+      activeRequests -= 1;
     });
   };
 
   function onLoad() {
-    const id = setInterval(() => {
-      if (loadstart === loadEnd - requestMargin) {
-        clearInterval(id);
+    intervalId = setInterval(() => {
+      if (!isMonitoring) return clearInterval(intervalId);
+
+      if (activeRequests === 0) {
+        clearInterval(intervalId);
         requestIdleCallback(callback);
         window.removeEventListener('load', onLoad);
       }
-    }, timeout);
+    }, intervalMs);
+
+    if (cancelTimeoutMs) {
+      let id = setTimeout(() => {
+        isMonitoring = false;
+        clearTimeout(id);
+      }, cancelTimeoutMs);
+    }
   }
 
-  window.addEventListener('load', onLoad);
+  if (triggerOnWindowLoad) {
+    window.addEventListener('load', onLoad);
+  } else {
+    onLoad();
+  }
+
+  return () => {
+    isMonitoring = false;
+  };
 }
