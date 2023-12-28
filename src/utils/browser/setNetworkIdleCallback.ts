@@ -18,8 +18,8 @@ type SetNetworkIdleCallbackOptions = {
 };
 
 /**
- *
- * @description callback to be executed when the network becomes idle, which means no active network requests (like XHR or Fetch API) are ongoing.
+ * 
+ * @description --Browser only -- a function that takes callback to be executed when the network becomes idle, which means no active network requests (like XHR or Fetch API) are ongoing.
  * @example 
  * `// Usage
 const cancel = setNetworkIdleCallback(() => {
