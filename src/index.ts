@@ -168,6 +168,7 @@ export { default as getHtmlElementCoords } from './utils/browser/getHtmlElementC
 export { default as getWindowObj } from './utils/browser/getWindowObj';
 export { default as intersectionObserver } from 'hd-intersection-observer';
 export { default as onSetInterval } from './utils/browser/animationInterval';
+export { default as setNetworkIdleCallback } from './utils/browser/setNetworkIdleCallback';
 export { default as onUrlChange } from './utils/browser/onUrlChange';
 export { default as removeEventListener } from './utils/browser/removeEventListener';
 

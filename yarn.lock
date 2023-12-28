@@ -76,10 +76,10 @@ handlebars@^4.7.7:
   optionalDependencies:
     uglify-js "^3.1.4"
 
-hd-intersection-observer@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/hd-intersection-observer/-/hd-intersection-observer-1.0.1.tgz#445008c485f06204cd128a34660a11f6681d75e4"
-  integrity sha512-mIOAgLRgO+3iynCVx+jJwYd2HTCnnKtitsHr69YjdMtsjpyX+gHF9BIczr1UPoNnEKn3WVvFGJvA825WhYDEgQ==
+hd-intersection-observer@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/hd-intersection-observer/-/hd-intersection-observer-1.1.0.tgz#fcab41d348c488950f45f2f027fe80de7a4cd04b"
+  integrity sha512-5jcSMFf5a1AJ3ahbzn0As41fZLf8RJR5VPmByu/w6/ipG5u++vfgmgoNquHwsSh9dTRywFfAOOx7rKBfIZ+xJQ==
 
 jsonc-parser@^3.2.0:
   version "3.2.0"
