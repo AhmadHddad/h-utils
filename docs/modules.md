@@ -128,7 +128,7 @@
 - [animationInterval](modules.md#animationinterval)
 - [arabicToEnglishNumbers](modules.md#arabictoenglishnumbers)
 - [arabicToPersianNumbers](modules.md#arabictopersiannumbers)
-- [arrayContainsSubstring](modules.md#arraycontainssubstring)
+- [stringIncludes](modules.md#stringIncludes)
 - [arrayRange](modules.md#arrayrange)
 - [attempt](modules.md#attempt)
 - [attemptAsync](modules.md#attemptasync)
@@ -2413,25 +2413,25 @@ arabicToPersianNumbers('It is ٣٠/٠٨/٢٠١٩ at ٨:٢٤ AM') //It is ۳۰/۰
 
 ___
 
-### arrayContainsSubstring
+### stringIncludes
 
-▸ **arrayContainsSubstring**(`stringArr`, `strComparer`): `boolean`
+▸ **stringIncludes**(`stringArr`, `strComparer`): `boolean`
 
 **`Description`**
 
-The arrayContainsSubstring function is designed to determine whether any string within a given array (stringArr) includes a specified substring or any of the substrings contained in an array (strComparer). The function is flexible, accommodating scenarios where strComparer can be either a single string or an array of strings.
+The stringIncludes function is designed to determine whether any string within a given array (stringArr) includes a specified substring or any of the substrings contained in an array (strComparer). The function is flexible, accommodating scenarios where strComparer can be either a single string or an array of strings.
 
 **`Example`**
 
 ```ts
 const sites = ['www.google.com', 'www.youtube.com'];
 sites.includes('www'); // false;
-arrayContainsSubstring(sites, 'www'); // true;
+stringIncludes(sites, 'www'); // true;
 
 const y = ['apple', 'orange', 'banana'];
 
-arrayContainsSubstring(y, 'app'); // true;
-arrayContainsSubstring(y, ['app', 'grape']); // true;
+stringIncludes(y, 'app'); // true;
+stringIncludes(y, ['app', 'grape']); // true;
 ```
 
 #### Parameters
@@ -2447,7 +2447,7 @@ arrayContainsSubstring(y, ['app', 'grape']); // true;
 
 #### Defined in
 
-[src/utils/string/arrayContainsSubstring.ts:18](https://github.com/AhmadHddad/h-utils/blob/ac094b9/src/utils/string/arrayContainsSubstring.ts#L18)
+[src/utils/string/stringIncludes.ts:18](https://github.com/AhmadHddad/h-utils/blob/ac094b9/src/utils/string/stringIncludes.ts#L18)
 
 ___
 
