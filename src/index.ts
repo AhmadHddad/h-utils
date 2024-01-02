@@ -60,7 +60,7 @@ export { default as multiplyAll } from './utils/number/multiplyAll';
 export { default as addAndOrConjunctionsToStrArray } from './utils/string/addAndOrConjunctionsToStrArray';
 export { default as arabicToEnglishNumbers } from './utils/string/arabicToEnglishNumbers';
 export { default as arabicToPersianNumbers } from './utils/string/arabicToPersianNumbers';
-export { default as arrayContainsSubstring } from './utils/string/arrayContainsSubstring';
+export { default as stringIncludes } from './utils/string/stringIncludes';
 export { default as breakStrAfterNChar } from './utils/string/breakStrAfterNChar';
 export { default as capitalize } from './utils/string/capitalize';
 export { default as englishToArabicNumbers } from './utils/string/englishToArabicNumbers';

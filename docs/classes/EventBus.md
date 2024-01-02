@@ -53,7 +53,7 @@ eventBus.publish('event1', { message: 'This will not be handled.' });
 
 #### Defined in
 
-[src/classes/EventBus.ts:30](https://github.com/AhmadHddad/h-utils/blob/ac094b9/src/classes/EventBus.ts#L30)
+[src/classes/EventBus.ts:30](https://github.com/AhmadHddad/h-utils/blob/47f3331/src/classes/EventBus.ts#L30)
 
 ## Properties
 
@@ -63,7 +63,7 @@ eventBus.publish('event1', { message: 'This will not be handled.' });
 
 #### Defined in
 
-[src/classes/EventBus.ts:28](https://github.com/AhmadHddad/h-utils/blob/ac094b9/src/classes/EventBus.ts#L28)
+[src/classes/EventBus.ts:28](https://github.com/AhmadHddad/h-utils/blob/47f3331/src/classes/EventBus.ts#L28)
 
 ## Methods
 
@@ -84,7 +84,7 @@ eventBus.publish('event1', { message: 'This will not be handled.' });
 
 #### Defined in
 
-[src/classes/EventBus.ts:63](https://github.com/AhmadHddad/h-utils/blob/ac094b9/src/classes/EventBus.ts#L63)
+[src/classes/EventBus.ts:63](https://github.com/AhmadHddad/h-utils/blob/47f3331/src/classes/EventBus.ts#L63)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[src/classes/EventBus.ts:36](https://github.com/AhmadHddad/h-utils/blob/ac094b9/src/classes/EventBus.ts#L36)
+[src/classes/EventBus.ts:36](https://github.com/AhmadHddad/h-utils/blob/47f3331/src/classes/EventBus.ts#L36)
 
 ___
 
@@ -126,4 +126,4 @@ ___
 
 #### Defined in
 
-[src/classes/EventBus.ts:50](https://github.com/AhmadHddad/h-utils/blob/ac094b9/src/classes/EventBus.ts#L50)
+[src/classes/EventBus.ts:50](https://github.com/AhmadHddad/h-utils/blob/47f3331/src/classes/EventBus.ts#L50)
