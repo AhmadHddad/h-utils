@@ -181,6 +181,13 @@ export { default as utf8Encode } from './utils/crypto/utf8Encode';
 export { default as monthDifference } from './utils/date/monthDifference';
 export { default as compareDates } from './utils/date/compareDates';
 
+
+// Random
+export { default as randomInt } from './utils/random/randomInt';
+export { default as randomString } from './utils/random/randomString';
+export { default as randomObj } from './utils/random/randomObj';
+
+
 // Types
 export * from './utils/utilityTypes';
 export * from './utils/types';
