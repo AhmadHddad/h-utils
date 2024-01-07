@@ -9,9 +9,20 @@ import isObject from '../validation/isObject';
 function joinObjects<T extends object | null | undefined | {}>(
   ...args: T[]
 ): T {
-  return args.reduce((prev, curr) => {
-    return { ...(prev || {}), ...(isObject(curr) ? curr : {}) };
-  }, {}) as T;
+  let newObj: Record<string, any> = {};
+
+  for (let index = 0; index < args.length; index++) {
+    const object = args[index];
+    if (!isObject(object)) continue;
+
+    for (const key in object) {
+      if (Object.prototype.hasOwnProperty.call(object, key)) {
+        newObj[key] = object[key as string];
+      }
+    }
+  }
+
+  return newObj as T;
 }
 
 export default joinObjects;
