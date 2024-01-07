@@ -103,6 +103,7 @@ export { default as has } from './utils/object/has';
 export { default as includeKeys } from './utils/object/includeKeys';
 export { default as joinObjects } from './utils/object/joinObjects';
 export { default as getObjectValueByPath } from './utils/object/getObjectValueByPath';
+export { default as findValuePathInObject } from './utils/object/findValuePathInObject';
 
 
 // Route utils
@@ -184,9 +185,9 @@ export { default as compareDates } from './utils/date/compareDates';
 
 
 // Random
-export { default as randomInt } from './utils/random/randomInt';
-export { default as randomString } from './utils/random/randomString';
-export { default as randomObj } from './utils/random/randomObj';
+export { default as generateRandomInt } from './utils/random/generateRandomInt';
+export { default as generateRandomString } from './utils/random/generateRandomString';
+export { default as generateRandomObj } from './utils/random/generateRandomObj';
 
 
 // Types
