@@ -103,7 +103,7 @@ export { default as has } from './utils/object/has';
 export { default as includeKeys } from './utils/object/includeKeys';
 export { default as joinObjects } from './utils/object/joinObjects';
 export { default as getObjectValueByPath } from './utils/object/getObjectValueByPath';
-export { default as findValuePathInObject } from './utils/object/findValuePathInObject';
+export { default as findKeyOrValuePathInObject } from './utils/object/findKeyOrValuePathInObject';
 
 
 // Route utils
