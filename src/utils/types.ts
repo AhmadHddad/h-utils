@@ -498,3 +498,11 @@ export type AttemptOptions = {
   returnError?: boolean;
   throwError?: boolean;
 };
+
+
+export interface Cookie {
+  name: string;
+  value: string;
+  domain?: string;
+  path?: string;
+}
