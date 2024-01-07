@@ -102,7 +102,8 @@ export { default as getSmallestArrInObj } from './utils/object/getSmallestArrInO
 export { default as has } from './utils/object/has';
 export { default as includeKeys } from './utils/object/includeKeys';
 export { default as joinObjects } from './utils/object/joinObjects';
-export { default as navigateObjWithString } from './utils/object/navigateObjWithString';
+export { default as getObjectValueByPath } from './utils/object/getObjectValueByPath';
+
 
 // Route utils
 export { default as addHttpToURL } from './utils/route/addHttpToURL';
