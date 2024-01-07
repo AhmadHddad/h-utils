@@ -102,7 +102,8 @@ export { default as getSmallestArrInObj } from './utils/object/getSmallestArrInO
 export { default as has } from './utils/object/has';
 export { default as includeKeys } from './utils/object/includeKeys';
 export { default as joinObjects } from './utils/object/joinObjects';
-export { default as navigateObjWithString } from './utils/object/navigateObjWithString';
+export { default as getObjectValueByPath } from './utils/object/getObjectValueByPath';
+export { default as findKeyOrValuePathInObject } from './utils/object/findKeyOrValuePathInObject';
 
 // Route utils
 export { default as addHttpToURL } from './utils/route/addHttpToURL';
@@ -161,6 +162,7 @@ export { default as isWhiteSpace } from './utils/validation/isWhiteSpace';
 // Browser utils
 export { default as addColorSchemeChangeListener } from './utils/browser/addColorSchemeChangeListener';
 export { default as getUserColorSchemePreference } from './utils/browser/getUserColorSchemePreference';
+export { default as cookieUtils } from './utils/browser/cookieUtils';
 export { default as addEventListener } from './utils/browser/addEventListener';
 export { default as animationInterval } from './utils/browser/animationInterval';
 export { default as getBrowser } from './utils/browser/getBrowser';
@@ -180,6 +182,11 @@ export { default as utf8Encode } from './utils/crypto/utf8Encode';
 // Date
 export { default as monthDifference } from './utils/date/monthDifference';
 export { default as compareDates } from './utils/date/compareDates';
+
+// Random
+export { default as generateRandomInt } from './utils/random/generateRandomInt';
+export { default as generateRandomString } from './utils/random/generateRandomString';
+export { default as generateRandomObj } from './utils/random/generateRandomObj';
 
 // Types
 export * from './utils/utilityTypes';

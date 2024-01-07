@@ -33,8 +33,8 @@ export default function parseString(
   if (str?.includes('undefined')) return undefined;
   if (!parseStrStartsWithZero && str?.startsWith('0')) return str;
   if (str?.length && !isNaN(Number(str))) return Number(str);
-  if (str?.length && str === 'true') return true;
-  if (str?.length && str === 'false') return false;
+  if (str?.length && str.toLocaleLowerCase() === 'true') return true;
+  if (str?.length && str.toLocaleLowerCase() === 'false') return false;
 
   return str;
 }

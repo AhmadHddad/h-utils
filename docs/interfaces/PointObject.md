@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[src/utils/types.ts:35](https://github.com/AhmadHddad/h-utils/blob/47f3331/src/utils/types.ts#L35)
+[src/utils/types.ts:35](https://github.com/AhmadHddad/h-utils/blob/174f7d5/src/utils/types.ts#L35)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:36](https://github.com/AhmadHddad/h-utils/blob/47f3331/src/utils/types.ts#L36)
+[src/utils/types.ts:36](https://github.com/AhmadHddad/h-utils/blob/174f7d5/src/utils/types.ts#L36)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:37](https://github.com/AhmadHddad/h-utils/blob/47f3331/src/utils/types.ts#L37)
+[src/utils/types.ts:37](https://github.com/AhmadHddad/h-utils/blob/174f7d5/src/utils/types.ts#L37)
