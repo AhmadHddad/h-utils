@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[src/utils/functions/memoize.ts:66](https://github.com/AhmadHddad/h-utils/blob/174f7d5/src/utils/functions/memoize.ts#L66)
+[src/utils/functions/memoize.ts:66](https://github.com/AhmadHddad/h-utils/blob/d23f3b0/src/utils/functions/memoize.ts#L66)

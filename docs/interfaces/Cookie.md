@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[src/utils/types.ts:506](https://github.com/AhmadHddad/h-utils/blob/174f7d5/src/utils/types.ts#L506)
+[src/utils/types.ts:506](https://github.com/AhmadHddad/h-utils/blob/d23f3b0/src/utils/types.ts#L506)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:504](https://github.com/AhmadHddad/h-utils/blob/174f7d5/src/utils/types.ts#L504)
+[src/utils/types.ts:504](https://github.com/AhmadHddad/h-utils/blob/d23f3b0/src/utils/types.ts#L504)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:507](https://github.com/AhmadHddad/h-utils/blob/174f7d5/src/utils/types.ts#L507)
+[src/utils/types.ts:507](https://github.com/AhmadHddad/h-utils/blob/d23f3b0/src/utils/types.ts#L507)
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:505](https://github.com/AhmadHddad/h-utils/blob/174f7d5/src/utils/types.ts#L505)
+[src/utils/types.ts:505](https://github.com/AhmadHddad/h-utils/blob/d23f3b0/src/utils/types.ts#L505)
