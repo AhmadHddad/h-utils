@@ -4,6 +4,7 @@
 const myObject = {
     a: 1,
     b: {
+      a:2,
         c: 'hello',
         d: {
             e: 'world'
@@ -12,15 +13,18 @@ const myObject = {
     }
 };
 
-console.log(findKeyOrValuePathInObject(myObject, 'e')); // 'b.d.e'
-console.log(findKeyOrValuePathInObject(myObject, (key, val) => Array.isArray(val))); // 'b.f'
+console.log(findKeyOrValuePathInObject(myObject, 'e')); // ['b.d.e']
+console.log(findKeyOrValuePathInObject(myObject, (key, val) => Array.isArray(val))); // ['b.f']
+console.log(findKeyOrValuePathInObject(myObject, "a")); // ["a", "b.a"]
  */
 export default function findKeyOrValuePathInObject(
   obj: Record<string, any>,
   keyOrPredicate: string | ((key: string, value: any) => boolean),
   navigationChr = '.',
   currentPath: string = ''
-): string | null {
+): string[] {
+  const paths: string[] = [];
+
   for (const key in obj) {
     const newPath = currentPath ? `${currentPath}${navigationChr}${key}` : key;
     let isMatch = false;
@@ -32,21 +36,19 @@ export default function findKeyOrValuePathInObject(
     }
 
     if (isMatch) {
-      return newPath;
+      paths.push(newPath);
     }
 
     if (typeof obj[key] === 'object' && obj[key] !== null) {
-      const result = findKeyOrValuePathInObject(
+      const subPaths = findKeyOrValuePathInObject(
         obj[key],
         keyOrPredicate,
         navigationChr,
         newPath
       );
-      if (result) {
-        return result;
-      }
+      paths.push(...subPaths);
     }
   }
 
-  return null;
+  return paths;
 }
