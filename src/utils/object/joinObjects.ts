@@ -7,7 +7,7 @@ import isObject from '../validation/isObject';
  * @example joinObjects(({ a: 1 }, null || undefined || !object)) => { a: 1 }
  */
 function joinObjects<T extends object | null | undefined | {}>(
-  ...args: any[]
+  ...args: (T | any)[]
 ): T {
   const newObj: Record<string, any> = {};
 
