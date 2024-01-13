@@ -1,5 +1,5 @@
 import { Cookie } from '../types';
-import getWindowObj from './getWindowObj';
+import getWindowObj from './getWindow';
 
 /**
  * @description -- Browses only --

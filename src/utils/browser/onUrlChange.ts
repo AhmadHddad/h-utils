@@ -1,5 +1,5 @@
 import isBrowser from '../validation/isBrowser';
-import getWindowObj from './getWindowObj';
+import getWindowObj from './getWindow';
 
 /**
  * @function onUrlChange

@@ -1,7 +1,7 @@
-export * from './regex/index';
 export { default as HMap } from './classes/HMap';
 export { default as Timer } from './classes/Timer';
 export { default as EventBus } from './classes/EventBus';
+export { default as TwoWayBinder } from './classes/TwoWayBinder';
 export { default as DOMEventBus } from './classes/DOMEventBus';
 
 // Array utils
@@ -168,6 +168,8 @@ export { default as animationInterval } from './utils/browser/animationInterval'
 export { default as getBrowser } from './utils/browser/getBrowser';
 export { default as getHtmlElementCoords } from './utils/browser/getHtmlElementCoords';
 export { default as getWindowObj } from './utils/browser/getWindowObj';
+export { default as getWindow } from './utils/browser/getWindow';
+export { default as getDocument } from './utils/browser/getDocument';
 export { default as intersectionObserver } from 'hd-intersection-observer';
 export { default as onSetInterval } from './utils/browser/animationInterval';
 export { default as setNetworkIdleCallback } from './utils/browser/setNetworkIdleCallback';
@@ -191,3 +193,6 @@ export { default as generateRandomObj } from './utils/random/generateRandomObj';
 // Types
 export * from './utils/utilityTypes';
 export * from './utils/types';
+
+// regex
+export * from './regex/index';
