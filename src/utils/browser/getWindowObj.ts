@@ -1,6 +1,10 @@
-import getGlobalThis from '../general/getGlobalThis';
-import isBrowser from '../validation/isBrowser';
+import getWindow from './getWindow';
 
-export default function getWindowObj(): Window | typeof globalThis {
-  return isBrowser() && !!window ? window : getGlobalThis();
+/**
+ * @deprecated use getWindow instead.
+ * @example
+ * 
+ */
+export default function getWindowObj() {
+  return getWindow();
 }

@@ -1,4 +1,4 @@
-import getWindowObj from './getWindowObj';
+import getWindowObj from './getWindow';
 
 type SetNetworkIdleCallbackOptions = {
   /**

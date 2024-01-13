@@ -1,6 +1,6 @@
 import { ColorScheme } from '../types';
 import isBrowser from '../validation/isBrowser';
-import getWindowObj from './getWindowObj';
+import getWindowObj from './getWindow';
 
 /**
  * @description  tracks changes in the user's color scheme preference and invokes a callback with the updated scheme ('dark' or 'light'). Use the returned function to remove the listener when necessary. Ideal for adapting visual elements to user preferences.

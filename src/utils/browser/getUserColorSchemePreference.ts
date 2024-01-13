@@ -1,6 +1,6 @@
 import { ColorScheme } from '../types';
 import isBrowser from '../validation/isBrowser';
-import getWindowObj from './getWindowObj';
+import getWindowObj from './getWindow';
 
 /**
  * @description Retrieves the user's preferred color scheme ('light' or 'dark') based on their system settings.
