@@ -506,3 +506,5 @@ export interface Cookie {
   domain?: string;
   path?: string;
 }
+
+export type PipeFunction<T, U> = (input: T) => U;

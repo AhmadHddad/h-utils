@@ -28,6 +28,7 @@ export { default as delay } from './utils/functions/delay';
 export { default as memoize } from './utils/functions/memoize';
 export { default as throttle } from './utils/functions/throttle';
 export { default as throttlePromise } from './utils/functions/throttlePromise';
+export { default as pipe } from './utils/functions/pipe';
 
 // General utils
 export { default as conditionalReturn } from './utils/general/conditionalReturn';
