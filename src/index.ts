@@ -59,6 +59,7 @@ export { default as multiplyAll } from './utils/number/multiplyAll';
 
 // String utils
 export { default as addAndOrConjunctionsToStrArray } from './utils/string/addAndOrConjunctionsToStrArray';
+export { default as camelCaseToKebab } from './utils/string/camelCaseToKebab';
 export { default as arabicToEnglishNumbers } from './utils/string/arabicToEnglishNumbers';
 export { default as arabicToPersianNumbers } from './utils/string/arabicToPersianNumbers';
 export { default as stringIncludes } from './utils/string/stringIncludes';
