@@ -11,6 +11,6 @@ import isLength from './isLength';
  * @example isEmpty("") => true;
  * @returns A function that takes a value and returns a boolean.
  */
-export default function isEmpty(input?: [] | {} | string | number | boolean) {
+export default function isEmpty(input?: [] | {} | string | number | boolean | unknown | any) {
   return !isLength(input);
 }
