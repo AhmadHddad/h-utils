@@ -55,6 +55,9 @@ export { default as getBase64FromFile } from './utils/file/getBase64FromFile';
 // Number utils
 export { default as getAverage } from './utils/number/getAverage';
 export { default as getSum } from './utils/number/getSum';
+export { default as isEven } from './utils/number/isEven';
+export { default as isOdd } from './utils/number/isOdd';
+export { default as isPrime } from './utils/number/isPrime';
 export { default as multiplyAll } from './utils/number/multiplyAll';
 
 // String utils
