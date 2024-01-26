@@ -21,6 +21,10 @@ export { default as sortByMultiProperties } from './utils/array/sortByMultiPrope
 export { default as uniqueArray } from './utils/array/removeDuplicatesFromArr';
 
 // Function util
+export { default as createWatcher } from './utils/functions/createWatcher';
+export { default as createWatchers } from './utils/functions/createWatchers';
+export { default as pipe } from './utils/functions/pipe';
+export { default as pipeWith } from './utils/functions/pipeWith';
 export { default as attempt } from './utils/functions/attempt';
 export { default as attemptAsync } from './utils/functions/attemptAsync';
 export { default as debounce } from './utils/functions/debounce';
@@ -29,7 +33,6 @@ export { default as delay } from './utils/functions/delay';
 export { default as memoize } from './utils/functions/memoize';
 export { default as throttle } from './utils/functions/throttle';
 export { default as throttlePromise } from './utils/functions/throttlePromise';
-export { default as pipe } from './utils/functions/pipe';
 
 // General utils
 export { default as conditionalReturn } from './utils/general/conditionalReturn';
@@ -125,6 +128,7 @@ export { default as stringifyUrl } from './utils/route/stringifyUrl';
 
 // Style utils
 export { default as classNames } from './utils/style/classNames';
+export { default as cssPropertiesToString } from './utils/style/cssPropertiesToString';
 
 // Validation utils
 export { default as isArray } from './utils/validation/isArray';

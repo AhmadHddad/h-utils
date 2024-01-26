@@ -455,3 +455,6 @@ export type _DeepPartial<T> = T extends Function
 export interface _DeepPartialArray<T> extends Array<_DeepPartial<T>> {}
 
 // --- end section ----
+
+export type UnknownFunction = (...params: unknown[]) => unknown;
+

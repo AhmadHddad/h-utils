@@ -499,6 +499,7 @@ export type AttemptOptions = {
   throwError?: boolean;
 };
 
+export type ChangeCallback<T> = (prevValue: T, newValue: T) => void;
 
 export interface Cookie {
   name: string;
