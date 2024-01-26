@@ -8,8 +8,8 @@ import { ChangeCallback } from "../types";
 watchedObject.age = 30;
 
 // to unwatch 
-const x = Object.getPrototypeOf(watchedObject);
-console.log(x.unwatch());
+const prototype = Object.getPrototypeOf(watchedObject);
+console.log(prototype.unwatch()) // or just watchedObject.__prototype__.unwatch();
 
  */
 export default function createWatcher<T extends object>(
