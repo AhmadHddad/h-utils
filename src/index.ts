@@ -9,6 +9,7 @@ export { default as arrayRange } from './utils/array/arrayRange';
 export { default as bubbleSort } from './utils/array/bubbleSort';
 export { default as joinArrays } from './utils/array/joinArrays';
 export { default as groupBy } from './utils/array/groupBy';
+export { default as chunk } from './utils/array/chunk';
 export { default as heapSort } from './utils/array/heapSort';
 export { default as mergeSort } from './utils/array/mergeSort';
 export { default as quickSort } from './utils/array/quickSort';
@@ -20,6 +21,10 @@ export { default as sortByMultiProperties } from './utils/array/sortByMultiPrope
 export { default as uniqueArray } from './utils/array/removeDuplicatesFromArr';
 
 // Function util
+export { default as createWatcher } from './utils/functions/createWatcher';
+export { default as createWatchers } from './utils/functions/createWatchers';
+export { default as pipe } from './utils/functions/pipe';
+export { default as pipeWith } from './utils/functions/pipeWith';
 export { default as attempt } from './utils/functions/attempt';
 export { default as attemptAsync } from './utils/functions/attemptAsync';
 export { default as debounce } from './utils/functions/debounce';
@@ -54,10 +59,14 @@ export { default as getBase64FromFile } from './utils/file/getBase64FromFile';
 // Number utils
 export { default as getAverage } from './utils/number/getAverage';
 export { default as getSum } from './utils/number/getSum';
+export { default as isEven } from './utils/number/isEven';
+export { default as isOdd } from './utils/number/isOdd';
+export { default as isPrime } from './utils/number/isPrime';
 export { default as multiplyAll } from './utils/number/multiplyAll';
 
 // String utils
 export { default as addAndOrConjunctionsToStrArray } from './utils/string/addAndOrConjunctionsToStrArray';
+export { default as camelCaseToKebab } from './utils/string/camelCaseToKebab';
 export { default as arabicToEnglishNumbers } from './utils/string/arabicToEnglishNumbers';
 export { default as arabicToPersianNumbers } from './utils/string/arabicToPersianNumbers';
 export { default as stringIncludes } from './utils/string/stringIncludes';
@@ -119,6 +128,7 @@ export { default as stringifyUrl } from './utils/route/stringifyUrl';
 
 // Style utils
 export { default as classNames } from './utils/style/classNames';
+export { default as cssPropertiesToString } from './utils/style/cssPropertiesToString';
 
 // Validation utils
 export { default as isArray } from './utils/validation/isArray';
