@@ -151,6 +151,10 @@ const windowMock = {
   // ... more properties and methods as required
 } as unknown as Window & typeof globalThis;
 
-export default function getWindowObj(): Window & typeof globalThis {
+/**
+ * @description will get the window object or a mock. this is good for SSR.
+ * @example getWindow().document
+ */
+export default function getWindow(): Window & typeof globalThis {
   return isBrowser() && !!window ? window : windowMock;
 }

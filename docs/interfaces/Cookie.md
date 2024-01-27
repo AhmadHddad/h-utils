@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[src/utils/types.ts:507](https://github.com/AhmadHddad/h-utils/blob/0ea4b8b/src/utils/types.ts#L507)
+[src/utils/types.ts:507](https://github.com/AhmadHddad/h-utils/blob/dac240e/src/utils/types.ts#L507)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:505](https://github.com/AhmadHddad/h-utils/blob/0ea4b8b/src/utils/types.ts#L505)
+[src/utils/types.ts:505](https://github.com/AhmadHddad/h-utils/blob/dac240e/src/utils/types.ts#L505)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:508](https://github.com/AhmadHddad/h-utils/blob/0ea4b8b/src/utils/types.ts#L508)
+[src/utils/types.ts:508](https://github.com/AhmadHddad/h-utils/blob/dac240e/src/utils/types.ts#L508)
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 #### Defined in
 
-[src/utils/types.ts:506](https://github.com/AhmadHddad/h-utils/blob/0ea4b8b/src/utils/types.ts#L506)
+[src/utils/types.ts:506](https://github.com/AhmadHddad/h-utils/blob/dac240e/src/utils/types.ts#L506)
