@@ -2,6 +2,7 @@ import { StringOrNumber } from '../types';
 
 /**
  * @description an implementation for bubbleSort algorithm, it will sort an array of numbers or strings.
+ * @example bubbleSort([3,2,1]) // [1,2,3]
  */
 export default function bubbleSort<T extends StringOrNumber>(arr: T[]): T[] {
   if (!arr?.length) return arr;

@@ -2,6 +2,7 @@ import { StringOrNumber } from '../types';
 
 /**
  * @description an implementation for quickSort algorithm, it will sort an array of numbers or strings.
+ * @example quickSort([3,2,1]) //[1,2,3]
  */
 export default function quickSort<T extends StringOrNumber>(
   arr: T[] = []

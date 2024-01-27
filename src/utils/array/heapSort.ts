@@ -1,5 +1,9 @@
 import { StringOrNumber } from '../types';
 
+/**
+ * @description an implementation for heapSort algorithm, it will sort an array of numbers or strings.
+ * @example heapSort([3,2,1]) // [1,2,3]
+ */
 export default function heapSort<T extends StringOrNumber>(arr: T[]): T[] {
   buildMaxHeap(arr);
 
