@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "1.2.1",
   "license": "MIT",
   "main": "lib/index.js",
   "description": "A handy utils for modern JS developers",
@@ -68,6 +68,6 @@
     "typescript": "^4.8.3"
   },
   "dependencies": {
-    "hd-intersection-observer": "^1.1.0"
+    "hd-intersection-observer": "^1.1.1"
   }
 }
