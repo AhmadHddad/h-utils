@@ -509,3 +509,27 @@ export interface Cookie {
 }
 
 export type PipeFunction<T, U> = (input: T) => U;
+
+export type NetworkHttpRequestMonitorOptions = {
+  /**
+   * @description check cycle time in ms
+   * @default 1000
+   */
+  intervalMs?: number;
+  /**
+   * @description trigger the check when the window is loaded.
+   * @default true
+   */
+  triggerOnWindowLoad?: boolean;
+  /**
+   * @description will cancel the onRequestsIdle on first idle call.
+   * @default true
+   */
+  cancelAfterIdle?: boolean;
+};
+
+export type NetworkRequestList = (
+  | XMLHttpRequestEventTarget
+  | Response
+  | Parameters<typeof fetch>
+)[];
