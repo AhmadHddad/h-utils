@@ -5,8 +5,8 @@ import stringifyUrl from './stringifyUrl';
 
 /**
  * @description Pick query parameters from a URL.
- * @example pickQueryParamFromUrl('https://foo.bar?foo=1&bar=2#hello', ['foo']); => 'https://foo.bar?foo=1#hello';
- * @example pickQueryParamFromUrl('https://foo.bar?foo=1&bar=2#hello', (name, value) => value === 2, {parseNumbers: true}); => 'https://foo.bar?bar=2#hello';
+ * @example pickQueryParamFromUrl('https://foo.bar?foo=1&bar=2#hello', ['foo']); // 'https://foo.bar?foo=1#hello';
+ * @example pickQueryParamFromUrl('https://foo.bar?foo=1&bar=2#hello', (name, value) => value === 2, {parseNumbers: true}); // 'https://foo.bar?bar=2#hello';
  */
 export default function pickQueryParamFromUrl(
   urlOrQuery: string,

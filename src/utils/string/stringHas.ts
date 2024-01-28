@@ -4,10 +4,10 @@
  * @param {string[]} valArr
  * @returns {boolean}
  * @description returns true if a string has one of the passed string values.
- * @example stringHas("www.google.com", ["google", "www"]) => true
- * @example stringHas("www.google.com", ["google"]) => true
- * @example stringHas("www.google.com", ["no"]) => false
- * @example stringHas("www.google.com", ["no", "com"]) => true
+ * @example stringHas("www.google.com", ["google", "www"]) // true
+ * @example stringHas("www.google.com", ["google"]) // true
+ * @example stringHas("www.google.com", ["no"]) // false
+ * @example stringHas("www.google.com", ["no", "com"]) // true
  */
 export default function stringHas(string: string, valArr: string[] = []) {
   let val = false;

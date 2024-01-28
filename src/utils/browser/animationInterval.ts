@@ -2,7 +2,7 @@ import isBrowser from '../validation/isBrowser';
 
 /**
  * @description a reliable way to call a callback after a certain ms time.
- * @example `// Usage
+ * @example // Usage
 const controller = new AbortController();
 
 // Create an animation callback every second:
@@ -11,7 +11,7 @@ animationInterval(1000, controller.signal, time => {
 });
 
 // And to stop it:
-controller.abort();`
+controller.abort();
  */
 export default function animationInterval(
   ms: number,
