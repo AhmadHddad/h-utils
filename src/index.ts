@@ -4,6 +4,10 @@ export { default as EventBus } from './classes/EventBus';
 export { default as TwoWayBinder } from './classes/TwoWayBinder';
 export { default as DOMEventBus } from './classes/DOMEventBus';
 
+
+// constants
+export { default as HttpStatusCode } from './constants/HttpStatusCode';
+
 // Array utils
 export { default as arrayRange } from './utils/array/arrayRange';
 export { default as bubbleSort } from './utils/array/bubbleSort';
