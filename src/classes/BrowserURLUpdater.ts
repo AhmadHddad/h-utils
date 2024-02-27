@@ -16,17 +16,11 @@ export default class BrowserURLUpdater {
   private reload: boolean;
   private state: any = {};
 
-  constructor(url = window.location.href, reload?: boolean | undefined) {
+  constructor(url = window.location.href, reloadOnEveryChange?: boolean | undefined) {
     if (isNullOrEmptyString(url)) throw new Error('URL must be passed');
 
     this.url = getUrlObj(url);
-    this.reload = !!reload;
-
-    window.addEventListener('popstate', () => {
-      if (this.reload) {
-        window.location.reload();
-      }
-    });
+    this.reload = !!reloadOnEveryChange;
   }
 
   updateURL(): void {
