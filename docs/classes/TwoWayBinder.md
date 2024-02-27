@@ -57,7 +57,7 @@ const inputElement = document.getElementById('textInput') as HTMLInputElement;
 
 #### Defined in
 
-[src/classes/TwoWayBinder.ts:18](https://github.com/AhmadHddad/h-utils/blob/dac240e/src/classes/TwoWayBinder.ts#L18)
+[src/classes/TwoWayBinder.ts:18](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/classes/TwoWayBinder.ts#L18)
 
 ## Properties
 
@@ -67,7 +67,7 @@ const inputElement = document.getElementById('textInput') as HTMLInputElement;
 
 #### Defined in
 
-[src/classes/TwoWayBinder.ts:16](https://github.com/AhmadHddad/h-utils/blob/dac240e/src/classes/TwoWayBinder.ts#L16)
+[src/classes/TwoWayBinder.ts:16](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/classes/TwoWayBinder.ts#L16)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[src/classes/TwoWayBinder.ts:14](https://github.com/AhmadHddad/h-utils/blob/dac240e/src/classes/TwoWayBinder.ts#L14)
+[src/classes/TwoWayBinder.ts:14](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/classes/TwoWayBinder.ts#L14)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[src/classes/TwoWayBinder.ts:15](https://github.com/AhmadHddad/h-utils/blob/dac240e/src/classes/TwoWayBinder.ts#L15)
+[src/classes/TwoWayBinder.ts:15](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/classes/TwoWayBinder.ts#L15)
 
 ## Accessors
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[src/classes/TwoWayBinder.ts:51](https://github.com/AhmadHddad/h-utils/blob/dac240e/src/classes/TwoWayBinder.ts#L51)
+[src/classes/TwoWayBinder.ts:51](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/classes/TwoWayBinder.ts#L51)
 
 • `set` **value**(`newValue`): `void`
 
@@ -117,7 +117,7 @@ ___
 
 #### Defined in
 
-[src/classes/TwoWayBinder.ts:55](https://github.com/AhmadHddad/h-utils/blob/dac240e/src/classes/TwoWayBinder.ts#L55)
+[src/classes/TwoWayBinder.ts:55](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/classes/TwoWayBinder.ts#L55)
 
 ## Methods
 
@@ -131,7 +131,7 @@ ___
 
 #### Defined in
 
-[src/classes/TwoWayBinder.ts:34](https://github.com/AhmadHddad/h-utils/blob/dac240e/src/classes/TwoWayBinder.ts#L34)
+[src/classes/TwoWayBinder.ts:34](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/classes/TwoWayBinder.ts#L34)
 
 ___
 
@@ -145,7 +145,7 @@ ___
 
 #### Defined in
 
-[src/classes/TwoWayBinder.ts:38](https://github.com/AhmadHddad/h-utils/blob/dac240e/src/classes/TwoWayBinder.ts#L38)
+[src/classes/TwoWayBinder.ts:38](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/classes/TwoWayBinder.ts#L38)
 
 ___
 
@@ -159,7 +159,7 @@ ___
 
 #### Defined in
 
-[src/classes/TwoWayBinder.ts:43](https://github.com/AhmadHddad/h-utils/blob/dac240e/src/classes/TwoWayBinder.ts#L43)
+[src/classes/TwoWayBinder.ts:43](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/classes/TwoWayBinder.ts#L43)
 
 ___
 
@@ -173,4 +173,4 @@ ___
 
 #### Defined in
 
-[src/classes/TwoWayBinder.ts:47](https://github.com/AhmadHddad/h-utils/blob/dac240e/src/classes/TwoWayBinder.ts#L47)
+[src/classes/TwoWayBinder.ts:47](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/classes/TwoWayBinder.ts#L47)
