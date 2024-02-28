@@ -533,3 +533,6 @@ export type NetworkRequestList = (
   | Response
   | Parameters<typeof fetch>
 )[];
+
+export type LogRecordKeys = 'error' | 'log' | 'info' | 'table' | 'warn';
+export type LogRecord = Record<LogRecordKeys, { time: string; value: any[] }[]>;

@@ -4,6 +4,7 @@ export { default as EventBus } from './classes/EventBus';
 export { default as TwoWayBinder } from './classes/TwoWayBinder';
 export { default as DOMEventBus } from './classes/DOMEventBus';
 export { default as BrowserURLUpdater } from './classes/BrowserURLUpdater';
+export { default as LogManager } from './classes/LogManager';
 
 
 // constants
