@@ -12,93 +12,93 @@ const window = getWindow();
  *
  */
 export default class BrowserURLUpdater {
-  private url: URL;
-  private reload: boolean;
-  private state: any = {};
+  private _url: URL;
+  private _reload: boolean;
+  private _state: any = {};
 
   constructor(url = window.location.href, reloadOnEveryChange?: boolean | undefined) {
     if (isNullOrEmptyString(url)) throw new Error('URL must be passed');
 
-    this.url = getUrlObj(url);
-    this.reload = !!reloadOnEveryChange;
+    this._url = getUrlObj(url);
+    this._reload = !!reloadOnEveryChange;
   }
 
   updateURL(): void {
-    if (this.reload) {
+    if (this._reload) {
       window.location.reload();
       return;
     }
 
-    window.history.pushState(this.state, '', this.url.toString());
+    window.history.pushState(this._state, '', this._url.toString());
   }
 
   setQueryParam(key: string, value: string | undefined): void {
     if (value !== undefined) {
-      this.url.searchParams.set(key, value);
+      this._url.searchParams.set(key, value);
     } else {
-      this.url.searchParams.delete(key);
+      this._url.searchParams.delete(key);
     }
     this.updateURL();
   }
 
   removeQueryParam(key: string): void {
-    this.url.searchParams.delete(key);
+    this._url.searchParams.delete(key);
     this.updateURL();
   }
 
   getQueryParam(key: string): string | null {
-    return this.url.searchParams.get(key);
+    return this._url.searchParams.get(key);
   }
 
   getPath(): string {
-    return this.url.pathname;
+    return this._url.pathname;
   }
 
   setPath(path: string): void {
-    this.url.pathname = path;
+    this._url.pathname = path;
     this.updateURL();
   }
 
   removePath(): void {
-    this.url.pathname = '/';
+    this._url.pathname = '/';
     this.updateURL();
   }
 
   setFragment(fragment: string): void {
-    this.url.hash = fragment;
+    this._url.hash = fragment;
     this.updateURL();
   }
 
   getFragment(): string {
-    return this.url.hash;
+    return this._url.hash;
   }
 
   removeFragment(): void {
-    this.url.hash = '';
+    this._url.hash = '';
     this.updateURL();
   }
 
-  set URL(value: string) {
-    this.url = getUrlObj(value);
+  set url(value: string) {
+    this._url = getUrlObj(value);
   }
 
-  get URL(): string {
-    return this.url.toString();
+  get url(): string {
+    return this._url.toString();
   }
 
-  get Reload(): boolean {
-    return this.reload;
+  get reload(): boolean {
+    return this._reload;
   }
 
-  set Reload(value: boolean) {
-    this.reload = value;
+  set reload(value: boolean) {
+    this._reload = value;
   }
 
-  get State(): any {
-    return this.state;
+  get state(): any {
+    return this._state;
   }
 
-  set State(value: any) {
-    this.state = value;
+  set state(value: any) {
+    this._state = value;
   }
 }
