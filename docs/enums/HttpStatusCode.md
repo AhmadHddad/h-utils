@@ -78,7 +78,7 @@
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:8](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L8)
+[src/constants/HttpStatusCode.ts:8](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L8)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:14](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L14)
+[src/constants/HttpStatusCode.ts:14](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L14)
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:56](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L56)
+[src/constants/HttpStatusCode.ts:56](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L56)
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:25](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L25)
+[src/constants/HttpStatusCode.ts:25](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L25)
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:34](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L34)
+[src/constants/HttpStatusCode.ts:34](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L34)
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:2](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L2)
+[src/constants/HttpStatusCode.ts:2](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L2)
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:7](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L7)
+[src/constants/HttpStatusCode.ts:7](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L7)
 
 ___
 
@@ -148,7 +148,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:5](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L5)
+[src/constants/HttpStatusCode.ts:5](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L5)
 
 ___
 
@@ -158,7 +158,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:42](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L42)
+[src/constants/HttpStatusCode.ts:42](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L42)
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:47](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L47)
+[src/constants/HttpStatusCode.ts:47](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L47)
 
 ___
 
@@ -178,7 +178,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:28](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L28)
+[src/constants/HttpStatusCode.ts:28](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L28)
 
 ___
 
@@ -188,7 +188,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:18](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L18)
+[src/constants/HttpStatusCode.ts:18](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L18)
 
 ___
 
@@ -198,7 +198,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:58](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L58)
+[src/constants/HttpStatusCode.ts:58](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L58)
 
 ___
 
@@ -208,7 +208,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:35](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L35)
+[src/constants/HttpStatusCode.ts:35](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L35)
 
 ___
 
@@ -218,7 +218,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:59](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L59)
+[src/constants/HttpStatusCode.ts:59](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L59)
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:43](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L43)
+[src/constants/HttpStatusCode.ts:43](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L43)
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:15](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L15)
+[src/constants/HttpStatusCode.ts:15](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L15)
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:61](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L61)
+[src/constants/HttpStatusCode.ts:61](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L61)
 
 ___
 
@@ -258,7 +258,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:54](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L54)
+[src/constants/HttpStatusCode.ts:54](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L54)
 
 ___
 
@@ -268,7 +268,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:36](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L36)
+[src/constants/HttpStatusCode.ts:36](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L36)
 
 ___
 
@@ -278,7 +278,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:46](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L46)
+[src/constants/HttpStatusCode.ts:46](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L46)
 
 ___
 
@@ -288,7 +288,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:62](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L62)
+[src/constants/HttpStatusCode.ts:62](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L62)
 
 ___
 
@@ -298,7 +298,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:30](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L30)
+[src/constants/HttpStatusCode.ts:30](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L30)
 
 ___
 
@@ -308,7 +308,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:44](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L44)
+[src/constants/HttpStatusCode.ts:44](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L44)
 
 ___
 
@@ -318,7 +318,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:17](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L17)
+[src/constants/HttpStatusCode.ts:17](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L17)
 
 ___
 
@@ -328,7 +328,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:13](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L13)
+[src/constants/HttpStatusCode.ts:13](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L13)
 
 ___
 
@@ -338,7 +338,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:16](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L16)
+[src/constants/HttpStatusCode.ts:16](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L16)
 
 ___
 
@@ -348,7 +348,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:64](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L64)
+[src/constants/HttpStatusCode.ts:64](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L64)
 
 ___
 
@@ -358,7 +358,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:10](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L10)
+[src/constants/HttpStatusCode.ts:10](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L10)
 
 ___
 
@@ -368,7 +368,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:9](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L9)
+[src/constants/HttpStatusCode.ts:9](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L9)
 
 ___
 
@@ -378,7 +378,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:31](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L31)
+[src/constants/HttpStatusCode.ts:31](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L31)
 
 ___
 
@@ -388,7 +388,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:63](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L63)
+[src/constants/HttpStatusCode.ts:63](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L63)
 
 ___
 
@@ -398,7 +398,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:29](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L29)
+[src/constants/HttpStatusCode.ts:29](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L29)
 
 ___
 
@@ -408,7 +408,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:55](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L55)
+[src/constants/HttpStatusCode.ts:55](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L55)
 
 ___
 
@@ -418,7 +418,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:20](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L20)
+[src/constants/HttpStatusCode.ts:20](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L20)
 
 ___
 
@@ -428,7 +428,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:6](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L6)
+[src/constants/HttpStatusCode.ts:6](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L6)
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:12](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L12)
+[src/constants/HttpStatusCode.ts:12](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L12)
 
 ___
 
@@ -448,7 +448,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:38](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L38)
+[src/constants/HttpStatusCode.ts:38](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L38)
 
 ___
 
@@ -458,7 +458,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:27](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L27)
+[src/constants/HttpStatusCode.ts:27](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L27)
 
 ___
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:24](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L24)
+[src/constants/HttpStatusCode.ts:24](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L24)
 
 ___
 
@@ -478,7 +478,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:37](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L37)
+[src/constants/HttpStatusCode.ts:37](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L37)
 
 ___
 
@@ -488,7 +488,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:50](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L50)
+[src/constants/HttpStatusCode.ts:50](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L50)
 
 ___
 
@@ -498,7 +498,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:4](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L4)
+[src/constants/HttpStatusCode.ts:4](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L4)
 
 ___
 
@@ -508,7 +508,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:32](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L32)
+[src/constants/HttpStatusCode.ts:32](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L32)
 
 ___
 
@@ -518,7 +518,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:41](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L41)
+[src/constants/HttpStatusCode.ts:41](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L41)
 
 ___
 
@@ -528,7 +528,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:52](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L52)
+[src/constants/HttpStatusCode.ts:52](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L52)
 
 ___
 
@@ -538,7 +538,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:33](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L33)
+[src/constants/HttpStatusCode.ts:33](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L33)
 
 ___
 
@@ -548,7 +548,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:11](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L11)
+[src/constants/HttpStatusCode.ts:11](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L11)
 
 ___
 
@@ -558,7 +558,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:19](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L19)
+[src/constants/HttpStatusCode.ts:19](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L19)
 
 ___
 
@@ -568,7 +568,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:57](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L57)
+[src/constants/HttpStatusCode.ts:57](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L57)
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:3](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L3)
+[src/constants/HttpStatusCode.ts:3](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L3)
 
 ___
 
@@ -588,7 +588,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:23](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L23)
+[src/constants/HttpStatusCode.ts:23](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L23)
 
 ___
 
@@ -598,7 +598,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:48](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L48)
+[src/constants/HttpStatusCode.ts:48](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L48)
 
 ___
 
@@ -608,7 +608,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:51](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L51)
+[src/constants/HttpStatusCode.ts:51](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L51)
 
 ___
 
@@ -618,7 +618,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:26](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L26)
+[src/constants/HttpStatusCode.ts:26](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L26)
 
 ___
 
@@ -628,7 +628,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:53](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L53)
+[src/constants/HttpStatusCode.ts:53](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L53)
 
 ___
 
@@ -638,7 +638,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:45](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L45)
+[src/constants/HttpStatusCode.ts:45](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L45)
 
 ___
 
@@ -648,7 +648,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:40](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L40)
+[src/constants/HttpStatusCode.ts:40](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L40)
 
 ___
 
@@ -658,7 +658,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:22](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L22)
+[src/constants/HttpStatusCode.ts:22](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L22)
 
 ___
 
@@ -668,7 +668,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:49](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L49)
+[src/constants/HttpStatusCode.ts:49](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L49)
 
 ___
 
@@ -678,7 +678,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:39](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L39)
+[src/constants/HttpStatusCode.ts:39](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L39)
 
 ___
 
@@ -688,7 +688,7 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:21](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L21)
+[src/constants/HttpStatusCode.ts:21](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L21)
 
 ___
 
@@ -698,4 +698,4 @@ ___
 
 #### Defined in
 
-[src/constants/HttpStatusCode.ts:60](https://github.com/AhmadHddad/h-utils/blob/2a9a611/src/constants/HttpStatusCode.ts#L60)
+[src/constants/HttpStatusCode.ts:60](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/constants/HttpStatusCode.ts#L60)
