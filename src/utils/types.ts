@@ -534,5 +534,5 @@ export type NetworkRequestList = (
   | Parameters<typeof fetch>
 )[];
 
-export type LogRecordKeys = 'error' | 'log' | 'info' | 'table' | 'warn';
-export type LogRecord = Record<LogRecordKeys, { time: string; value: any[] }[]>;
+export type ConsoleRecordKeys = 'error' | 'log' | 'info' | 'table' | 'warn';
+export type ConsoleRecord = Record<ConsoleRecordKeys, { time: string; value: any[] }[]>;
