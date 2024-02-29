@@ -1,9 +1,9 @@
 /**
  * @description It compares two arguments and returns true if they are equal, false if they are not
- * @example deepCompareObjects({a:1}, {a:1}) => true
- * @example deepCompareObjects([1,2,3], [1,2,3]) => true
- * @example deepCompareObjects([1,2,3], [1,2,5]) => false
- * @example deepCompareObjects(true ,false) => false
+ * @example deepCompareObjects({a:1}, {a:1}) // true
+ * @example deepCompareObjects([1,2,3], [1,2,3]) // true
+ * @example deepCompareObjects([1,2,3], [1,2,5]) // false
+ * @example deepCompareObjects(true ,false) // false
  */
 export default function deepCompare<T = any>(...args: T[]): boolean {
   let i, l, leftChain, rightChain;

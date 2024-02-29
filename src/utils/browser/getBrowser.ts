@@ -2,6 +2,7 @@ import isBrowser from '../validation/isBrowser';
 
 /**
  *  @description will return the user browser type
+ * @example const MyFavoriteBrowser = getBrowser() // "Firefox" :D 
  */
 export default function getBrowser():
   | 'Opera'

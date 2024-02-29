@@ -2,6 +2,10 @@
 
 # Class: DOMEventBus
 
+**`Important`**
+
+--Browser Only--
+
 **`Description`**
 
 DOMEventBus class implementation tailored for the Document Object Model (DOM). It serves as a centralized event manager, allowing components to subscribe to and publish custom events within a web application. With methods like subscribe, unsubscribe, and publish, it enables a modular and efficient communication system, enhancing the decoupling of components. This class leverages standard DOM event handling mechanisms, such as addEventListener and dispatchEvent, to facilitate seamless interaction and information exchange between different parts of a web application.
@@ -51,6 +55,7 @@ defaultEventBus.unsubscribe('DefaultEvent', handleDefaultEvent);
 
 ### Properties
 
+- [document](DOMEventBus.md#document)
 - [eventBusContainer](DOMEventBus.md#eventbuscontainer)
 
 ### Methods
@@ -73,9 +78,19 @@ defaultEventBus.unsubscribe('DefaultEvent', handleDefaultEvent);
 
 #### Defined in
 
-[src/classes/DOMEventBus.ts:44](https://github.com/AhmadHddad/h-utils/blob/dac240e/src/classes/DOMEventBus.ts#L44)
+[src/classes/DOMEventBus.ts:47](https://github.com/AhmadHddad/h-utils/blob/c63bc83/src/classes/DOMEventBus.ts#L47)
 
 ## Properties
+
+### document
+
+• `Private` **document**: `Document`
+
+#### Defined in
+
+[src/classes/DOMEventBus.ts:45](https://github.com/AhmadHddad/h-utils/blob/c63bc83/src/classes/DOMEventBus.ts#L45)
+
+___
 
 ### eventBusContainer
 
@@ -83,7 +98,7 @@ defaultEventBus.unsubscribe('DefaultEvent', handleDefaultEvent);
 
 #### Defined in
 
-[src/classes/DOMEventBus.ts:42](https://github.com/AhmadHddad/h-utils/blob/dac240e/src/classes/DOMEventBus.ts#L42)
+[src/classes/DOMEventBus.ts:44](https://github.com/AhmadHddad/h-utils/blob/c63bc83/src/classes/DOMEventBus.ts#L44)
 
 ## Methods
 
@@ -104,7 +119,7 @@ defaultEventBus.unsubscribe('DefaultEvent', handleDefaultEvent);
 
 #### Defined in
 
-[src/classes/DOMEventBus.ts:61](https://github.com/AhmadHddad/h-utils/blob/dac240e/src/classes/DOMEventBus.ts#L61)
+[src/classes/DOMEventBus.ts:64](https://github.com/AhmadHddad/h-utils/blob/c63bc83/src/classes/DOMEventBus.ts#L64)
 
 ___
 
@@ -125,7 +140,7 @@ ___
 
 #### Defined in
 
-[src/classes/DOMEventBus.ts:51](https://github.com/AhmadHddad/h-utils/blob/dac240e/src/classes/DOMEventBus.ts#L51)
+[src/classes/DOMEventBus.ts:54](https://github.com/AhmadHddad/h-utils/blob/c63bc83/src/classes/DOMEventBus.ts#L54)
 
 ___
 
@@ -146,4 +161,4 @@ ___
 
 #### Defined in
 
-[src/classes/DOMEventBus.ts:56](https://github.com/AhmadHddad/h-utils/blob/dac240e/src/classes/DOMEventBus.ts#L56)
+[src/classes/DOMEventBus.ts:59](https://github.com/AhmadHddad/h-utils/blob/c63bc83/src/classes/DOMEventBus.ts#L59)

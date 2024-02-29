@@ -3,7 +3,7 @@ import isString from '../validation/isString';
 
 /**
  * @description will return the passed string with the first character capitalized.
- * @example capitalize("javascript") => "Javascript"
+ * @example capitalize("javascript") // "Javascript"
  */
 export default function capitalize(str: string): string {
   if (!isString(str)) return '';

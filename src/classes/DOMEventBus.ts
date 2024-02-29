@@ -1,7 +1,9 @@
+import getWindow from '../utils/browser/getWindow';
 import { EventCallback } from '../utils/types';
 import { Nullable } from '../utils/utilityTypes';
 
 /**
+ * @important --Browser Only--
  * @description DOMEventBus class implementation tailored for the Document Object Model (DOM). It serves as a centralized event manager, allowing components to subscribe to and publish custom events within a web application. With methods like subscribe, unsubscribe, and publish, it enables a modular and efficient communication system, enhancing the decoupling of components. This class leverages standard DOM event handling mechanisms, such as addEventListener and dispatchEvent, to facilitate seamless interaction and information exchange between different parts of a web application.
  * @example
  * 
@@ -40,11 +42,12 @@ defaultEventBus.unsubscribe('DefaultEvent', handleDefaultEvent);
  */
 export default class DOMEventBus {
   private eventBusContainer: DocumentFragment | HTMLElement;
+  private document = getWindow().document;
 
   constructor(eventBusContainer?: Nullable<DocumentFragment | HTMLElement>) {
     // Use the provided eventBusContainer or create a DocumentFragment
     this.eventBusContainer =
-      eventBusContainer || document.createDocumentFragment();
+      eventBusContainer || this.document.createDocumentFragment();
   }
 
   // Method to subscribe to an event

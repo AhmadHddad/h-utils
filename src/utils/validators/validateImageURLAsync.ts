@@ -1,5 +1,12 @@
 import isBrowser from '../validation/isBrowser';
 
+
+/**
+ * @description will validate the passed image url, it will make a fetch call to the passed url,
+ * and check if it returns a valid image or not.
+ * @example validateImageURLAsync("valid-image-url").then(v => console.log(v)) // true
+ * @example validateImageURLAsync("invalid-image-url").then(v => console.log(v)) // false
+ */
 export default function validateImageURLAsync(url: string): Promise<boolean> {
   if (isBrowser()) {
     const img = new Image();

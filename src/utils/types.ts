@@ -533,3 +533,6 @@ export type NetworkRequestList = (
   | Response
   | Parameters<typeof fetch>
 )[];
+
+export type ConsoleRecordKeys = 'error' | 'log' | 'info' | 'table' | 'warn';
+export type ConsoleRecord = Record<ConsoleRecordKeys, { time: string; value: any[] }[]>;
