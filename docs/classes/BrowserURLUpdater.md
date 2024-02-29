@@ -63,7 +63,7 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 #### Defined in
 
-[src/classes/BrowserURLUpdater.ts:19](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/classes/BrowserURLUpdater.ts#L19)
+[src/classes/BrowserURLUpdater.ts:19](https://github.com/AhmadHddad/h-utils/blob/c63bc83/src/classes/BrowserURLUpdater.ts#L19)
 
 ## Properties
 
@@ -73,7 +73,7 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 #### Defined in
 
-[src/classes/BrowserURLUpdater.ts:16](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/classes/BrowserURLUpdater.ts#L16)
+[src/classes/BrowserURLUpdater.ts:16](https://github.com/AhmadHddad/h-utils/blob/c63bc83/src/classes/BrowserURLUpdater.ts#L16)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[src/classes/BrowserURLUpdater.ts:17](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/classes/BrowserURLUpdater.ts#L17)
+[src/classes/BrowserURLUpdater.ts:17](https://github.com/AhmadHddad/h-utils/blob/c63bc83/src/classes/BrowserURLUpdater.ts#L17)
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 #### Defined in
 
-[src/classes/BrowserURLUpdater.ts:15](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/classes/BrowserURLUpdater.ts#L15)
+[src/classes/BrowserURLUpdater.ts:15](https://github.com/AhmadHddad/h-utils/blob/c63bc83/src/classes/BrowserURLUpdater.ts#L15)
 
 ## Accessors
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[src/classes/BrowserURLUpdater.ts:89](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/classes/BrowserURLUpdater.ts#L89)
+[src/classes/BrowserURLUpdater.ts:89](https://github.com/AhmadHddad/h-utils/blob/c63bc83/src/classes/BrowserURLUpdater.ts#L89)
 
 • `set` **reload**(`value`): `void`
 
@@ -123,7 +123,7 @@ ___
 
 #### Defined in
 
-[src/classes/BrowserURLUpdater.ts:93](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/classes/BrowserURLUpdater.ts#L93)
+[src/classes/BrowserURLUpdater.ts:93](https://github.com/AhmadHddad/h-utils/blob/c63bc83/src/classes/BrowserURLUpdater.ts#L93)
 
 ___
 
@@ -137,7 +137,7 @@ ___
 
 #### Defined in
 
-[src/classes/BrowserURLUpdater.ts:97](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/classes/BrowserURLUpdater.ts#L97)
+[src/classes/BrowserURLUpdater.ts:97](https://github.com/AhmadHddad/h-utils/blob/c63bc83/src/classes/BrowserURLUpdater.ts#L97)
 
 • `set` **state**(`value`): `void`
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-[src/classes/BrowserURLUpdater.ts:101](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/classes/BrowserURLUpdater.ts#L101)
+[src/classes/BrowserURLUpdater.ts:101](https://github.com/AhmadHddad/h-utils/blob/c63bc83/src/classes/BrowserURLUpdater.ts#L101)
 
 ___
 
@@ -167,7 +167,7 @@ ___
 
 #### Defined in
 
-[src/classes/BrowserURLUpdater.ts:85](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/classes/BrowserURLUpdater.ts#L85)
+[src/classes/BrowserURLUpdater.ts:85](https://github.com/AhmadHddad/h-utils/blob/c63bc83/src/classes/BrowserURLUpdater.ts#L85)
 
 • `set` **url**(`value`): `void`
 
@@ -183,7 +183,7 @@ ___
 
 #### Defined in
 
-[src/classes/BrowserURLUpdater.ts:81](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/classes/BrowserURLUpdater.ts#L81)
+[src/classes/BrowserURLUpdater.ts:81](https://github.com/AhmadHddad/h-utils/blob/c63bc83/src/classes/BrowserURLUpdater.ts#L81)
 
 ## Methods
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-[src/classes/BrowserURLUpdater.ts:72](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/classes/BrowserURLUpdater.ts#L72)
+[src/classes/BrowserURLUpdater.ts:72](https://github.com/AhmadHddad/h-utils/blob/c63bc83/src/classes/BrowserURLUpdater.ts#L72)
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-[src/classes/BrowserURLUpdater.ts:53](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/classes/BrowserURLUpdater.ts#L53)
+[src/classes/BrowserURLUpdater.ts:53](https://github.com/AhmadHddad/h-utils/blob/c63bc83/src/classes/BrowserURLUpdater.ts#L53)
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-[src/classes/BrowserURLUpdater.ts:49](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/classes/BrowserURLUpdater.ts#L49)
+[src/classes/BrowserURLUpdater.ts:49](https://github.com/AhmadHddad/h-utils/blob/c63bc83/src/classes/BrowserURLUpdater.ts#L49)
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 #### Defined in
 
-[src/classes/BrowserURLUpdater.ts:76](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/classes/BrowserURLUpdater.ts#L76)
+[src/classes/BrowserURLUpdater.ts:76](https://github.com/AhmadHddad/h-utils/blob/c63bc83/src/classes/BrowserURLUpdater.ts#L76)
 
 ___
 
@@ -259,7 +259,7 @@ ___
 
 #### Defined in
 
-[src/classes/BrowserURLUpdater.ts:62](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/classes/BrowserURLUpdater.ts#L62)
+[src/classes/BrowserURLUpdater.ts:62](https://github.com/AhmadHddad/h-utils/blob/c63bc83/src/classes/BrowserURLUpdater.ts#L62)
 
 ___
 
@@ -279,7 +279,7 @@ ___
 
 #### Defined in
 
-[src/classes/BrowserURLUpdater.ts:44](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/classes/BrowserURLUpdater.ts#L44)
+[src/classes/BrowserURLUpdater.ts:44](https://github.com/AhmadHddad/h-utils/blob/c63bc83/src/classes/BrowserURLUpdater.ts#L44)
 
 ___
 
@@ -299,7 +299,7 @@ ___
 
 #### Defined in
 
-[src/classes/BrowserURLUpdater.ts:67](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/classes/BrowserURLUpdater.ts#L67)
+[src/classes/BrowserURLUpdater.ts:67](https://github.com/AhmadHddad/h-utils/blob/c63bc83/src/classes/BrowserURLUpdater.ts#L67)
 
 ___
 
@@ -319,7 +319,7 @@ ___
 
 #### Defined in
 
-[src/classes/BrowserURLUpdater.ts:57](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/classes/BrowserURLUpdater.ts#L57)
+[src/classes/BrowserURLUpdater.ts:57](https://github.com/AhmadHddad/h-utils/blob/c63bc83/src/classes/BrowserURLUpdater.ts#L57)
 
 ___
 
@@ -340,7 +340,7 @@ ___
 
 #### Defined in
 
-[src/classes/BrowserURLUpdater.ts:35](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/classes/BrowserURLUpdater.ts#L35)
+[src/classes/BrowserURLUpdater.ts:35](https://github.com/AhmadHddad/h-utils/blob/c63bc83/src/classes/BrowserURLUpdater.ts#L35)
 
 ___
 
@@ -354,4 +354,4 @@ ___
 
 #### Defined in
 
-[src/classes/BrowserURLUpdater.ts:26](https://github.com/AhmadHddad/h-utils/blob/c0d035d/src/classes/BrowserURLUpdater.ts#L26)
+[src/classes/BrowserURLUpdater.ts:26](https://github.com/AhmadHddad/h-utils/blob/c63bc83/src/classes/BrowserURLUpdater.ts#L26)
