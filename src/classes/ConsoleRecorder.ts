@@ -1,9 +1,4 @@
-// import { ConsoleRecord } from '../utils/types';
-export type ConsoleRecordKeys = 'error' | 'log' | 'info' | 'table' | 'warn';
-export type ConsoleRecord = Record<
-  ConsoleRecordKeys,
-  { time: string; value: any[] }[]
->;
+import { ConsoleRecord } from '../utils/types';
 
 /**
  * @description A utility to record all logs 'error' | 'log' | 'info' | 'table' | 'warn', will save them to an object logRecord with time.
