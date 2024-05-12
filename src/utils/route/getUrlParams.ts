@@ -4,6 +4,7 @@ import isString from "../validation/isString";
 /**
  * @description will return the url params of the passed Url
  * @example getUrlParams("www.example.com/1/2") // ["1", "2"]
+ * @example getUrlParams("www.example.com/hello/1/world") // ["1", "2"]
  * @example getUrlParams("www.example2.com/1") // ["1"]
  */
 export default function getUrlParams(
