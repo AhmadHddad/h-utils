@@ -132,6 +132,7 @@ export { default as parseUrl } from './utils/route/parseUrl';
 export { default as pickQueryParamFromUrl } from './utils/route/pickQueryParamFromUrl';
 export { default as removeHashFromUrl } from './utils/route/removeHashFromUrl';
 export { default as stringifyUrl } from './utils/route/stringifyUrl';
+export { default as getUrlPathParams } from './utils/route/getUrlPathParams';
 
 // Style utils
 export { default as classNames } from './utils/style/classNames';
