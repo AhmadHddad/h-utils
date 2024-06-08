@@ -1,3 +1,7 @@
+**hd-utils** • [**Docs**](globals.md)
+
+***
+
 <div align = "center">
    <h1 align = "center">
     hd-utils
@@ -64,4 +68,4 @@ List of utility types:
 
 ## Check the docs
 
-[Docs](https://github.com/AhmadHddad/h-utils/blob/main/docs/globals.md)
+[Docs](https://github.com/AhmadHddad/h-utils/blob/main/docs/index.html)
