@@ -119,6 +119,7 @@ export { default as includeKeys } from './utils/object/includeKeys';
 export { default as joinObjects } from './utils/object/joinObjects';
 export { default as getObjectValueByPath } from './utils/object/getObjectValueByPath';
 export { default as findKeyOrValuePathInObject } from './utils/object/findKeyOrValuePathInObject';
+export { default as objKeyMirror } from './utils/object/objKeyMirror';
 
 // Route utils
 export { default as addHttpToURL } from './utils/route/addHttpToURL';
@@ -173,6 +174,7 @@ export { default as isSymbol } from './utils/validation/isSymbol';
 export { default as isTruthy } from './utils/validation/isTruthy';
 export { default as isUndefined } from './utils/validation/isUndefined';
 export { default as isURL } from './utils/validation/isURL';
+export { default as isURLObj } from './utils/validation/isURLObj';
 export { default as isWhiteSpace } from './utils/validation/isWhiteSpace';
 
 // Browser utils
