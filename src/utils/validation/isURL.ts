@@ -1,4 +1,5 @@
 import { urlRegexForShortStr } from '../../regex/index';
+import isString from './isString';
 
 /**
  * @description will check if the passed input is a valid url, if tryUrlObj will try to create a URL object
@@ -7,7 +8,10 @@ import { urlRegexForShortStr } from '../../regex/index';
  * @example isURL("www.google.com", true) // false
  */
 export default function isURL(input: string, tryUrlObj?: boolean): boolean {
+  if (!isString(input)) return false;
+  
   let res = false;
+
 
   if (tryUrlObj) {
     try {
