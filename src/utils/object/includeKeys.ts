@@ -1,3 +1,5 @@
+import { KeysArr, PredicateFunc } from '../types';
+
 /**
  * @description "It returns a new object that contains only the enumerable properties of the original object that
  * match the predicate."
@@ -17,9 +19,6 @@
  * @returns A new object with the same enumerable properties as the original object, but with the
  * values filtered by the predicate.
  */
-
-import { KeysArr, PredicateFunc } from '../types';
-
 export default function includeKeys<T extends object>(
   object: T,
   predicate: KeysArr | PredicateFunc<T>
