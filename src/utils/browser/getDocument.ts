@@ -1,5 +1,7 @@
 import isBrowser from '../validation/isBrowser';
+import getWindow from './getWindow';
 
+const window = getWindow();
 const documentMock = {
   // Basic properties
   title: 'Mocked Document',

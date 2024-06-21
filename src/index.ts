@@ -189,7 +189,7 @@ export { default as getHtmlElementCoords } from './utils/browser/getHtmlElementC
 export { default as getWindowObj } from './utils/browser/getWindowObj';
 export { default as getWindow } from './utils/browser/getWindow';
 export { default as getDocument } from './utils/browser/getDocument';
-export { default as intersectionObserver } from 'hd-intersection-observer';
+export { default as intersectionObserver, type ObserverInstanceCallback } from './utils/browser/intersectionObserver';
 export { default as onSetInterval } from './utils/browser/animationInterval';
 export { default as setNetworkIdleCallback } from './utils/browser/setNetworkIdleCallback';
 export { default as networkHttpRequestMonitor } from './utils/browser/networkHttpRequestMonitor';
