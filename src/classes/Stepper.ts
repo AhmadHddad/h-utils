@@ -1,4 +1,7 @@
-export type StepFunction<T> = (...args: any[]) => T | undefined;
+type Step<T> = T | ((...args: any[]) => T);
+type Options = Partial<{
+  defaultStepIndex: number;
+}>;
 
 /**
  * @description A class to manage a series of steps, allowing navigation between them.
@@ -9,15 +12,10 @@ export type StepFunction<T> = (...args: any[]) => T | undefined;
  * stepper.previous(); // "step2"
  */
 export default class Stepper<T> {
-  private steps: StepFunction<T>[];
+  private steps: Step<T>[];
   private currentIndex: number;
 
-  constructor(
-    steps: StepFunction<T>[],
-    options?: Partial<{
-      defaultStepIndex: number;
-    }>
-  ) {
+  constructor(steps: Step<T>[], options?: Options) {
     this.steps = steps;
     this.currentIndex = options?.defaultStepIndex ?? -1; // Initialized to -1 to start from the first step on first next() call
   }
@@ -31,10 +29,9 @@ export default class Stepper<T> {
       this.currentIndex++;
 
       if (typeof this.steps[this.currentIndex] === 'function') {
-        return this.steps[this.currentIndex](...(args as any));
+        return (this.steps[this.currentIndex] as any)(...args) as T;
       }
-
-      return this.steps[this.currentIndex]();
+      return this.steps[this.currentIndex] as T;
     }
     return undefined;
   }
@@ -48,21 +45,24 @@ export default class Stepper<T> {
       this.currentIndex--;
 
       if (typeof this.steps[this.currentIndex] === 'function') {
-        return this.steps[this.currentIndex](...(args as any));
+        return (this.steps[this.currentIndex] as any)(...args) as T;
       }
-      return this.steps[this.currentIndex]();
+      return this.steps[this.currentIndex] as T;
     }
-
     return undefined;
   }
 
   /**
    * Returns the value of the current step without changing the current index.
    */
-  current(): T | undefined {
+  current(...args: any[]): T | undefined {
     if (this.currentIndex >= 0 && this.currentIndex < this.steps.length) {
-      return this.steps[this.currentIndex]();
+      if (typeof this.steps[this.currentIndex] === 'function') {
+        return (this.steps[this.currentIndex] as any)(...args) as T;
+      }
+      return this.steps[this.currentIndex] as T;
     }
+
     return undefined;
   }
 
@@ -77,7 +77,7 @@ export default class Stepper<T> {
    * Sets a new set of steps and resets the stepper.
    * @param steps - An array of step functions.
    */
-  setSteps(steps: StepFunction<T>[]): void {
+  setSteps(steps: (Step<T> | T)[]): void {
     this.steps = steps;
     this.reset();
   }
