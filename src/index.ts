@@ -119,7 +119,7 @@ export { default as includeKeys } from './utils/object/includeKeys';
 export { default as joinObjects } from './utils/object/joinObjects';
 export { default as getObjectValueByPath } from './utils/object/getObjectValueByPath';
 export { default as findKeyOrValuePathInObject } from './utils/object/findKeyOrValuePathInObject';
-export { default as objKeyMirror } from './utils/object/objKeyMirror';
+export { default as createMirroredObject, type TransformCallback } from './utils/object/createMirroredObject';
 
 // Route utils
 export { default as addHttpToURL } from './utils/route/addHttpToURL';
