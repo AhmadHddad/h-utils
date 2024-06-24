@@ -5,6 +5,7 @@ export { default as TwoWayBinder } from './classes/TwoWayBinder';
 export { default as DOMEventBus } from './classes/DOMEventBus';
 export { default as BrowserURLUpdater } from './classes/BrowserURLUpdater';
 export { default as ConsoleRecorder } from './classes/ConsoleRecorder';
+export { default as Stepper, type StepFunction } from './classes/Stepper';
 
 
 // constants
