@@ -64,7 +64,7 @@ export default function stringifyUrl(
     const urlObjectForFragmentEncode = new URL(url);
     urlObjectForFragmentEncode.hash = object.fragmentIdentifier;
     options ??= {};
-    hash = options[encodeFragmentIdentifier]
+    hash = (options as any)[encodeFragmentIdentifier]
       ? urlObjectForFragmentEncode.hash
       : `#${object.fragmentIdentifier}`;
   }
