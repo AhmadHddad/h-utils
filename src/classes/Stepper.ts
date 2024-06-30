@@ -13,11 +13,21 @@ type Options = Partial<{
  */
 export default class Stepper<T> {
   private steps: Step<T>[];
+  private defaultStepIndex: number;
   private currentIndex: number;
 
   constructor(steps: Step<T>[], options?: Options) {
     this.steps = steps;
+    this.defaultStepIndex = options?.defaultStepIndex ?? -1;
     this.currentIndex = options?.defaultStepIndex ?? -1; // Initialized to -1 to start from the first step on first next() call
+  }
+
+  getCurrentStepIndex(): number {
+    return this.currentIndex;
+  }
+
+  getSteps(): Step<T>[] {
+    return this.steps;
   }
 
   /**
@@ -28,7 +38,7 @@ export default class Stepper<T> {
     if (this.currentIndex < this.steps.length - 1) {
       this.currentIndex++;
 
-      if (typeof this.steps[this.currentIndex] === 'function') {
+      if (typeof this.steps[this.currentIndex] === "function") {
         return (this.steps[this.currentIndex] as any)(...args) as T;
       }
       return this.steps[this.currentIndex] as T;
@@ -44,7 +54,7 @@ export default class Stepper<T> {
     if (this.currentIndex > 0) {
       this.currentIndex--;
 
-      if (typeof this.steps[this.currentIndex] === 'function') {
+      if (typeof this.steps[this.currentIndex] === "function") {
         return (this.steps[this.currentIndex] as any)(...args) as T;
       }
       return this.steps[this.currentIndex] as T;
@@ -57,7 +67,7 @@ export default class Stepper<T> {
    */
   current(...args: any[]): T | undefined {
     if (this.currentIndex >= 0 && this.currentIndex < this.steps.length) {
-      if (typeof this.steps[this.currentIndex] === 'function') {
+      if (typeof this.steps[this.currentIndex] === "function") {
         return (this.steps[this.currentIndex] as any)(...args) as T;
       }
       return this.steps[this.currentIndex] as T;
@@ -70,7 +80,7 @@ export default class Stepper<T> {
    * Resets the stepper to the initial step.
    */
   reset(): void {
-    this.currentIndex = -1;
+    this.currentIndex = this.defaultStepIndex;
   }
 
   /**
