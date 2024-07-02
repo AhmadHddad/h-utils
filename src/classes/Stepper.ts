@@ -1,6 +1,7 @@
 type Step<T> = T | ((...args: any[]) => T);
 type Options = Partial<{
   defaultStepIndex: number;
+  circularPoint: boolean;
 }>;
 
 /**
@@ -15,11 +16,13 @@ export default class Stepper<T> {
   private steps: Step<T>[];
   private defaultStepIndex: number;
   private currentIndex: number;
+  private isCircular: boolean;
 
   constructor(steps: Step<T>[], options?: Options) {
     this.steps = steps;
-    this.defaultStepIndex = options?.defaultStepIndex ?? -1;
-    this.currentIndex = options?.defaultStepIndex ?? -1; // Initialized to -1 to start from the first step on first next() call
+    this.defaultStepIndex = options?.defaultStepIndex ?? 0;
+    this.isCircular = !!options?.circularPoint;
+    this.currentIndex = options?.defaultStepIndex ?? 0;
   }
 
   getCurrentStepIndex(): number {
@@ -38,10 +41,13 @@ export default class Stepper<T> {
     if (this.currentIndex < this.steps.length - 1) {
       this.currentIndex++;
 
-      if (typeof this.steps[this.currentIndex] === "function") {
+      if (typeof this.steps[this.currentIndex] === 'function') {
         return (this.steps[this.currentIndex] as any)(...args) as T;
       }
       return this.steps[this.currentIndex] as T;
+    } else if (this.isCircular) {
+      this.currentIndex = this.defaultStepIndex;
+      return this.current(...args);
     }
     return undefined;
   }
@@ -54,10 +60,13 @@ export default class Stepper<T> {
     if (this.currentIndex > 0) {
       this.currentIndex--;
 
-      if (typeof this.steps[this.currentIndex] === "function") {
+      if (typeof this.steps[this.currentIndex] === 'function') {
         return (this.steps[this.currentIndex] as any)(...args) as T;
       }
       return this.steps[this.currentIndex] as T;
+    } else if (this.isCircular) {
+      this.currentIndex = this.steps.length -1;
+      return this.current(...args);
     }
     return undefined;
   }
@@ -67,7 +76,7 @@ export default class Stepper<T> {
    */
   current(...args: any[]): T | undefined {
     if (this.currentIndex >= 0 && this.currentIndex < this.steps.length) {
-      if (typeof this.steps[this.currentIndex] === "function") {
+      if (typeof this.steps[this.currentIndex] === 'function') {
         return (this.steps[this.currentIndex] as any)(...args) as T;
       }
       return this.steps[this.currentIndex] as T;

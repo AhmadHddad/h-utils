@@ -6,6 +6,7 @@ export { default as DOMEventBus } from './classes/DOMEventBus';
 export { default as BrowserURLUpdater } from './classes/BrowserURLUpdater';
 export { default as ConsoleRecorder } from './classes/ConsoleRecorder';
 export { default as Stepper } from './classes/Stepper';
+export { default as SemverLite } from './classes/SemverLite';
 
 
 // constants
@@ -217,3 +218,4 @@ export * from './utils/types';
 
 // regex
 export * from './regex/index';
+export * from './regex/semVerLiteRegex';
