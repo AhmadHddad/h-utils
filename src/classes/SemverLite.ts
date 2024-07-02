@@ -8,18 +8,18 @@ export default class SemverLite {
   private static readonly versionRegex = new RegExp(semverLiteFullRegexPattern);
 
   /**
-   * @description Compares two versions and returns true if version1 is larger than version2.
+   * @description Compares two versions and returns true if version1 is greater than version2.
    */
-  static largerThan(version1: string, version2: string): boolean {
+  static greaterThan(version1: string, version2: string): boolean {
     const v1 = SemverLite.parse(version1);
     const v2 = SemverLite.parse(version2);
     return v1 > v2;
   }
 
   /**
-   * @description Compares two versions and returns true if version1 is lower than version2.
+   * @description Compares two versions and returns true if version1 is less than version2.
    */
-  static lowerThan(version1: string, version2: string): boolean {
+  static lessThan(version1: string, version2: string): boolean {
     const v1 = SemverLite.parse(version1);
     const v2 = SemverLite.parse(version2);
     return v1 < v2;
@@ -45,7 +45,7 @@ export default class SemverLite {
    */
   static minVersion(versions: string[]): string {
     return versions.reduce((min, v) =>
-      SemverLite.lowerThan(v, min) ? v : min
+      SemverLite.lessThan(v, min) ? v : min
     );
   }
 
