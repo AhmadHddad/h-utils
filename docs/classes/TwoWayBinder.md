@@ -42,7 +42,7 @@ const inputElement = document.getElementById('textInput') as HTMLInputElement;
 
 #### Source
 
-[src/classes/TwoWayBinder.ts:18](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/TwoWayBinder.ts#L18)
+[src/classes/TwoWayBinder.ts:18](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/TwoWayBinder.ts#L18)
 
 ## Properties
 
@@ -52,7 +52,7 @@ const inputElement = document.getElementById('textInput') as HTMLInputElement;
 
 #### Source
 
-[src/classes/TwoWayBinder.ts:16](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/TwoWayBinder.ts#L16)
+[src/classes/TwoWayBinder.ts:16](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/TwoWayBinder.ts#L16)
 
 ***
 
@@ -62,7 +62,7 @@ const inputElement = document.getElementById('textInput') as HTMLInputElement;
 
 #### Source
 
-[src/classes/TwoWayBinder.ts:14](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/TwoWayBinder.ts#L14)
+[src/classes/TwoWayBinder.ts:14](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/TwoWayBinder.ts#L14)
 
 ***
 
@@ -72,7 +72,7 @@ const inputElement = document.getElementById('textInput') as HTMLInputElement;
 
 #### Source
 
-[src/classes/TwoWayBinder.ts:15](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/TwoWayBinder.ts#L15)
+[src/classes/TwoWayBinder.ts:15](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/TwoWayBinder.ts#L15)
 
 ## Accessors
 
@@ -92,7 +92,7 @@ const inputElement = document.getElementById('textInput') as HTMLInputElement;
 
 #### Source
 
-[src/classes/TwoWayBinder.ts:51](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/TwoWayBinder.ts#L51)
+[src/classes/TwoWayBinder.ts:51](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/TwoWayBinder.ts#L51)
 
 ## Methods
 
@@ -106,7 +106,7 @@ const inputElement = document.getElementById('textInput') as HTMLInputElement;
 
 #### Source
 
-[src/classes/TwoWayBinder.ts:34](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/TwoWayBinder.ts#L34)
+[src/classes/TwoWayBinder.ts:34](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/TwoWayBinder.ts#L34)
 
 ***
 
@@ -120,7 +120,7 @@ const inputElement = document.getElementById('textInput') as HTMLInputElement;
 
 #### Source
 
-[src/classes/TwoWayBinder.ts:38](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/TwoWayBinder.ts#L38)
+[src/classes/TwoWayBinder.ts:38](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/TwoWayBinder.ts#L38)
 
 ***
 
@@ -134,7 +134,7 @@ const inputElement = document.getElementById('textInput') as HTMLInputElement;
 
 #### Source
 
-[src/classes/TwoWayBinder.ts:43](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/TwoWayBinder.ts#L43)
+[src/classes/TwoWayBinder.ts:43](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/TwoWayBinder.ts#L43)
 
 ***
 
@@ -148,4 +148,4 @@ const inputElement = document.getElementById('textInput') as HTMLInputElement;
 
 #### Source
 
-[src/classes/TwoWayBinder.ts:47](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/TwoWayBinder.ts#L47)
+[src/classes/TwoWayBinder.ts:47](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/TwoWayBinder.ts#L47)

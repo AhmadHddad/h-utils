@@ -38,4 +38,4 @@ await attemptAsync(selector =>
 
 ## Source
 
-[src/utils/functions/attemptAsync.ts:10](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/utils/functions/attemptAsync.ts#L10)
+[src/utils/functions/attemptAsync.ts:10](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/functions/attemptAsync.ts#L10)

@@ -45,7 +45,7 @@ console.log(timer.getTime()) // 1000
 
 #### Source
 
-[src/classes/Timer.ts:20](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/Timer.ts#L20)
+[src/classes/Timer.ts:20](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/Timer.ts#L20)
 
 ## Properties
 
@@ -55,7 +55,7 @@ console.log(timer.getTime()) // 1000
 
 #### Source
 
-[src/classes/Timer.ts:16](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/Timer.ts#L16)
+[src/classes/Timer.ts:16](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/Timer.ts#L16)
 
 ***
 
@@ -65,7 +65,7 @@ console.log(timer.getTime()) // 1000
 
 #### Source
 
-[src/classes/Timer.ts:18](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/Timer.ts#L18)
+[src/classes/Timer.ts:18](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/Timer.ts#L18)
 
 ***
 
@@ -75,7 +75,7 @@ console.log(timer.getTime()) // 1000
 
 #### Source
 
-[src/classes/Timer.ts:17](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/Timer.ts#L17)
+[src/classes/Timer.ts:17](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/Timer.ts#L17)
 
 ## Methods
 
@@ -89,7 +89,7 @@ console.log(timer.getTime()) // 1000
 
 #### Source
 
-[src/classes/Timer.ts:24](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/Timer.ts#L24)
+[src/classes/Timer.ts:24](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/Timer.ts#L24)
 
 ***
 
@@ -103,7 +103,7 @@ console.log(timer.getTime()) // 1000
 
 #### Source
 
-[src/classes/Timer.ts:63](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/Timer.ts#L63)
+[src/classes/Timer.ts:63](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/Timer.ts#L63)
 
 ***
 
@@ -117,7 +117,7 @@ console.log(timer.getTime()) // 1000
 
 #### Source
 
-[src/classes/Timer.ts:52](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/Timer.ts#L52)
+[src/classes/Timer.ts:52](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/Timer.ts#L52)
 
 ***
 
@@ -131,7 +131,7 @@ console.log(timer.getTime()) // 1000
 
 #### Source
 
-[src/classes/Timer.ts:32](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/Timer.ts#L32)
+[src/classes/Timer.ts:32](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/Timer.ts#L32)
 
 ***
 
@@ -145,4 +145,4 @@ console.log(timer.getTime()) // 1000
 
 #### Source
 
-[src/classes/Timer.ts:42](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/Timer.ts#L42)
+[src/classes/Timer.ts:42](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/Timer.ts#L42)

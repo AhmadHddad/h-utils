@@ -64,11 +64,6 @@ fsevents@~2.3.2:
   resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz"
   integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
 
-hd-intersection-observer@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/hd-intersection-observer/-/hd-intersection-observer-1.1.1.tgz#99c0c1e23b49bb26383697961bc22b235d614cb4"
-  integrity sha512-RowZZsanfxCP0GAsIcNRdM4XxyJbv+KBHSPLYe8CRyU21Mc6mr7y4IZ/8Z5J3AjcXuEE4A2t73wm2/SEyG5yBw==
-
 jsonc-parser@^3.2.0:
   version "3.2.0"
   resolved "https://registry.npmjs.org/jsonc-parser/-/jsonc-parser-3.2.0.tgz"
@@ -112,6 +107,11 @@ shiki@^0.14.7:
     jsonc-parser "^3.2.0"
     vscode-oniguruma "^1.7.0"
     vscode-textmate "^8.0.0"
+
+tsc@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/tsc/-/tsc-2.0.4.tgz#5f6499146abea5dca4420b451fa4f2f9345238f5"
+  integrity sha512-fzoSieZI5KKJVBYGvwbVZs/J5za84f2lSTLPYf6AGiIf43tZ3GNrI1QzTLcjtyDDP4aLxd46RTZq1nQxe7+k5Q==
 
 tslib@^2.4.0:
   version "2.5.0"

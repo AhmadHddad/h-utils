@@ -54,4 +54,4 @@ getElementCoords(document.getElementById("id"), {precise:true}) // {x:2.123, y:1
 
 ## Source
 
-[src/utils/browser/getHtmlElementCoords.ts:13](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/utils/browser/getHtmlElementCoords.ts#L13)
+[src/utils/browser/getHtmlElementCoords.ts:15](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/browser/getHtmlElementCoords.ts#L15)

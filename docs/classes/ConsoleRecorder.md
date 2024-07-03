@@ -44,7 +44,7 @@ logManager.logRecord.log // [{time:"123", value:["foo"]}]
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:24](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/ConsoleRecorder.ts#L24)
+[src/classes/ConsoleRecorder.ts:24](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/ConsoleRecorder.ts#L24)
 
 ## Properties
 
@@ -54,7 +54,7 @@ logManager.logRecord.log // [{time:"123", value:["foo"]}]
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:16](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/ConsoleRecorder.ts#L16)
+[src/classes/ConsoleRecorder.ts:16](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/ConsoleRecorder.ts#L16)
 
 ***
 
@@ -101,7 +101,7 @@ v0.1.100
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:12](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/ConsoleRecorder.ts#L12)
+[src/classes/ConsoleRecorder.ts:12](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/ConsoleRecorder.ts#L12)
 
 ***
 
@@ -135,7 +135,7 @@ v0.1.100
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:11](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/ConsoleRecorder.ts#L11)
+[src/classes/ConsoleRecorder.ts:11](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/ConsoleRecorder.ts#L11)
 
 ***
 
@@ -181,7 +181,7 @@ v0.1.100
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:10](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/ConsoleRecorder.ts#L10)
+[src/classes/ConsoleRecorder.ts:10](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/ConsoleRecorder.ts#L10)
 
 ***
 
@@ -245,7 +245,7 @@ v10.0.0
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:14](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/ConsoleRecorder.ts#L14)
+[src/classes/ConsoleRecorder.ts:14](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/ConsoleRecorder.ts#L14)
 
 ***
 
@@ -279,7 +279,7 @@ v0.1.100
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:13](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/ConsoleRecorder.ts#L13)
+[src/classes/ConsoleRecorder.ts:13](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/ConsoleRecorder.ts#L13)
 
 ## Accessors
 
@@ -293,7 +293,7 @@ v0.1.100
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:116](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/ConsoleRecorder.ts#L116)
+[src/classes/ConsoleRecorder.ts:116](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/ConsoleRecorder.ts#L116)
 
 ## Methods
 
@@ -307,7 +307,7 @@ v0.1.100
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:60](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/ConsoleRecorder.ts#L60)
+[src/classes/ConsoleRecorder.ts:60](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/ConsoleRecorder.ts#L60)
 
 ***
 
@@ -321,7 +321,7 @@ v0.1.100
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:74](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/ConsoleRecorder.ts#L74)
+[src/classes/ConsoleRecorder.ts:74](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/ConsoleRecorder.ts#L74)
 
 ***
 
@@ -335,7 +335,7 @@ v0.1.100
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:46](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/ConsoleRecorder.ts#L46)
+[src/classes/ConsoleRecorder.ts:46](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/ConsoleRecorder.ts#L46)
 
 ***
 
@@ -349,7 +349,7 @@ v0.1.100
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:102](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/ConsoleRecorder.ts#L102)
+[src/classes/ConsoleRecorder.ts:102](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/ConsoleRecorder.ts#L102)
 
 ***
 
@@ -363,7 +363,7 @@ v0.1.100
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:88](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/ConsoleRecorder.ts#L88)
+[src/classes/ConsoleRecorder.ts:88](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/ConsoleRecorder.ts#L88)
 
 ***
 
@@ -377,4 +377,4 @@ v0.1.100
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:120](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/ConsoleRecorder.ts#L120)
+[src/classes/ConsoleRecorder.ts:120](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/ConsoleRecorder.ts#L120)

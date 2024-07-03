@@ -119,4 +119,4 @@ const status = debounced.pending() ? "Pending..." : "Ready"
 
 ## Source
 
-[src/utils/functions/debounce.ts:68](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/utils/functions/debounce.ts#L68)
+[src/utils/functions/debounce.ts:68](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/functions/debounce.ts#L68)

@@ -45,7 +45,7 @@ eventBus.publish('event1', { message: 'This will not be handled.' });
 
 #### Source
 
-[src/classes/EventBus.ts:30](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/EventBus.ts#L30)
+[src/classes/EventBus.ts:30](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/EventBus.ts#L30)
 
 ## Properties
 
@@ -55,7 +55,7 @@ eventBus.publish('event1', { message: 'This will not be handled.' });
 
 #### Source
 
-[src/classes/EventBus.ts:28](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/EventBus.ts#L28)
+[src/classes/EventBus.ts:28](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/EventBus.ts#L28)
 
 ## Methods
 
@@ -75,7 +75,7 @@ eventBus.publish('event1', { message: 'This will not be handled.' });
 
 #### Source
 
-[src/classes/EventBus.ts:63](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/EventBus.ts#L63)
+[src/classes/EventBus.ts:63](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/EventBus.ts#L63)
 
 ***
 
@@ -95,7 +95,7 @@ eventBus.publish('event1', { message: 'This will not be handled.' });
 
 #### Source
 
-[src/classes/EventBus.ts:36](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/EventBus.ts#L36)
+[src/classes/EventBus.ts:36](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/EventBus.ts#L36)
 
 ***
 
@@ -115,4 +115,4 @@ eventBus.publish('event1', { message: 'This will not be handled.' });
 
 #### Source
 
-[src/classes/EventBus.ts:50](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/EventBus.ts#L50)
+[src/classes/EventBus.ts:50](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/EventBus.ts#L50)

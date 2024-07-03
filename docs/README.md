@@ -68,4 +68,4 @@ List of utility types:
 
 ## Check the docs
 
-[Docs](https://github.com/AhmadHddad/h-utils/blob/main/docs/index.html)
+[Docs](https://github.com/AhmadHddad/h-utils/blob/main/docs/globals.md)

@@ -25,13 +25,13 @@ Stringify an object into a URL with a query string and sorting the keys. The inv
 ## Example
 
 ```
-queryString.stringifyUrl({url: 'https://foo.bar', query: {foo: 'bar'}});
+stringifyUrl({url: 'https://foo.bar', query: {foo: 'bar'}});
 //=> 'https://foo.bar?foo=bar'
 
-queryString.stringifyUrl({url: 'https://foo.bar?foo=baz', query: {foo: 'bar'}});
+stringifyUrl({url: 'https://foo.bar?foo=baz', query: {foo: 'bar'}});
 //=> 'https://foo.bar?foo=bar'
 
-queryString.stringifyUrl({
+stringifyUrl({
    url: 'https://foo.bar',
    query: {
        top: 'foo'
@@ -40,7 +40,7 @@ queryString.stringifyUrl({
 });
 //=> 'https://foo.bar?top=foo#bar'
 
-queryString.stringifyUrl({
+stringifyUrl({
    url: 'https://foo.bar',
    params: [1,"foo"]
 }); //=> 'https://foo.bar/1/foo
@@ -48,4 +48,4 @@ queryString.stringifyUrl({
 
 ## Source
 
-[src/utils/route/stringifyUrl.ts:32](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/utils/route/stringifyUrl.ts#L32)
+[src/utils/route/stringifyUrl.ts:32](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/route/stringifyUrl.ts#L32)
