@@ -198,7 +198,7 @@ node\_modules/typescript/lib/lib.es2015.iterable.d.ts:126
 
 #### Source
 
-[src/classes/HMap.ts:50](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/HMap.ts#L50)
+[src/classes/HMap.ts:50](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/HMap.ts#L50)
 
 ***
 
@@ -216,7 +216,7 @@ node\_modules/typescript/lib/lib.es2015.iterable.d.ts:126
 
 #### Source
 
-[src/classes/HMap.ts:6](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/HMap.ts#L6)
+[src/classes/HMap.ts:6](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/HMap.ts#L6)
 
 ***
 
@@ -234,7 +234,7 @@ node\_modules/typescript/lib/lib.es2015.iterable.d.ts:126
 
 #### Source
 
-[src/classes/HMap.ts:38](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/HMap.ts#L38)
+[src/classes/HMap.ts:38](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/HMap.ts#L38)
 
 ***
 
@@ -300,7 +300,7 @@ node\_modules/typescript/lib/lib.es2015.collection.d.ts:36
 
 #### Source
 
-[src/classes/HMap.ts:56](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/HMap.ts#L56)
+[src/classes/HMap.ts:56](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/HMap.ts#L56)
 
 ***
 
@@ -314,7 +314,7 @@ node\_modules/typescript/lib/lib.es2015.collection.d.ts:36
 
 #### Source
 
-[src/classes/HMap.ts:66](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/HMap.ts#L66)
+[src/classes/HMap.ts:66](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/HMap.ts#L66)
 
 ***
 
@@ -328,7 +328,7 @@ node\_modules/typescript/lib/lib.es2015.collection.d.ts:36
 
 #### Source
 
-[src/classes/HMap.ts:18](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/HMap.ts#L18)
+[src/classes/HMap.ts:18](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/HMap.ts#L18)
 
 ***
 
@@ -394,7 +394,7 @@ node\_modules/typescript/lib/lib.es2015.iterable.d.ts:131
 
 #### Source
 
-[src/classes/HMap.ts:22](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/HMap.ts#L22)
+[src/classes/HMap.ts:22](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/HMap.ts#L22)
 
 ***
 
@@ -416,7 +416,7 @@ node\_modules/typescript/lib/lib.es2015.iterable.d.ts:131
 
 #### Source
 
-[src/classes/HMap.ts:30](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/HMap.ts#L30)
+[src/classes/HMap.ts:30](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/HMap.ts#L30)
 
 ***
 
@@ -460,7 +460,7 @@ node\_modules/typescript/lib/lib.es2015.collection.d.ts:44
 
 #### Source
 
-[src/classes/HMap.ts:60](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/HMap.ts#L60)
+[src/classes/HMap.ts:60](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/HMap.ts#L60)
 
 ***
 
@@ -474,7 +474,7 @@ node\_modules/typescript/lib/lib.es2015.collection.d.ts:44
 
 #### Source
 
-[src/classes/HMap.ts:70](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/HMap.ts#L70)
+[src/classes/HMap.ts:70](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/HMap.ts#L70)
 
 ***
 
@@ -518,4 +518,4 @@ node\_modules/typescript/lib/lib.es2015.iterable.d.ts:136
 
 #### Source
 
-[src/classes/HMap.ts:2](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/HMap.ts#L2)
+[src/classes/HMap.ts:2](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/HMap.ts#L2)

@@ -34,4 +34,4 @@ isTruthy(null) // false
 
 ## Source
 
-[src/utils/validation/isTruthy.ts:7](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/utils/validation/isTruthy.ts#L7)
+[src/utils/validation/isTruthy.ts:7](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/validation/isTruthy.ts#L7)

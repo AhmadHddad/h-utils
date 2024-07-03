@@ -1,13 +1,13 @@
 {
-  "version": "1.2.3",
+  "version": "1.2.4",
   "license": "MIT",
-  "main": "lib/index.js",
   "description": "A handy utils for modern JS developers",
-  "module": "lib/index.js",
-  "type": "module",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
   "sideEffects": false,
   "files": [
-    "lib/"
+    "lib/",
+    "esm/"
   ],
   "types": "lib/index.d.ts",
   "typings": "lib/index.d.ts",
@@ -16,15 +16,11 @@
   },
   "scripts": {
     "build:cjs": "tsc",
-    "build:es": "tsc -m esNext --outDir lib",
-    "build": "yarn build:cjs && yarn build:es && yarn run fix",
+    "build:es": "tsc -m esNext --outDir esm",
+    "build": "yarn build:cjs && yarn build:es",
+    "prepare": "yarn run build",
     "fix": "fix-esm-import-path lib/index.js",
     "docs": "npx typedoc src/index.ts"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint"
-    }
   },
   "prettier": {
     "printWidth": 80,
@@ -63,11 +59,9 @@
     "agadoo": "^3.0.0",
     "fix-esm-import-path": "^1.4.0",
     "tslib": "^2.4.0",
+    "tsc": "^2.0.4",
     "typedoc": "^0.25.13",
     "typedoc-plugin-markdown": "4.0.3",
     "typescript": "^4.8.3"
-  },
-  "dependencies": {
-    "hd-intersection-observer": "^1.1.1"
   }
 }

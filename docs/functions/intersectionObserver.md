@@ -6,7 +6,7 @@
 
 # Function: intersectionObserver()
 
-> **intersectionObserver**(`elementOrElements`, `callback`, `options`?, `fallbackInView`?): () => `void`
+> **intersectionObserver**(`elementOrElements`, `callback`, `options`, `fallbackInView`): () => `void`
 
 ## Parameters
 
@@ -14,15 +14,15 @@
 
 DOM Element or Elements to observe
 
-• **callback**: `ObserverInstanceCallback`
+• **callback**: [`ObserverInstanceCallback`](../type-aliases/ObserverInstanceCallback.md)
 
 Callback function to trigger when intersection status changes
 
-• **options?**: `IntersectionObserverInit`
+• **options**: `IntersectionObserverInit`= `undefined`
 
 Intersection Observer options
 
-• **fallbackInView?**: `boolean`
+• **fallbackInView**: `undefined` \| `boolean`= `unsupportedValue`
 
 Fallback inView value.
 
@@ -58,4 +58,4 @@ observer();
 
 ## Source
 
-node\_modules/hd-intersection-observer/dist/index.d.ts:43
+[src/utils/browser/intersectionObserver.ts:147](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/browser/intersectionObserver.ts#L147)

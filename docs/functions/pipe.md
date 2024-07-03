@@ -51,7 +51,7 @@ const result: number = differenceThenAdd1(5, 4); //2
 
 ### Source
 
-[src/utils/functions/pipe.ts:16](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/utils/functions/pipe.ts#L16)
+[src/utils/functions/pipe.ts:16](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/functions/pipe.ts#L16)
 
 ## pipe(ab, bc)
 
@@ -85,7 +85,7 @@ const result: number = differenceThenAdd1(5, 4); //2
 
 ### Source
 
-[src/utils/functions/pipe.ts:19](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/utils/functions/pipe.ts#L19)
+[src/utils/functions/pipe.ts:19](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/functions/pipe.ts#L19)
 
 ## pipe(ab, bc, cd)
 
@@ -123,7 +123,7 @@ const result: number = differenceThenAdd1(5, 4); //2
 
 ### Source
 
-[src/utils/functions/pipe.ts:23](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/utils/functions/pipe.ts#L23)
+[src/utils/functions/pipe.ts:23](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/functions/pipe.ts#L23)
 
 ## pipe(ab, bc, cd, de)
 
@@ -165,7 +165,7 @@ const result: number = differenceThenAdd1(5, 4); //2
 
 ### Source
 
-[src/utils/functions/pipe.ts:28](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/utils/functions/pipe.ts#L28)
+[src/utils/functions/pipe.ts:28](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/functions/pipe.ts#L28)
 
 ## pipe(ab, bc, cd, de, ef)
 
@@ -211,7 +211,7 @@ const result: number = differenceThenAdd1(5, 4); //2
 
 ### Source
 
-[src/utils/functions/pipe.ts:34](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/utils/functions/pipe.ts#L34)
+[src/utils/functions/pipe.ts:34](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/functions/pipe.ts#L34)
 
 ## pipe(ab, bc, cd, de, ef, fg)
 
@@ -261,7 +261,7 @@ const result: number = differenceThenAdd1(5, 4); //2
 
 ### Source
 
-[src/utils/functions/pipe.ts:41](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/utils/functions/pipe.ts#L41)
+[src/utils/functions/pipe.ts:41](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/functions/pipe.ts#L41)
 
 ## pipe(ab, bc, cd, de, ef, fg, gh)
 
@@ -315,7 +315,7 @@ const result: number = differenceThenAdd1(5, 4); //2
 
 ### Source
 
-[src/utils/functions/pipe.ts:49](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/utils/functions/pipe.ts#L49)
+[src/utils/functions/pipe.ts:49](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/functions/pipe.ts#L49)
 
 ## pipe(ab, bc, cd, de, ef, fg, gh, hi)
 
@@ -373,7 +373,7 @@ const result: number = differenceThenAdd1(5, 4); //2
 
 ### Source
 
-[src/utils/functions/pipe.ts:58](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/utils/functions/pipe.ts#L58)
+[src/utils/functions/pipe.ts:58](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/functions/pipe.ts#L58)
 
 ## pipe(ab, bc, cd, de, ef, fg, gh, hi, ij)
 
@@ -435,4 +435,4 @@ const result: number = differenceThenAdd1(5, 4); //2
 
 ### Source
 
-[src/utils/functions/pipe.ts:68](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/utils/functions/pipe.ts#L68)
+[src/utils/functions/pipe.ts:68](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/functions/pipe.ts#L68)

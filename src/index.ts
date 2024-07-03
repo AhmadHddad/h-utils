@@ -5,6 +5,8 @@ export { default as TwoWayBinder } from './classes/TwoWayBinder';
 export { default as DOMEventBus } from './classes/DOMEventBus';
 export { default as BrowserURLUpdater } from './classes/BrowserURLUpdater';
 export { default as ConsoleRecorder } from './classes/ConsoleRecorder';
+export { default as StepDeque } from './classes/StepDeque';
+export { default as SemverLite } from './classes/SemverLite';
 
 
 // constants
@@ -119,7 +121,7 @@ export { default as includeKeys } from './utils/object/includeKeys';
 export { default as joinObjects } from './utils/object/joinObjects';
 export { default as getObjectValueByPath } from './utils/object/getObjectValueByPath';
 export { default as findKeyOrValuePathInObject } from './utils/object/findKeyOrValuePathInObject';
-export { default as objKeyMirror } from './utils/object/objKeyMirror';
+export { default as createMirroredObject, type TransformCallback } from './utils/object/createMirroredObject';
 
 // Route utils
 export { default as addHttpToURL } from './utils/route/addHttpToURL';
@@ -189,7 +191,7 @@ export { default as getHtmlElementCoords } from './utils/browser/getHtmlElementC
 export { default as getWindowObj } from './utils/browser/getWindowObj';
 export { default as getWindow } from './utils/browser/getWindow';
 export { default as getDocument } from './utils/browser/getDocument';
-export { default as intersectionObserver } from 'hd-intersection-observer';
+export { default as intersectionObserver, type ObserverInstanceCallback } from './utils/browser/intersectionObserver';
 export { default as onSetInterval } from './utils/browser/animationInterval';
 export { default as setNetworkIdleCallback } from './utils/browser/setNetworkIdleCallback';
 export { default as networkHttpRequestMonitor } from './utils/browser/networkHttpRequestMonitor';
@@ -216,3 +218,4 @@ export * from './utils/types';
 
 // regex
 export * from './regex/index';
+export * from './regex/semVerLiteRegex';

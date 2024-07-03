@@ -30,4 +30,4 @@ parseNumber("123 ") => 123
 
 ## Source
 
-[src/utils/string/parseNumber.ts:9](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/utils/string/parseNumber.ts#L9)
+[src/utils/string/parseNumber.ts:9](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/string/parseNumber.ts#L9)

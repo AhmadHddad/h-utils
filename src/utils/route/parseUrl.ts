@@ -9,12 +9,10 @@ import { ParsedUrl, ParseOptions } from '../types';
  * If the `parseFragmentIdentifier` option is `true`, the object will also contain a `fragmentIdentifier` property.
  * @example
 ```
-import queryString from 'query-string';
-
-queryString.parseUrl('https://foo.bar?foo=bar');
+parseUrl('https://foo.bar?foo=bar');
 //=> {url: 'https://foo.bar', query: {foo: 'bar'}}
 
-queryString.parseUrl('https://foo.bar?foo=bar#xyz', {parseFragmentIdentifier: true});
+parseUrl('https://foo.bar?foo=bar#xyz', {parseFragmentIdentifier: true});
 //=> {url: 'https://foo.bar', query: {foo: 'bar'}, fragmentIdentifier: 'xyz'}
 ```
 */

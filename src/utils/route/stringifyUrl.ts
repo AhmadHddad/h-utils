@@ -9,13 +9,13 @@ import { StringifyOptions, UrlObject } from '../types';
  * @description Stringify an object into a URL with a query string and sorting the keys. The inverse of .parseUrl();
 * @example
 ```
-queryString.stringifyUrl({url: 'https://foo.bar', query: {foo: 'bar'}});
+stringifyUrl({url: 'https://foo.bar', query: {foo: 'bar'}});
 //=> 'https://foo.bar?foo=bar'
 
-queryString.stringifyUrl({url: 'https://foo.bar?foo=baz', query: {foo: 'bar'}});
+stringifyUrl({url: 'https://foo.bar?foo=baz', query: {foo: 'bar'}});
 //=> 'https://foo.bar?foo=bar'
 
-queryString.stringifyUrl({
+stringifyUrl({
     url: 'https://foo.bar',
     query: {
         top: 'foo'
@@ -24,7 +24,7 @@ queryString.stringifyUrl({
 });
 //=> 'https://foo.bar?top=foo#bar'
 
-queryString.stringifyUrl({
+stringifyUrl({
     url: 'https://foo.bar',
     params: [1,"foo"]
 }); //=> 'https://foo.bar/1/foo
@@ -64,7 +64,7 @@ export default function stringifyUrl(
     const urlObjectForFragmentEncode = new URL(url);
     urlObjectForFragmentEncode.hash = object.fragmentIdentifier;
     options ??= {};
-    hash = options[encodeFragmentIdentifier]
+    hash = (options as any)[encodeFragmentIdentifier]
       ? urlObjectForFragmentEncode.hash
       : `#${object.fragmentIdentifier}`;
   }

@@ -11,7 +11,7 @@ export default function hexToRgbA(
 ): string {
   if (!isHexColor(hex)) throw new Error('Bad Hex');
 
-  let c;
+  let c: any;
   c = hex.substring(1).split('');
   if (c.length == 3) {
     c = [c[0], c[0], c[1], c[1], c[2], c[2]];

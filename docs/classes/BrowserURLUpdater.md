@@ -39,7 +39,7 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 #### Source
 
-[src/classes/BrowserURLUpdater.ts:19](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/BrowserURLUpdater.ts#L19)
+[src/classes/BrowserURLUpdater.ts:19](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/BrowserURLUpdater.ts#L19)
 
 ## Properties
 
@@ -49,7 +49,7 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 #### Source
 
-[src/classes/BrowserURLUpdater.ts:16](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/BrowserURLUpdater.ts#L16)
+[src/classes/BrowserURLUpdater.ts:16](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/BrowserURLUpdater.ts#L16)
 
 ***
 
@@ -59,7 +59,7 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 #### Source
 
-[src/classes/BrowserURLUpdater.ts:17](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/BrowserURLUpdater.ts#L17)
+[src/classes/BrowserURLUpdater.ts:17](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/BrowserURLUpdater.ts#L17)
 
 ***
 
@@ -69,7 +69,7 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 #### Source
 
-[src/classes/BrowserURLUpdater.ts:15](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/BrowserURLUpdater.ts#L15)
+[src/classes/BrowserURLUpdater.ts:15](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/BrowserURLUpdater.ts#L15)
 
 ## Accessors
 
@@ -89,7 +89,7 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 #### Source
 
-[src/classes/BrowserURLUpdater.ts:89](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/BrowserURLUpdater.ts#L89)
+[src/classes/BrowserURLUpdater.ts:89](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/BrowserURLUpdater.ts#L89)
 
 ***
 
@@ -109,7 +109,7 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 #### Source
 
-[src/classes/BrowserURLUpdater.ts:97](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/BrowserURLUpdater.ts#L97)
+[src/classes/BrowserURLUpdater.ts:97](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/BrowserURLUpdater.ts#L97)
 
 ***
 
@@ -129,7 +129,7 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 #### Source
 
-[src/classes/BrowserURLUpdater.ts:85](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/BrowserURLUpdater.ts#L85)
+[src/classes/BrowserURLUpdater.ts:85](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/BrowserURLUpdater.ts#L85)
 
 ## Methods
 
@@ -143,7 +143,7 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 #### Source
 
-[src/classes/BrowserURLUpdater.ts:72](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/BrowserURLUpdater.ts#L72)
+[src/classes/BrowserURLUpdater.ts:72](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/BrowserURLUpdater.ts#L72)
 
 ***
 
@@ -157,7 +157,7 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 #### Source
 
-[src/classes/BrowserURLUpdater.ts:53](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/BrowserURLUpdater.ts#L53)
+[src/classes/BrowserURLUpdater.ts:53](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/BrowserURLUpdater.ts#L53)
 
 ***
 
@@ -175,7 +175,7 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 #### Source
 
-[src/classes/BrowserURLUpdater.ts:49](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/BrowserURLUpdater.ts#L49)
+[src/classes/BrowserURLUpdater.ts:49](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/BrowserURLUpdater.ts#L49)
 
 ***
 
@@ -189,7 +189,7 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 #### Source
 
-[src/classes/BrowserURLUpdater.ts:76](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/BrowserURLUpdater.ts#L76)
+[src/classes/BrowserURLUpdater.ts:76](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/BrowserURLUpdater.ts#L76)
 
 ***
 
@@ -203,7 +203,7 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 #### Source
 
-[src/classes/BrowserURLUpdater.ts:62](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/BrowserURLUpdater.ts#L62)
+[src/classes/BrowserURLUpdater.ts:62](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/BrowserURLUpdater.ts#L62)
 
 ***
 
@@ -221,7 +221,7 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 #### Source
 
-[src/classes/BrowserURLUpdater.ts:44](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/BrowserURLUpdater.ts#L44)
+[src/classes/BrowserURLUpdater.ts:44](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/BrowserURLUpdater.ts#L44)
 
 ***
 
@@ -239,7 +239,7 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 #### Source
 
-[src/classes/BrowserURLUpdater.ts:67](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/BrowserURLUpdater.ts#L67)
+[src/classes/BrowserURLUpdater.ts:67](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/BrowserURLUpdater.ts#L67)
 
 ***
 
@@ -257,7 +257,7 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 #### Source
 
-[src/classes/BrowserURLUpdater.ts:57](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/BrowserURLUpdater.ts#L57)
+[src/classes/BrowserURLUpdater.ts:57](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/BrowserURLUpdater.ts#L57)
 
 ***
 
@@ -277,7 +277,7 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 #### Source
 
-[src/classes/BrowserURLUpdater.ts:35](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/BrowserURLUpdater.ts#L35)
+[src/classes/BrowserURLUpdater.ts:35](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/BrowserURLUpdater.ts#L35)
 
 ***
 
@@ -291,4 +291,4 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 #### Source
 
-[src/classes/BrowserURLUpdater.ts:26](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/classes/BrowserURLUpdater.ts#L26)
+[src/classes/BrowserURLUpdater.ts:26](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/BrowserURLUpdater.ts#L26)

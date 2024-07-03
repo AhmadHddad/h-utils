@@ -1,6 +1,8 @@
 import { GetHtmlElementCoordsOptions } from '../types';
 import isBrowser from '../validation/isBrowser';
+import getWindow from './getWindow';
 
+const window = getWindow();
 
 /**
  * @description Finding element's position (x, y coordinates) relative to the document.

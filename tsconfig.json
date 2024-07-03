@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
+    "target": "es5",
+    "module": "commonjs",
     "moduleResolution": "node",
+    "jsx": "react",
     "declaration": true,
     "pretty": true,
     "rootDir": "src",
+    "allowJs": true,
     "sourceMap": false,
     "strict": true,
     "esModuleInterop": true,
@@ -13,17 +15,23 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noImplicitAny": false,
-    "isolatedModules": true,
     "noFallthroughCasesInSwitch": true,
     "outDir": "lib",
     "lib": [
-      "dom",
-      "esnext"
+      "es2018",
+      "ESNext", 
+      "dom"
     ],
     "importHelpers": true
   },
   "exclude": [
     "node_modules",
     "lib",
+    "dist",
+    "esm",
+    "tests",
+    "stories",
+    "jest.config.ts",
+    "jest.config.*.ts"
   ]
 }

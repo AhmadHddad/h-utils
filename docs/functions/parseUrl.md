@@ -26,15 +26,13 @@ If the `parseFragmentIdentifier` option is `true`, the object will also contain 
 ## Example
 
 ```
-import queryString from 'query-string';
-
-queryString.parseUrl('https://foo.bar?foo=bar');
+parseUrl('https://foo.bar?foo=bar');
 //=> {url: 'https://foo.bar', query: {foo: 'bar'}}
 
-queryString.parseUrl('https://foo.bar?foo=bar#xyz', {parseFragmentIdentifier: true});
+parseUrl('https://foo.bar?foo=bar#xyz', {parseFragmentIdentifier: true});
 //=> {url: 'https://foo.bar', query: {foo: 'bar'}, fragmentIdentifier: 'xyz'}
 ```
 
 ## Source
 
-[src/utils/route/parseUrl.ts:21](https://github.com/AhmadHddad/h-utils/blob/5c76ff5de068cee019fc632d9da2e395721bb48f/src/utils/route/parseUrl.ts#L21)
+[src/utils/route/parseUrl.ts:19](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/route/parseUrl.ts#L19)

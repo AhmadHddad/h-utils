@@ -1,5 +1,5 @@
-import splitOnFirst from "../string/splitOnFirst";
-import isNullOrUndefined from "../validation/isNullOrUndefined";
+import splitOnFirst from '../string/splitOnFirst';
+import isNullOrUndefined from '../validation/isNullOrUndefined';
 
 export function parseValue(value, options) {
   if (
@@ -20,20 +20,16 @@ export function parseValue(value, options) {
   return value;
 }
 
-export const strictUriEncode = string =>
+export const strictUriEncode = (string) =>
   encodeURIComponent(string).replace(
     /[!'()*]/g,
-    x =>
-      `%${x
-        .charCodeAt(0)
-        .toString(16)
-        .toUpperCase()}`
+    (x) => `%${x.charCodeAt(0).toString(16).toUpperCase()}`
   );
 
 export function encoderForArrayFormat(options) {
   switch (options.arrayFormat) {
     case 'index': {
-      return key => (result, value) => {
+      return (key) => (result, value) => {
         const index = result.length;
 
         if (
@@ -62,7 +58,7 @@ export function encoderForArrayFormat(options) {
     }
 
     case 'bracket': {
-      return key => (result, value) => {
+      return (key) => (result, value) => {
         if (
           value === undefined ||
           (options.skipNull && value === null) ||
@@ -83,7 +79,7 @@ export function encoderForArrayFormat(options) {
     }
 
     case 'colon-list-separator': {
-      return key => (result, value) => {
+      return (key) => (result, value) => {
         if (
           value === undefined ||
           (options.skipNull && value === null) ||
@@ -109,7 +105,7 @@ export function encoderForArrayFormat(options) {
       const keyValueSep =
         options.arrayFormat === 'bracket-separator' ? '[]=' : '=';
 
-      return key => (result, value) => {
+      return (key) => (result, value) => {
         if (
           value === undefined ||
           (options.skipNull && value === null) ||
@@ -136,7 +132,7 @@ export function encoderForArrayFormat(options) {
     }
 
     default: {
-      return key => (result, value) => {
+      return (key) => (result, value) => {
         if (
           value === undefined ||
           (options.skipNull && value === null) ||
@@ -234,7 +230,7 @@ export function parserForArrayFormat(options) {
           isArray || isEncodedArray
             ? value
                 .split(options.arrayFormatSeparator)
-                .map(item => decode(item, options))
+                .map((item) => decode(item, options))
             : value === null
             ? value
             : decode(value, options);
@@ -243,7 +239,7 @@ export function parserForArrayFormat(options) {
     }
 
     case 'bracket-separator': {
-      return (key, value, accumulator) => {
+      return (key: any, value: any, accumulator: any) => {
         const isArray = /(\[])$/.test(key);
         key = key.replace(/\[]$/, '');
 
@@ -257,7 +253,7 @@ export function parserForArrayFormat(options) {
             ? []
             : value
                 .split(options.arrayFormatSeparator)
-                .map(item => decode(item, options));
+                .map((item) => decode(item, options));
 
         if (accumulator[key] === undefined) {
           accumulator[key] = arrayValue;
@@ -311,7 +307,7 @@ export function keysSorter(input) {
   if (typeof input === 'object') {
     return keysSorter(Object.keys(input))
       .sort((a, b) => Number(a) - Number(b))
-      .map(key => input[key]);
+      .map((key) => input[key]);
   }
 
   return input;
@@ -332,13 +328,13 @@ export function stringify(object, options) {
 
   validateArrayFormatSeparator(options.arrayFormatSeparator);
 
-  const shouldFilter = key =>
+  const shouldFilter = (key: string | number) =>
     (options.skipNull && isNullOrUndefined(object[key])) ||
     (options.skipEmptyString && object[key] === '');
 
   const formatter = encoderForArrayFormat(options);
 
-  const objectCopy = {};
+  const objectCopy: any = {};
 
   for (const [key, value] of Object.entries(object)) {
     if (!shouldFilter(key)) {
@@ -353,7 +349,7 @@ export function stringify(object, options) {
   }
 
   return keys
-    .map(key => {
+    .map((key) => {
       const value = object[key];
 
       if (value === undefined) {
@@ -374,87 +370,97 @@ export function stringify(object, options) {
 
       return encode(key, options) + '=' + encode(value, options);
     })
-    .filter(x => x.length > 0)
+    .filter((x) => x.length > 0)
     .join('&');
 }
 
-
-
 export function parse(query, options) {
-	options = {
-		decode: true,
-		sort: true,
-		arrayFormat: 'none',
-		arrayFormatSeparator: ',',
-		parseNumbers: false,
-		parseBooleans: false,
-		...options,
-	};
+  options = {
+    decode: true,
+    sort: true,
+    arrayFormat: 'none',
+    arrayFormatSeparator: ',',
+    parseNumbers: false,
+    parseBooleans: false,
+    ...options,
+  };
 
-	validateArrayFormatSeparator(options.arrayFormatSeparator);
+  validateArrayFormatSeparator(options.arrayFormatSeparator);
 
-	const formatter = parserForArrayFormat(options);
+  const formatter = parserForArrayFormat(options);
 
-	// Create an object with no prototype
-	const returnValue = Object.create(null);
+  // Create an object with no prototype
+  const returnValue = Object.create(null);
 
-	if (typeof query !== 'string') {
-		return returnValue;
-	}
+  if (typeof query !== 'string') {
+    return returnValue;
+  }
 
-	query = query.trim().replace(/^[?#&]/, '');
+  query = query.trim().replace(/^[?#&]/, '');
 
-	if (!query) {
-		return returnValue;
-	}
+  if (!query) {
+    return returnValue;
+  }
 
-	for (const parameter of query.split('&')) {
-		if (parameter === '') {
-			continue;
-		}
+  for (const parameter of query.split('&')) {
+    if (parameter === '') {
+      continue;
+    }
 
-		const parameter_ = options.decode ? parameter.replace(/\+/g, ' ') : parameter;
+    const parameter_ = options.decode
+      ? parameter.replace(/\+/g, ' ')
+      : parameter;
 
-		let [key, value] = splitOnFirst(parameter_, '=');
+    let [key, value] = splitOnFirst(parameter_, '=');
 
-		if (key === undefined) {
-			key = parameter_;
-		}
+    if (key === undefined) {
+      key = parameter_;
+    }
 
-		// Missing `=` should be `null`:
-		// http://w3.org/TR/2012/WD-url-20120524/#collect-url-parameters
-		value = value === undefined ? null : (['comma', 'separator', 'bracket-separator'].includes(options.arrayFormat) ? value : decode(value, options));
-		formatter(decode(key, options), value, returnValue);
-	}
+    // Missing `=` should be `null`:
+    // http://w3.org/TR/2012/WD-url-20120524/#collect-url-parameters
+    value =
+      value === undefined
+        ? null
+        : ['comma', 'separator', 'bracket-separator'].includes(
+            options.arrayFormat
+          )
+        ? value
+        : decode(value, options);
+    formatter(decode(key, options), value, returnValue);
+  }
 
-	for (const [key, value] of Object.entries(returnValue)) {
-		if (typeof value === 'object' && value !== null) {
-			for (const [key2, value2] of Object.entries(value)) {
-				value[key2] = parseValue(value2, options);
-			}
-		} else {
-			returnValue[key] = parseValue(value, options);
-		}
-	}
+  for (const [key, value] of Object.entries(returnValue)) {
+    if (typeof value === 'object' && value !== null) {
+      for (const [key2, value2] of Object.entries(value)) {
+        (value as any)[key2] = parseValue(value2, options);
+      }
+    } else {
+      returnValue[key] = parseValue(value, options);
+    }
+  }
 
-	if (options.sort === false) {
-		return returnValue;
-	}
+  if (options.sort === false) {
+    return returnValue;
+  }
 
-	// TODO: Remove the use of `reduce`.
-	// eslint-disable-next-line unicorn/no-array-reduce
-	return (options.sort === true ? Object.keys(returnValue).sort() : Object.keys(returnValue).sort(options.sort)).reduce((result, key) => {
-		const value = returnValue[key];
-		if (Boolean(value) && typeof value === 'object' && !Array.isArray(value)) {
-			// Sort object keys, not values
-			result[key] = keysSorter(value);
-		} else {
-			result[key] = value;
-		}
+  // TODO: Remove the use of `reduce`.
+  // eslint-disable-next-line unicorn/no-array-reduce
+  return (
+    options.sort === true
+      ? Object.keys(returnValue).sort()
+      : Object.keys(returnValue).sort(options.sort)
+  ).reduce((result, key) => {
+    const value = returnValue[key];
+    if (Boolean(value) && typeof value === 'object' && !Array.isArray(value)) {
+      // Sort object keys, not values
+      result[key] = keysSorter(value);
+    } else {
+      result[key] = value;
+    }
 
-		return result;
-	}, Object.create(null));
+    return result;
+  }, Object.create(null));
 }
-
 
 export const encodeFragmentIdentifier = Symbol('encodeFragmentIdentifier');
