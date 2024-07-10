@@ -5,10 +5,10 @@ import { ParseStringOptions } from '../types';
  * and returns the actual type.
  * if "123" will return the number 123 and so on.
  */
-export default function parseString(
+export default function parseString<T = number | undefined | null | string | boolean | [] | {}>(
   str: string | null | undefined | number,
   config?: ParseStringOptions
-): number | undefined | null | string | boolean | [] | {} {
+): T {
   const { parseStrStartsWithZero = true, decode = true } = config ?? {};
 
   try {
@@ -23,20 +23,20 @@ export default function parseString(
   } catch (error) {}
 
   if (typeof str !== 'string') {
-    if (typeof str === 'undefined') return undefined;
-    if (str === null) return null;
+    if (typeof str === 'undefined') return undefined as T;
+    if (str === null) return null as T;
   }
-  if (typeof str === 'number') return str;
+  if (typeof str === 'number') return str as T;
 
   str = str?.toLowerCase();
-  if (str?.includes('null')) return null;
-  if (str?.includes('undefined')) return undefined;
-  if (!parseStrStartsWithZero && str?.startsWith('0')) return str;
-  if (str?.length && !isNaN(Number(str))) return Number(str);
-  if (str?.length && str.toLocaleLowerCase() === 'true') return true;
-  if (str?.length && str.toLocaleLowerCase() === 'false') return false;
+  if (str?.includes('null')) return null as T;
+  if (str?.includes('undefined')) return undefined as T;
+  if (!parseStrStartsWithZero && str?.startsWith('0')) return str as T;
+  if (str?.length && !isNaN(Number(str))) return Number(str) as T;
+  if (str?.length && str.toLocaleLowerCase() === 'true') return true as T;
+  if (str?.length && str.toLocaleLowerCase() === 'false') return false as T;
 
-  return str;
+  return str as T;
 }
 
 
