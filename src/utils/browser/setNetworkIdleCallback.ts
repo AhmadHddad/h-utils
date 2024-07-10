@@ -15,7 +15,7 @@ cancel();`
  */
 export default function setNetworkIdleCallback(
   callback: Parameters<typeof networkHttpRequestMonitor>[0],
-  options: Omit<NetworkHttpRequestMonitorOptions, 'cancelAfterIdle'>
+  options?: Omit<NetworkHttpRequestMonitorOptions, 'cancelAfterIdle'>
 ): () => void {
   if (!callback)
     throw new Error('setNetworkIdleCallback Callback is undefined');
