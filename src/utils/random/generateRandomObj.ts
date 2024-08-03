@@ -3,6 +3,7 @@ import generateRandomString from './generateRandomString';
 
 /**
  * @description will generate a random object
+ * @example generateRandomObj() // {  JcaOXYeU: true, qZDEUnCs: 0.32064102262293903, RLvQgfll: true, GJSZIsnA: 413, iRjWgHkA: 'aNMnPg', aqXHzOuF: 'iGPp', ZVxrygDP: 252, KqrqvGbb: 'LuEdtd'}
  * @param fieldCount @default 10
  * @param options @default {allowNested:true}
  */

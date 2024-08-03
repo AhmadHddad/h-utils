@@ -3,6 +3,7 @@ import generateRandomInt from "./generateRandomInt";
 
 /**
  * @description will generate a random string
+ * @example generateRandomString() // "JcaOXYeU"
  * @param size @default 10
  */
 export default function generateRandomString(size: number = 10): string {
