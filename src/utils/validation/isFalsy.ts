@@ -5,14 +5,7 @@ import { Falsy } from '../types';
  *
  * The value is mostly in added type-information and explicity,
  * but in case of this simple type much the same can often be archived by just using negation `!`:
- * @example
- *   const consumer = (value: boolean | Falsy) => {
- *     if (!value) {
- *         return ;
- *     }
- *     type newType = typeof value; // === true
- *     // do stuff
- *   };
+ * @example isFalsy("") // true
  */
 const isFalsy = (val: unknown): val is Falsy => !val;
 

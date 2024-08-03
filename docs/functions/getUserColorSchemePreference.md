@@ -26,4 +26,4 @@ container.style.backgroundColor = userColorScheme === 'dark' ? '#121212' : '#fff
 
 ## Source
 
-[src/utils/browser/getUserColorSchemePreference.ts:13](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/browser/getUserColorSchemePreference.ts#L13)
+[src/utils/browser/getUserColorSchemePreference.ts:13](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/browser/getUserColorSchemePreference.ts#L13)

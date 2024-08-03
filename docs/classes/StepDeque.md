@@ -43,7 +43,7 @@ stepper.previous(); // "step2"
 
 #### Source
 
-[src/classes/StepDeque.ts:22](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/StepDeque.ts#L22)
+[src/classes/StepDeque.ts:22](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/StepDeque.ts#L22)
 
 ## Properties
 
@@ -53,7 +53,7 @@ stepper.previous(); // "step2"
 
 #### Source
 
-[src/classes/StepDeque.ts:19](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/StepDeque.ts#L19)
+[src/classes/StepDeque.ts:19](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/StepDeque.ts#L19)
 
 ***
 
@@ -63,7 +63,7 @@ stepper.previous(); // "step2"
 
 #### Source
 
-[src/classes/StepDeque.ts:18](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/StepDeque.ts#L18)
+[src/classes/StepDeque.ts:18](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/StepDeque.ts#L18)
 
 ***
 
@@ -73,7 +73,7 @@ stepper.previous(); // "step2"
 
 #### Source
 
-[src/classes/StepDeque.ts:20](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/StepDeque.ts#L20)
+[src/classes/StepDeque.ts:20](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/StepDeque.ts#L20)
 
 ***
 
@@ -83,7 +83,7 @@ stepper.previous(); // "step2"
 
 #### Source
 
-[src/classes/StepDeque.ts:17](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/StepDeque.ts#L17)
+[src/classes/StepDeque.ts:17](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/StepDeque.ts#L17)
 
 ## Methods
 
@@ -113,7 +113,7 @@ If the index is out of bounds.
 
 #### Source
 
-[src/classes/StepDeque.ts:122](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/StepDeque.ts#L122)
+[src/classes/StepDeque.ts:122](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/StepDeque.ts#L122)
 
 ***
 
@@ -135,7 +135,7 @@ The step to add.
 
 #### Source
 
-[src/classes/StepDeque.ts:100](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/StepDeque.ts#L100)
+[src/classes/StepDeque.ts:100](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/StepDeque.ts#L100)
 
 ***
 
@@ -157,7 +157,7 @@ The step to add.
 
 #### Source
 
-[src/classes/StepDeque.ts:112](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/StepDeque.ts#L112)
+[src/classes/StepDeque.ts:112](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/StepDeque.ts#L112)
 
 ***
 
@@ -177,7 +177,7 @@ Returns the value of the current step without changing the current index.
 
 #### Source
 
-[src/classes/StepDeque.ts:78](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/StepDeque.ts#L78)
+[src/classes/StepDeque.ts:78](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/StepDeque.ts#L78)
 
 ***
 
@@ -191,7 +191,7 @@ Returns the value of the current step without changing the current index.
 
 #### Source
 
-[src/classes/StepDeque.ts:29](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/StepDeque.ts#L29)
+[src/classes/StepDeque.ts:29](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/StepDeque.ts#L29)
 
 ***
 
@@ -205,7 +205,7 @@ Returns the value of the current step without changing the current index.
 
 #### Source
 
-[src/classes/StepDeque.ts:33](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/StepDeque.ts#L33)
+[src/classes/StepDeque.ts:33](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/StepDeque.ts#L33)
 
 ***
 
@@ -226,7 +226,7 @@ If there are no more steps, it returns undefined.
 
 #### Source
 
-[src/classes/StepDeque.ts:41](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/StepDeque.ts#L41)
+[src/classes/StepDeque.ts:41](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/StepDeque.ts#L41)
 
 ***
 
@@ -247,7 +247,7 @@ If already at the first step, it returns undefined.
 
 #### Source
 
-[src/classes/StepDeque.ts:60](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/StepDeque.ts#L60)
+[src/classes/StepDeque.ts:60](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/StepDeque.ts#L60)
 
 ***
 
@@ -273,7 +273,7 @@ If the index is out of bounds.
 
 #### Source
 
-[src/classes/StepDeque.ts:172](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/StepDeque.ts#L172)
+[src/classes/StepDeque.ts:172](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/StepDeque.ts#L172)
 
 ***
 
@@ -293,7 +293,7 @@ If there are no steps.
 
 #### Source
 
-[src/classes/StepDeque.ts:146](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/StepDeque.ts#L146)
+[src/classes/StepDeque.ts:146](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/StepDeque.ts#L146)
 
 ***
 
@@ -313,7 +313,7 @@ If there are no steps.
 
 #### Source
 
-[src/classes/StepDeque.ts:160](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/StepDeque.ts#L160)
+[src/classes/StepDeque.ts:160](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/StepDeque.ts#L160)
 
 ***
 
@@ -329,7 +329,7 @@ Resets the stepper to the initial step.
 
 #### Source
 
-[src/classes/StepDeque.ts:92](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/StepDeque.ts#L92)
+[src/classes/StepDeque.ts:92](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/StepDeque.ts#L92)
 
 ***
 
@@ -351,4 +351,4 @@ An array of step functions.
 
 #### Source
 
-[src/classes/StepDeque.ts:137](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/StepDeque.ts#L137)
+[src/classes/StepDeque.ts:137](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/StepDeque.ts#L137)

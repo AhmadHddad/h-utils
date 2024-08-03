@@ -1,19 +1,18 @@
 import generateRandomInt from './generateRandomInt';
 import generateRandomString from './generateRandomString';
 
-
 /**
  * @description will generate a random object
+ * @example generateRandomObj() // {  JcaOXYeU: true, qZDEUnCs: 0.32064102262293903, RLvQgfll: true, GJSZIsnA: 413, iRjWgHkA: 'aNMnPg', aqXHzOuF: 'iGPp', ZVxrygDP: 252, KqrqvGbb: 'LuEdtd'}
  * @param fieldCount @default 10
  * @param options @default {allowNested:true}
  */
 export default function generateRandomObj(
-  fieldCount: number = 10,
-  options: { allowNested?: boolean; allowNull?: boolean }
+  fieldCount = 10,
+  options?: { allowNested?: boolean; allowNull?: boolean }
 ): Record<string, string | number | null | boolean> {
   const { allowNested, allowNull } = options || {};
   const generatedObj: Record<string, string | number | null | boolean> = {};
-
   for (let i = 0; i < fieldCount; i++) {
     let generatedObjField;
 
@@ -43,7 +42,7 @@ export default function generateRandomObj(
         break;
 
       case 5:
-        generatedObjField = generateRandomObj(fieldCount, options);
+        generatedObjField = generateRandomObj(fieldCount);
         break;
     }
     generatedObj[generateRandomString(8)] = generatedObjField;

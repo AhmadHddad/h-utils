@@ -24,15 +24,9 @@ but in case of this simple type much the same can often be archived by just usin
 ## Example
 
 ```ts
-const consumer = (value: boolean | Falsy) => {
-    if (!value) {
-        return ;
-    }
-    type newType = typeof value; // === true
-    // do stuff
-  };
+isFalsy("") // true
 ```
 
 ## Source
 
-[src/utils/validation/isFalsy.ts:17](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/validation/isFalsy.ts#L17)
+[src/utils/validation/isFalsy.ts:10](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/validation/isFalsy.ts#L10)

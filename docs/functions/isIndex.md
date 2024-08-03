@@ -30,4 +30,4 @@ Checks if `value` is a valid array-like index.
 
 ## Source
 
-[src/utils/validation/isIndex.ts:17](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/validation/isIndex.ts#L17)
+[src/utils/validation/isIndex.ts:17](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/validation/isIndex.ts#L17)
