@@ -26,4 +26,4 @@ It compares two objects based on the keys array passed to it.
 
 ## Source
 
-[src/utils/object/compare2ObjectsBaseOnKeysArr.ts:6](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/object/compare2ObjectsBaseOnKeysArr.ts#L6)
+[src/utils/object/compare2ObjectsBaseOnKeysArr.ts:6](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/object/compare2ObjectsBaseOnKeysArr.ts#L6)

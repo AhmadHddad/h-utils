@@ -31,6 +31,10 @@ joinObjects({a:1},{b:2}) => {a:1, b:2}
 ```
 
 ```ts
+joinObjects([1,2]) => {}
+```
+
+```ts
 joinObjects(({ a: 1 }, { b: 2 })) => { a: 1, b: 2 }
 ```
 
@@ -40,4 +44,4 @@ joinObjects(({ a: 1 }, null || undefined || !object)) => { a: 1 }
 
 ## Source
 
-[src/utils/object/joinObjects.ts:9](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/object/joinObjects.ts#L9)
+[src/utils/object/joinObjects.ts:8](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/object/joinObjects.ts#L8)

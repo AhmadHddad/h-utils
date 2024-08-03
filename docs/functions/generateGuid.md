@@ -25,4 +25,4 @@ generateUUID() => "741baba3-1efc-b52e-5d9c-75b1fc80395a"
 
 ## Source
 
-[src/utils/general/generateUUID.ts:6](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/general/generateUUID.ts#L6)
+[src/utils/general/generateUUID.ts:6](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/general/generateUUID.ts#L6)

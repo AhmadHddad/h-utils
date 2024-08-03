@@ -6,6 +6,17 @@
 
 # Class: HMap\<K, V\>
 
+## Description
+
+HMap is an extension of Map object, that adds more functionalities to the Map object, such as .from, .filter, .map, .mapFields and others.
+its great utility to deal with Map and normal JS objects.
+
+## Example
+
+```ts
+HMap.from({ a: 1, b: 2 }).mapArray((val) => val); // [ 1, 2 ]
+```
+
 ## Extends
 
 - `Map`\<`K`, `V`\>
@@ -196,9 +207,19 @@ node\_modules/typescript/lib/lib.es2015.iterable.d.ts:126
 
 `boolean`
 
+#### Description
+
+acts like [].every(), where you provide a function that takes the key and value and return boolean if the condition is applied on every.
+
+#### Example
+
+```ts
+HMap.from({a:1}).every((val, key) => val === 1) // true
+```
+
 #### Source
 
-[src/classes/HMap.ts:50](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/HMap.ts#L50)
+[src/classes/HMap.ts:92](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/HMap.ts#L92)
 
 ***
 
@@ -214,9 +235,19 @@ node\_modules/typescript/lib/lib.es2015.iterable.d.ts:126
 
 [`HMap`](HMap.md)\<`K`, `V`\>
 
+#### Description
+
+similar to [].filter() it takes a callback with key value and reruns the keys and values the condition is applied to them.
+
+#### Example
+
+```ts
+HMap.from({a:1}).filter((v, k) => v === 1).toObject() // {a:1}
+```
+
 #### Source
 
-[src/classes/HMap.ts:6](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/HMap.ts#L6)
+[src/classes/HMap.ts:20](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/HMap.ts#L20)
 
 ***
 
@@ -232,9 +263,19 @@ node\_modules/typescript/lib/lib.es2015.iterable.d.ts:126
 
 `undefined` \| `V`
 
+#### Description
+
+will return the value based on a callback that returns a boolean
+
+#### Example
+
+```ts
+HMap.from({a:1}).findValue((val, key) => val > 0) // 1;
+```
+
 #### Source
 
-[src/classes/HMap.ts:38](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/HMap.ts#L38)
+[src/classes/HMap.ts:76](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/HMap.ts#L76)
 
 ***
 
@@ -298,9 +339,19 @@ node\_modules/typescript/lib/lib.es2015.collection.d.ts:36
 
 `K`[]
 
+#### Description
+
+will get all of the HMap object keys in an array.
+
+#### Example
+
+```ts
+HMap.from({a:1}).getAllKeys() // ["a"]
+```
+
 #### Source
 
-[src/classes/HMap.ts:56](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/HMap.ts#L56)
+[src/classes/HMap.ts:102](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/HMap.ts#L102)
 
 ***
 
@@ -312,23 +363,19 @@ node\_modules/typescript/lib/lib.es2015.collection.d.ts:36
 
 `V`[]
 
-#### Source
+#### Description
 
-[src/classes/HMap.ts:66](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/HMap.ts#L66)
+will get all of the HMap object values in an array.
 
-***
+#### Example
 
-### getValuesArray()
-
-> **getValuesArray**(): `V`[]
-
-#### Returns
-
-`V`[]
+```ts
+HMap.from({a:1}).getAllVAlues() // [1]
+```
 
 #### Source
 
-[src/classes/HMap.ts:18](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/HMap.ts#L18)
+[src/classes/HMap.ts:120](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/HMap.ts#L120)
 
 ***
 
@@ -392,9 +439,19 @@ node\_modules/typescript/lib/lib.es2015.iterable.d.ts:131
 
 [`HMap`](HMap.md)\<`K`, `U`\>
 
+#### Description
+
+will behave like .map in arrays, but you can't change the keys but you can change the values, will return a new HMap object.
+
+#### Example
+
+```ts
+HMap.from({a:1}).mapFields((v, k) => ([v + 1, "b"])).toObject() // { a: [ 2, 'b' ] }
+```
+
 #### Source
 
-[src/classes/HMap.ts:22](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/HMap.ts#L22)
+[src/classes/HMap.ts:52](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/HMap.ts#L52)
 
 ***
 
@@ -414,9 +471,51 @@ node\_modules/typescript/lib/lib.es2015.iterable.d.ts:131
 
 `U`[]
 
+#### Description
+
+will behave like .map in arrays, but you can't change the keys but you can change the values, will return a new HMap object.
+
+#### Example
+
+```ts
+HMap.from({a:1, b:2}).mapArray((val) => (val)) // [ 1, 2 ]
+```
+
 #### Source
 
-[src/classes/HMap.ts:30](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/HMap.ts#L30)
+[src/classes/HMap.ts:64](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/HMap.ts#L64)
+
+***
+
+### mapFields()
+
+> **mapFields**\<`U`\>(`callback`): [`HMap`](HMap.md)\<`U`, `V`\>
+
+#### Type parameters
+
+• **U** *extends* `string` \| `symbol`
+
+#### Parameters
+
+• **callback**
+
+#### Returns
+
+[`HMap`](HMap.md)\<`U`, `V`\>
+
+#### Description
+
+will behave like .map in arrays where you can change the keys and the values, will return a new HMap object.
+
+#### Example
+
+```ts
+HMap.from({a:1}).mapFields((v, k) => ([v + 1, "b"])).toObject() // {b:2}
+```
+
+#### Source
+
+[src/classes/HMap.ts:36](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/HMap.ts#L36)
 
 ***
 
@@ -458,9 +557,19 @@ node\_modules/typescript/lib/lib.es2015.collection.d.ts:44
 
 `boolean`
 
+#### Description
+
+acts like [].some(), where you provide a function that takes the key and value and return boolean if the condition is applied on some.
+
+#### Example
+
+```ts
+HMap.from({a:1}).some((val, key) => val === 1) // true
+```
+
 #### Source
 
-[src/classes/HMap.ts:60](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/HMap.ts#L60)
+[src/classes/HMap.ts:110](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/HMap.ts#L110)
 
 ***
 
@@ -472,9 +581,19 @@ node\_modules/typescript/lib/lib.es2015.collection.d.ts:44
 
 `Record`\<`K`, `V`\>
 
+#### Description
+
+will convert the HMap to normal JS object.
+
+#### Example
+
+```ts
+HMap.from({a:1}).toObject() // {a:1}
+```
+
 #### Source
 
-[src/classes/HMap.ts:70](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/HMap.ts#L70)
+[src/classes/HMap.ts:128](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/HMap.ts#L128)
 
 ***
 
@@ -516,6 +635,16 @@ node\_modules/typescript/lib/lib.es2015.iterable.d.ts:136
 
 [`HMap`](HMap.md)\<`K`, `V`\>
 
+#### Description
+
+takes a normal js object and reruns HMap instance.
+
+#### Example
+
+```ts
+const hmap = HMap.from({a:1}).
+```
+
 #### Source
 
-[src/classes/HMap.ts:2](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/HMap.ts#L2)
+[src/classes/HMap.ts:12](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/HMap.ts#L12)

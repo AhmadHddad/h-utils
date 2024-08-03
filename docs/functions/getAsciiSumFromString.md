@@ -27,4 +27,4 @@ by adding the ASCII code of each character to the previous value
 
 ## Source
 
-[src/utils/string/getAsciiSumFromString.ts:9](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/string/getAsciiSumFromString.ts#L9)
+[src/utils/string/getAsciiSumFromString.ts:9](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/string/getAsciiSumFromString.ts#L9)

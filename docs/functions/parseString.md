@@ -6,7 +6,11 @@
 
 # Function: parseString()
 
-> **parseString**(`str`, `config`?): `number` \| `undefined` \| `null` \| `string` \| `boolean` \| [] \| `object`
+> **parseString**\<`T`\>(`str`, `config`?): `T`
+
+## Type parameters
+
+• **T** = `undefined` \| `null` \| `string` \| `number` \| `boolean` \| `object` \| []
 
 ## Parameters
 
@@ -16,7 +20,7 @@
 
 ## Returns
 
-`number` \| `undefined` \| `null` \| `string` \| `boolean` \| [] \| `object`
+`T`
 
 ## Description
 
@@ -26,4 +30,4 @@ if "123" will return the number 123 and so on.
 
 ## Source
 
-[src/utils/string/parseString.ts:8](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/string/parseString.ts#L8)
+[src/utils/string/parseString.ts:8](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/string/parseString.ts#L8)

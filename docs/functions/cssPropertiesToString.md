@@ -28,4 +28,4 @@ cssPropertiesToString({backgroundColor:"blue"}) // background-color:blue;
 
 ## Source
 
-[src/utils/style/cssPropertiesToString.ts:10](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/style/cssPropertiesToString.ts#L10)
+[src/utils/style/cssPropertiesToString.ts:10](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/style/cssPropertiesToString.ts#L10)

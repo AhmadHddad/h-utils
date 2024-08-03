@@ -67,7 +67,7 @@ defaultEventBus.unsubscribe('DefaultEvent', handleDefaultEvent);
 
 #### Source
 
-[src/classes/DOMEventBus.ts:47](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/DOMEventBus.ts#L47)
+[src/classes/DOMEventBus.ts:47](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/DOMEventBus.ts#L47)
 
 ## Properties
 
@@ -77,7 +77,7 @@ defaultEventBus.unsubscribe('DefaultEvent', handleDefaultEvent);
 
 #### Source
 
-[src/classes/DOMEventBus.ts:45](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/DOMEventBus.ts#L45)
+[src/classes/DOMEventBus.ts:45](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/DOMEventBus.ts#L45)
 
 ***
 
@@ -87,7 +87,7 @@ defaultEventBus.unsubscribe('DefaultEvent', handleDefaultEvent);
 
 #### Source
 
-[src/classes/DOMEventBus.ts:44](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/DOMEventBus.ts#L44)
+[src/classes/DOMEventBus.ts:44](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/DOMEventBus.ts#L44)
 
 ## Methods
 
@@ -107,7 +107,7 @@ defaultEventBus.unsubscribe('DefaultEvent', handleDefaultEvent);
 
 #### Source
 
-[src/classes/DOMEventBus.ts:64](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/DOMEventBus.ts#L64)
+[src/classes/DOMEventBus.ts:64](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/DOMEventBus.ts#L64)
 
 ***
 
@@ -127,7 +127,7 @@ defaultEventBus.unsubscribe('DefaultEvent', handleDefaultEvent);
 
 #### Source
 
-[src/classes/DOMEventBus.ts:54](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/DOMEventBus.ts#L54)
+[src/classes/DOMEventBus.ts:54](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/DOMEventBus.ts#L54)
 
 ***
 
@@ -147,4 +147,4 @@ defaultEventBus.unsubscribe('DefaultEvent', handleDefaultEvent);
 
 #### Source
 
-[src/classes/DOMEventBus.ts:59](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/classes/DOMEventBus.ts#L59)
+[src/classes/DOMEventBus.ts:59](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/DOMEventBus.ts#L59)

@@ -28,4 +28,4 @@ nFormatter(1000) => "1K"
 
 ## Source
 
-[src/utils/string/nFormatter.ts:5](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/string/nFormatter.ts#L5)
+[src/utils/string/nFormatter.ts:5](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/string/nFormatter.ts#L5)

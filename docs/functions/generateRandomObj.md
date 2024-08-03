@@ -6,13 +6,13 @@
 
 # Function: generateRandomObj()
 
-> **generateRandomObj**(`fieldCount`, `options`): `Record`\<`string`, `string` \| `number` \| `null` \| `boolean`\>
+> **generateRandomObj**(`fieldCount`, `options`?): `Record`\<`string`, `string` \| `number` \| `null` \| `boolean`\>
 
 ## Parameters
 
 • **fieldCount**: `number`= `10`
 
-• **options**
+• **options?**
 
 • **options.allowNested?**: `boolean`
 
@@ -25,6 +25,12 @@
 ## Description
 
 will generate a random object
+
+## Example
+
+```ts
+generateRandomObj() // {  JcaOXYeU: true, qZDEUnCs: 0.32064102262293903, RLvQgfll: true, GJSZIsnA: 413, iRjWgHkA: 'aNMnPg', aqXHzOuF: 'iGPp', ZVxrygDP: 252, KqrqvGbb: 'LuEdtd'}
+```
 
 ## Default
 
@@ -40,4 +46,4 @@ will generate a random object
 
 ## Source
 
-[src/utils/random/generateRandomObj.ts:10](https://github.com/AhmadHddad/h-utils/blob/b1dfa95e218c9605f39fc234662ef50e62fadcb8/src/utils/random/generateRandomObj.ts#L10)
+[src/utils/random/generateRandomObj.ts:10](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/random/generateRandomObj.ts#L10)
