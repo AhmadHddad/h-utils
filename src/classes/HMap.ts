@@ -19,6 +19,26 @@ export default class HMap<K extends string | symbol, V> extends Map<K, V> {
     return Array.from(this.values());
   };
 
+  /**
+   * @description will behave like .map in arrays where you can change the keys and the values, will return a new HMap object.
+   * @example HMap.from({a:1}).mapFields((v, k) => ([v + 1, "b"])).toObject() // {b:2}
+   */
+  mapFields = <U extends string | symbol>(
+    callback: (value: V, key: K, map: HMap<K, V>) => [V, U]
+  ): HMap<U, V> => {
+    const mapped = new HMap<U, V>();
+    this.forEach((value, key) => {
+      const [newVal, newKey] = callback(value, key, this);
+
+      mapped.set(newKey, newVal);
+    });
+    return mapped;
+  };
+
+  /**
+   * @description will behave like .map in arrays, but you can't change the keys but you can change the values, will return a new HMap object.
+   * @example HMap.from({a:1}).mapFields((v, k) => ([v + 1, "b"])).toObject() // { a: [ 2, 'b' ] }
+   */
   map = <U>(callback: (value: V, key: K, map: HMap<K, V>) => U): HMap<K, U> => {
     const mapped = new HMap<K, U>();
     this.forEach((value, key) => {
@@ -35,6 +55,10 @@ export default class HMap<K extends string | symbol, V> extends Map<K, V> {
     return arr;
   };
 
+  /**
+   * @description will return the value based on a callback that returns a boolean 
+   * @example HMap.from({a:1}).findValue((val, key) => val > 0) // 1;
+   */
   findValue = (
     callback: (value: V, key: K, map: HMap<K, V>) => boolean
   ): V | undefined => {
@@ -53,20 +77,36 @@ export default class HMap<K extends string | symbol, V> extends Map<K, V> {
     return this.map(callback).getValuesArray().every(Boolean);
   };
 
+  /**
+   * @description will get all of the HMap object keys in an array.
+   * @example HMap.from({a:1}).getAllKeys() // ["a"]
+   */
   getAllKeys = (): K[] => {
     return Array.from(this.keys());
   };
 
+  /**
+   * @description acts like [].some(), where you provide a function that takes the key and value and return boolean.
+   * @example HMap.from({a:1}).some((val, key) => val === 1) // true
+   */
   some = (
     callback: (value: V, key: K, map: HMap<K, V>) => boolean
   ): boolean => {
     return this.map(callback).getValuesArray().some(Boolean);
   };
 
+  /**
+   * @description will get all of the HMap object values in an array.
+   * @example HMap.from({a:1}).getAllVAlues() // [1]
+   */
   getAllValues = (): V[] => {
     return Array.from(this.values());
   };
 
+  /**
+   * @description will convert the HMap to normal JS object.
+   * @example HMap.from({a:1}).toObject() // {a:1}
+   */
   toObject = (): Record<K, V> => {
     return Object.fromEntries(this) as Record<K, V>;
   };
