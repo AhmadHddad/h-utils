@@ -14,7 +14,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:8](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L8)
+[src/constants/HttpStatusCode.ts:8](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L8)
 
 ***
 
@@ -24,7 +24,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:14](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L14)
+[src/constants/HttpStatusCode.ts:14](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L14)
 
 ***
 
@@ -34,7 +34,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:56](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L56)
+[src/constants/HttpStatusCode.ts:56](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L56)
 
 ***
 
@@ -44,7 +44,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:25](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L25)
+[src/constants/HttpStatusCode.ts:25](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L25)
 
 ***
 
@@ -54,7 +54,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:34](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L34)
+[src/constants/HttpStatusCode.ts:34](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L34)
 
 ***
 
@@ -64,7 +64,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:2](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L2)
+[src/constants/HttpStatusCode.ts:2](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L2)
 
 ***
 
@@ -74,7 +74,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:7](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L7)
+[src/constants/HttpStatusCode.ts:7](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L7)
 
 ***
 
@@ -84,7 +84,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:5](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L5)
+[src/constants/HttpStatusCode.ts:5](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L5)
 
 ***
 
@@ -94,7 +94,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:42](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L42)
+[src/constants/HttpStatusCode.ts:42](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L42)
 
 ***
 
@@ -104,7 +104,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:47](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L47)
+[src/constants/HttpStatusCode.ts:47](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L47)
 
 ***
 
@@ -114,7 +114,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:28](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L28)
+[src/constants/HttpStatusCode.ts:28](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L28)
 
 ***
 
@@ -124,7 +124,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:18](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L18)
+[src/constants/HttpStatusCode.ts:18](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L18)
 
 ***
 
@@ -134,7 +134,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:58](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L58)
+[src/constants/HttpStatusCode.ts:58](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L58)
 
 ***
 
@@ -144,7 +144,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:35](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L35)
+[src/constants/HttpStatusCode.ts:35](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L35)
 
 ***
 
@@ -154,7 +154,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:59](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L59)
+[src/constants/HttpStatusCode.ts:59](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L59)
 
 ***
 
@@ -164,7 +164,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:43](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L43)
+[src/constants/HttpStatusCode.ts:43](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L43)
 
 ***
 
@@ -174,7 +174,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:15](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L15)
+[src/constants/HttpStatusCode.ts:15](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L15)
 
 ***
 
@@ -184,7 +184,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:61](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L61)
+[src/constants/HttpStatusCode.ts:61](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L61)
 
 ***
 
@@ -194,7 +194,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:54](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L54)
+[src/constants/HttpStatusCode.ts:54](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L54)
 
 ***
 
@@ -204,7 +204,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:36](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L36)
+[src/constants/HttpStatusCode.ts:36](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L36)
 
 ***
 
@@ -214,7 +214,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:46](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L46)
+[src/constants/HttpStatusCode.ts:46](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L46)
 
 ***
 
@@ -224,7 +224,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:62](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L62)
+[src/constants/HttpStatusCode.ts:62](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L62)
 
 ***
 
@@ -234,7 +234,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:30](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L30)
+[src/constants/HttpStatusCode.ts:30](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L30)
 
 ***
 
@@ -244,7 +244,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:44](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L44)
+[src/constants/HttpStatusCode.ts:44](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L44)
 
 ***
 
@@ -254,7 +254,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:17](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L17)
+[src/constants/HttpStatusCode.ts:17](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L17)
 
 ***
 
@@ -264,7 +264,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:13](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L13)
+[src/constants/HttpStatusCode.ts:13](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L13)
 
 ***
 
@@ -274,7 +274,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:16](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L16)
+[src/constants/HttpStatusCode.ts:16](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L16)
 
 ***
 
@@ -284,7 +284,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:64](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L64)
+[src/constants/HttpStatusCode.ts:64](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L64)
 
 ***
 
@@ -294,7 +294,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:10](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L10)
+[src/constants/HttpStatusCode.ts:10](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L10)
 
 ***
 
@@ -304,7 +304,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:9](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L9)
+[src/constants/HttpStatusCode.ts:9](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L9)
 
 ***
 
@@ -314,7 +314,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:31](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L31)
+[src/constants/HttpStatusCode.ts:31](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L31)
 
 ***
 
@@ -324,7 +324,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:63](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L63)
+[src/constants/HttpStatusCode.ts:63](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L63)
 
 ***
 
@@ -334,7 +334,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:29](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L29)
+[src/constants/HttpStatusCode.ts:29](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L29)
 
 ***
 
@@ -344,7 +344,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:55](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L55)
+[src/constants/HttpStatusCode.ts:55](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L55)
 
 ***
 
@@ -354,7 +354,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:20](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L20)
+[src/constants/HttpStatusCode.ts:20](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L20)
 
 ***
 
@@ -364,7 +364,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:6](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L6)
+[src/constants/HttpStatusCode.ts:6](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L6)
 
 ***
 
@@ -374,7 +374,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:12](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L12)
+[src/constants/HttpStatusCode.ts:12](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L12)
 
 ***
 
@@ -384,7 +384,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:38](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L38)
+[src/constants/HttpStatusCode.ts:38](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L38)
 
 ***
 
@@ -394,7 +394,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:27](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L27)
+[src/constants/HttpStatusCode.ts:27](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L27)
 
 ***
 
@@ -404,7 +404,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:24](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L24)
+[src/constants/HttpStatusCode.ts:24](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L24)
 
 ***
 
@@ -414,7 +414,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:37](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L37)
+[src/constants/HttpStatusCode.ts:37](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L37)
 
 ***
 
@@ -424,7 +424,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:50](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L50)
+[src/constants/HttpStatusCode.ts:50](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L50)
 
 ***
 
@@ -434,7 +434,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:4](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L4)
+[src/constants/HttpStatusCode.ts:4](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L4)
 
 ***
 
@@ -444,7 +444,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:32](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L32)
+[src/constants/HttpStatusCode.ts:32](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L32)
 
 ***
 
@@ -454,7 +454,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:41](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L41)
+[src/constants/HttpStatusCode.ts:41](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L41)
 
 ***
 
@@ -464,7 +464,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:52](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L52)
+[src/constants/HttpStatusCode.ts:52](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L52)
 
 ***
 
@@ -474,7 +474,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:33](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L33)
+[src/constants/HttpStatusCode.ts:33](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L33)
 
 ***
 
@@ -484,7 +484,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:11](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L11)
+[src/constants/HttpStatusCode.ts:11](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L11)
 
 ***
 
@@ -494,7 +494,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:19](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L19)
+[src/constants/HttpStatusCode.ts:19](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L19)
 
 ***
 
@@ -504,7 +504,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:57](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L57)
+[src/constants/HttpStatusCode.ts:57](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L57)
 
 ***
 
@@ -514,7 +514,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:3](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L3)
+[src/constants/HttpStatusCode.ts:3](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L3)
 
 ***
 
@@ -524,7 +524,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:23](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L23)
+[src/constants/HttpStatusCode.ts:23](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L23)
 
 ***
 
@@ -534,7 +534,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:48](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L48)
+[src/constants/HttpStatusCode.ts:48](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L48)
 
 ***
 
@@ -544,7 +544,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:51](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L51)
+[src/constants/HttpStatusCode.ts:51](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L51)
 
 ***
 
@@ -554,7 +554,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:26](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L26)
+[src/constants/HttpStatusCode.ts:26](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L26)
 
 ***
 
@@ -564,7 +564,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:53](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L53)
+[src/constants/HttpStatusCode.ts:53](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L53)
 
 ***
 
@@ -574,7 +574,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:45](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L45)
+[src/constants/HttpStatusCode.ts:45](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L45)
 
 ***
 
@@ -584,7 +584,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:40](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L40)
+[src/constants/HttpStatusCode.ts:40](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L40)
 
 ***
 
@@ -594,7 +594,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:22](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L22)
+[src/constants/HttpStatusCode.ts:22](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L22)
 
 ***
 
@@ -604,7 +604,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:49](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L49)
+[src/constants/HttpStatusCode.ts:49](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L49)
 
 ***
 
@@ -614,7 +614,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:39](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L39)
+[src/constants/HttpStatusCode.ts:39](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L39)
 
 ***
 
@@ -624,7 +624,7 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:21](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L21)
+[src/constants/HttpStatusCode.ts:21](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L21)
 
 ***
 
@@ -634,4 +634,4 @@
 
 #### Source
 
-[src/constants/HttpStatusCode.ts:60](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L60)
+[src/constants/HttpStatusCode.ts:60](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/constants/HttpStatusCode.ts#L60)

@@ -20,4 +20,4 @@
 
 ## Source
 
-[src/utils/types.ts:16](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/types.ts#L16)
+[src/utils/types.ts:16](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/types.ts#L16)

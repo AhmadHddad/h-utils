@@ -31,7 +31,7 @@ toArray(null) // []
 ```
 
 ```ts
-toArray([21]) // []
+toArray([21]) // [21]
 ```
 
 ```ts
@@ -40,4 +40,4 @@ toArray({}) // [{}]
 
 ## Source
 
-[src/utils/general/toArray.ts:10](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/general/toArray.ts#L10)
+[src/utils/general/toArray.ts:10](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/general/toArray.ts#L10)

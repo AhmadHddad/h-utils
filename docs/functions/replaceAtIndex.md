@@ -36,4 +36,4 @@ replaceAtIndex([1, 2, 3, 4, 5], 2, 10) // [1, 2, 10, 4, 5];
 
 ## Source
 
-[src/utils/array/replaceAtIndex.ts:9](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/array/replaceAtIndex.ts#L9)
+[src/utils/array/replaceAtIndex.ts:9](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/array/replaceAtIndex.ts#L9)

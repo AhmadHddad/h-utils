@@ -44,7 +44,7 @@ logManager.logRecord.log // [{time:"123", value:["foo"]}]
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:24](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/ConsoleRecorder.ts#L24)
+[src/classes/ConsoleRecorder.ts:24](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/ConsoleRecorder.ts#L24)
 
 ## Properties
 
@@ -54,13 +54,15 @@ logManager.logRecord.log // [{time:"123", value:["foo"]}]
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:16](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/ConsoleRecorder.ts#L16)
+[src/classes/ConsoleRecorder.ts:16](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/ConsoleRecorder.ts#L16)
 
 ***
 
 ### oldestError()
 
 > `private` **oldestError**: (...`data`) => `void`(`message`?, ...`optionalParams`) => `void` = `console.error`
+
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/console/error_static)
 
 #### Parameters
 
@@ -72,7 +74,8 @@ logManager.logRecord.log // [{time:"123", value:["foo"]}]
 
 Prints to `stderr` with newline. Multiple arguments can be passed, with the
 first used as the primary message and all additional used as substitution
-values similar to [`printf(3)`](http://man7.org/linux/man-pages/man3/printf.3.html) (the arguments are all passed to `util.format()`).
+values similar to [`printf(3)`](http://man7.org/linux/man-pages/man3/printf.3.html)
+(the arguments are all passed to [`util.format()`](https://nodejs.org/docs/latest-v20.x/api/util.html#utilformatformat-args)).
 
 ```js
 const code = 5;
@@ -82,8 +85,10 @@ console.error('error', code);
 // Prints: error 5, to stderr
 ```
 
-If formatting elements (e.g. `%d`) are not found in the first string then `util.inspect()` is called on each argument and the resulting string
-values are concatenated. See `util.format()` for more information.
+If formatting elements (e.g. `%d`) are not found in the first string then
+[`util.inspect()`](https://nodejs.org/docs/latest-v20.x/api/util.html#utilinspectobject-options) is called on each argument and the
+resulting string values are concatenated. See [`util.format()`](https://nodejs.org/docs/latest-v20.x/api/util.html#utilformatformat-args)
+for more information.
 
 #### Parameters
 
@@ -101,13 +106,15 @@ v0.1.100
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:12](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/ConsoleRecorder.ts#L12)
+[src/classes/ConsoleRecorder.ts:12](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/ConsoleRecorder.ts#L12)
 
 ***
 
 ### oldestInfo()
 
 > `private` **oldestInfo**: (...`data`) => `void`(`message`?, ...`optionalParams`) => `void` = `console.info`
+
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/console/info_static)
 
 #### Parameters
 
@@ -135,13 +142,15 @@ v0.1.100
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:11](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/ConsoleRecorder.ts#L11)
+[src/classes/ConsoleRecorder.ts:11](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/ConsoleRecorder.ts#L11)
 
 ***
 
 ### oldestLog()
 
 > `private` **oldestLog**: (...`data`) => `void`(`message`?, ...`optionalParams`) => `void` = `console.log`
+
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/console/log_static)
 
 #### Parameters
 
@@ -153,7 +162,8 @@ v0.1.100
 
 Prints to `stdout` with newline. Multiple arguments can be passed, with the
 first used as the primary message and all additional used as substitution
-values similar to [`printf(3)`](http://man7.org/linux/man-pages/man3/printf.3.html) (the arguments are all passed to `util.format()`).
+values similar to [`printf(3)`](http://man7.org/linux/man-pages/man3/printf.3.html)
+(the arguments are all passed to [`util.format()`](https://nodejs.org/docs/latest-v20.x/api/util.html#utilformatformat-args)).
 
 ```js
 const count = 5;
@@ -163,7 +173,7 @@ console.log('count:', count);
 // Prints: count: 5, to stdout
 ```
 
-See `util.format()` for more information.
+See [`util.format()`](https://nodejs.org/docs/latest-v20.x/api/util.html#utilformatformat-args) for more information.
 
 #### Parameters
 
@@ -181,13 +191,15 @@ v0.1.100
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:10](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/ConsoleRecorder.ts#L10)
+[src/classes/ConsoleRecorder.ts:10](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/ConsoleRecorder.ts#L10)
 
 ***
 
 ### oldestTable()
 
 > `private` **oldestTable**: (`tabularData`?, `properties`?) => `void`(`tabularData`, `properties`?) => `void` = `console.table`
+
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/console/table_static)
 
 #### Parameters
 
@@ -199,7 +211,7 @@ v0.1.100
 
 `void`
 
-Try to construct a table with the columns of the properties of `tabularData`(or use `properties`) and rows of `tabularData` and log it. Falls back to just
+Try to construct a table with the columns of the properties of `tabularData` (or use `properties`) and rows of `tabularData` and log it. Falls back to just
 logging the argument if it can't be parsed as tabular.
 
 ```js
@@ -245,13 +257,15 @@ v10.0.0
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:14](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/ConsoleRecorder.ts#L14)
+[src/classes/ConsoleRecorder.ts:14](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/ConsoleRecorder.ts#L14)
 
 ***
 
 ### oldestWarn()
 
 > `private` **oldestWarn**: (...`data`) => `void`(`message`?, ...`optionalParams`) => `void` = `console.warn`
+
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/console/warn_static)
 
 #### Parameters
 
@@ -279,7 +293,7 @@ v0.1.100
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:13](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/ConsoleRecorder.ts#L13)
+[src/classes/ConsoleRecorder.ts:13](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/ConsoleRecorder.ts#L13)
 
 ## Accessors
 
@@ -293,7 +307,7 @@ v0.1.100
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:116](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/ConsoleRecorder.ts#L116)
+[src/classes/ConsoleRecorder.ts:116](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/ConsoleRecorder.ts#L116)
 
 ## Methods
 
@@ -307,7 +321,7 @@ v0.1.100
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:60](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/ConsoleRecorder.ts#L60)
+[src/classes/ConsoleRecorder.ts:60](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/ConsoleRecorder.ts#L60)
 
 ***
 
@@ -321,7 +335,7 @@ v0.1.100
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:74](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/ConsoleRecorder.ts#L74)
+[src/classes/ConsoleRecorder.ts:74](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/ConsoleRecorder.ts#L74)
 
 ***
 
@@ -335,7 +349,7 @@ v0.1.100
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:46](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/ConsoleRecorder.ts#L46)
+[src/classes/ConsoleRecorder.ts:46](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/ConsoleRecorder.ts#L46)
 
 ***
 
@@ -349,7 +363,7 @@ v0.1.100
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:102](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/ConsoleRecorder.ts#L102)
+[src/classes/ConsoleRecorder.ts:102](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/ConsoleRecorder.ts#L102)
 
 ***
 
@@ -363,7 +377,7 @@ v0.1.100
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:88](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/ConsoleRecorder.ts#L88)
+[src/classes/ConsoleRecorder.ts:88](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/ConsoleRecorder.ts#L88)
 
 ***
 
@@ -377,4 +391,4 @@ v0.1.100
 
 #### Source
 
-[src/classes/ConsoleRecorder.ts:120](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/ConsoleRecorder.ts#L120)
+[src/classes/ConsoleRecorder.ts:120](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/ConsoleRecorder.ts#L120)

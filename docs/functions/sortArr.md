@@ -43,4 +43,4 @@ sortArr([{a:2}, {a:1}], {getValue:(v) => v.a}) // [{a:1}, {a:2}]
 
 ## Source
 
-[src/utils/array/sortArr.ts:19](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/array/sortArr.ts#L19)
+[src/utils/array/sortArr.ts:19](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/array/sortArr.ts#L19)

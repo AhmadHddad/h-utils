@@ -32,4 +32,4 @@ bubbleSort([3,2,1]) // [1,2,3]
 
 ## Source
 
-[src/utils/array/bubbleSort.ts:7](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/array/bubbleSort.ts#L7)
+[src/utils/array/bubbleSort.ts:7](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/array/bubbleSort.ts#L7)

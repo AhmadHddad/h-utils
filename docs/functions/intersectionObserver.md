@@ -58,4 +58,4 @@ observer();
 
 ## Source
 
-[src/utils/browser/intersectionObserver.ts:147](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/browser/intersectionObserver.ts#L147)
+[src/utils/browser/intersectionObserver.ts:147](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/browser/intersectionObserver.ts#L147)

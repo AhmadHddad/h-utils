@@ -38,4 +38,4 @@ monthDifference("2023", "2022") // -12
 
 ## Source
 
-[src/utils/date/monthDifference.ts:10](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/date/monthDifference.ts#L10)
+[src/utils/date/monthDifference.ts:10](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/date/monthDifference.ts#L10)

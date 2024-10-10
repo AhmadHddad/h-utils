@@ -46,4 +46,4 @@ generateRandomObj() // {  JcaOXYeU: true, qZDEUnCs: 0.32064102262293903, RLvQgfl
 
 ## Source
 
-[src/utils/random/generateRandomObj.ts:10](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/random/generateRandomObj.ts#L10)
+[src/utils/random/generateRandomObj.ts:10](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/random/generateRandomObj.ts#L10)

@@ -16,6 +16,156 @@
 
 ## Properties
 
+### \[unscopables\]
+
+> `readonly` **\[unscopables\]**: `object`
+
+Is an object whose properties have the value 'true'
+when they will be absent when used in a 'with' statement.
+
+#### \[unscopables\]?
+
+> `optional` `readonly` **\[unscopables\]**: `boolean`
+
+Is an object whose properties have the value 'true'
+when they will be absent when used in a 'with' statement.
+
+#### length?
+
+> `optional` `readonly` **length**: `boolean`
+
+Gets the length of the array. This is a number one higher than the highest element defined in an array.
+
+#### \[iterator\]?
+
+> `optional` **\[iterator\]**
+
+#### at?
+
+> `optional` **at**
+
+#### concat?
+
+> `optional` **concat**
+
+#### entries?
+
+> `optional` **entries**
+
+#### every?
+
+> `optional` **every**
+
+#### filter?
+
+> `optional` **filter**
+
+#### find?
+
+> `optional` **find**
+
+#### findIndex?
+
+> `optional` **findIndex**
+
+#### findLast?
+
+> `optional` **findLast**
+
+#### findLastIndex?
+
+> `optional` **findLastIndex**
+
+#### flat?
+
+> `optional` **flat**
+
+#### flatMap?
+
+> `optional` **flatMap**
+
+#### forEach?
+
+> `optional` **forEach**
+
+#### includes?
+
+> `optional` **includes**
+
+#### indexOf?
+
+> `optional` **indexOf**
+
+#### join?
+
+> `optional` **join**
+
+#### keys?
+
+> `optional` **keys**
+
+#### lastIndexOf?
+
+> `optional` **lastIndexOf**
+
+#### map?
+
+> `optional` **map**
+
+#### reduce?
+
+> `optional` **reduce**
+
+#### reduceRight?
+
+> `optional` **reduceRight**
+
+#### slice?
+
+> `optional` **slice**
+
+#### some?
+
+> `optional` **some**
+
+#### toLocaleString?
+
+> `optional` **toLocaleString**
+
+#### toReversed?
+
+> `optional` **toReversed**
+
+#### toSorted?
+
+> `optional` **toSorted**
+
+#### toSpliced?
+
+> `optional` **toSpliced**
+
+#### toString?
+
+> `optional` **toString**
+
+#### values?
+
+> `optional` **values**
+
+#### with?
+
+> `optional` **with**
+
+#### Inherited from
+
+`ReadonlyArray.[unscopables]`
+
+#### Source
+
+node\_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:107
+
+***
+
 ### length
 
 > `readonly` **length**: `number`
@@ -28,7 +178,7 @@ Gets the length of the array. This is a number one higher than the highest eleme
 
 #### Source
 
-node\_modules/typescript/lib/lib.es5.d.ts:1170
+node\_modules/typescript/lib/lib.es5.d.ts:1192
 
 ## Methods
 
@@ -48,7 +198,7 @@ Iterator of values in the array.
 
 #### Source
 
-node\_modules/typescript/lib/lib.es2015.iterable.d.ts:96
+node\_modules/typescript/lib/lib.es2015.iterable.d.ts:94
 
 ***
 
@@ -74,7 +224,7 @@ The zero-based index of the desired code unit. A negative index will count back 
 
 #### Source
 
-node\_modules/typescript/lib/lib.es2022.array.d.ts:34
+node\_modules/typescript/lib/lib.es2022.array.d.ts:32
 
 ***
 
@@ -102,7 +252,7 @@ Additional items to add to the end of array1.
 
 ##### Source
 
-node\_modules/typescript/lib/lib.es5.d.ts:1183
+node\_modules/typescript/lib/lib.es5.d.ts:1205
 
 #### concat(items)
 
@@ -126,7 +276,7 @@ Additional items to add to the end of array1.
 
 ##### Source
 
-node\_modules/typescript/lib/lib.es5.d.ts:1188
+node\_modules/typescript/lib/lib.es5.d.ts:1210
 
 ***
 
@@ -146,7 +296,7 @@ Returns an iterable of key, value pairs for every entry in the array
 
 #### Source
 
-node\_modules/typescript/lib/lib.es2015.iterable.d.ts:101
+node\_modules/typescript/lib/lib.es2015.iterable.d.ts:99
 
 ***
 
@@ -185,7 +335,7 @@ If thisArg is omitted, undefined is used as the this value.
 
 ##### Source
 
-node\_modules/typescript/lib/lib.es5.d.ts:1220
+node\_modules/typescript/lib/lib.es5.d.ts:1242
 
 #### every(predicate, thisArg)
 
@@ -216,7 +366,7 @@ If thisArg is omitted, undefined is used as the this value.
 
 ##### Source
 
-node\_modules/typescript/lib/lib.es5.d.ts:1229
+node\_modules/typescript/lib/lib.es5.d.ts:1251
 
 ***
 
@@ -252,7 +402,7 @@ An object to which the this keyword can refer in the predicate function. If this
 
 ##### Source
 
-node\_modules/typescript/lib/lib.es5.d.ts:1256
+node\_modules/typescript/lib/lib.es5.d.ts:1278
 
 #### filter(predicate, thisArg)
 
@@ -280,7 +430,7 @@ An object to which the this keyword can refer in the predicate function. If this
 
 ##### Source
 
-node\_modules/typescript/lib/lib.es5.d.ts:1262
+node\_modules/typescript/lib/lib.es5.d.ts:1284
 
 ***
 
@@ -380,6 +530,102 @@ node\_modules/typescript/lib/lib.es2015.core.d.ts:364
 
 ***
 
+### findLast()
+
+#### findLast(predicate, thisArg)
+
+> **findLast**\<`S`\>(`predicate`, `thisArg`?): `undefined` \| `S`
+
+Returns the value of the last element in the array where predicate is true, and undefined
+otherwise.
+
+##### Type parameters
+
+• **S**
+
+##### Parameters
+
+• **predicate**
+
+findLast calls predicate once for each element of the array, in descending
+order, until it finds one where predicate returns true. If such an element is found, findLast
+immediately returns that element value. Otherwise, findLast returns undefined.
+
+• **thisArg?**: `any`
+
+If provided, it will be used as the this value for each invocation of
+predicate. If it is not provided, undefined is used instead.
+
+##### Returns
+
+`undefined` \| `S`
+
+##### Inherited from
+
+`ReadonlyArray.findLast`
+
+##### Source
+
+node\_modules/typescript/lib/lib.es2023.array.d.ts:98
+
+#### findLast(predicate, thisArg)
+
+> **findLast**(`predicate`, `thisArg`?): `undefined` \| [`DeepReadonly`](../type-aliases/DeepReadonly.md)\<`T`\>
+
+##### Parameters
+
+• **predicate**
+
+• **thisArg?**: `any`
+
+##### Returns
+
+`undefined` \| [`DeepReadonly`](../type-aliases/DeepReadonly.md)\<`T`\>
+
+##### Inherited from
+
+`ReadonlyArray.findLast`
+
+##### Source
+
+node\_modules/typescript/lib/lib.es2023.array.d.ts:102
+
+***
+
+### findLastIndex()
+
+> **findLastIndex**(`predicate`, `thisArg`?): `number`
+
+Returns the index of the last element in the array where predicate is true, and -1
+otherwise.
+
+#### Parameters
+
+• **predicate**
+
+findLastIndex calls predicate once for each element of the array, in descending
+order, until it finds one where predicate returns true. If such an element is found,
+findLastIndex immediately returns that element index. Otherwise, findLastIndex returns -1.
+
+• **thisArg?**: `any`
+
+If provided, it will be used as the this value for each invocation of
+predicate. If it is not provided, undefined is used instead.
+
+#### Returns
+
+`number`
+
+#### Inherited from
+
+`ReadonlyArray.findLastIndex`
+
+#### Source
+
+node\_modules/typescript/lib/lib.es2023.array.d.ts:116
+
+***
+
 ### flat()
 
 > **flat**\<`A`, `D`\>(`this`, `depth`?): `FlatArray`\<`A`, `D`\>[]
@@ -411,7 +657,7 @@ The maximum recursion depth
 
 #### Source
 
-node\_modules/typescript/lib/lib.es2019.array.d.ts:52
+node\_modules/typescript/lib/lib.es2019.array.d.ts:47
 
 ***
 
@@ -451,7 +697,7 @@ thisArg is omitted, undefined is used as the this value.
 
 #### Source
 
-node\_modules/typescript/lib/lib.es2019.array.d.ts:40
+node\_modules/typescript/lib/lib.es2019.array.d.ts:36
 
 ***
 
@@ -481,7 +727,7 @@ An object to which the this keyword can refer in the callbackfn function. If thi
 
 #### Source
 
-node\_modules/typescript/lib/lib.es5.d.ts:1244
+node\_modules/typescript/lib/lib.es5.d.ts:1266
 
 ***
 
@@ -511,7 +757,7 @@ The position in this array at which to begin searching for searchElement.
 
 #### Source
 
-node\_modules/typescript/lib/lib.es2016.array.include.d.ts:36
+node\_modules/typescript/lib/lib.es2016.array.include.d.ts:34
 
 ***
 
@@ -541,7 +787,7 @@ The array index at which to begin the search. If fromIndex is omitted, the searc
 
 #### Source
 
-node\_modules/typescript/lib/lib.es5.d.ts:1205
+node\_modules/typescript/lib/lib.es5.d.ts:1227
 
 ***
 
@@ -567,7 +813,7 @@ A string used to separate one element of an array from the next in the resulting
 
 #### Source
 
-node\_modules/typescript/lib/lib.es5.d.ts:1193
+node\_modules/typescript/lib/lib.es5.d.ts:1215
 
 ***
 
@@ -587,7 +833,7 @@ Returns an iterable of keys in the array
 
 #### Source
 
-node\_modules/typescript/lib/lib.es2015.iterable.d.ts:106
+node\_modules/typescript/lib/lib.es2015.iterable.d.ts:104
 
 ***
 
@@ -617,7 +863,7 @@ The array index at which to begin the search. If fromIndex is omitted, the searc
 
 #### Source
 
-node\_modules/typescript/lib/lib.es5.d.ts:1211
+node\_modules/typescript/lib/lib.es5.d.ts:1233
 
 ***
 
@@ -651,7 +897,7 @@ An object to which the this keyword can refer in the callbackfn function. If thi
 
 #### Source
 
-node\_modules/typescript/lib/lib.es5.d.ts:1250
+node\_modules/typescript/lib/lib.es5.d.ts:1272
 
 ***
 
@@ -679,7 +925,7 @@ A function that accepts up to four arguments. The reduce method calls the callba
 
 ##### Source
 
-node\_modules/typescript/lib/lib.es5.d.ts:1268
+node\_modules/typescript/lib/lib.es5.d.ts:1290
 
 #### reduce(callbackfn, initialValue)
 
@@ -701,7 +947,7 @@ node\_modules/typescript/lib/lib.es5.d.ts:1268
 
 ##### Source
 
-node\_modules/typescript/lib/lib.es5.d.ts:1269
+node\_modules/typescript/lib/lib.es5.d.ts:1291
 
 #### reduce(callbackfn, initialValue)
 
@@ -733,7 +979,7 @@ If initialValue is specified, it is used as the initial value to start the accum
 
 ##### Source
 
-node\_modules/typescript/lib/lib.es5.d.ts:1275
+node\_modules/typescript/lib/lib.es5.d.ts:1297
 
 ***
 
@@ -761,7 +1007,7 @@ A function that accepts up to four arguments. The reduceRight method calls the c
 
 ##### Source
 
-node\_modules/typescript/lib/lib.es5.d.ts:1281
+node\_modules/typescript/lib/lib.es5.d.ts:1303
 
 #### reduceRight(callbackfn, initialValue)
 
@@ -783,7 +1029,7 @@ node\_modules/typescript/lib/lib.es5.d.ts:1281
 
 ##### Source
 
-node\_modules/typescript/lib/lib.es5.d.ts:1282
+node\_modules/typescript/lib/lib.es5.d.ts:1304
 
 #### reduceRight(callbackfn, initialValue)
 
@@ -815,7 +1061,7 @@ If initialValue is specified, it is used as the initial value to start the accum
 
 ##### Source
 
-node\_modules/typescript/lib/lib.es5.d.ts:1288
+node\_modules/typescript/lib/lib.es5.d.ts:1310
 
 ***
 
@@ -845,7 +1091,7 @@ The end of the specified portion of the array. This is exclusive of the element 
 
 #### Source
 
-node\_modules/typescript/lib/lib.es5.d.ts:1199
+node\_modules/typescript/lib/lib.es5.d.ts:1221
 
 ***
 
@@ -878,27 +1124,170 @@ If thisArg is omitted, undefined is used as the this value.
 
 #### Source
 
-node\_modules/typescript/lib/lib.es5.d.ts:1238
+node\_modules/typescript/lib/lib.es5.d.ts:1260
 
 ***
 
 ### toLocaleString()
 
+#### toLocaleString()
+
 > **toLocaleString**(): `string`
 
 Returns a string representation of an array. The elements are converted to string using their toLocaleString methods.
 
-#### Returns
+##### Returns
 
 `string`
 
-#### Inherited from
+##### Inherited from
 
 `ReadonlyArray.toLocaleString`
 
+##### Source
+
+node\_modules/typescript/lib/lib.es5.d.ts:1200
+
+#### toLocaleString(locales, options)
+
+> **toLocaleString**(`locales`, `options`?): `string`
+
+##### Parameters
+
+• **locales**: `string` \| `string`[]
+
+• **options?**: `NumberFormatOptions` & `DateTimeFormatOptions`
+
+##### Returns
+
+`string`
+
+##### Inherited from
+
+`ReadonlyArray.toLocaleString`
+
+##### Source
+
+node\_modules/typescript/lib/lib.es2015.core.d.ts:366
+
+***
+
+### toReversed()
+
+> **toReversed**(): [`DeepReadonly`](../type-aliases/DeepReadonly.md)\<`T`\>[]
+
+Copies the array and returns the copied array with all of its elements reversed.
+
+#### Returns
+
+[`DeepReadonly`](../type-aliases/DeepReadonly.md)\<`T`\>[]
+
+#### Inherited from
+
+`ReadonlyArray.toReversed`
+
 #### Source
 
-node\_modules/typescript/lib/lib.es5.d.ts:1178
+node\_modules/typescript/lib/lib.es2023.array.d.ts:124
+
+***
+
+### toSorted()
+
+> **toSorted**(`compareFn`?): [`DeepReadonly`](../type-aliases/DeepReadonly.md)\<`T`\>[]
+
+Copies and sorts the array.
+
+#### Parameters
+
+• **compareFn?**
+
+Function used to determine the order of the elements. It is expected to return
+a negative value if the first argument is less than the second argument, zero if they're equal, and a positive
+value otherwise. If omitted, the elements are sorted in ascending, ASCII character order.
+```ts
+[11, 2, 22, 1].toSorted((a, b) => a - b) // [1, 2, 11, 22]
+```
+
+#### Returns
+
+[`DeepReadonly`](../type-aliases/DeepReadonly.md)\<`T`\>[]
+
+#### Inherited from
+
+`ReadonlyArray.toSorted`
+
+#### Source
+
+node\_modules/typescript/lib/lib.es2023.array.d.ts:135
+
+***
+
+### toSpliced()
+
+#### toSpliced(start, deleteCount, items)
+
+> **toSpliced**(`start`, `deleteCount`, ...`items`): [`DeepReadonly`](../type-aliases/DeepReadonly.md)\<`T`\>[]
+
+Copies an array and removes elements while, if necessary, inserting new elements in their place, returning the remaining elements.
+
+##### Parameters
+
+• **start**: `number`
+
+The zero-based location in the array from which to start removing elements.
+
+• **deleteCount**: `number`
+
+The number of elements to remove.
+
+• ...**items**: [`DeepReadonly`](../type-aliases/DeepReadonly.md)\<`T`\>[]
+
+Elements to insert into the copied array in place of the deleted elements.
+
+##### Returns
+
+[`DeepReadonly`](../type-aliases/DeepReadonly.md)\<`T`\>[]
+
+A copy of the original array with the remaining elements.
+
+##### Inherited from
+
+`ReadonlyArray.toSpliced`
+
+##### Source
+
+node\_modules/typescript/lib/lib.es2023.array.d.ts:144
+
+#### toSpliced(start, deleteCount)
+
+> **toSpliced**(`start`, `deleteCount`?): [`DeepReadonly`](../type-aliases/DeepReadonly.md)\<`T`\>[]
+
+Copies an array and removes elements while returning the remaining elements.
+
+##### Parameters
+
+• **start**: `number`
+
+The zero-based location in the array from which to start removing elements.
+
+• **deleteCount?**: `number`
+
+The number of elements to remove.
+
+##### Returns
+
+[`DeepReadonly`](../type-aliases/DeepReadonly.md)\<`T`\>[]
+
+A copy of the original array with the remaining elements.
+
+##### Inherited from
+
+`ReadonlyArray.toSpliced`
+
+##### Source
+
+node\_modules/typescript/lib/lib.es2023.array.d.ts:152
 
 ***
 
@@ -918,7 +1307,7 @@ Returns a string representation of an array.
 
 #### Source
 
-node\_modules/typescript/lib/lib.es5.d.ts:1174
+node\_modules/typescript/lib/lib.es5.d.ts:1196
 
 ***
 
@@ -938,4 +1327,39 @@ Returns an iterable of values in the array
 
 #### Source
 
-node\_modules/typescript/lib/lib.es2015.iterable.d.ts:111
+node\_modules/typescript/lib/lib.es2015.iterable.d.ts:109
+
+***
+
+### with()
+
+> **with**(`index`, `value`): [`DeepReadonly`](../type-aliases/DeepReadonly.md)\<`T`\>[]
+
+Copies an array, then overwrites the value at the provided index with the
+given value. If the index is negative, then it replaces from the end
+of the array
+
+#### Parameters
+
+• **index**: `number`
+
+The index of the value to overwrite. If the index is
+negative, then it replaces from the end of the array.
+
+• **value**: [`DeepReadonly`](../type-aliases/DeepReadonly.md)\<`T`\>
+
+The value to insert into the copied array.
+
+#### Returns
+
+[`DeepReadonly`](../type-aliases/DeepReadonly.md)\<`T`\>[]
+
+A copy of the original array with the inserted value.
+
+#### Inherited from
+
+`ReadonlyArray.with`
+
+#### Source
+
+node\_modules/typescript/lib/lib.es2023.array.d.ts:163

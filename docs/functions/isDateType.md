@@ -22,4 +22,4 @@ If the value is truthy and is a Date type, then return true, otherwise return fa
 
 ## Source
 
-[src/utils/validation/isDateType.ts:4](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/validation/isDateType.ts#L4)
+[src/utils/validation/isDateType.ts:4](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/validation/isDateType.ts#L4)

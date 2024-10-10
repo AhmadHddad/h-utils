@@ -32,4 +32,4 @@ joinArrays([1,2,3], [4,5,6], null ,undefined, "hello") // [1,2,3,4,5,6]
 
 ## Source
 
-[src/utils/array/joinArrays.ts:8](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/array/joinArrays.ts#L8)
+[src/utils/array/joinArrays.ts:8](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/array/joinArrays.ts#L8)

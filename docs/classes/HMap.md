@@ -47,7 +47,7 @@ HMap.from({ a: 1, b: 2 }).mapArray((val) => val); // [ 1, 2 ]
 
 #### Source
 
-node\_modules/typescript/lib/lib.es2015.collection.d.ts:53
+node\_modules/typescript/lib/lib.es2015.collection.d.ts:50
 
 ### new HMap()
 
@@ -67,7 +67,7 @@ node\_modules/typescript/lib/lib.es2015.collection.d.ts:53
 
 #### Source
 
-node\_modules/typescript/lib/lib.es2015.collection.d.ts:52
+node\_modules/typescript/lib/lib.es2015.collection.d.ts:49
 
 ## Properties
 
@@ -81,7 +81,7 @@ node\_modules/typescript/lib/lib.es2015.collection.d.ts:52
 
 #### Source
 
-node\_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:135
+node\_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:137
 
 ***
 
@@ -95,7 +95,7 @@ node\_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:135
 
 #### Source
 
-node\_modules/typescript/lib/lib.es2015.collection.d.ts:48
+node\_modules/typescript/lib/lib.es2015.collection.d.ts:45
 
 ***
 
@@ -109,7 +109,7 @@ node\_modules/typescript/lib/lib.es2015.collection.d.ts:48
 
 #### Source
 
-node\_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:317
+node\_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:319
 
 ## Methods
 
@@ -129,7 +129,7 @@ Returns an iterable of entries in the map.
 
 #### Source
 
-node\_modules/typescript/lib/lib.es2015.iterable.d.ts:121
+node\_modules/typescript/lib/lib.es2015.iterable.d.ts:119
 
 ***
 
@@ -147,7 +147,7 @@ node\_modules/typescript/lib/lib.es2015.iterable.d.ts:121
 
 #### Source
 
-node\_modules/typescript/lib/lib.es2015.collection.d.ts:23
+node\_modules/typescript/lib/lib.es2015.collection.d.ts:20
 
 ***
 
@@ -171,7 +171,7 @@ true if an element in the Map existed and has been removed, or false if the elem
 
 #### Source
 
-node\_modules/typescript/lib/lib.es2015.collection.d.ts:27
+node\_modules/typescript/lib/lib.es2015.collection.d.ts:24
 
 ***
 
@@ -191,7 +191,7 @@ Returns an iterable of key, value pairs for every entry in the map.
 
 #### Source
 
-node\_modules/typescript/lib/lib.es2015.iterable.d.ts:126
+node\_modules/typescript/lib/lib.es2015.iterable.d.ts:124
 
 ***
 
@@ -219,7 +219,7 @@ HMap.from({a:1}).every((val, key) => val === 1) // true
 
 #### Source
 
-[src/classes/HMap.ts:92](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/HMap.ts#L92)
+[src/classes/HMap.ts:92](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/HMap.ts#L92)
 
 ***
 
@@ -247,7 +247,7 @@ HMap.from({a:1}).filter((v, k) => v === 1).toObject() // {a:1}
 
 #### Source
 
-[src/classes/HMap.ts:20](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/HMap.ts#L20)
+[src/classes/HMap.ts:20](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/HMap.ts#L20)
 
 ***
 
@@ -275,7 +275,7 @@ HMap.from({a:1}).findValue((val, key) => val > 0) // 1;
 
 #### Source
 
-[src/classes/HMap.ts:76](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/HMap.ts#L76)
+[src/classes/HMap.ts:76](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/HMap.ts#L76)
 
 ***
 
@@ -301,7 +301,7 @@ Executes a provided function once per each key/value pair in the Map, in inserti
 
 #### Source
 
-node\_modules/typescript/lib/lib.es2015.collection.d.ts:31
+node\_modules/typescript/lib/lib.es2015.collection.d.ts:28
 
 ***
 
@@ -327,7 +327,7 @@ Returns the element associated with the specified key. If no element is associat
 
 #### Source
 
-node\_modules/typescript/lib/lib.es2015.collection.d.ts:36
+node\_modules/typescript/lib/lib.es2015.collection.d.ts:33
 
 ***
 
@@ -351,7 +351,7 @@ HMap.from({a:1}).getAllKeys() // ["a"]
 
 #### Source
 
-[src/classes/HMap.ts:102](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/HMap.ts#L102)
+[src/classes/HMap.ts:102](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/HMap.ts#L102)
 
 ***
 
@@ -375,7 +375,7 @@ HMap.from({a:1}).getAllVAlues() // [1]
 
 #### Source
 
-[src/classes/HMap.ts:120](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/HMap.ts#L120)
+[src/classes/HMap.ts:120](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/HMap.ts#L120)
 
 ***
 
@@ -399,7 +399,7 @@ boolean indicating whether an element with the specified key exists or not.
 
 #### Source
 
-node\_modules/typescript/lib/lib.es2015.collection.d.ts:40
+node\_modules/typescript/lib/lib.es2015.collection.d.ts:37
 
 ***
 
@@ -419,7 +419,7 @@ Returns an iterable of keys in the map
 
 #### Source
 
-node\_modules/typescript/lib/lib.es2015.iterable.d.ts:131
+node\_modules/typescript/lib/lib.es2015.iterable.d.ts:129
 
 ***
 
@@ -451,7 +451,7 @@ HMap.from({a:1}).mapFields((v, k) => ([v + 1, "b"])).toObject() // { a: [ 2, 'b'
 
 #### Source
 
-[src/classes/HMap.ts:52](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/HMap.ts#L52)
+[src/classes/HMap.ts:52](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/HMap.ts#L52)
 
 ***
 
@@ -483,7 +483,7 @@ HMap.from({a:1, b:2}).mapArray((val) => (val)) // [ 1, 2 ]
 
 #### Source
 
-[src/classes/HMap.ts:64](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/HMap.ts#L64)
+[src/classes/HMap.ts:64](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/HMap.ts#L64)
 
 ***
 
@@ -515,7 +515,7 @@ HMap.from({a:1}).mapFields((v, k) => ([v + 1, "b"])).toObject() // {b:2}
 
 #### Source
 
-[src/classes/HMap.ts:36](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/HMap.ts#L36)
+[src/classes/HMap.ts:36](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/HMap.ts#L36)
 
 ***
 
@@ -541,7 +541,7 @@ Adds a new element with a specified key and value to the Map. If an element with
 
 #### Source
 
-node\_modules/typescript/lib/lib.es2015.collection.d.ts:44
+node\_modules/typescript/lib/lib.es2015.collection.d.ts:41
 
 ***
 
@@ -569,7 +569,7 @@ HMap.from({a:1}).some((val, key) => val === 1) // true
 
 #### Source
 
-[src/classes/HMap.ts:110](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/HMap.ts#L110)
+[src/classes/HMap.ts:110](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/HMap.ts#L110)
 
 ***
 
@@ -593,7 +593,7 @@ HMap.from({a:1}).toObject() // {a:1}
 
 #### Source
 
-[src/classes/HMap.ts:128](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/HMap.ts#L128)
+[src/classes/HMap.ts:128](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/HMap.ts#L128)
 
 ***
 
@@ -613,7 +613,7 @@ Returns an iterable of values in the map
 
 #### Source
 
-node\_modules/typescript/lib/lib.es2015.iterable.d.ts:136
+node\_modules/typescript/lib/lib.es2015.iterable.d.ts:134
 
 ***
 
@@ -647,4 +647,40 @@ const hmap = HMap.from({a:1}).
 
 #### Source
 
-[src/classes/HMap.ts:12](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/HMap.ts#L12)
+[src/classes/HMap.ts:12](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/HMap.ts#L12)
+
+***
+
+### groupBy()
+
+> `static` **groupBy**\<`K`, `T`\>(`items`, `keySelector`): `Map`\<`K`, `T`[]\>
+
+Groups members of an iterable according to the return value of the passed callback.
+
+#### Type parameters
+
+• **K**
+
+• **T**
+
+#### Parameters
+
+• **items**: `Iterable`\<`T`\>
+
+An iterable.
+
+• **keySelector**
+
+A callback which will be invoked for each item in items.
+
+#### Returns
+
+`Map`\<`K`, `T`[]\>
+
+#### Inherited from
+
+`Map.groupBy`
+
+#### Source
+
+node\_modules/typescript/lib/lib.esnext.collection.d.ts:25

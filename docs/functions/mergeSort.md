@@ -33,4 +33,4 @@ const arrayToSort = [3, 1,-1, 0,  4, 1, 5, 9, 2, 6, 5, 3, 5];
 
 ## Source
 
-[src/utils/array/mergeSort.ts:12](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/array/mergeSort.ts#L12)
+[src/utils/array/mergeSort.ts:12](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/array/mergeSort.ts#L12)

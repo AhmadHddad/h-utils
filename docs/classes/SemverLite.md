@@ -29,7 +29,7 @@ This is just a very lite semver implementation, if you need the actual thing you
 
 #### Source
 
-[src/classes/SemverLite.ts:8](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/SemverLite.ts#L8)
+[src/classes/SemverLite.ts:8](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/SemverLite.ts#L8)
 
 ## Methods
 
@@ -51,7 +51,7 @@ Extracts the numeric version part from a string.
 
 #### Source
 
-[src/classes/SemverLite.ts:38](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/SemverLite.ts#L38)
+[src/classes/SemverLite.ts:38](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/SemverLite.ts#L38)
 
 ***
 
@@ -75,7 +75,7 @@ Compares two versions and returns true if version1 is greater than version2.
 
 #### Source
 
-[src/classes/SemverLite.ts:13](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/SemverLite.ts#L13)
+[src/classes/SemverLite.ts:13](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/SemverLite.ts#L13)
 
 ***
 
@@ -97,7 +97,7 @@ Checks if a version string is valid.
 
 #### Source
 
-[src/classes/SemverLite.ts:31](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/SemverLite.ts#L31)
+[src/classes/SemverLite.ts:31](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/SemverLite.ts#L31)
 
 ***
 
@@ -121,7 +121,7 @@ Compares two versions and returns true if version1 is less than version2.
 
 #### Source
 
-[src/classes/SemverLite.ts:22](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/SemverLite.ts#L22)
+[src/classes/SemverLite.ts:22](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/SemverLite.ts#L22)
 
 ***
 
@@ -143,7 +143,7 @@ Returns the smallest version from an array of versions.
 
 #### Source
 
-[src/classes/SemverLite.ts:46](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/SemverLite.ts#L46)
+[src/classes/SemverLite.ts:46](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/SemverLite.ts#L46)
 
 ***
 
@@ -165,4 +165,4 @@ Converts a version string into a comparable numeric value.
 
 #### Source
 
-[src/classes/SemverLite.ts:55](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/SemverLite.ts#L55)
+[src/classes/SemverLite.ts:55](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/SemverLite.ts#L55)
