@@ -212,6 +212,14 @@ export { default as generateRandomInt } from './utils/random/generateRandomInt';
 export { default as generateRandomString } from './utils/random/generateRandomString';
 export { default as generateRandomObj } from './utils/random/generateRandomObj';
 
+// FormData
+export { default as extractBoundary } from './utils/formData/extractBoundary';
+export { default as formDataToText } from './utils/formData/formDataToText';
+export { default as parseFormDataText } from './utils/formData/parseFormDataText';
+export { default as jsonToFormData } from './utils/formData/jsonToFormData';
+
+
+
 // Types
 export * from './utils/utilityTypes';
 export * from './utils/types';
