@@ -14,13 +14,13 @@
  * @example
  * const json = { username: 'john_doe', age: 30, files: ['file1.png', 'file2.jpg'] };
  * const boundary = '----WebKitFormBoundary123456';
- * const formDataText = jsonToFormData(json, boundary, 'form-data');
+ * const formDataText = jsonToFormDataText(json, boundary, 'form-data');
  * console.log(formDataText); // Outputs multipart/form-data formatted string
  *
- * const urlEncodedText = jsonToFormData(json, undefined, 'urlencoded');
+ * const urlEncodedText = jsonToFormDataText(json, undefined, 'urlencoded');
  * console.log(urlEncodedText); // Outputs application/x-www-form-urlencoded string
  */
-export default function jsonToFormData(
+export default function jsonToFormDataText(
     jsonData: Record<string, unknown>,
     type: 'form-data' | 'related' | 'mixed' | 'urlencoded' = 'form-data',
     boundary?: string,

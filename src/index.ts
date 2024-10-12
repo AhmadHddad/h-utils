@@ -216,7 +216,7 @@ export { default as generateRandomObj } from './utils/random/generateRandomObj';
 export { default as extractBoundary } from './utils/formData/extractBoundary';
 export { default as formDataToText } from './utils/formData/formDataToText';
 export { default as parseFormDataText } from './utils/formData/parseFormDataText';
-export { default as jsonToFormData } from './utils/formData/jsonToFormData';
+export { default as jsonToFormDataText } from './utils/formData/jsonToFormDataText';
 
 
 
