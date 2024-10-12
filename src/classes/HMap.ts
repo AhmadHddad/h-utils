@@ -129,7 +129,3 @@ export default class HMap<K extends string | symbol, V> extends Map<K, V> {
     return Object.fromEntries(this) as Record<K, V>;
   };
 }
-
-const obj = HMap.from({ a: 1, b: 2 }).mapArray((val) => val);
-
-console.log(obj);
