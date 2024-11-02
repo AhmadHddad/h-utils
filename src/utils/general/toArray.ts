@@ -7,7 +7,7 @@
  * @param {unknown} source - unknown
  * @returns An array.
  */
-export default function toArray(source: unknown) {
+export default function toArray<T = unknown>(source: T) {
     if (!source) return [];
     return Array.isArray(source) ? source : [source];
   }
