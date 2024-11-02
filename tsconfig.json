@@ -1,37 +1,23 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "declaration": true,
-    "pretty": true,
-    "rootDir": "src",
-    "allowJs": true,
-    "sourceMap": false,
-    "strict": true,
-    "esModuleInterop": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noImplicitAny": false,
-    "noFallthroughCasesInSwitch": true,
-    "outDir": "lib",
+    "target": "ES2020",
+    "module": "ES6",
     "lib": [
-      "es2018",
-      "ESNext", 
-      "dom"
+      "ES6",
+      "DOM"
     ],
-    "importHelpers": true
+    "declaration": true,
+    "outDir": "lib",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "skipLibCheck": true
   },
+  "include": [
+    "src"
+  ],
   "exclude": [
     "node_modules",
+    "docs",
     "lib",
-    "dist",
-    "esm",
-    "tests",
-    "stories",
-    "jest.config.ts",
-    "./speedTest.ts",
-    "jest.config.*.ts"
   ]
 }
