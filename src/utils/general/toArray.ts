@@ -1,4 +1,3 @@
-
 /**
  * @description If the source is null or undefined, return an empty array, otherwise return the source as an array.
  * @example toArray(null) // []
@@ -7,9 +6,7 @@
  * @param {unknown} source - unknown
  * @returns An array.
  */
-export default function toArray<T = unknown>(source: T) {
-    if (!source) return [];
-    return Array.isArray(source) ? source : [source];
-  }
-
-  
+export default function toArray<T = any>(source: unknown): T[] {
+  if (!source) return [];
+  return Array.isArray(source) ? source : [source];
+}
