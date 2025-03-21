@@ -57,6 +57,7 @@ export { default as toArray } from './utils/general/toArray';
 export { default as urlSearchParamsToObject } from './utils/general/urlSearchParamsToObject';
 export { default as uuidv4 } from './utils/general/generateUUID';
 export { default as wait } from './utils/general/sleep';
+export { default as tryCatch } from './utils/general/tryCatch';
 
 // Validators
 export { default as validateImageURLAsync } from './utils/validators/validateImageURLAsync';
