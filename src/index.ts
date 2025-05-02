@@ -120,6 +120,7 @@ export { default as getSmallestArrInObj } from './utils/object/getSmallestArrInO
 export { default as has } from './utils/object/has';
 export { default as includeKeys } from './utils/object/includeKeys';
 export { default as joinObjects } from './utils/object/joinObjects';
+export { default as joinObjects2 } from './utils/object/joinObjects2';
 export { default as getObjectValueByPath } from './utils/object/getObjectValueByPath';
 export { default as findKeyOrValuePathInObject } from './utils/object/findKeyOrValuePathInObject';
 export { default as createMirroredObject, type TransformCallback } from './utils/object/createMirroredObject';
