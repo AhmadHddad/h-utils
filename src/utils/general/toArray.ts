@@ -8,5 +8,5 @@
  */
 export default function toArray<T = any>(source: unknown): T[] {
   if (!source) return [];
-  return Array.isArray(source) ? source : [source];
+  return Array.isArray(source) ? source : [source as T];
 }
