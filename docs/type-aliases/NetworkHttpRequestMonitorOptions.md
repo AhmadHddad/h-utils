@@ -8,7 +8,7 @@
 
 > **NetworkHttpRequestMonitorOptions** = `object`
 
-Defined in: [src/utils/types.ts:513](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L513)
+Defined in: [src/utils/types.ts:513](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L513)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [src/utils/types.ts:513](https://github.com/AhmadHddad/h-utils/blob/
 
 > `optional` **cancelAfterIdle**: `boolean`
 
-Defined in: [src/utils/types.ts:528](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L528)
+Defined in: [src/utils/types.ts:528](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L528)
 
 #### Description
 
@@ -34,7 +34,7 @@ true
 
 > `optional` **intervalMs**: `number`
 
-Defined in: [src/utils/types.ts:518](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L518)
+Defined in: [src/utils/types.ts:518](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L518)
 
 #### Description
 
@@ -52,7 +52,7 @@ check cycle time in ms
 
 > `optional` **triggerOnWindowLoad**: `boolean`
 
-Defined in: [src/utils/types.ts:523](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L523)
+Defined in: [src/utils/types.ts:523](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L523)
 
 #### Description
 

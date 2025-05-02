@@ -6,7 +6,7 @@
 
 # Class: BrowserURLUpdater
 
-Defined in: [src/classes/BrowserURLUpdater.ts:14](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L14)
+Defined in: [src/classes/BrowserURLUpdater.ts:14](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/BrowserURLUpdater.ts#L14)
 
 ## Important
 
@@ -29,7 +29,7 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 > **new BrowserURLUpdater**(`url`, `reloadOnEveryChange?`): `BrowserURLUpdater`
 
-Defined in: [src/classes/BrowserURLUpdater.ts:19](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L19)
+Defined in: [src/classes/BrowserURLUpdater.ts:19](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/BrowserURLUpdater.ts#L19)
 
 #### Parameters
 
@@ -53,7 +53,7 @@ Defined in: [src/classes/BrowserURLUpdater.ts:19](https://github.com/AhmadHddad/
 
 > **get** **reload**(): `boolean`
 
-Defined in: [src/classes/BrowserURLUpdater.ts:89](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L89)
+Defined in: [src/classes/BrowserURLUpdater.ts:89](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/BrowserURLUpdater.ts#L89)
 
 ##### Returns
 
@@ -63,7 +63,7 @@ Defined in: [src/classes/BrowserURLUpdater.ts:89](https://github.com/AhmadHddad/
 
 > **set** **reload**(`value`): `void`
 
-Defined in: [src/classes/BrowserURLUpdater.ts:93](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L93)
+Defined in: [src/classes/BrowserURLUpdater.ts:93](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/BrowserURLUpdater.ts#L93)
 
 ##### Parameters
 
@@ -83,7 +83,7 @@ Defined in: [src/classes/BrowserURLUpdater.ts:93](https://github.com/AhmadHddad/
 
 > **get** **state**(): `any`
 
-Defined in: [src/classes/BrowserURLUpdater.ts:97](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L97)
+Defined in: [src/classes/BrowserURLUpdater.ts:97](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/BrowserURLUpdater.ts#L97)
 
 ##### Returns
 
@@ -93,7 +93,7 @@ Defined in: [src/classes/BrowserURLUpdater.ts:97](https://github.com/AhmadHddad/
 
 > **set** **state**(`value`): `void`
 
-Defined in: [src/classes/BrowserURLUpdater.ts:101](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L101)
+Defined in: [src/classes/BrowserURLUpdater.ts:101](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/BrowserURLUpdater.ts#L101)
 
 ##### Parameters
 
@@ -113,7 +113,7 @@ Defined in: [src/classes/BrowserURLUpdater.ts:101](https://github.com/AhmadHddad
 
 > **get** **url**(): `string`
 
-Defined in: [src/classes/BrowserURLUpdater.ts:85](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L85)
+Defined in: [src/classes/BrowserURLUpdater.ts:85](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/BrowserURLUpdater.ts#L85)
 
 ##### Returns
 
@@ -123,7 +123,7 @@ Defined in: [src/classes/BrowserURLUpdater.ts:85](https://github.com/AhmadHddad/
 
 > **set** **url**(`value`): `void`
 
-Defined in: [src/classes/BrowserURLUpdater.ts:81](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L81)
+Defined in: [src/classes/BrowserURLUpdater.ts:81](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/BrowserURLUpdater.ts#L81)
 
 ##### Parameters
 
@@ -141,7 +141,7 @@ Defined in: [src/classes/BrowserURLUpdater.ts:81](https://github.com/AhmadHddad/
 
 > **getFragment**(): `string`
 
-Defined in: [src/classes/BrowserURLUpdater.ts:72](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L72)
+Defined in: [src/classes/BrowserURLUpdater.ts:72](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/BrowserURLUpdater.ts#L72)
 
 #### Returns
 
@@ -153,7 +153,7 @@ Defined in: [src/classes/BrowserURLUpdater.ts:72](https://github.com/AhmadHddad/
 
 > **getPath**(): `string`
 
-Defined in: [src/classes/BrowserURLUpdater.ts:53](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L53)
+Defined in: [src/classes/BrowserURLUpdater.ts:53](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/BrowserURLUpdater.ts#L53)
 
 #### Returns
 
@@ -165,7 +165,7 @@ Defined in: [src/classes/BrowserURLUpdater.ts:53](https://github.com/AhmadHddad/
 
 > **getQueryParam**(`key`): `string`
 
-Defined in: [src/classes/BrowserURLUpdater.ts:49](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L49)
+Defined in: [src/classes/BrowserURLUpdater.ts:49](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/BrowserURLUpdater.ts#L49)
 
 #### Parameters
 
@@ -183,7 +183,7 @@ Defined in: [src/classes/BrowserURLUpdater.ts:49](https://github.com/AhmadHddad/
 
 > **removeFragment**(): `void`
 
-Defined in: [src/classes/BrowserURLUpdater.ts:76](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L76)
+Defined in: [src/classes/BrowserURLUpdater.ts:76](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/BrowserURLUpdater.ts#L76)
 
 #### Returns
 
@@ -195,7 +195,7 @@ Defined in: [src/classes/BrowserURLUpdater.ts:76](https://github.com/AhmadHddad/
 
 > **removePath**(): `void`
 
-Defined in: [src/classes/BrowserURLUpdater.ts:62](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L62)
+Defined in: [src/classes/BrowserURLUpdater.ts:62](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/BrowserURLUpdater.ts#L62)
 
 #### Returns
 
@@ -207,7 +207,7 @@ Defined in: [src/classes/BrowserURLUpdater.ts:62](https://github.com/AhmadHddad/
 
 > **removeQueryParam**(`key`): `void`
 
-Defined in: [src/classes/BrowserURLUpdater.ts:44](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L44)
+Defined in: [src/classes/BrowserURLUpdater.ts:44](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/BrowserURLUpdater.ts#L44)
 
 #### Parameters
 
@@ -225,7 +225,7 @@ Defined in: [src/classes/BrowserURLUpdater.ts:44](https://github.com/AhmadHddad/
 
 > **setFragment**(`fragment`): `void`
 
-Defined in: [src/classes/BrowserURLUpdater.ts:67](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L67)
+Defined in: [src/classes/BrowserURLUpdater.ts:67](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/BrowserURLUpdater.ts#L67)
 
 #### Parameters
 
@@ -243,7 +243,7 @@ Defined in: [src/classes/BrowserURLUpdater.ts:67](https://github.com/AhmadHddad/
 
 > **setPath**(`path`): `void`
 
-Defined in: [src/classes/BrowserURLUpdater.ts:57](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L57)
+Defined in: [src/classes/BrowserURLUpdater.ts:57](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/BrowserURLUpdater.ts#L57)
 
 #### Parameters
 
@@ -261,7 +261,7 @@ Defined in: [src/classes/BrowserURLUpdater.ts:57](https://github.com/AhmadHddad/
 
 > **setQueryParam**(`key`, `value`): `void`
 
-Defined in: [src/classes/BrowserURLUpdater.ts:35](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L35)
+Defined in: [src/classes/BrowserURLUpdater.ts:35](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/BrowserURLUpdater.ts#L35)
 
 #### Parameters
 
@@ -283,7 +283,7 @@ Defined in: [src/classes/BrowserURLUpdater.ts:35](https://github.com/AhmadHddad/
 
 > **updateURL**(): `void`
 
-Defined in: [src/classes/BrowserURLUpdater.ts:26](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L26)
+Defined in: [src/classes/BrowserURLUpdater.ts:26](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/BrowserURLUpdater.ts#L26)
 
 #### Returns
 

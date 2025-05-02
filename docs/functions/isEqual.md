@@ -8,7 +8,7 @@
 
 > **isEqual**(`value`, `other`, `ignoreType`): `boolean`
 
-Defined in: [src/utils/validation/isEqual.ts:31](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/validation/isEqual.ts#L31)
+Defined in: [src/utils/validation/isEqual.ts:31](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/validation/isEqual.ts#L31)
 
 Performs a
 [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)

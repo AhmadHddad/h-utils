@@ -8,7 +8,7 @@
 
 > **DebounceOptions** = `object`
 
-Defined in: [src/utils/types.ts:10](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L10)
+Defined in: [src/utils/types.ts:10](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L10)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [src/utils/types.ts:10](https://github.com/AhmadHddad/h-utils/blob/d
 
 > `optional` **leading**: `boolean`
 
-Defined in: [src/utils/types.ts:11](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L11)
+Defined in: [src/utils/types.ts:11](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L11)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [src/utils/types.ts:11](https://github.com/AhmadHddad/h-utils/blob/d
 
 > `optional` **maxWait**: `number`
 
-Defined in: [src/utils/types.ts:13](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L13)
+Defined in: [src/utils/types.ts:13](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L13)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [src/utils/types.ts:13](https://github.com/AhmadHddad/h-utils/blob/d
 
 > `optional` **trailing**: `boolean`
 
-Defined in: [src/utils/types.ts:12](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L12)
+Defined in: [src/utils/types.ts:12](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L12)

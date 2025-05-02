@@ -8,7 +8,7 @@
 
 > **conditionalReturn**\<`V1`, `V2`\>(`condition`, `val1`, `val2?`): `V1` \| `V2`
 
-Defined in: [src/utils/general/conditionalReturn.ts:8](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/general/conditionalReturn.ts#L8)
+Defined in: [src/utils/general/conditionalReturn.ts:8](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/general/conditionalReturn.ts#L8)
 
 If the condition is true, return val1, otherwise return val2.
 

@@ -10,7 +10,7 @@
 
 > **pipe**\<`A`, `B`\>(`ab`): (...`args`) => `B`
 
-Defined in: [src/utils/functions/pipe.ts:16](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/functions/pipe.ts#L16)
+Defined in: [src/utils/functions/pipe.ts:16](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/pipe.ts#L16)
 
 ### Type Parameters
 
@@ -63,7 +63,7 @@ const result: number = differenceThenAdd1(5, 4); //2
 
 > **pipe**\<`A`, `B`, `C`\>(`ab`, `bc`): (...`args`) => `C`
 
-Defined in: [src/utils/functions/pipe.ts:19](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/functions/pipe.ts#L19)
+Defined in: [src/utils/functions/pipe.ts:19](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/pipe.ts#L19)
 
 ### Type Parameters
 
@@ -124,7 +124,7 @@ const result: number = differenceThenAdd1(5, 4); //2
 
 > **pipe**\<`A`, `B`, `C`, `D`\>(`ab`, `bc`, `cd`): (...`args`) => `D`
 
-Defined in: [src/utils/functions/pipe.ts:23](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/functions/pipe.ts#L23)
+Defined in: [src/utils/functions/pipe.ts:23](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/pipe.ts#L23)
 
 ### Type Parameters
 
@@ -193,7 +193,7 @@ const result: number = differenceThenAdd1(5, 4); //2
 
 > **pipe**\<`A`, `B`, `C`, `D`, `E`\>(`ab`, `bc`, `cd`, `de`): (...`args`) => `E`
 
-Defined in: [src/utils/functions/pipe.ts:28](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/functions/pipe.ts#L28)
+Defined in: [src/utils/functions/pipe.ts:28](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/pipe.ts#L28)
 
 ### Type Parameters
 
@@ -270,7 +270,7 @@ const result: number = differenceThenAdd1(5, 4); //2
 
 > **pipe**\<`A`, `B`, `C`, `D`, `E`, `F`\>(`ab`, `bc`, `cd`, `de`, `ef`): (...`args`) => `F`
 
-Defined in: [src/utils/functions/pipe.ts:34](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/functions/pipe.ts#L34)
+Defined in: [src/utils/functions/pipe.ts:34](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/pipe.ts#L34)
 
 ### Type Parameters
 
@@ -355,7 +355,7 @@ const result: number = differenceThenAdd1(5, 4); //2
 
 > **pipe**\<`A`, `B`, `C`, `D`, `E`, `F`, `G`\>(`ab`, `bc`, `cd`, `de`, `ef`, `fg`): (...`args`) => `G`
 
-Defined in: [src/utils/functions/pipe.ts:41](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/functions/pipe.ts#L41)
+Defined in: [src/utils/functions/pipe.ts:41](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/pipe.ts#L41)
 
 ### Type Parameters
 
@@ -448,7 +448,7 @@ const result: number = differenceThenAdd1(5, 4); //2
 
 > **pipe**\<`A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`\>(`ab`, `bc`, `cd`, `de`, `ef`, `fg`, `gh`): (...`args`) => `H`
 
-Defined in: [src/utils/functions/pipe.ts:49](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/functions/pipe.ts#L49)
+Defined in: [src/utils/functions/pipe.ts:49](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/pipe.ts#L49)
 
 ### Type Parameters
 
@@ -549,7 +549,7 @@ const result: number = differenceThenAdd1(5, 4); //2
 
 > **pipe**\<`A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`, `I`\>(`ab`, `bc`, `cd`, `de`, `ef`, `fg`, `gh`, `hi`): (...`args`) => `I`
 
-Defined in: [src/utils/functions/pipe.ts:58](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/functions/pipe.ts#L58)
+Defined in: [src/utils/functions/pipe.ts:58](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/pipe.ts#L58)
 
 ### Type Parameters
 
@@ -658,7 +658,7 @@ const result: number = differenceThenAdd1(5, 4); //2
 
 > **pipe**\<`A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`, `I`, `J`\>(`ab`, `bc`, `cd`, `de`, `ef`, `fg`, `gh`, `hi`, `ij`): (...`args`) => `J`
 
-Defined in: [src/utils/functions/pipe.ts:68](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/functions/pipe.ts#L68)
+Defined in: [src/utils/functions/pipe.ts:68](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/pipe.ts#L68)
 
 ### Type Parameters
 

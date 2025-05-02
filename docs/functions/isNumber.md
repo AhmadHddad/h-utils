@@ -8,7 +8,7 @@
 
 > **isNumber**(`value`, `sloppy?`): `value is number`
 
-Defined in: [src/utils/validation/isNumber.ts:7](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/validation/isNumber.ts#L7)
+Defined in: [src/utils/validation/isNumber.ts:7](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/validation/isNumber.ts#L7)
 
 ## Parameters
 

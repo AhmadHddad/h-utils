@@ -8,7 +8,7 @@
 
 > **findKeyOrValuePathInObject**(`obj`, `keyOrPredicate`, `navigationChr`, `currentPath`): `string`[]
 
-Defined in: [src/utils/object/findKeyOrValuePathInObject.ts:20](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/object/findKeyOrValuePathInObject.ts#L20)
+Defined in: [src/utils/object/findKeyOrValuePathInObject.ts:20](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/object/findKeyOrValuePathInObject.ts#L20)
 
 ## Parameters
 

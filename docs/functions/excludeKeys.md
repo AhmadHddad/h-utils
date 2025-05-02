@@ -8,7 +8,7 @@
 
 > **excludeKeys**\<`T`\>(`object`, `predicate`): `object`
 
-Defined in: [src/utils/object/excludeKeys.ts:21](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/object/excludeKeys.ts#L21)
+Defined in: [src/utils/object/excludeKeys.ts:21](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/object/excludeKeys.ts#L21)
 
 "It returns a new object with the same keys as the original object, except for the keys that match
 the predicate."

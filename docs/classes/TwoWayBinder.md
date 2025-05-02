@@ -6,7 +6,7 @@
 
 # Class: TwoWayBinder
 
-Defined in: [src/classes/TwoWayBinder.ts:13](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/TwoWayBinder.ts#L13)
+Defined in: [src/classes/TwoWayBinder.ts:13](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/TwoWayBinder.ts#L13)
 
 ## Description
 
@@ -30,7 +30,7 @@ const inputElement = document.getElementById('textInput') as HTMLInputElement;
 
 > **new TwoWayBinder**(`inputElement`, `outputElement`, `eventType`): `TwoWayBinder`
 
-Defined in: [src/classes/TwoWayBinder.ts:18](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/TwoWayBinder.ts#L18)
+Defined in: [src/classes/TwoWayBinder.ts:18](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/TwoWayBinder.ts#L18)
 
 #### Parameters
 
@@ -58,7 +58,7 @@ Defined in: [src/classes/TwoWayBinder.ts:18](https://github.com/AhmadHddad/h-uti
 
 > **get** **value**(): `string`
 
-Defined in: [src/classes/TwoWayBinder.ts:51](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/TwoWayBinder.ts#L51)
+Defined in: [src/classes/TwoWayBinder.ts:51](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/TwoWayBinder.ts#L51)
 
 ##### Returns
 
@@ -68,7 +68,7 @@ Defined in: [src/classes/TwoWayBinder.ts:51](https://github.com/AhmadHddad/h-uti
 
 > **set** **value**(`newValue`): `void`
 
-Defined in: [src/classes/TwoWayBinder.ts:55](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/TwoWayBinder.ts#L55)
+Defined in: [src/classes/TwoWayBinder.ts:55](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/TwoWayBinder.ts#L55)
 
 ##### Parameters
 
@@ -86,7 +86,7 @@ Defined in: [src/classes/TwoWayBinder.ts:55](https://github.com/AhmadHddad/h-uti
 
 > **updateInput**(): `void`
 
-Defined in: [src/classes/TwoWayBinder.ts:43](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/TwoWayBinder.ts#L43)
+Defined in: [src/classes/TwoWayBinder.ts:43](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/TwoWayBinder.ts#L43)
 
 #### Returns
 
@@ -98,7 +98,7 @@ Defined in: [src/classes/TwoWayBinder.ts:43](https://github.com/AhmadHddad/h-uti
 
 > **updateOutput**(): `void`
 
-Defined in: [src/classes/TwoWayBinder.ts:47](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/TwoWayBinder.ts#L47)
+Defined in: [src/classes/TwoWayBinder.ts:47](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/TwoWayBinder.ts#L47)
 
 #### Returns
 

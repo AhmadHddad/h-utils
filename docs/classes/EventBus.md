@@ -6,7 +6,7 @@
 
 # Class: EventBus
 
-Defined in: [src/classes/EventBus.ts:27](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/EventBus.ts#L27)
+Defined in: [src/classes/EventBus.ts:27](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/EventBus.ts#L27)
 
 ## Description
 
@@ -41,7 +41,7 @@ eventBus.publish('event1', { message: 'This will not be handled.' });
 
 > **new EventBus**(): `EventBus`
 
-Defined in: [src/classes/EventBus.ts:30](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/EventBus.ts#L30)
+Defined in: [src/classes/EventBus.ts:30](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/EventBus.ts#L30)
 
 #### Returns
 
@@ -53,7 +53,7 @@ Defined in: [src/classes/EventBus.ts:30](https://github.com/AhmadHddad/h-utils/b
 
 > **publish**(`event`, `data?`): `void`
 
-Defined in: [src/classes/EventBus.ts:63](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/EventBus.ts#L63)
+Defined in: [src/classes/EventBus.ts:63](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/EventBus.ts#L63)
 
 #### Parameters
 
@@ -75,7 +75,7 @@ Defined in: [src/classes/EventBus.ts:63](https://github.com/AhmadHddad/h-utils/b
 
 > **subscribe**(`event`, `callback`): `void`
 
-Defined in: [src/classes/EventBus.ts:36](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/EventBus.ts#L36)
+Defined in: [src/classes/EventBus.ts:36](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/EventBus.ts#L36)
 
 #### Parameters
 
@@ -97,7 +97,7 @@ Defined in: [src/classes/EventBus.ts:36](https://github.com/AhmadHddad/h-utils/b
 
 > **unsubscribe**(`event`, `callback`): `void`
 
-Defined in: [src/classes/EventBus.ts:50](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/EventBus.ts#L50)
+Defined in: [src/classes/EventBus.ts:50](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/EventBus.ts#L50)
 
 #### Parameters
 

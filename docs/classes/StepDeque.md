@@ -6,7 +6,7 @@
 
 # Class: StepDeque\<T\>
 
-Defined in: [src/classes/StepDeque.ts:16](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/StepDeque.ts#L16)
+Defined in: [src/classes/StepDeque.ts:16](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/StepDeque.ts#L16)
 
 ## Description
 
@@ -35,7 +35,7 @@ stepper.previous(); // "step2"
 
 > **new StepDeque**\<`T`\>(`steps`, `options?`): `StepDeque`\<`T`\>
 
-Defined in: [src/classes/StepDeque.ts:22](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/StepDeque.ts#L22)
+Defined in: [src/classes/StepDeque.ts:22](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/StepDeque.ts#L22)
 
 #### Parameters
 
@@ -57,7 +57,7 @@ Defined in: [src/classes/StepDeque.ts:22](https://github.com/AhmadHddad/h-utils/
 
 > **addAt**(`step`, `index`): `void`
 
-Defined in: [src/classes/StepDeque.ts:122](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/StepDeque.ts#L122)
+Defined in: [src/classes/StepDeque.ts:122](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/StepDeque.ts#L122)
 
 Adds a new step at a specific index.
 
@@ -89,7 +89,7 @@ If the index is out of bounds.
 
 > **addFirst**(`step`): `void`
 
-Defined in: [src/classes/StepDeque.ts:100](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/StepDeque.ts#L100)
+Defined in: [src/classes/StepDeque.ts:100](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/StepDeque.ts#L100)
 
 Adds a new step at the beginning.
 
@@ -111,7 +111,7 @@ The step to add.
 
 > **addLast**(`step`): `void`
 
-Defined in: [src/classes/StepDeque.ts:112](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/StepDeque.ts#L112)
+Defined in: [src/classes/StepDeque.ts:112](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/StepDeque.ts#L112)
 
 Adds a new step at the end.
 
@@ -133,7 +133,7 @@ The step to add.
 
 > **current**(...`args`): `T`
 
-Defined in: [src/classes/StepDeque.ts:78](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/StepDeque.ts#L78)
+Defined in: [src/classes/StepDeque.ts:78](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/StepDeque.ts#L78)
 
 Returns the value of the current step without changing the current index.
 
@@ -153,7 +153,7 @@ Returns the value of the current step without changing the current index.
 
 > **getCurrentStepIndex**(): `number`
 
-Defined in: [src/classes/StepDeque.ts:29](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/StepDeque.ts#L29)
+Defined in: [src/classes/StepDeque.ts:29](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/StepDeque.ts#L29)
 
 #### Returns
 
@@ -165,7 +165,7 @@ Defined in: [src/classes/StepDeque.ts:29](https://github.com/AhmadHddad/h-utils/
 
 > **getSteps**(): `Step`\<`T`\>[]
 
-Defined in: [src/classes/StepDeque.ts:33](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/StepDeque.ts#L33)
+Defined in: [src/classes/StepDeque.ts:33](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/StepDeque.ts#L33)
 
 #### Returns
 
@@ -177,7 +177,7 @@ Defined in: [src/classes/StepDeque.ts:33](https://github.com/AhmadHddad/h-utils/
 
 > **next**(...`args`): `T`
 
-Defined in: [src/classes/StepDeque.ts:41](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/StepDeque.ts#L41)
+Defined in: [src/classes/StepDeque.ts:41](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/StepDeque.ts#L41)
 
 Moves to the next step and returns its value.
 If there are no more steps, it returns undefined.
@@ -198,7 +198,7 @@ If there are no more steps, it returns undefined.
 
 > **previous**(...`args`): `T`
 
-Defined in: [src/classes/StepDeque.ts:60](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/StepDeque.ts#L60)
+Defined in: [src/classes/StepDeque.ts:60](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/StepDeque.ts#L60)
 
 Moves to the previous step and returns its value.
 If already at the first step, it returns undefined.
@@ -219,7 +219,7 @@ If already at the first step, it returns undefined.
 
 > **removeAt**(`index`): `void`
 
-Defined in: [src/classes/StepDeque.ts:172](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/StepDeque.ts#L172)
+Defined in: [src/classes/StepDeque.ts:172](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/StepDeque.ts#L172)
 
 Removes the step at a specific index.
 
@@ -245,7 +245,7 @@ If the index is out of bounds.
 
 > **removeFirst**(): `void`
 
-Defined in: [src/classes/StepDeque.ts:146](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/StepDeque.ts#L146)
+Defined in: [src/classes/StepDeque.ts:146](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/StepDeque.ts#L146)
 
 Removes the first step.
 
@@ -263,7 +263,7 @@ If there are no steps.
 
 > **removeLast**(): `void`
 
-Defined in: [src/classes/StepDeque.ts:160](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/StepDeque.ts#L160)
+Defined in: [src/classes/StepDeque.ts:160](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/StepDeque.ts#L160)
 
 Removes the last step.
 
@@ -281,7 +281,7 @@ If there are no steps.
 
 > **reset**(): `void`
 
-Defined in: [src/classes/StepDeque.ts:92](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/StepDeque.ts#L92)
+Defined in: [src/classes/StepDeque.ts:92](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/StepDeque.ts#L92)
 
 Resets the stepper to the initial step.
 
@@ -295,7 +295,7 @@ Resets the stepper to the initial step.
 
 > **setSteps**(`steps`): `void`
 
-Defined in: [src/classes/StepDeque.ts:137](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/StepDeque.ts#L137)
+Defined in: [src/classes/StepDeque.ts:137](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/StepDeque.ts#L137)
 
 Sets a new set of steps and resets the stepper.
 

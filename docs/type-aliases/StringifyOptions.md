@@ -8,7 +8,7 @@
 
 > **StringifyOptions** = `object`
 
-Defined in: [src/utils/types.ts:49](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L49)
+Defined in: [src/utils/types.ts:49](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L49)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [src/utils/types.ts:49](https://github.com/AhmadHddad/h-utils/blob/d
 
 > `readonly` `optional` **arrayFormat**: `"bracket"` \| `"index"` \| `"comma"` \| `"separator"` \| `"bracket-separator"` \| `"colon-list-separator"` \| `"none"`
 
-Defined in: [src/utils/types.ts:153](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L153)
+Defined in: [src/utils/types.ts:153](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L153)
 
 #### Default
 
@@ -114,7 +114,7 @@ Defined in: [src/utils/types.ts:153](https://github.com/AhmadHddad/h-utils/blob/
 
 > `readonly` `optional` **arrayFormatSeparator**: `string`
 
-Defined in: [src/utils/types.ts:167](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L167)
+Defined in: [src/utils/types.ts:167](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L167)
 
 The character used to separate array elements when using `{arrayFormat: 'separator'}`.
 
@@ -130,7 +130,7 @@ The character used to separate array elements when using `{arrayFormat: 'separat
 
 > `readonly` `optional` **encode**: `boolean`
 
-Defined in: [src/utils/types.ts:62](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L62)
+Defined in: [src/utils/types.ts:62](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L62)
 
 [URL encode](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) the keys and values.
 
@@ -146,7 +146,7 @@ true
 
 > `readonly` `optional` **params**: [`StringOrNumber`](StringOrNumber.md)[]
 
-Defined in: [src/utils/types.ts:248](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L248)
+Defined in: [src/utils/types.ts:248](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L248)
 
 ***
 
@@ -154,7 +154,7 @@ Defined in: [src/utils/types.ts:248](https://github.com/AhmadHddad/h-utils/blob/
 
 > `readonly` `optional` **skipEmptyString**: `boolean`
 
-Defined in: [src/utils/types.ts:246](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L246)
+Defined in: [src/utils/types.ts:246](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L246)
 
 Skip keys with an empty string as the value.
 
@@ -188,7 +188,7 @@ queryString.stringify({a: '', b: ''}, {
 
 > `readonly` `optional` **skipNull**: `boolean`
 
-Defined in: [src/utils/types.ts:220](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L220)
+Defined in: [src/utils/types.ts:220](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L220)
 
 Skip keys with `null` as the value.
 
@@ -221,7 +221,7 @@ queryString.stringify({a: undefined, b: null}, {
 
 > `readonly` `optional` **sort**: (`itemLeft`, `itemRight`) => `number` \| `false`
 
-Defined in: [src/utils/types.ts:196](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L196)
+Defined in: [src/utils/types.ts:196](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L196)
 
 Supports both `Function` as a custom sorting function or `false` to disable sorting.
 
@@ -257,7 +257,7 @@ queryString.stringify({b: 1, c: 2, a: 3}, {sort: false});
 
 > `readonly` `optional` **strict**: `boolean`
 
-Defined in: [src/utils/types.ts:55](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L55)
+Defined in: [src/utils/types.ts:55](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L55)
 
 Strictly encode URI components with [`strict-uri-encode`](https://github.com/kevva/strict-uri-encode). It uses [`encodeURIComponent`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) if set to `false`. You probably [don't care](https://github.com/sindresorhus/query-string/issues/42) about this option.
 

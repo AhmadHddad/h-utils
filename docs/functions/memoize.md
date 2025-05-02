@@ -8,7 +8,7 @@
 
 > **memoize**\<`T`\>(`func`, `resolver?`): `T`
 
-Defined in: [src/utils/functions/memoize.ts:44](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/functions/memoize.ts#L44)
+Defined in: [src/utils/functions/memoize.ts:44](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/memoize.ts#L44)
 
 Creates a function that memoizes the result of `func`. If `resolver` is
 provided, it determines the cache key for storing the result based on the

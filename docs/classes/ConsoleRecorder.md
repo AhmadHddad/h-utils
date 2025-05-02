@@ -6,7 +6,7 @@
 
 # Class: ConsoleRecorder
 
-Defined in: [src/classes/ConsoleRecorder.ts:9](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/ConsoleRecorder.ts#L9)
+Defined in: [src/classes/ConsoleRecorder.ts:9](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/ConsoleRecorder.ts#L9)
 
 ## Description
 
@@ -26,7 +26,7 @@ logManager.logRecord.log // [{time:"123", value:["foo"]}]
 
 > **new ConsoleRecorder**(`options?`): `ConsoleRecorder`
 
-Defined in: [src/classes/ConsoleRecorder.ts:24](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/ConsoleRecorder.ts#L24)
+Defined in: [src/classes/ConsoleRecorder.ts:24](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/ConsoleRecorder.ts#L24)
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: [src/classes/ConsoleRecorder.ts:24](https://github.com/AhmadHddad/h-
 
 > **get** **logRecord**(): [`ConsoleRecord`](../type-aliases/ConsoleRecord.md)
 
-Defined in: [src/classes/ConsoleRecorder.ts:116](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/ConsoleRecorder.ts#L116)
+Defined in: [src/classes/ConsoleRecorder.ts:116](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/ConsoleRecorder.ts#L116)
 
 ##### Returns
 
@@ -76,7 +76,7 @@ Defined in: [src/classes/ConsoleRecorder.ts:116](https://github.com/AhmadHddad/h
 
 > **recordError**(): `void`
 
-Defined in: [src/classes/ConsoleRecorder.ts:60](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/ConsoleRecorder.ts#L60)
+Defined in: [src/classes/ConsoleRecorder.ts:60](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/ConsoleRecorder.ts#L60)
 
 #### Returns
 
@@ -88,7 +88,7 @@ Defined in: [src/classes/ConsoleRecorder.ts:60](https://github.com/AhmadHddad/h-
 
 > **recordInfo**(): `void`
 
-Defined in: [src/classes/ConsoleRecorder.ts:74](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/ConsoleRecorder.ts#L74)
+Defined in: [src/classes/ConsoleRecorder.ts:74](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/ConsoleRecorder.ts#L74)
 
 #### Returns
 
@@ -100,7 +100,7 @@ Defined in: [src/classes/ConsoleRecorder.ts:74](https://github.com/AhmadHddad/h-
 
 > **recordLog**(): `void`
 
-Defined in: [src/classes/ConsoleRecorder.ts:46](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/ConsoleRecorder.ts#L46)
+Defined in: [src/classes/ConsoleRecorder.ts:46](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/ConsoleRecorder.ts#L46)
 
 #### Returns
 
@@ -112,7 +112,7 @@ Defined in: [src/classes/ConsoleRecorder.ts:46](https://github.com/AhmadHddad/h-
 
 > **recordTable**(): `void`
 
-Defined in: [src/classes/ConsoleRecorder.ts:102](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/ConsoleRecorder.ts#L102)
+Defined in: [src/classes/ConsoleRecorder.ts:102](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/ConsoleRecorder.ts#L102)
 
 #### Returns
 
@@ -124,7 +124,7 @@ Defined in: [src/classes/ConsoleRecorder.ts:102](https://github.com/AhmadHddad/h
 
 > **recordWarn**(): `void`
 
-Defined in: [src/classes/ConsoleRecorder.ts:88](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/ConsoleRecorder.ts#L88)
+Defined in: [src/classes/ConsoleRecorder.ts:88](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/ConsoleRecorder.ts#L88)
 
 #### Returns
 
@@ -136,7 +136,7 @@ Defined in: [src/classes/ConsoleRecorder.ts:88](https://github.com/AhmadHddad/h-
 
 > **stopAllRecord**(): `void`
 
-Defined in: [src/classes/ConsoleRecorder.ts:120](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/ConsoleRecorder.ts#L120)
+Defined in: [src/classes/ConsoleRecorder.ts:120](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/ConsoleRecorder.ts#L120)
 
 #### Returns
 

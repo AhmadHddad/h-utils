@@ -8,7 +8,7 @@
 
 > **UrlObject** = `object`
 
-Defined in: [src/utils/types.ts:253](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L253)
+Defined in: [src/utils/types.ts:253](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L253)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [src/utils/types.ts:253](https://github.com/AhmadHddad/h-utils/blob/
 
 > `readonly` `optional` **fragmentIdentifier**: `string`
 
-Defined in: [src/utils/types.ts:264](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L264)
+Defined in: [src/utils/types.ts:264](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L264)
 
 Overrides the fragment identifier in the `url` property.
 
@@ -26,7 +26,7 @@ Overrides the fragment identifier in the `url` property.
 
 > `readonly` `optional` **query**: [`StringifiableRecord`](StringifiableRecord.md)
 
-Defined in: [src/utils/types.ts:259](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L259)
+Defined in: [src/utils/types.ts:259](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L259)
 
 Overrides queries in the `url` property.
 
@@ -36,4 +36,4 @@ Overrides queries in the `url` property.
 
 > `readonly` **url**: `string`
 
-Defined in: [src/utils/types.ts:254](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L254)
+Defined in: [src/utils/types.ts:254](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L254)

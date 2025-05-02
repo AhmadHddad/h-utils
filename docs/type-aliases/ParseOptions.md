@@ -8,7 +8,7 @@
 
 > **ParseOptions** = `object`
 
-Defined in: [src/utils/types.ts:289](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L289)
+Defined in: [src/utils/types.ts:289](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L289)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [src/utils/types.ts:289](https://github.com/AhmadHddad/h-utils/blob/
 
 > `readonly` `optional` **arrayFormat**: `"bracket"` \| `"index"` \| `"comma"` \| `"separator"` \| `"bracket-separator"` \| `"colon-list-separator"` \| `"none"`
 
-Defined in: [src/utils/types.ts:378](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L378)
+Defined in: [src/utils/types.ts:378](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L378)
 
 #### Default
 
@@ -106,7 +106,7 @@ Defined in: [src/utils/types.ts:378](https://github.com/AhmadHddad/h-utils/blob/
 
 > `readonly` `optional` **arrayFormatSeparator**: `string`
 
-Defined in: [src/utils/types.ts:392](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L392)
+Defined in: [src/utils/types.ts:392](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L392)
 
 The character used to separate array elements when using `{arrayFormat: 'separator'}`.
 
@@ -122,7 +122,7 @@ The character used to separate array elements when using `{arrayFormat: 'separat
 
 > `readonly` `optional` **decode**: `boolean`
 
-Defined in: [src/utils/types.ts:295](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L295)
+Defined in: [src/utils/types.ts:295](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L295)
 
 Decode the keys and values. URI components are decoded with [`decode-uri-component`](https://github.com/SamVerschueren/decode-uri-component).
 
@@ -138,7 +138,7 @@ true
 
 > `readonly` `optional` **lowerCaseQuery**: `boolean`
 
-Defined in: [src/utils/types.ts:472](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L472)
+Defined in: [src/utils/types.ts:472](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L472)
 
 #### Default
 
@@ -158,7 +158,7 @@ queryString.parseUrl("https://foo.bar?Foo=bar&baz=Foo", {lowerCaseQuery:true}) /
 
 > `readonly` `optional` **parseBooleans**: `boolean`
 
-Defined in: [src/utils/types.ts:451](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L451)
+Defined in: [src/utils/types.ts:451](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L451)
 
 Parse the value as a boolean type instead of string type if it's a boolean.
 
@@ -182,7 +182,7 @@ queryString.parse('foo=true', {parseBooleans: true});
 
 > `readonly` `optional` **parseFragmentIdentifier**: `boolean`
 
-Defined in: [src/utils/types.ts:466](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L466)
+Defined in: [src/utils/types.ts:466](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L466)
 
 Parse the fragment identifier from the URL and add it to result object.
 
@@ -206,7 +206,7 @@ queryString.parseUrl('https://foo.bar?foo=bar#xyz', {parseFragmentIdentifier: tr
 
 > `readonly` `optional` **parseNumbers**: `boolean`
 
-Defined in: [src/utils/types.ts:436](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L436)
+Defined in: [src/utils/types.ts:436](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L436)
 
 Parse the value as a number type instead of string type if it's a number.
 
@@ -230,7 +230,7 @@ queryString.parse('foo=1', {parseNumbers: true});
 
 > `readonly` `optional` **sort**: (`itemLeft`, `itemRight`) => `number` \| `false`
 
-Defined in: [src/utils/types.ts:421](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L421)
+Defined in: [src/utils/types.ts:421](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L421)
 
 Supports both `Function` as a custom sorting function or `false` to disable sorting.
 

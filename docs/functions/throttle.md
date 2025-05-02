@@ -8,7 +8,7 @@
 
 > **throttle**\<`T`\>(`func`, `wait?`, `options?`): () => `void` \| \{(...`args`): `any`; `cancel`: () => `void`; `flush`: () => `any`; `pending`: () => `boolean`; \}
 
-Defined in: [src/utils/functions/throttle.ts:52](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/functions/throttle.ts#L52)
+Defined in: [src/utils/functions/throttle.ts:52](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/throttle.ts#L52)
 
 Creates a throttled function that only invokes `func` at most once per
 every `wait` milliseconds (or once per browser frame). The throttled function
@@ -83,13 +83,13 @@ Returns the new throttled function.
 ## Example
 
 ```ts
-// Avoid excessively updating the position while scrolling.
-jQuery(window).on('scroll', throttle(updatePosition, 100))
-
- Invoke `renewToken` when the click event is fired, but not more than once every 5 minutes.
-const throttled = throttle(renewToken, 300000, { 'trailing': false })
-jQuery(element).on('click', throttled)
-
-// Cancel the trailing throttled invocation.
-jQuery(window).on('popstate', throttled.cancel)
+* // Avoid excessively updating the position while scrolling.
+ * const throttled = throttle(() => {
+ *   console.log('Scroll event handler');
+ * }, 100);
+ * window.addEventListener('scroll', throttled);
+ * // Later, you can cancel the throttled function
+ * throttled.cancel();
+ * // Or flush the last invocation
+ * throttled.flush();
 ```

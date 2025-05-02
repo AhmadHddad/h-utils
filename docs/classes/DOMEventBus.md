@@ -6,7 +6,7 @@
 
 # Class: DOMEventBus
 
-Defined in: [src/classes/DOMEventBus.ts:43](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/DOMEventBus.ts#L43)
+Defined in: [src/classes/DOMEventBus.ts:43](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/DOMEventBus.ts#L43)
 
 ## Important
 
@@ -59,7 +59,7 @@ defaultEventBus.unsubscribe('DefaultEvent', handleDefaultEvent);
 
 > **new DOMEventBus**(`eventBusContainer?`): `DOMEventBus`
 
-Defined in: [src/classes/DOMEventBus.ts:47](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/DOMEventBus.ts#L47)
+Defined in: [src/classes/DOMEventBus.ts:47](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/DOMEventBus.ts#L47)
 
 #### Parameters
 
@@ -77,7 +77,7 @@ Defined in: [src/classes/DOMEventBus.ts:47](https://github.com/AhmadHddad/h-util
 
 > **publish**(`event`, `data?`): `void`
 
-Defined in: [src/classes/DOMEventBus.ts:64](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/DOMEventBus.ts#L64)
+Defined in: [src/classes/DOMEventBus.ts:64](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/DOMEventBus.ts#L64)
 
 #### Parameters
 
@@ -99,7 +99,7 @@ Defined in: [src/classes/DOMEventBus.ts:64](https://github.com/AhmadHddad/h-util
 
 > **subscribe**(`event`, `callback`): `void`
 
-Defined in: [src/classes/DOMEventBus.ts:54](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/DOMEventBus.ts#L54)
+Defined in: [src/classes/DOMEventBus.ts:54](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/DOMEventBus.ts#L54)
 
 #### Parameters
 
@@ -121,7 +121,7 @@ Defined in: [src/classes/DOMEventBus.ts:54](https://github.com/AhmadHddad/h-util
 
 > **unsubscribe**(`event`, `callback`): `void`
 
-Defined in: [src/classes/DOMEventBus.ts:59](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/DOMEventBus.ts#L59)
+Defined in: [src/classes/DOMEventBus.ts:59](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/DOMEventBus.ts#L59)
 
 #### Parameters
 

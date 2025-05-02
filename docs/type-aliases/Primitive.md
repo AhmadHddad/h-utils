@@ -8,7 +8,7 @@
 
 > **Primitive** = `string` \| `number` \| `bigint` \| `boolean` \| `symbol` \| `null` \| `undefined`
 
-Defined in: [src/utils/utilityTypes.ts:93](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/utilityTypes.ts#L93)
+Defined in: [src/utils/utilityTypes.ts:93](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/utilityTypes.ts#L93)
 
 Primitive
 

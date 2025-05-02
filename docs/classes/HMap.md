@@ -6,7 +6,7 @@
 
 # Class: HMap\<K, V\>
 
-Defined in: [src/classes/HMap.ts:7](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/HMap.ts#L7)
+Defined in: [src/classes/HMap.ts:7](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/HMap.ts#L7)
 
 ## Description
 
@@ -197,7 +197,7 @@ Returns an iterable of key, value pairs for every entry in the map.
 
 > **every**(`callback`): `boolean`
 
-Defined in: [src/classes/HMap.ts:92](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/HMap.ts#L92)
+Defined in: [src/classes/HMap.ts:92](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/HMap.ts#L92)
 
 #### Parameters
 
@@ -225,7 +225,7 @@ HMap.from({a:1}).every((val, key) => val === 1) // true
 
 > **filter**(`callback`): `HMap`\<`K`, `V`\>
 
-Defined in: [src/classes/HMap.ts:20](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/HMap.ts#L20)
+Defined in: [src/classes/HMap.ts:20](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/HMap.ts#L20)
 
 #### Parameters
 
@@ -253,7 +253,7 @@ HMap.from({a:1}).filter((v, k) => v === 1).toObject() // {a:1}
 
 > **findValue**(`callback`): `V`
 
-Defined in: [src/classes/HMap.ts:76](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/HMap.ts#L76)
+Defined in: [src/classes/HMap.ts:76](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/HMap.ts#L76)
 
 #### Parameters
 
@@ -335,7 +335,7 @@ Returns the element associated with the specified key. If no element is associat
 
 > **getAllKeys**(): `K`[]
 
-Defined in: [src/classes/HMap.ts:102](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/HMap.ts#L102)
+Defined in: [src/classes/HMap.ts:102](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/HMap.ts#L102)
 
 #### Returns
 
@@ -357,7 +357,7 @@ HMap.from({a:1}).getAllKeys() // ["a"]
 
 > **getAllValues**(): `V`[]
 
-Defined in: [src/classes/HMap.ts:120](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/HMap.ts#L120)
+Defined in: [src/classes/HMap.ts:120](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/HMap.ts#L120)
 
 #### Returns
 
@@ -421,7 +421,7 @@ Returns an iterable of keys in the map
 
 > **map**\<`U`\>(`callback`): `HMap`\<`K`, `U`\>
 
-Defined in: [src/classes/HMap.ts:52](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/HMap.ts#L52)
+Defined in: [src/classes/HMap.ts:52](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/HMap.ts#L52)
 
 #### Type Parameters
 
@@ -455,7 +455,7 @@ HMap.from({a:1}).mapFields((v, k) => ([v + 1, "b"])).toObject() // { a: [ 2, 'b'
 
 > **mapArray**\<`U`\>(`callback`): `U`[]
 
-Defined in: [src/classes/HMap.ts:64](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/HMap.ts#L64)
+Defined in: [src/classes/HMap.ts:64](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/HMap.ts#L64)
 
 #### Type Parameters
 
@@ -489,7 +489,7 @@ HMap.from({a:1, b:2}).mapArray((val) => (val)) // [ 1, 2 ]
 
 > **mapFields**\<`U`\>(`callback`): `HMap`\<`U`, `V`\>
 
-Defined in: [src/classes/HMap.ts:36](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/HMap.ts#L36)
+Defined in: [src/classes/HMap.ts:36](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/HMap.ts#L36)
 
 #### Type Parameters
 
@@ -551,7 +551,7 @@ Adds a new element with a specified key and value to the Map. If an element with
 
 > **some**(`callback`): `boolean`
 
-Defined in: [src/classes/HMap.ts:110](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/HMap.ts#L110)
+Defined in: [src/classes/HMap.ts:110](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/HMap.ts#L110)
 
 #### Parameters
 
@@ -579,7 +579,7 @@ HMap.from({a:1}).some((val, key) => val === 1) // true
 
 > **toObject**(): `Record`\<`K`, `V`\>
 
-Defined in: [src/classes/HMap.ts:128](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/HMap.ts#L128)
+Defined in: [src/classes/HMap.ts:128](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/HMap.ts#L128)
 
 #### Returns
 
@@ -619,7 +619,7 @@ Returns an iterable of values in the map
 
 > `static` **from**\<`K`, `V`\>(`obj`): `HMap`\<`K`, `V`\>
 
-Defined in: [src/classes/HMap.ts:12](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/HMap.ts#L12)
+Defined in: [src/classes/HMap.ts:12](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/HMap.ts#L12)
 
 #### Type Parameters
 

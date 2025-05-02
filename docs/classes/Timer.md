@@ -6,7 +6,7 @@
 
 # Class: Timer
 
-Defined in: [src/classes/Timer.ts:15](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/Timer.ts#L15)
+Defined in: [src/classes/Timer.ts:15](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/Timer.ts#L15)
 
 ## See
 
@@ -37,7 +37,7 @@ console.log(timer.getTime()) // 1000
 
 > **new Timer**(`initialStartTime`): `Timer`
 
-Defined in: [src/classes/Timer.ts:20](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/Timer.ts#L20)
+Defined in: [src/classes/Timer.ts:20](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/Timer.ts#L20)
 
 #### Parameters
 
@@ -55,7 +55,7 @@ Defined in: [src/classes/Timer.ts:20](https://github.com/AhmadHddad/h-utils/blob
 
 > **isRunning**: `boolean` = `false`
 
-Defined in: [src/classes/Timer.ts:16](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/Timer.ts#L16)
+Defined in: [src/classes/Timer.ts:16](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/Timer.ts#L16)
 
 ## Methods
 
@@ -63,7 +63,7 @@ Defined in: [src/classes/Timer.ts:16](https://github.com/AhmadHddad/h-utils/blob
 
 > **\_getTimeElapsedSinceLastStart**(): `number`
 
-Defined in: [src/classes/Timer.ts:24](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/Timer.ts#L24)
+Defined in: [src/classes/Timer.ts:24](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/Timer.ts#L24)
 
 #### Returns
 
@@ -75,7 +75,7 @@ Defined in: [src/classes/Timer.ts:24](https://github.com/AhmadHddad/h-utils/blob
 
 > **getTime**(): `number`
 
-Defined in: [src/classes/Timer.ts:63](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/Timer.ts#L63)
+Defined in: [src/classes/Timer.ts:63](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/Timer.ts#L63)
 
 #### Returns
 
@@ -87,7 +87,7 @@ Defined in: [src/classes/Timer.ts:63](https://github.com/AhmadHddad/h-utils/blob
 
 > **reset**(): `void`
 
-Defined in: [src/classes/Timer.ts:52](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/Timer.ts#L52)
+Defined in: [src/classes/Timer.ts:52](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/Timer.ts#L52)
 
 #### Returns
 
@@ -99,7 +99,7 @@ Defined in: [src/classes/Timer.ts:52](https://github.com/AhmadHddad/h-utils/blob
 
 > **start**(): `void`
 
-Defined in: [src/classes/Timer.ts:32](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/Timer.ts#L32)
+Defined in: [src/classes/Timer.ts:32](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/Timer.ts#L32)
 
 #### Returns
 
@@ -111,7 +111,7 @@ Defined in: [src/classes/Timer.ts:32](https://github.com/AhmadHddad/h-utils/blob
 
 > **stop**(): `void`
 
-Defined in: [src/classes/Timer.ts:42](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/Timer.ts#L42)
+Defined in: [src/classes/Timer.ts:42](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/Timer.ts#L42)
 
 #### Returns
 

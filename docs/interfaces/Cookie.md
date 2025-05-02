@@ -6,7 +6,7 @@
 
 # Interface: Cookie
 
-Defined in: [src/utils/types.ts:504](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L504)
+Defined in: [src/utils/types.ts:504](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L504)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/utils/types.ts:504](https://github.com/AhmadHddad/h-utils/blob/
 
 > `optional` **domain**: `string`
 
-Defined in: [src/utils/types.ts:507](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L507)
+Defined in: [src/utils/types.ts:507](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L507)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/utils/types.ts:507](https://github.com/AhmadHddad/h-utils/blob/
 
 > **name**: `string`
 
-Defined in: [src/utils/types.ts:505](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L505)
+Defined in: [src/utils/types.ts:505](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L505)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/utils/types.ts:505](https://github.com/AhmadHddad/h-utils/blob/
 
 > `optional` **path**: `string`
 
-Defined in: [src/utils/types.ts:508](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L508)
+Defined in: [src/utils/types.ts:508](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L508)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [src/utils/types.ts:508](https://github.com/AhmadHddad/h-utils/blob/
 
 > **value**: `string`
 
-Defined in: [src/utils/types.ts:506](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L506)
+Defined in: [src/utils/types.ts:506](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L506)

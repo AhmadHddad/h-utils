@@ -8,7 +8,7 @@
 
 > **replaceObjectInArray**\<`T`\>(`arr`, `keyOrPredictor`, `newObject`): `T`[]
 
-Defined in: [src/utils/array/replaceObjectInArray.ts:25](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/array/replaceObjectInArray.ts#L25)
+Defined in: [src/utils/array/replaceObjectInArray.ts:25](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/array/replaceObjectInArray.ts#L25)
 
 ## Type Parameters
 
