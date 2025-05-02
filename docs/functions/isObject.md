@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,17 +6,25 @@
 
 # Function: isObject()
 
-> **isObject**\<`T`\>(`val`, `predicate`?): `val is T`
+> **isObject**\<`T`\>(`val`, `predicate?`): `val is T`
 
-## Type parameters
+Defined in: [src/utils/validation/isObject.ts:6](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/validation/isObject.ts#L6)
 
-• **T** = `object`
+## Type Parameters
+
+### T
+
+`T` = \{ \}
 
 ## Parameters
 
-• **val**: `unknown`
+### val
 
-• **predicate?**
+`unknown`
+
+### predicate?
+
+(`val`) => `boolean`
 
 ## Returns
 
@@ -35,7 +43,3 @@ isObject({}) //true
 ```ts
 isObject({}, (obj) => !!obj.name) //false
 ```
-
-## Source
-
-[src/utils/validation/isObject.ts:6](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/validation/isObject.ts#L6)

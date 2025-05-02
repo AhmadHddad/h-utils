@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,21 +8,29 @@
 
 > **isEqual**(`value`, `other`, `ignoreType`): `boolean`
 
+Defined in: [src/utils/validation/isEqual.ts:31](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/validation/isEqual.ts#L31)
+
 Performs a
 [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
 comparison between two values to determine if they are equivalent.
 
 ## Parameters
 
-• **value**: `any`
+### value
+
+`any`
 
 The value to compare.
 
-• **other**: `any`
+### other
+
+`any`
 
 The other value to compare.
 
-• **ignoreType**: `boolean`
+### ignoreType
+
+`boolean`
 
 ## Returns
 
@@ -53,7 +61,3 @@ isEqual('a', Object('a')) // false;
 
 isEqual(NaN, NaN) // true
 ```
-
-## Source
-
-[src/utils/validation/isEqual.ts:31](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/validation/isEqual.ts#L31)

@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,13 +8,17 @@
 
 > **isPrimitive**(`val`): `val is Primitive`
 
+Defined in: [src/utils/validation/isPrimitive.ts:20](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/validation/isPrimitive.ts#L20)
+
 Tests for one of the [`Primitive`](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) types using the JavaScript [`typeof`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof) operator
 
 Clarification: TypeScript overloads this operator to produce TypeScript types if used in context of types.
 
 ## Parameters
 
-• **val**: `unknown`
+### val
+
+`unknown`
 
 The value to be tested
 
@@ -35,7 +39,3 @@ const consumer = (value: Primitive | Primitive[]) => {
       value.map((primitive) => consumer(primitive));
   };
 ```
-
-## Source
-
-[src/utils/validation/isPrimitive.ts:20](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/validation/isPrimitive.ts#L20)

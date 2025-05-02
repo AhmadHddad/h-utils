@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,19 +6,27 @@
 
 # Function: networkHttpRequestMonitor()
 
-> **networkHttpRequestMonitor**(`onRequestsIdle`?, `onEachRequest`?, `options`?): () => `void`
+> **networkHttpRequestMonitor**(`onRequestsIdle?`, `onEachRequest?`, `options?`): () => `void`
+
+Defined in: [src/utils/browser/networkHttpRequestMonitor.ts:18](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/browser/networkHttpRequestMonitor.ts#L18)
 
 ## Parameters
 
-• **onRequestsIdle?**
+### onRequestsIdle?
 
-• **onEachRequest?**
+(`startedRequests`, `endedRequests`) => `void`
 
-• **options?**: [`NetworkHttpRequestMonitorOptions`](../type-aliases/NetworkHttpRequestMonitorOptions.md)
+### onEachRequest?
+
+(`startedRequests`, `endedRequests`, `activeRequestsCount`) => `void`
+
+### options?
+
+[`NetworkHttpRequestMonitorOptions`](../type-aliases/NetworkHttpRequestMonitorOptions.md)
 
 ## Returns
 
-`Function`
+> (): `void`
 
 ### Returns
 
@@ -41,7 +49,3 @@ console.log("THIS WILL BE CALLED ON EVERY NETWORK REQUEST", {startedRequests, en
 // to cancel
 cancel();`
 ```
-
-## Source
-
-[src/utils/browser/networkHttpRequestMonitor.ts:18](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/browser/networkHttpRequestMonitor.ts#L18)

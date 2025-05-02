@@ -1,23 +1,27 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / GetHtmlElementCoordsOptions
 
-# Type alias: GetHtmlElementCoordsOptions
+# Type Alias: GetHtmlElementCoordsOptions
 
-> **GetHtmlElementCoordsOptions**: `object`
+> **GetHtmlElementCoordsOptions** = `object`
 
-## Type declaration
+Defined in: [src/utils/types.ts:475](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L475)
+
+## Properties
 
 ### position
 
 > **position**: `"top left"` \| `"top center"` \| `"top right"` \| `"center left"` \| `"center"` \| `"center right"` \| `"bottom left"` \| `"bottom center"` \| `"bottom right"`
 
+Defined in: [src/utils/types.ts:476](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L476)
+
+***
+
 ### precise
 
 > **precise**: `boolean`
 
-## Source
-
-[src/utils/types.ts:475](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/types.ts#L475)
+Defined in: [src/utils/types.ts:486](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L486)

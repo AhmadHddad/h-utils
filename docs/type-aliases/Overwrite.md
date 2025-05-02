@@ -1,14 +1,30 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / Overwrite
 
-# Type alias: Overwrite\<T, U, I\>
+# Type Alias: Overwrite\<T, U, I\>
 
-> **Overwrite**\<`T`, `U`, `I`\>: `Pick`\<`I`, keyof `I`\>
+> **Overwrite**\<`T`, `U`, `I`\> = `Pick`\<`I`, keyof `I`\>
+
+Defined in: [src/utils/utilityTypes.ts:262](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/utilityTypes.ts#L262)
 
 Overwrite
+
+## Type Parameters
+
+### T
+
+`T` *extends* `object`
+
+### U
+
+`U` *extends* `object`
+
+### I
+
+`I` = [`Diff`](Diff.md)\<`T`, `U`\> & [`Intersection`](Intersection.md)\<`U`, `T`\>
 
 ## Desc
 
@@ -23,15 +39,3 @@ type Props = { name: string; age: number; visible: boolean };
   // Expect: { name: string; age: string; visible: boolean; }
   type ReplacedProps = Overwrite<Props, NewProps>;
 ```
-
-## Type parameters
-
-• **T** *extends* `object`
-
-• **U** *extends* `object`
-
-• **I** = [`Diff`](Diff.md)\<`T`, `U`\> & [`Intersection`](Intersection.md)\<`U`, `T`\>
-
-## Source
-
-[src/utils/utilityTypes.ts:262](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/utilityTypes.ts#L262)

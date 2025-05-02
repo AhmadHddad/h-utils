@@ -1,14 +1,22 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / DeepRequired
 
-# Type alias: DeepRequired\<T\>
+# Type Alias: DeepRequired\<T\>
 
-> **DeepRequired**\<`T`\>: `T` *extends* (...`args`) => `any` ? `T` : `T` *extends* `any`[] ? [`_DeepRequiredArray`](../interfaces/DeepRequiredArray.md)\<`T`\[`number`\]\> : `T` *extends* `object` ? [`_DeepRequiredObject`](DeepRequiredObject.md)\<`T`\> : `T`
+> **DeepRequired**\<`T`\> = `T` *extends* (...`args`) => `any` ? `T` : `T` *extends* `any`[] ? `_DeepRequiredArray`\<`T`\[`number`\]\> : `T` *extends* `object` ? `_DeepRequiredObject`\<`T`\> : `T`
+
+Defined in: [src/utils/utilityTypes.ts:370](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/utilityTypes.ts#L370)
 
 DeepRequired
+
+## Type Parameters
+
+### T
+
+`T`
 
 ## Desc
 
@@ -33,11 +41,3 @@ Required that works for deeply nested structure
   };
   type RequiredNestedProps = DeepRequired<NestedProps>;
 ```
-
-## Type parameters
-
-• **T**
-
-## Source
-
-[src/utils/utilityTypes.ts:370](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/utilityTypes.ts#L370)

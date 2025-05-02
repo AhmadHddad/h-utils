@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **isRgbColor**(`color`): `boolean`
 
+Defined in: [src/utils/validation/isRgbColor.ts:6](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/validation/isRgbColor.ts#L6)
+
 ## Parameters
 
-• **color**: `string`
+### color
+
+`string`
 
 ## Returns
 
@@ -19,7 +23,3 @@
 ## Description
 
 // Function to check if the parameter is a valid RGB or RGBA color;
-
-## Source
-
-[src/utils/validation/isRgbColor.ts:6](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/validation/isRgbColor.ts#L6)

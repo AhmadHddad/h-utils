@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,13 +6,19 @@
 
 # Function: isURL()
 
-> **isURL**(`input`, `tryUrlObj`?): `boolean`
+> **isURL**(`input`, `tryUrlObj?`): `boolean`
+
+Defined in: [src/utils/validation/isURL.ts:10](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/validation/isURL.ts#L10)
 
 ## Parameters
 
-• **input**: `string`
+### input
 
-• **tryUrlObj?**: `boolean`
+`string`
+
+### tryUrlObj?
+
+`boolean`
 
 ## Returns
 
@@ -32,7 +38,3 @@ isURL("www.google.com") // true
 ```ts
 isURL("www.google.com", true) // false
 ```
-
-## Source
-
-[src/utils/validation/isURL.ts:10](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/validation/isURL.ts#L10)

@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,15 +6,21 @@
 
 # Function: count()
 
-> **count**(`input`?, `options`?): `number`
+> **count**(`input?`, `options?`): `number`
+
+Defined in: [src/utils/general/count.ts:12](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/general/count.ts#L12)
 
 ## Parameters
 
-• **input?**: `string` \| `number` \| `boolean` \| `object` \| []
+### input?
 
-• **options?**
+`string` | `number` | `boolean` | \{ \} | \[\]
 
-• **options.trimString?**: `boolean`
+### options?
+
+#### trimString
+
+`boolean`
 
 ## Returns
 
@@ -57,7 +63,3 @@ count(false) => 0
 ```ts
 count({a:1,b:2}) => 2
 ```
-
-## Source
-
-[src/utils/general/count.ts:12](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/general/count.ts#L12)

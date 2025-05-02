@@ -1,29 +1,35 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / PredicateFunc
 
-# Type alias: PredicateFunc()\<T\>
+# Type Alias: PredicateFunc()\<T\>
 
-> **PredicateFunc**\<`T`\>: (`key`, `value`, `object`) => `boolean`
+> **PredicateFunc**\<`T`\> = (`key`, `value`, `object`) => `boolean`
 
-## Type parameters
+Defined in: [src/utils/utilityTypes.ts:15](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/utilityTypes.ts#L15)
 
-• **T**
+## Type Parameters
+
+### T
+
+`T`
 
 ## Parameters
 
-• **key**: `string` \| `symbol`
+### key
 
-• **value**: `string` \| [`Values`](Values.md)\<`T`\>
+`string` | `symbol`
 
-• **object**: `object` \| `object`
+### value
+
+`string` | [`Values`](Values.md)\<`T`\>
+
+### object
+
+\{ \} | `object`
 
 ## Returns
 
 `boolean`
-
-## Source
-
-[src/utils/utilityTypes.ts:15](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/utilityTypes.ts#L15)

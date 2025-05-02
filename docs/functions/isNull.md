@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,18 +8,18 @@
 
 > **isNull**(`val`): `val is null`
 
+Defined in: [src/utils/validation/isNull.ts:5](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/validation/isNull.ts#L5)
+
 It checks if the value is null.
 
 ## Parameters
 
-• **val**: `unknown`
+### val
+
+`unknown`
 
 unknown
 
 ## Returns
 
 `val is null`
-
-## Source
-
-[src/utils/validation/isNull.ts:5](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/validation/isNull.ts#L5)

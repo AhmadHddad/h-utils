@@ -1,14 +1,22 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / DeepReadonly
 
-# Type alias: DeepReadonly\<T\>
+# Type Alias: DeepReadonly\<T\>
 
-> **DeepReadonly**\<`T`\>: `T` *extends* (...`args`) => `any` \| [`Primitive`](Primitive.md) ? `T` : `T` *extends* [`_DeepReadonlyArray`](../interfaces/DeepReadonlyArray.md)\<infer U\> ? [`_DeepReadonlyArray`](../interfaces/DeepReadonlyArray.md)\<`U`\> : `T` *extends* [`_DeepReadonlyObject`](DeepReadonlyObject.md)\<infer V\> ? [`_DeepReadonlyObject`](DeepReadonlyObject.md)\<`V`\> : `T`
+> **DeepReadonly**\<`T`\> = `T` *extends* (...`args`) => `any` \| [`Primitive`](Primitive.md) ? `T` : `T` *extends* `_DeepReadonlyArray`\<infer U\> ? `_DeepReadonlyArray`\<`U`\> : `T` *extends* `_DeepReadonlyObject`\<infer V\> ? `_DeepReadonlyObject`\<`V`\> : `T`
+
+Defined in: [src/utils/utilityTypes.ts:335](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/utilityTypes.ts#L335)
 
 DeepReadonly
+
+## Type Parameters
+
+### T
+
+`T`
 
 ## Desc
 
@@ -33,11 +41,3 @@ Readonly that works for deeply nested structure
   };
   type ReadonlyNestedProps = DeepReadonly<NestedProps>;
 ```
-
-## Type parameters
-
-• **T**
-
-## Source
-
-[src/utils/utilityTypes.ts:335](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/utilityTypes.ts#L335)

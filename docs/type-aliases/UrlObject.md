@@ -1,31 +1,39 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / UrlObject
 
-# Type alias: UrlObject
+# Type Alias: UrlObject
 
-> **UrlObject**: `object`
+> **UrlObject** = `object`
 
-## Type declaration
+Defined in: [src/utils/types.ts:253](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L253)
+
+## Properties
 
 ### fragmentIdentifier?
 
-> `optional` `readonly` **fragmentIdentifier**: `string`
+> `readonly` `optional` **fragmentIdentifier**: `string`
+
+Defined in: [src/utils/types.ts:264](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L264)
 
 Overrides the fragment identifier in the `url` property.
 
+***
+
 ### query?
 
-> `optional` `readonly` **query**: [`StringifiableRecord`](StringifiableRecord.md)
+> `readonly` `optional` **query**: [`StringifiableRecord`](StringifiableRecord.md)
+
+Defined in: [src/utils/types.ts:259](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L259)
 
 Overrides queries in the `url` property.
+
+***
 
 ### url
 
 > `readonly` **url**: `string`
 
-## Source
-
-[src/utils/types.ts:253](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/types.ts#L253)
+Defined in: [src/utils/types.ts:254](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L254)

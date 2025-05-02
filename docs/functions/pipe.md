@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,27 +6,37 @@
 
 # Function: pipe()
 
-## pipe(ab)
+## Call Signature
 
 > **pipe**\<`A`, `B`\>(`ab`): (...`args`) => `B`
 
-### Type parameters
+Defined in: [src/utils/functions/pipe.ts:16](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/pipe.ts#L16)
 
-• **A** *extends* `unknown`[]
+### Type Parameters
 
-• **B**
+#### A
+
+`A` *extends* `unknown`[]
+
+#### B
+
+`B`
 
 ### Parameters
 
-• **ab**
+#### ab
+
+(`this`, ...`a`) => `B`
 
 ### Returns
 
-`Function`
+> (...`args`): `B`
 
 #### Parameters
 
-• ...**args**: `A`
+##### args
+
+...`A`
 
 #### Returns
 
@@ -49,390 +59,714 @@ const differenceThenAdd1 = pipe(
 const result: number = differenceThenAdd1(5, 4); //2
 ```
 
-### Source
-
-[src/utils/functions/pipe.ts:16](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/functions/pipe.ts#L16)
-
-## pipe(ab, bc)
+## Call Signature
 
 > **pipe**\<`A`, `B`, `C`\>(`ab`, `bc`): (...`args`) => `C`
 
-### Type parameters
+Defined in: [src/utils/functions/pipe.ts:19](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/pipe.ts#L19)
 
-• **A** *extends* `unknown`[]
+### Type Parameters
 
-• **B**
+#### A
 
-• **C**
+`A` *extends* `unknown`[]
+
+#### B
+
+`B`
+
+#### C
+
+`C`
 
 ### Parameters
 
-• **ab**
+#### ab
 
-• **bc**
+(`this`, ...`a`) => `B`
+
+#### bc
+
+(`this`, `b`) => `C`
 
 ### Returns
 
-`Function`
+> (...`args`): `C`
 
 #### Parameters
 
-• ...**args**: `A`
+##### args
+
+...`A`
 
 #### Returns
 
 `C`
 
-### Source
+### Description
 
-[src/utils/functions/pipe.ts:19](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/functions/pipe.ts#L19)
+Create a new function which pipes its value through the list functions.
 
-## pipe(ab, bc, cd)
+### Example
+
+```ts
+const difference = (a: number, b: number) => a - b;
+const add1 = (n: number) => n + 1;
+
+const differenceThenAdd1 = pipe(
+   difference,
+   add1,
+);
+const result: number = differenceThenAdd1(5, 4); //2
+```
+
+## Call Signature
 
 > **pipe**\<`A`, `B`, `C`, `D`\>(`ab`, `bc`, `cd`): (...`args`) => `D`
 
-### Type parameters
+Defined in: [src/utils/functions/pipe.ts:23](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/pipe.ts#L23)
 
-• **A** *extends* `unknown`[]
+### Type Parameters
 
-• **B**
+#### A
 
-• **C**
+`A` *extends* `unknown`[]
 
-• **D**
+#### B
+
+`B`
+
+#### C
+
+`C`
+
+#### D
+
+`D`
 
 ### Parameters
 
-• **ab**
+#### ab
 
-• **bc**
+(`this`, ...`a`) => `B`
 
-• **cd**
+#### bc
+
+(`this`, `b`) => `C`
+
+#### cd
+
+(`this`, `c`) => `D`
 
 ### Returns
 
-`Function`
+> (...`args`): `D`
 
 #### Parameters
 
-• ...**args**: `A`
+##### args
+
+...`A`
 
 #### Returns
 
 `D`
 
-### Source
+### Description
 
-[src/utils/functions/pipe.ts:23](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/functions/pipe.ts#L23)
+Create a new function which pipes its value through the list functions.
 
-## pipe(ab, bc, cd, de)
+### Example
+
+```ts
+const difference = (a: number, b: number) => a - b;
+const add1 = (n: number) => n + 1;
+
+const differenceThenAdd1 = pipe(
+   difference,
+   add1,
+);
+const result: number = differenceThenAdd1(5, 4); //2
+```
+
+## Call Signature
 
 > **pipe**\<`A`, `B`, `C`, `D`, `E`\>(`ab`, `bc`, `cd`, `de`): (...`args`) => `E`
 
-### Type parameters
+Defined in: [src/utils/functions/pipe.ts:28](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/pipe.ts#L28)
 
-• **A** *extends* `unknown`[]
+### Type Parameters
 
-• **B**
+#### A
 
-• **C**
+`A` *extends* `unknown`[]
 
-• **D**
+#### B
 
-• **E**
+`B`
+
+#### C
+
+`C`
+
+#### D
+
+`D`
+
+#### E
+
+`E`
 
 ### Parameters
 
-• **ab**
+#### ab
 
-• **bc**
+(`this`, ...`a`) => `B`
 
-• **cd**
+#### bc
 
-• **de**
+(`this`, `b`) => `C`
+
+#### cd
+
+(`this`, `c`) => `D`
+
+#### de
+
+(`this`, `d`) => `E`
 
 ### Returns
 
-`Function`
+> (...`args`): `E`
 
 #### Parameters
 
-• ...**args**: `A`
+##### args
+
+...`A`
 
 #### Returns
 
 `E`
 
-### Source
+### Description
 
-[src/utils/functions/pipe.ts:28](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/functions/pipe.ts#L28)
+Create a new function which pipes its value through the list functions.
 
-## pipe(ab, bc, cd, de, ef)
+### Example
+
+```ts
+const difference = (a: number, b: number) => a - b;
+const add1 = (n: number) => n + 1;
+
+const differenceThenAdd1 = pipe(
+   difference,
+   add1,
+);
+const result: number = differenceThenAdd1(5, 4); //2
+```
+
+## Call Signature
 
 > **pipe**\<`A`, `B`, `C`, `D`, `E`, `F`\>(`ab`, `bc`, `cd`, `de`, `ef`): (...`args`) => `F`
 
-### Type parameters
+Defined in: [src/utils/functions/pipe.ts:34](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/pipe.ts#L34)
 
-• **A** *extends* `unknown`[]
+### Type Parameters
 
-• **B**
+#### A
 
-• **C**
+`A` *extends* `unknown`[]
 
-• **D**
+#### B
 
-• **E**
+`B`
 
-• **F**
+#### C
+
+`C`
+
+#### D
+
+`D`
+
+#### E
+
+`E`
+
+#### F
+
+`F`
 
 ### Parameters
 
-• **ab**
+#### ab
 
-• **bc**
+(`this`, ...`a`) => `B`
 
-• **cd**
+#### bc
 
-• **de**
+(`this`, `b`) => `C`
 
-• **ef**
+#### cd
+
+(`this`, `c`) => `D`
+
+#### de
+
+(`this`, `d`) => `E`
+
+#### ef
+
+(`this`, `e`) => `F`
 
 ### Returns
 
-`Function`
+> (...`args`): `F`
 
 #### Parameters
 
-• ...**args**: `A`
+##### args
+
+...`A`
 
 #### Returns
 
 `F`
 
-### Source
+### Description
 
-[src/utils/functions/pipe.ts:34](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/functions/pipe.ts#L34)
+Create a new function which pipes its value through the list functions.
 
-## pipe(ab, bc, cd, de, ef, fg)
+### Example
+
+```ts
+const difference = (a: number, b: number) => a - b;
+const add1 = (n: number) => n + 1;
+
+const differenceThenAdd1 = pipe(
+   difference,
+   add1,
+);
+const result: number = differenceThenAdd1(5, 4); //2
+```
+
+## Call Signature
 
 > **pipe**\<`A`, `B`, `C`, `D`, `E`, `F`, `G`\>(`ab`, `bc`, `cd`, `de`, `ef`, `fg`): (...`args`) => `G`
 
-### Type parameters
+Defined in: [src/utils/functions/pipe.ts:41](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/pipe.ts#L41)
 
-• **A** *extends* `unknown`[]
+### Type Parameters
 
-• **B**
+#### A
 
-• **C**
+`A` *extends* `unknown`[]
 
-• **D**
+#### B
 
-• **E**
+`B`
 
-• **F**
+#### C
 
-• **G**
+`C`
+
+#### D
+
+`D`
+
+#### E
+
+`E`
+
+#### F
+
+`F`
+
+#### G
+
+`G`
 
 ### Parameters
 
-• **ab**
+#### ab
 
-• **bc**
+(`this`, ...`a`) => `B`
 
-• **cd**
+#### bc
 
-• **de**
+(`this`, `b`) => `C`
 
-• **ef**
+#### cd
 
-• **fg**
+(`this`, `c`) => `D`
+
+#### de
+
+(`this`, `d`) => `E`
+
+#### ef
+
+(`this`, `e`) => `F`
+
+#### fg
+
+(`this`, `f`) => `G`
 
 ### Returns
 
-`Function`
+> (...`args`): `G`
 
 #### Parameters
 
-• ...**args**: `A`
+##### args
+
+...`A`
 
 #### Returns
 
 `G`
 
-### Source
+### Description
 
-[src/utils/functions/pipe.ts:41](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/functions/pipe.ts#L41)
+Create a new function which pipes its value through the list functions.
 
-## pipe(ab, bc, cd, de, ef, fg, gh)
+### Example
+
+```ts
+const difference = (a: number, b: number) => a - b;
+const add1 = (n: number) => n + 1;
+
+const differenceThenAdd1 = pipe(
+   difference,
+   add1,
+);
+const result: number = differenceThenAdd1(5, 4); //2
+```
+
+## Call Signature
 
 > **pipe**\<`A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`\>(`ab`, `bc`, `cd`, `de`, `ef`, `fg`, `gh`): (...`args`) => `H`
 
-### Type parameters
+Defined in: [src/utils/functions/pipe.ts:49](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/pipe.ts#L49)
 
-• **A** *extends* `unknown`[]
+### Type Parameters
 
-• **B**
+#### A
 
-• **C**
+`A` *extends* `unknown`[]
 
-• **D**
+#### B
 
-• **E**
+`B`
 
-• **F**
+#### C
 
-• **G**
+`C`
 
-• **H**
+#### D
+
+`D`
+
+#### E
+
+`E`
+
+#### F
+
+`F`
+
+#### G
+
+`G`
+
+#### H
+
+`H`
 
 ### Parameters
 
-• **ab**
+#### ab
 
-• **bc**
+(`this`, ...`a`) => `B`
 
-• **cd**
+#### bc
 
-• **de**
+(`this`, `b`) => `C`
 
-• **ef**
+#### cd
 
-• **fg**
+(`this`, `c`) => `D`
 
-• **gh**
+#### de
+
+(`this`, `d`) => `E`
+
+#### ef
+
+(`this`, `e`) => `F`
+
+#### fg
+
+(`this`, `f`) => `G`
+
+#### gh
+
+(`this`, `g`) => `H`
 
 ### Returns
 
-`Function`
+> (...`args`): `H`
 
 #### Parameters
 
-• ...**args**: `A`
+##### args
+
+...`A`
 
 #### Returns
 
 `H`
 
-### Source
+### Description
 
-[src/utils/functions/pipe.ts:49](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/functions/pipe.ts#L49)
+Create a new function which pipes its value through the list functions.
 
-## pipe(ab, bc, cd, de, ef, fg, gh, hi)
+### Example
+
+```ts
+const difference = (a: number, b: number) => a - b;
+const add1 = (n: number) => n + 1;
+
+const differenceThenAdd1 = pipe(
+   difference,
+   add1,
+);
+const result: number = differenceThenAdd1(5, 4); //2
+```
+
+## Call Signature
 
 > **pipe**\<`A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`, `I`\>(`ab`, `bc`, `cd`, `de`, `ef`, `fg`, `gh`, `hi`): (...`args`) => `I`
 
-### Type parameters
+Defined in: [src/utils/functions/pipe.ts:58](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/pipe.ts#L58)
 
-• **A** *extends* `unknown`[]
+### Type Parameters
 
-• **B**
+#### A
 
-• **C**
+`A` *extends* `unknown`[]
 
-• **D**
+#### B
 
-• **E**
+`B`
 
-• **F**
+#### C
 
-• **G**
+`C`
 
-• **H**
+#### D
 
-• **I**
+`D`
+
+#### E
+
+`E`
+
+#### F
+
+`F`
+
+#### G
+
+`G`
+
+#### H
+
+`H`
+
+#### I
+
+`I`
 
 ### Parameters
 
-• **ab**
+#### ab
 
-• **bc**
+(`this`, ...`a`) => `B`
 
-• **cd**
+#### bc
 
-• **de**
+(`this`, `b`) => `C`
 
-• **ef**
+#### cd
 
-• **fg**
+(`this`, `c`) => `D`
 
-• **gh**
+#### de
 
-• **hi**
+(`this`, `d`) => `E`
+
+#### ef
+
+(`this`, `e`) => `F`
+
+#### fg
+
+(`this`, `f`) => `G`
+
+#### gh
+
+(`this`, `g`) => `H`
+
+#### hi
+
+(`this`, `h`) => `I`
 
 ### Returns
 
-`Function`
+> (...`args`): `I`
 
 #### Parameters
 
-• ...**args**: `A`
+##### args
+
+...`A`
 
 #### Returns
 
 `I`
 
-### Source
+### Description
 
-[src/utils/functions/pipe.ts:58](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/functions/pipe.ts#L58)
+Create a new function which pipes its value through the list functions.
 
-## pipe(ab, bc, cd, de, ef, fg, gh, hi, ij)
+### Example
+
+```ts
+const difference = (a: number, b: number) => a - b;
+const add1 = (n: number) => n + 1;
+
+const differenceThenAdd1 = pipe(
+   difference,
+   add1,
+);
+const result: number = differenceThenAdd1(5, 4); //2
+```
+
+## Call Signature
 
 > **pipe**\<`A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`, `I`, `J`\>(`ab`, `bc`, `cd`, `de`, `ef`, `fg`, `gh`, `hi`, `ij`): (...`args`) => `J`
 
-### Type parameters
+Defined in: [src/utils/functions/pipe.ts:68](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/pipe.ts#L68)
 
-• **A** *extends* `unknown`[]
+### Type Parameters
 
-• **B**
+#### A
 
-• **C**
+`A` *extends* `unknown`[]
 
-• **D**
+#### B
 
-• **E**
+`B`
 
-• **F**
+#### C
 
-• **G**
+`C`
 
-• **H**
+#### D
 
-• **I**
+`D`
 
-• **J**
+#### E
+
+`E`
+
+#### F
+
+`F`
+
+#### G
+
+`G`
+
+#### H
+
+`H`
+
+#### I
+
+`I`
+
+#### J
+
+`J`
 
 ### Parameters
 
-• **ab**
+#### ab
 
-• **bc**
+(`this`, ...`a`) => `B`
 
-• **cd**
+#### bc
 
-• **de**
+(`this`, `b`) => `C`
 
-• **ef**
+#### cd
 
-• **fg**
+(`this`, `c`) => `D`
 
-• **gh**
+#### de
 
-• **hi**
+(`this`, `d`) => `E`
 
-• **ij**
+#### ef
+
+(`this`, `e`) => `F`
+
+#### fg
+
+(`this`, `f`) => `G`
+
+#### gh
+
+(`this`, `g`) => `H`
+
+#### hi
+
+(`this`, `h`) => `I`
+
+#### ij
+
+(`this`, `i`) => `J`
 
 ### Returns
 
-`Function`
+> (...`args`): `J`
 
 #### Parameters
 
-• ...**args**: `A`
+##### args
+
+...`A`
 
 #### Returns
 
 `J`
 
-### Source
+### Description
 
-[src/utils/functions/pipe.ts:68](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/functions/pipe.ts#L68)
+Create a new function which pipes its value through the list functions.
+
+### Example
+
+```ts
+const difference = (a: number, b: number) => a - b;
+const add1 = (n: number) => n + 1;
+
+const differenceThenAdd1 = pipe(
+   difference,
+   add1,
+);
+const result: number = differenceThenAdd1(5, 4); //2
+```

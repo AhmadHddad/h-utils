@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,13 +8,21 @@
 
 > **padEnd**(`input`, `targetLength`, `padString`): `string`
 
+Defined in: [src/utils/string/padEnd.ts:6](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/string/padEnd.ts#L6)
+
 ## Parameters
 
-• **input**: `string`
+### input
 
-• **targetLength**: `number`
+`string`
 
-• **padString**: `string`= `' '`
+### targetLength
+
+`number`
+
+### padString
+
+`string` = `' '`
 
 ## Returns
 
@@ -29,7 +37,3 @@ function which takes a string of characters and adds a "padding" string of your 
 ```ts
 padEnd("123", 5, '0') // '12300'
 ```
-
-## Source
-
-[src/utils/string/padEnd.ts:6](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/string/padEnd.ts#L6)

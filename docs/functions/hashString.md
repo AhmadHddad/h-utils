@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **hashString**(`str`): `number`
 
+Defined in: [src/utils/string/hashString.ts:8](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/string/hashString.ts#L8)
+
 ## Parameters
 
-• **str**: `string`
+### str
+
+`string`
 
 The string to hash
 
@@ -23,7 +27,3 @@ The sum of the ASCII values of the characters in the string.
 ## Description
 
 It takes a string, converts it to an array of ASCII codes, sums them up, and returns the sum
-
-## Source
-
-[src/utils/string/hashString.ts:8](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/string/hashString.ts#L8)

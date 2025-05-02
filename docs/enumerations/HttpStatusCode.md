@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,15 +6,15 @@
 
 # Enumeration: HttpStatusCode
 
+Defined in: [src/constants/HttpStatusCode.ts:1](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L1)
+
 ## Enumeration Members
 
 ### Accepted
 
 > **Accepted**: `202`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:8](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L8)
+Defined in: [src/constants/HttpStatusCode.ts:8](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L8)
 
 ***
 
@@ -22,9 +22,7 @@
 
 > **AlreadyReported**: `208`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:14](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L14)
+Defined in: [src/constants/HttpStatusCode.ts:14](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L14)
 
 ***
 
@@ -32,9 +30,7 @@
 
 > **BadGateway**: `502`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:56](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L56)
+Defined in: [src/constants/HttpStatusCode.ts:56](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L56)
 
 ***
 
@@ -42,9 +38,7 @@
 
 > **BadRequest**: `400`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:25](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L25)
+Defined in: [src/constants/HttpStatusCode.ts:25](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L25)
 
 ***
 
@@ -52,9 +46,7 @@
 
 > **Conflict**: `409`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:34](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L34)
+Defined in: [src/constants/HttpStatusCode.ts:34](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L34)
 
 ***
 
@@ -62,9 +54,7 @@
 
 > **Continue**: `100`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:2](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L2)
+Defined in: [src/constants/HttpStatusCode.ts:2](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L2)
 
 ***
 
@@ -72,9 +62,7 @@
 
 > **Created**: `201`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:7](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L7)
+Defined in: [src/constants/HttpStatusCode.ts:7](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L7)
 
 ***
 
@@ -82,9 +70,7 @@
 
 > **EarlyHints**: `103`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:5](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L5)
+Defined in: [src/constants/HttpStatusCode.ts:5](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L5)
 
 ***
 
@@ -92,9 +78,7 @@
 
 > **ExpectationFailed**: `417`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:42](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L42)
+Defined in: [src/constants/HttpStatusCode.ts:42](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L42)
 
 ***
 
@@ -102,9 +86,7 @@
 
 > **FailedDependency**: `424`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:47](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L47)
+Defined in: [src/constants/HttpStatusCode.ts:47](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L47)
 
 ***
 
@@ -112,9 +94,7 @@
 
 > **Forbidden**: `403`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:28](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L28)
+Defined in: [src/constants/HttpStatusCode.ts:28](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L28)
 
 ***
 
@@ -122,9 +102,7 @@
 
 > **Found**: `302`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:18](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L18)
+Defined in: [src/constants/HttpStatusCode.ts:18](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L18)
 
 ***
 
@@ -132,9 +110,7 @@
 
 > **GatewayTimeout**: `504`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:58](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L58)
+Defined in: [src/constants/HttpStatusCode.ts:58](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L58)
 
 ***
 
@@ -142,9 +118,7 @@
 
 > **Gone**: `410`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:35](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L35)
+Defined in: [src/constants/HttpStatusCode.ts:35](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L35)
 
 ***
 
@@ -152,9 +126,7 @@
 
 > **HttpVersionNotSupported**: `505`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:59](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L59)
+Defined in: [src/constants/HttpStatusCode.ts:59](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L59)
 
 ***
 
@@ -162,9 +134,7 @@
 
 > **ImATeapot**: `418`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:43](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L43)
+Defined in: [src/constants/HttpStatusCode.ts:43](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L43)
 
 ***
 
@@ -172,9 +142,7 @@
 
 > **ImUsed**: `226`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:15](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L15)
+Defined in: [src/constants/HttpStatusCode.ts:15](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L15)
 
 ***
 
@@ -182,9 +150,7 @@
 
 > **InsufficientStorage**: `507`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:61](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L61)
+Defined in: [src/constants/HttpStatusCode.ts:61](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L61)
 
 ***
 
@@ -192,9 +158,7 @@
 
 > **InternalServerError**: `500`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:54](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L54)
+Defined in: [src/constants/HttpStatusCode.ts:54](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L54)
 
 ***
 
@@ -202,9 +166,7 @@
 
 > **LengthRequired**: `411`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:36](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L36)
+Defined in: [src/constants/HttpStatusCode.ts:36](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L36)
 
 ***
 
@@ -212,9 +174,7 @@
 
 > **Locked**: `423`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:46](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L46)
+Defined in: [src/constants/HttpStatusCode.ts:46](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L46)
 
 ***
 
@@ -222,9 +182,7 @@
 
 > **LoopDetected**: `508`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:62](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L62)
+Defined in: [src/constants/HttpStatusCode.ts:62](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L62)
 
 ***
 
@@ -232,9 +190,7 @@
 
 > **MethodNotAllowed**: `405`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:30](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L30)
+Defined in: [src/constants/HttpStatusCode.ts:30](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L30)
 
 ***
 
@@ -242,9 +198,7 @@
 
 > **MisdirectedRequest**: `421`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:44](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L44)
+Defined in: [src/constants/HttpStatusCode.ts:44](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L44)
 
 ***
 
@@ -252,19 +206,7 @@
 
 > **MovedPermanently**: `301`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:17](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L17)
-
-***
-
-### MultiStatus
-
-> **MultiStatus**: `207`
-
-#### Source
-
-[src/constants/HttpStatusCode.ts:13](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L13)
+Defined in: [src/constants/HttpStatusCode.ts:17](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L17)
 
 ***
 
@@ -272,9 +214,15 @@
 
 > **MultipleChoices**: `300`
 
-#### Source
+Defined in: [src/constants/HttpStatusCode.ts:16](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L16)
 
-[src/constants/HttpStatusCode.ts:16](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L16)
+***
+
+### MultiStatus
+
+> **MultiStatus**: `207`
+
+Defined in: [src/constants/HttpStatusCode.ts:13](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L13)
 
 ***
 
@@ -282,9 +230,7 @@
 
 > **NetworkAuthenticationRequired**: `511`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:64](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L64)
+Defined in: [src/constants/HttpStatusCode.ts:64](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L64)
 
 ***
 
@@ -292,9 +238,7 @@
 
 > **NoContent**: `204`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:10](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L10)
+Defined in: [src/constants/HttpStatusCode.ts:10](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L10)
 
 ***
 
@@ -302,9 +246,7 @@
 
 > **NonAuthoritativeInformation**: `203`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:9](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L9)
+Defined in: [src/constants/HttpStatusCode.ts:9](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L9)
 
 ***
 
@@ -312,9 +254,7 @@
 
 > **NotAcceptable**: `406`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:31](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L31)
+Defined in: [src/constants/HttpStatusCode.ts:31](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L31)
 
 ***
 
@@ -322,9 +262,7 @@
 
 > **NotExtended**: `510`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:63](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L63)
+Defined in: [src/constants/HttpStatusCode.ts:63](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L63)
 
 ***
 
@@ -332,9 +270,7 @@
 
 > **NotFound**: `404`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:29](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L29)
+Defined in: [src/constants/HttpStatusCode.ts:29](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L29)
 
 ***
 
@@ -342,9 +278,7 @@
 
 > **NotImplemented**: `501`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:55](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L55)
+Defined in: [src/constants/HttpStatusCode.ts:55](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L55)
 
 ***
 
@@ -352,9 +286,7 @@
 
 > **NotModified**: `304`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:20](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L20)
+Defined in: [src/constants/HttpStatusCode.ts:20](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L20)
 
 ***
 
@@ -362,9 +294,7 @@
 
 > **Ok**: `200`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:6](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L6)
+Defined in: [src/constants/HttpStatusCode.ts:6](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L6)
 
 ***
 
@@ -372,9 +302,7 @@
 
 > **PartialContent**: `206`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:12](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L12)
+Defined in: [src/constants/HttpStatusCode.ts:12](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L12)
 
 ***
 
@@ -382,9 +310,7 @@
 
 > **PayloadTooLarge**: `413`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:38](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L38)
+Defined in: [src/constants/HttpStatusCode.ts:38](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L38)
 
 ***
 
@@ -392,9 +318,7 @@
 
 > **PaymentRequired**: `402`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:27](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L27)
+Defined in: [src/constants/HttpStatusCode.ts:27](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L27)
 
 ***
 
@@ -402,9 +326,7 @@
 
 > **PermanentRedirect**: `308`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:24](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L24)
+Defined in: [src/constants/HttpStatusCode.ts:24](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L24)
 
 ***
 
@@ -412,9 +334,7 @@
 
 > **PreconditionFailed**: `412`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:37](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L37)
+Defined in: [src/constants/HttpStatusCode.ts:37](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L37)
 
 ***
 
@@ -422,9 +342,7 @@
 
 > **PreconditionRequired**: `428`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:50](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L50)
+Defined in: [src/constants/HttpStatusCode.ts:50](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L50)
 
 ***
 
@@ -432,9 +350,7 @@
 
 > **Processing**: `102`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:4](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L4)
+Defined in: [src/constants/HttpStatusCode.ts:4](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L4)
 
 ***
 
@@ -442,9 +358,7 @@
 
 > **ProxyAuthenticationRequired**: `407`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:32](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L32)
+Defined in: [src/constants/HttpStatusCode.ts:32](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L32)
 
 ***
 
@@ -452,9 +366,7 @@
 
 > **RangeNotSatisfiable**: `416`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:41](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L41)
+Defined in: [src/constants/HttpStatusCode.ts:41](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L41)
 
 ***
 
@@ -462,9 +374,7 @@
 
 > **RequestHeaderFieldsTooLarge**: `431`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:52](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L52)
+Defined in: [src/constants/HttpStatusCode.ts:52](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L52)
 
 ***
 
@@ -472,9 +382,7 @@
 
 > **RequestTimeout**: `408`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:33](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L33)
+Defined in: [src/constants/HttpStatusCode.ts:33](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L33)
 
 ***
 
@@ -482,9 +390,7 @@
 
 > **ResetContent**: `205`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:11](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L11)
+Defined in: [src/constants/HttpStatusCode.ts:11](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L11)
 
 ***
 
@@ -492,9 +398,7 @@
 
 > **SeeOther**: `303`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:19](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L19)
+Defined in: [src/constants/HttpStatusCode.ts:19](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L19)
 
 ***
 
@@ -502,9 +406,7 @@
 
 > **ServiceUnavailable**: `503`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:57](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L57)
+Defined in: [src/constants/HttpStatusCode.ts:57](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L57)
 
 ***
 
@@ -512,9 +414,7 @@
 
 > **SwitchingProtocols**: `101`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:3](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L3)
+Defined in: [src/constants/HttpStatusCode.ts:3](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L3)
 
 ***
 
@@ -522,9 +422,7 @@
 
 > **TemporaryRedirect**: `307`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:23](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L23)
+Defined in: [src/constants/HttpStatusCode.ts:23](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L23)
 
 ***
 
@@ -532,9 +430,7 @@
 
 > **TooEarly**: `425`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:48](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L48)
+Defined in: [src/constants/HttpStatusCode.ts:48](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L48)
 
 ***
 
@@ -542,9 +438,7 @@
 
 > **TooManyRequests**: `429`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:51](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L51)
+Defined in: [src/constants/HttpStatusCode.ts:51](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L51)
 
 ***
 
@@ -552,9 +446,7 @@
 
 > **Unauthorized**: `401`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:26](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L26)
+Defined in: [src/constants/HttpStatusCode.ts:26](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L26)
 
 ***
 
@@ -562,9 +454,7 @@
 
 > **UnavailableForLegalReasons**: `451`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:53](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L53)
+Defined in: [src/constants/HttpStatusCode.ts:53](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L53)
 
 ***
 
@@ -572,9 +462,7 @@
 
 > **UnprocessableEntity**: `422`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:45](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L45)
+Defined in: [src/constants/HttpStatusCode.ts:45](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L45)
 
 ***
 
@@ -582,9 +470,7 @@
 
 > **UnsupportedMediaType**: `415`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:40](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L40)
+Defined in: [src/constants/HttpStatusCode.ts:40](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L40)
 
 ***
 
@@ -592,9 +478,7 @@
 
 > **Unused**: `306`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:22](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L22)
+Defined in: [src/constants/HttpStatusCode.ts:22](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L22)
 
 ***
 
@@ -602,9 +486,7 @@
 
 > **UpgradeRequired**: `426`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:49](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L49)
+Defined in: [src/constants/HttpStatusCode.ts:49](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L49)
 
 ***
 
@@ -612,9 +494,7 @@
 
 > **UriTooLong**: `414`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:39](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L39)
+Defined in: [src/constants/HttpStatusCode.ts:39](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L39)
 
 ***
 
@@ -622,9 +502,7 @@
 
 > **UseProxy**: `305`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:21](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L21)
+Defined in: [src/constants/HttpStatusCode.ts:21](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L21)
 
 ***
 
@@ -632,6 +510,4 @@
 
 > **VariantAlsoNegotiates**: `506`
 
-#### Source
-
-[src/constants/HttpStatusCode.ts:60](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/constants/HttpStatusCode.ts#L60)
+Defined in: [src/constants/HttpStatusCode.ts:60](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/constants/HttpStatusCode.ts#L60)

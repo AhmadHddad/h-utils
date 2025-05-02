@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,7 +6,9 @@
 
 # Function: throttle()
 
-> **throttle**\<`T`\>(`func`, `wait`?, `options`?): () => `void` \| (...`args`) => `any`
+> **throttle**\<`T`\>(`func`, `wait?`, `options?`): () => `void` \| \{(...`args`): `any`; `cancel`: () => `void`; `flush`: () => `any`; `pending`: () => `boolean`; \}
+
+Defined in: [src/utils/functions/throttle.ts:52](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/throttle.ts#L52)
 
 Creates a throttled function that only invokes `func` at most once per
 every `wait` milliseconds (or once per browser frame). The throttled function
@@ -31,36 +33,46 @@ invocation will be deferred until the next frame is drawn (typically about
 See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
 for details over the differences between `throttle` and `debounce`.
 
-## Type parameters
+## Type Parameters
 
-• **T** = `any`
+### T
+
+`T` = `any`
 
 ## Parameters
 
-• **func**
+### func
+
+(...`args`) => `T`
 
 The function to throttle.
 
-• **wait?**: `number`= `200`
+### wait?
+
+`number` = `200`
 
 The number of milliseconds to throttle invocations to; if omitted,
  `requestAnimationFrame` is used (if available).
 
-• **options?**
+### options?
 
 The options object.
 
-• **options.leading?**: `boolean`
+#### leading
+
+`boolean`
 
 Specify invoking on the leading edge of the timeout.
 
-• **options.trailing?**: `boolean`
+#### trailing
+
+`boolean`
 
 Specify invoking on the trailing edge of the timeout.
 
 ## Returns
 
-() => `void` \| (...`args`) => `any`
+() => `void` \| \{(...`args`): `any`; `cancel`: () => `void`; `flush`: () => `any`; `pending`: () => `boolean`; \}
 
 Returns the new throttled function.
 
@@ -71,17 +83,13 @@ Returns the new throttled function.
 ## Example
 
 ```ts
-// Avoid excessively updating the position while scrolling.
-jQuery(window).on('scroll', throttle(updatePosition, 100))
-
- Invoke `renewToken` when the click event is fired, but not more than once every 5 minutes.
-const throttled = throttle(renewToken, 300000, { 'trailing': false })
-jQuery(element).on('click', throttled)
-
-// Cancel the trailing throttled invocation.
-jQuery(window).on('popstate', throttled.cancel)
+* // Avoid excessively updating the position while scrolling.
+ * const throttled = throttle(() => {
+ *   console.log('Scroll event handler');
+ * }, 100);
+ * window.addEventListener('scroll', throttled);
+ * // Later, you can cancel the throttled function
+ * throttled.cancel();
+ * // Or flush the last invocation
+ * throttled.flush();
 ```
-
-## Source
-
-[src/utils/functions/throttle.ts:52](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/functions/throttle.ts#L52)

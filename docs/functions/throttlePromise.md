@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,23 +8,33 @@
 
 > **throttlePromise**\<`F`\>(`func`, `waitFor`): (...`args`) => `Promise`\<`ReturnType`\<`F`\>\>
 
-## Type parameters
+Defined in: [src/utils/functions/throttlePromise.ts:9](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/throttlePromise.ts#L9)
 
-• **F** *extends* (...`args`) => `any`
+## Type Parameters
+
+### F
+
+`F` *extends* (...`args`) => `any`
 
 ## Parameters
 
-• **func**: `F`
+### func
 
-• **waitFor**: `number`= `200`
+`F`
+
+### waitFor
+
+`number` = `200`
 
 ## Returns
 
-`Function`
+> (...`args`): `Promise`\<`ReturnType`\<`F`\>\>
 
 ### Parameters
 
-• ...**args**: `Parameters`\<`F`\>
+#### args
+
+...`Parameters`\<`F`\>
 
 ### Returns
 
@@ -41,7 +51,3 @@ const func = (hello: string) => { console.log(new Date().getTime(), '>>>', hello
 const thrFunc = throttlePromise(func, 1000)
 thrFunc('hello 1')
 ```
-
-## Source
-
-[src/utils/functions/throttlePromise.ts:9](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/functions/throttlePromise.ts#L9)

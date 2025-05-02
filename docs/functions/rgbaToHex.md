@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,11 +8,17 @@
 
 > **rgbaToHex**(`rgba`, `forceRemoveAlpha`): `string`
 
+Defined in: [src/utils/string/rgbaToHex.ts:7](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/string/rgbaToHex.ts#L7)
+
 ## Parameters
 
-• **rgba**: `string`
+### rgba
 
-• **forceRemoveAlpha**: `boolean`= `false`
+`string`
+
+### forceRemoveAlpha
+
+`boolean` = `false`
 
 ## Returns
 
@@ -27,7 +33,3 @@ converts rgba colors to hex color.
 ```ts
 RGBAToHexA("rgba(255, 255, 255, 0)"), "#ffffff00"
 ```
-
-## Source
-
-[src/utils/string/rgbaToHex.ts:7](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/string/rgbaToHex.ts#L7)

@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **isNegativeNumber**(`n`): `boolean`
 
+Defined in: [src/utils/validation/isNegativeNumber.ts:8](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/validation/isNegativeNumber.ts#L8)
+
 ## Parameters
 
-• **n**: `number`
+### n
+
+`number`
 
 ## Returns
 
@@ -29,7 +33,3 @@ isNegativeNumber(1) // false
 ```ts
 isNegativeNumber(-1) // true
 ```
-
-## Source
-
-[src/utils/validation/isNegativeNumber.ts:8](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/validation/isNegativeNumber.ts#L8)

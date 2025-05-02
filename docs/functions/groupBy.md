@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,19 +6,29 @@
 
 # Function: groupBy()
 
-> **groupBy**\<`T`\>(`array`, `keyOrCondition`, `transform`?): [`GroupedObject`](../type-aliases/GroupedObject.md)\<`T`\>
+> **groupBy**\<`T`\>(`array`, `keyOrCondition`, `transform?`): [`GroupedObject`](../type-aliases/GroupedObject.md)\<`T`\>
 
-## Type parameters
+Defined in: [src/utils/array/groupBy.ts:29](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/array/groupBy.ts#L29)
 
-• **T**
+## Type Parameters
+
+### T
+
+`T`
 
 ## Parameters
 
-• **array**: `T`[]
+### array
 
-• **keyOrCondition**: `string` \| (`item`) => `string`
+`T`[]
 
-• **transform?**
+### keyOrCondition
+
+`string` | (`item`) => `string`
+
+### transform?
+
+(`item`, `key`) => `T`
 
 ## Returns
 
@@ -52,7 +62,3 @@ groupBy(
  ],
 };
 ```
-
-## Source
-
-[src/utils/array/groupBy.ts:29](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/array/groupBy.ts#L29)

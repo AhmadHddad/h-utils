@@ -1,17 +1,17 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / Values
 
-# Type alias: Values\<T\>
+# Type Alias: Values\<T\>
 
-> **Values**\<`T`\>: `T`\[[`Keys`](Keys.md)\<`T`\>\]
+> **Values**\<`T`\> = `T`\[[`Keys`](Keys.md)\<`T`\>\]
 
-## Type parameters
+Defined in: [src/utils/utilityTypes.ts:4](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/utilityTypes.ts#L4)
 
-• **T**
+## Type Parameters
 
-## Source
+### T
 
-[src/utils/utilityTypes.ts:4](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/utilityTypes.ts#L4)
+`T`

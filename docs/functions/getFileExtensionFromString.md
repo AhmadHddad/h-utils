@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **getFileExtensionFromString**(`str`): `string`
 
+Defined in: [src/utils/string/getFileExtensionFromString.ts:7](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/string/getFileExtensionFromString.ts#L7)
+
 ## Parameters
 
-• **str**: `string`
+### str
+
+`string`
 
 string - The string to get the file extension from.
 
@@ -29,7 +33,3 @@ It takes a string and get the extension file type.
 ```ts
 getFileExtensionFromString("fileName.txt") => txt
 ```
-
-## Source
-
-[src/utils/string/getFileExtensionFromString.ts:7](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/string/getFileExtensionFromString.ts#L7)

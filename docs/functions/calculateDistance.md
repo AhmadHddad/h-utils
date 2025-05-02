@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,11 +8,17 @@
 
 > **calculateDistance**(`pointA`, `pointB`): `number`
 
+Defined in: [src/utils/general/calculateDistance.ts:29](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/general/calculateDistance.ts#L29)
+
 ## Parameters
 
-• **pointA**: [`PointObject`](../interfaces/PointObject.md) \| [`Point2D`](../type-aliases/Point2D.md) \| [`Point3D`](../type-aliases/Point3D.md)
+### pointA
 
-• **pointB**: [`PointObject`](../interfaces/PointObject.md) \| [`Point2D`](../type-aliases/Point2D.md) \| [`Point3D`](../type-aliases/Point3D.md)
+[`PointObject`](../interfaces/PointObject.md) | [`Point2D`](../type-aliases/Point2D.md) | [`Point3D`](../type-aliases/Point3D.md)
+
+### pointB
+
+[`PointObject`](../interfaces/PointObject.md) | [`Point2D`](../type-aliases/Point2D.md) | [`Point3D`](../type-aliases/Point3D.md)
 
 ## Returns
 
@@ -33,7 +39,3 @@ const pointArrA = [1, 2, 3];
 const pointArrB = [4, 5, 6];
 calculateDistance(pointArrA, pointArrB) //5.196152422706632
 ```
-
-## Source
-
-[src/utils/general/calculateDistance.ts:29](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/general/calculateDistance.ts#L29)

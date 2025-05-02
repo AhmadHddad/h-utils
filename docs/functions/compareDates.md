@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,13 +8,21 @@
 
 > **compareDates**(`firstDate`, `secondDate`, `comparisonLevel`): `boolean`
 
+Defined in: [src/utils/date/compareDates.ts:15](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/date/compareDates.ts#L15)
+
 ## Parameters
 
-• **firstDate**: `string` \| `Date`
+### firstDate
 
-• **secondDate**: `string` \| `Date`
+`string` | `Date`
 
-• **comparisonLevel**: [`DateComparisonLevel`](../type-aliases/DateComparisonLevel.md)= `"full"`
+### secondDate
+
+`string` | `Date`
+
+### comparisonLevel
+
+[`DateComparisonLevel`](../type-aliases/DateComparisonLevel.md) = `"full"`
 
 ## Returns
 
@@ -34,7 +42,3 @@ compareDates(firstDate, secondDate); // Output: false
 compareDates(firstDate, secondDate, "year"); // Output: true
 compareDates(firstDate, secondDate, "hour"); // Output: false
 ```
-
-## Source
-
-[src/utils/date/compareDates.ts:15](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/date/compareDates.ts#L15)

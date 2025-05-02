@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,17 +8,27 @@
 
 > **replaceObjectInArray**\<`T`\>(`arr`, `keyOrPredictor`, `newObject`): `T`[]
 
-## Type parameters
+Defined in: [src/utils/array/replaceObjectInArray.ts:25](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/array/replaceObjectInArray.ts#L25)
 
-• **T**
+## Type Parameters
+
+### T
+
+`T`
 
 ## Parameters
 
-• **arr**: `T`[]
+### arr
 
-• **keyOrPredictor**: `string` \| (`v`) => `boolean`
+`T`[]
 
-• **newObject**: `T`
+### keyOrPredictor
+
+`string` | (`v`) => `boolean`
+
+### newObject
+
+`T`
 
 ## Returns
 
@@ -49,7 +59,3 @@ replaceObjectByKey(originalArray, (obj)=> obj.id === 2, newObject)// [
  { id: 3, name: 'Doe' },
 ]
 ```
-
-## Source
-
-[src/utils/array/replaceObjectInArray.ts:25](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/array/replaceObjectInArray.ts#L25)

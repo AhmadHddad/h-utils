@@ -1,14 +1,22 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / OptionalKeys
 
-# Type alias: OptionalKeys\<T\>
+# Type Alias: OptionalKeys\<T\>
 
-> **OptionalKeys**\<`T`\>: `{ [K in keyof T]-?: Object extends Pick<T, K> ? K : never }`\[keyof `T`\]
+> **OptionalKeys**\<`T`\> = `{ [K in keyof T]-?: {} extends Pick<T, K> ? K : never }`\[keyof `T`\]
+
+Defined in: [src/utils/utilityTypes.ts:209](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/utilityTypes.ts#L209)
 
 OptionalKeys
+
+## Type Parameters
+
+### T
+
+`T`
 
 ## Desc
 
@@ -26,11 +34,3 @@ type Props = { req: number; reqUndef: number | undefined; opt?: string; optUndef
   // Expect: "opt" | "optUndef"
   type Keys = OptionalKeys<Props>;
 ```
-
-## Type parameters
-
-• **T**
-
-## Source
-
-[src/utils/utilityTypes.ts:209](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/utilityTypes.ts#L209)

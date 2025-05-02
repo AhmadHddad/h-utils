@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,19 +6,29 @@
 
 # Function: attemptAsync()
 
-> **attemptAsync**\<`T`\>(`func`, `options`?, ...`args`?): `Promise`\<`any`\>
+> **attemptAsync**\<`T`\>(`func`, `options?`, ...`args?`): `Promise`\<`any`\>
 
-## Type parameters
+Defined in: [src/utils/functions/attemptAsync.ts:10](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/attemptAsync.ts#L10)
 
-• **T** = `any`
+## Type Parameters
+
+### T
+
+`T` = `any`
 
 ## Parameters
 
-• **func**
+### func
 
-• **options?**: [`AttemptOptions`](../type-aliases/AttemptOptions.md)
+(...`args`) => `T`
 
-• ...**args?**: `any`[]
+### options?
+
+[`AttemptOptions`](../type-aliases/AttemptOptions.md)
+
+### args?
+
+...`any`[]
 
 ## Returns
 
@@ -35,7 +45,3 @@ if nothing was passed to the options, it will return nothing
 await attemptAsync(selector =>
   document.querySelectorAll(selector),{errorHander:(e)=> console.error(e)}, '>_>')
 ```
-
-## Source
-
-[src/utils/functions/attemptAsync.ts:10](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/functions/attemptAsync.ts#L10)

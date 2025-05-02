@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **isValidDate**(`value`): `boolean`
 
+Defined in: [src/utils/validation/isValidDate.ts:9](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/validation/isValidDate.ts#L9)
+
 ## Parameters
 
-• **value**: `unknown`
+### value
+
+`unknown`
 
 ## Returns
 
@@ -33,7 +37,3 @@ isValidDate("2010") // true;
 ```ts
 isValidDate("123") // false;
 ```
-
-## Source
-
-[src/utils/validation/isValidDate.ts:9](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/validation/isValidDate.ts#L9)

@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,13 +8,17 @@
 
 > **compare2ObjectsBaseOnKeysArr**(`prevObj`, `nextObj`, `keysArr`): `boolean`
 
+Defined in: [src/utils/object/compare2ObjectsBaseOnKeysArr.ts:6](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/object/compare2ObjectsBaseOnKeysArr.ts#L6)
+
 ## Parameters
 
-• **prevObj**= `{}`
+### prevObj
 
-• **nextObj**= `{}`
+### nextObj
 
-• **keysArr**: `string`[]= `[]`
+### keysArr
+
+`string`[] = `[]`
 
 ## Returns
 
@@ -23,7 +27,3 @@
 ## Description
 
 It compares two objects based on the keys array passed to it.
-
-## Source
-
-[src/utils/object/compare2ObjectsBaseOnKeysArr.ts:6](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/object/compare2ObjectsBaseOnKeysArr.ts#L6)

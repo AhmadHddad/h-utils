@@ -57,6 +57,7 @@ export { default as toArray } from './utils/general/toArray';
 export { default as urlSearchParamsToObject } from './utils/general/urlSearchParamsToObject';
 export { default as uuidv4 } from './utils/general/generateUUID';
 export { default as wait } from './utils/general/sleep';
+export { default as tryCatch } from './utils/general/tryCatch';
 
 // Validators
 export { default as validateImageURLAsync } from './utils/validators/validateImageURLAsync';
@@ -119,6 +120,7 @@ export { default as getSmallestArrInObj } from './utils/object/getSmallestArrInO
 export { default as has } from './utils/object/has';
 export { default as includeKeys } from './utils/object/includeKeys';
 export { default as joinObjects } from './utils/object/joinObjects';
+export { default as joinObjects2 } from './utils/object/joinObjects2';
 export { default as getObjectValueByPath } from './utils/object/getObjectValueByPath';
 export { default as findKeyOrValuePathInObject } from './utils/object/findKeyOrValuePathInObject';
 export { default as createMirroredObject, type TransformCallback } from './utils/object/createMirroredObject';
@@ -211,6 +213,14 @@ export { default as compareDates } from './utils/date/compareDates';
 export { default as generateRandomInt } from './utils/random/generateRandomInt';
 export { default as generateRandomString } from './utils/random/generateRandomString';
 export { default as generateRandomObj } from './utils/random/generateRandomObj';
+
+// FormData
+export { default as extractBoundary } from './utils/formData/extractBoundary';
+export { default as formDataToText } from './utils/formData/formDataToText';
+export { default as parseFormDataText } from './utils/formData/parseFormDataText';
+export { default as jsonToFormDataText } from './utils/formData/jsonToFormDataText';
+
+
 
 // Types
 export * from './utils/utilityTypes';

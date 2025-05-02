@@ -1,27 +1,31 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / ChangeCallback
 
-# Type alias: ChangeCallback()\<T\>
+# Type Alias: ChangeCallback()\<T\>
 
-> **ChangeCallback**\<`T`\>: (`prevValue`, `newValue`) => `void`
+> **ChangeCallback**\<`T`\> = (`prevValue`, `newValue`) => `void`
 
-## Type parameters
+Defined in: [src/utils/types.ts:502](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L502)
 
-• **T**
+## Type Parameters
+
+### T
+
+`T`
 
 ## Parameters
 
-• **prevValue**: `T`
+### prevValue
 
-• **newValue**: `T`
+`T`
+
+### newValue
+
+`T`
 
 ## Returns
 
 `void`
-
-## Source
-
-[src/utils/types.ts:502](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/types.ts#L502)

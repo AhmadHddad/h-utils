@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,15 +8,25 @@
 
 > **findKeyOrValuePathInObject**(`obj`, `keyOrPredicate`, `navigationChr`, `currentPath`): `string`[]
 
+Defined in: [src/utils/object/findKeyOrValuePathInObject.ts:20](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/object/findKeyOrValuePathInObject.ts#L20)
+
 ## Parameters
 
-• **obj**: `Record`\<`string`, `any`\>
+### obj
 
-• **keyOrPredicate**: `string` \| (`key`, `value`) => `boolean`
+`Record`\<`string`, `any`\>
 
-• **navigationChr**: `string`= `'.'`
+### keyOrPredicate
 
-• **currentPath**: `string`= `''`
+`string` | (`key`, `value`) => `boolean`
+
+### navigationChr
+
+`string` = `'.'`
+
+### currentPath
+
+`string` = `''`
 
 ## Returns
 
@@ -45,7 +55,3 @@ console.log(findKeyOrValuePathInObject(myObject, 'e')); // ['b.d.e']
 console.log(findKeyOrValuePathInObject(myObject, (key, val) => Array.isArray(val))); // ['b.f']
 console.log(findKeyOrValuePathInObject(myObject, "a")); // ["a", "b.a"]
 ```
-
-## Source
-
-[src/utils/object/findKeyOrValuePathInObject.ts:20](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/object/findKeyOrValuePathInObject.ts#L20)

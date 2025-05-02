@@ -1,14 +1,26 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / Intersection
 
-# Type alias: Intersection\<T, U\>
+# Type Alias: Intersection\<T, U\>
 
-> **Intersection**\<`T`, `U`\>: `Pick`\<`T`, `Extract`\<keyof `T`, keyof `U`\> & `Extract`\<keyof `U`, keyof `T`\>\>
+> **Intersection**\<`T`, `U`\> = `Pick`\<`T`, `Extract`\<keyof `T`, keyof `U`\> & `Extract`\<keyof `U`, keyof `T`\>\>
+
+Defined in: [src/utils/utilityTypes.ts:247](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/utilityTypes.ts#L247)
 
 Intersection
+
+## Type Parameters
+
+### T
+
+`T` *extends* `object`
+
+### U
+
+`U` *extends* `object`
 
 ## Desc
 
@@ -23,13 +35,3 @@ type Props = { name: string; age: number; visible: boolean };
   // Expect: { age: number; }
   type DuplicateProps = Intersection<Props, DefaultProps>;
 ```
-
-## Type parameters
-
-• **T** *extends* `object`
-
-• **U** *extends* `object`
-
-## Source
-
-[src/utils/utilityTypes.ts:247](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/utilityTypes.ts#L247)

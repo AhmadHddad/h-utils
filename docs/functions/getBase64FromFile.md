@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,22 +6,22 @@
 
 # Function: getBase64FromFile()
 
-> **getBase64FromFile**(`file`): `Promise`\<`ArrayBuffer` \| `string`\>
+> **getBase64FromFile**(`file`): `Promise`\<`string` \| `ArrayBuffer`\>
+
+Defined in: [src/utils/file/getBase64FromFile.ts:6](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/file/getBase64FromFile.ts#L6)
 
 ## Parameters
 
-• **file**: `File`
+### file
+
+`File`
 
 ## Returns
 
-`Promise`\<`ArrayBuffer` \| `string`\>
+`Promise`\<`string` \| `ArrayBuffer`\>
 
 ## Example
 
 ```ts
 getBase64FromFile(new File([""], "filename")) => "data:application/octet-stream;base64,"
 ```
-
-## Source
-
-[src/utils/file/getBase64FromFile.ts:6](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/file/getBase64FromFile.ts#L6)

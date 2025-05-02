@@ -1,14 +1,22 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / PromiseType
 
-# Type alias: PromiseType\<T\>
+# Type Alias: PromiseType\<T\>
 
-> **PromiseType**\<`T`\>: `T` *extends* `Promise`\<infer U\> ? `U` : `never`
+> **PromiseType**\<`T`\> = `T` *extends* `Promise`\<infer U\> ? `U` : `never`
+
+Defined in: [src/utils/utilityTypes.ts:310](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/utilityTypes.ts#L310)
 
 PromiseType
+
+## Type Parameters
+
+### T
+
+`T` *extends* `Promise`\<`any`\>
 
 ## Desc
 
@@ -20,11 +28,3 @@ Obtain Promise resolve type
 // Expect: string;
   type Response = PromiseType<Promise<string>>;
 ```
-
-## Type parameters
-
-• **T** *extends* `Promise`\<`any`\>
-
-## Source
-
-[src/utils/utilityTypes.ts:310](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/utilityTypes.ts#L310)

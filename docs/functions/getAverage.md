@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **getAverage**(...`args`): `number`
 
+Defined in: [src/utils/number/getAverage.ts:8](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/number/getAverage.ts#L8)
+
 ## Parameters
 
-• ...**args**: `number`[]
+### args
+
+...`number`[]
 
 number[]
 
@@ -23,7 +27,3 @@ The sum of the arguments divided by the number of arguments.
 ## Description
 
 The function takes a variable number of arguments, and returns the average of those arguments
-
-## Source
-
-[src/utils/number/getAverage.ts:8](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/number/getAverage.ts#L8)

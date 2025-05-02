@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,13 +8,19 @@
 
 > **splitOnFirst**(`string`, `separator`): `string`[]
 
+Defined in: [src/utils/string/splitOnFirst.ts:8](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/string/splitOnFirst.ts#L8)
+
 ## Parameters
 
-• **string**: `string`
+### string
+
+`string`
 
 string
 
-• **separator**: `string`
+### separator
+
+`string`
 
 The separator to split on.
 
@@ -32,7 +38,3 @@ to the separator and the second being the string after the separator.
 ```ts
 splitOnFirst('key:value:value2', ':') // ['key', 'value:value2']
 ```
-
-## Source
-
-[src/utils/string/splitOnFirst.ts:8](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/string/splitOnFirst.ts#L8)

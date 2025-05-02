@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,15 +8,23 @@
 
 > **fastDeepEqual**\<`T`\>(`a`, `b`): `a is T`
 
-## Type parameters
+Defined in: [src/utils/object/fastDeepEqual.ts:11](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/object/fastDeepEqual.ts#L11)
 
-• **T**
+## Type Parameters
+
+### T
+
+`T`
 
 ## Parameters
 
-• **a**: `any`
+### a
 
-• **b**: `T`
+`any`
+
+### b
+
+`T`
 
 ## Returns
 
@@ -32,7 +40,3 @@ the same as fast-deep-equal package.
 ```ts
 console.log(equal({foo: 'bar'}, {foo: 'bar'})); // true
 ```
-
-## Source
-
-[src/utils/object/fastDeepEqual.ts:11](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/object/fastDeepEqual.ts#L11)

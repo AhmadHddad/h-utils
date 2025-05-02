@@ -1,10 +1,12 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / Timer
 
 # Class: Timer
+
+Defined in: [src/classes/Timer.ts:15](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/Timer.ts#L15)
 
 ## See
 
@@ -20,7 +22,7 @@ check time in ms.
 
 ```ts
 `
-const timer = new Timer(initialStartTimer (optional));
+ * const timer = new Timer(initialStartTimer (optional));
 timer.start();
 //after 1 second
 timer.stop();
@@ -31,21 +33,21 @@ console.log(timer.getTime()) // 1000
 
 ## Constructors
 
-### new Timer()
+### Constructor
 
-> **new Timer**(`initialStartTime`): [`Timer`](Timer.md)
+> **new Timer**(`initialStartTime`): `Timer`
+
+Defined in: [src/classes/Timer.ts:20](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/Timer.ts#L20)
 
 #### Parameters
 
-• **initialStartTime**: `number`= `0`
+##### initialStartTime
+
+`number` = `0`
 
 #### Returns
 
-[`Timer`](Timer.md)
-
-#### Source
-
-[src/classes/Timer.ts:20](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/Timer.ts#L20)
+`Timer`
 
 ## Properties
 
@@ -53,29 +55,7 @@ console.log(timer.getTime()) // 1000
 
 > **isRunning**: `boolean` = `false`
 
-#### Source
-
-[src/classes/Timer.ts:16](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/Timer.ts#L16)
-
-***
-
-### overallTime
-
-> `private` **overallTime**: `number` = `0`
-
-#### Source
-
-[src/classes/Timer.ts:18](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/Timer.ts#L18)
-
-***
-
-### startTime
-
-> `private` **startTime**: `number` = `0`
-
-#### Source
-
-[src/classes/Timer.ts:17](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/Timer.ts#L17)
+Defined in: [src/classes/Timer.ts:16](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/Timer.ts#L16)
 
 ## Methods
 
@@ -83,13 +63,11 @@ console.log(timer.getTime()) // 1000
 
 > **\_getTimeElapsedSinceLastStart**(): `number`
 
+Defined in: [src/classes/Timer.ts:24](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/Timer.ts#L24)
+
 #### Returns
 
 `number`
-
-#### Source
-
-[src/classes/Timer.ts:24](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/Timer.ts#L24)
 
 ***
 
@@ -97,13 +75,11 @@ console.log(timer.getTime()) // 1000
 
 > **getTime**(): `number`
 
+Defined in: [src/classes/Timer.ts:63](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/Timer.ts#L63)
+
 #### Returns
 
 `number`
-
-#### Source
-
-[src/classes/Timer.ts:63](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/Timer.ts#L63)
 
 ***
 
@@ -111,13 +87,11 @@ console.log(timer.getTime()) // 1000
 
 > **reset**(): `void`
 
+Defined in: [src/classes/Timer.ts:52](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/Timer.ts#L52)
+
 #### Returns
 
 `void`
-
-#### Source
-
-[src/classes/Timer.ts:52](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/Timer.ts#L52)
 
 ***
 
@@ -125,13 +99,11 @@ console.log(timer.getTime()) // 1000
 
 > **start**(): `void`
 
+Defined in: [src/classes/Timer.ts:32](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/Timer.ts#L32)
+
 #### Returns
 
 `void`
-
-#### Source
-
-[src/classes/Timer.ts:32](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/Timer.ts#L32)
 
 ***
 
@@ -139,10 +111,8 @@ console.log(timer.getTime()) // 1000
 
 > **stop**(): `void`
 
+Defined in: [src/classes/Timer.ts:42](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/Timer.ts#L42)
+
 #### Returns
 
 `void`
-
-#### Source
-
-[src/classes/Timer.ts:42](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/Timer.ts#L42)

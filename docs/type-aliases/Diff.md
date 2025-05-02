@@ -1,14 +1,26 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / Diff
 
-# Type alias: Diff\<T, U\>
+# Type Alias: Diff\<T, U\>
 
-> **Diff**\<`T`, `U`\>: `Pick`\<`T`, [`SetDifference`](SetDifference.md)\<keyof `T`, keyof `U`\>\>
+> **Diff**\<`T`, `U`\> = `Pick`\<`T`, [`SetDifference`](SetDifference.md)\<keyof `T`, keyof `U`\>\>
+
+Defined in: [src/utils/utilityTypes.ts:180](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/utilityTypes.ts#L180)
 
 Diff
+
+## Type Parameters
+
+### T
+
+`T` *extends* `object`
+
+### U
+
+`U` *extends* `object`
 
 ## Desc
 
@@ -23,13 +35,3 @@ type Props = { name: string; age: number; visible: boolean };
   // Expect: { name: string; visible: boolean; }
   type DiffProps = Diff<Props, DefaultProps>;
 ```
-
-## Type parameters
-
-• **T** *extends* `object`
-
-• **U** *extends* `object`
-
-## Source
-
-[src/utils/utilityTypes.ts:180](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/utilityTypes.ts#L180)

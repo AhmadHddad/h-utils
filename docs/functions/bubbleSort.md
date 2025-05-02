@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,13 +8,19 @@
 
 > **bubbleSort**\<`T`\>(`arr`): `T`[]
 
-## Type parameters
+Defined in: [src/utils/array/bubbleSort.ts:7](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/array/bubbleSort.ts#L7)
 
-• **T** *extends* [`StringOrNumber`](../type-aliases/StringOrNumber.md)
+## Type Parameters
+
+### T
+
+`T` *extends* [`StringOrNumber`](../type-aliases/StringOrNumber.md)
 
 ## Parameters
 
-• **arr**: `T`[]
+### arr
+
+`T`[]
 
 ## Returns
 
@@ -29,7 +35,3 @@ an implementation for bubbleSort algorithm, it will sort an array of numbers or 
 ```ts
 bubbleSort([3,2,1]) // [1,2,3]
 ```
-
-## Source
-
-[src/utils/array/bubbleSort.ts:7](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/array/bubbleSort.ts#L7)

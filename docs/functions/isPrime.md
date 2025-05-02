@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **isPrime**(`num`): `boolean`
 
+Defined in: [src/utils/number/isPrime.ts:5](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/number/isPrime.ts#L5)
+
 ## Parameters
 
-• **num**: `number`
+### num
+
+`number`
 
 ## Returns
 
@@ -25,7 +29,3 @@ will check if the passed number is prime or not;
 ```ts
 isPrime(1) // false
 ```
-
-## Source
-
-[src/utils/number/isPrime.ts:5](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/number/isPrime.ts#L5)

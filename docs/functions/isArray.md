@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,13 +8,19 @@
 
 > **isArray**\<`T`\>(`value`): `value is T[]`
 
-## Type parameters
+Defined in: [src/utils/validation/isArray.ts:6](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/validation/isArray.ts#L6)
 
-• **T**
+## Type Parameters
+
+### T
+
+`T`
 
 ## Parameters
 
-• **value**: `unknown`
+### value
+
+`unknown`
 
 unknown
 
@@ -26,7 +32,3 @@ unknown
 
 The function isArray takes a value and returns true if the value is an array, otherwise it returns
 false.
-
-## Source
-
-[src/utils/validation/isArray.ts:6](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/validation/isArray.ts#L6)

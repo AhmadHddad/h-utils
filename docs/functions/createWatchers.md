@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,13 +8,19 @@
 
 > **createWatchers**\<`T`\>(`target`): `Watcher`\<`T`\>
 
-## Type parameters
+Defined in: [src/utils/functions/createWatchers.ts:29](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/createWatchers.ts#L29)
 
-• **T** *extends* `object`
+## Type Parameters
+
+### T
+
+`T` *extends* `object`
 
 ## Parameters
 
-• **target**: `T`
+### target
+
+`T`
 
 ## Returns
 
@@ -44,7 +50,3 @@ watcher.target.age = 30;
 // Stop observing
 watcher.unobserve(callbackFunction);
 ```
-
-## Source
-
-[src/utils/functions/createWatchers.ts:29](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/functions/createWatchers.ts#L29)

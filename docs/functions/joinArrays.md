@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,13 +8,19 @@
 
 > **joinArrays**\<`T`\>(...`args`): `T`[]
 
-## Type parameters
+Defined in: [src/utils/array/joinArrays.ts:8](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/array/joinArrays.ts#L8)
 
-• **T**
+## Type Parameters
+
+### T
+
+`T`
 
 ## Parameters
 
-• ...**args**: (`undefined` \| `null` \| `T`[])[]
+### args
+
+...`T`[][]
 
 ## Returns
 
@@ -29,7 +35,3 @@ will join all of the passed arrays to one single array, if the passed item is no
 ```ts
 joinArrays([1,2,3], [4,5,6], null ,undefined, "hello") // [1,2,3,4,5,6]
 ```
-
-## Source
-
-[src/utils/array/joinArrays.ts:8](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/array/joinArrays.ts#L8)

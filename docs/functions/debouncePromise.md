@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,30 +8,38 @@
 
 > **debouncePromise**\<`T`, `U`\>(`callback`, `wait`): (...`args`) => `Promise`\<`U`\>
 
-## Type parameters
+Defined in: [src/utils/functions/debouncePromise.ts:3](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/debouncePromise.ts#L3)
 
-• **T** *extends* `unknown`[]
+## Type Parameters
 
-• **U**
+### T
+
+`T` *extends* `unknown`[]
+
+### U
+
+`U`
 
 ## Parameters
 
-• **callback**
+### callback
 
-• **wait**: `number`
+(...`args`) => `U` \| `PromiseLike`\<`U`\>
+
+### wait
+
+`number`
 
 ## Returns
 
-`Function`
+> (...`args`): `Promise`\<`U`\>
 
 ### Parameters
 
-• ...**args**: `T`
+#### args
+
+...`T`
 
 ### Returns
 
 `Promise`\<`U`\>
-
-## Source
-
-[src/utils/functions/debouncePromise.ts:3](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/functions/debouncePromise.ts#L3)

@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **stringToPath**(`path`): `string`[]
 
+Defined in: [src/utils/string/stringToPath.ts:5](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/string/stringToPath.ts#L5)
+
 ## Parameters
 
-• **path**: `string`
+### path
+
+`string`
 
 ## Returns
 
@@ -25,7 +29,3 @@ will convert passed path string into object path for navigation
 ```ts
 stringToPath("a.b.c[0]") => ["a", "b", "c", "0"]
 ```
-
-## Source
-
-[src/utils/string/stringToPath.ts:5](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/string/stringToPath.ts#L5)

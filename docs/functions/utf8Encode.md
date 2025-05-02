@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,14 +8,14 @@
 
 > **utf8Encode**(`input`): `Uint8Array`
 
+Defined in: [src/utils/crypto/utf8Encode.ts:3](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/crypto/utf8Encode.ts#L3)
+
 ## Parameters
 
-• **input**: [`Utf8EncodeTypes`](../type-aliases/Utf8EncodeTypes.md)
+### input
+
+[`Utf8EncodeTypes`](../type-aliases/Utf8EncodeTypes.md)
 
 ## Returns
 
 `Uint8Array`
-
-## Source
-
-[src/utils/crypto/utf8Encode.ts:3](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/crypto/utf8Encode.ts#L3)

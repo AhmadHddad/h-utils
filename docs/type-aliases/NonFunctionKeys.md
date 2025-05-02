@@ -1,14 +1,22 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / NonFunctionKeys
 
-# Type alias: NonFunctionKeys\<T\>
+# Type Alias: NonFunctionKeys\<T\>
 
-> **NonFunctionKeys**\<`T`\>: `{ [K in keyof T]-?: NonUndefined<T[K]> extends Function ? never : K }`\[keyof `T`\]
+> **NonFunctionKeys**\<`T`\> = `{ [K in keyof T]-?: NonUndefined<T[K]> extends Function ? never : K }`\[keyof `T`\]
+
+Defined in: [src/utils/utilityTypes.ts:133](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/utilityTypes.ts#L133)
 
 NonFunctionKeys
+
+## Type Parameters
+
+### T
+
+`T` *extends* `object`
 
 ## Desc
 
@@ -22,11 +30,3 @@ type MixedProps = {name: string; setName: (name: string) => void; someKeys?: str
   // Expect: "name | someKey"
   type Keys = NonFunctionKeys<MixedProps>;
 ```
-
-## Type parameters
-
-• **T** *extends* `object`
-
-## Source
-
-[src/utils/utilityTypes.ts:133](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/utilityTypes.ts#L133)

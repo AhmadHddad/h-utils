@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,15 +6,15 @@
 
 # Interface: PointObject
 
+Defined in: [src/utils/types.ts:34](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L34)
+
 ## Properties
 
 ### x
 
 > **x**: `number`
 
-#### Source
-
-[src/utils/types.ts:35](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/types.ts#L35)
+Defined in: [src/utils/types.ts:35](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L35)
 
 ***
 
@@ -22,9 +22,7 @@
 
 > **y**: `number`
 
-#### Source
-
-[src/utils/types.ts:36](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/types.ts#L36)
+Defined in: [src/utils/types.ts:36](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L36)
 
 ***
 
@@ -32,6 +30,4 @@
 
 > `optional` **z**: `number`
 
-#### Source
-
-[src/utils/types.ts:37](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/types.ts#L37)
+Defined in: [src/utils/types.ts:37](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L37)

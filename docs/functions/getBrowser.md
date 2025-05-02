@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -7,6 +7,8 @@
 # Function: getBrowser()
 
 > **getBrowser**(): `"Opera"` \| `"Edge"` \| `"Chrome"` \| `"Safari"` \| `"Firefox"` \| `"IE"` \| `"unknown"`
+
+Defined in: [src/utils/browser/getBrowser.ts:7](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/browser/getBrowser.ts#L7)
 
 ## Returns
 
@@ -21,7 +23,3 @@ will return the user browser type
 ```ts
 const MyFavoriteBrowser = getBrowser() // "Firefox" :D
 ```
-
-## Source
-
-[src/utils/browser/getBrowser.ts:7](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/browser/getBrowser.ts#L7)

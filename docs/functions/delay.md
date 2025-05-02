@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,17 +8,27 @@
 
 > **delay**\<`T`\>(`cb`, `time`, ...`args`): `Promise`\<`T`\>
 
-## Type parameters
+Defined in: [src/utils/functions/delay.ts:5](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/delay.ts#L5)
 
-• **T** = `any`
+## Type Parameters
+
+### T
+
+`T` = `any`
 
 ## Parameters
 
-• **cb**
+### cb
 
-• **time**: `number`= `200`
+(...`args`) => `T`
 
-• ...**args**: `any`[]
+### time
+
+`number` = `200`
+
+### args
+
+...`any`[]
 
 ## Returns
 
@@ -33,7 +43,3 @@ Delays a function for the given number of milliseconds, and then calls it with t
 ```ts
 delay(()=>{console.log(1)} , 1000) // will be called after 1s.
 ```
-
-## Source
-
-[src/utils/functions/delay.ts:5](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/functions/delay.ts#L5)

@@ -1,23 +1,27 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / ParseStringOptions
 
-# Type alias: ParseStringOptions
+# Type Alias: ParseStringOptions
 
-> **ParseStringOptions**: `object`
+> **ParseStringOptions** = `object`
 
-## Type declaration
+Defined in: [src/utils/types.ts:16](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L16)
+
+## Properties
 
 ### decode?
 
 > `optional` **decode**: `boolean`
 
+Defined in: [src/utils/types.ts:18](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L18)
+
+***
+
 ### parseStrStartsWithZero?
 
 > `optional` **parseStrStartsWithZero**: `boolean`
 
-## Source
-
-[src/utils/types.ts:16](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/types.ts#L16)
+Defined in: [src/utils/types.ts:17](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L17)

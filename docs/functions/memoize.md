@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,7 +6,9 @@
 
 # Function: memoize()
 
-> **memoize**\<`T`\>(`func`, `resolver`?): `T`
+> **memoize**\<`T`\>(`func`, `resolver?`): `T`
+
+Defined in: [src/utils/functions/memoize.ts:44](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/functions/memoize.ts#L44)
 
 Creates a function that memoizes the result of `func`. If `resolver` is
 provided, it determines the cache key for storing the result based on the
@@ -20,17 +22,23 @@ constructor with one whose instances implement the
 [`Map`](http://ecma-international.org/ecma-262/7.0/#sec-properties-of-the-map-prototype-object)
 method interface of `clear`, `delete`, `get`, `has`, and `set`.
 
-## Type parameters
+## Type Parameters
 
-• **T** *extends* `Function`
+### T
+
+`T` *extends* `Function`
 
 ## Parameters
 
-• **func**: `T`
+### func
+
+`T`
 
 The function to have its output memoized.
 
-• **resolver?**: `any`
+### resolver?
+
+`any`
 
 The function to resolve the cache key.
 
@@ -69,7 +77,3 @@ values(object)
 // Replace `memoize.Cache`.
 memoize.Cache = WeakMap
 ```
-
-## Source
-
-[src/utils/functions/memoize.ts:44](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/functions/memoize.ts#L44)

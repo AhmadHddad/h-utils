@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,31 +6,33 @@
 
 # Function: onUrlChange()
 
-> **onUrlChange**(`onPush`?, `onPop`?): () => `void`
+> **onUrlChange**(`onPush?`, `onPop?`): () => `void`
+
+Defined in: [src/utils/browser/onUrlChange.ts:9](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/browser/onUrlChange.ts#L9)
+
+**`Function`**
+
+onUrlChange
 
 ## Parameters
 
-• **onPush?**
+### onPush?
 
-• **onPop?**
+(`data`, `unused`, `url?`) => `void`
+
+### onPop?
+
+(`popstate`) => `void`
 
 ## Returns
 
-`Function`
+> (): `void`
 
 ### Returns
 
 `void`
 
-## Function
-
-onUrlChange
-
 ## Description
 
 -- For Browsers --
  a function that takes callback that will be called whenever the url is changed (ideal for SPA)
-
-## Source
-
-[src/utils/browser/onUrlChange.ts:9](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/browser/onUrlChange.ts#L9)

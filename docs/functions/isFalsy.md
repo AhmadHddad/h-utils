@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,6 +8,8 @@
 
 > **isFalsy**(`val`): `val is Falsy`
 
+Defined in: [src/utils/validation/isFalsy.ts:10](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/validation/isFalsy.ts#L10)
+
 Tests for Falsy by simply applying negation `!` to the tested `val`.
 
 The value is mostly in added type-information and explicity,
@@ -15,7 +17,9 @@ but in case of this simple type much the same can often be archived by just usin
 
 ## Parameters
 
-• **val**: `unknown`
+### val
+
+`unknown`
 
 ## Returns
 
@@ -26,7 +30,3 @@ but in case of this simple type much the same can often be archived by just usin
 ```ts
 isFalsy("") // true
 ```
-
-## Source
-
-[src/utils/validation/isFalsy.ts:10](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/validation/isFalsy.ts#L10)

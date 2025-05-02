@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,21 +6,29 @@
 
 # Function: createMirroredObject()
 
-> **createMirroredObject**\<`T`\>(`keysArray`, `transformCallback`): `{ [K in T[number]]: string }`
+> **createMirroredObject**\<`T`\>(`keysArray`, `transformCallback`): `{ [K in string]: string }`
 
-## Type parameters
+Defined in: [src/utils/object/createMirroredObject.ts:11](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/object/createMirroredObject.ts#L11)
 
-• **T** *extends* `string`[]
+## Type Parameters
+
+### T
+
+`T` *extends* `string`[]
 
 ## Parameters
 
-• **keysArray**: [`...T[]`]
+### keysArray
 
-• **transformCallback**: [`TransformCallback`](../type-aliases/TransformCallback.md)= `undefined`
+\[`...T[]`\]
+
+### transformCallback
+
+[`TransformCallback`](../type-aliases/TransformCallback.md) = `...`
 
 ## Returns
 
-`{ [K in T[number]]: string }`
+`{ [K in string]: string }`
 
 ## Description
 
@@ -35,7 +43,3 @@ createMirroredObject(["a", "b"]); //{ a: "a", b: "b" }
 ```ts
 createMirroredObject(["a", "b"], (key, value) => [key.toUpperCase(), value]); // { A: "a", B: "b" }
 ```
-
-## Source
-
-[src/utils/object/createMirroredObject.ts:11](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/object/createMirroredObject.ts#L11)

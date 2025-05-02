@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,13 +8,19 @@
 
 > **deepCompare**\<`T`\>(...`args`): `boolean`
 
-## Type parameters
+Defined in: [src/utils/object/deepCompare.ts:8](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/object/deepCompare.ts#L8)
 
-• **T** = `any`
+## Type Parameters
+
+### T
+
+`T` = `any`
 
 ## Parameters
 
-• ...**args**: `T`[]
+### args
+
+...`T`[]
 
 ## Returns
 
@@ -41,7 +47,3 @@ deepCompareObjects([1,2,3], [1,2,5]) // false
 ```ts
 deepCompareObjects(true ,false) // false
 ```
-
-## Source
-
-[src/utils/object/deepCompare.ts:8](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/object/deepCompare.ts#L8)

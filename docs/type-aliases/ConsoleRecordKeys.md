@@ -1,13 +1,11 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / ConsoleRecordKeys
 
-# Type alias: ConsoleRecordKeys
+# Type Alias: ConsoleRecordKeys
 
-> **ConsoleRecordKeys**: `"error"` \| `"log"` \| `"info"` \| `"table"` \| `"warn"`
+> **ConsoleRecordKeys** = `"error"` \| `"log"` \| `"info"` \| `"table"` \| `"warn"`
 
-## Source
-
-[src/utils/types.ts:537](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/types.ts#L537)
+Defined in: [src/utils/types.ts:537](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L537)

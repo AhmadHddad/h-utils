@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,17 +6,23 @@
 
 # Function: setNetworkIdleCallback()
 
-> **setNetworkIdleCallback**(`callback`, `options`?): () => `void`
+> **setNetworkIdleCallback**(`callback`, `options?`): () => `void`
+
+Defined in: [src/utils/browser/setNetworkIdleCallback.ts:16](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/browser/setNetworkIdleCallback.ts#L16)
 
 ## Parameters
 
-• **callback**: `undefined` \| (`startedRequests`, `endedRequests`) => `void`
+### callback
 
-• **options?**: `Omit`\<[`NetworkHttpRequestMonitorOptions`](../type-aliases/NetworkHttpRequestMonitorOptions.md), `"cancelAfterIdle"`\>
+(`startedRequests`, `endedRequests`) => `void`
+
+### options?
+
+`Omit`\<[`NetworkHttpRequestMonitorOptions`](../type-aliases/NetworkHttpRequestMonitorOptions.md), `"cancelAfterIdle"`\>
 
 ## Returns
 
-`Function`
+> (): `void`
 
 ### Returns
 
@@ -37,7 +43,3 @@ const cancel = setNetworkIdleCallback(() => {
 // to cancel
 cancel();`
 ```
-
-## Source
-
-[src/utils/browser/setNetworkIdleCallback.ts:16](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/browser/setNetworkIdleCallback.ts#L16)

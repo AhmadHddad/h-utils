@@ -1,14 +1,22 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / FunctionKeys
 
-# Type alias: FunctionKeys\<T\>
+# Type Alias: FunctionKeys\<T\>
 
-> **FunctionKeys**\<`T`\>: `{ [K in keyof T]-?: NonUndefined<T[K]> extends Function ? K : never }`\[keyof `T`\]
+> **FunctionKeys**\<`T`\> = `{ [K in keyof T]-?: NonUndefined<T[K]> extends Function ? K : never }`\[keyof `T`\]
+
+Defined in: [src/utils/utilityTypes.ts:120](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/utilityTypes.ts#L120)
 
 FunctionKeys
+
+## Type Parameters
+
+### T
+
+`T` *extends* `object`
 
 ## Desc
 
@@ -22,11 +30,3 @@ type MixedProps = {name: string; setName: (name: string) => void; someKeys?: str
   // Expect: "setName | someFn"
   type Keys = FunctionKeys<MixedProps>;
 ```
-
-## Type parameters
-
-• **T** *extends* `object`
-
-## Source
-
-[src/utils/utilityTypes.ts:120](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/utilityTypes.ts#L120)

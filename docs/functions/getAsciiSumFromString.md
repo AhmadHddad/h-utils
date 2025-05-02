@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **getAsciiSumFromString**(`str`): `number`
 
+Defined in: [src/utils/string/getAsciiSumFromString.ts:9](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/string/getAsciiSumFromString.ts#L9)
+
 ## Parameters
 
-• **str**: `string`
+### str
+
+`string`
 
 string
 
@@ -24,7 +28,3 @@ The sum of the ASCII codes for each character in the string.
 
 It takes a string, splits it into an array of characters, then reduces the array to a single number
 by adding the ASCII code of each character to the previous value
-
-## Source
-
-[src/utils/string/getAsciiSumFromString.ts:9](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/string/getAsciiSumFromString.ts#L9)

@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,17 +8,27 @@
 
 > **replaceAtIndex**\<`T`\>(`arr`, `index`, `newValue`): `T`[]
 
-## Type parameters
+Defined in: [src/utils/array/replaceAtIndex.ts:9](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/array/replaceAtIndex.ts#L9)
 
-• **T**
+## Type Parameters
+
+### T
+
+`T`
 
 ## Parameters
 
-• **arr**: `T`[]
+### arr
 
-• **index**: `number`
+`T`[]
 
-• **newValue**: `T`
+### index
+
+`number`
+
+### newValue
+
+`T`
 
 ## Returns
 
@@ -33,7 +43,3 @@ Creates a new array by replacing the element at a specified index with a given v
 ```ts
 replaceAtIndex([1, 2, 3, 4, 5], 2, 10) // [1, 2, 10, 4, 5];
 ```
-
-## Source
-
-[src/utils/array/replaceAtIndex.ts:9](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/array/replaceAtIndex.ts#L9)

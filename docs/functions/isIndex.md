@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,15 +6,21 @@
 
 # Function: isIndex()
 
-> **isIndex**(`value`, `length`?): `boolean`
+> **isIndex**(`value`, `length?`): `boolean`
+
+Defined in: [src/utils/validation/isIndex.ts:17](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/validation/isIndex.ts#L17)
 
 ## Parameters
 
-• **value**: [`Key`](../type-aliases/Key.md)
+### value
+
+[`Key`](../type-aliases/Key.md)
 
 The value to check.
 
-• **length?**: `number`
+### length?
+
+`number`
 
 The upper bounds of a valid index.
 
@@ -27,7 +33,3 @@ Returns `true` if `value` is a valid index, else `false`.
 ## Description
 
 Checks if `value` is a valid array-like index.
-
-## Source
-
-[src/utils/validation/isIndex.ts:17](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/validation/isIndex.ts#L17)

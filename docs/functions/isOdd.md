@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **isOdd**(`n`): `boolean`
 
+Defined in: [src/utils/number/isOdd.ts:7](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/number/isOdd.ts#L7)
+
 ## Parameters
 
-• **n**: `number`
+### n
+
+`number`
 
 ## Returns
 
@@ -25,7 +29,3 @@ Will check if the passed number is odd or not.
 ```ts
 isOdd(10) // false;
 ```
-
-## Source
-
-[src/utils/number/isOdd.ts:7](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/number/isOdd.ts#L7)

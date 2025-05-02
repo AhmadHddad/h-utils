@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,21 +6,29 @@
 
 # Function: generateRandomObj()
 
-> **generateRandomObj**(`fieldCount`, `options`?): `Record`\<`string`, `string` \| `number` \| `null` \| `boolean`\>
+> **generateRandomObj**(`fieldCount`, `options?`): `Record`\<`string`, `string` \| `number` \| `boolean`\>
+
+Defined in: [src/utils/random/generateRandomObj.ts:10](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/random/generateRandomObj.ts#L10)
 
 ## Parameters
 
-• **fieldCount**: `number`= `10`
+### fieldCount
 
-• **options?**
+`number` = `10`
 
-• **options.allowNested?**: `boolean`
+### options?
 
-• **options.allowNull?**: `boolean`
+#### allowNested?
+
+`boolean`
+
+#### allowNull?
+
+`boolean`
 
 ## Returns
 
-`Record`\<`string`, `string` \| `number` \| `null` \| `boolean`\>
+`Record`\<`string`, `string` \| `number` \| `boolean`\>
 
 ## Description
 
@@ -43,7 +51,3 @@ generateRandomObj() // {  JcaOXYeU: true, qZDEUnCs: 0.32064102262293903, RLvQgfl
 ```ts
 {allowNested:true}
 ```
-
-## Source
-
-[src/utils/random/generateRandomObj.ts:10](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/random/generateRandomObj.ts#L10)

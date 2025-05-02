@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,13 +8,17 @@
 
 > **parseNumber**(`number`): `number`
 
+Defined in: [src/utils/string/parseNumber.ts:9](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/string/parseNumber.ts#L9)
+
 It takes a string, removes all non-numeric characters, and returns the result
 
 ## Parameters
 
-• **number**: `string` \| `number`
+### number
 
 string - The string to be parsed.
+
+`string` | `number`
 
 ## Returns
 
@@ -27,7 +31,3 @@ A function that takes a string and returns a string with all non-digit character
 ```ts
 parseNumber("123 ") => 123
 ```
-
-## Source
-
-[src/utils/string/parseNumber.ts:9](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/string/parseNumber.ts#L9)

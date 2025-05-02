@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,21 +6,29 @@
 
 # Function: occurrencesCount()
 
-> **occurrencesCount**(`string`, `subString`, `allowOverlapping`?): `number`
+> **occurrencesCount**(`string`, `subString`, `allowOverlapping?`): `number`
+
+Defined in: [src/utils/string/occurrencesCount.ts:25](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/string/occurrencesCount.ts#L25)
 
 Function that count occurrences count of a substring in a string;
 
 ## Parameters
 
-• **string**: `string`
+### string
+
+`string`
 
 The string
 
-• **subString**: `string`
+### subString
+
+`string`
 
 The sub string to search for
 
-• **allowOverlapping?**: `boolean`
+### allowOverlapping?
+
+`boolean`
 
 Optional. (Default:false)
 
@@ -55,7 +63,3 @@ Vitim.us https://gist.github.com/victornpb/7736865
 
  - Unit Test https://jsfiddle.net/Victornpb/5axuh96u/
  - https://stackoverflow.com/a/7924240/938822
-
-## Source
-
-[src/utils/string/occurrencesCount.ts:25](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/string/occurrencesCount.ts#L25)

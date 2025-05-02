@@ -458,3 +458,8 @@ export interface _DeepPartialArray<T> extends Array<_DeepPartial<T>> {}
 
 export type UnknownFunction = (...params: unknown[]) => unknown;
 
+
+
+export type NonNullableObject<T> = T extends null | undefined ? {} : T;
+export type NonArrayObject<T> = T extends object ? (T extends any[] ? {} : T) : {};
+

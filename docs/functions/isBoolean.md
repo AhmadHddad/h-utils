@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,14 +8,14 @@
 
 > **isBoolean**(`param`): `boolean`
 
+Defined in: [src/utils/validation/isBoolean.ts:1](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/validation/isBoolean.ts#L1)
+
 ## Parameters
 
-• **param**: `any`
+### param
+
+`any`
 
 ## Returns
 
 `boolean`
-
-## Source
-
-[src/utils/validation/isBoolean.ts:1](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/validation/isBoolean.ts#L1)

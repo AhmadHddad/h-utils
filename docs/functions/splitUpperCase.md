@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **splitUpperCase**(`str`): `string`[]
 
+Defined in: [src/utils/string/splitUpperCase.ts:10](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/string/splitUpperCase.ts#L10)
+
 ## Parameters
 
-• **str**: `string`
+### str
+
+`string`
 
 string - The string to split
 
@@ -30,7 +34,3 @@ word
 ```ts
 splitUpperCase("JavaScript") // ["Java", "Script"]
 ```
-
-## Source
-
-[src/utils/string/splitUpperCase.ts:10](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/string/splitUpperCase.ts#L10)

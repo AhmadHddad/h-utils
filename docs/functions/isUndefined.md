@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **isUndefined**(`val`): `val is undefined`
 
+Defined in: [src/utils/validation/isUndefined.ts:7](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/validation/isUndefined.ts#L7)
+
 ## Parameters
 
-• **val**: `unknown`
+### val
+
+`unknown`
 
 unknown - The value to check if it's undefined.
 
@@ -31,7 +35,3 @@ isUndefined("string") // false
 ```ts
 isUndefined() // true
 ```
-
-## Source
-
-[src/utils/validation/isUndefined.ts:7](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/validation/isUndefined.ts#L7)

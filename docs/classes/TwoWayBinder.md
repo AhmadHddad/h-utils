@@ -1,10 +1,12 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / TwoWayBinder
 
 # Class: TwoWayBinder
+
+Defined in: [src/classes/TwoWayBinder.ts:13](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/TwoWayBinder.ts#L13)
 
 ## Description
 
@@ -24,117 +26,71 @@ const inputElement = document.getElementById('textInput') as HTMLInputElement;
 
 ## Constructors
 
-### new TwoWayBinder()
+### Constructor
 
-> **new TwoWayBinder**(`inputElement`, `outputElement`, `eventType`): [`TwoWayBinder`](TwoWayBinder.md)
+> **new TwoWayBinder**(`inputElement`, `outputElement`, `eventType`): `TwoWayBinder`
+
+Defined in: [src/classes/TwoWayBinder.ts:18](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/TwoWayBinder.ts#L18)
 
 #### Parameters
 
-• **inputElement**: `HTMLInputElement`
+##### inputElement
 
-• **outputElement**: `HTMLElement`
+`HTMLInputElement`
 
-• **eventType**: `string`= `'input'`
+##### outputElement
+
+`HTMLElement`
+
+##### eventType
+
+`string` = `'input'`
 
 #### Returns
 
-[`TwoWayBinder`](TwoWayBinder.md)
-
-#### Source
-
-[src/classes/TwoWayBinder.ts:18](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/TwoWayBinder.ts#L18)
-
-## Properties
-
-### eventType
-
-> `private` **eventType**: `string`
-
-#### Source
-
-[src/classes/TwoWayBinder.ts:16](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/TwoWayBinder.ts#L16)
-
-***
-
-### inputElement
-
-> `private` **inputElement**: `HTMLInputElement`
-
-#### Source
-
-[src/classes/TwoWayBinder.ts:14](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/TwoWayBinder.ts#L14)
-
-***
-
-### outputElement
-
-> `private` **outputElement**: `HTMLElement`
-
-#### Source
-
-[src/classes/TwoWayBinder.ts:15](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/TwoWayBinder.ts#L15)
+`TwoWayBinder`
 
 ## Accessors
 
 ### value
 
-> `get` **value**(): `string`
+#### Get Signature
 
-> `set` **value**(`newValue`): `void`
+> **get** **value**(): `string`
 
-#### Parameters
+Defined in: [src/classes/TwoWayBinder.ts:51](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/TwoWayBinder.ts#L51)
 
-• **newValue**: `string`
-
-#### Returns
+##### Returns
 
 `string`
 
-#### Source
+#### Set Signature
 
-[src/classes/TwoWayBinder.ts:51](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/TwoWayBinder.ts#L51)
+> **set** **value**(`newValue`): `void`
+
+Defined in: [src/classes/TwoWayBinder.ts:55](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/TwoWayBinder.ts#L55)
+
+##### Parameters
+
+###### newValue
+
+`string`
+
+##### Returns
+
+`void`
 
 ## Methods
-
-### onInputChanged()
-
-> `private` **onInputChanged**(): `void`
-
-#### Returns
-
-`void`
-
-#### Source
-
-[src/classes/TwoWayBinder.ts:34](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/TwoWayBinder.ts#L34)
-
-***
-
-### updateElements()
-
-> `private` **updateElements**(): `void`
-
-#### Returns
-
-`void`
-
-#### Source
-
-[src/classes/TwoWayBinder.ts:38](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/TwoWayBinder.ts#L38)
-
-***
 
 ### updateInput()
 
 > **updateInput**(): `void`
 
+Defined in: [src/classes/TwoWayBinder.ts:43](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/TwoWayBinder.ts#L43)
+
 #### Returns
 
 `void`
-
-#### Source
-
-[src/classes/TwoWayBinder.ts:43](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/TwoWayBinder.ts#L43)
 
 ***
 
@@ -142,10 +98,8 @@ const inputElement = document.getElementById('textInput') as HTMLInputElement;
 
 > **updateOutput**(): `void`
 
+Defined in: [src/classes/TwoWayBinder.ts:47](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/classes/TwoWayBinder.ts#L47)
+
 #### Returns
 
 `void`
-
-#### Source
-
-[src/classes/TwoWayBinder.ts:47](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/classes/TwoWayBinder.ts#L47)

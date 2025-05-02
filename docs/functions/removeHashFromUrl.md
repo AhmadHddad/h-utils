@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **removeHashFromUrl**(`input`): `string`
 
+Defined in: [src/utils/route/removeHashFromUrl.ts:6](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/route/removeHashFromUrl.ts#L6)
+
 ## Parameters
 
-• **input**: `string`
+### input
+
+`string`
 
 ## Returns
 
@@ -26,7 +30,3 @@ the hash character and everything after it.
 ```ts
 removeHashFromUrl("www.example.com/a#link") => "www.example.com/a"
 ```
-
-## Source
-
-[src/utils/route/removeHashFromUrl.ts:6](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/route/removeHashFromUrl.ts#L6)

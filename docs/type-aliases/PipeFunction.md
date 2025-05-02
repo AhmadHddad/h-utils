@@ -1,27 +1,31 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / PipeFunction
 
-# Type alias: PipeFunction()\<T, U\>
+# Type Alias: PipeFunction()\<T, U\>
 
-> **PipeFunction**\<`T`, `U`\>: (`input`) => `U`
+> **PipeFunction**\<`T`, `U`\> = (`input`) => `U`
 
-## Type parameters
+Defined in: [src/utils/types.ts:511](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/types.ts#L511)
 
-• **T**
+## Type Parameters
 
-• **U**
+### T
+
+`T`
+
+### U
+
+`U`
 
 ## Parameters
 
-• **input**: `T`
+### input
+
+`T`
 
 ## Returns
 
 `U`
-
-## Source
-
-[src/utils/types.ts:511](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/types.ts#L511)

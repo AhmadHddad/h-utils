@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -7,6 +7,8 @@
 # Function: getUserColorSchemePreference()
 
 > **getUserColorSchemePreference**(): [`ColorScheme`](../type-aliases/ColorScheme.md)
+
+Defined in: [src/utils/browser/getUserColorSchemePreference.ts:13](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/browser/getUserColorSchemePreference.ts#L13)
 
 ## Returns
 
@@ -23,7 +25,3 @@ const userColorScheme = getUserColorSchemePreference();
 
 container.style.backgroundColor = userColorScheme === 'dark' ? '#121212' : '#ffffff';
 ```
-
-## Source
-
-[src/utils/browser/getUserColorSchemePreference.ts:13](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/browser/getUserColorSchemePreference.ts#L13)

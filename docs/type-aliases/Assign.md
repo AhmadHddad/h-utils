@@ -1,14 +1,30 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / Assign
 
-# Type alias: Assign\<T, U, I\>
+# Type Alias: Assign\<T, U, I\>
 
-> **Assign**\<`T`, `U`, `I`\>: `Pick`\<`I`, keyof `I`\>
+> **Assign**\<`T`, `U`, `I`\> = `Pick`\<`I`, keyof `I`\>
+
+Defined in: [src/utils/utilityTypes.ts:278](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/utilityTypes.ts#L278)
 
 Assign
+
+## Type Parameters
+
+### T
+
+`T` *extends* `object`
+
+### U
+
+`U` *extends* `object`
+
+### I
+
+`I` = [`Diff`](Diff.md)\<`T`, `U`\> & [`Intersection`](Intersection.md)\<`U`, `T`\> & [`Diff`](Diff.md)\<`U`, `T`\>
 
 ## Desc
 
@@ -23,15 +39,3 @@ type Props = { name: string; age: number; visible: boolean };
   // Expect: { name: string; age: number; visible: boolean; other: string; }
   type ExtendedProps = Assign<Props, NewProps>;
 ```
-
-## Type parameters
-
-• **T** *extends* `object`
-
-• **U** *extends* `object`
-
-• **I** = [`Diff`](Diff.md)\<`T`, `U`\> & [`Intersection`](Intersection.md)\<`U`, `T`\> & [`Diff`](Diff.md)\<`U`, `T`\>
-
-## Source
-
-[src/utils/utilityTypes.ts:278](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/utilityTypes.ts#L278)

@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,19 +8,27 @@
 
 > **includeKeys**\<`T`\>(`object`, `predicate`): `object`
 
-## Type parameters
+Defined in: [src/utils/object/includeKeys.ts:22](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/object/includeKeys.ts#L22)
 
-• **T** *extends* `object`
+## Type Parameters
+
+### T
+
+`T` *extends* `object`
 
 ## Parameters
 
-• **object**: `T`
+### object
+
+`T`
 
 The object to copy enumerable properties from.
 
-• **predicate**: [`KeysArr`](../type-aliases/KeysArr.md) \| [`PredicateFunc`](../type-aliases/PredicateFunc.md)\<`T`\>
+### predicate
 
 A function that returns true if the key should be included in the result.
+
+[`KeysArr`](../type-aliases/KeysArr.md) | [`PredicateFunc`](../type-aliases/PredicateFunc.md)\<`T`\>
 
 ## Returns
 
@@ -52,7 +60,3 @@ includeKeys({
    bar: false
 }, ["foo"]) => {foo:true}
 ```
-
-## Source
-
-[src/utils/object/includeKeys.ts:22](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/object/includeKeys.ts#L22)

@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,17 +8,21 @@
 
 > **isPromise**(`p`): `p is Promise<any>`
 
+Defined in: [src/utils/validation/isPromise.ts:7](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/validation/isPromise.ts#L7)
+
+**`Function`**
+
+isPromise
+
 ## Parameters
 
-• **p**: `unknown`
+### p
+
+`unknown`
 
 ## Returns
 
 `p is Promise<any>`
-
-## Function
-
-isPromise
 
 ## Description
 
@@ -33,7 +37,3 @@ will check if the passed param is a promise or not.
 ```ts
 `isPromise(new Promise(()=>{})) // true`
 ```
-
-## Source
-
-[src/utils/validation/isPromise.ts:7](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/validation/isPromise.ts#L7)

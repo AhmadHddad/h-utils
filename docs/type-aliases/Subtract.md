@@ -1,14 +1,26 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / Subtract
 
-# Type alias: Subtract\<T, T1\>
+# Type Alias: Subtract\<T, T1\>
 
-> **Subtract**\<`T`, `T1`\>: `Pick`\<`T`, [`SetComplement`](SetComplement.md)\<keyof `T`, keyof `T1`\>\>
+> **Subtract**\<`T`, `T1`\> = `Pick`\<`T`, [`SetComplement`](SetComplement.md)\<keyof `T`, keyof `T1`\>\>
+
+Defined in: [src/utils/utilityTypes.ts:232](https://github.com/AhmadHddad/h-utils/blob/edfe90a63f57093e3cfee3445e14096881d5f4a0/src/utils/utilityTypes.ts#L232)
 
 Subtract
+
+## Type Parameters
+
+### T
+
+`T` *extends* `T1`
+
+### T1
+
+`T1` *extends* `object`
 
 ## Desc
 
@@ -23,13 +35,3 @@ type Props = { name: string; age: number; visible: boolean };
   // Expect: { name: string; visible: boolean; }
   type RestProps = Subtract<Props, DefaultProps>;
 ```
-
-## Type parameters
-
-• **T** *extends* `T1`
-
-• **T1** *extends* `object`
-
-## Source
-
-[src/utils/utilityTypes.ts:232](https://github.com/AhmadHddad/h-utils/blob/f7bb9ae71f981ffef49079271b9540862594b7e6/src/utils/utilityTypes.ts#L232)
