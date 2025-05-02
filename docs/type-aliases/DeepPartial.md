@@ -1,14 +1,22 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / DeepPartial
 
-# Type alias: DeepPartial\<T\>
+# Type Alias: DeepPartial\<T\>
 
-> **DeepPartial**\<`T`\>: `{ [P in keyof T]?: _DeepPartial<T[P]> }`
+> **DeepPartial**\<`T`\> = `{ [P in keyof T]?: _DeepPartial<T[P]> }`
+
+Defined in: [src/utils/utilityTypes.ts:443](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/utilityTypes.ts#L443)
 
 DeepPartial
+
+## Type Parameters
+
+### T
+
+`T`
 
 ## Desc
 
@@ -33,11 +41,3 @@ Partial that works for deeply nested structure
   };
   type PartialNestedProps = DeepPartial<NestedProps>;
 ```
-
-## Type parameters
-
-• **T**
-
-## Source
-
-[src/utils/utilityTypes.ts:443](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/utilityTypes.ts#L443)

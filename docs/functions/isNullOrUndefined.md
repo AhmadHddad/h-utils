@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,17 +6,21 @@
 
 # Function: isNullOrUndefined()
 
-> **isNullOrUndefined**(`val`): val is undefined \| null
+> **isNullOrUndefined**(`val`): `val is null`
+
+Defined in: [src/utils/validation/isNullOrUndefined.ts:8](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/validation/isNullOrUndefined.ts#L8)
 
 ## Parameters
 
-• **val**: `unknown`
+### val
+
+`unknown`
 
 unknown
 
 ## Returns
 
-val is undefined \| null
+`val is null`
 
 boolean
 
@@ -33,7 +37,3 @@ isNullOrUndefined("value") => false
 ```ts
 isNullOrUndefined(null) => true
 ```
-
-## Source
-
-[src/utils/validation/isNullOrUndefined.ts:8](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/validation/isNullOrUndefined.ts#L8)

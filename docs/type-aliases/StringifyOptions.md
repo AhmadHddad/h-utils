@@ -1,18 +1,22 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / StringifyOptions
 
-# Type alias: StringifyOptions
+# Type Alias: StringifyOptions
 
-> **StringifyOptions**: `object`
+> **StringifyOptions** = `object`
 
-## Type declaration
+Defined in: [src/utils/types.ts:49](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L49)
+
+## Properties
 
 ### arrayFormat?
 
-> `optional` `readonly` **arrayFormat**: `"bracket"` \| `"index"` \| `"comma"` \| `"separator"` \| `"bracket-separator"` \| `"colon-list-separator"` \| `"none"`
+> `readonly` `optional` **arrayFormat**: `"bracket"` \| `"index"` \| `"comma"` \| `"separator"` \| `"bracket-separator"` \| `"colon-list-separator"` \| `"none"`
+
+Defined in: [src/utils/types.ts:153](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L153)
 
 #### Default
 
@@ -104,9 +108,13 @@
   //=> 'foo=1&foo=2&foo=3'
   ```
 
+***
+
 ### arrayFormatSeparator?
 
-> `optional` `readonly` **arrayFormatSeparator**: `string`
+> `readonly` `optional` **arrayFormatSeparator**: `string`
+
+Defined in: [src/utils/types.ts:167](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L167)
 
 The character used to separate array elements when using `{arrayFormat: 'separator'}`.
 
@@ -116,9 +124,13 @@ The character used to separate array elements when using `{arrayFormat: 'separat
 ,
 ```
 
+***
+
 ### encode?
 
-> `optional` `readonly` **encode**: `boolean`
+> `readonly` `optional` **encode**: `boolean`
+
+Defined in: [src/utils/types.ts:62](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L62)
 
 [URL encode](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) the keys and values.
 
@@ -128,13 +140,21 @@ The character used to separate array elements when using `{arrayFormat: 'separat
 true
 ```
 
+***
+
 ### params?
 
-> `optional` `readonly` **params**: [`StringOrNumber`](StringOrNumber.md)[]
+> `readonly` `optional` **params**: [`StringOrNumber`](StringOrNumber.md)[]
+
+Defined in: [src/utils/types.ts:248](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L248)
+
+***
 
 ### skipEmptyString?
 
-> `optional` `readonly` **skipEmptyString**: `boolean`
+> `readonly` `optional` **skipEmptyString**: `boolean`
+
+Defined in: [src/utils/types.ts:246](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L246)
 
 Skip keys with an empty string as the value.
 
@@ -162,9 +182,13 @@ queryString.stringify({a: '', b: ''}, {
 //=> ''
 ```
 
+***
+
 ### skipNull?
 
-> `optional` `readonly` **skipNull**: `boolean`
+> `readonly` `optional` **skipNull**: `boolean`
+
+Defined in: [src/utils/types.ts:220](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L220)
 
 Skip keys with `null` as the value.
 
@@ -191,9 +215,13 @@ queryString.stringify({a: undefined, b: null}, {
 //=> ''
 ```
 
+***
+
 ### sort?
 
-> `optional` `readonly` **sort**: (`itemLeft`, `itemRight`) => `number` \| `false`
+> `readonly` `optional` **sort**: (`itemLeft`, `itemRight`) => `number` \| `false`
+
+Defined in: [src/utils/types.ts:196](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L196)
 
 Supports both `Function` as a custom sorting function or `false` to disable sorting.
 
@@ -223,9 +251,13 @@ queryString.stringify({b: 1, c: 2, a: 3}, {sort: false});
 //=> 'b=1&c=2&a=3'
 ```
 
+***
+
 ### strict?
 
-> `optional` `readonly` **strict**: `boolean`
+> `readonly` `optional` **strict**: `boolean`
+
+Defined in: [src/utils/types.ts:55](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L55)
 
 Strictly encode URI components with [`strict-uri-encode`](https://github.com/kevva/strict-uri-encode). It uses [`encodeURIComponent`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) if set to `false`. You probably [don't care](https://github.com/sindresorhus/query-string/issues/42) about this option.
 
@@ -234,7 +266,3 @@ Strictly encode URI components with [`strict-uri-encode`](https://github.com/kev
 ```ts
 true
 ```
-
-## Source
-
-[src/utils/types.ts:49](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/types.ts#L49)

@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,11 +8,17 @@
 
 > **monthDifference**(`first`, `last`): `number`
 
+Defined in: [src/utils/date/monthDifference.ts:10](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/date/monthDifference.ts#L10)
+
 ## Parameters
 
-• **first**: `string` \| `Date`
+### first
 
-• **last**: `string` \| `Date`
+`string` | `Date`
+
+### last
+
+`string` | `Date`
 
 ## Returns
 
@@ -35,7 +41,3 @@ monthDifference("2022", "2023") // 12
 ```ts
 monthDifference("2023", "2022") // -12
 ```
-
-## Source
-
-[src/utils/date/monthDifference.ts:10](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/date/monthDifference.ts#L10)

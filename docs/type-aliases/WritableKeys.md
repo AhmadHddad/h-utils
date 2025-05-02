@@ -1,17 +1,17 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / WritableKeys
 
-# Type alias: WritableKeys\<T\>
+# Type Alias: WritableKeys\<T\>
 
-> **WritableKeys**\<`T`\>: [`MutableKeys`](MutableKeys.md)\<`T`\>
+> **WritableKeys**\<`T`\> = [`MutableKeys`](MutableKeys.md)\<`T`\>
 
-## Type parameters
+Defined in: [src/utils/utilityTypes.ts:156](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/utilityTypes.ts#L156)
 
-• **T** *extends* `object`
+## Type Parameters
 
-## Source
+### T
 
-[src/utils/utilityTypes.ts:156](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/utilityTypes.ts#L156)
+`T` *extends* `object`

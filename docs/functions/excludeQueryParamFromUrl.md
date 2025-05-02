@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,11 +8,17 @@
 
 > **excludeQueryParamFromUrl**(`urlOrQuery`, `filter`): `string`
 
+Defined in: [src/utils/route/excludeQueryParamFromUrl.ts:8](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/route/excludeQueryParamFromUrl.ts#L8)
+
 ## Parameters
 
-• **urlOrQuery**: `string`
+### urlOrQuery
 
-• **filter**: `string`[] \| (`key`, `value`) => `boolean`
+`string`
+
+### filter
+
+`string`[] | (`key`, `value`) => `boolean`
 
 ## Returns
 
@@ -31,7 +37,3 @@ excludeQueryParamFromUrl('https://foo.bar?foo=1&bar=2#hello', ['foo']); => 'http
 ```ts
 excludeQueryParamFromUrl('https://foo.bar?foo=1&bar=2#hello', (name, value) => value === 2, {parseNumbers: true}); => 'https://foo.bar?foo=1#hello'
 ```
-
-## Source
-
-[src/utils/route/excludeQueryParamFromUrl.ts:8](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/route/excludeQueryParamFromUrl.ts#L8)

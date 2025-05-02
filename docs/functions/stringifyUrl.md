@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,13 +6,19 @@
 
 # Function: stringifyUrl()
 
-> **stringifyUrl**(`object`, `options`?): `string`
+> **stringifyUrl**(`object`, `options?`): `string`
+
+Defined in: [src/utils/route/stringifyUrl.ts:32](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/route/stringifyUrl.ts#L32)
 
 ## Parameters
 
-• **object**: [`UrlObject`](../type-aliases/UrlObject.md)
+### object
 
-• **options?**: [`StringifyOptions`](../type-aliases/StringifyOptions.md)
+[`UrlObject`](../type-aliases/UrlObject.md)
+
+### options?
+
+[`StringifyOptions`](../type-aliases/StringifyOptions.md)
 
 ## Returns
 
@@ -45,7 +51,3 @@ stringifyUrl({
    params: [1,"foo"]
 }); //=> 'https://foo.bar/1/foo
 ```
-
-## Source
-
-[src/utils/route/stringifyUrl.ts:32](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/route/stringifyUrl.ts#L32)

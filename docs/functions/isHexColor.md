@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **isHexColor**(`color`): `boolean`
 
+Defined in: [src/utils/validation/isHexColor.ts:6](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/validation/isHexColor.ts#L6)
+
 ## Parameters
 
-• **color**: `string`
+### color
+
+`string`
 
 ## Returns
 
@@ -19,7 +23,3 @@
 ## Description
 
 Function to check if the parameter is a valid hex color
-
-## Source
-
-[src/utils/validation/isHexColor.ts:6](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/validation/isHexColor.ts#L6)

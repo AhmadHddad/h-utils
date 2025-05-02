@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,13 +8,21 @@
 
 > **padStart**(`input`, `targetLength`, `padString`): `string`
 
+Defined in: [src/utils/string/padStart.ts:18](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/string/padStart.ts#L18)
+
 ## Parameters
 
-• **input**: `string`
+### input
 
-• **targetLength**: `number`
+`string`
 
-• **padString**: `string`= `' '`
+### targetLength
+
+`number`
+
+### padString
+
+`string` = `' '`
 
 ## Returns
 
@@ -41,7 +49,3 @@ padStart(1, 2, '0')
 padStart(17, 5, 0)
 // => "00017"
 ```
-
-## Source
-
-[src/utils/string/padStart.ts:18](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/string/padStart.ts#L18)

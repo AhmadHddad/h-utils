@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,13 +6,19 @@
 
 # Function: isNumber()
 
-> **isNumber**(`value`, `sloppy`?): `value is number`
+> **isNumber**(`value`, `sloppy?`): `value is number`
+
+Defined in: [src/utils/validation/isNumber.ts:7](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/validation/isNumber.ts#L7)
 
 ## Parameters
 
-• **value**: `any`
+### value
 
-• **sloppy?**: `boolean`
+`any`
+
+### sloppy?
+
+`boolean`
 
 ## Returns
 
@@ -35,7 +41,3 @@ isNumber("123", true) => true;
 ```ts
 isNumber(1, true) => true;
 ```
-
-## Source
-
-[src/utils/validation/isNumber.ts:7](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/validation/isNumber.ts#L7)

@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,11 +8,15 @@
 
 > **getTag**(`value`): `string`
 
+Defined in: [src/utils/general/getTag.ts:10](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/general/getTag.ts#L10)
+
 Gets the `toStringTag` of `value`.
 
 ## Parameters
 
-• **value**: `unknown`
+### value
+
+`unknown`
 
 ## Returns
 
@@ -35,7 +39,3 @@ getTag("foo"); // "[object String]"
 ```ts
 getTag([1, 2]); // "[object Array]"
 ```
-
-## Source
-
-[src/utils/general/getTag.ts:10](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/general/getTag.ts#L10)

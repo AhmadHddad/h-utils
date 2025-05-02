@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,15 +6,21 @@
 
 # Function: getUrlPathParams()
 
-> **getUrlPathParams**(`url`, `options`?): `string`[]
+> **getUrlPathParams**(`url`, `options?`): `string`[]
+
+Defined in: [src/utils/route/getUrlPathParams.ts:10](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/route/getUrlPathParams.ts#L10)
 
 ## Parameters
 
-• **url**: `string`
+### url
 
-• **options?**
+`string`
 
-• **options.filterEmpty?**: `boolean`
+### options?
+
+#### filterEmpty?
+
+`boolean`
 
 ## Returns
 
@@ -33,7 +39,3 @@ getUrlPathParams("www.example.com/1/2", {filterEmpty:true}) // ["1", "2"]
 ```ts
 getUrlPathParams("www.example.com/1/2", {filterEmpty:false}) // ["", "1", "2"]
 ```
-
-## Source
-
-[src/utils/route/getUrlPathParams.ts:10](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/route/getUrlPathParams.ts#L10)

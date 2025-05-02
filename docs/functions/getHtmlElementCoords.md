@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,11 +8,17 @@
 
 > **getHtmlElementCoords**(`element`, `options`): `object`
 
+Defined in: [src/utils/browser/getHtmlElementCoords.ts:15](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/browser/getHtmlElementCoords.ts#L15)
+
 ## Parameters
 
-• **element**: `HTMLElement`
+### element
 
-• **options**: [`GetHtmlElementCoordsOptions`](../type-aliases/GetHtmlElementCoordsOptions.md)= `undefined`
+`HTMLElement`
+
+### options
+
+[`GetHtmlElementCoordsOptions`](../type-aliases/GetHtmlElementCoordsOptions.md) = `...`
 
 ## Returns
 
@@ -51,7 +57,3 @@ getElementCoords(document.getElementById("id"), {position:"top left"}) // {x:2, 
 ```ts
 getElementCoords(document.getElementById("id"), {precise:true}) // {x:2.123, y:1.123}
 ```
-
-## Source
-
-[src/utils/browser/getHtmlElementCoords.ts:15](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/browser/getHtmlElementCoords.ts#L15)

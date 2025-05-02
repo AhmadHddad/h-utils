@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **classNames**(...`args`): `string`
 
+Defined in: [src/utils/style/classNames.ts:7](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/style/classNames.ts#L7)
+
 ## Parameters
 
-• ...**args**: [`ArgumentArray`](../namespaces/ClassNames/interfaces/ArgumentArray.md)
+### args
+
+...[`ArgumentArray`](../hd-utils/namespaces/ClassNames/interfaces/ArgumentArray.md)
 
 ## Returns
 
@@ -20,7 +24,3 @@
 
 It takes any number of arguments, and returns a string of all the arguments that are truthy,
 separated by spaces.
-
-## Source
-
-[src/utils/style/classNames.ts:7](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/style/classNames.ts#L7)

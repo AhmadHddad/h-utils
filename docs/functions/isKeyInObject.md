@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,11 +8,17 @@
 
 > **isKeyInObject**(`objectType`, `key`): `boolean`
 
+Defined in: [src/utils/validation/isKeyInObject.ts:7](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/validation/isKeyInObject.ts#L7)
+
 ## Parameters
 
-• **objectType**: `object` \| `Function` \| []
+### objectType
 
-• **key**: `string`
+\{ \} | `Function` | \[\]
+
+### key
+
+`string`
 
 ## Returns
 
@@ -25,7 +31,3 @@ checks if the passed key in the object.
 ## Deprecated
 
 use has instead.
-
-## Source
-
-[src/utils/validation/isKeyInObject.ts:7](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/validation/isKeyInObject.ts#L7)

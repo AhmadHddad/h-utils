@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,21 +6,31 @@
 
 # Function: pipeWith()
 
-## pipeWith(a, ab)
+## Call Signature
 
 > **pipeWith**\<`A`, `B`\>(`a`, `ab`): `B`
 
-### Type parameters
+Defined in: [src/utils/functions/pipeWith.ts:13](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/functions/pipeWith.ts#L13)
 
-• **A**
+### Type Parameters
 
-• **B**
+#### A
+
+`A`
+
+#### B
+
+`B`
 
 ### Parameters
 
-• **a**: `A`
+#### a
 
-• **ab**
+`A`
+
+#### ab
+
+(`this`, `a`) => `B`
 
 ### Returns
 
@@ -39,342 +49,634 @@ const times2 = (n: number) => n * 2;
 const result: number = pipeWith(1, add1, times2) // 4;
 ```
 
-### Source
-
-[src/utils/functions/pipeWith.ts:13](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/functions/pipeWith.ts#L13)
-
-## pipeWith(a, ab, bc)
+## Call Signature
 
 > **pipeWith**\<`A`, `B`, `C`\>(`a`, `ab`, `bc`): `C`
 
-### Type parameters
+Defined in: [src/utils/functions/pipeWith.ts:14](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/functions/pipeWith.ts#L14)
 
-• **A**
+### Type Parameters
 
-• **B**
+#### A
 
-• **C**
+`A`
+
+#### B
+
+`B`
+
+#### C
+
+`C`
 
 ### Parameters
 
-• **a**: `A`
+#### a
 
-• **ab**
+`A`
 
-• **bc**
+#### ab
+
+(`this`, `a`) => `B`
+
+#### bc
+
+(`this`, `b`) => `C`
 
 ### Returns
 
 `C`
 
-### Source
+### Description
 
-[src/utils/functions/pipeWith.ts:14](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/functions/pipeWith.ts#L14)
+Transform a value by piping it through the listed functions. Sugar syntax for pipe(f, g)(value).
 
-## pipeWith(a, ab, bc, cd)
+### Example
+
+```ts
+const add1 = (n: number) => n + 1;
+const times2 = (n: number) => n * 2;
+
+const result: number = pipeWith(1, add1, times2) // 4;
+```
+
+## Call Signature
 
 > **pipeWith**\<`A`, `B`, `C`, `D`\>(`a`, `ab`, `bc`, `cd`): `D`
 
-### Type parameters
+Defined in: [src/utils/functions/pipeWith.ts:19](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/functions/pipeWith.ts#L19)
 
-• **A**
+### Type Parameters
 
-• **B**
+#### A
 
-• **C**
+`A`
 
-• **D**
+#### B
+
+`B`
+
+#### C
+
+`C`
+
+#### D
+
+`D`
 
 ### Parameters
 
-• **a**: `A`
+#### a
 
-• **ab**
+`A`
 
-• **bc**
+#### ab
 
-• **cd**
+(`this`, `a`) => `B`
+
+#### bc
+
+(`this`, `b`) => `C`
+
+#### cd
+
+(`this`, `c`) => `D`
 
 ### Returns
 
 `D`
 
-### Source
+### Description
 
-[src/utils/functions/pipeWith.ts:19](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/functions/pipeWith.ts#L19)
+Transform a value by piping it through the listed functions. Sugar syntax for pipe(f, g)(value).
 
-## pipeWith(a, ab, bc, cd, de)
+### Example
+
+```ts
+const add1 = (n: number) => n + 1;
+const times2 = (n: number) => n * 2;
+
+const result: number = pipeWith(1, add1, times2) // 4;
+```
+
+## Call Signature
 
 > **pipeWith**\<`A`, `B`, `C`, `D`, `E`\>(`a`, `ab`, `bc`, `cd`, `de`): `E`
 
-### Type parameters
+Defined in: [src/utils/functions/pipeWith.ts:25](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/functions/pipeWith.ts#L25)
 
-• **A**
+### Type Parameters
 
-• **B**
+#### A
 
-• **C**
+`A`
 
-• **D**
+#### B
 
-• **E**
+`B`
+
+#### C
+
+`C`
+
+#### D
+
+`D`
+
+#### E
+
+`E`
 
 ### Parameters
 
-• **a**: `A`
+#### a
 
-• **ab**
+`A`
 
-• **bc**
+#### ab
 
-• **cd**
+(`this`, `a`) => `B`
 
-• **de**
+#### bc
+
+(`this`, `b`) => `C`
+
+#### cd
+
+(`this`, `c`) => `D`
+
+#### de
+
+(`this`, `d`) => `E`
 
 ### Returns
 
 `E`
 
-### Source
+### Description
 
-[src/utils/functions/pipeWith.ts:25](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/functions/pipeWith.ts#L25)
+Transform a value by piping it through the listed functions. Sugar syntax for pipe(f, g)(value).
 
-## pipeWith(a, ab, bc, cd, de, ef)
+### Example
+
+```ts
+const add1 = (n: number) => n + 1;
+const times2 = (n: number) => n * 2;
+
+const result: number = pipeWith(1, add1, times2) // 4;
+```
+
+## Call Signature
 
 > **pipeWith**\<`A`, `B`, `C`, `D`, `E`, `F`\>(`a`, `ab`, `bc`, `cd`, `de`, `ef`): `F`
 
-### Type parameters
+Defined in: [src/utils/functions/pipeWith.ts:32](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/functions/pipeWith.ts#L32)
 
-• **A**
+### Type Parameters
 
-• **B**
+#### A
 
-• **C**
+`A`
 
-• **D**
+#### B
 
-• **E**
+`B`
 
-• **F**
+#### C
+
+`C`
+
+#### D
+
+`D`
+
+#### E
+
+`E`
+
+#### F
+
+`F`
 
 ### Parameters
 
-• **a**: `A`
+#### a
 
-• **ab**
+`A`
 
-• **bc**
+#### ab
 
-• **cd**
+(`this`, `a`) => `B`
 
-• **de**
+#### bc
 
-• **ef**
+(`this`, `b`) => `C`
+
+#### cd
+
+(`this`, `c`) => `D`
+
+#### de
+
+(`this`, `d`) => `E`
+
+#### ef
+
+(`this`, `e`) => `F`
 
 ### Returns
 
 `F`
 
-### Source
+### Description
 
-[src/utils/functions/pipeWith.ts:32](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/functions/pipeWith.ts#L32)
+Transform a value by piping it through the listed functions. Sugar syntax for pipe(f, g)(value).
 
-## pipeWith(a, ab, bc, cd, de, ef, fg)
+### Example
+
+```ts
+const add1 = (n: number) => n + 1;
+const times2 = (n: number) => n * 2;
+
+const result: number = pipeWith(1, add1, times2) // 4;
+```
+
+## Call Signature
 
 > **pipeWith**\<`A`, `B`, `C`, `D`, `E`, `F`, `G`\>(`a`, `ab`, `bc`, `cd`, `de`, `ef`, `fg`): `G`
 
-### Type parameters
+Defined in: [src/utils/functions/pipeWith.ts:40](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/functions/pipeWith.ts#L40)
 
-• **A**
+### Type Parameters
 
-• **B**
+#### A
 
-• **C**
+`A`
 
-• **D**
+#### B
 
-• **E**
+`B`
 
-• **F**
+#### C
 
-• **G**
+`C`
+
+#### D
+
+`D`
+
+#### E
+
+`E`
+
+#### F
+
+`F`
+
+#### G
+
+`G`
 
 ### Parameters
 
-• **a**: `A`
+#### a
 
-• **ab**
+`A`
 
-• **bc**
+#### ab
 
-• **cd**
+(`this`, `a`) => `B`
 
-• **de**
+#### bc
 
-• **ef**
+(`this`, `b`) => `C`
 
-• **fg**
+#### cd
+
+(`this`, `c`) => `D`
+
+#### de
+
+(`this`, `d`) => `E`
+
+#### ef
+
+(`this`, `e`) => `F`
+
+#### fg
+
+(`this`, `f`) => `G`
 
 ### Returns
 
 `G`
 
-### Source
+### Description
 
-[src/utils/functions/pipeWith.ts:40](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/functions/pipeWith.ts#L40)
+Transform a value by piping it through the listed functions. Sugar syntax for pipe(f, g)(value).
 
-## pipeWith(a, ab, bc, cd, de, ef, fg, gh)
+### Example
+
+```ts
+const add1 = (n: number) => n + 1;
+const times2 = (n: number) => n * 2;
+
+const result: number = pipeWith(1, add1, times2) // 4;
+```
+
+## Call Signature
 
 > **pipeWith**\<`A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`\>(`a`, `ab`, `bc`, `cd`, `de`, `ef`, `fg`, `gh`): `H`
 
-### Type parameters
+Defined in: [src/utils/functions/pipeWith.ts:49](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/functions/pipeWith.ts#L49)
 
-• **A**
+### Type Parameters
 
-• **B**
+#### A
 
-• **C**
+`A`
 
-• **D**
+#### B
 
-• **E**
+`B`
 
-• **F**
+#### C
 
-• **G**
+`C`
 
-• **H**
+#### D
+
+`D`
+
+#### E
+
+`E`
+
+#### F
+
+`F`
+
+#### G
+
+`G`
+
+#### H
+
+`H`
 
 ### Parameters
 
-• **a**: `A`
+#### a
 
-• **ab**
+`A`
 
-• **bc**
+#### ab
 
-• **cd**
+(`this`, `a`) => `B`
 
-• **de**
+#### bc
 
-• **ef**
+(`this`, `b`) => `C`
 
-• **fg**
+#### cd
 
-• **gh**
+(`this`, `c`) => `D`
+
+#### de
+
+(`this`, `d`) => `E`
+
+#### ef
+
+(`this`, `e`) => `F`
+
+#### fg
+
+(`this`, `f`) => `G`
+
+#### gh
+
+(`this`, `g`) => `H`
 
 ### Returns
 
 `H`
 
-### Source
+### Description
 
-[src/utils/functions/pipeWith.ts:49](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/functions/pipeWith.ts#L49)
+Transform a value by piping it through the listed functions. Sugar syntax for pipe(f, g)(value).
 
-## pipeWith(a, ab, bc, cd, de, ef, fg, gh, hi)
+### Example
+
+```ts
+const add1 = (n: number) => n + 1;
+const times2 = (n: number) => n * 2;
+
+const result: number = pipeWith(1, add1, times2) // 4;
+```
+
+## Call Signature
 
 > **pipeWith**\<`A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`, `I`\>(`a`, `ab`, `bc`, `cd`, `de`, `ef`, `fg`, `gh`, `hi`): `I`
 
-### Type parameters
+Defined in: [src/utils/functions/pipeWith.ts:59](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/functions/pipeWith.ts#L59)
 
-• **A**
+### Type Parameters
 
-• **B**
+#### A
 
-• **C**
+`A`
 
-• **D**
+#### B
 
-• **E**
+`B`
 
-• **F**
+#### C
 
-• **G**
+`C`
 
-• **H**
+#### D
 
-• **I**
+`D`
+
+#### E
+
+`E`
+
+#### F
+
+`F`
+
+#### G
+
+`G`
+
+#### H
+
+`H`
+
+#### I
+
+`I`
 
 ### Parameters
 
-• **a**: `A`
+#### a
 
-• **ab**
+`A`
 
-• **bc**
+#### ab
 
-• **cd**
+(`this`, `a`) => `B`
 
-• **de**
+#### bc
 
-• **ef**
+(`this`, `b`) => `C`
 
-• **fg**
+#### cd
 
-• **gh**
+(`this`, `c`) => `D`
 
-• **hi**
+#### de
+
+(`this`, `d`) => `E`
+
+#### ef
+
+(`this`, `e`) => `F`
+
+#### fg
+
+(`this`, `f`) => `G`
+
+#### gh
+
+(`this`, `g`) => `H`
+
+#### hi
+
+(`this`, `h`) => `I`
 
 ### Returns
 
 `I`
 
-### Source
+### Description
 
-[src/utils/functions/pipeWith.ts:59](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/functions/pipeWith.ts#L59)
+Transform a value by piping it through the listed functions. Sugar syntax for pipe(f, g)(value).
 
-## pipeWith(a, ab, bc, cd, de, ef, fg, gh, hi, ij)
+### Example
+
+```ts
+const add1 = (n: number) => n + 1;
+const times2 = (n: number) => n * 2;
+
+const result: number = pipeWith(1, add1, times2) // 4;
+```
+
+## Call Signature
 
 > **pipeWith**\<`A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`, `I`, `J`\>(`a`, `ab`, `bc`, `cd`, `de`, `ef`, `fg`, `gh`, `hi`, `ij`): `J`
 
-### Type parameters
+Defined in: [src/utils/functions/pipeWith.ts:70](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/functions/pipeWith.ts#L70)
 
-• **A**
+### Type Parameters
 
-• **B**
+#### A
 
-• **C**
+`A`
 
-• **D**
+#### B
 
-• **E**
+`B`
 
-• **F**
+#### C
 
-• **G**
+`C`
 
-• **H**
+#### D
 
-• **I**
+`D`
 
-• **J**
+#### E
+
+`E`
+
+#### F
+
+`F`
+
+#### G
+
+`G`
+
+#### H
+
+`H`
+
+#### I
+
+`I`
+
+#### J
+
+`J`
 
 ### Parameters
 
-• **a**: `A`
+#### a
 
-• **ab**
+`A`
 
-• **bc**
+#### ab
 
-• **cd**
+(`this`, `a`) => `B`
 
-• **de**
+#### bc
 
-• **ef**
+(`this`, `b`) => `C`
 
-• **fg**
+#### cd
 
-• **gh**
+(`this`, `c`) => `D`
 
-• **hi**
+#### de
 
-• **ij**
+(`this`, `d`) => `E`
+
+#### ef
+
+(`this`, `e`) => `F`
+
+#### fg
+
+(`this`, `f`) => `G`
+
+#### gh
+
+(`this`, `g`) => `H`
+
+#### hi
+
+(`this`, `h`) => `I`
+
+#### ij
+
+(`this`, `i`) => `J`
 
 ### Returns
 
 `J`
 
-### Source
+### Description
 
-[src/utils/functions/pipeWith.ts:70](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/functions/pipeWith.ts#L70)
+Transform a value by piping it through the listed functions. Sugar syntax for pipe(f, g)(value).
+
+### Example
+
+```ts
+const add1 = (n: number) => n + 1;
+const times2 = (n: number) => n * 2;
+
+const result: number = pipeWith(1, add1, times2) // 4;
+```

@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **getNumberFromString**(`strOrNum`): `number`
 
+Defined in: [src/utils/string/getNumberFromString.ts:12](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/string/getNumberFromString.ts#L12)
+
 ## Parameters
 
-• **strOrNum**: [`Key`](../type-aliases/Key.md)
+### strOrNum
+
+[`Key`](../type-aliases/Key.md)
 
 string | number
 
@@ -36,7 +40,3 @@ getNumberFromString("3.35") => 3.35;
 ```ts
 getNumberFromString("string") => infinity;
 ```
-
-## Source
-
-[src/utils/string/getNumberFromString.ts:12](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/string/getNumberFromString.ts#L12)

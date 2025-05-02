@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,15 +6,15 @@
 
 # Interface: Cookie
 
+Defined in: [src/utils/types.ts:504](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L504)
+
 ## Properties
 
 ### domain?
 
 > `optional` **domain**: `string`
 
-#### Source
-
-[src/utils/types.ts:507](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/types.ts#L507)
+Defined in: [src/utils/types.ts:507](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L507)
 
 ***
 
@@ -22,9 +22,7 @@
 
 > **name**: `string`
 
-#### Source
-
-[src/utils/types.ts:505](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/types.ts#L505)
+Defined in: [src/utils/types.ts:505](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L505)
 
 ***
 
@@ -32,9 +30,7 @@
 
 > `optional` **path**: `string`
 
-#### Source
-
-[src/utils/types.ts:508](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/types.ts#L508)
+Defined in: [src/utils/types.ts:508](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L508)
 
 ***
 
@@ -42,6 +38,4 @@
 
 > **value**: `string`
 
-#### Source
-
-[src/utils/types.ts:506](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/types.ts#L506)
+Defined in: [src/utils/types.ts:506](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L506)

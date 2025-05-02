@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,17 +6,25 @@
 
 # Function: sortArr()
 
-> **sortArr**\<`T`\>(`arr`, `options`?): `T`[]
+> **sortArr**\<`T`\>(`arr`, `options?`): `T`[]
 
-## Type parameters
+Defined in: [src/utils/array/sortArr.ts:19](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/array/sortArr.ts#L19)
 
-• **T**
+## Type Parameters
+
+### T
+
+`T`
 
 ## Parameters
 
-• **arr**: `T`[]
+### arr
 
-• **options?**: `SortArrOptions`\<`T`\>
+`T`[]
+
+### options?
+
+`SortArrOptions`\<`T`\>
 
 ## Returns
 
@@ -40,7 +48,3 @@ sortArr([{a:2}, {a:1}], {key:"a"}) // [{a:1}, {a:2}]
 ```ts
 sortArr([{a:2}, {a:1}], {getValue:(v) => v.a}) // [{a:1}, {a:2}]
 ```
-
-## Source
-
-[src/utils/array/sortArr.ts:19](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/array/sortArr.ts#L19)

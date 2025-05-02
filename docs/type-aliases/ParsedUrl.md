@@ -1,31 +1,39 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / ParsedUrl
 
-# Type alias: ParsedUrl
+# Type Alias: ParsedUrl
 
-> **ParsedUrl**: `object`
+> **ParsedUrl** = `object`
 
-## Type declaration
+Defined in: [src/utils/types.ts:277](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L277)
+
+## Properties
 
 ### fragmentIdentifier?
 
-> `optional` `readonly` **fragmentIdentifier**: `string`
+> `readonly` `optional` **fragmentIdentifier**: `string`
+
+Defined in: [src/utils/types.ts:286](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L286)
 
 The fragment identifier of the URL.
 
 Present when the `parseFragmentIdentifier` option is `true`.
 
+***
+
 ### query
 
 > `readonly` **query**: [`ParsedQuery`](ParsedQuery.md)
+
+Defined in: [src/utils/types.ts:279](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L279)
+
+***
 
 ### url
 
 > `readonly` **url**: `string`
 
-## Source
-
-[src/utils/types.ts:277](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/types.ts#L277)
+Defined in: [src/utils/types.ts:278](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L278)

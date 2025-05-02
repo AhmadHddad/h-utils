@@ -1,25 +1,29 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / ObserverInstanceCallback
 
-# Type alias: ObserverInstanceCallback()
+# Type Alias: ObserverInstanceCallback()
 
-> **ObserverInstanceCallback**: (`inView`, `entry`, `entries`?) => `void`
+> **ObserverInstanceCallback** = (`inView`, `entry`, `entries?`) => `void`
+
+Defined in: [src/utils/browser/intersectionObserver.ts:10](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/browser/intersectionObserver.ts#L10)
 
 ## Parameters
 
-• **inView**: `boolean`
+### inView
 
-• **entry**: `IntersectionObserverEntry`
+`boolean`
 
-• **entries?**: `IntersectionObserverEntry`[]
+### entry
+
+`IntersectionObserverEntry`
+
+### entries?
+
+`IntersectionObserverEntry`[]
 
 ## Returns
 
 `void`
-
-## Source
-
-[src/utils/browser/intersectionObserver.ts:10](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/browser/intersectionObserver.ts#L10)

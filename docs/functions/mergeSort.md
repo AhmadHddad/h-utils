@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,13 +8,19 @@
 
 > **mergeSort**\<`T`\>(`arr`): `T`[]
 
-## Type parameters
+Defined in: [src/utils/array/mergeSort.ts:12](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/array/mergeSort.ts#L12)
 
-• **T** *extends* [`StringOrNumber`](../type-aliases/StringOrNumber.md)
+## Type Parameters
+
+### T
+
+`T` *extends* [`StringOrNumber`](../type-aliases/StringOrNumber.md)
 
 ## Parameters
 
-• **arr**: `T`[]
+### arr
+
+`T`[]
 
 ## Returns
 
@@ -30,7 +36,3 @@ an implementation for mergeSort algorithm, it will sort an array of numbers or s
 const arrayToSort = [3, 1,-1, 0,  4, 1, 5, 9, 2, 6, 5, 3, 5];
     mergeSort(arrayToSort)  // [ -1, 0, 1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9 ];
 ```
-
-## Source
-
-[src/utils/array/mergeSort.ts:12](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/array/mergeSort.ts#L12)

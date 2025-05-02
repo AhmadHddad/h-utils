@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **isURLObj**(`url`): `boolean`
 
+Defined in: [src/utils/validation/isURLObj.ts:6](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/validation/isURLObj.ts#L6)
+
 ## Parameters
 
-• **url**: `URL`
+### url
+
+`URL`
 
 ## Returns
 
@@ -29,7 +33,3 @@ isURLObj("www.google.com") // false
 ```ts
 isURLObj(new URL("https://google.com")) // true
 ```
-
-## Source
-
-[src/utils/validation/isURLObj.ts:6](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/validation/isURLObj.ts#L6)

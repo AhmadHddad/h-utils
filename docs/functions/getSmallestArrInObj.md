@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **getSmallestArrInObj**(`obj`): `object`
 
+Defined in: [src/utils/object/getSmallestArrInObj.ts:6](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/object/getSmallestArrInObj.ts#L6)
+
 ## Parameters
 
-• **obj**: `object` \| `Record`\<`string`, `any`[]\>
+### obj
+
+\{ \} | `Record`\<`string`, `any`[]\>
 
 ## Returns
 
@@ -25,7 +29,3 @@ will return the smallest array in record or object
 ```ts
 getSmallestArrInObj({a:[1,2,3], b:[1,2,3,4,5]}) => {a:[1,2,3]}
 ```
-
-## Source
-
-[src/utils/object/getSmallestArrInObj.ts:6](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/object/getSmallestArrInObj.ts#L6)

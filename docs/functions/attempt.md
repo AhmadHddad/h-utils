@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,19 +6,29 @@
 
 # Function: attempt()
 
-> **attempt**\<`T`\>(`func`, `options`?, ...`args`?): `any`
+> **attempt**\<`T`\>(`func`, `options?`, ...`args?`): `any`
 
-## Type parameters
+Defined in: [src/utils/functions/attempt.ts:10](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/functions/attempt.ts#L10)
 
-• **T** = `any`
+## Type Parameters
+
+### T
+
+`T` = `any`
 
 ## Parameters
 
-• **func**
+### func
 
-• **options?**: [`AttemptOptions`](../type-aliases/AttemptOptions.md)
+(...`args`) => `T`
 
-• ...**args?**: `any`[]
+### options?
+
+[`AttemptOptions`](../type-aliases/AttemptOptions.md)
+
+### args?
+
+...`any`[]
 
 ## Returns
 
@@ -35,7 +45,3 @@ if nothing was passed to the options, it will return nothing
 attempt(selector =>
   document.querySelectorAll(selector),{errorHander:(e)=> console.error(e)}, '>_>')
 ```
-
-## Source
-
-[src/utils/functions/attempt.ts:10](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/functions/attempt.ts#L10)

@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **getSum**(...`args`): `number`
 
+Defined in: [src/utils/number/getSum.ts:5](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/number/getSum.ts#L5)
+
 ## Parameters
 
-• ...**args**: `number`[]
+### args
+
+...`number`[]
 
 number[]
 
@@ -21,7 +25,3 @@ number[]
 ## Description
 
 The sum function takes a variable number of arguments, and returns the sum of all the arguments.
-
-## Source
-
-[src/utils/number/getSum.ts:5](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/number/getSum.ts#L5)

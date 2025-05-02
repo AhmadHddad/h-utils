@@ -1,17 +1,17 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / ParsedQuery
 
-# Type alias: ParsedQuery\<T\>
+# Type Alias: ParsedQuery\<T\>
 
-> **ParsedQuery**\<`T`\>: `Record`\<`string`, `T` \| `null` \| (`T` \| `null`)[]\>
+> **ParsedQuery**\<`T`\> = `Record`\<`string`, `T` \| `null` \| (`T` \| `null`)[]\>
 
-## Type parameters
+Defined in: [src/utils/types.ts:272](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L272)
 
-• **T** = `string`
+## Type Parameters
 
-## Source
+### T
 
-[src/utils/types.ts:272](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/types.ts#L272)
+`T` = `string`

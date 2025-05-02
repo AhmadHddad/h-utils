@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,12 +8,16 @@
 
 > **isObjectLike**(`value`): `value is object`
 
+Defined in: [src/utils/validation/isObjectLike.ts:16](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/validation/isObjectLike.ts#L16)
+
 Checks if `value` is object-like. A value is object-like if it's not `null`
 and has a `typeof` result of "object".
 
 ## Parameters
 
-• **value**: `any`
+### value
+
+`any`
 
 ## Returns
 
@@ -34,7 +38,3 @@ isObjectLike(Function) // false
 
 isObjectLike(null) // false
 ```
-
-## Source
-
-[src/utils/validation/isObjectLike.ts:16](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/validation/isObjectLike.ts#L16)

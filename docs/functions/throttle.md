@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,7 +6,9 @@
 
 # Function: throttle()
 
-> **throttle**\<`T`\>(`func`, `wait`?, `options`?): () => `void` \| (...`args`) => `any`
+> **throttle**\<`T`\>(`func`, `wait?`, `options?`): () => `void` \| \{(...`args`): `any`; `cancel`: () => `void`; `flush`: () => `any`; `pending`: () => `boolean`; \}
+
+Defined in: [src/utils/functions/throttle.ts:52](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/functions/throttle.ts#L52)
 
 Creates a throttled function that only invokes `func` at most once per
 every `wait` milliseconds (or once per browser frame). The throttled function
@@ -31,36 +33,46 @@ invocation will be deferred until the next frame is drawn (typically about
 See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
 for details over the differences between `throttle` and `debounce`.
 
-## Type parameters
+## Type Parameters
 
-• **T** = `any`
+### T
+
+`T` = `any`
 
 ## Parameters
 
-• **func**
+### func
+
+(...`args`) => `T`
 
 The function to throttle.
 
-• **wait?**: `number`= `200`
+### wait?
+
+`number` = `200`
 
 The number of milliseconds to throttle invocations to; if omitted,
  `requestAnimationFrame` is used (if available).
 
-• **options?**
+### options?
 
 The options object.
 
-• **options.leading?**: `boolean`
+#### leading
+
+`boolean`
 
 Specify invoking on the leading edge of the timeout.
 
-• **options.trailing?**: `boolean`
+#### trailing
+
+`boolean`
 
 Specify invoking on the trailing edge of the timeout.
 
 ## Returns
 
-() => `void` \| (...`args`) => `any`
+() => `void` \| \{(...`args`): `any`; `cancel`: () => `void`; `flush`: () => `any`; `pending`: () => `boolean`; \}
 
 Returns the new throttled function.
 
@@ -81,7 +93,3 @@ jQuery(element).on('click', throttled)
 // Cancel the trailing throttled invocation.
 jQuery(window).on('popstate', throttled.cancel)
 ```
-
-## Source
-
-[src/utils/functions/throttle.ts:52](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/functions/throttle.ts#L52)

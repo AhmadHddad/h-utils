@@ -1,10 +1,12 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / BrowserURLUpdater
 
 # Class: BrowserURLUpdater
+
+Defined in: [src/classes/BrowserURLUpdater.ts:14](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L14)
 
 ## Important
 
@@ -23,113 +25,115 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 ## Constructors
 
-### new BrowserURLUpdater()
+### Constructor
 
-> **new BrowserURLUpdater**(`url`, `reloadOnEveryChange`?): [`BrowserURLUpdater`](BrowserURLUpdater.md)
+> **new BrowserURLUpdater**(`url`, `reloadOnEveryChange?`): `BrowserURLUpdater`
+
+Defined in: [src/classes/BrowserURLUpdater.ts:19](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L19)
 
 #### Parameters
 
-• **url**: `string`= `window.location.href`
+##### url
 
-• **reloadOnEveryChange?**: `boolean`
+`string` = `window.location.href`
+
+##### reloadOnEveryChange?
+
+`boolean`
 
 #### Returns
 
-[`BrowserURLUpdater`](BrowserURLUpdater.md)
-
-#### Source
-
-[src/classes/BrowserURLUpdater.ts:19](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/BrowserURLUpdater.ts#L19)
-
-## Properties
-
-### \_reload
-
-> `private` **\_reload**: `boolean`
-
-#### Source
-
-[src/classes/BrowserURLUpdater.ts:16](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/BrowserURLUpdater.ts#L16)
-
-***
-
-### \_state
-
-> `private` **\_state**: `any` = `{}`
-
-#### Source
-
-[src/classes/BrowserURLUpdater.ts:17](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/BrowserURLUpdater.ts#L17)
-
-***
-
-### \_url
-
-> `private` **\_url**: `URL`
-
-#### Source
-
-[src/classes/BrowserURLUpdater.ts:15](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/BrowserURLUpdater.ts#L15)
+`BrowserURLUpdater`
 
 ## Accessors
 
 ### reload
 
-> `get` **reload**(): `boolean`
+#### Get Signature
 
-> `set` **reload**(`value`): `void`
+> **get** **reload**(): `boolean`
 
-#### Parameters
+Defined in: [src/classes/BrowserURLUpdater.ts:89](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L89)
 
-• **value**: `boolean`
-
-#### Returns
+##### Returns
 
 `boolean`
 
-#### Source
+#### Set Signature
 
-[src/classes/BrowserURLUpdater.ts:89](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/BrowserURLUpdater.ts#L89)
+> **set** **reload**(`value`): `void`
+
+Defined in: [src/classes/BrowserURLUpdater.ts:93](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L93)
+
+##### Parameters
+
+###### value
+
+`boolean`
+
+##### Returns
+
+`void`
 
 ***
 
 ### state
 
-> `get` **state**(): `any`
+#### Get Signature
 
-> `set` **state**(`value`): `void`
+> **get** **state**(): `any`
 
-#### Parameters
+Defined in: [src/classes/BrowserURLUpdater.ts:97](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L97)
 
-• **value**: `any`
-
-#### Returns
+##### Returns
 
 `any`
 
-#### Source
+#### Set Signature
 
-[src/classes/BrowserURLUpdater.ts:97](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/BrowserURLUpdater.ts#L97)
+> **set** **state**(`value`): `void`
+
+Defined in: [src/classes/BrowserURLUpdater.ts:101](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L101)
+
+##### Parameters
+
+###### value
+
+`any`
+
+##### Returns
+
+`void`
 
 ***
 
 ### url
 
-> `get` **url**(): `string`
+#### Get Signature
 
-> `set` **url**(`value`): `void`
+> **get** **url**(): `string`
 
-#### Parameters
+Defined in: [src/classes/BrowserURLUpdater.ts:85](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L85)
 
-• **value**: `string`
-
-#### Returns
+##### Returns
 
 `string`
 
-#### Source
+#### Set Signature
 
-[src/classes/BrowserURLUpdater.ts:85](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/BrowserURLUpdater.ts#L85)
+> **set** **url**(`value`): `void`
+
+Defined in: [src/classes/BrowserURLUpdater.ts:81](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L81)
+
+##### Parameters
+
+###### value
+
+`string`
+
+##### Returns
+
+`void`
 
 ## Methods
 
@@ -137,13 +141,11 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 > **getFragment**(): `string`
 
+Defined in: [src/classes/BrowserURLUpdater.ts:72](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L72)
+
 #### Returns
 
 `string`
-
-#### Source
-
-[src/classes/BrowserURLUpdater.ts:72](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/BrowserURLUpdater.ts#L72)
 
 ***
 
@@ -151,31 +153,29 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 > **getPath**(): `string`
 
+Defined in: [src/classes/BrowserURLUpdater.ts:53](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L53)
+
 #### Returns
 
 `string`
-
-#### Source
-
-[src/classes/BrowserURLUpdater.ts:53](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/BrowserURLUpdater.ts#L53)
 
 ***
 
 ### getQueryParam()
 
-> **getQueryParam**(`key`): `null` \| `string`
+> **getQueryParam**(`key`): `string`
+
+Defined in: [src/classes/BrowserURLUpdater.ts:49](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L49)
 
 #### Parameters
 
-• **key**: `string`
+##### key
+
+`string`
 
 #### Returns
 
-`null` \| `string`
-
-#### Source
-
-[src/classes/BrowserURLUpdater.ts:49](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/BrowserURLUpdater.ts#L49)
+`string`
 
 ***
 
@@ -183,13 +183,11 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 > **removeFragment**(): `void`
 
+Defined in: [src/classes/BrowserURLUpdater.ts:76](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L76)
+
 #### Returns
 
 `void`
-
-#### Source
-
-[src/classes/BrowserURLUpdater.ts:76](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/BrowserURLUpdater.ts#L76)
 
 ***
 
@@ -197,13 +195,11 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 > **removePath**(): `void`
 
+Defined in: [src/classes/BrowserURLUpdater.ts:62](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L62)
+
 #### Returns
 
 `void`
-
-#### Source
-
-[src/classes/BrowserURLUpdater.ts:62](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/BrowserURLUpdater.ts#L62)
 
 ***
 
@@ -211,17 +207,17 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 > **removeQueryParam**(`key`): `void`
 
+Defined in: [src/classes/BrowserURLUpdater.ts:44](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L44)
+
 #### Parameters
 
-• **key**: `string`
+##### key
+
+`string`
 
 #### Returns
 
 `void`
-
-#### Source
-
-[src/classes/BrowserURLUpdater.ts:44](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/BrowserURLUpdater.ts#L44)
 
 ***
 
@@ -229,17 +225,17 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 > **setFragment**(`fragment`): `void`
 
+Defined in: [src/classes/BrowserURLUpdater.ts:67](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L67)
+
 #### Parameters
 
-• **fragment**: `string`
+##### fragment
+
+`string`
 
 #### Returns
 
 `void`
-
-#### Source
-
-[src/classes/BrowserURLUpdater.ts:67](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/BrowserURLUpdater.ts#L67)
 
 ***
 
@@ -247,17 +243,17 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 > **setPath**(`path`): `void`
 
+Defined in: [src/classes/BrowserURLUpdater.ts:57](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L57)
+
 #### Parameters
 
-• **path**: `string`
+##### path
+
+`string`
 
 #### Returns
 
 `void`
-
-#### Source
-
-[src/classes/BrowserURLUpdater.ts:57](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/BrowserURLUpdater.ts#L57)
 
 ***
 
@@ -265,19 +261,21 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 > **setQueryParam**(`key`, `value`): `void`
 
+Defined in: [src/classes/BrowserURLUpdater.ts:35](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L35)
+
 #### Parameters
 
-• **key**: `string`
+##### key
 
-• **value**: `undefined` \| `string`
+`string`
+
+##### value
+
+`string`
 
 #### Returns
 
 `void`
-
-#### Source
-
-[src/classes/BrowserURLUpdater.ts:35](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/BrowserURLUpdater.ts#L35)
 
 ***
 
@@ -285,10 +283,8 @@ browserUrl.setQueryParam("bar", "1"); // will set the url to "www.foo.com/?bar=1
 
 > **updateURL**(): `void`
 
+Defined in: [src/classes/BrowserURLUpdater.ts:26](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/BrowserURLUpdater.ts#L26)
+
 #### Returns
 
 `void`
-
-#### Source
-
-[src/classes/BrowserURLUpdater.ts:26](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/BrowserURLUpdater.ts#L26)

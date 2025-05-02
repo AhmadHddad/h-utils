@@ -1,4 +1,4 @@
-**hd-utils** • [**Docs**](globals.md)
+**hd-utils**
 
 ***
 

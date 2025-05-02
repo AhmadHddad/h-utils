@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,13 +6,19 @@
 
 # Function: getFirstNLetters()
 
-> **getFirstNLetters**(`str`, `n`?): `string`
+> **getFirstNLetters**(`str`, `n?`): `string`
+
+Defined in: [src/utils/string/getFirstNLetters.ts:8](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/string/getFirstNLetters.ts#L8)
 
 ## Parameters
 
-• **str**: `string`
+### str
 
-• **n?**: `number`= `1`
+`string`
+
+### n?
+
+`number` = `1`
 
 ## Returns
 
@@ -27,7 +33,3 @@ Will return the first n number of letters.
 ```ts
 getFirstNLetters('javascript', 3) => jav
 ```
-
-## Source
-
-[src/utils/string/getFirstNLetters.ts:8](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/string/getFirstNLetters.ts#L8)

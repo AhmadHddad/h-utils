@@ -1,10 +1,12 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / SemverLite
 
 # Class: SemverLite
+
+Defined in: [src/classes/SemverLite.ts:7](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/SemverLite.ts#L7)
 
 ## Description
 
@@ -13,23 +15,13 @@ This is just a very lite semver implementation, if you need the actual thing you
 
 ## Constructors
 
-### new SemverLite()
+### Constructor
 
-> **new SemverLite**(): [`SemverLite`](SemverLite.md)
+> **new SemverLite**(): `SemverLite`
 
 #### Returns
 
-[`SemverLite`](SemverLite.md)
-
-## Properties
-
-### versionRegex
-
-> `static` `private` `readonly` **versionRegex**: `RegExp`
-
-#### Source
-
-[src/classes/SemverLite.ts:8](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/SemverLite.ts#L8)
+`SemverLite`
 
 ## Methods
 
@@ -37,9 +29,13 @@ This is just a very lite semver implementation, if you need the actual thing you
 
 > `static` **coerce**(`version`): `string`
 
+Defined in: [src/classes/SemverLite.ts:38](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/SemverLite.ts#L38)
+
 #### Parameters
 
-• **version**: `string`
+##### version
+
+`string`
 
 #### Returns
 
@@ -49,21 +45,23 @@ This is just a very lite semver implementation, if you need the actual thing you
 
 Extracts the numeric version part from a string.
 
-#### Source
-
-[src/classes/SemverLite.ts:38](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/SemverLite.ts#L38)
-
 ***
 
 ### greaterThan()
 
 > `static` **greaterThan**(`version1`, `version2`): `boolean`
 
+Defined in: [src/classes/SemverLite.ts:13](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/SemverLite.ts#L13)
+
 #### Parameters
 
-• **version1**: `string`
+##### version1
 
-• **version2**: `string`
+`string`
+
+##### version2
+
+`string`
 
 #### Returns
 
@@ -73,19 +71,19 @@ Extracts the numeric version part from a string.
 
 Compares two versions and returns true if version1 is greater than version2.
 
-#### Source
-
-[src/classes/SemverLite.ts:13](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/SemverLite.ts#L13)
-
 ***
 
 ### isValid()
 
 > `static` **isValid**(`version`): `boolean`
 
+Defined in: [src/classes/SemverLite.ts:31](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/SemverLite.ts#L31)
+
 #### Parameters
 
-• **version**: `string`
+##### version
+
+`string`
 
 #### Returns
 
@@ -95,21 +93,23 @@ Compares two versions and returns true if version1 is greater than version2.
 
 Checks if a version string is valid.
 
-#### Source
-
-[src/classes/SemverLite.ts:31](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/SemverLite.ts#L31)
-
 ***
 
 ### lessThan()
 
 > `static` **lessThan**(`version1`, `version2`): `boolean`
 
+Defined in: [src/classes/SemverLite.ts:22](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/SemverLite.ts#L22)
+
 #### Parameters
 
-• **version1**: `string`
+##### version1
 
-• **version2**: `string`
+`string`
+
+##### version2
+
+`string`
 
 #### Returns
 
@@ -119,19 +119,19 @@ Checks if a version string is valid.
 
 Compares two versions and returns true if version1 is less than version2.
 
-#### Source
-
-[src/classes/SemverLite.ts:22](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/SemverLite.ts#L22)
-
 ***
 
 ### minVersion()
 
 > `static` **minVersion**(`versions`): `string`
 
+Defined in: [src/classes/SemverLite.ts:46](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/SemverLite.ts#L46)
+
 #### Parameters
 
-• **versions**: `string`[]
+##### versions
+
+`string`[]
 
 #### Returns
 
@@ -141,19 +141,19 @@ Compares two versions and returns true if version1 is less than version2.
 
 Returns the smallest version from an array of versions.
 
-#### Source
-
-[src/classes/SemverLite.ts:46](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/SemverLite.ts#L46)
-
 ***
 
 ### parse()
 
 > `static` **parse**(`version`): `number`
 
+Defined in: [src/classes/SemverLite.ts:55](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/SemverLite.ts#L55)
+
 #### Parameters
 
-• **version**: `string`
+##### version
+
+`string`
 
 #### Returns
 
@@ -162,7 +162,3 @@ Returns the smallest version from an array of versions.
 #### Description
 
 Converts a version string into a comparable numeric value.
-
-#### Source
-
-[src/classes/SemverLite.ts:55](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/SemverLite.ts#L55)

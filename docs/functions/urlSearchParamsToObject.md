@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **urlSearchParamsToObject**(`entries`): `object`
 
+Defined in: [src/utils/general/urlSearchParamsToObject.ts:6](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/general/urlSearchParamsToObject.ts#L6)
+
 ## Parameters
 
-• **entries**: `URLSearchParams`
+### entries
+
+`URLSearchParams`
 
 ## Returns
 
@@ -25,7 +29,3 @@ It takes a URLSearchParams object and returns a normal js object
 ```ts
 urlSearchParamsToObject(new URLSearchParams()) => {}
 ```
-
-## Source
-
-[src/utils/general/urlSearchParamsToObject.ts:6](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/general/urlSearchParamsToObject.ts#L6)

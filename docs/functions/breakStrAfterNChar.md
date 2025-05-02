@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,11 +8,17 @@
 
 > **breakStrAfterNChar**(`str`, `maxWidth`): `string`
 
+Defined in: [src/utils/string/breakStrAfterNChar.ts:9](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/string/breakStrAfterNChar.ts#L9)
+
 ## Parameters
 
-• **str**: `string`
+### str
 
-• **maxWidth**: `number`
+`string`
+
+### maxWidth
+
+`number`
 
 ## Returns
 
@@ -29,7 +35,3 @@ breakStrAfterNChar("Javascript") => `Java
 scri
 pt`
 ```
-
-## Source
-
-[src/utils/string/breakStrAfterNChar.ts:9](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/string/breakStrAfterNChar.ts#L9)

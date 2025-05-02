@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **isTruthy**(`value`): `value is true`
 
+Defined in: [src/utils/validation/isTruthy.ts:7](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/validation/isTruthy.ts#L7)
+
 ## Parameters
 
-• **value**: `unknown`
+### value
+
+`unknown`
 
 any
 
@@ -31,7 +35,3 @@ isTruthy(1) // true
 ```ts
 isTruthy(null) // false
 ```
-
-## Source
-
-[src/utils/validation/isTruthy.ts:7](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/validation/isTruthy.ts#L7)

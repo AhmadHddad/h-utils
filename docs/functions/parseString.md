@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,17 +6,25 @@
 
 # Function: parseString()
 
-> **parseString**\<`T`\>(`str`, `config`?): `T`
+> **parseString**\<`T`\>(`str`, `config?`): `T`
 
-## Type parameters
+Defined in: [src/utils/string/parseString.ts:8](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/string/parseString.ts#L8)
 
-• **T** = `undefined` \| `null` \| `string` \| `number` \| `boolean` \| `object` \| []
+## Type Parameters
+
+### T
+
+`T` = `string` \| `number` \| `boolean` \| \{ \} \| \[\]
 
 ## Parameters
 
-• **str**: `undefined` \| `null` \| `string` \| `number`
+### str
 
-• **config?**: [`ParseStringOptions`](../type-aliases/ParseStringOptions.md)
+`string` | `number`
+
+### config?
+
+[`ParseStringOptions`](../type-aliases/ParseStringOptions.md)
 
 ## Returns
 
@@ -27,7 +35,3 @@
 It takes a string and returns a number, boolean, null, undefined, or a string that has "undefined" as string
 and returns the actual type.
 if "123" will return the number 123 and so on.
-
-## Source
-
-[src/utils/string/parseString.ts:8](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/string/parseString.ts#L8)

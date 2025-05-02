@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,13 +8,19 @@
 
 > **mapStringToColorFromArr**(`str`, `colorsArr`): `string`
 
+Defined in: [src/utils/string/mapStringToColorFromArr.ts:9](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/string/mapStringToColorFromArr.ts#L9)
+
 ## Parameters
 
-• **str**: `string`
+### str
+
+`string`
 
 The string you want to map to a color
 
-• **colorsArr**: `string`[]
+### colorsArr
+
+`string`[]
 
 an array of colors
 
@@ -27,7 +33,3 @@ A string
 ## Description
 
 It takes a string and an array of colors and returns a color from the array based on the string
-
-## Source
-
-[src/utils/string/mapStringToColorFromArr.ts:9](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/string/mapStringToColorFromArr.ts#L9)

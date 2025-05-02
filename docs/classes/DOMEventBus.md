@@ -1,10 +1,12 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / DOMEventBus
 
 # Class: DOMEventBus
+
+Defined in: [src/classes/DOMEventBus.ts:43](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/DOMEventBus.ts#L43)
 
 ## Important
 
@@ -53,61 +55,43 @@ defaultEventBus.unsubscribe('DefaultEvent', handleDefaultEvent);
 
 ## Constructors
 
-### new DOMEventBus()
+### Constructor
 
-> **new DOMEventBus**(`eventBusContainer`?): [`DOMEventBus`](DOMEventBus.md)
+> **new DOMEventBus**(`eventBusContainer?`): `DOMEventBus`
+
+Defined in: [src/classes/DOMEventBus.ts:47](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/DOMEventBus.ts#L47)
 
 #### Parameters
 
-• **eventBusContainer?**: [`Nullable`](../type-aliases/Nullable.md)\<`HTMLElement` \| `DocumentFragment`\>
+##### eventBusContainer?
+
+`HTMLElement` | `DocumentFragment`
 
 #### Returns
 
-[`DOMEventBus`](DOMEventBus.md)
-
-#### Source
-
-[src/classes/DOMEventBus.ts:47](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/DOMEventBus.ts#L47)
-
-## Properties
-
-### document
-
-> `private` **document**: `Document`
-
-#### Source
-
-[src/classes/DOMEventBus.ts:45](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/DOMEventBus.ts#L45)
-
-***
-
-### eventBusContainer
-
-> `private` **eventBusContainer**: `HTMLElement` \| `DocumentFragment`
-
-#### Source
-
-[src/classes/DOMEventBus.ts:44](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/DOMEventBus.ts#L44)
+`DOMEventBus`
 
 ## Methods
 
 ### publish()
 
-> **publish**(`event`, `data`?): `void`
+> **publish**(`event`, `data?`): `void`
+
+Defined in: [src/classes/DOMEventBus.ts:64](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/DOMEventBus.ts#L64)
 
 #### Parameters
 
-• **event**: `string`
+##### event
 
-• **data?**: `any`
+`string`
+
+##### data?
+
+`any`
 
 #### Returns
 
 `void`
-
-#### Source
-
-[src/classes/DOMEventBus.ts:64](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/DOMEventBus.ts#L64)
 
 ***
 
@@ -115,19 +99,21 @@ defaultEventBus.unsubscribe('DefaultEvent', handleDefaultEvent);
 
 > **subscribe**(`event`, `callback`): `void`
 
+Defined in: [src/classes/DOMEventBus.ts:54](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/DOMEventBus.ts#L54)
+
 #### Parameters
 
-• **event**: `string`
+##### event
 
-• **callback**: [`EventCallback`](../type-aliases/EventCallback.md)
+`string`
+
+##### callback
+
+[`EventCallback`](../type-aliases/EventCallback.md)
 
 #### Returns
 
 `void`
-
-#### Source
-
-[src/classes/DOMEventBus.ts:54](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/DOMEventBus.ts#L54)
 
 ***
 
@@ -135,16 +121,18 @@ defaultEventBus.unsubscribe('DefaultEvent', handleDefaultEvent);
 
 > **unsubscribe**(`event`, `callback`): `void`
 
+Defined in: [src/classes/DOMEventBus.ts:59](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/DOMEventBus.ts#L59)
+
 #### Parameters
 
-• **event**: `string`
+##### event
 
-• **callback**: [`EventCallback`](../type-aliases/EventCallback.md)
+`string`
+
+##### callback
+
+[`EventCallback`](../type-aliases/EventCallback.md)
 
 #### Returns
 
 `void`
-
-#### Source
-
-[src/classes/DOMEventBus.ts:59](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/DOMEventBus.ts#L59)

@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,13 +6,19 @@
 
 # Function: parseUrl()
 
-> **parseUrl**(`url`, `options`?): [`ParsedUrl`](../type-aliases/ParsedUrl.md)
+> **parseUrl**(`url`, `options?`): [`ParsedUrl`](../type-aliases/ParsedUrl.md)
+
+Defined in: [src/utils/route/parseUrl.ts:19](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/route/parseUrl.ts#L19)
 
 ## Parameters
 
-• **url**: `string`
+### url
 
-• **options?**: [`ParseOptions`](../type-aliases/ParseOptions.md)
+`string`
+
+### options?
+
+[`ParseOptions`](../type-aliases/ParseOptions.md)
 
 ## Returns
 
@@ -32,7 +38,3 @@ parseUrl('https://foo.bar?foo=bar');
 parseUrl('https://foo.bar?foo=bar#xyz', {parseFragmentIdentifier: true});
 //=> {url: 'https://foo.bar', query: {foo: 'bar'}, fragmentIdentifier: 'xyz'}
 ```
-
-## Source
-
-[src/utils/route/parseUrl.ts:19](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/route/parseUrl.ts#L19)

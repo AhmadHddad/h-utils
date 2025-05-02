@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **isArrayOfStrings**(`value`): `value is string[]`
 
+Defined in: [src/utils/validation/isArrayOfStrings.ts:6](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/validation/isArrayOfStrings.ts#L6)
+
 ## Parameters
 
-• **value**: `unknown`
+### value
+
+`unknown`
 
 ## Returns
 
@@ -21,7 +25,3 @@ A function that takes a value and returns a boolean.
 ## Description
 
 It returns true if the value is an array of strings, otherwise it returns false
-
-## Source
-
-[src/utils/validation/isArrayOfStrings.ts:6](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/validation/isArrayOfStrings.ts#L6)

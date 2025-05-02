@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,11 +8,15 @@
 
 > **isSymbol**(`value`): `value is Symbol`
 
+Defined in: [src/utils/validation/isSymbol.ts:17](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/validation/isSymbol.ts#L17)
+
 Checks if `value` is classified as a `Symbol` primitive or object.
 
 ## Parameters
 
-• **value**: `unknown`
+### value
+
+`unknown`
 
 The value to check.
 
@@ -31,7 +35,3 @@ isSymbol(Symbol.iterator)
 isSymbol('abc')
 // => false
 ```
-
-## Source
-
-[src/utils/validation/isSymbol.ts:17](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/validation/isSymbol.ts#L17)

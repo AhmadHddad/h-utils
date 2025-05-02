@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **getUrlSearchParams**(`url`): `URLSearchParams`
 
+Defined in: [src/utils/route/getUrlSearchParams.ts:7](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/route/getUrlSearchParams.ts#L7)
+
 ## Parameters
 
-• **url**: `string`
+### url
+
+`string`
 
 ## Returns
 
@@ -19,7 +23,3 @@
 ## Description
 
 will get url search params for the passed url
-
-## Source
-
-[src/utils/route/getUrlSearchParams.ts:7](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/route/getUrlSearchParams.ts#L7)

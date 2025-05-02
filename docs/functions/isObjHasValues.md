@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,15 +8,23 @@
 
 > **isObjHasValues**(`param`, `__namedParameters`): `boolean`
 
+Defined in: [src/utils/validation/isObjHasValues.ts:15](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/validation/isObjHasValues.ts#L15)
+
 ## Parameters
 
-• **param**: `object` \| `object`
+### param
 
-• **\_\_namedParameters**
+`object` | \{ \}
 
-• **\_\_namedParameters.predict?**
+### \_\_namedParameters
 
-• **\_\_namedParameters.truthyValues**: `boolean`= `false`
+#### predict?
+
+(`p?`) => `boolean`
+
+#### truthyValues
+
+`boolean` = `false`
 
 ## Returns
 
@@ -49,7 +57,3 @@ isObjHasValues({a:"1"}, {truthyValues:true}) => true
 ```ts
 isObjHasValues({a:"1"}, {predict:val => typeof val === "number"}) => false
 ```
-
-## Source
-
-[src/utils/validation/isObjHasValues.ts:15](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/validation/isObjHasValues.ts#L15)

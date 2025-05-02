@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,15 +8,21 @@
 
 > **onTimeout**(`timeout`, `callback`): () => `void`
 
+Defined in: [src/utils/general/onTimeout.ts:13](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/general/onTimeout.ts#L13)
+
 ## Parameters
 
-• **timeout**: `number`
+### timeout
 
-• **callback**
+`number`
+
+### callback
+
+() => `void`
 
 ## Returns
 
-`Function`
+> (): `void`
 
 ### Returns
 
@@ -37,7 +43,3 @@ a cleaner way to use setTimeout with ability to clear timeout wihtout saving the
 cancelTimeout();
 `
 ```
-
-## Source
-
-[src/utils/general/onTimeout.ts:13](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/general/onTimeout.ts#L13)

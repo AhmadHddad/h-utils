@@ -1,25 +1,33 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
-[hd-utils](../globals.md) / jsonToFormData
+[hd-utils](../globals.md) / jsonToFormDataText
 
-# Function: jsonToFormData()
+# Function: jsonToFormDataText()
 
-> **jsonToFormData**(`jsonData`, `type`?, `boundary`?): `string`
+> **jsonToFormDataText**(`jsonData`, `type?`, `boundary?`): `string`
+
+Defined in: [src/utils/formData/jsonToFormDataText.ts:23](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/formData/jsonToFormDataText.ts#L23)
 
 ## Parameters
 
-• **jsonData**: `Record`\<`string`, `unknown`\>
+### jsonData
+
+`Record`\<`string`, `unknown`\>
 
 The JSON object where keys are form field names 
 and values can be strings, numbers, arrays, or nested objects.
 
-• **type?**: `"form-data"` \| `"related"` \| `"mixed"` \| `"urlencoded"`= `'form-data'`
+### type?
 
 The type of format to use.
 
-• **boundary?**: `string`
+`"form-data"` | `"related"` | `"mixed"` | `"urlencoded"`
+
+### boundary?
+
+`string`
 
 The boundary string used to separate parts of the form data (required for multipart).
 
@@ -42,13 +50,9 @@ supporting `form-data`, `related`, `mixed`, and `application/x-www-form-urlencod
 ```ts
 const json = { username: 'john_doe', age: 30, files: ['file1.png', 'file2.jpg'] };
 const boundary = '----WebKitFormBoundary123456';
-const formDataText = jsonToFormData(json, boundary, 'form-data');
+const formDataText = jsonToFormDataText(json, boundary, 'form-data');
 console.log(formDataText); // Outputs multipart/form-data formatted string
 
-const urlEncodedText = jsonToFormData(json, undefined, 'urlencoded');
+const urlEncodedText = jsonToFormDataText(json, undefined, 'urlencoded');
 console.log(urlEncodedText); // Outputs application/x-www-form-urlencoded string
 ```
-
-## Source
-
-src/utils/formData/jsonToFormData.ts:23

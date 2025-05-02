@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,11 +8,15 @@
 
 > **generateCacheKey**(`payload`): `string`
 
+Defined in: [src/utils/crypto/generateCacheKey.ts:9](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/crypto/generateCacheKey.ts#L9)
+
 Will generate a unique cache key for the passed payload
 
 ## Parameters
 
-• **payload**: [`Utf8EncodeTypes`](../type-aliases/Utf8EncodeTypes.md)
+### payload
+
+[`Utf8EncodeTypes`](../type-aliases/Utf8EncodeTypes.md)
 
 ## Returns
 
@@ -21,7 +25,3 @@ Will generate a unique cache key for the passed payload
 ## Date
 
 10/25/2023 - 11:14:03 AM
-
-## Source
-
-[src/utils/crypto/generateCacheKey.ts:9](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/crypto/generateCacheKey.ts#L9)

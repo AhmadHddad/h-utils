@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,19 +6,29 @@
 
 # Function: removeDuplicatesFromArr()
 
-> **removeDuplicatesFromArr**\<`T`\>(`arr`, `key`?, `deepCompare`?): `T`[]
+> **removeDuplicatesFromArr**\<`T`\>(`arr`, `key?`, `deepCompare?`): `T`[]
 
-## Type parameters
+Defined in: [src/utils/array/removeDuplicatesFromArr.ts:8](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/array/removeDuplicatesFromArr.ts#L8)
 
-• **T** = `any`
+## Type Parameters
+
+### T
+
+`T` = `any`
 
 ## Parameters
 
-• **arr**: `T`[]= `[]`
+### arr
 
-• **key?**: `string`
+`T`[] = `[]`
 
-• **deepCompare?**: `boolean`
+### key?
+
+`string`
+
+### deepCompare?
+
+`boolean`
 
 ## Returns
 
@@ -37,7 +47,3 @@ removeDuplicatesFromArr([{a:1}, {a:1}, {a:2}], key:"a") => [{a:1},{a:2}]
 ```ts
 removeDuplicatesFromArr([{a:1}, {a:1}, {a:2}], key:"", deepCompare:true) => [{a:1},{a:2}]
 ```
-
-## Source
-
-[src/utils/array/removeDuplicatesFromArr.ts:8](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/array/removeDuplicatesFromArr.ts#L8)

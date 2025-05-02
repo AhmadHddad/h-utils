@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,17 +6,27 @@
 
 # Function: toArray()
 
-> **toArray**(`source`): `any`[]
+> **toArray**\<`T`\>(`source`): `T`[]
+
+Defined in: [src/utils/general/toArray.ts:9](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/general/toArray.ts#L9)
+
+## Type Parameters
+
+### T
+
+`T` = `any`
 
 ## Parameters
 
-• **source**: `unknown`
+### source
+
+`unknown`
 
 unknown
 
 ## Returns
 
-`any`[]
+`T`[]
 
 An array.
 
@@ -37,7 +47,3 @@ toArray([21]) // [21]
 ```ts
 toArray({}) // [{}]
 ```
-
-## Source
-
-[src/utils/general/toArray.ts:10](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/general/toArray.ts#L10)

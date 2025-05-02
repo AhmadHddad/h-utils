@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -7,6 +7,8 @@
 # Function: getWindow()
 
 > **getWindow**(): `Window` & *typeof* `globalThis`
+
+Defined in: [src/utils/browser/getWindow.ts:158](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/browser/getWindow.ts#L158)
 
 ## Returns
 
@@ -21,7 +23,3 @@ will get the window object or a mock. this is good for SSR.
 ```ts
 getWindow().document
 ```
-
-## Source
-
-[src/utils/browser/getWindow.ts:158](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/browser/getWindow.ts#L158)

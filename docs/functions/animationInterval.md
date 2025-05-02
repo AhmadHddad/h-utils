@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,13 +8,21 @@
 
 > **animationInterval**(`ms`, `signal`, `callback`): `void`
 
+Defined in: [src/utils/browser/animationInterval.ts:16](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/browser/animationInterval.ts#L16)
+
 ## Parameters
 
-• **ms**: `number`
+### ms
 
-• **signal**: `AbortSignal`
+`number`
 
-• **callback**
+### signal
+
+`AbortSignal`
+
+### callback
+
+(`time`) => `void`
 
 ## Returns
 
@@ -38,7 +46,3 @@ animationInterval(1000, controller.signal, time => {
 // And to stop it:
 controller.abort();
 ```
-
-## Source
-
-[src/utils/browser/animationInterval.ts:16](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/browser/animationInterval.ts#L16)

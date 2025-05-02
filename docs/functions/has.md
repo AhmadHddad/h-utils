@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,15 +8,23 @@
 
 > **has**\<`T`\>(`objectType`, `key`): `boolean`
 
-## Type parameters
+Defined in: [src/utils/object/has.ts:6](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/object/has.ts#L6)
 
-• **T** *extends* `Record`\<`any`, `any`\>
+## Type Parameters
+
+### T
+
+`T` *extends* `Record`\<`any`, `any`\>
 
 ## Parameters
 
-• **objectType**: `T`
+### objectType
 
-• **key**: `string`
+`T`
+
+### key
+
+`string`
 
 ## Returns
 
@@ -31,7 +39,3 @@ Shortcut function for checking if an object has a given property directly on its
 ```ts
 has({a:1, b:2}, "a") => true
 ```
-
-## Source
-
-[src/utils/object/has.ts:6](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/object/has.ts#L6)

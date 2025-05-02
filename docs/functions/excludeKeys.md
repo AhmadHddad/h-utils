@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,25 +8,33 @@
 
 > **excludeKeys**\<`T`\>(`object`, `predicate`): `object`
 
+Defined in: [src/utils/object/excludeKeys.ts:21](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/object/excludeKeys.ts#L21)
+
 "It returns a new object with the same keys as the original object, except for the keys that match
 the predicate."
 
 The predicate is a function that takes three arguments: the key, the value, and the object. It
 returns true if the key should be included in the new object, and false if it should be excluded
 
-## Type parameters
+## Type Parameters
 
-• **T** *extends* `object`
+### T
+
+`T` *extends* `object`
 
 ## Parameters
 
-• **object**: `T`
+### object
+
+`T`
 
 The object to filter.
 
-• **predicate**: [`KeysArr`](../type-aliases/KeysArr.md) \| [`PredicateFunc`](../type-aliases/PredicateFunc.md)\<`T`\>
+### predicate
 
 A function that returns true if the key should be included.
+
+[`KeysArr`](../type-aliases/KeysArr.md) | [`PredicateFunc`](../type-aliases/PredicateFunc.md)\<`T`\>
 
 ## Returns
 
@@ -47,7 +55,3 @@ excludeKeys({
    bar: false
 }, ["foo"]) => {bar:true}
 ```
-
-## Source
-
-[src/utils/object/excludeKeys.ts:21](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/object/excludeKeys.ts#L21)

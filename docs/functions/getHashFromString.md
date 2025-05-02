@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **getHashFromString**(`url`): `string`
 
+Defined in: [src/utils/string/getHashFromString.ts:5](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/string/getHashFromString.ts#L5)
+
 ## Parameters
 
-• **url**: `string`
+### url
+
+`string`
 
 ## Returns
 
@@ -25,7 +29,3 @@ will return the hash (fragment) part of a url
 ```ts
 "www.example.com#link" => "#link"
 ```
-
-## Source
-
-[src/utils/string/getHashFromString.ts:5](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/string/getHashFromString.ts#L5)

@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **camelCaseToKebab**(`str`): `string`
 
+Defined in: [src/utils/string/camelCaseToKebab.ts:7](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/string/camelCaseToKebab.ts#L7)
+
 ## Parameters
 
-• **str**: `string`
+### str
+
+`string`
 
 ## Returns
 
@@ -25,7 +29,3 @@ will convert the passed string camel-case to kebab case.
 ```ts
 camelCaseToKebab("backgroundColor") // background-color
 ```
-
-## Source
-
-[src/utils/string/camelCaseToKebab.ts:7](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/string/camelCaseToKebab.ts#L7)

@@ -1,14 +1,26 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / SetDifference
 
-# Type alias: SetDifference\<A, B\>
+# Type Alias: SetDifference\<A, B\>
 
-> **SetDifference**\<`A`, `B`\>: `A` *extends* `B` ? `never` : `A`
+> **SetDifference**\<`A`, `B`\> = `A` *extends* `B` ? `never` : `A`
+
+Defined in: [src/utils/utilityTypes.ts:168](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/utilityTypes.ts#L168)
 
 SetDifference (same as Exclude)
+
+## Type Parameters
+
+### A
+
+`A`
+
+### B
+
+`B`
 
 ## Desc
 
@@ -23,13 +35,3 @@ Set difference of given union types `A` and `B`
   // Expect: string | number
   SetDifference<string | number | (() => void), Function>;
 ```
-
-## Type parameters
-
-• **A**
-
-• **B**
-
-## Source
-
-[src/utils/utilityTypes.ts:168](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/utilityTypes.ts#L168)

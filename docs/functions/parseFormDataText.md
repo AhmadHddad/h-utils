@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,7 +6,9 @@
 
 # Function: parseFormDataText()
 
-> **parseFormDataText**(`dataText`, `boundary`?): `Record`\<`string`, `unknown`\>
+> **parseFormDataText**(`dataText`, `boundary?`): `Record`\<`string`, `unknown`\>
+
+Defined in: [src/utils/formData/parseFormDataText.ts:27](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/formData/parseFormDataText.ts#L27)
 
 Parses a multipart/form-data or application/x-www-form-urlencoded formatted string into a JSON object.
 
@@ -16,11 +18,15 @@ application/x-www-form-urlencoded. If a boundary is not provided, it will be inf
 
 ## Parameters
 
-• **dataText**: `string`
+### dataText
+
+`string`
 
 The formatted string to parse, either multipart or URL-encoded.
 
-• **boundary?**: `string`
+### boundary?
+
+`string`
 
 The boundary string used to separate parts of the form data (required for multipart).
 
@@ -45,7 +51,3 @@ const urlEncodedData = 'username=john_doe&age=30';
 const parsedUrlData = parseFormDataText(urlEncodedData);
 console.log(parsedUrlData); // { username: 'john_doe', age: '30' }
 ```
-
-## Source
-
-src/utils/formData/parseFormDataText.ts:27

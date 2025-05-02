@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,19 +6,27 @@
 
 # Function: stringToHslColor()
 
-> **stringToHslColor**(`string`, `saturation`?, `lightness`?): `string`
+> **stringToHslColor**(`string`, `saturation?`, `lightness?`): `string`
+
+Defined in: [src/utils/string/stringToHslColor.ts:22](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/string/stringToHslColor.ts#L22)
 
 ## Parameters
 
-• **string**: `string`
+### string
+
+`string`
 
 The string to convert to a color.
 
-• **saturation?**: `number`= `100`
+### saturation?
+
+`number` = `100`
 
 0-100
 
-• **lightness?**: `number`= `75`
+### lightness?
+
+`number` = `75`
 
 0-100
 
@@ -45,7 +53,3 @@ The function returns a string in the format `hsl(hue, saturation, lightness)`.
 The function uses the [Fowler–Noll–Vo hash
 function](https://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function) to convert the
 string to a
-
-## Source
-
-[src/utils/string/stringToHslColor.ts:22](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/string/stringToHslColor.ts#L22)

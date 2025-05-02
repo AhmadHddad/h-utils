@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **addAndOrConjunctionsToStrArray**(`stringArray`): `string`
 
+Defined in: [src/utils/string/addAndOrConjunctionsToStrArray.ts:10](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/string/addAndOrConjunctionsToStrArray.ts#L10)
+
 ## Parameters
 
-• **stringArray**: `string`[]
+### stringArray
+
+`string`[]
 
 string[]
 
@@ -37,7 +41,3 @@ It takes an array of strings and returns a string with "And", "Or", "," in the s
 ```ts
 ["Car", "-Laptop", "Home"]=> Car or Laptop and Home.
 ```
-
-## Source
-
-[src/utils/string/addAndOrConjunctionsToStrArray.ts:10](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/string/addAndOrConjunctionsToStrArray.ts#L10)

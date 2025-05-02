@@ -1,10 +1,12 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / EventBus
 
 # Class: EventBus
+
+Defined in: [src/classes/EventBus.ts:27](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/EventBus.ts#L27)
 
 ## Description
 
@@ -35,47 +37,37 @@ eventBus.publish('event1', { message: 'This will not be handled.' });
 
 ## Constructors
 
-### new EventBus()
+### Constructor
 
-> **new EventBus**(): [`EventBus`](EventBus.md)
+> **new EventBus**(): `EventBus`
+
+Defined in: [src/classes/EventBus.ts:30](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/EventBus.ts#L30)
 
 #### Returns
 
-[`EventBus`](EventBus.md)
-
-#### Source
-
-[src/classes/EventBus.ts:30](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/EventBus.ts#L30)
-
-## Properties
-
-### listeners
-
-> `private` **listeners**: `Map`\<`string`, [`EventCallback`](../type-aliases/EventCallback.md)[]\>
-
-#### Source
-
-[src/classes/EventBus.ts:28](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/EventBus.ts#L28)
+`EventBus`
 
 ## Methods
 
 ### publish()
 
-> **publish**(`event`, `data`?): `void`
+> **publish**(`event`, `data?`): `void`
+
+Defined in: [src/classes/EventBus.ts:63](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/EventBus.ts#L63)
 
 #### Parameters
 
-• **event**: `string`
+##### event
 
-• **data?**: `any`
+`string`
+
+##### data?
+
+`any`
 
 #### Returns
 
 `void`
-
-#### Source
-
-[src/classes/EventBus.ts:63](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/EventBus.ts#L63)
 
 ***
 
@@ -83,19 +75,21 @@ eventBus.publish('event1', { message: 'This will not be handled.' });
 
 > **subscribe**(`event`, `callback`): `void`
 
+Defined in: [src/classes/EventBus.ts:36](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/EventBus.ts#L36)
+
 #### Parameters
 
-• **event**: `string`
+##### event
 
-• **callback**: [`EventCallback`](../type-aliases/EventCallback.md)
+`string`
+
+##### callback
+
+[`EventCallback`](../type-aliases/EventCallback.md)
 
 #### Returns
 
 `void`
-
-#### Source
-
-[src/classes/EventBus.ts:36](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/EventBus.ts#L36)
 
 ***
 
@@ -103,16 +97,18 @@ eventBus.publish('event1', { message: 'This will not be handled.' });
 
 > **unsubscribe**(`event`, `callback`): `void`
 
+Defined in: [src/classes/EventBus.ts:50](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/classes/EventBus.ts#L50)
+
 #### Parameters
 
-• **event**: `string`
+##### event
 
-• **callback**: [`EventCallback`](../type-aliases/EventCallback.md)
+`string`
+
+##### callback
+
+[`EventCallback`](../type-aliases/EventCallback.md)
 
 #### Returns
 
 `void`
-
-#### Source
-
-[src/classes/EventBus.ts:50](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/classes/EventBus.ts#L50)

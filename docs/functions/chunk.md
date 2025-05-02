@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,15 +8,23 @@
 
 > **chunk**\<`T`\>(`array`, `size`): `T`[][]
 
-## Type parameters
+Defined in: [src/utils/array/chunk.ts:5](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/array/chunk.ts#L5)
 
-• **T**
+## Type Parameters
+
+### T
+
+`T`
 
 ## Parameters
 
-• **array**: `T`[]
+### array
 
-• **size**: `number`
+`T`[]
+
+### size
+
+`number`
 
 ## Returns
 
@@ -31,7 +39,3 @@ Takes an array and a chunk size as parameters and returns an array of arrays.
 ```ts
 chunk(['a', 'b', 'c', 'd'], 2) //[['a', 'b'], ['c', 'd']]
 ```
-
-## Source
-
-[src/utils/array/chunk.ts:5](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/array/chunk.ts#L5)

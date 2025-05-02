@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,15 +6,19 @@
 
 # Function: extractUrlsFromString()
 
-> **extractUrlsFromString**(`str`): `RegExpMatchArray` \| []
+> **extractUrlsFromString**(`str`): \[\] \| `RegExpMatchArray`
+
+Defined in: [src/utils/string/extractUrlsFromString.ts:7](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/string/extractUrlsFromString.ts#L7)
 
 ## Parameters
 
-• **str**: `string`
+### str
+
+`string`
 
 ## Returns
 
-`RegExpMatchArray` \| []
+\[\] \| `RegExpMatchArray`
 
 ## Description
 
@@ -25,7 +29,3 @@ will extract all urls from a long string and return a list of the urls.
 ```ts
 "Hello, visit me at www.example.com!" => ["www.example.com"]
 ```
-
-## Source
-
-[src/utils/string/extractUrlsFromString.ts:7](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/string/extractUrlsFromString.ts#L7)

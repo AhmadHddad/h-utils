@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,11 +8,17 @@
 
 > **stringIncludes**(`stringOrStrings`, `searchStrings`): `boolean`
 
+Defined in: [src/utils/string/stringIncludes.ts:14](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/string/stringIncludes.ts#L14)
+
 ## Parameters
 
-• **stringOrStrings**: `string` \| `string`[]
+### stringOrStrings
 
-• **searchStrings**: `string` \| `string`[]
+`string` | `string`[]
+
+### searchStrings
+
+`string` | `string`[]
 
 ## Returns
 
@@ -34,7 +40,3 @@ const y = ['apple', 'orange', 'banana'];
 stringIncludes(y, 'app'); // true;
 stringIncludes(y, ['app', 'grape']); // true;
 ```
-
-## Source
-
-[src/utils/string/stringIncludes.ts:14](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/string/stringIncludes.ts#L14)

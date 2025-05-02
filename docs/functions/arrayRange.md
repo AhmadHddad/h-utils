@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,17 +8,25 @@
 
 > **arrayRange**(`a`, `b`, `step`): [`StringOrNumber`](../type-aliases/StringOrNumber.md)[]
 
+Defined in: [src/utils/array/arrayRange.ts:12](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/array/arrayRange.ts#L12)
+
 ## Parameters
 
-• **a**: [`Key`](../type-aliases/Key.md)
+### a
+
+[`Key`](../type-aliases/Key.md)
 
 The starting point of the array.
 
-• **b**: [`Key`](../type-aliases/Key.md)
+### b
+
+[`Key`](../type-aliases/Key.md)
 
 The ending value of the range.
 
-• **step**: `number`
+### step
+
+`number`
 
 The step value.
 
@@ -41,7 +49,3 @@ arrayRange(1,5) => [ 1, 2, 3, 4, 5 ]
 ```ts
 arrayRange("a", "c") => ["a", "b", "c"]
 ```
-
-## Source
-
-[src/utils/array/arrayRange.ts:12](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/array/arrayRange.ts#L12)

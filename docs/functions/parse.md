@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,16 +8,18 @@
 
 > **parse**(`query`, `options`): `any`
 
+Defined in: [src/utils/route/parse.ts:10](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/route/parse.ts#L10)
+
 ## Parameters
 
-• **query**: `any`
+### query
 
-• **options**: `any`
+`any`
+
+### options
+
+`any`
 
 ## Returns
 
 `any`
-
-## Source
-
-[src/utils/route/parse.ts:10](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/route/parse.ts#L10)

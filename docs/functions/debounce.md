@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,7 +6,9 @@
 
 # Function: debounce()
 
-> **debounce**\<`T`\>(`func`, `wait`?, `options`?): (...`args`) => `any`
+> **debounce**\<`T`\>(`func`, `wait?`, `options?`): \{(...`args`): `any`; `cancel`: () => `void`; `flush`: () => `any`; `pending`: () => `boolean`; \}
+
+Defined in: [src/utils/functions/debounce.ts:68](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/functions/debounce.ts#L68)
 
 Creates a debounced function that delays invoking `func` until after `wait`
 milliseconds have elapsed since the last time the debounced function was
@@ -32,34 +34,44 @@ invocation will be deferred until the next frame is drawn (typically about
 See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
 for details over the differences between `debounce` and `throttle`.
 
-## Type parameters
+## Type Parameters
 
-• **T** = `any`
+### T
+
+`T` = `any`
 
 ## Parameters
 
-• **func**
+### func
+
+(...`args`) => `T`
 
 The function to debounce.
 
-• **wait?**: `number`= `200`
+### wait?
+
+`number` = `200`
 
 The number of milliseconds to delay; if omitted, `requestAnimationFrame` is
  used (if available).
 
-• **options?**: [`DebounceOptions`](../type-aliases/DebounceOptions.md)
+### options?
+
+[`DebounceOptions`](../type-aliases/DebounceOptions.md)
 
 The options object.
 
 ## Returns
 
-`Function`
-
 Returns the new debounced function.
+
+> (...`args`): `any`
 
 ### Parameters
 
-• ...**args**: `any`[]
+#### args
+
+...`any`[]
 
 ### Returns
 
@@ -116,7 +128,3 @@ jQuery(window).on('popstate', debounced.cancel)
 // Check for pending invocations.
 const status = debounced.pending() ? "Pending..." : "Ready"
 ```
-
-## Source
-
-[src/utils/functions/debounce.ts:68](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/functions/debounce.ts#L68)

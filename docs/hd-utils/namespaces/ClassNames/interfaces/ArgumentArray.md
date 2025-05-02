@@ -1,14 +1,20 @@
-[**hd-utils**](../../../README.md) • **Docs**
+[**hd-utils**](../../../../README.md)
 
 ***
 
-[hd-utils](../../../globals.md) / [ClassNames](../README.md) / ArgumentArray
+[hd-utils](../../../../globals.md) / [ClassNames](../README.md) / ArgumentArray
 
 # Interface: ArgumentArray
+
+Defined in: [src/utils/types.ts:492](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L492)
 
 ## Extends
 
 - `Array`\<[`Argument`](../type-aliases/Argument.md)\>
+
+## Indexable
+
+\[`n`: `number`\]: [`Argument`](../type-aliases/Argument.md)
 
 ## Properties
 
@@ -16,15 +22,93 @@
 
 > `readonly` **\[unscopables\]**: `object`
 
+Defined in: node\_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:97
+
 Is an object whose properties have the value 'true'
 when they will be absent when used in a 'with' statement.
+
+#### Index Signature
+
+\[`key`: `number`\]: `boolean`
+
+#### \[iterator\]?
+
+> `optional` **\[iterator\]**: `boolean`
 
 #### \[unscopables\]?
 
-> `optional` `readonly` **\[unscopables\]**: `boolean`
+> `readonly` `optional` **\[unscopables\]**: `boolean`
 
 Is an object whose properties have the value 'true'
 when they will be absent when used in a 'with' statement.
+
+#### at?
+
+> `optional` **at**: `boolean`
+
+#### concat?
+
+> `optional` **concat**: `boolean`
+
+#### copyWithin?
+
+> `optional` **copyWithin**: `boolean`
+
+#### entries?
+
+> `optional` **entries**: `boolean`
+
+#### every?
+
+> `optional` **every**: `boolean`
+
+#### fill?
+
+> `optional` **fill**: `boolean`
+
+#### filter?
+
+> `optional` **filter**: `boolean`
+
+#### find?
+
+> `optional` **find**: `boolean`
+
+#### findIndex?
+
+> `optional` **findIndex**: `boolean`
+
+#### flat?
+
+> `optional` **flat**: `boolean`
+
+#### flatMap?
+
+> `optional` **flatMap**: `boolean`
+
+#### forEach?
+
+> `optional` **forEach**: `boolean`
+
+#### includes?
+
+> `optional` **includes**: `boolean`
+
+#### indexOf?
+
+> `optional` **indexOf**: `boolean`
+
+#### join?
+
+> `optional` **join**: `boolean`
+
+#### keys?
+
+> `optional` **keys**: `boolean`
+
+#### lastIndexOf?
+
+> `optional` **lastIndexOf**: `boolean`
 
 #### length?
 
@@ -32,169 +116,69 @@ when they will be absent when used in a 'with' statement.
 
 Gets or sets the length of the array. This is a number one higher than the highest index in the array.
 
-#### \[iterator\]?
-
-> `optional` **\[iterator\]**
-
-#### at?
-
-> `optional` **at**
-
-#### concat?
-
-> `optional` **concat**
-
-#### copyWithin?
-
-> `optional` **copyWithin**
-
-#### entries?
-
-> `optional` **entries**
-
-#### every?
-
-> `optional` **every**
-
-#### fill?
-
-> `optional` **fill**
-
-#### filter?
-
-> `optional` **filter**
-
-#### find?
-
-> `optional` **find**
-
-#### findIndex?
-
-> `optional` **findIndex**
-
-#### findLast?
-
-> `optional` **findLast**
-
-#### findLastIndex?
-
-> `optional` **findLastIndex**
-
-#### flat?
-
-> `optional` **flat**
-
-#### flatMap?
-
-> `optional` **flatMap**
-
-#### forEach?
-
-> `optional` **forEach**
-
-#### includes?
-
-> `optional` **includes**
-
-#### indexOf?
-
-> `optional` **indexOf**
-
-#### join?
-
-> `optional` **join**
-
-#### keys?
-
-> `optional` **keys**
-
-#### lastIndexOf?
-
-> `optional` **lastIndexOf**
-
 #### map?
 
-> `optional` **map**
+> `optional` **map**: `boolean`
 
 #### pop?
 
-> `optional` **pop**
+> `optional` **pop**: `boolean`
 
 #### push?
 
-> `optional` **push**
+> `optional` **push**: `boolean`
 
 #### reduce?
 
-> `optional` **reduce**
+> `optional` **reduce**: `boolean`
 
 #### reduceRight?
 
-> `optional` **reduceRight**
+> `optional` **reduceRight**: `boolean`
 
 #### reverse?
 
-> `optional` **reverse**
+> `optional` **reverse**: `boolean`
 
 #### shift?
 
-> `optional` **shift**
+> `optional` **shift**: `boolean`
 
 #### slice?
 
-> `optional` **slice**
+> `optional` **slice**: `boolean`
 
 #### some?
 
-> `optional` **some**
+> `optional` **some**: `boolean`
 
 #### sort?
 
-> `optional` **sort**
+> `optional` **sort**: `boolean`
 
 #### splice?
 
-> `optional` **splice**
+> `optional` **splice**: `boolean`
 
 #### toLocaleString?
 
-> `optional` **toLocaleString**
-
-#### toReversed?
-
-> `optional` **toReversed**
-
-#### toSorted?
-
-> `optional` **toSorted**
-
-#### toSpliced?
-
-> `optional` **toSpliced**
+> `optional` **toLocaleString**: `boolean`
 
 #### toString?
 
-> `optional` **toString**
+> `optional` **toString**: `boolean`
 
 #### unshift?
 
-> `optional` **unshift**
+> `optional` **unshift**: `boolean`
 
 #### values?
 
-> `optional` **values**
-
-#### with?
-
-> `optional` **with**
+> `optional` **values**: `boolean`
 
 #### Inherited from
 
 `Array.[unscopables]`
-
-#### Source
-
-node\_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:97
 
 ***
 
@@ -202,35 +186,31 @@ node\_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:97
 
 > **length**: `number`
 
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1326
+
 Gets or sets the length of the array. This is a number one higher than the highest index in the array.
 
 #### Inherited from
 
 `Array.length`
 
-#### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1326
-
 ## Methods
 
-### `[iterator]`()
+### \[iterator\]()
 
-> **\[iterator\]**(): `IterableIterator`\<[`Argument`](../type-aliases/Argument.md)\>
+> **\[iterator\]**(): `ArrayIterator`\<[`Argument`](../type-aliases/Argument.md)\>
+
+Defined in: node\_modules/typescript/lib/lib.es2015.iterable.d.ts:78
 
 Iterator
 
 #### Returns
 
-`IterableIterator`\<[`Argument`](../type-aliases/Argument.md)\>
+`ArrayIterator`\<[`Argument`](../type-aliases/Argument.md)\>
 
 #### Inherited from
 
 `Array.[iterator]`
-
-#### Source
-
-node\_modules/typescript/lib/lib.es2015.iterable.d.ts:58
 
 ***
 
@@ -238,13 +218,13 @@ node\_modules/typescript/lib/lib.es2015.iterable.d.ts:58
 
 > **at**(`index`): [`Argument`](../type-aliases/Argument.md)
 
-Returns the item located at the specified index.
+Defined in: node\_modules/@types/node/compatibility/indexable.d.ts:7
 
 #### Parameters
 
-• **index**: `number`
+##### index
 
-The zero-based index of the desired code unit. A negative index will count back from the last item.
+`number`
 
 #### Returns
 
@@ -254,24 +234,24 @@ The zero-based index of the desired code unit. A negative index will count back 
 
 `Array.at`
 
-#### Source
-
-node\_modules/typescript/lib/lib.es2022.array.d.ts:24
-
 ***
 
 ### concat()
 
-#### concat(items)
+#### Call Signature
 
 > **concat**(...`items`): [`Argument`](../type-aliases/Argument.md)[]
+
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1350
 
 Combines two or more arrays.
 This method returns a new array without modifying any existing arrays.
 
 ##### Parameters
 
-• ...**items**: `ConcatArray`\<[`Argument`](../type-aliases/Argument.md)\>[]
+###### items
+
+...`ConcatArray`\<[`Argument`](../type-aliases/Argument.md)\>[]
 
 Additional arrays and/or items to add to the end of the array.
 
@@ -283,20 +263,20 @@ Additional arrays and/or items to add to the end of the array.
 
 `Array.concat`
 
-##### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1350
-
-#### concat(items)
+#### Call Signature
 
 > **concat**(...`items`): [`Argument`](../type-aliases/Argument.md)[]
+
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1356
 
 Combines two or more arrays.
 This method returns a new array without modifying any existing arrays.
 
 ##### Parameters
 
-• ...**items**: ([`Argument`](../type-aliases/Argument.md) \| `ConcatArray`\<[`Argument`](../type-aliases/Argument.md)\>)[]
+###### items
+
+...([`Argument`](../type-aliases/Argument.md) \| `ConcatArray`\<[`Argument`](../type-aliases/Argument.md)\>)[]
 
 Additional arrays and/or items to add to the end of the array.
 
@@ -307,33 +287,37 @@ Additional arrays and/or items to add to the end of the array.
 ##### Inherited from
 
 `Array.concat`
-
-##### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1356
 
 ***
 
 ### copyWithin()
 
-> **copyWithin**(`target`, `start`, `end`?): `this`
+> **copyWithin**(`target`, `start`, `end?`): `this`
+
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:62
 
 Returns the this object after copying a section of the array identified by start and end
 to the same array starting at position target
 
 #### Parameters
 
-• **target**: `number`
+##### target
+
+`number`
 
 If target is negative, it is treated as length+target where length is the
 length of the array.
 
-• **start**: `number`
+##### start
+
+`number`
 
 If start is negative, it is treated as length+start. If end is negative, it
 is treated as length+end.
 
-• **end?**: `number`
+##### end?
+
+`number`
 
 If not specified, length of the this object is used as its default value.
 
@@ -345,53 +329,55 @@ If not specified, length of the this object is used as its default value.
 
 `Array.copyWithin`
 
-#### Source
-
-node\_modules/typescript/lib/lib.es2015.core.d.ts:62
-
 ***
 
 ### entries()
 
-> **entries**(): `IterableIterator`\<[`number`, [`Argument`](../type-aliases/Argument.md)]\>
+> **entries**(): `ArrayIterator`\<\[`number`, [`Argument`](../type-aliases/Argument.md)\]\>
+
+Defined in: node\_modules/typescript/lib/lib.es2015.iterable.d.ts:83
 
 Returns an iterable of key, value pairs for every entry in the array
 
 #### Returns
 
-`IterableIterator`\<[`number`, [`Argument`](../type-aliases/Argument.md)]\>
+`ArrayIterator`\<\[`number`, [`Argument`](../type-aliases/Argument.md)\]\>
 
 #### Inherited from
 
 `Array.entries`
 
-#### Source
-
-node\_modules/typescript/lib/lib.es2015.iterable.d.ts:63
-
 ***
 
 ### every()
 
-#### every(predicate, thisArg)
+#### Call Signature
 
-> **every**\<`S`\>(`predicate`, `thisArg`?): `this is S[]`
+> **every**\<`S`\>(`predicate`, `thisArg?`): `this is S[]`
+
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1433
 
 Determines whether all the members of an array satisfy the specified test.
 
-##### Type parameters
+##### Type Parameters
 
-• **S** *extends* [`Argument`](../type-aliases/Argument.md)
+###### S
+
+`S` *extends* [`Argument`](../type-aliases/Argument.md)
 
 ##### Parameters
 
-• **predicate**
+###### predicate
+
+(`value`, `index`, `array`) => `value is S`
 
 A function that accepts up to three arguments. The every method calls
 the predicate function for each element in the array until the predicate returns a value
 which is coercible to the Boolean value false, or until the end of the array.
 
-• **thisArg?**: `any`
+###### thisArg?
+
+`any`
 
 An object to which the this keyword can refer in the predicate function.
 If thisArg is omitted, undefined is used as the this value.
@@ -404,25 +390,27 @@ If thisArg is omitted, undefined is used as the this value.
 
 `Array.every`
 
-##### Source
+#### Call Signature
 
-node\_modules/typescript/lib/lib.es5.d.ts:1433
+> **every**(`predicate`, `thisArg?`): `boolean`
 
-#### every(predicate, thisArg)
-
-> **every**(`predicate`, `thisArg`?): `boolean`
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1442
 
 Determines whether all the members of an array satisfy the specified test.
 
 ##### Parameters
 
-• **predicate**
+###### predicate
+
+(`value`, `index`, `array`) => `unknown`
 
 A function that accepts up to three arguments. The every method calls
 the predicate function for each element in the array until the predicate returns a value
 which is coercible to the Boolean value false, or until the end of the array.
 
-• **thisArg?**: `any`
+###### thisArg?
+
+`any`
 
 An object to which the this keyword can refer in the predicate function.
 If thisArg is omitted, undefined is used as the this value.
@@ -435,30 +423,34 @@ If thisArg is omitted, undefined is used as the this value.
 
 `Array.every`
 
-##### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1442
-
 ***
 
 ### fill()
 
-> **fill**(`value`, `start`?, `end`?): `this`
+> **fill**(`value`, `start?`, `end?`): `this`
+
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:51
 
 Changes all array elements from `start` to `end` index to a static `value` and returns the modified array
 
 #### Parameters
 
-• **value**: [`Argument`](../type-aliases/Argument.md)
+##### value
+
+[`Argument`](../type-aliases/Argument.md)
 
 value to fill array section with
 
-• **start?**: `number`
+##### start?
+
+`number`
 
 index to start filling the array at. If start is negative, it is treated as
 length+start where length is the length of the array.
 
-• **end?**: `number`
+##### end?
+
+`number`
 
 index to stop filling the array at. If end is negative, it is treated as
 length+end.
@@ -471,31 +463,35 @@ length+end.
 
 `Array.fill`
 
-#### Source
-
-node\_modules/typescript/lib/lib.es2015.core.d.ts:51
-
 ***
 
 ### filter()
 
-#### filter(predicate, thisArg)
+#### Call Signature
 
-> **filter**\<`S`\>(`predicate`, `thisArg`?): `S`[]
+> **filter**\<`S`\>(`predicate`, `thisArg?`): `S`[]
+
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1469
 
 Returns the elements of an array that meet the condition specified in a callback function.
 
-##### Type parameters
+##### Type Parameters
 
-• **S** *extends* [`Argument`](../type-aliases/Argument.md)
+###### S
+
+`S` *extends* [`Argument`](../type-aliases/Argument.md)
 
 ##### Parameters
 
-• **predicate**
+###### predicate
+
+(`value`, `index`, `array`) => `value is S`
 
 A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array.
 
-• **thisArg?**: `any`
+###### thisArg?
+
+`any`
 
 An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
 
@@ -507,23 +503,25 @@ An object to which the this keyword can refer in the predicate function. If this
 
 `Array.filter`
 
-##### Source
+#### Call Signature
 
-node\_modules/typescript/lib/lib.es5.d.ts:1469
+> **filter**(`predicate`, `thisArg?`): [`Argument`](../type-aliases/Argument.md)[]
 
-#### filter(predicate, thisArg)
-
-> **filter**(`predicate`, `thisArg`?): [`Argument`](../type-aliases/Argument.md)[]
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1475
 
 Returns the elements of an array that meet the condition specified in a callback function.
 
 ##### Parameters
 
-• **predicate**
+###### predicate
+
+(`value`, `index`, `array`) => `unknown`
 
 A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array.
 
-• **thisArg?**: `any`
+###### thisArg?
+
+`any`
 
 An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
 
@@ -535,59 +533,65 @@ An object to which the this keyword can refer in the predicate function. If this
 
 `Array.filter`
 
-##### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1475
-
 ***
 
 ### find()
 
-#### find(predicate, thisArg)
+#### Call Signature
 
-> **find**\<`S`\>(`predicate`, `thisArg`?): `undefined` \| `S`
+> **find**\<`S`\>(`predicate`, `thisArg?`): `S`
+
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:29
 
 Returns the value of the first element in the array where predicate is true, and undefined
 otherwise.
 
-##### Type parameters
+##### Type Parameters
 
-• **S** *extends* [`Argument`](../type-aliases/Argument.md)
+###### S
+
+`S` *extends* [`Argument`](../type-aliases/Argument.md)
 
 ##### Parameters
 
-• **predicate**
+###### predicate
+
+(`value`, `index`, `obj`) => `value is S`
 
 find calls predicate once for each element of the array, in ascending
 order, until it finds one where predicate returns true. If such an element is found, find
 immediately returns that element value. Otherwise, find returns undefined.
 
-• **thisArg?**: `any`
+###### thisArg?
+
+`any`
 
 If provided, it will be used as the this value for each invocation of
 predicate. If it is not provided, undefined is used instead.
 
 ##### Returns
 
-`undefined` \| `S`
+`S`
 
 ##### Inherited from
 
 `Array.find`
 
-##### Source
+#### Call Signature
 
-node\_modules/typescript/lib/lib.es2015.core.d.ts:29
+> **find**(`predicate`, `thisArg?`): [`Argument`](../type-aliases/Argument.md)
 
-#### find(predicate, thisArg)
-
-> **find**(`predicate`, `thisArg`?): [`Argument`](../type-aliases/Argument.md)
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:30
 
 ##### Parameters
 
-• **predicate**
+###### predicate
 
-• **thisArg?**: `any`
+(`value`, `index`, `obj`) => `unknown`
+
+###### thisArg?
+
+`any`
 
 ##### Returns
 
@@ -597,28 +601,30 @@ node\_modules/typescript/lib/lib.es2015.core.d.ts:29
 
 `Array.find`
 
-##### Source
-
-node\_modules/typescript/lib/lib.es2015.core.d.ts:30
-
 ***
 
 ### findIndex()
 
-> **findIndex**(`predicate`, `thisArg`?): `number`
+> **findIndex**(`predicate`, `thisArg?`): `number`
+
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:41
 
 Returns the index of the first element in the array where predicate is true, and -1
 otherwise.
 
 #### Parameters
 
-• **predicate**
+##### predicate
+
+(`value`, `index`, `obj`) => `unknown`
 
 find calls predicate once for each element of the array, in ascending
 order, until it finds one where predicate returns true. If such an element is found,
 findIndex immediately returns that element index. Otherwise, findIndex returns -1.
 
-• **thisArg?**: `any`
+##### thisArg?
+
+`any`
 
 If provided, it will be used as the this value for each invocation of
 predicate. If it is not provided, undefined is used instead.
@@ -631,126 +637,36 @@ predicate. If it is not provided, undefined is used instead.
 
 `Array.findIndex`
 
-#### Source
-
-node\_modules/typescript/lib/lib.es2015.core.d.ts:41
-
-***
-
-### findLast()
-
-#### findLast(predicate, thisArg)
-
-> **findLast**\<`S`\>(`predicate`, `thisArg`?): `undefined` \| `S`
-
-Returns the value of the last element in the array where predicate is true, and undefined
-otherwise.
-
-##### Type parameters
-
-• **S** *extends* [`Argument`](../type-aliases/Argument.md)
-
-##### Parameters
-
-• **predicate**
-
-findLast calls predicate once for each element of the array, in descending
-order, until it finds one where predicate returns true. If such an element is found, findLast
-immediately returns that element value. Otherwise, findLast returns undefined.
-
-• **thisArg?**: `any`
-
-If provided, it will be used as the this value for each invocation of
-predicate. If it is not provided, undefined is used instead.
-
-##### Returns
-
-`undefined` \| `S`
-
-##### Inherited from
-
-`Array.findLast`
-
-##### Source
-
-node\_modules/typescript/lib/lib.es2023.array.d.ts:29
-
-#### findLast(predicate, thisArg)
-
-> **findLast**(`predicate`, `thisArg`?): [`Argument`](../type-aliases/Argument.md)
-
-##### Parameters
-
-• **predicate**
-
-• **thisArg?**: `any`
-
-##### Returns
-
-[`Argument`](../type-aliases/Argument.md)
-
-##### Inherited from
-
-`Array.findLast`
-
-##### Source
-
-node\_modules/typescript/lib/lib.es2023.array.d.ts:30
-
-***
-
-### findLastIndex()
-
-> **findLastIndex**(`predicate`, `thisArg`?): `number`
-
-Returns the index of the last element in the array where predicate is true, and -1
-otherwise.
-
-#### Parameters
-
-• **predicate**
-
-findLastIndex calls predicate once for each element of the array, in descending
-order, until it finds one where predicate returns true. If such an element is found,
-findLastIndex immediately returns that element index. Otherwise, findLastIndex returns -1.
-
-• **thisArg?**: `any`
-
-If provided, it will be used as the this value for each invocation of
-predicate. If it is not provided, undefined is used instead.
-
-#### Returns
-
-`number`
-
-#### Inherited from
-
-`Array.findLastIndex`
-
-#### Source
-
-node\_modules/typescript/lib/lib.es2023.array.d.ts:41
-
 ***
 
 ### flat()
 
-> **flat**\<`A`, `D`\>(`this`, `depth`?): `FlatArray`\<`A`, `D`\>[]
+> **flat**\<`A`, `D`\>(`this`, `depth?`): `FlatArray`\<`A`, `D`\>[]
+
+Defined in: node\_modules/typescript/lib/lib.es2019.array.d.ts:75
 
 Returns a new array with all sub-array elements concatenated into it recursively up to the
 specified depth.
 
-#### Type parameters
+#### Type Parameters
 
-• **A**
+##### A
 
-• **D** *extends* `number` = `1`
+`A`
+
+##### D
+
+`D` *extends* `number` = `1`
 
 #### Parameters
 
-• **this**: `A`
+##### this
 
-• **depth?**: `D`
+`A`
+
+##### depth?
+
+`D`
 
 The maximum recursion depth
 
@@ -762,34 +678,40 @@ The maximum recursion depth
 
 `Array.flat`
 
-#### Source
-
-node\_modules/typescript/lib/lib.es2019.array.d.ts:75
-
 ***
 
 ### flatMap()
 
-> **flatMap**\<`U`, `This`\>(`callback`, `thisArg`?): `U`[]
+> **flatMap**\<`U`, `This`\>(`callback`, `thisArg?`): `U`[]
+
+Defined in: node\_modules/typescript/lib/lib.es2019.array.d.ts:64
 
 Calls a defined callback function on each element of an array. Then, flattens the result into
 a new array.
 This is identical to a map followed by flat with depth 1.
 
-#### Type parameters
+#### Type Parameters
 
-• **U**
+##### U
 
-• **This** = `undefined`
+`U`
+
+##### This
+
+`This` = `undefined`
 
 #### Parameters
 
-• **callback**
+##### callback
+
+(`this`, `value`, `index`, `array`) => `U` \| readonly `U`[]
 
 A function that accepts up to three arguments. The flatMap method calls the
 callback function one time for each element in the array.
 
-• **thisArg?**: `This`
+##### thisArg?
+
+`This`
 
 An object to which the this keyword can refer in the callback function. If
 thisArg is omitted, undefined is used as the this value.
@@ -802,25 +724,27 @@ thisArg is omitted, undefined is used as the this value.
 
 `Array.flatMap`
 
-#### Source
-
-node\_modules/typescript/lib/lib.es2019.array.d.ts:64
-
 ***
 
 ### forEach()
 
-> **forEach**(`callbackfn`, `thisArg`?): `void`
+> **forEach**(`callbackfn`, `thisArg?`): `void`
+
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1457
 
 Performs the specified action for each element in an array.
 
 #### Parameters
 
-• **callbackfn**
+##### callbackfn
+
+(`value`, `index`, `array`) => `void`
 
 A function that accepts up to three arguments. forEach calls the callbackfn function one time for each element in the array.
 
-• **thisArg?**: `any`
+##### thisArg?
+
+`any`
 
 An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
 
@@ -832,25 +756,27 @@ An object to which the this keyword can refer in the callbackfn function. If thi
 
 `Array.forEach`
 
-#### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1457
-
 ***
 
 ### includes()
 
-> **includes**(`searchElement`, `fromIndex`?): `boolean`
+> **includes**(`searchElement`, `fromIndex?`): `boolean`
+
+Defined in: node\_modules/typescript/lib/lib.es2016.array.include.d.ts:25
 
 Determines whether an array includes a certain element, returning true or false as appropriate.
 
 #### Parameters
 
-• **searchElement**: [`Argument`](../type-aliases/Argument.md)
+##### searchElement
+
+[`Argument`](../type-aliases/Argument.md)
 
 The element to search for.
 
-• **fromIndex?**: `number`
+##### fromIndex?
+
+`number`
 
 The position in this array at which to begin searching for searchElement.
 
@@ -862,25 +788,27 @@ The position in this array at which to begin searching for searchElement.
 
 `Array.includes`
 
-#### Source
-
-node\_modules/typescript/lib/lib.es2016.array.include.d.ts:25
-
 ***
 
 ### indexOf()
 
-> **indexOf**(`searchElement`, `fromIndex`?): `number`
+> **indexOf**(`searchElement`, `fromIndex?`): `number`
+
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1418
 
 Returns the index of the first occurrence of a value in an array, or -1 if it is not present.
 
 #### Parameters
 
-• **searchElement**: [`Argument`](../type-aliases/Argument.md)
+##### searchElement
+
+[`Argument`](../type-aliases/Argument.md)
 
 The value to locate in the array.
 
-• **fromIndex?**: `number`
+##### fromIndex?
+
+`number`
 
 The array index at which to begin the search. If fromIndex is omitted, the search starts at index 0.
 
@@ -892,21 +820,21 @@ The array index at which to begin the search. If fromIndex is omitted, the searc
 
 `Array.indexOf`
 
-#### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1418
-
 ***
 
 ### join()
 
-> **join**(`separator`?): `string`
+> **join**(`separator?`): `string`
+
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1361
 
 Adds all the elements of an array into a string, separated by the specified separator string.
 
 #### Parameters
 
-• **separator?**: `string`
+##### separator?
+
+`string`
 
 A string used to separate one element of the array from the next in the resulting string. If omitted, the array elements are separated with a comma.
 
@@ -918,45 +846,45 @@ A string used to separate one element of the array from the next in the resultin
 
 `Array.join`
 
-#### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1361
-
 ***
 
 ### keys()
 
-> **keys**(): `IterableIterator`\<`number`\>
+> **keys**(): `ArrayIterator`\<`number`\>
+
+Defined in: node\_modules/typescript/lib/lib.es2015.iterable.d.ts:88
 
 Returns an iterable of keys in the array
 
 #### Returns
 
-`IterableIterator`\<`number`\>
+`ArrayIterator`\<`number`\>
 
 #### Inherited from
 
 `Array.keys`
 
-#### Source
-
-node\_modules/typescript/lib/lib.es2015.iterable.d.ts:68
-
 ***
 
 ### lastIndexOf()
 
-> **lastIndexOf**(`searchElement`, `fromIndex`?): `number`
+> **lastIndexOf**(`searchElement`, `fromIndex?`): `number`
+
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1424
 
 Returns the index of the last occurrence of a specified value in an array, or -1 if it is not present.
 
 #### Parameters
 
-• **searchElement**: [`Argument`](../type-aliases/Argument.md)
+##### searchElement
+
+[`Argument`](../type-aliases/Argument.md)
 
 The value to locate in the array.
 
-• **fromIndex?**: `number`
+##### fromIndex?
+
+`number`
 
 The array index at which to begin searching backward. If fromIndex is omitted, the search starts at the last index in the array.
 
@@ -968,29 +896,33 @@ The array index at which to begin searching backward. If fromIndex is omitted, t
 
 `Array.lastIndexOf`
 
-#### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1424
-
 ***
 
 ### map()
 
-> **map**\<`U`\>(`callbackfn`, `thisArg`?): `U`[]
+> **map**\<`U`\>(`callbackfn`, `thisArg?`): `U`[]
+
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1463
 
 Calls a defined callback function on each element of an array, and returns an array that contains the results.
 
-#### Type parameters
+#### Type Parameters
 
-• **U**
+##### U
+
+`U`
 
 #### Parameters
 
-• **callbackfn**
+##### callbackfn
+
+(`value`, `index`, `array`) => `U`
 
 A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.
 
-• **thisArg?**: `any`
+##### thisArg?
+
+`any`
 
 An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
 
@@ -1002,15 +934,13 @@ An object to which the this keyword can refer in the callbackfn function. If thi
 
 `Array.map`
 
-#### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1463
-
 ***
 
 ### pop()
 
 > **pop**(): [`Argument`](../type-aliases/Argument.md)
+
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1339
 
 Removes the last element from an array and returns it.
 If the array is empty, undefined is returned and the array is not modified.
@@ -1023,21 +953,21 @@ If the array is empty, undefined is returned and the array is not modified.
 
 `Array.pop`
 
-#### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1339
-
 ***
 
 ### push()
 
 > **push**(...`items`): `number`
 
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1344
+
 Appends new elements to the end of an array, and returns the new length of the array.
 
 #### Parameters
 
-• ...**items**: [`Argument`](../type-aliases/Argument.md)[]
+##### items
+
+...[`Argument`](../type-aliases/Argument.md)[]
 
 New elements to add to the array.
 
@@ -1049,23 +979,23 @@ New elements to add to the array.
 
 `Array.push`
 
-#### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1344
-
 ***
 
 ### reduce()
 
-#### reduce(callbackfn)
+#### Call Signature
 
 > **reduce**(`callbackfn`): [`Argument`](../type-aliases/Argument.md)
 
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1481
+
 Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
 
 ##### Parameters
 
-• **callbackfn**
+###### callbackfn
+
+(`previousValue`, `currentValue`, `currentIndex`, `array`) => [`Argument`](../type-aliases/Argument.md)
 
 A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
 
@@ -1077,19 +1007,21 @@ A function that accepts up to four arguments. The reduce method calls the callba
 
 `Array.reduce`
 
-##### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1481
-
-#### reduce(callbackfn, initialValue)
+#### Call Signature
 
 > **reduce**(`callbackfn`, `initialValue`): [`Argument`](../type-aliases/Argument.md)
 
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1482
+
 ##### Parameters
 
-• **callbackfn**
+###### callbackfn
 
-• **initialValue**: [`Argument`](../type-aliases/Argument.md)
+(`previousValue`, `currentValue`, `currentIndex`, `array`) => [`Argument`](../type-aliases/Argument.md)
+
+###### initialValue
+
+[`Argument`](../type-aliases/Argument.md)
 
 ##### Returns
 
@@ -1099,27 +1031,31 @@ node\_modules/typescript/lib/lib.es5.d.ts:1481
 
 `Array.reduce`
 
-##### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1482
-
-#### reduce(callbackfn, initialValue)
+#### Call Signature
 
 > **reduce**\<`U`\>(`callbackfn`, `initialValue`): `U`
 
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1488
+
 Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
 
-##### Type parameters
+##### Type Parameters
 
-• **U**
+###### U
+
+`U`
 
 ##### Parameters
 
-• **callbackfn**
+###### callbackfn
+
+(`previousValue`, `currentValue`, `currentIndex`, `array`) => `U`
 
 A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
 
-• **initialValue**: `U`
+###### initialValue
+
+`U`
 
 If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
 
@@ -1130,24 +1066,24 @@ If initialValue is specified, it is used as the initial value to start the accum
 ##### Inherited from
 
 `Array.reduce`
-
-##### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1488
 
 ***
 
 ### reduceRight()
 
-#### reduceRight(callbackfn)
+#### Call Signature
 
 > **reduceRight**(`callbackfn`): [`Argument`](../type-aliases/Argument.md)
 
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1494
+
 Calls the specified callback function for all the elements in an array, in descending order. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
 
 ##### Parameters
 
-• **callbackfn**
+###### callbackfn
+
+(`previousValue`, `currentValue`, `currentIndex`, `array`) => [`Argument`](../type-aliases/Argument.md)
 
 A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array.
 
@@ -1159,19 +1095,21 @@ A function that accepts up to four arguments. The reduceRight method calls the c
 
 `Array.reduceRight`
 
-##### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1494
-
-#### reduceRight(callbackfn, initialValue)
+#### Call Signature
 
 > **reduceRight**(`callbackfn`, `initialValue`): [`Argument`](../type-aliases/Argument.md)
 
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1495
+
 ##### Parameters
 
-• **callbackfn**
+###### callbackfn
 
-• **initialValue**: [`Argument`](../type-aliases/Argument.md)
+(`previousValue`, `currentValue`, `currentIndex`, `array`) => [`Argument`](../type-aliases/Argument.md)
+
+###### initialValue
+
+[`Argument`](../type-aliases/Argument.md)
 
 ##### Returns
 
@@ -1181,27 +1119,31 @@ node\_modules/typescript/lib/lib.es5.d.ts:1494
 
 `Array.reduceRight`
 
-##### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1495
-
-#### reduceRight(callbackfn, initialValue)
+#### Call Signature
 
 > **reduceRight**\<`U`\>(`callbackfn`, `initialValue`): `U`
 
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1501
+
 Calls the specified callback function for all the elements in an array, in descending order. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
 
-##### Type parameters
+##### Type Parameters
 
-• **U**
+###### U
+
+`U`
 
 ##### Parameters
 
-• **callbackfn**
+###### callbackfn
+
+(`previousValue`, `currentValue`, `currentIndex`, `array`) => `U`
 
 A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array.
 
-• **initialValue**: `U`
+###### initialValue
+
+`U`
 
 If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
 
@@ -1212,16 +1154,14 @@ If initialValue is specified, it is used as the initial value to start the accum
 ##### Inherited from
 
 `Array.reduceRight`
-
-##### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1501
 
 ***
 
 ### reverse()
 
 > **reverse**(): [`Argument`](../type-aliases/Argument.md)[]
+
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1366
 
 Reverses the elements in an array in place.
 This method mutates the array and returns a reference to the same array.
@@ -1234,15 +1174,13 @@ This method mutates the array and returns a reference to the same array.
 
 `Array.reverse`
 
-#### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1366
-
 ***
 
 ### shift()
 
 > **shift**(): [`Argument`](../type-aliases/Argument.md)
+
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1371
 
 Removes the first element from an array and returns it.
 If the array is empty, undefined is returned and the array is not modified.
@@ -1255,15 +1193,13 @@ If the array is empty, undefined is returned and the array is not modified.
 
 `Array.shift`
 
-#### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1371
-
 ***
 
 ### slice()
 
-> **slice**(`start`?, `end`?): [`Argument`](../type-aliases/Argument.md)[]
+> **slice**(`start?`, `end?`): [`Argument`](../type-aliases/Argument.md)[]
+
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1381
 
 Returns a copy of a section of an array.
 For both start and end, a negative index can be used to indicate an offset from the end of the array.
@@ -1271,12 +1207,16 @@ For example, -2 refers to the second to last element of the array.
 
 #### Parameters
 
-• **start?**: `number`
+##### start?
+
+`number`
 
 The beginning index of the specified portion of the array.
 If start is undefined, then the slice begins at index 0.
 
-• **end?**: `number`
+##### end?
+
+`number`
 
 The end index of the specified portion of the array. This is exclusive of the element at the index 'end'.
 If end is undefined, then the slice extends to the end of the array.
@@ -1289,27 +1229,29 @@ If end is undefined, then the slice extends to the end of the array.
 
 `Array.slice`
 
-#### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1381
-
 ***
 
 ### some()
 
-> **some**(`predicate`, `thisArg`?): `boolean`
+> **some**(`predicate`, `thisArg?`): `boolean`
+
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1451
 
 Determines whether the specified callback function returns true for any element of an array.
 
 #### Parameters
 
-• **predicate**
+##### predicate
+
+(`value`, `index`, `array`) => `unknown`
 
 A function that accepts up to three arguments. The some method calls
 the predicate function for each element in the array until the predicate returns a value
 which is coercible to the Boolean value true, or until the end of the array.
 
-• **thisArg?**: `any`
+##### thisArg?
+
+`any`
 
 An object to which the this keyword can refer in the predicate function.
 If thisArg is omitted, undefined is used as the this value.
@@ -1322,26 +1264,26 @@ If thisArg is omitted, undefined is used as the this value.
 
 `Array.some`
 
-#### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1451
-
 ***
 
 ### sort()
 
-> **sort**(`compareFn`?): `this`
+> **sort**(`compareFn?`): `this`
+
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1392
 
 Sorts an array in place.
 This method mutates the array and returns a reference to the same array.
 
 #### Parameters
 
-• **compareFn?**
+##### compareFn?
+
+(`a`, `b`) => `number`
 
 Function used to determine the order of the elements. It is expected to return
 a negative value if the first argument is less than the second argument, zero if they're equal, and a positive
-value otherwise. If omitted, the elements are sorted in ascending, ASCII character order.
+value otherwise. If omitted, the elements are sorted in ascending, UTF-16 code unit order.
 ```ts
 [11,2,22,1].sort((a, b) => a - b)
 ```
@@ -1354,27 +1296,29 @@ value otherwise. If omitted, the elements are sorted in ascending, ASCII charact
 
 `Array.sort`
 
-#### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1392
-
 ***
 
 ### splice()
 
-#### splice(start, deleteCount)
+#### Call Signature
 
-> **splice**(`start`, `deleteCount`?): [`Argument`](../type-aliases/Argument.md)[]
+> **splice**(`start`, `deleteCount?`): [`Argument`](../type-aliases/Argument.md)[]
+
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1399
 
 Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
 
 ##### Parameters
 
-• **start**: `number`
+###### start
+
+`number`
 
 The zero-based location in the array from which to start removing elements.
 
-• **deleteCount?**: `number`
+###### deleteCount?
+
+`number`
 
 The number of elements to remove.
 
@@ -1388,27 +1332,31 @@ An array containing the elements that were deleted.
 
 `Array.splice`
 
-##### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1399
-
-#### splice(start, deleteCount, items)
+#### Call Signature
 
 > **splice**(`start`, `deleteCount`, ...`items`): [`Argument`](../type-aliases/Argument.md)[]
+
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1407
 
 Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
 
 ##### Parameters
 
-• **start**: `number`
+###### start
+
+`number`
 
 The zero-based location in the array from which to start removing elements.
 
-• **deleteCount**: `number`
+###### deleteCount
+
+`number`
 
 The number of elements to remove.
 
-• ...**items**: [`Argument`](../type-aliases/Argument.md)[]
+###### items
+
+...[`Argument`](../type-aliases/Argument.md)[]
 
 Elements to insert into the array in place of the deleted elements.
 
@@ -1422,17 +1370,15 @@ An array containing the elements that were deleted.
 
 `Array.splice`
 
-##### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1407
-
 ***
 
 ### toLocaleString()
 
-#### toLocaleString()
+#### Call Signature
 
 > **toLocaleString**(): `string`
+
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1334
 
 Returns a string representation of an array. The elements are converted to string using their toLocaleString methods.
 
@@ -1444,19 +1390,21 @@ Returns a string representation of an array. The elements are converted to strin
 
 `Array.toLocaleString`
 
-##### Source
+#### Call Signature
 
-node\_modules/typescript/lib/lib.es5.d.ts:1334
+> **toLocaleString**(`locales`, `options?`): `string`
 
-#### toLocaleString(locales, options)
-
-> **toLocaleString**(`locales`, `options`?): `string`
+Defined in: node\_modules/typescript/lib/lib.es2015.core.d.ts:64
 
 ##### Parameters
 
-• **locales**: `string` \| `string`[]
+###### locales
 
-• **options?**: `NumberFormatOptions` & `DateTimeFormatOptions`
+`string` | `string`[]
+
+###### options?
+
+`NumberFormatOptions` & `DateTimeFormatOptions`
 
 ##### Returns
 
@@ -1466,134 +1414,13 @@ node\_modules/typescript/lib/lib.es5.d.ts:1334
 
 `Array.toLocaleString`
 
-##### Source
-
-node\_modules/typescript/lib/lib.es2015.core.d.ts:64
-
-***
-
-### toReversed()
-
-> **toReversed**(): [`Argument`](../type-aliases/Argument.md)[]
-
-Returns a copy of an array with its elements reversed.
-
-#### Returns
-
-[`Argument`](../type-aliases/Argument.md)[]
-
-#### Inherited from
-
-`Array.toReversed`
-
-#### Source
-
-node\_modules/typescript/lib/lib.es2023.array.d.ts:46
-
-***
-
-### toSorted()
-
-> **toSorted**(`compareFn`?): [`Argument`](../type-aliases/Argument.md)[]
-
-Returns a copy of an array with its elements sorted.
-
-#### Parameters
-
-• **compareFn?**
-
-Function used to determine the order of the elements. It is expected to return
-a negative value if the first argument is less than the second argument, zero if they're equal, and a positive
-value otherwise. If omitted, the elements are sorted in ascending, ASCII character order.
-```ts
-[11, 2, 22, 1].toSorted((a, b) => a - b) // [1, 2, 11, 22]
-```
-
-#### Returns
-
-[`Argument`](../type-aliases/Argument.md)[]
-
-#### Inherited from
-
-`Array.toSorted`
-
-#### Source
-
-node\_modules/typescript/lib/lib.es2023.array.d.ts:57
-
-***
-
-### toSpliced()
-
-#### toSpliced(start, deleteCount, items)
-
-> **toSpliced**(`start`, `deleteCount`, ...`items`): [`Argument`](../type-aliases/Argument.md)[]
-
-Copies an array and removes elements and, if necessary, inserts new elements in their place. Returns the copied array.
-
-##### Parameters
-
-• **start**: `number`
-
-The zero-based location in the array from which to start removing elements.
-
-• **deleteCount**: `number`
-
-The number of elements to remove.
-
-• ...**items**: [`Argument`](../type-aliases/Argument.md)[]
-
-Elements to insert into the copied array in place of the deleted elements.
-
-##### Returns
-
-[`Argument`](../type-aliases/Argument.md)[]
-
-The copied array.
-
-##### Inherited from
-
-`Array.toSpliced`
-
-##### Source
-
-node\_modules/typescript/lib/lib.es2023.array.d.ts:66
-
-#### toSpliced(start, deleteCount)
-
-> **toSpliced**(`start`, `deleteCount`?): [`Argument`](../type-aliases/Argument.md)[]
-
-Copies an array and removes elements while returning the remaining elements.
-
-##### Parameters
-
-• **start**: `number`
-
-The zero-based location in the array from which to start removing elements.
-
-• **deleteCount?**: `number`
-
-The number of elements to remove.
-
-##### Returns
-
-[`Argument`](../type-aliases/Argument.md)[]
-
-A copy of the original array with the remaining elements.
-
-##### Inherited from
-
-`Array.toSpliced`
-
-##### Source
-
-node\_modules/typescript/lib/lib.es2023.array.d.ts:74
-
 ***
 
 ### toString()
 
 > **toString**(): `string`
+
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1330
 
 Returns a string representation of an array.
 
@@ -1605,21 +1432,21 @@ Returns a string representation of an array.
 
 `Array.toString`
 
-#### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1330
-
 ***
 
 ### unshift()
 
 > **unshift**(...`items`): `number`
 
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1412
+
 Inserts new elements at the start of an array, and returns the new length of the array.
 
 #### Parameters
 
-• ...**items**: [`Argument`](../type-aliases/Argument.md)[]
+##### items
+
+...[`Argument`](../type-aliases/Argument.md)[]
 
 Elements to insert at the start of the array.
 
@@ -1631,61 +1458,20 @@ Elements to insert at the start of the array.
 
 `Array.unshift`
 
-#### Source
-
-node\_modules/typescript/lib/lib.es5.d.ts:1412
-
 ***
 
 ### values()
 
-> **values**(): `IterableIterator`\<[`Argument`](../type-aliases/Argument.md)\>
+> **values**(): `ArrayIterator`\<[`Argument`](../type-aliases/Argument.md)\>
+
+Defined in: node\_modules/typescript/lib/lib.es2015.iterable.d.ts:93
 
 Returns an iterable of values in the array
 
 #### Returns
 
-`IterableIterator`\<[`Argument`](../type-aliases/Argument.md)\>
+`ArrayIterator`\<[`Argument`](../type-aliases/Argument.md)\>
 
 #### Inherited from
 
 `Array.values`
-
-#### Source
-
-node\_modules/typescript/lib/lib.es2015.iterable.d.ts:73
-
-***
-
-### with()
-
-> **with**(`index`, `value`): [`Argument`](../type-aliases/Argument.md)[]
-
-Copies an array, then overwrites the value at the provided index with the
-given value. If the index is negative, then it replaces from the end
-of the array.
-
-#### Parameters
-
-• **index**: `number`
-
-The index of the value to overwrite. If the index is
-negative, then it replaces from the end of the array.
-
-• **value**: [`Argument`](../type-aliases/Argument.md)
-
-The value to write into the copied array.
-
-#### Returns
-
-[`Argument`](../type-aliases/Argument.md)[]
-
-The copied array with the updated value.
-
-#### Inherited from
-
-`Array.with`
-
-#### Source
-
-node\_modules/typescript/lib/lib.es2023.array.d.ts:85

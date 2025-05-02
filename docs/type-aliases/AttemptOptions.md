@@ -1,35 +1,45 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / AttemptOptions
 
-# Type alias: AttemptOptions
+# Type Alias: AttemptOptions
 
-> **AttemptOptions**: `object`
+> **AttemptOptions** = `object`
 
-## Type declaration
+Defined in: [src/utils/types.ts:496](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L496)
+
+## Properties
 
 ### errorHander()?
 
 > `optional` **errorHander**: (`e`) => `any`
 
+Defined in: [src/utils/types.ts:497](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L497)
+
 #### Parameters
 
-• **e**: `any`
+##### e
+
+`any`
 
 #### Returns
 
 `any`
 
+***
+
 ### returnError?
 
 > `optional` **returnError**: `boolean`
+
+Defined in: [src/utils/types.ts:498](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L498)
+
+***
 
 ### throwError?
 
 > `optional` **throwError**: `boolean`
 
-## Source
-
-[src/utils/types.ts:496](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/types.ts#L496)
+Defined in: [src/utils/types.ts:499](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L499)

@@ -1,14 +1,22 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / NonUndefined
 
-# Type alias: NonUndefined\<A\>
+# Type Alias: NonUndefined\<A\>
 
-> **NonUndefined**\<`A`\>: `A` *extends* `undefined` ? `never` : `A`
+> **NonUndefined**\<`A`\> = `A` *extends* `undefined` ? `never` : `A`
+
+Defined in: [src/utils/utilityTypes.ts:109](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/utilityTypes.ts#L109)
 
 NonUndefined
+
+## Type Parameters
+
+### A
+
+`A`
 
 ## Desc
 
@@ -20,11 +28,3 @@ Exclude undefined from set `A`
 // Expect: "string | null"
   SymmetricDifference<string | null | undefined>;
 ```
-
-## Type parameters
-
-• **A**
-
-## Source
-
-[src/utils/utilityTypes.ts:109](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/utilityTypes.ts#L109)

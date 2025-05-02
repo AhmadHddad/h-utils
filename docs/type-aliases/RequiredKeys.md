@@ -1,14 +1,22 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / RequiredKeys
 
-# Type alias: RequiredKeys\<T\>
+# Type Alias: RequiredKeys\<T\>
 
-> **RequiredKeys**\<`T`\>: `{ [K in keyof T]-?: Object extends Pick<T, K> ? never : K }`\[keyof `T`\]
+> **RequiredKeys**\<`T`\> = `{ [K in keyof T]-?: {} extends Pick<T, K> ? never : K }`\[keyof `T`\]
+
+Defined in: [src/utils/utilityTypes.ts:195](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/utilityTypes.ts#L195)
 
 RequiredKeys
+
+## Type Parameters
+
+### T
+
+`T`
 
 ## Desc
 
@@ -26,11 +34,3 @@ type Props = { req: number; reqUndef: number | undefined; opt?: string; optUndef
   // Expect: "req" | "reqUndef"
   type Keys = RequiredKeys<Props>;
 ```
-
-## Type parameters
-
-• **T**
-
-## Source
-
-[src/utils/utilityTypes.ts:195](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/utilityTypes.ts#L195)

@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,11 +8,17 @@
 
 > **pickQueryParamFromUrl**(`urlOrQuery`, `filter`): `string`
 
+Defined in: [src/utils/route/pickQueryParamFromUrl.ts:11](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/route/pickQueryParamFromUrl.ts#L11)
+
 ## Parameters
 
-• **urlOrQuery**: `string`
+### urlOrQuery
 
-• **filter**: [`KeysArr`](../type-aliases/KeysArr.md) \| [`PredicateFunc`](../type-aliases/PredicateFunc.md)\<`any`\>
+`string`
+
+### filter
+
+[`KeysArr`](../type-aliases/KeysArr.md) | [`PredicateFunc`](../type-aliases/PredicateFunc.md)\<`any`\>
 
 ## Returns
 
@@ -31,7 +37,3 @@ pickQueryParamFromUrl('https://foo.bar?foo=1&bar=2#hello', ['foo']); // 'https:/
 ```ts
 pickQueryParamFromUrl('https://foo.bar?foo=1&bar=2#hello', (name, value) => value === 2, {parseNumbers: true}); // 'https://foo.bar?bar=2#hello';
 ```
-
-## Source
-
-[src/utils/route/pickQueryParamFromUrl.ts:11](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/route/pickQueryParamFromUrl.ts#L11)

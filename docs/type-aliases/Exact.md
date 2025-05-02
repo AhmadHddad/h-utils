@@ -1,18 +1,16 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / Exact
 
-# Type alias: Exact\<A\>
+# Type Alias: Exact\<A\>
 
-> **Exact**\<`A`\>: `A` & `object`
+> **Exact**\<`A`\> = `A` & `object`
+
+Defined in: [src/utils/utilityTypes.ts:288](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/utilityTypes.ts#L288)
 
 Exact
-
-## Desc
-
-Create branded object type for exact type matching
 
 ## Type declaration
 
@@ -20,10 +18,12 @@ Create branded object type for exact type matching
 
 > **\_\_brand**: keyof `A`
 
-## Type parameters
+## Type Parameters
 
-• **A** *extends* `object`
+### A
 
-## Source
+`A` *extends* `object`
 
-[src/utils/utilityTypes.ts:288](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/utilityTypes.ts#L288)
+## Desc
+
+Create branded object type for exact type matching

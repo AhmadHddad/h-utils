@@ -1,27 +1,31 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / TransformCallback
 
-# Type alias: TransformCallback()
+# Type Alias: TransformCallback()
 
-> **TransformCallback**: \<`K`\>(`key`, `value`) => [`string`, `string`]
+> **TransformCallback** = \<`K`\>(`key`, `value`) => \[`string`, `string`\]
 
-## Type parameters
+Defined in: [src/utils/object/createMirroredObject.ts:1](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/object/createMirroredObject.ts#L1)
 
-• **K** *extends* `string`
+## Type Parameters
+
+### K
+
+`K` *extends* `string`
 
 ## Parameters
 
-• **key**: `K`
+### key
 
-• **value**: `K`
+`K`
+
+### value
+
+`K`
 
 ## Returns
 
-[`string`, `string`]
-
-## Source
-
-[src/utils/object/createMirroredObject.ts:1](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/object/createMirroredObject.ts#L1)
+\[`string`, `string`\]

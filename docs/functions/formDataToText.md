@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,13 +8,19 @@
 
 > **formDataToText**(`formData`, `boundary`): `string`
 
+Defined in: [src/utils/formData/formDataToText.ts:8](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/formData/formDataToText.ts#L8)
+
 ## Parameters
 
-• **formData**: `FormData`
+### formData
+
+`FormData`
 
 The FormData object to convert.
 
-• **boundary**: `string`
+### boundary
+
+`string`
 
 The boundary string to use for multipart data.
 
@@ -27,7 +33,3 @@ The boundary string to use for multipart data.
 ## Description
 
 Converts a FormData object to a multipart/form-data text format.
-
-## Source
-
-src/utils/formData/formDataToText.ts:8

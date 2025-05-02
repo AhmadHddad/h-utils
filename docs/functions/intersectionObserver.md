@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,29 +8,39 @@
 
 > **intersectionObserver**(`elementOrElements`, `callback`, `options`, `fallbackInView`): () => `void`
 
+Defined in: [src/utils/browser/intersectionObserver.ts:147](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/browser/intersectionObserver.ts#L147)
+
 ## Parameters
 
-• **elementOrElements**: `Element` \| `Element`[]
+### elementOrElements
 
 DOM Element or Elements to observe
 
-• **callback**: [`ObserverInstanceCallback`](../type-aliases/ObserverInstanceCallback.md)
+`Element` | `Element`[]
+
+### callback
+
+[`ObserverInstanceCallback`](../type-aliases/ObserverInstanceCallback.md)
 
 Callback function to trigger when intersection status changes
 
-• **options**: `IntersectionObserverInit`= `undefined`
+### options
+
+`IntersectionObserverInit` = `...`
 
 Intersection Observer options
 
-• **fallbackInView**: `undefined` \| `boolean`= `unsupportedValue`
+### fallbackInView
+
+`boolean` = `unsupportedValue`
 
 Fallback inView value.
 
 ## Returns
 
-`Function`
-
 Function - Cleanup function that should be triggered to unregister the observer
+
+> (): `void`
 
 ### Returns
 
@@ -55,7 +65,3 @@ document.body,
 observer();
 `
 ```
-
-## Source
-
-[src/utils/browser/intersectionObserver.ts:147](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/browser/intersectionObserver.ts#L147)

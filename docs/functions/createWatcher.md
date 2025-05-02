@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,15 +8,23 @@
 
 > **createWatcher**\<`T`\>(`target`, `callback`): `T`
 
-## Type parameters
+Defined in: [src/utils/functions/createWatcher.ts:15](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/functions/createWatcher.ts#L15)
 
-• **T** *extends* `object`
+## Type Parameters
+
+### T
+
+`T` *extends* `object`
 
 ## Parameters
 
-• **target**: `T`
+### target
 
-• **callback**: [`ChangeCallback`](../type-aliases/ChangeCallback.md)\<`T`\>
+`T`
+
+### callback
+
+[`ChangeCallback`](../type-aliases/ChangeCallback.md)\<`T`\>
 
 ## Returns
 
@@ -38,7 +46,3 @@ watchedObject.age = 30;
 const prototype = Object.getPrototypeOf(watchedObject);
 console.log(prototype.unwatch()) // or just watchedObject.__prototype__.unwatch();
 ```
-
-## Source
-
-[src/utils/functions/createWatcher.ts:15](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/functions/createWatcher.ts#L15)

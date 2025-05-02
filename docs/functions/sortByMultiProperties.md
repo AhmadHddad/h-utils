@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,17 +8,25 @@
 
 > **sortByMultiProperties**\<`T`\>(`arr`, `proprieties`): `T`[]
 
-## Type parameters
+Defined in: [src/utils/array/sortByMultiProperties.ts:7](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/array/sortByMultiProperties.ts#L7)
 
-• **T** = `object`
+## Type Parameters
+
+### T
+
+`T` = \{ \}
 
 ## Parameters
 
-• **arr**: `T`[]
+### arr
+
+`T`[]
 
 the array to be sorted
 
-• **proprieties**: `string`[]
+### proprieties
+
+`string`[]
 
 an array of strings, each string is a property name
 
@@ -30,7 +38,3 @@ an array of strings, each string is a property name
 
 It takes an array of objects and sorts them by array of multiple properties.
 if the property starts with "-" then it will be descending order otherwize ascending order
-
-## Source
-
-[src/utils/array/sortByMultiProperties.ts:7](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/array/sortByMultiProperties.ts#L7)

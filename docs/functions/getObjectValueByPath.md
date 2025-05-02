@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,23 +6,33 @@
 
 # Function: getObjectValueByPath()
 
-> **getObjectValueByPath**\<`T`\>(`obj`, `path`, `navigationChr`): `T` \| `null`
+> **getObjectValueByPath**\<`T`\>(`obj`, `path`, `navigationChr`): `T`
 
-## Type parameters
+Defined in: [src/utils/object/getObjectValueByPath.ts:8](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/object/getObjectValueByPath.ts#L8)
 
-• **T**
+## Type Parameters
+
+### T
+
+`T`
 
 ## Parameters
 
-• **obj**: `Record`\<`string`, `any`\>
+### obj
 
-• **path**: `string`
+`Record`\<`string`, `any`\>
 
-• **navigationChr**: `string`= `'.'`
+### path
+
+`string`
+
+### navigationChr
+
+`string` = `'.'`
 
 ## Returns
 
-`T` \| `null`
+`T`
 
 The value of the key in the object.
 
@@ -40,7 +50,3 @@ getObjectValueByPath({foo:{bar:"baz"}}, "foo.bar") // "baz"
 ```ts
 getObjectValueByPath({b:{ f: [1, 2, 3]}}, 'b.f[2]') // 3
 ```
-
-## Source
-
-[src/utils/object/getObjectValueByPath.ts:8](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/object/getObjectValueByPath.ts#L8)

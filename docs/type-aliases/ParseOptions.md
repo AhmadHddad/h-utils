@@ -1,18 +1,22 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
 [hd-utils](../globals.md) / ParseOptions
 
-# Type alias: ParseOptions
+# Type Alias: ParseOptions
 
-> **ParseOptions**: `object`
+> **ParseOptions** = `object`
 
-## Type declaration
+Defined in: [src/utils/types.ts:289](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L289)
+
+## Properties
 
 ### arrayFormat?
 
-> `optional` `readonly` **arrayFormat**: `"bracket"` \| `"index"` \| `"comma"` \| `"separator"` \| `"bracket-separator"` \| `"colon-list-separator"` \| `"none"`
+> `readonly` `optional` **arrayFormat**: `"bracket"` \| `"index"` \| `"comma"` \| `"separator"` \| `"bracket-separator"` \| `"colon-list-separator"` \| `"none"`
+
+Defined in: [src/utils/types.ts:378](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L378)
 
 #### Default
 
@@ -96,9 +100,13 @@
   //=> {foo: ['1', '2', '3']}
   ```
 
+***
+
 ### arrayFormatSeparator?
 
-> `optional` `readonly` **arrayFormatSeparator**: `string`
+> `readonly` `optional` **arrayFormatSeparator**: `string`
+
+Defined in: [src/utils/types.ts:392](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L392)
 
 The character used to separate array elements when using `{arrayFormat: 'separator'}`.
 
@@ -108,9 +116,13 @@ The character used to separate array elements when using `{arrayFormat: 'separat
 ,
 ```
 
+***
+
 ### decode?
 
-> `optional` `readonly` **decode**: `boolean`
+> `readonly` `optional` **decode**: `boolean`
+
+Defined in: [src/utils/types.ts:295](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L295)
 
 Decode the keys and values. URI components are decoded with [`decode-uri-component`](https://github.com/SamVerschueren/decode-uri-component).
 
@@ -120,9 +132,13 @@ Decode the keys and values. URI components are decoded with [`decode-uri-compone
 true
 ```
 
+***
+
 ### lowerCaseQuery?
 
-> `optional` `readonly` **lowerCaseQuery**: `boolean`
+> `readonly` `optional` **lowerCaseQuery**: `boolean`
+
+Defined in: [src/utils/types.ts:472](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L472)
 
 #### Default
 
@@ -136,9 +152,13 @@ false;
 queryString.parseUrl("https://foo.bar?Foo=bar&baz=Foo", {lowerCaseQuery:true}) // {query:{foo:"bar", baz:"Foo"}}
 ```
 
+***
+
 ### parseBooleans?
 
-> `optional` `readonly` **parseBooleans**: `boolean`
+> `readonly` `optional` **parseBooleans**: `boolean`
+
+Defined in: [src/utils/types.ts:451](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L451)
 
 Parse the value as a boolean type instead of string type if it's a boolean.
 
@@ -156,9 +176,13 @@ queryString.parse('foo=true', {parseBooleans: true});
 //=> {foo: true}
 ```
 
+***
+
 ### parseFragmentIdentifier?
 
-> `optional` `readonly` **parseFragmentIdentifier**: `boolean`
+> `readonly` `optional` **parseFragmentIdentifier**: `boolean`
+
+Defined in: [src/utils/types.ts:466](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L466)
 
 Parse the fragment identifier from the URL and add it to result object.
 
@@ -176,9 +200,13 @@ queryString.parseUrl('https://foo.bar?foo=bar#xyz', {parseFragmentIdentifier: tr
 //=> {url: 'https://foo.bar', query: {foo: 'bar'}, fragmentIdentifier: 'xyz'}
 ```
 
+***
+
 ### parseNumbers?
 
-> `optional` `readonly` **parseNumbers**: `boolean`
+> `readonly` `optional` **parseNumbers**: `boolean`
+
+Defined in: [src/utils/types.ts:436](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L436)
 
 Parse the value as a number type instead of string type if it's a number.
 
@@ -196,9 +224,13 @@ queryString.parse('foo=1', {parseNumbers: true});
 //=> {foo: 1}
 ```
 
+***
+
 ### sort?
 
-> `optional` `readonly` **sort**: (`itemLeft`, `itemRight`) => `number` \| `false`
+> `readonly` `optional` **sort**: (`itemLeft`, `itemRight`) => `number` \| `false`
+
+Defined in: [src/utils/types.ts:421](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/types.ts#L421)
 
 Supports both `Function` as a custom sorting function or `false` to disable sorting.
 
@@ -227,7 +259,3 @@ queryString.parse('?a=one&b=two&c=three', {
 queryString.parse('?a=one&c=three&b=two', {sort: false});
 //=> {a: 'one', c: 'three', b: 'two'}
 ```
-
-## Source
-
-[src/utils/types.ts:289](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/types.ts#L289)

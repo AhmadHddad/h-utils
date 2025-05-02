@@ -1,18 +1,16 @@
-[**hd-utils**](../../README.md) • **Docs**
+[**hd-utils**](../../../README.md)
 
 ***
 
-[hd-utils](../../globals.md) / ClassNames
+[hd-utils](../../../globals.md) / ClassNames
 
-# Namespace: ClassNames
+# ClassNames
 
-## Index
-
-### Interfaces
+## Interfaces
 
 - [ArgumentArray](interfaces/ArgumentArray.md)
 
-### Type Aliases
+## Type Aliases
 
 - [Argument](type-aliases/Argument.md)
 - [Mapping](type-aliases/Mapping.md)

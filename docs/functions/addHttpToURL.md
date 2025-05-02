@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,13 +8,19 @@
 
 > **addHttpToURL**(`url`, `secured`): `string`
 
+Defined in: [src/utils/route/addHttpToURL.ts:11](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/route/addHttpToURL.ts#L11)
+
 ## Parameters
 
-• **url**: `string`
+### url
+
+`string`
 
 string - the url to check
 
-• **secured**: `boolean`= `false`
+### secured
+
+`boolean` = `false`
 
 https instead of http
 
@@ -35,7 +41,3 @@ addHttpToURL("www.google.com") => "http://www.google.com"
 ```ts
 addHttpToURL("www.google.com", true) => "https://www.google.com"
 ```
-
-## Source
-
-[src/utils/route/addHttpToURL.ts:11](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/route/addHttpToURL.ts#L11)

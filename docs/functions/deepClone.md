@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -6,21 +6,31 @@
 
 # Function: deepClone()
 
-> **deepClone**\<`T`\>(`value`, `options`?): `T`
+> **deepClone**\<`T`\>(`value`, `options?`): `T`
 
-## Type parameters
+Defined in: [src/utils/general/deepClone.ts:232](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/general/deepClone.ts#L232)
 
-• **T** = `any`
+## Type Parameters
+
+### T
+
+`T` = `any`
 
 ## Parameters
 
-• **value**: `T`
+### value
 
-• **options?**
+`T`
 
-• **options.json?**: `boolean`
+### options?
 
-• **options.lossy?**: `boolean`
+#### json?
+
+`boolean`
+
+#### lossy?
+
+`boolean`
 
 ## Returns
 
@@ -56,7 +66,3 @@ https://github.com/ungap/structured-clone
 ```ts
 deepClone({a:1}) => {a:1} //as new copy
 ```
-
-## Source
-
-[src/utils/general/deepClone.ts:232](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/general/deepClone.ts#L232)

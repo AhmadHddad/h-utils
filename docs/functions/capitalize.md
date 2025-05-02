@@ -1,4 +1,4 @@
-[**hd-utils**](../README.md) • **Docs**
+[**hd-utils**](../README.md)
 
 ***
 
@@ -8,9 +8,13 @@
 
 > **capitalize**(`str`): `string`
 
+Defined in: [src/utils/string/capitalize.ts:8](https://github.com/AhmadHddad/h-utils/blob/d7e1cbc62477b2f7933034cac20924d3e456d736/src/utils/string/capitalize.ts#L8)
+
 ## Parameters
 
-• **str**: `string`
+### str
+
+`string`
 
 ## Returns
 
@@ -25,7 +29,3 @@ will return the passed string with the first character capitalized.
 ```ts
 capitalize("javascript") // "Javascript"
 ```
-
-## Source
-
-[src/utils/string/capitalize.ts:8](https://github.com/AhmadHddad/h-utils/blob/8e9e542f98b1a43a336ce585dc8666b21b0e894d/src/utils/string/capitalize.ts#L8)
