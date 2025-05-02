@@ -12,7 +12,8 @@
     "node": ">=10"
   },
   "scripts": {
-    "build": "tsc src/index.ts --declaration --target ES2020 -m ES2020 --outDir lib ",
+    "build": "tsc",
+    "build:20": "tsc src/index.ts --declaration --target ES2020 -m ES2020 --outDir lib20 ",
     "build:es": "tsc -m esNext --outDir lib",
     "build:old": "tsc && yarn build:es && yarn run fix",
     "fix": "fix-esm-import-path lib/index.js",
@@ -51,14 +52,14 @@
   "repository": "https://github.com/AhmadHddad/h-utils",
   "bugs": "https://github.com/AhmadHddad/h-utils/issues",
   "devDependencies": {
-    "@types/node": "^20.8.7",
+    "@types/node": "^22.15.3",
     "agadoo": "^3.0.0",
-    "esbuild": "^0.24.0",
-    "fix-esm-import-path": "^1.4.0",
+    "esbuild": "^0.25.3",
+    "fix-esm-import-path": "^1.10.1",
     "tsc": "^2.0.4",
-    "tslib": "^2.4.0",
-    "typedoc": "^0.25.13",
-    "typedoc-plugin-markdown": "4.0.3",
-    "typescript": "^5.6.3"
+    "tslib": "^2.8.1",
+    "typedoc": "^0.28.3",
+    "typedoc-plugin-markdown": "4.6.3",
+    "typescript": "^5.8.3"
   }
 }
