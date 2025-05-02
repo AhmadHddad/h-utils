@@ -38,16 +38,16 @@ import debounce from './debounce';
  *  Specify invoking on the trailing edge of the timeout.
  * @returns {Function} Returns the new throttled function.
  * @example
+  * // Avoid excessively updating the position while scrolling.
+  * const throttled = throttle(() => {
+  *   console.log('Scroll event handler');
+  * }, 100);
+  * window.addEventListener('scroll', throttled);
+  * // Later, you can cancel the throttled function
+  * throttled.cancel();
+  * // Or flush the last invocation
+  * throttled.flush();
  *
- * // Avoid excessively updating the position while scrolling.
- * jQuery(window).on('scroll', throttle(updatePosition, 100))
- *
- *  Invoke `renewToken` when the click event is fired, but not more than once every 5 minutes.
- * const throttled = throttle(renewToken, 300000, { 'trailing': false })
- * jQuery(element).on('click', throttled)
- *
- * // Cancel the trailing throttled invocation.
- * jQuery(window).on('popstate', throttled.cancel)
  */
 function throttle<T = any>(
   func: (...args: any[]) => T,
